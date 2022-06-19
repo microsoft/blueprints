@@ -29,4 +29,9 @@ export type IconProps = {
    * (applicable for purely decorative elements).
    */
   label?: string;
+
+  /**
+   * Sets the Icon to be an inline element.
+   */
+  isInline?: boolean;
 };

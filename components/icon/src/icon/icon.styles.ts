@@ -35,4 +35,8 @@ export const useIconStyles = makeStyles({
   root: {
     width: 'auto',
   },
+  inline: {
+    display: 'inline-block',
+    verticalAlign: 'center',
+  },
 });

@@ -34,7 +34,7 @@ export const BookmarkTile: FC<BookmarkTileProps> = ({
             <img src={iconSrc} alt={iconAlt} className={classes.image} />
           ) : (
             <div className={classes.fallbackIcon}>
-              <Icon iconName="link" color="background" />
+              <Icon iconName="link" color="brand-accent" />
             </div>
           )}
           <Icon iconName="open" color="secondary" />

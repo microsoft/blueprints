@@ -14,6 +14,7 @@ export const Icon: FC<IconProps> = ({
   label,
   iconName,
   size = 'medium',
+  isInline,
 }) => {
   const Icon = useMemo(() => paths[iconName], [iconName]);
 
@@ -37,7 +38,13 @@ export const Icon: FC<IconProps> = ({
 
   // Styles
   const classes = useIconStyles();
-  const rootClasses = mergeStyles(classes.root, classes[color], classes[size], className);
+  const rootClasses = mergeStyles(
+    classes.root,
+    classes[color],
+    classes[size],
+    isInline && classes.inline,
+    className,
+  );
 
   return (
     <svg

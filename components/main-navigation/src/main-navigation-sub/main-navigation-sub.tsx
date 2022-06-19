@@ -10,7 +10,6 @@ import {
 import type { FC } from 'react';
 import * as React from 'react';
 
-import { useMainNavigationLinkStyles } from '../main-navigation-link';
 import { useMainNavigationSubStyles } from './main-navigation-sub.styles';
 import type { MainNavigationSubProps } from './main-navigation-sub.types';
 
@@ -20,13 +19,12 @@ export const MainNavigationSub: FC<MainNavigationSubProps> = ({
   title,
 }) => {
   const classes = useMainNavigationSubStyles();
-  const linkClasses = useMainNavigationLinkStyles();
 
   return (
     <Accordion className={className} collapsible>
       <AccordionItem>
-        <AccordionButton className={linkClasses.root}>
-          <Icon iconName="chevron" />
+        <AccordionButton className={classes.button}>
+          <Icon iconName="chevron" color="tertiary" />
           {title}
         </AccordionButton>
         <AccordionPanel>

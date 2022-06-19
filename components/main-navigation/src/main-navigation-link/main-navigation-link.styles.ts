@@ -22,8 +22,10 @@ export const useMainNavigationLinkStyles = makeStyles({
       color: 'var(--color-text)',
     },
     ':hover': {
-      color: 'var(--color-brand-action)',
       backgroundColor: 'var(--color-brand-secondary)',
+      '& a': {
+        color: 'var(--color-brand-action)',
+      },
       ':focus': {
         ...shorthands.outline('none'),
         boxShadow: 'var(--shadow-focus)',

@@ -11,7 +11,7 @@ export const Badge: FC<BadgeProps> = ({
   iconName,
   iconColor = 'background',
   backgroundColor = 'tile',
-  isInline = false,
+  isInline,
 }) => {
   // Styles
   const classes = useBadgeStyles();
