@@ -1,14 +1,19 @@
 # Project: Arbutus
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> UI Library for building documentation sites.
 
-As the maintainer of this project, please make a few updates:
+## Getting started
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+- `npm i`
+- `npm run build:packages`
+
+### Developing
+
+- `npm run start:ui`
+
+### Building production
+_WIP_
+- `npm run build:storybook`
 
 ## Contributing
 
