@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build:packages": "lage build --scope @arbutus/*",
-    "build:storybook": "build-storybook",
+    "build:storybook": "build-storybook ",
     "g:component": "hygen new component",
     "lint:eslint": "eslint . --fix",
     "lint:prettier": "prettier --write .",
