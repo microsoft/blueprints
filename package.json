@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@arbutus/style.theming": "^0.0.1",
-    "@fluentui/react": "^8.76.1",
+    "@fluentui/react": "^8.77.0",
     "@griffel/react": "^1.1.0",
     "@m365-admin/config.ts": "^0.1.2",
     "@m365-admin/eslint-config": "^0.1.4",
@@ -50,15 +50,11 @@
     "prettier": "^2.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "wait-on": "6.0.1"
-  },
-  "dependencies": {
-    "@m365-admin/collapsible": "^4.0.12",
-    "@m365-admin/customizations": "^7.4.4",
-    "@m365-admin/office-theme": "^1.0.0",
+    "wait-on": "6.0.1",
     "@storybook/builder-vite": "^0.1.36",
     "esbuild": "^0.14.46"
   },
+  "dependencies": {},
   "engines": {
     "node": "16.15.1"
   }
