@@ -1,0 +1,12 @@
+/**
+ This TS Config is for Eslint only. Adding this config enables type checking in Eslint.
+*/
+{
+  // Extends the base config.
+  "extends": "@m365-admin/config.ts",
+  "compilerOptions": {
+    // Ensures that nobody can accidentally use this config for a build.
+    "noEmit": true
+  },
+  "include": ["components", "apps", "styles"]
+}

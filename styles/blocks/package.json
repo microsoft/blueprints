@@ -1,0 +1,22 @@
+{
+  "name": "@arbutus/style.blocks",
+  "version": "0.0.1",
+  "description": "Reusable style blocks",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "exports": [
+    "./lib/index.js"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@m365-admin/config.ts": "^0.1.2",
+    "typescript": "^4.7.3"
+  }
+}

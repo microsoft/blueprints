@@ -1,0 +1,11 @@
+# generated folders
+__snapshots__
+.cache
+dist
+lib
+lib-amd
+lib-commonjs
+node_modules
+
+# template files which actually follow a different language's formatting
+_templates

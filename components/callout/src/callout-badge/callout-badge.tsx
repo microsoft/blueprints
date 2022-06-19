@@ -1,0 +1,23 @@
+import { Badge } from '@arbutus/component.badge';
+import type { FC } from 'react';
+import * as React from 'react';
+
+import type { CalloutBadgeProps } from './callout-badge.types';
+
+export const CalloutBadge: FC<CalloutBadgeProps> = ({ status, className }) => {
+  switch (status) {
+    case 'success':
+      return <Badge backgroundColor="positive" iconName="check" className={className} />;
+    case 'alert':
+      return <Badge backgroundColor="negative" iconName="x" className={className} />;
+    case 'warning':
+      return (
+        <Badge backgroundColor="warning" iconName="exclamation" className={className} />
+      );
+    case 'info':
+    default:
+      return (
+        <Badge backgroundColor="secondary" iconName="exclamation" className={className} />
+      );
+  }
+};

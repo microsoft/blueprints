@@ -1,0 +1,65 @@
+{
+  "name": "arbutus",
+  "description": "Documentation site UI library",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "components/*",
+    "sections/*",
+    "layouts/*",
+    "styles/*"
+  ],
+  "scripts": {
+    "build:packages": "lage build --scope @arbutus/*",
+    "build:storybook": "build-storybook",
+    "g:component": "hygen new component",
+    "lint:eslint": "eslint . --fix",
+    "lint:prettier": "prettier --write .",
+    "lint:staged": "lint-staged",
+    "purge": "git clean -d -f -x -e .env -e .husky",
+    "reset": "run-s purge i build:packages",
+    "start:backend": "npm run develop -w=apps/docsite-cms develop",
+    "start:frontend": "wait-on http://localhost:1337/admin && npm run start -w='apps/docsite-frontend'",
+    "start:ui": "start-storybook -p 6006",
+    "start": "cross-env FORCE_COLOR=1 npm-run-all -l -p start:*",
+    "storybook": "start-storybook -p 6006"
+  },
+  "devDependencies": {
+    "@arbutus/style.theming": "^0.0.1",
+    "@fluentui/react": "^8.76.1",
+    "@griffel/react": "^1.1.0",
+    "@m365-admin/config.ts": "^0.1.2",
+    "@m365-admin/eslint-config": "^0.1.4",
+    "@m365-admin/utility.changelog-helper": "^1.0.4",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "beachball": "^2.23.0",
+    "cross-env": "7.0.3",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "hygen": "^6.2.7",
+    "lage": "^1.6.2",
+    "lint-staged": "^13.0.2",
+    "npm-run-all": "4.1.5",
+    "prettier": "^2.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "wait-on": "6.0.1"
+  },
+  "dependencies": {
+    "@m365-admin/collapsible": "^4.0.12",
+    "@m365-admin/customizations": "^7.4.4",
+    "@m365-admin/office-theme": "^1.0.0",
+    "@storybook/builder-vite": "^0.1.36",
+    "esbuild": "^0.14.46"
+  },
+  "engines": {
+    "node": "16.15.1"
+  }
+}
