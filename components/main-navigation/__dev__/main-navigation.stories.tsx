@@ -63,6 +63,10 @@ const Template: ComponentStory<typeof MainNavigation> = () => {
             Link
           </MainNavigationLink>
         </MainNavigationSub>
+        <Divider />
+        <MainNavigationLink as={Link} elementProps={{ href: '#' }}>
+          Credits
+        </MainNavigationLink>
       </MainNavigation>
 
       <Tile variant="solid-color">&nbsp;</Tile>

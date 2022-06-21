@@ -1,29 +1,18 @@
 import { makeStyles, shorthands } from '@griffel/react';
 
-export const useMainNavigationLinkStyles = makeStyles({
+export const useAsideNavigationLinkStyles = makeStyles({
   root: {
-    ...shorthands.padding(0, 'var(--space-3)', 0, 'var(--space-8)'),
-    color: 'var(--color-text)',
-    fontWeight: 'var(--font-weight-regular)',
-    fontSize: 'var(--font-size-small)',
-    lineHeight: 'var(--font-line-height-small)',
+    ...shorthands.padding(0, 'var(--space-2)'),
     textAlign: 'left',
-    display: 'grid',
-    alignItems: 'center',
-    width: '100%',
-    height: 'var(--space-8)',
+    height: 'var(--font-line-height-medium)',
     transitionProperty: 'all',
     transitionDuration: 'var(--transition-duration)',
     transitionTimingFunction: 'var(--transition-timing-function)',
     backgroundColor: 'transparent',
     ...shorthands.borderRadius('0.5rem'),
-    '& a': {
-      textDecorationLine: 'none',
-      color: 'var(--color-text)',
-    },
     ':hover': {
       backgroundColor: 'var(--color-brand-secondary)',
-      '& a': {
+      '& > *': {
         color: 'var(--color-brand-action)',
       },
       ':focus': {
@@ -31,5 +20,8 @@ export const useMainNavigationLinkStyles = makeStyles({
         boxShadow: 'var(--shadow-focus)',
       },
     },
+  },
+  active: {
+    fontWeight: 'var(--font-weight-medium)',
   },
 });

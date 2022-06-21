@@ -2,7 +2,7 @@ import { makeStyles, shorthands } from '@griffel/react';
 
 export const useMainNavigationSubStyles = makeStyles({
   button: {
-    ...shorthands.padding(0, 'var(--space-6)', 0, 'var(--space-2)'),
+    ...shorthands.padding(0, 'var(--space-3)', 0, 'var(--space-2)'),
     color: 'var(--color-text)',
     fontWeight: 'var(--font-weight-medium)',
     fontSize: 'var(--font-size-small)',
