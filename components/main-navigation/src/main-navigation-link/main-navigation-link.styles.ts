@@ -7,8 +7,8 @@ export const useMainNavigationLinkStyles = makeStyles({
     fontWeight: 'var(--font-weight-regular)',
     fontSize: 'var(--font-size-small)',
     lineHeight: 'var(--font-line-height-small)',
-    textAlign: 'left',
     display: 'grid',
+    textAlign: 'left',
     alignItems: 'center',
     width: '100%',
     height: 'var(--space-8)',
@@ -17,6 +17,9 @@ export const useMainNavigationLinkStyles = makeStyles({
     transitionTimingFunction: 'var(--transition-timing-function)',
     backgroundColor: 'transparent',
     ...shorthands.borderRadius('0.5rem'),
+    '& button': {
+      textAlign: 'left',
+    },
     '& a': {
       textDecorationLine: 'none',
       color: 'var(--color-text)',
@@ -30,6 +33,12 @@ export const useMainNavigationLinkStyles = makeStyles({
         ...shorthands.outline('none'),
         boxShadow: 'var(--shadow-focus)',
       },
+    },
+  },
+  active: {
+    backgroundColor: 'var(--color-brand-secondary)',
+    '& a': {
+      color: 'var(--color-brand-action)',
     },
   },
 });

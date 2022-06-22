@@ -10,4 +10,9 @@ export type MainNavigationLinkProps = {
    * Link element props.
    */
   elementProps: Record<string, unknown>;
+
+  /**
+   * Whether this link is currently active.
+   */
+  isActive?: boolean;
 };
