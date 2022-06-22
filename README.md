@@ -2,6 +2,8 @@
 
 > UI Library for building documentation sites.
 
+---
+
 ## Getting started
 
 - `npm i`
