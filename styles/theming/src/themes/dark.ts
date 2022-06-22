@@ -11,6 +11,7 @@ export const themeDark: Theme = {
     'brand-action': `#FF8CA5`,
     'brand-secondary': `#4B4747`,
     'overlay-accent': 'rgb(255 255 255 / 10%)',
+    'overlay-background': 'rgb(0 0 0 / 75%)',
     background: `${NeutralColors.gray200}`,
     border: `${NeutralColors.gray130}`,
     negative: `${SharedColors.red10}`,

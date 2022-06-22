@@ -58,6 +58,7 @@ export type ColorScheme = {
   overlay: string;
   'border-shadow': string;
   'overlay-accent': string;
+  'overlay-background': string;
   'brand-accent': string;
   'brand-action': string;
   'brand-secondary': string;

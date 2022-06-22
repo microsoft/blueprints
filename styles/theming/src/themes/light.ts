@@ -10,6 +10,7 @@ export const themeLight: Theme = {
     'brand-action': `#AF4E63`,
     'brand-secondary': `#FFF2F4`,
     'overlay-accent': 'rgb(0 0 0 / 10%)',
+    'overlay-background': 'rgb(255 255 255 / 50%)',
     background: `${NeutralColors.white}`,
     border: `${NeutralColors.gray40}`,
     'border-shadow': 'rgb(0 0 0 / 9%)',

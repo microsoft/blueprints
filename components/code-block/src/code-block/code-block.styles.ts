@@ -11,7 +11,7 @@ export const useCodeBlockStyles = makeStyles({
     borderTopRightRadius: 'var(--shape-corner-radius)',
     borderBottomRightRadius: 'var(--shape-corner-radius)',
     borderBottomLeftRadius: 'var(--shape-corner-radius)',
-    backgroundColor: 'var(--color-tile-background)',
+    backgroundColor: 'var(--color-tile)',
     display: 'block',
     position: 'relative',
 

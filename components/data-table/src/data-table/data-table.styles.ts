@@ -91,7 +91,7 @@ export const useDataTableStyles = makeStyles({
     },
 
     '& pre, & code': {
-      backgroundColor: 'var(--color-tile-background)',
+      backgroundColor: 'var(--color-tile)',
       paddingTop: '0',
       paddingRight: '0',
       paddingBottom: '0',

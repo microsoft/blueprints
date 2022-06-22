@@ -20,4 +20,5 @@ export const Simple = Template.bind({}) as ComponentStory<
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   command: 'npm i @fluent/react-button',
+  isCopyable: true,
 };

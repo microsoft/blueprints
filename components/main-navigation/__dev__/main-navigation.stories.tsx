@@ -53,9 +53,17 @@ const Template: ComponentStory<typeof MainNavigation> = () => {
         </MainNavigationSub>
         <Divider />
         <MainNavigationSub title="Components">
-          <MainNavigationLink as={Link} elementProps={{ href: '#' }}>
-            Button
-          </MainNavigationLink>
+          <MainNavigationSub title="Button">
+            <MainNavigationLink as={Link} elementProps={{ href: '#' }}>
+              Primary
+            </MainNavigationLink>
+            <MainNavigationLink as={Link} elementProps={{ href: '#' }}>
+              Secondary
+            </MainNavigationLink>
+            <MainNavigationLink as={Link} elementProps={{ href: '#' }}>
+              Umph
+            </MainNavigationLink>
+          </MainNavigationSub>
           <MainNavigationLink as={Link} elementProps={{ href: '#' }}>
             Text
           </MainNavigationLink>
