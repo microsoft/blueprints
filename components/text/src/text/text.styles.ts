@@ -4,12 +4,14 @@ import { makeStyles, shorthands } from '@griffel/react';
 
 type ColorDeclaration = {
   color: ColorVar;
+  '&:visited': { color: ColorVar };
 };
 type ColorClasses = Record<keyof ColorScheme, ColorDeclaration | never>;
 export const colorClasses: ColorClasses = Object.entries(colorVars).reduce(
   (acc, [key, color]: [keyof ColorScheme, ColorVar]) => {
     acc[key] = {
       color,
+      '&:visited': { color },
     };
 
     return acc;

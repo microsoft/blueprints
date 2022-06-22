@@ -37,6 +37,6 @@ export const useIconStyles = makeStyles({
   },
   inline: {
     display: 'inline-block',
-    verticalAlign: 'center',
+    verticalAlign: 'middle',
   },
 });
