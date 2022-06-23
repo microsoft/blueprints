@@ -16,6 +16,13 @@ export type Breakpoints = {
   large: string;
 };
 
+export type Layout = {
+  mobile: number;
+  tablet: number;
+  desktop: number;
+  ultraWide: number;
+};
+
 export type FontWeights = {
   light: string;
   semilight: string;
@@ -93,7 +100,6 @@ export type Theme = {
     ['timing-function']: string;
   };
   breakpoint: Breakpoints;
-  layout: Breakpoints;
 };
 
 export type ThemeProviderProps<Key extends string> = {

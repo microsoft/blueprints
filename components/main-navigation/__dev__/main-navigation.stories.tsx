@@ -19,6 +19,8 @@ const Link: FC<{ onClick: () => void }> = ({ children, onClick }) => (
 
 const useNavigationStyles = makeStyles({
   root: {
+    paddingLeft: 'var(--space-7)',
+    paddingRight: 'var(--space-7)',
     width: '100%',
     display: 'grid',
     gridTemplateColumns: '17.5rem auto',

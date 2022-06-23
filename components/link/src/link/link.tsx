@@ -9,6 +9,12 @@ import type { LinkProps } from './link.types';
 
 const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
   switch (variant) {
+    case 'caption': {
+      return {
+        variant: 'caption',
+        color: 'text',
+      };
+    }
     case 'inverse': {
       return {
         color: 'background',

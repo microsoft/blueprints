@@ -12,7 +12,7 @@ export const Footer: FC<FooterProps> = ({ className, children }) => {
   const space = useSpaceStyles();
 
   return (
-    <footer className={mergeClasses(classes.root, space.p8, className)}>
+    <footer className={mergeClasses(classes.root, space.p7, className)}>
       {children}
     </footer>
   );

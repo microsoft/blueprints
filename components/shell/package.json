@@ -1,0 +1,43 @@
+{
+  "name": "@arbutus/component.shell",
+  "version": "0.0.0",
+  "description": "Shell component in the Layout collection.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "exports": [
+    "./lib/index.js"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0 <=18.2.0",
+    "react-dom": ">=16.8.0 <=18.2.0"
+  },
+  "dependencies": {
+    "@arbutus/component.footer": "^0.0.0",
+    "@arbutus/component.header": "^0.0.0",
+    "@arbutus/component.tray": "^0.0.0",
+    "@arbutus/style.theming": "^0.0.1",
+    "@arbutus/style.use-space-styles": "^0.0.1",
+    "@griffel/react": "^1.1.0",
+    "use-breakpoint": "^3.0.3"
+  },
+  "devDependencies": {
+    "@arbutus/component.link": "^0.0.0",
+    "@arbutus/component.text": "^0.0.0",
+    "@arbutus/component.tabs": "^0.0.0",
+    "@arbutus/component.tile": "^0.0.0",
+    "@arbutus/component.recommendation-tile": "^0.0.0",
+    "@arbutus/component.bookmark-tile": "^0.0.0",
+    "@arbutus/component.mark-list": "^0.0.0",
+    "@m365-admin/config.ts": "^0.1.2",
+    "typescript": "^4.7.3"
+  }
+}

@@ -1,6 +1,6 @@
 import type { ElementType } from 'react';
 
-type LinkVariant = 'primary' | 'secondary' | 'inverse';
+type LinkVariant = 'primary' | 'secondary' | 'inverse' | 'caption';
 
 export type LinkProps = {
   /**
@@ -16,7 +16,7 @@ export type LinkProps = {
   /**
    * Link element props.
    */
-  elementProps: Record<string, unknown>;
+  elementProps?: Record<string, unknown>;
 
   /**
    * Selection of link styles.

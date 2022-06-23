@@ -20,10 +20,6 @@ export const useFrameClasses = makeStyles({
   root: {
     height: '100%',
     backgroundColor: 'var(--color-background)',
-    paddingTop: '1rem',
-    paddingBottom: '1rem',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
     display: 'grid',
     alignItems: 'center',
     justifyItems: 'center',

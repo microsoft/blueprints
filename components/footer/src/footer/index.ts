@@ -1,4 +1,3 @@
-export * from './footer';
-export * from './footer.styles';
+export { Footer } from './footer';
+export { useFooterStyles } from './footer.styles';
 export type { FooterProps } from './footer.types';
-

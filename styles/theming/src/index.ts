@@ -1,3 +1,4 @@
+export { breakpoints, layout } from './breakpoints';
 export { fontSizes } from './font-sizes';
 export { fontWeights } from './font-weights';
 export { generateCSSVarTuples } from './generate-css-vars';

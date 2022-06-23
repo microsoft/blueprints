@@ -12,7 +12,7 @@ export const Header: FC<HeaderProps> = ({ className, children }) => {
   const space = useSpaceStyles();
 
   return (
-    <header className={mergeClasses(classes.root, space.p8, className)}>
+    <header className={mergeClasses(classes.root, space.px7, space.py5, className)}>
       {children}
     </header>
   );

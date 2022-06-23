@@ -17,7 +17,7 @@
     "lint:eslint": "eslint . --fix",
     "lint:prettier": "prettier --write .",
     "lint:staged": "lint-staged",
-    "purge": "git clean -d -f -x -e .env -e .husky",
+    "purge": "git clean -d -f -X -e .env -e .husky",
     "reset": "run-s purge i build:packages",
     "start:backend": "npm run develop -w=apps/docsite-cms develop",
     "start:frontend": "wait-on http://localhost:1337/admin && npm run start -w='apps/docsite-frontend'",
@@ -36,11 +36,13 @@
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.1.36",
     "@storybook/jest": "^0.0.10",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "beachball": "^2.23.0",
     "cross-env": "7.0.3",
+    "esbuild": "^0.14.46",
     "eslint": "^8.18.0",
     "husky": "^8.0.1",
     "hygen": "^6.2.7",
@@ -50,11 +52,11 @@
     "prettier": "^2.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "wait-on": "6.0.1",
-    "@storybook/builder-vite": "^0.1.36",
-    "esbuild": "^0.14.46"
+    "wait-on": "6.0.1"
   },
-  "dependencies": {},
+  "resolutions": {
+    "**/trim": "^1.0.0"
+  },
   "engines": {
     "node": "16.15.1"
   }

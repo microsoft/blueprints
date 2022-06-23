@@ -1,4 +1,4 @@
-import type { Breakpoints } from './theming.types';
+import type { Breakpoints, Layout } from './theming.types';
 
 export const breakpoints: Breakpoints = {
   micro: '400px',
@@ -9,11 +9,9 @@ export const breakpoints: Breakpoints = {
   large: '1140px',
 };
 
-export const layout: Breakpoints = {
-  micro: '',
-  xxs: '',
-  xs: '280px',
-  small: '360px',
-  medium: '680px',
-  large: '1024px',
+export const layout: Layout = {
+  mobile: 0,
+  tablet: 768,
+  desktop: 1140,
+  ultraWide: 1440,
 };

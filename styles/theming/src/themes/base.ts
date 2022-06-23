@@ -7,7 +7,7 @@ import type { Theme } from '../theming.types';
 
 export const themeBase: Pick<
   Theme,
-  'font' | 'transition' | 'shape' | 'breakpoint' | 'layout' | 'space'
+  'font' | 'transition' | 'shape' | 'breakpoint' | 'space'
 > = {
   font: {
     size: fontSizes,
@@ -22,6 +22,5 @@ export const themeBase: Pick<
     ['timing-function']: 'ease-in-out',
   },
   breakpoint: breakpoints,
-  layout: layout,
   space: spaceScale,
 };

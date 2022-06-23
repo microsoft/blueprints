@@ -45,7 +45,7 @@ export const useGlobalStyles = makeStaticStyles({
     boxSizing: 'border-box',
   },
 
-  '*:focus-is-visible': {
+  ['*:focus-is-visible']: {
     outlineColor: 'var(--color-brand-action)',
   },
 
