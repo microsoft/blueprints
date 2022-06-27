@@ -29,7 +29,7 @@ const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
     case 'primary':
     default: {
       return {
-        color: 'brand-accent',
+        color: 'brand-action',
       };
     }
   }
