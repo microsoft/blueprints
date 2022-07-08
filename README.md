@@ -38,3 +38,7 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+## The name
+Arbutus is the only native broadleaf evergreen tree in Canada. Another common name is madrone, a Spanish word for the strawberry tree, of which arbutus is a close relative. The Scottish botanist Archibald Menzies first collected specimens in 1792 and described it as the oriental strawberry tree.
+— [for.gov.bc.ca](https://www.for.gov.bc.ca/hfd/library/documents/treebook/arbutus.htm)
