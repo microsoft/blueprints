@@ -1,10 +1,9 @@
-import { makeStyles, shorthands } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
-import { mapToStyles } from '@arbutus/style.utilities';
 import { arbutusTokens } from '@arbutus/style.theming';
+import { mapToStyles } from '@arbutus/style.utilities';
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles, shorthands } from '@griffel/react';
 
-import type { ColorValue, ColorMap } from './callout.types';
-
+import type { ColorMap, ColorValue } from './callout.types';
 
 const colorMap: ColorMap = {
   error: arbutusTokens.color.danger,

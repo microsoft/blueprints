@@ -1,5 +1,4 @@
-import type { paths } from '@arbutus/component.icon';
-import type { ColorScheme } from '@arbutus/style.theming';
+import type { ColorVariant, paths } from '@arbutus/component.icon';
 
 export type MarkListProps = {
   /**
@@ -15,5 +14,5 @@ export type MarkListProps = {
   /**
    * Selection of icon color options.
    */
-  iconColor?: keyof ColorScheme;
+  iconColor?: ColorVariant;
 };

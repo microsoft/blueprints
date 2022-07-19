@@ -1,7 +1,9 @@
-import type { ColorScheme } from '@arbutus/style.theming';
-
 import type { sizeClasses } from './icon.styles';
 import type { paths } from './icons';
+
+export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info';
+export type ColorValue = string;
+export type ColorMap = Record<ColorVariant, ColorValue>;
 
 export type IconProps = {
   /**
@@ -17,7 +19,7 @@ export type IconProps = {
   /**
    * Selection of color options.
    */
-  color?: keyof ColorScheme;
+  color?: ColorVariant;
 
   /**
    * Selection of size options.

@@ -1,12 +1,13 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useMarkListItemStyles = makeStyles({
   root: {
     display: 'grid',
-    gridTemplateColumns: 'var(--space-4) auto',
-    columnGap: 'var(--space-3)',
+    gridTemplateColumns: `${tokens.spacingHorizontalL} auto`,
+    columnGap: tokens.spacingHorizontalM,
   },
   mark: {
-    color: 'var(--color-quaternary)',
+    color: 'var(--arbutus-color-text-quaternary)',
   },
 });

@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 const footerHeight = '10rem';
@@ -12,10 +13,10 @@ export const useShellStyles = makeStyles({
   },
   mainDesktop: {
     display: 'grid',
-    paddingLeft: 'var(--space-7)',
-    paddingRight: 'var(--space-7)',
+    paddingLeft: tokens.spacingHorizontalXXL,
+    paddingRight: tokens.spacingHorizontalXXL,
     gridTemplateColumns: '17.5rem auto',
-    columnGap: 'var(--space-7)',
+    columnGap: tokens.spacingHorizontalXXL,
   },
   footer: {
     minHeight: footerHeight,

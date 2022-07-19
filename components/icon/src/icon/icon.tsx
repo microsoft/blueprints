@@ -10,7 +10,7 @@ import { paths } from './icons';
 
 export const Icon: FC<IconProps> = ({
   className,
-  color = 'text',
+  color = 'primary',
   label,
   iconName,
   size = 'medium',

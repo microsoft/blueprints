@@ -1,8 +1,8 @@
-import { makeStyles, shorthands } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
 import { mapToStyles } from '@arbutus/style.utilities';
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles, shorthands } from '@griffel/react';
 
-import type { ColorValue, ColorMap } from './badge.types';
+import type { ColorMap, ColorValue } from './badge.types';
 
 const colorMap: ColorMap = {
   accent: {

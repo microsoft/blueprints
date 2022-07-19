@@ -5,7 +5,7 @@ export type TrayProps = {
   className?: string;
 
   /**
-   * Controls wether the tray is open or closed.
+   * Controls whether the tray is open or closed.
    */
   isOpen: boolean;
 };

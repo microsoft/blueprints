@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useMarkListStyles = makeStyles({
@@ -5,6 +6,6 @@ export const useMarkListStyles = makeStyles({
     listStyleType: 'none',
     display: 'grid',
     gridTemplateColumns: '1fr',
-    rowGap: 'var(--space-3)',
+    rowGap: tokens.spacingHorizontalM,
   },
 });
