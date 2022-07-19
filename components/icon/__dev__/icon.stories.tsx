@@ -23,7 +23,7 @@ const useGridStyles = makeStyles({
     columnGap: '0.5rem',
     rowGap: '0.5rem',
     gridAutoRows: '1.5rem',
-    ...shorthands.borderRadius('var(--shape-corner-radius)'),
+    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
   },
   tile: {
     display: 'grid',

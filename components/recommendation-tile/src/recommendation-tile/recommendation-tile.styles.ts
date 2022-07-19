@@ -2,7 +2,7 @@ import { makeStyles, shorthands } from '@griffel/react';
 
 export const useRecommendationTileStyles = makeStyles({
   image: {
-    ...shorthands.borderRadius('var(--shape-corner-radius)'),
+    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
     height: '13.75rem',
     width: '100%',
     objectFit: 'cover',

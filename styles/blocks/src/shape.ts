@@ -1,6 +1,6 @@
 export const roundedCorners = {
-  borderTopLeftRadius: 'var(--shape-corner-radius)',
-  borderTopRightRadius: 'var(--shape-corner-radius)',
-  borderBottomRightRadius: 'var(--shape-corner-radius)',
-  borderBottomLeftRadius: 'var(--shape-corner-radius)',
+  borderTopLeftRadius: 'var(--arbutus-shape-border-radius)',
+  borderTopRightRadius: 'var(--arbutus-shape-border-radius)',
+  borderBottomRightRadius: 'var(--arbutus-shape-border-radius)',
+  borderBottomLeftRadius: 'var(--arbutus-shape-border-radius)',
 };

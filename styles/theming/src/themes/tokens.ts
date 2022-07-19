@@ -67,6 +67,9 @@ export const arbutusTokens = {
     card: tokens.shadow8,
     focus: `0 0 0.125rem 0.125rem ${tokens.colorBrandForeground1}, 0 0 0.375rem ${tokens.colorBrandForeground1}`,
   },
+  shape: {
+    ['border-radius']: '1rem'
+  },
   breakpoints,
   layout,
 };

@@ -28,7 +28,7 @@ const useMainStyles = makeStyles({
     columnGap: '1rem',
   },
   image: {
-    ...shorthands.borderRadius('var(--shape-corner-radius)'),
+    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
     width: '100%',
   },
 });

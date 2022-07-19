@@ -1,20 +1,27 @@
-import type { ColorScheme, ColorVar } from '@arbutus/style.theming';
-import { colorVars } from '@arbutus/style.theming';
+import { arbutusTokens } from '@arbutus/style.theming';
+import { mapToStyles } from '@arbutus/style.utilities';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
-type ColorDeclaration = {
-  backgroundColor: ColorVar;
-};
-type ColorClasses = Record<keyof ColorScheme, ColorDeclaration | never>;
-export const colorClasses: ColorClasses = Object.entries(colorVars).reduce(
-  (acc, [key, color]: [keyof ColorScheme, ColorVar]) => {
-    acc[key] = {
-      backgroundColor: color,
-    };
+import type { ColorVariant } from './tile.types';
 
-    return acc;
-  },
-  {} as ColorClasses,
+const colorMap: Record<ColorVariant, string> = {
+  ...arbutusTokens.color.background,
+  tile: arbutusTokens.color.tile,
+  negative: arbutusTokens.color.negative.background,
+  positive: arbutusTokens.color.positive.background,
+  warning: arbutusTokens.color.warning.background,
+  danger: arbutusTokens.color.danger.background,
+  info: arbutusTokens.color.info.background,
+  accent: arbutusTokens.color.brand.background,
+};
+
+const colorStyleFunction = (color: string) => ({
+  backgroundColor: color,
+});
+const colorClasses = mapToStyles<string, Record<ColorVariant, string>>(
+  colorMap,
+  colorStyleFunction,
 );
 
 export const useTileStyles = makeStyles({
@@ -27,30 +34,27 @@ export const useTileStyles = makeStyles({
   interactive: {
     cursor: 'pointer',
     transitionProperty: 'all',
-    transitionDuration: 'var(--transition-duration)',
-    transitionTimingFunction: 'var(--transition-timing-function)',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
     ':focus': {
       ...shorthands.outline('none'),
-      boxShadow: 'var(--shadow-focus)',
+      boxShadow: 'var(--arbutus-shadow-focus)',
     },
   },
   card: {
-    backgroundColor: 'var(--color-background)',
-    ...shorthands.borderWidth('1px'),
-    ...shorthands.borderStyle('solid'),
-    ...shorthands.borderColor('var(--color-border-shadow)'),
+    backgroundColor: tokens.colorNeutralBackground1,
     ...shorthands.borderRadius('0.5rem'),
-    boxShadow: 'var(--shadow-cards)',
+    boxShadow: 'var(--arbutus-shadow-card)',
   },
   image: {
     backgroundColor: 'var(--color-tile)',
-    ...shorthands.borderRadius('var(--shape-corner-radius)'),
+    ...shorthands.borderRadius(tokens.borderRadiusXLarge),
     backgroundSize: 'cover',
     backgroundPositionX: 'center',
     backgroundPositionY: 'center',
   },
   solidColor: {
-    ...shorthands.borderRadius('var(--shape-corner-radius)'),
+    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
   },
   ...colorClasses,
 });
