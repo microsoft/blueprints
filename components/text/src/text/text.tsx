@@ -1,3 +1,4 @@
+import { Text as FluentText } from '@fluentui/react';
 import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
@@ -6,11 +7,11 @@ import { useTextStyles } from './text.styles';
 import type { TextProps } from './text.types';
 
 export const Text: FC<TextProps> = ({
-  as: Root = 'p',
   children,
-  color = 'text',
+  color = 'primary',
   variant = 'paragraph',
   className,
+  ...props
 }) => {
   // Styles
   const classes = useTextStyles();
@@ -21,5 +22,9 @@ export const Text: FC<TextProps> = ({
     className,
   );
 
-  return <Root className={rootClasses}>{children}</Root>;
+  return (
+    <FluentText className={rootClasses} {...props}>
+      {children}
+    </FluentText>
+  );
 };

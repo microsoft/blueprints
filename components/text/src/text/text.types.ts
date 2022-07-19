@@ -1,5 +1,8 @@
-import type { ColorScheme } from '@arbutus/style.theming';
-import type { ElementType } from 'react';
+import type { TextProps as FluentTextProps } from '@fluentui/react-text';
+
+export type StyleVariant = 'jumbo' | 'headline' | 'subheading' | 'leading' | 'paragraph' | 'caption' | 'description';
+
+export type ColorVariant = 'accent' | 'action' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info';
 
 export type TextProps = {
   /**
@@ -8,17 +11,12 @@ export type TextProps = {
   className?: string;
 
   /**
-   * Custom root element.
-   */
-  as?: ElementType;
-
-  /**
    * Selection of text styles.
    */
-  variant?: 'jumbo' | 'headline' | 'subheading' | 'leading' | 'paragraph' | 'caption' | 'description';
+  variant?: StyleVariant;
 
   /**
    * Selection of color options.
    */
-  color?: keyof ColorScheme;
-};
+  color?: ColorVariant;
+} & FluentTextProps;
