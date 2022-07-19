@@ -1,11 +1,14 @@
+import { createLightTheme } from '@fluentui/react-theme';
 import { createContext } from 'react';
 
-import { themeLight } from './themes';
-import type { ThemeContextValue } from './theming.types';
+import { arbutusBrandRamp } from './themes';
+import type { ThemeContextValue, ThemeOption } from './theming.types';
+
+const defaultThemeKey: ThemeOption = 'light';
 
 export const ThemeContext = createContext<ThemeContextValue>({
-  theme: themeLight,
-  themeId: 'default',
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  setTheme: () => {},
+  theme: createLightTheme(arbutusBrandRamp),
+  themeKey: defaultThemeKey,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function, @typescript-eslint/no-unused-vars
+  setTheme: (defaultThemeKey) => {},
 });

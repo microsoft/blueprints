@@ -1,10 +1,16 @@
-import type { statusMap } from './callout.styles';
-
-export type CalloutStatus = keyof typeof statusMap;
+export type StatusVariant = 'error' | 'warning' | 'info' | 'success' | 'accent';
 
 export type CalloutIconProps = {
-  status?: CalloutStatus;
+  status?: StatusVariant;
 };
+
+export type ColorValue = {
+  text: string;
+  foreground: string;
+  background: string;
+  stroke: string;
+};
+export type ColorMap = Record<StatusVariant, ColorValue>;
 
 export type CalloutProps = {
   /**
@@ -20,5 +26,5 @@ export type CalloutProps = {
   /**
    * String that renders as the Header text
    */
-  status?: CalloutStatus;
+  status?: StatusVariant;
 };

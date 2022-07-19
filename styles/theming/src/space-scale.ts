@@ -1,16 +1,16 @@
-import type { SpaceScale } from './theming.types';
+import { tokens } from '@fluentui/react-theme';
 
-export const spaceScale: SpaceScale = {
-  ['1']: '0.25rem',
-  ['2']: '0.5rem',
-  ['3']: '0.75rem',
-  ['4']: '1rem',
-  ['5']: '1.25rem',
-  ['6']: '1.5rem',
-  ['7']: '1.75rem',
-  ['8']: '2rem',
-  ['9']: '2.25rem',
-  ['10']: '2.5rem',
-  ['11']: '2.75rem',
-  ['12']: '3rem',
+export const spaceScale = {
+  ['1']: tokens.spacingHorizontalXXS,
+  ['2']: tokens.spacingHorizontalXS,
+  ['3']: tokens.spacingHorizontalSNudge,
+  ['4']: tokens.spacingHorizontalS,
+  ['5']: tokens.spacingHorizontalMNudge,
+  ['6']: tokens.spacingHorizontalM,
+  ['7']: tokens.spacingHorizontalL,
+  ['8']: tokens.spacingHorizontalXL,
+  ['9']: tokens.spacingHorizontalXXL,
+  ['10']: tokens.spacingHorizontalXXXL,
+  ['11']: '40px',
+  ['12']: '52px',
 };

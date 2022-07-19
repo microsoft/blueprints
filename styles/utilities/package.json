@@ -1,7 +1,7 @@
 {
-  "name": "@arbutus/style.theming",
+  "name": "@arbutus/style.utilities",
   "version": "0.0.1",
-  "description": "Documentation themes",
+  "description": "Collection of utilities for styling with Griffel.",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -21,10 +21,6 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
-    "@arbutus/hook.use-css-vars": "^0.0.0",
-    "@arbutus/hook.use-prefers-color-scheme": "^0.0.0",
-    "@fluentui/react-provider": "^9.0.1",
-    "@fluentui/react-theme": "^9.0.0",
-    "@fluentui/theme": "^2.6.5"
+    "@griffel/react": "^1.1.0"
   }
 }

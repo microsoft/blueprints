@@ -1,2 +1,2 @@
-export { themeDark } from './dark';
-export { themeLight } from './light';
+export { arbutusBrandRamp } from './brand-ramp';
+export { arbutusTokens } from './tokens';

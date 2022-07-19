@@ -6,8 +6,9 @@
   "workspaces": [
     "apps/*",
     "components/*",
-    "sections/*",
+    "hooks/*",
     "layouts/*",
+    "sections/*",
     "styles/*"
   ],
   "scripts": {

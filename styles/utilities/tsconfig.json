@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@m365-admin/config.ts",
+  "include": ["src", "DEPRECATED/line-heights.ts", "DEPRECATED/breakpoints.ts", "DEPRECATED/line-heights.ts", "DEPRECATED/font-sizes.ts", "DEPRECATED/DEPRECATED__base.ts"],
+  "compilerOptions": {
+    "outDir": "lib"
+  }
+}

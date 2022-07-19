@@ -26,7 +26,7 @@ export const RecommendationTile: FC<RecommendationTileProps> = ({
         <div className={classes.imageContainer}>
           <Badge
             iconName={recommendation === 'positive' ? 'check' : 'x'}
-            backgroundColor={recommendation === 'positive' ? 'positive' : 'negative'}
+            color={recommendation === 'positive' ? 'positive' : 'negative'}
             className={classes.overlayBadge}
           />
           <img
@@ -40,7 +40,7 @@ export const RecommendationTile: FC<RecommendationTileProps> = ({
         {(!imageSrc || !imageAlt) && (
           <Badge
             iconName={recommendation === 'positive' ? 'check' : 'x'}
-            backgroundColor={recommendation === 'positive' ? 'positive' : 'negative'}
+            color={recommendation === 'positive' ? 'positive' : 'negative'}
             isInline
             className={space.mr2}
           />

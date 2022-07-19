@@ -1,7 +1,7 @@
 {
-  "name": "@arbutus/component.callout",
+  "name": "@arbutus/hook.use-prefers-color-scheme",
   "version": "0.0.0",
-  "description": "Callout component.",
+  "description": "usePrefersColorScheme returns a value of prefers-color-scheme media query. Based on Media Queries Level 5: 11.5. Detecting the desire for light or dark color schemes: the prefers-color-scheme feature.",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -20,15 +20,7 @@
     "react": ">=16.8.0 <=18.2.0",
     "react-dom": ">=16.8.0 <=18.2.0"
   },
-  "dependencies": {
-    "@arbutus/component.badge": "^0.0.0",
-    "@arbutus/component.text": "^0.0.0",
-    "@arbutus/style.theming": "^0.0.1",
-    "@arbutus/style.use-space-styles": "^0.0.1",
-    "@arbutus/style.utilities": "^0.0.1",
-    "@fluentui/react-theme": "^9.0.0",
-    "@griffel/react": "^1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",
     "typescript": "^4.7.3"

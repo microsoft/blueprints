@@ -1,5 +1,12 @@
 import type { paths } from '@arbutus/component.icon';
-import type { ColorScheme } from '@arbutus/style.theming';
+
+export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info';
+
+export type ColorValue = {
+  backgroundColor: string;
+  color: string;
+};
+export type ColorMap = Record<ColorVariant, ColorValue>;
 
 export type BadgeProps = {
   /**
@@ -8,14 +15,9 @@ export type BadgeProps = {
   className?: string;
 
   /**
-   * Selection of background color options.
+   * Selection of color options.
    */
-  backgroundColor?: keyof ColorScheme;
-
-  /**
-   * Selection of icon color options.
-   */
-  iconColor?: keyof ColorScheme;
+  color?: ColorVariant;
 
   /**
    * Selection of icons.

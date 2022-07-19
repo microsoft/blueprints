@@ -9,8 +9,7 @@ import type { BadgeProps } from './badge.types';
 export const Badge: FC<BadgeProps> = ({
   className,
   iconName,
-  iconColor = 'background',
-  backgroundColor = 'tile',
+  color = 'primary',
   isInline,
 }) => {
   // Styles
@@ -20,12 +19,12 @@ export const Badge: FC<BadgeProps> = ({
     <span
       className={mergeClasses(
         classes.root,
-        classes[backgroundColor],
+        classes[color],
         isInline && classes.inline,
         className,
       )}
     >
-      <Icon size="small" color={iconColor} iconName={iconName} />
+      <Icon size="small" iconName={iconName} />
     </span>
   );
 };

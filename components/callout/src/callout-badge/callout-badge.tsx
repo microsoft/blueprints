@@ -7,17 +7,15 @@ import type { CalloutBadgeProps } from './callout-badge.types';
 export const CalloutBadge: FC<CalloutBadgeProps> = ({ status, className }) => {
   switch (status) {
     case 'success':
-      return <Badge backgroundColor="positive" iconName="check" className={className} />;
-    case 'alert':
-      return <Badge backgroundColor="negative" iconName="x" className={className} />;
+      return <Badge color="positive" iconName="check" className={className} />;
+    case 'error':
+      return <Badge color="negative" iconName="x" className={className} />;
     case 'warning':
-      return (
-        <Badge backgroundColor="warning" iconName="exclamation" className={className} />
-      );
+      return <Badge color="warning" iconName="exclamation" className={className} />;
+    case 'accent':
+      return <Badge color="accent" iconName="exclamation" className={className} />;
     case 'info':
     default:
-      return (
-        <Badge backgroundColor="secondary" iconName="exclamation" className={className} />
-      );
+      return <Badge color="secondary" iconName="exclamation" className={className} />;
   }
 };

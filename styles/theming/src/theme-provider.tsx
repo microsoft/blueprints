@@ -1,44 +1,39 @@
+import { useCSSVars } from '@arbutus/hook.use-css-vars';
+import { usePrefersColorScheme } from '@arbutus/hook.use-prefers-color-scheme';
+import { FluentProvider } from '@fluentui/react-provider';
+import type { Theme } from '@fluentui/react-theme';
+import { createDarkTheme, createLightTheme } from '@fluentui/react-theme';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useEffect, useMemo, useState } from 'react';
+import { useState } from 'react';
 
-import { generateCSSVarTuples } from './generate-css-vars';
 import { ThemeContext } from './theme-context';
-import { themeLight } from './themes';
-import type { ThemeProviderProps } from './theming.types';
+import { arbutusBrandRamp, arbutusTokens } from './themes';
+import type { ThemeOption, ThemeProviderProps } from './theming.types';
 
-export const ThemeProvider: FC<ThemeProviderProps<'dark'>> = ({
-  defaultTheme: theme = themeLight,
-  altThemes,
+export const ThemeProvider: FC<ThemeProviderProps> = ({
   children,
+  brandVariants = arbutusBrandRamp,
+  defaultTheme = 'light',
+  themes: _themes,
 }) => {
-  const themes = useMemo(
-    () => ({
-      default: theme,
-      ...altThemes,
-    }),
-    [theme, altThemes],
-  );
+  useCSSVars({ theme: arbutusTokens, prefix: 'arbutus' });
 
-  const [currentThemeID, setTheme] = useState<keyof typeof themes>('default');
-  const currentTheme = useMemo(
-    () => themes[currentThemeID] ?? theme,
-    [theme, themes, currentThemeID],
-  );
+  const defaultThemes: Record<ThemeOption, Theme> = {
+    light: createLightTheme(brandVariants),
+    dark: createDarkTheme(brandVariants),
+  };
+  const themes = _themes ?? defaultThemes;
 
-  useEffect(() => {
-    const cssVarTuples = generateCSSVarTuples(currentTheme);
+  const preferredTheme = usePrefersColorScheme();
 
-    cssVarTuples.forEach(([k, v]: [k: string, v: string]) =>
-      document.documentElement.style.setProperty(k, v),
-    );
-  }, [currentTheme]);
+  const themeOption: ThemeOption = preferredTheme ?? defaultTheme;
+  const [currentThemeKey, setTheme] = useState<ThemeOption>(themeOption);
+  const theme = themes[currentThemeKey];
 
   return (
-    <ThemeContext.Provider
-      value={{ theme: currentTheme, setTheme, themeId: currentThemeID }}
-    >
-      {children}
+    <ThemeContext.Provider value={{ setTheme, themeKey: themeOption, theme }}>
+      <FluentProvider theme={theme}>{children}</FluentProvider>
     </ThemeContext.Provider>
   );
 };

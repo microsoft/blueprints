@@ -21,6 +21,7 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
-   "@griffel/react": "^1.1.0"
+    "@fluentui/react-theme": "^9.0.0",
+    "@griffel/react": "^1.1.0"
   }
 }
