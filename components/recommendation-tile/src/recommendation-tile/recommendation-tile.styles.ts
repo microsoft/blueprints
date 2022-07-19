@@ -1,8 +1,9 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useRecommendationTileStyles = makeStyles({
   image: {
-    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
+    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
     height: '13.75rem',
     width: '100%',
     objectFit: 'cover',
@@ -12,13 +13,13 @@ export const useRecommendationTileStyles = makeStyles({
   },
   overlayBadge: {
     position: 'absolute',
-    left: 'var(--space-3)',
-    top: 'var(--space-3)',
+    left: tokens.spacingHorizontalM,
+    top: tokens.spacingHorizontalM,
   },
   badgePositive: {
-    backgroundColor: 'var(--color-positive)',
+    backgroundColor: 'var(--arbutus--color-positive-background)',
   },
   badgeNegative: {
-    backgroundColor: 'var(--color-negative)',
+    backgroundColor: 'var(--arbutus--color-negative-background)',
   },
 });

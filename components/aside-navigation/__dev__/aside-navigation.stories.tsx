@@ -20,7 +20,7 @@ const useNavigationStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: 'auto 15rem',
     minHeight: '40rem',
-    columnGap: 'var(--space-7)',
+    columnGap: tokens.spacingHorizontalXXXL,
   },
 });
 

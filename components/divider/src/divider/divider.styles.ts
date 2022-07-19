@@ -9,6 +9,6 @@ export const useDividerStyles = makeStyles({
     borderRightStyle: 'none',
     borderBottomStyle: 'none',
     borderLeftStyle: 'none',
-    backgroundColor: 'var(--color-border)',
+    backgroundColor: tokens.colorNeutralStroke1,
   },
 });

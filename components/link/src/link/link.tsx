@@ -12,7 +12,7 @@ const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
     case 'caption': {
       return {
         variant: 'caption',
-        color: 'text',
+        color: 'primary',
       };
     }
     case 'inverse': {
@@ -29,7 +29,7 @@ const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
     case 'primary':
     default: {
       return {
-        color: 'brand-action',
+        color: 'action',
       };
     }
   }

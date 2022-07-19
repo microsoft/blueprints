@@ -24,7 +24,7 @@ const useHeaderSampleStyles = makeStyles({
     height: '100%',
     display: 'grid',
     gridTemplateColumns: '1fr 3fr',
-    columnGap: 'var(--space-3)',
+    columnGap: tokens.spacingHorizontalM,
   },
   title: {
     display: 'inline-block',
@@ -35,10 +35,10 @@ const useHeaderSampleStyles = makeStyles({
     columnGap: '0.5rem',
   },
   button: {
-    ...shorthands.border('1px', 'solid', 'var(--color-brand-action)'),
-    ...shorthands.borderRadius('var(--space-6)'),
-    height: 'var(--space-12)',
-    color: 'var(--color-brand-action)',
+    ...shorthands.border('1px', 'solid', tokens.colorBrandForeground2),
+    ...shorthands.borderRadius(tokens.spacingHorizontalXXL),
+    height: '48px',
+    color: tokens.colorBrandForeground2,
     display: 'inline-grid',
     alignItems: 'center',
     justifyItems: 'center',

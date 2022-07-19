@@ -16,6 +16,7 @@ const colorMap: Record<ColorVariant, string> = {
   warning: tokens.colorPaletteMarigoldForeground1,
   danger: tokens.colorPaletteDarkOrangeForeground1,
   info: tokens.colorBrandForeground2,
+  background: tokens.colorNeutralBackground1,
 };
 const colorStyleFunction = (color: string) => ({
   color,

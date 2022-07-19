@@ -38,6 +38,10 @@ export const useCSSVars: UseCSSVars = ({ theme, prefix }) => {
       document?.documentElement?.style?.setProperty(k, v),
     );
     
-    // @todo: Add a cleanup function to remove the CSS variables from the document.
+    return () => {
+      cssVarTuples.forEach(([k, v]: [k: string, v: string]) =>
+      document?.documentElement?.style?.removeProperty(k),
+    );
+    };
   }, [theme, prefix]);
 }

@@ -38,23 +38,23 @@ export const useTileStyles = makeStyles({
     transitionTimingFunction: tokens.curveEasyEase,
     ':focus': {
       ...shorthands.outline('none'),
-      boxShadow: 'var(--arbutus-shadow-focus)',
+      boxShadow: 'var(--arbutus--shadow-focus)',
     },
   },
   card: {
     backgroundColor: tokens.colorNeutralBackground1,
     ...shorthands.borderRadius('0.5rem'),
-    boxShadow: 'var(--arbutus-shadow-card)',
+    boxShadow: 'var(--arbutus--shadow-card)',
   },
   image: {
-    backgroundColor: 'var(--color-tile)',
+    backgroundColor: 'var(--arbutus--color-tile)',
     ...shorthands.borderRadius(tokens.borderRadiusXLarge),
     backgroundSize: 'cover',
     backgroundPositionX: 'center',
     backgroundPositionY: 'center',
   },
   solidColor: {
-    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
+    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
   },
   ...colorClasses,
 });

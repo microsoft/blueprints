@@ -3,7 +3,7 @@ export const BlockStyles = {
     display: 'block',
     overflowX: 'auto',
     padding: '0.5em',
-    background: 'var(--color-tile)',
+    background: 'var(--arbutus--color-tile)',
     color: '#444',
   },
   'hljs-subst': {

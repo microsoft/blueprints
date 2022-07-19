@@ -19,13 +19,13 @@ const Link: FC<{ onClick: () => void }> = ({ children, onClick }) => (
 
 const useNavigationStyles = makeStyles({
   root: {
-    paddingLeft: 'var(--space-7)',
-    paddingRight: 'var(--space-7)',
+    paddingLeft: tokens.spacingHorizontalXXXL,
+    paddingRight: tokens.spacingHorizontalXXXL,
     width: '100%',
     display: 'grid',
     gridTemplateColumns: '17.5rem auto',
     minHeight: '40rem',
-    columnGap: 'var(--space-7)',
+    columnGap: tokens.spacingHorizontalXXXL,
   },
 });
 

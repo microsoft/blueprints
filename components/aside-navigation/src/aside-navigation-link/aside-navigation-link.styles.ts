@@ -1,27 +1,28 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useAsideNavigationLinkStyles = makeStyles({
   root: {
-    ...shorthands.padding(0, 'var(--space-2)'),
+    ...shorthands.padding(0, tokens.spacingHorizontalS),
     textAlign: 'left',
-    height: 'var(--font-line-height-medium)',
+    height: tokens.lineHeightBase600,
     transitionProperty: 'all',
-    transitionDuration: 'var(--transition-duration)',
-    transitionTimingFunction: 'var(--transition-timing-function)',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
     backgroundColor: 'transparent',
     ...shorthands.borderRadius('0.5rem'),
     ':hover': {
-      backgroundColor: 'var(--color-brand-secondary)',
+      backgroundColor: tokens.colorBrandBackground2,
       '& > *': {
-        color: 'var(--color-brand-action)',
+        color: tokens.colorBrandForeground2,
       },
       ':focus': {
         ...shorthands.outline('none'),
-        boxShadow: 'var(--shadow-focus)',
+        boxShadow: 'var(--arbutus--shadow-focus)',
       },
     },
   },
   active: {
-    fontWeight: 'var(--font-weight-medium)',
+    fontWeight: tokens.fontWeightSemibold,
   },
 });

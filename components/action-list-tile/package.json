@@ -25,6 +25,7 @@
     "@arbutus/component.text": "^0.0.0",
     "@arbutus/component.tile": "^0.0.0",
     "@arbutus/style.use-space-styles": "^0.0.1",
+    "@fluentui/react-theme": "^9.0.0",
     "@griffel/react": "^1.1.0",
     "@reach/visually-hidden": "^0.17.0"
   },

@@ -1,6 +1,5 @@
 import { paths } from '@arbutus/component.icon';
 import { Text } from '@arbutus/component.text';
-import { themeLight } from '@arbutus/style.theming';
 import { makeStyles } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
@@ -17,10 +16,6 @@ export default {
       options: Object.keys(paths),
       control: { type: 'select' },
     },
-    iconColor: {
-      options: Object.keys(themeLight.color),
-      control: { type: 'select' },
-    },
   },
 } as ComponentMeta<typeof MarkList>;
 
@@ -32,7 +27,7 @@ const useTileGridStyles = makeStyles({
     columnGap: '2.5rem',
     rowGap: '2.5rem',
 
-    '@media screen and (max-width: var(--breakpoint-xxs))': {
+    '@media screen and (max-width: var(--arbutus--breakpoint-xxs))': {
       gridTemplateColumns: '100%',
     },
   },
@@ -41,7 +36,7 @@ const useTileGridStyles = makeStyles({
 const Template: ComponentStory<typeof MarkList> = (args) => (
   <MarkList {...args}>
     <MarkListItem>
-      <Text as="b" variant="caption">
+      <Text as="span" variant="caption">
         Natural on every platform.{' '}
       </Text>
       <Text as="span" color="secondary">
@@ -52,7 +47,7 @@ const Template: ComponentStory<typeof MarkList> = (args) => (
       </Text>
     </MarkListItem>
     <MarkListItem>
-      <Text as="b" variant="caption">
+      <Text as="span" variant="caption">
         One for all, all for one. You want to be included.{' '}
       </Text>
       <Text as="span" color="secondary">
@@ -61,7 +56,7 @@ const Template: ComponentStory<typeof MarkList> = (args) => (
       </Text>
     </MarkListItem>
     <MarkListItem>
-      <Text as="b" variant="caption">
+      <Text as="span" variant="caption">
         Built for focus. You want to stay in the flow.{' '}
       </Text>
 
@@ -71,7 +66,7 @@ const Template: ComponentStory<typeof MarkList> = (args) => (
       </Text>
     </MarkListItem>
     <MarkListItem>
-      <Text as="b" variant="caption">
+      <Text as="span" variant="caption">
         Unmistakably Microsoft.{' '}
       </Text>
 

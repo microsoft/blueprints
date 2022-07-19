@@ -1,10 +1,11 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useDataTableStyles = makeStyles({
   root: {
     borderTopWidth: '1px',
     borderTopStyle: 'solid',
-    borderTopColor: 'var(--color-border)',
+    borderTopColor: tokens.colorNeutralStroke1,
     paddingTop: '0',
     paddingRight: '0',
     paddingBottom: '0',
@@ -23,16 +24,16 @@ export const useDataTableStyles = makeStyles({
   cell: {
     borderBottomWidth: '1px',
     borderBottomStyle: 'solid',
-    borderBottomColor: 'var(--color-border)',
+    borderBottomColor: tokens.colorNeutralStroke1,
     paddingTop: '0.6rem',
     paddingRight: '1.2rem',
     paddingBottom: '0.6rem',
     paddingLeft: '1.2rem',
-    fontSize: 'var(--font-size-micro)',
-    color: 'var(--color-text)',
+    fontSize: tokens.fontSizeBase200,
+    color: tokens.colorNeutralForeground1,
 
     '& p': {
-      fontSize: 'var(--font-size-micro)',
+      fontSize: tokens.fontSizeBase200,
       marginTop: '0',
       marginRight: '0',
       marginBottom: '1.2rem',
@@ -59,7 +60,7 @@ export const useDataTableStyles = makeStyles({
 
       '& li': {
         width: '100%',
-        fontSize: 'var(--font-size-micro)',
+        fontSize: tokens.fontSizeBase200,
         marginTop: '0',
         marginRight: '0',
         marginBottom: '1rem',
@@ -82,16 +83,16 @@ export const useDataTableStyles = makeStyles({
     },
 
     '& a': {
-      color: 'var(--color-primary)',
+      color: tokens.colorNeutralForeground1,
       textDecorationLine: 'underline',
 
       '&:hover': {
-        color: 'var(--color-secondary)',
+        color: tokens.colorNeutralForeground2,
       },
     },
 
     '& pre, & code': {
-      backgroundColor: 'var(--color-tile)',
+      backgroundColor: 'var(--arbutus--color-tile)',
       paddingTop: '0',
       paddingRight: '0',
       paddingBottom: '0',
@@ -100,10 +101,10 @@ export const useDataTableStyles = makeStyles({
       borderTopRightRadius: '0.375rem',
       borderBottomRightRadius: '0.375rem',
       borderBottomLeftRadius: '0.375rem',
-      fontSize: 'var(--font-size-micro)',
+      fontSize: tokens.fontSizeBase200,
 
       '& span, & li, & p': {
-        fontSize: 'var(--font-size-micro)',
+        fontSize: tokens.fontSizeBase200,
       },
 
       '& code': {
@@ -115,7 +116,7 @@ export const useDataTableStyles = makeStyles({
         paddingRight: '0',
         paddingBottom: '0',
         paddingLeft: '0',
-        fontSize: 'var(--font-size-micro)',
+        fontSize: tokens.fontSizeBase200,
       },
     },
   },

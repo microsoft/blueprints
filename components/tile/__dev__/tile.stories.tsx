@@ -1,5 +1,4 @@
 import { Text } from '@arbutus/component.text';
-import { themeLight } from '@arbutus/style.theming';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
@@ -16,14 +15,14 @@ import logo from './logo.svg';
 export default {
   title: 'Atoms/Tile',
   component: Tile,
-  argTypes: {
-    backgroundColor: {
-      control: {
-        type: 'select',
-        options: Object.keys(themeLight.color),
-      },
-    },
-  },
+  // argTypes: {
+  //   backgroundColor: {
+  //     control: {
+  //       type: 'select',
+  //       options: Object.keys(themeLight.color),
+  //     },
+  //   },
+  // },
 } as ComponentMeta<typeof Tile>;
 
 const useGridStyles = makeStyles({
@@ -61,7 +60,7 @@ const useGridStyles = makeStyles({
     gridTemplateColumns: 'auto min-content',
   },
   imageButton: {
-    backgroundColor: 'var(--color-background)',
+    backgroundColor: tokens.colorNeutralBackground1,
     height: '2rem',
     ...shorthands.borderRadius('2rem'),
     alignItems: 'center',

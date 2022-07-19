@@ -2,6 +2,6 @@ import { makeStyles } from '@griffel/react';
 
 export const useFooterStyles = makeStyles({
   root: {
-    backgroundColor: 'var(--color-tile)',
+    backgroundColor: 'var(--arbutus--color-tile)',
   },
 });

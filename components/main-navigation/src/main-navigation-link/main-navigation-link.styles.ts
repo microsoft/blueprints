@@ -1,20 +1,21 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useMainNavigationLinkStyles = makeStyles({
   root: {
-    ...shorthands.padding(0, 'var(--space-3)', 0, 'var(--space-8)'),
-    color: 'var(--color-text)',
-    fontWeight: 'var(--font-weight-regular)',
-    fontSize: 'var(--font-size-small)',
-    lineHeight: 'var(--font-line-height-small)',
+    ...shorthands.padding(0, tokens.spacingHorizontalM, 0, tokens.spacingHorizontalXXXL),
+    color: tokens.colorNeutralForeground1,
+    fontWeight: tokens.fontWeightRegular,
+    fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.lineHeightBase300,
     display: 'grid',
     textAlign: 'left',
     alignItems: 'center',
     width: '100%',
-    height: 'var(--space-8)',
+    height: tokens.spacingHorizontalXXXL,
     transitionProperty: 'all',
-    transitionDuration: 'var(--transition-duration)',
-    transitionTimingFunction: 'var(--transition-timing-function)',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
     backgroundColor: 'transparent',
     ...shorthands.borderRadius('0.5rem'),
     '& button': {
@@ -22,23 +23,23 @@ export const useMainNavigationLinkStyles = makeStyles({
     },
     '& a': {
       textDecorationLine: 'none',
-      color: 'var(--color-text)',
+      color: tokens.colorNeutralForeground1,
     },
     ':hover': {
-      backgroundColor: 'var(--color-brand-secondary)',
+      backgroundColor: tokens.colorBrandBackground2,
       '& a': {
-        color: 'var(--color-brand-action)',
+        color: tokens.colorBrandForeground2,
       },
       ':focus': {
         ...shorthands.outline('none'),
-        boxShadow: 'var(--shadow-focus)',
+        boxShadow: 'var(--arbutus--shadow-focus)',
       },
     },
   },
   active: {
-    backgroundColor: 'var(--color-brand-secondary)',
+    backgroundColor: tokens.colorBrandBackground2,
     '& a': {
-      color: 'var(--color-brand-action)',
+      color: tokens.colorBrandForeground2,
     },
   },
 });

@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useAsideNavigationStyles = makeStyles({
@@ -5,20 +6,20 @@ export const useAsideNavigationStyles = makeStyles({
     display: 'grid',
     position: 'relative',
     gridTemplateColumns: '1fr',
-    rowGap: 'var(--space-3)',
-    paddingLeft: 'var(--space-2)',
-    ...shorthands.borderLeft('0.0625rem', 'solid', 'var(--color-border)'),
+    rowGap: tokens.spacingVerticalM,
+    paddingLeft: tokens.spacingHorizontalS,
+    ...shorthands.borderLeft('0.0625rem', 'solid', tokens.colorNeutralStroke1),
   },
   title: {
-    ...shorthands.borderLeft('0.0625rem', 'solid', 'var(--color-border)'),
+    ...shorthands.borderLeft('0.0625rem', 'solid', tokens.colorNeutralStroke1),
   },
   highlight: {
     transitionProperty: 'all',
-    transitionDuration: 'var(--transition-duration)',
-    transitionTimingFunction: 'var(--transition-timing-function)',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
     position: 'absolute',
     width: '0.125rem',
     left: '-0.0625rem',
-    backgroundColor: 'var(--color-brand-accent)',
+    backgroundColor: tokens.colorBrandForeground1,
   },
 });

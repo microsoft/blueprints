@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useConcertinaListStyles = makeStyles({
@@ -11,9 +12,8 @@ export const useConcertinaListStyles = makeStyles({
     marginTop: '1rem',
 
     '& p': {
-      fontSize: 'var(--font-size-micro)',
-      fontWeight: 'var(--font-weight-regular)',
-      letterSpacing: '-0.01rem',
+      fontSize: tokens.fontSizeBase200,
+      fontWeight: tokens.fontWeightRegular,
     },
   },
 });

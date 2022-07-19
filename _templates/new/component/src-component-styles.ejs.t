@@ -5,6 +5,7 @@ import { makeStyles } from '@griffel/react';
 
 export const use<%= h.changeCase.pascalCase(name) %>Styles = makeStyles({
   root: {
-    color: 'var(--color-primary)',
+    color: 'var(--arbutus--color-text-primary)',
   },
 });
+ 

@@ -2,7 +2,6 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
-import { statusMap } from '../src/callout/callout.styles';
 import type { CalloutProps } from '../src/index';
 import { Callout } from '../src/index';
 
@@ -10,12 +9,12 @@ import { Callout } from '../src/index';
 export default {
   title: 'Content/Callout',
   component: Callout,
-  argTypes: {
-    status: {
-      options: Object.keys(statusMap),
-      control: { type: 'select' },
-    },
-  },
+  // argTypes: {
+  //   status: {
+  //     options: Object.keys(statusMap),
+  //     control: { type: 'select' },
+  //   },
+  // },
 } as ComponentMeta<typeof Callout>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

@@ -3,13 +3,13 @@ import { makeStyles } from '@griffel/react';
 export const useActionTileStyles = makeStyles({
   root: {
     display: 'grid',
-    columnGap: 'var(--space-4)',
+    columnGap: tokens.spacingHorizontalL,
     minHeight: '60px',
     alignContent: 'center',
     alignItems: 'center',
     textAlign: 'left',
-    paddingLeft: 'var(--space-6)',
-    paddingRight: 'var(--space-6)',
+    paddingLeft: tokens.spacingHorizontalXXL,
+    paddingRight: tokens.spacingHorizontalXXL,
   },
   withImage: {
     gridTemplateColumns: '1.75rem auto 1rem',

@@ -11,12 +11,12 @@ export const useIconButtonStyles = makeStyles({
     transitionTimingFunction: tokens.curveEasyEase,
     lineHeight: tokens.spacingVerticalL,
     ':hover': {
-      backgroundColor: 'var(--arbutus-color-tile)',
+      backgroundColor: 'var(--arbutus--color-tile)',
     },
     ':focus': {
-      backgroundColor: 'var(--arbutus-color-tile)',
+      backgroundColor: 'var(--arbutus--color-tile)',
       ...shorthands.outline('none'),
-      boxShadow: 'var(--arbutus-shadow-focus)',
+      boxShadow: 'var(--arbutus--shadow-focus)',
     },
   },
 });

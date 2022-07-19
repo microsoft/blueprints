@@ -20,7 +20,7 @@ export const Callout: FC<CalloutProps> = ({ status = 'info', title, children }) 
         <Text as="h3" variant="caption" className={space.mb1}>
           {title}
         </Text>
-        <Text as="div" variant="description">
+        <Text as="p" variant="description">
           {children}
         </Text>
       </div>

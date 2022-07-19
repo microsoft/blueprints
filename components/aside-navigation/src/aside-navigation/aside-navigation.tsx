@@ -1,5 +1,6 @@
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { tokens } from '@fluentui/react-theme';
 import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
@@ -21,8 +22,8 @@ export const AsideNavigation: FC<AsideNavigationProps> = ({
   const space = useSpaceStyles();
   const count = Children.count(children);
   const highlightStyle = {
-    height: `calc(${100 / count}% - var(--space-2))`,
-    top: `calc((100% + var(--space-3)) / ${count} *  ${currentIndex})`,
+    height: `calc(${100 / count}% - ${tokens.spacingVerticalM})`,
+    top: `calc((100% + ${tokens.spacingVerticalM}) / ${count} *  ${currentIndex})`,
   };
 
   return (

@@ -15,7 +15,7 @@ const useMainStyles = makeStyles({
     maxWidth: '61.25rem',
     marginLeft: 'auto',
     marginRight: 'auto',
-    paddingBottom: 'var(--space-12)',
+    paddingBottom: '48px',
   },
   split: {
     display: 'grid',
@@ -28,7 +28,7 @@ const useMainStyles = makeStyles({
     columnGap: '1rem',
   },
   image: {
-    ...shorthands.borderRadius('var(--arbutus-shape-border-radius)'),
+    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
     width: '100%',
   },
 });
