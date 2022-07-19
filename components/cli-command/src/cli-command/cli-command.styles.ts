@@ -12,7 +12,7 @@ export const useCLICommandStyles = makeStyles({
     borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
     borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
     borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
-    backgroundColor: 'var(--arbutus--color-tile)',
+    backgroundColor: tokens.colorNeutralBackground6,
     display: 'block',
     position: 'relative',
   },

@@ -8,6 +8,6 @@ export const useMarkListItemStyles = makeStyles({
     columnGap: tokens.spacingHorizontalM,
   },
   mark: {
-    color: 'var(--arbutus--color-text-quaternary)',
+    color: tokens.colorNeutralForeground4,
   },
 });

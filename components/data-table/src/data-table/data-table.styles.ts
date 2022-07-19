@@ -92,7 +92,7 @@ export const useDataTableStyles = makeStyles({
     },
 
     '& pre, & code': {
-      backgroundColor: 'var(--arbutus--color-tile)',
+      backgroundColor: tokens.colorNeutralBackground6,
       paddingTop: '0',
       paddingRight: '0',
       paddingBottom: '0',

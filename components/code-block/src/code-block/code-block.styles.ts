@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useCodeBlockStyles = makeStyles({
@@ -11,7 +12,7 @@ export const useCodeBlockStyles = makeStyles({
     borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
     borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
     borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
-    backgroundColor: 'var(--arbutus--color-tile)',
+    backgroundColor: tokens.colorNeutralBackground6,
     display: 'block',
     position: 'relative',
 

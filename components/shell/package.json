@@ -31,13 +31,13 @@
     "use-breakpoint": "^3.0.3"
   },
   "devDependencies": {
-    "@arbutus/component.link": "^0.0.0",
-    "@arbutus/component.text": "^0.0.0",
-    "@arbutus/component.tabs": "^0.0.0",
-    "@arbutus/component.tile": "^0.0.0",
-    "@arbutus/component.recommendation-tile": "^0.0.0",
     "@arbutus/component.bookmark-tile": "^0.0.0",
+    "@arbutus/component.link": "^0.0.0",
     "@arbutus/component.mark-list": "^0.0.0",
+    "@arbutus/component.recommendation-tile": "^0.0.0",
+    "@arbutus/component.tabs": "^0.0.0",
+    "@arbutus/component.text": "^0.0.0",
+    "@arbutus/component.tile": "^0.0.0",
     "@m365-admin/config.ts": "^0.1.2",
     "typescript": "^4.7.3"
   }

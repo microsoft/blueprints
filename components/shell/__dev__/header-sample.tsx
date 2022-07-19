@@ -4,6 +4,7 @@ import { Text } from '@arbutus/component.text';
 import { useTrayContext } from '@arbutus/component.tray';
 import { layout, spaceScale } from '@arbutus/style.theming';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 import type { FC, SyntheticEvent } from 'react';
 import * as React from 'react';

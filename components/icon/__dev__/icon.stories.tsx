@@ -1,5 +1,6 @@
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
@@ -16,7 +17,7 @@ export default {
 
 const useGridStyles = makeStyles({
   root: {
-    backgroundColor: 'var(--arbutus--color-tile)',
+    backgroundColor: tokens.colorNeutralBackground6,
     maxWidth: '48rem',
     display: 'grid',
     gridTemplateColumns: '1fr',
@@ -56,7 +57,7 @@ const Template: ComponentStory<typeof Icon> = (args) => {
             {/* @ts-ignore TS is not recognizing iconName being keyof typeof paths*/}
             <Icon {...args} iconName={iconName} />
           </div>
-          <Text className={classes.label} as="code">
+          <Text className={classes.label} as="span">
             {iconName}
           </Text>
         </div>
@@ -70,5 +71,5 @@ export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<Icon
 Simple.args = {
   iconName: 'exclamation',
   size: 'medium',
-  color: 'text',
+  color: 'primary',
 };

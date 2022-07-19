@@ -1,4 +1,3 @@
-import { arbutusTokens } from '@arbutus/style.theming';
 import { mapToStyles } from '@arbutus/style.utilities';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
@@ -6,14 +5,17 @@ import { makeStyles, shorthands } from '@griffel/react';
 import type { ColorVariant } from './tile.types';
 
 const colorMap: Record<ColorVariant, string> = {
-  ...arbutusTokens.color.background,
-  tile: arbutusTokens.color.tile,
-  negative: arbutusTokens.color.negative.background,
-  positive: arbutusTokens.color.positive.background,
-  warning: arbutusTokens.color.warning.background,
-  danger: arbutusTokens.color.danger.background,
-  info: arbutusTokens.color.info.background,
-  accent: arbutusTokens.color.brand.background,
+  primary: tokens.colorNeutralBackground1,
+  secondary: tokens.colorNeutralBackground2,
+  tertiary: tokens.colorNeutralBackground3,
+  quaternary: tokens.colorNeutralBackground4,
+  tile: tokens.colorNeutralBackground6,
+  negative: tokens.colorPaletteDarkOrangeBackground1,
+  positive: tokens.colorPaletteGreenBackground1,
+  warning: tokens.colorPaletteMarigoldBackground1,
+  danger: tokens.colorPaletteDarkOrangeBackground1,
+  info: tokens.colorNeutralBackground2,
+  accent: tokens.colorBrandBackground2,
 };
 
 const colorStyleFunction = (color: string) => ({
@@ -37,17 +39,16 @@ export const useTileStyles = makeStyles({
     transitionDuration: tokens.durationNormal,
     transitionTimingFunction: tokens.curveEasyEase,
     ':focus': {
-      ...shorthands.outline('none'),
-      boxShadow: 'var(--arbutus--shadow-focus)',
+      outlineColor: tokens.colorBrandForeground2,
     },
   },
   card: {
     backgroundColor: tokens.colorNeutralBackground1,
     ...shorthands.borderRadius('0.5rem'),
-    boxShadow: 'var(--arbutus--shadow-card)',
+    boxShadow: tokens.shadow8,
   },
   image: {
-    backgroundColor: 'var(--arbutus--color-tile)',
+    backgroundColor: tokens.colorNeutralBackground6,
     ...shorthands.borderRadius(tokens.borderRadiusXLarge),
     backgroundSize: 'cover',
     backgroundPositionX: 'center',

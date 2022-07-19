@@ -17,8 +17,7 @@ export const useAsideNavigationLinkStyles = makeStyles({
         color: tokens.colorBrandForeground2,
       },
       ':focus': {
-        ...shorthands.outline('none'),
-        boxShadow: 'var(--arbutus--shadow-focus)',
+        outlineColor: tokens.colorBrandForeground2,
       },
     },
   },

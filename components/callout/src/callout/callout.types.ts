@@ -5,8 +5,6 @@ export type CalloutIconProps = {
 };
 
 export type ColorValue = {
-  text: string;
-  foreground: string;
   background: string;
   stroke: string;
 };

@@ -14,6 +14,11 @@ import { useFrameClasses, useStoryStyles } from './frame.styles';
 
 type FrameProps = { theme: 'light' | 'dark' };
 export const Frame: FC<FrameProps> = ({ children, theme }) => {
+  useSegoeUI100();
+  useSegoeUI200();
+  useSegoeUI400();
+  useSegoeUI600();
+  useSegoeUI700();
   useGlobalStyles();
   const classes = useFrameClasses();
   return (

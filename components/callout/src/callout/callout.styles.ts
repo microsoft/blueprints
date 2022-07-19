@@ -1,4 +1,3 @@
-import { arbutusTokens } from '@arbutus/style.theming';
 import { mapToStyles } from '@arbutus/style.utilities';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
@@ -6,11 +5,26 @@ import { makeStyles, shorthands } from '@griffel/react';
 import type { ColorMap, ColorValue } from './callout.types';
 
 const colorMap: ColorMap = {
-  error: arbutusTokens.color.danger,
-  warning: arbutusTokens.color.warning,
-  success: arbutusTokens.color.success,
-  info: arbutusTokens.color.info,
-  accent: arbutusTokens.color.brand,
+  error: {
+    background: tokens.colorPaletteDarkOrangeBackground1,
+    stroke: tokens.colorPaletteDarkOrangeBorder1,
+  },
+  warning: {
+    background: tokens.colorPaletteMarigoldBackground1,
+    stroke: tokens.colorPaletteMarigoldBorder1,
+  },
+  success: {
+    background: tokens.colorPaletteGreenBackground1,
+    stroke: tokens.colorPaletteGreenBorder1,
+  },
+  info: {
+    background: tokens.colorNeutralBackground2,
+    stroke: tokens.colorNeutralStroke2,
+  },
+  accent: {
+    background: tokens.colorBrandBackground2,
+    stroke: tokens.colorBrandStroke2,
+  },
 };
 
 const colorStyleFunction = ({ background, stroke }: ColorValue) => ({
