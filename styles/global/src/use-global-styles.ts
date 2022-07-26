@@ -1,5 +1,5 @@
-import { makeStaticStyles } from '@griffel/react';
 import { tokens } from '@fluentui/react-theme';
+import { makeStaticStyles } from '@griffel/react';
 
 export const useGlobalStyles = makeStaticStyles({
   '*': {

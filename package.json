@@ -18,6 +18,8 @@
     "lint:eslint": "eslint . --fix",
     "lint:prettier": "prettier --write .",
     "lint:staged": "lint-staged",
+    "lint:root": "run-s lint:eslint lint:prettier",
+    "lint": "lage lint",
     "purge": "git clean -d -f -X -e .env -e .husky",
     "reset": "run-s purge i build:packages",
     "start:backend": "npm run develop -w=apps/docsite-cms develop",

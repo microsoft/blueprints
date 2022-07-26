@@ -1,1 +1,1 @@
-export { mapToStyles } from './map-to-styles'
+export { mapToStyles } from './map-to-styles';

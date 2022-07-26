@@ -13,8 +13,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint . --fix"
+    "build": "tsc"
   },
   "peerDependencies": {
     "react": ">=16.8.0 <=18.2.0",

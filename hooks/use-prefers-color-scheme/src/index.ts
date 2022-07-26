@@ -32,10 +32,10 @@ export const usePrefersColorScheme = () => {
 
   useEffect(() => {
     darkModeMediaQuery.addEventListener('change', darkModeHandler);
-    lightModeMediaQuery.addEventListener('change', darkModeHandler);
+    lightModeMediaQuery.addEventListener('change', lightModeHandler);
 
     return function cleanup() {
-      window.removeEventListener('change', lightModeHandler);
+      window.removeEventListener('change', darkModeHandler);
       window.removeEventListener('change', lightModeHandler);
     };
   }, []);

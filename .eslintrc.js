@@ -1,8 +1,8 @@
 const project = [
-  'apps/*/tsconfig.json',
   'components/*/tsconfig.json',
-  'sections/*/tsconfig.json',
+  'hooks/*/tsconfig.json',
   'layouts/*/tsconfig.json',
+  'sections/*/tsconfig.json',
   'styles/*/tsconfig.json',
 ];
 
