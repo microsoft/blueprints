@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { generateCSSVarTuples } from './generate-css-vars';
 import type { UseCSSVars } from './use-css-vars.types';
 
@@ -9,10 +10,10 @@ import type { UseCSSVars } from './use-css-vars.types';
  * @param arg.prefix A string to prefix all CSS variables with. This is an optional parameter, but it is recommended to
  * use it to avoid CSS variable collisions.
  * @example
- * 
+ *
  * ```tsx
  * import { useCSSVars } from '@arbutus/hook.use-css-vars';
- * 
+ *
  * const theme = {
  *   color: {
  *     button: {
@@ -21,27 +22,27 @@ import type { UseCSSVars } from './use-css-vars.types';
  *     }
  *   }
  * }
- * 
+ *
  * const MyAppShell = () => {
  *   // Injects CSS variables into the document.
  *   useCSSVars({ theme, prefix: 'MY_APP' });
- * 
+ *
  *   return (<div>...</div>);
  * }
  * ```
  */
 export const useCSSVars: UseCSSVars = ({ theme, prefix }) => {
-    useEffect(() => {
+  useEffect(() => {
     const cssVarTuples = generateCSSVarTuples(theme, prefix);
 
     cssVarTuples.forEach(([k, v]: [k: string, v: string]) =>
       document?.documentElement?.style?.setProperty(k, v),
     );
-    
+
     return () => {
-      cssVarTuples.forEach(([k, v]: [k: string, v: string]) =>
-      document?.documentElement?.style?.removeProperty(k),
-    );
+      cssVarTuples.forEach(([k]: [k: string, v: string]) =>
+        document?.documentElement?.style?.removeProperty(k),
+      );
     };
   }, [theme, prefix]);
-}
+};

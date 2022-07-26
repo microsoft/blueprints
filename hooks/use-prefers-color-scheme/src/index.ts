@@ -6,11 +6,11 @@ export type ColorScheme = 'light' | 'dark';
  * usePrefersColorScheme returns a value of `prefers-color-scheme` media query. Based on Media Queries Level 5: 11.5.
  * Detecting the desire for light or dark color schemes: the prefers-color-scheme feature.
  * @see https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
- * 
+ *
  * @example
  * ```tsx
  * import { usePrefersColorScheme } from '@arbutus/hook.use-prefers-color-scheme';
- * 
+ *
  * const MyComponent = () => {
  *   // "light" | "dark" | undefined
  *   const preferredTheme = usePrefersColorScheme();

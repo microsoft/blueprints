@@ -28,9 +28,7 @@ export const generateCSSVarTuples: GenerateCSSVarTuples = (theme, prefix) => {
     }
 
     if (isObject(v)) {
-      Object.entries(v).forEach(([k, v]) =>
-        traverseObject(v as Value, `${pre}-${k}`),
-      );
+      Object.entries(v).forEach(([k, v]) => traverseObject(v as Value, `${pre}-${k}`));
     }
 
     return;
