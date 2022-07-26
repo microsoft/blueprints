@@ -36,7 +36,7 @@ export const RecommendationTile: FC<RecommendationTileProps> = ({
           />
         </div>
       )}
-      <Text variant="caption" color={recommendation} className={space.mb1}>
+      <Text block variant="caption" color={recommendation} className={space.mb1}>
         {(!imageSrc || !imageAlt) && (
           <Badge
             iconName={recommendation === 'positive' ? 'check' : 'x'}
@@ -47,7 +47,9 @@ export const RecommendationTile: FC<RecommendationTileProps> = ({
         )}
         {title}
       </Text>
-      <Text variant="description">{description}</Text>
+      <Text block variant="description">
+        {description}
+      </Text>
     </div>
   );
 };

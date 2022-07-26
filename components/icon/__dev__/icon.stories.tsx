@@ -1,10 +1,12 @@
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { colorMap, sizeClasses } from '../src/icon/icon.styles';
 import type { IconProps } from '../src/index';
 import { Icon, paths } from '../src/index';
 
@@ -12,18 +14,38 @@ import { Icon, paths } from '../src/index';
 export default {
   title: 'Atoms/Icon',
   component: Icon,
+  argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: Object.keys(colorMap),
+      },
+    },
+    iconName: {
+      control: {
+        type: 'select',
+        options: Object.keys(paths),
+      },
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: Object.keys(sizeClasses),
+      },
+    },
+  },
 } as ComponentMeta<typeof Icon>;
 
 const useGridStyles = makeStyles({
   root: {
-    backgroundColor: 'var(--color-tile)',
+    backgroundColor: tokens.colorNeutralBackground6,
     maxWidth: '48rem',
     display: 'grid',
     gridTemplateColumns: '1fr',
     columnGap: '0.5rem',
     rowGap: '0.5rem',
     gridAutoRows: '1.5rem',
-    ...shorthands.borderRadius('var(--shape-corner-radius)'),
+    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
   },
   tile: {
     display: 'grid',
@@ -35,7 +57,7 @@ const useGridStyles = makeStyles({
     height: '100%',
     alignItems: 'center',
     justifyItems: 'center',
-    backgroundColor: 'var(--color-background)',
+    backgroundColor: tokens.colorNeutralBackground1,
     ...shorthands.borderRadius('0.25rem'),
   },
   label: {
@@ -56,7 +78,7 @@ const Template: ComponentStory<typeof Icon> = (args) => {
             {/* @ts-ignore TS is not recognizing iconName being keyof typeof paths*/}
             <Icon {...args} iconName={iconName} />
           </div>
-          <Text className={classes.label} as="code">
+          <Text className={classes.label} as="span">
             {iconName}
           </Text>
         </div>
@@ -70,5 +92,5 @@ export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<Icon
 Simple.args = {
   iconName: 'exclamation',
   size: 'medium',
-  color: 'text',
+  color: 'primary',
 };

@@ -1,9 +1,10 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
-export const useActionListTileStyles = makeStyles({
+export const useActionListHeaderStyles = makeStyles({
   image: {
-    height: 'var(--space-8)',
-    width: 'var(--space-8)',
+    height: tokens.spacingHorizontalXXXL,
+    width: tokens.spacingHorizontalXXXL,
     objectFit: 'cover',
   },
 });

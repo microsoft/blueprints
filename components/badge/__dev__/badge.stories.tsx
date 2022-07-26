@@ -1,9 +1,9 @@
 import { paths } from '@arbutus/component.icon';
-import { colorVars } from '@arbutus/style.theming';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { colorMap } from '../src/badge/badge.styles';
 import type { BadgeProps } from '../src/index';
 import { Badge } from '../src/index';
 
@@ -12,16 +12,10 @@ export default {
   title: 'Atoms/Badge',
   component: Badge,
   argTypes: {
-    backgroundColor: {
+    color: {
       control: {
         type: 'select',
-        options: Object.keys(colorVars),
-      },
-    },
-    iconColor: {
-      control: {
-        type: 'select',
-        options: Object.keys(colorVars),
+        options: Object.keys(colorMap),
       },
     },
     iconName: {
@@ -37,8 +31,7 @@ const Template: ComponentStory<typeof Badge> = (args) => <Badge {...args} />;
 
 export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<BadgeProps>>;
 Simple.args = {
-  backgroundColor: 'positive',
-  iconColor: 'background',
+  color: 'positive',
   iconName: 'check',
 };
 
@@ -52,8 +45,7 @@ export const Inline = InlineTemplate.bind({}) as ComponentStory<
   FunctionComponent<BadgeProps>
 >;
 Inline.args = {
-  backgroundColor: 'positive',
-  iconColor: 'background',
+  color: 'positive',
   iconName: 'exclamation',
   isInline: true,
 };

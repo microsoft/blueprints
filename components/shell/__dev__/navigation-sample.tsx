@@ -8,6 +8,7 @@ import {
 import { Text } from '@arbutus/component.text';
 import { useTrayContext } from '@arbutus/component.tray';
 import { layout } from '@arbutus/style.theming';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
@@ -71,9 +72,9 @@ const useNavStyles = makeStyles({
   },
   header: {
     display: 'grid',
-    gridTemplateColumns: 'var(--space-8) auto',
-    columnGap: 'var(--space-3)',
-    marginBottom: 'var(--space-5)',
+    gridTemplateColumns: `${tokens.spacingHorizontalXXXL} auto`,
+    columnGap: tokens.spacingHorizontalM,
+    marginBottom: tokens.spacingVerticalXL,
   },
   stickyHeader: {
     position: 'sticky',

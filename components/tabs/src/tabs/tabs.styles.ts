@@ -1,8 +1,9 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useTabsStyles = makeStyles({
   root: {
-    color: 'var(--color-primary)',
+    color: tokens.colorNeutralForeground1,
     ':global(:root)': { '--reach-tabs': 1 },
 
     '& [data-reach-tabs][data-orientation="vertical"]': {
@@ -11,10 +12,10 @@ export const useTabsStyles = makeStyles({
 
     '& [data-reach-tab-list]': {
       display: 'flex',
-      backgroundColor: 'var(--color-background)',
+      backgroundColor: tokens.colorNeutralBackground1,
       borderBottomWidth: '0.0625rem',
       borderBottomStyle: 'solid',
-      borderBottomColor: 'var(--color-border)',
+      borderBottomColor: tokens.colorNeutralStroke1,
     },
 
     '& [data-reach-tab-list][aria-orientation="vertical"]': {
@@ -23,22 +24,27 @@ export const useTabsStyles = makeStyles({
 
     '& [data-reach-tab]': {
       ...shorthands.margin('0'),
-      paddingTop: 'var(--space-2)',
-      paddingBottom: 'var(--space-2)',
-      paddingLeft: 'var(--space-4)',
-      paddingRight: 'var(--space-4)',
+      paddingTop: tokens.spacingHorizontalS,
+      paddingBottom: tokens.spacingHorizontalS,
+      paddingLeft: tokens.spacingHorizontalL,
+      paddingRight: tokens.spacingHorizontalL,
       display: 'inline-block',
-      ...shorthands.border('none'),
+      ...shorthands.borderColor('transparent'),
+      ...shorthands.borderWidth(0),
+      ...shorthands.borderStyle('none'),
       ...shorthands.borderRadius('0.25rem 0.25rem 0 0'),
-      boxShadow: '0 0 0 var(--color-brand-accent)',
-      backgroundColor: 'none',
+      boxShadow: `0 0 0 -2px transparent`,
+      backgroundColor: 'transparent',
       color: 'inherit',
       cursor: 'pointer',
       WebkitAppearance: 'none',
       MozAppearance: 'none',
-      fontWeight: 'var(--font-weight-regular)',
-      fontSize: 'var(--font-size-small)',
-      lineHeight: 'var(--font-line-height-small)',
+      fontWeight: tokens.fontWeightRegular,
+      fontSize: tokens.fontSizeBase300,
+      lineHeight: tokens.lineHeightBase300,
+      transitionProperty: 'box-shadow',
+      transitionDuration: tokens.durationNormal,
+      transitionTimingFunction: tokens.curveEasyEase,
       '&:focus': {
         outlineColor: 'initial',
         outlineStyle: 'none',
@@ -47,7 +53,7 @@ export const useTabsStyles = makeStyles({
     },
 
     '& [data-reach-tab]:active': {
-      backgroundColor: 'var(--color-background)',
+      backgroundColor: tokens.colorNeutralBackground1,
     },
 
     '& [data-reach-tab]:disabled': {
@@ -56,8 +62,8 @@ export const useTabsStyles = makeStyles({
     },
 
     '& [data-reach-tab][data-selected]': {
-      fontWeight: 'var(--font-weight-medium)',
-      boxShadow: '0 0.125rem 0 0 var(--color-brand-accent)',
+      fontWeight: tokens.fontWeightSemibold,
+      boxShadow: `0 0.125rem 0 0 ${tokens.colorBrandForeground1}`,
     },
   },
 });

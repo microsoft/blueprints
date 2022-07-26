@@ -12,7 +12,7 @@ export const ActionListTile: FC<ActionListTileProps> = ({ className, children })
 
   return (
     <Tile variant="card">
-      <div className={mergeClasses(space.p6, className)}>{children}</div>
+      <div className={mergeClasses(space.p9, className)}>{children}</div>
     </Tile>
   );
 };

@@ -21,8 +21,10 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@griffel/react": "^1.1.0",
-    "@arbutus/style.theming": "^0.0.1"
+    "@arbutus/style.theming": "^0.0.1",
+    "@arbutus/style.utilities": "^0.0.1",
+    "@fluentui/react-theme": "^9.0.0",
+    "@griffel/react": "^1.1.0"
   },
   "devDependencies": {
     "@arbutus/component.text": "^0.0.0",

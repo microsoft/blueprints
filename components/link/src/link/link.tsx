@@ -2,9 +2,11 @@ import { Icon } from '@arbutus/component.icon';
 import type { TextProps } from '@arbutus/component.text';
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
 
+import { useLinkStyles } from './link.styles';
 import type { LinkProps } from './link.types';
 
 const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
@@ -12,7 +14,7 @@ const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
     case 'caption': {
       return {
         variant: 'caption',
-        color: 'text',
+        color: 'primary',
       };
     }
     case 'inverse': {
@@ -29,7 +31,7 @@ const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
     case 'primary':
     default: {
       return {
-        color: 'brand-action',
+        color: 'action',
       };
     }
   }
@@ -42,12 +44,22 @@ export const Link: FC<LinkProps> = ({
   elementProps,
   variant,
   withIcon,
+  isUnderlined,
 }) => {
   const space = useSpaceStyles();
+  const classes = useLinkStyles();
 
   return (
     <Link {...elementProps}>
-      <Text as="span" className={className} {...getTextProps({ variant })}>
+      <Text
+        as="span"
+        className={mergeClasses(
+          classes.root,
+          isUnderlined && classes.isUnderlined,
+          className,
+        )}
+        {...getTextProps({ variant })}
+      >
         {children}
       </Text>
       {withIcon && (

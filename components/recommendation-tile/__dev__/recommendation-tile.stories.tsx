@@ -30,7 +30,7 @@ const useTileGridStyles = makeStyles({
     columnGap: '2.5rem',
     rowGap: '2.5rem',
 
-    '@media screen and (max-width: var(--breakpoint-xxs))': {
+    '@media screen and (max-width: var(--arbutus--breakpoint-xxs))': {
       gridTemplateColumns: '100%',
     },
   },

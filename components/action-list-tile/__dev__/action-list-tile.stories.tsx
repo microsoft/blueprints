@@ -1,4 +1,5 @@
 import { Tile } from '@arbutus/component.tile';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
@@ -30,7 +31,7 @@ const useTileGridStyles = makeStyles({
     columnGap: '2.5rem',
     rowGap: '2.5rem',
 
-    '@media screen and (max-width: var(--breakpoint-xxs))': {
+    '@media screen and (max-width: var(--arbutus--breakpoint-xxs))': {
       gridTemplateColumns: '100%',
     },
   },

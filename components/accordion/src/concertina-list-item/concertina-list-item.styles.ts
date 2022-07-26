@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useConcertinaListItemStyles = makeStyles({
@@ -7,7 +8,7 @@ export const useConcertinaListItemStyles = makeStyles({
     width: '100%',
     borderBottomWidth: '0.0625rem',
     borderBottomStyle: 'solid',
-    borderBottomColor: 'var(--color-border)',
+    borderBottomColor: tokens.colorNeutralStroke1,
     paddingTop: '1.2rem',
     paddingBottom: '0',
     paddingLeft: '0',
@@ -40,10 +41,10 @@ export const useConcertinaListItemStyles = makeStyles({
     paddingLeft: '0',
     paddingRight: '1.2rem',
     textAlign: 'left',
-    fontWeight: 'var(--font-weight-medium)',
-    fontSize: 'var(--font-size-small)',
+    fontWeight: tokens.fontWeightSemibold,
+    fontSize: tokens.fontSizeBase300,
     letterSpacing: '-0.01rem',
-    color: 'var(--color-text)',
+    color: tokens.colorNeutralForeground1,
     whiteSpace: 'nowrap',
     overflowY: 'hidden',
     overflowX: 'hidden',
@@ -68,11 +69,11 @@ export const useConcertinaListItemStyles = makeStyles({
 
     '& svg': {
       transitionProperty: 'transform',
-      transitionDuration: 'var(--transition-duration)',
-      transitionTimingFunction: 'var(--transition-timing-function)',
+      transitionDuration: tokens.durationNormal,
+      transitionTimingFunction: tokens.curveEasyEase,
 
       '& path': {
-        fill: 'var(--color-tertiary)',
+        fill: tokens.colorNeutralForeground3,
       },
     },
   },

@@ -7,7 +7,9 @@ import React from 'react';
 import type { IllustrationTileProps } from '../src/index';
 import { IllustrationTile } from '../src/index';
 // @ts-ignore TS doesn't recognize the image format.
-import illustration from './fluent-accessibility-16-regular.svg';
+import illustrationInteractive from './interactive.svg';
+// @ts-ignore TS doesn't recognize the image format.
+import illustrationStatic from './static.svg';
 
 export default {
   title: 'Tiles/IllustrationTile',
@@ -25,7 +27,7 @@ const useTileGridStyles = makeStyles({
     columnGap: '2.5rem',
     rowGap: '2.5rem',
 
-    '@media screen and (max-width: var(--breakpoint-xxs))': {
+    '@media screen and (max-width: var(--arbutus--breakpoint-xxs))': {
       gridTemplateColumns: '100%',
     },
   },
@@ -49,7 +51,7 @@ export const Interactive = Template.bind({}) as ComponentStory<
 Interactive.args = {
   title: 'Accessibility',
   illustrationAlt: 'Icon representing accessibility',
-  illustrationSrc: illustration as string,
+  illustrationSrc: illustrationInteractive as string,
 };
 
 export const Static = Template.bind({}) as ComponentStory<
@@ -58,6 +60,6 @@ export const Static = Template.bind({}) as ComponentStory<
 Static.args = {
   title: 'Accessibility',
   illustrationAlt: 'Icon representing accessibility',
-  illustrationSrc: illustration as string,
+  illustrationSrc: illustrationStatic as string,
   onClick: undefined,
 };

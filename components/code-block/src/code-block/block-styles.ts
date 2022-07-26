@@ -1,9 +1,11 @@
+import { tokens } from '@fluentui/react-theme';
+
 export const BlockStyles = {
   hljs: {
     display: 'block',
     overflowX: 'auto',
     padding: '0.5em',
-    background: 'var(--color-tile)',
+    background: tokens.colorNeutralBackground6,
     color: '#444',
   },
   'hljs-subst': {

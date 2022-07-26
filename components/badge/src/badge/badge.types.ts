@@ -2,10 +2,7 @@ import type { paths } from '@arbutus/component.icon';
 
 export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info';
 
-export type ColorValue = {
-  backgroundColor: string;
-  color: string;
-};
+export type ColorValue = string;
 export type ColorMap = Record<ColorVariant, ColorValue>;
 
 export type BadgeProps = {

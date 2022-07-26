@@ -1,31 +1,50 @@
-import type { ColorScheme, ColorVar } from '@arbutus/style.theming';
-import { colorVars } from '@arbutus/style.theming';
+import { mapToStyles } from '@arbutus/style.utilities';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
-type ColorDeclaration = {
-  color: ColorVar;
-};
-type ColorClasses = Record<keyof ColorScheme, ColorDeclaration | never>;
-export const colorClasses: ColorClasses = Object.entries(colorVars).reduce(
-  (acc, [key, color]: [keyof ColorScheme, ColorVar]) => {
-    acc[key] = {
-      color,
-    };
+import type { ColorMap, ColorValue } from './icon.types';
 
-    return acc;
-  },
-  {} as ColorClasses,
+export const colorMap: ColorMap = {
+  accent: tokens.colorBrandForeground1,
+  primary: tokens.colorNeutralForeground1,
+  secondary: tokens.colorNeutralForeground2,
+  tertiary: tokens.colorNeutralForeground3,
+  quaternary: tokens.colorNeutralForeground4,
+  negative: tokens.colorPaletteDarkOrangeForeground1,
+  positive: tokens.colorPaletteGreenForeground1,
+  warning: tokens.colorPaletteMarigoldForeground1,
+  danger: tokens.colorPaletteDarkOrangeForeground1,
+  info: tokens.colorBrandForeground2,
+  ['accent-inverse']: tokens.colorBrandBackground,
+  ['primary-inverse']: tokens.colorNeutralBackground1,
+  ['secondary-inverse']: tokens.colorNeutralBackground2,
+  ['tertiary-inverse']: tokens.colorNeutralBackground3,
+  ['quaternary-inverse']: tokens.colorNeutralBackground4,
+  ['negative-inverse']: tokens.colorPaletteDarkOrangeBackground1,
+  ['positive-inverse']: tokens.colorPaletteGreenBackground1,
+  ['warning-inverse']: tokens.colorPaletteMarigoldBackground1,
+  ['danger-inverse']: tokens.colorPaletteDarkOrangeBackground1,
+  ['info-inverse']: tokens.colorBrandBackground2,
+};
+
+const colorStyleFunction = (color: ColorValue) => ({
+  color,
+});
+
+export const colorClasses = mapToStyles<ColorValue, ColorMap>(
+  colorMap,
+  colorStyleFunction,
 );
 
 export const sizeClasses = {
   small: {
-    height: 'var(--space-3)',
+    height: tokens.spacingVerticalM,
   },
   medium: {
-    height: 'var(--space-4)',
+    height: tokens.spacingVerticalL,
   },
   large: {
-    height: 'var(--space-5)',
+    height: tokens.spacingVerticalXL,
   },
 };
 

@@ -21,6 +21,7 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
+    "@fluentui/react-theme": "^9.0.0",
     "@griffel/react": "^1.1.0",
     "framer-motion": "^6.3.12"
   },

@@ -1,5 +1,6 @@
-import type { ColorScheme } from '@arbutus/style.theming';
 import type { ElementType, SyntheticEvent } from 'react';
+
+export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info' | 'tile';
 
 export type SolidColorTileProps = {
   variant: 'solid-color';
@@ -7,7 +8,7 @@ export type SolidColorTileProps = {
   /**
    * Selection of color options.
    */
-  backgroundColor?: keyof ColorScheme;
+  backgroundColor?: ColorVariant;
 
   /**
    * [NOTE] Don not use with Solid Color variant.

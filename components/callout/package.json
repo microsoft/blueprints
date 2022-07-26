@@ -23,7 +23,6 @@
   "dependencies": {
     "@arbutus/component.badge": "^0.0.0",
     "@arbutus/component.text": "^0.0.0",
-    "@arbutus/style.theming": "^0.0.1",
     "@arbutus/style.use-space-styles": "^0.0.1",
     "@arbutus/style.utilities": "^0.0.1",
     "@fluentui/react-theme": "^9.0.0",

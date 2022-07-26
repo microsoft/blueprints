@@ -1,21 +1,28 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useIconButtonStyles = makeStyles({
   root: {
-    backgroundColor: 'var(--color-background)',
-    ...shorthands.borderRadius('0.5rem'),
+    backgroundColor: tokens.colorNeutralBackground1,
+    ...shorthands.borderRadius(tokens.borderRadiusXLarge),
     cursor: 'pointer',
     transitionProperty: 'all',
-    transitionDuration: 'var(--transition-duration)',
-    transitionTimingFunction: 'var(--transition-timing-function)',
-    lineHeight: 'var(--space-3)',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
+    lineHeight: 0,
+    borderTopStyle: 'none',
+    borderRightStyle: 'none',
+    borderBottomStyle: 'none',
+    borderLeftStyle: 'none',
     ':hover': {
-      backgroundColor: 'var(--color-tile)',
+      backgroundColor: tokens.colorNeutralBackground1Hover,
     },
     ':focus': {
-      backgroundColor: 'var(--color-tile)',
+      backgroundColor: tokens.colorNeutralBackground1Selected,
       ...shorthands.outline('none'),
-      boxShadow: 'var(--shadow-focus)',
+      ':focus': {
+        outlineColor: tokens.colorBrandForeground2,
+      },
     },
   },
 });

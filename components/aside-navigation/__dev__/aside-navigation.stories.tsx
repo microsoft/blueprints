@@ -1,4 +1,5 @@
 import { Tile } from '@arbutus/component.tile';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
@@ -20,7 +21,7 @@ const useNavigationStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: 'auto 15rem',
     minHeight: '40rem',
-    columnGap: 'var(--space-7)',
+    columnGap: tokens.spacingHorizontalXXXL,
   },
 });
 

@@ -22,7 +22,7 @@ export const AsideNavigationLink: FC<AsideNavigationLinkProps> = ({
     <Root onClick={onClick} className={mergeClasses(classes.root)}>
       <Text
         as="span"
-        color={isActive ? 'brand-action' : 'secondary'}
+        color={isActive ? 'action' : 'secondary'}
         className={isActive ? classes.active : undefined}
       >
         {children}

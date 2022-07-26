@@ -1,6 +1,7 @@
 import { IconButton } from '@arbutus/component.icon-button';
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
@@ -23,9 +24,9 @@ const useGridStyles = makeStyles({
   },
   header: {
     display: 'grid',
-    gridTemplateColumns: 'var(--space-8) auto',
-    columnGap: 'var(--space-3)',
-    marginBottom: 'var(--space-5)',
+    gridTemplateColumns: `${tokens.spacingHorizontalXXXL} auto`,
+    columnGap: tokens.spacingHorizontalM,
+    marginBottom: tokens.spacingVerticalXL,
   },
 });
 

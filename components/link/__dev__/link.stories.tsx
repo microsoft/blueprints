@@ -30,7 +30,14 @@ const LinkSample = ({ children }) => {
     alert('Clicked!');
   };
 
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button
+      style={{ background: 'transparent', border: 'none', outline: 'none' }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 };
 
 const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
@@ -38,6 +45,15 @@ const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
 export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<LinkProps>>;
 Simple.args = {
   children: 'Simple Link Example',
+  as: LinkSample,
+};
+
+export const IsUnderlined = Template.bind({}) as ComponentStory<
+  FunctionComponent<LinkProps>
+>;
+IsUnderlined.args = {
+  children: 'Queen of Style',
+  isUnderlined: true,
   as: LinkSample,
 };
 

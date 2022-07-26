@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useDividerStyles = makeStyles({
@@ -9,6 +10,6 @@ export const useDividerStyles = makeStyles({
     borderRightStyle: 'none',
     borderBottomStyle: 'none',
     borderLeftStyle: 'none',
-    backgroundColor: 'var(--color-border)',
+    backgroundColor: tokens.colorNeutralStroke1,
   },
 });

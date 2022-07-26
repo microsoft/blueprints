@@ -1,6 +1,11 @@
 import { tokens } from '@fluentui/react-theme';
 
-export const spaceScale = {
+export type SpaceScale = Record<
+  '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12',
+  string
+>;
+
+export const spaceScale: SpaceScale = {
   ['1']: tokens.spacingHorizontalXXS,
   ['2']: tokens.spacingHorizontalXS,
   ['3']: tokens.spacingHorizontalSNudge,

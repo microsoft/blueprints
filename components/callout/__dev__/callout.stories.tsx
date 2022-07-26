@@ -2,7 +2,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
-import { statusMap } from '../src/callout/callout.styles';
+import { colorMap } from '../src/callout/callout.styles';
 import type { CalloutProps } from '../src/index';
 import { Callout } from '../src/index';
 
@@ -12,7 +12,7 @@ export default {
   component: Callout,
   argTypes: {
     status: {
-      options: Object.keys(statusMap),
+      options: Object.keys(colorMap),
       control: { type: 'select' },
     },
   },

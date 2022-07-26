@@ -33,7 +33,9 @@ export const ActionTile: FC<ActionTileProps> = ({
     >
       {withImage && <img src={imageSrc} alt={imageAlt} className={classes.image} />}
       <div>
-        <Text variant="caption">{title}</Text>
+        <Text block variant="caption">
+          {title}
+        </Text>
         {description && (
           <Text variant="description" color="secondary">
             {description}

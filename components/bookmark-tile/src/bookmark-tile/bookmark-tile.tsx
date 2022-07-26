@@ -26,23 +26,23 @@ export const BookmarkTile: FC<BookmarkTileProps> = ({
       as="button"
       variant="card"
       onClick={onClick}
-      className={mergeClasses(classes.root, space.p3, className)}
+      className={mergeClasses(classes.root, space.p9, className)}
     >
-      <div className={space.p3}>
-        <header className={mergeClasses(classes.header, space.mb4)}>
+      <div>
+        <header className={mergeClasses(classes.header, space.mb7)}>
           {iconSrc && iconAlt ? (
             <img src={iconSrc} alt={iconAlt} className={classes.image} />
           ) : (
             <div className={classes.fallbackIcon}>
-              <Icon iconName="link" color="brand-accent" />
+              <Icon iconName="link" color="accent" />
             </div>
           )}
           <Icon iconName="open" color="secondary" />
         </header>
-        <Text as="h3" variant="caption" className={space.mb1}>
+        <Text block as="h3" variant="caption" className={space.mb1}>
           {title}
         </Text>
-        <Text variant="description" color="secondary">
+        <Text block variant="description" color="secondary">
           {description}
         </Text>
       </div>

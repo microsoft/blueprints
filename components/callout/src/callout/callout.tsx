@@ -14,13 +14,13 @@ export const Callout: FC<CalloutProps> = ({ status = 'info', title, children }) 
   const space = useSpaceStyles();
 
   return (
-    <div className={mergeClasses(classes.root, space.p4, classes[status])}>
+    <div className={mergeClasses(classes.root, space.p7, classes[status])}>
       <CalloutBadge status={status} />
       <div>
-        <Text as="h3" variant="caption" className={space.mb1}>
+        <Text block as="h3" variant="caption" className={space.mb1}>
           {title}
         </Text>
-        <Text as="div" variant="description">
+        <Text block variant="description">
           {children}
         </Text>
       </div>

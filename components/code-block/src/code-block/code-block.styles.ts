@@ -1,17 +1,19 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useCodeBlockStyles = makeStyles({
   root: {
+    boxSizing: 'border-box',
     width: '100%',
     paddingTop: '1rem',
     paddingBottom: '1.125rem',
     paddingLeft: '1.375rem',
     paddingRight: '1.375rem',
-    borderTopLeftRadius: 'var(--shape-corner-radius)',
-    borderTopRightRadius: 'var(--shape-corner-radius)',
-    borderBottomRightRadius: 'var(--shape-corner-radius)',
-    borderBottomLeftRadius: 'var(--shape-corner-radius)',
-    backgroundColor: 'var(--color-tile)',
+    borderTopLeftRadius: 'var(--arbutus--shape-border-radius)',
+    borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
+    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
+    borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
+    backgroundColor: tokens.colorNeutralBackground6,
     display: 'block',
     position: 'relative',
 

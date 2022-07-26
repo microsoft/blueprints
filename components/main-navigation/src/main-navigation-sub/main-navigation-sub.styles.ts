@@ -1,34 +1,37 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useMainNavigationSubStyles = makeStyles({
   button: {
-    ...shorthands.padding(0, 'var(--space-3)', 0, 'var(--space-2)'),
-    color: 'var(--color-text)',
-    fontWeight: 'var(--font-weight-medium)',
-    fontSize: 'var(--font-size-small)',
-    lineHeight: 'var(--font-line-height-small)',
+    ...shorthands.padding(0, tokens.spacingHorizontalM, 0, tokens.spacingHorizontalS),
+    color: tokens.colorNeutralForeground1,
+    fontWeight: tokens.fontWeightSemibold,
+    fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.lineHeightBase300,
     textAlign: 'left',
     display: 'grid',
-    gridTemplateColumns: 'var(--space-4) auto',
-    columnGap: 'var(--space-2)',
+    gridTemplateColumns: `${tokens.spacingHorizontalL} auto`,
+    columnGap: tokens.spacingHorizontalS,
     alignItems: 'center',
     width: '100%',
-    height: 'var(--space-8)',
+    height: tokens.spacingHorizontalXXXL,
     transitionProperty: 'all',
-    transitionDuration: 'var(--transition-duration)',
-    transitionTimingFunction: 'var(--transition-timing-function)',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
     backgroundColor: 'transparent',
+    cursor: 'pointer',
+    ...shorthands.borderStyle('none'),
+    ...shorthands.borderColor('transparent'),
     ...shorthands.borderRadius('0.5rem'),
 
     ':hover': {
-      color: 'var(--color-brand-action)',
-      backgroundColor: 'var(--color-brand-secondary)',
+      color: tokens.colorBrandForeground2,
+      backgroundColor: tokens.colorBrandBackground2,
       '& svg': {
-        color: 'var(--color-brand-action)',
+        color: tokens.colorBrandForeground2,
       },
       ':focus': {
-        ...shorthands.outline('none'),
-        boxShadow: 'var(--shadow-focus)',
+        outlineColor: tokens.colorBrandForeground2,
       },
     },
 
@@ -39,11 +42,11 @@ export const useMainNavigationSubStyles = makeStyles({
     },
   },
   subList: {
-    paddingTop: 'var(--space-2)',
-    paddingBottom: 'var(--space-2)',
-    paddingLeft: 'var(--space-6)',
+    paddingTop: tokens.spacingHorizontalS,
+    paddingBottom: tokens.spacingHorizontalS,
+    paddingLeft: tokens.spacingHorizontalXXL,
     display: 'grid',
     gridTemplateColumns: '1fr',
-    rowGap: 'var(--space-2)',
+    rowGap: tokens.spacingHorizontalS,
   },
 });

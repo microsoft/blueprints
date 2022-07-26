@@ -1,60 +1,81 @@
-import type { ColorScheme, ColorVar } from '@arbutus/style.theming';
-import { colorVars } from '@arbutus/style.theming';
+import { mapToStyles } from '@arbutus/style.utilities';
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
-type ColorDeclaration = {
-  color: ColorVar;
-  '&:visited': { color: ColorVar };
-};
-type ColorClasses = Record<keyof ColorScheme, ColorDeclaration | never>;
-export const colorClasses: ColorClasses = Object.entries(colorVars).reduce(
-  (acc, [key, color]: [keyof ColorScheme, ColorVar]) => {
-    acc[key] = {
-      color,
-      '&:visited': { color },
-    };
+import type { ColorVariant } from './text.types';
 
-    return acc;
-  },
-  {} as ColorClasses,
+const colorMap: Record<ColorVariant, string> = {
+  accent: tokens.colorBrandForeground1,
+  action: tokens.colorBrandForeground2,
+  primary: tokens.colorNeutralForeground1,
+  secondary: tokens.colorNeutralForeground2,
+  tertiary: tokens.colorNeutralForeground3,
+  quaternary: tokens.colorNeutralForeground4,
+  negative: tokens.colorPaletteDarkOrangeForeground1,
+  positive: tokens.colorPaletteGreenForeground1,
+  warning: tokens.colorPaletteMarigoldForeground1,
+  danger: tokens.colorPaletteDarkOrangeForeground1,
+  info: tokens.colorBrandForeground2,
+  background: tokens.colorNeutralBackground1,
+};
+const colorStyleFunction = (color: string) => ({
+  color,
+});
+
+export const colorClasses = mapToStyles<string, Record<ColorVariant, string>>(
+  colorMap,
+  colorStyleFunction,
 );
 
+export const variantClasses = {
+  jumbo: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeHero1000,
+    lineHeight: tokens.lineHeightHero1000,
+    fontWeight: tokens.fontWeightSemibold,
+  },
+  headline: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeHero900,
+    lineHeight: tokens.lineHeightHero900,
+    fontWeight: tokens.fontWeightSemibold,
+  },
+  subheading: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeHero800,
+    lineHeight: tokens.lineHeightHero800,
+    fontWeight: tokens.fontWeightSemibold,
+  },
+  leading: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeHero700,
+    lineHeight: tokens.lineHeightHero700,
+    fontWeight: tokens.fontWeightRegular,
+  },
+  paragraph: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.lineHeightBase300,
+    fontWeight: tokens.fontWeightRegular,
+  },
+  caption: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.lineHeightBase300,
+    fontWeight: tokens.fontWeightSemibold,
+  },
+  description: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeBase200,
+    lineHeight: tokens.lineHeightBase200,
+    fontWeight: tokens.fontWeightRegular,
+  },
+};
 export const useTextStyles = makeStyles({
   ...colorClasses,
+  ...variantClasses,
   root: {
     ...shorthands.margin(0),
     ...shorthands.padding(0),
-  },
-  jumbo: {
-    fontSize: 'var(--font-size-jumbo)',
-    lineHeight: 'var(--font-line-height-jumbo)',
-    fontWeight: 'var(--font-weight-bold)',
-  },
-  headline: {
-    fontSize: 'var(--font-size-large)',
-    lineHeight: 'var(--font-line-height-large)',
-    fontWeight: 'var(--font-weight-bold)',
-  },
-  subheading: {
-    fontSize: 'var(--font-size-medium)',
-    lineHeight: 'var(--font-line-height-medium)',
-    fontWeight: 'var(--font-weight-medium)',
-  },
-  leading: {
-    fontSize: 'var(--font-size-medium)',
-    lineHeight: 'var(--font-line-height-medium)',
-  },
-  paragraph: {
-    fontSize: 'var(--font-size-small)',
-    lineHeight: 'var(--font-line-height-small)',
-  },
-  caption: {
-    fontSize: 'var(--font-size-small)',
-    lineHeight: 'var(--font-line-height-small)',
-    fontWeight: 'var(--font-weight-medium)',
-  },
-  description: {
-    fontSize: 'var(--font-size-micro)',
-    lineHeight: 'var(--font-line-height-micro)',
   },
 });
