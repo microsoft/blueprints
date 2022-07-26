@@ -1,0 +1,6 @@
+paths-ignore:
+  - '_templates/**'
+  - './storybook/**'
+  - '.husky/**'
+  - '.vscode/**'
+  - 'docs/**'
