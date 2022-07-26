@@ -16,10 +16,16 @@ export const useMainNavigationLinkStyles = makeStyles({
     transitionProperty: 'all',
     transitionDuration: tokens.durationNormal,
     transitionTimingFunction: tokens.curveEasyEase,
-    backgroundColor: 'transparent',
     ...shorthands.borderRadius('0.5rem'),
+    cursor: 'pointer',
+    backgroundColor: 'transparent',
+    ...shorthands.borderStyle('none'),
+    ...shorthands.borderColor('transparent'),
     '& button': {
       textAlign: 'left',
+      backgroundColor: 'transparent',
+      ...shorthands.borderStyle('none'),
+      ...shorthands.borderColor('transparent'),
     },
     '& a': {
       textDecorationLine: 'none',

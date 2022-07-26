@@ -1,4 +1,4 @@
-import { paths } from '@arbutus/component.icon';
+import { colorClasses, paths } from '@arbutus/component.icon';
 import { Text } from '@arbutus/component.text';
 import { makeStyles } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
@@ -15,6 +15,9 @@ export default {
     iconName: {
       options: Object.keys(paths),
       control: { type: 'select' },
+    },
+    iconColor: {
+      control: { type: 'select', options: Object.keys(colorClasses) },
     },
   },
 } as ComponentMeta<typeof MarkList>;

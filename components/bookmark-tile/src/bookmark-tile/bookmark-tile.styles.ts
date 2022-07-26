@@ -4,6 +4,10 @@ import { makeStyles, shorthands } from '@griffel/react';
 export const useBookmarkTileStyles = makeStyles({
   root: {
     textAlign: 'left',
+    cursor: 'pointer',
+    backgroundColor: 'transparent',
+    ...shorthands.borderStyle('none'),
+    ...shorthands.borderColor('transparent'),
   },
   header: {
     display: 'flex',

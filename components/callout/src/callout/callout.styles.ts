@@ -4,7 +4,7 @@ import { makeStyles, shorthands } from '@griffel/react';
 
 import type { ColorMap, ColorValue } from './callout.types';
 
-const colorMap: ColorMap = {
+export const colorMap: ColorMap = {
   error: {
     background: tokens.colorPaletteDarkOrangeBackground1,
     stroke: tokens.colorPaletteDarkOrangeBorder1,

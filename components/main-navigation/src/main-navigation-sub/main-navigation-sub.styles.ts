@@ -19,6 +19,9 @@ export const useMainNavigationSubStyles = makeStyles({
     transitionDuration: tokens.durationNormal,
     transitionTimingFunction: tokens.curveEasyEase,
     backgroundColor: 'transparent',
+    cursor: 'pointer',
+    ...shorthands.borderStyle('none'),
+    ...shorthands.borderColor('transparent'),
     ...shorthands.borderRadius('0.5rem'),
 
     ':hover': {

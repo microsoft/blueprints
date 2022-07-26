@@ -1,6 +1,5 @@
 import { Divider } from '@arbutus/component.divider';
 import { Link } from '@arbutus/component.link';
-import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { makeStyles } from '@griffel/react';
 import type { FC, SyntheticEvent } from 'react';
@@ -12,7 +11,17 @@ const LinkSample = ({ children }) => {
     alert('Clicked!');
   };
 
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button
+      style={{
+        backgroundColor: 'transparent',
+        border: 'none',
+      }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 };
 
 const useFooterStyles = makeStyles({

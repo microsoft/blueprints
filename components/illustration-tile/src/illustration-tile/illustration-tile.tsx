@@ -23,11 +23,18 @@ export const IllustrationTile: FC<IllustrationTileProps> = ({
     <Tile
       as={onClick ? 'button' : 'div'}
       variant={onClick ? 'card' : 'solid-color'}
-      className={mergeClasses(classes.root, space.p4, className)}
+      className={mergeClasses(
+        classes.root,
+        onClick && classes.isInteractive,
+        space.p9,
+        className,
+      )}
       onClick={onClick}
     >
       <img src={illustrationSrc} alt={illustrationAlt} className={space.mb4} />
-      <Text variant="caption">{title}</Text>
+      <Text block variant="caption">
+        {title}
+      </Text>
     </Tile>
   );
 };

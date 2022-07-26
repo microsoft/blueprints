@@ -16,7 +16,17 @@ const LinkSample = ({ children }) => {
     alert('Clicked!');
   };
 
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button
+      style={{
+        backgroundColor: 'transparent',
+        border: 'none',
+      }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 };
 
 const useHeaderSampleStyles = makeStyles({

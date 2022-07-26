@@ -61,7 +61,7 @@ export const Tile: FC<TileProps> = ({
   }
 
   const imageBackground = isImage({ variant })
-    ? { style: { backgroundImage: `url("${imageSrc}")` } }
+    ? { style: { backgroundImage: `url("${imageSrc ?? ''}")` } }
     : {};
 
   return (

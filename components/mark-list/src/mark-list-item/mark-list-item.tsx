@@ -19,7 +19,7 @@ export const MarkListItem: FC<MarkListItemProps> = ({ className, children }) => 
   return (
     <li className={mergeClasses(classes.root, className)}>
       {iconName ? (
-        <Icon iconName={iconName} color={iconColor} className={space.mt1} />
+        <Icon iconName={iconName} color={iconColor} className={space.mt2} />
       ) : (
         <span className={classes.mark}>— </span>
       )}

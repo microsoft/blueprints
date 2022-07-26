@@ -1,5 +1,5 @@
 import { tokens } from '@fluentui/react-theme';
-import { makeStyles } from '@griffel/react';
+import { makeStyles, shorthands } from '@griffel/react';
 
 export const useActionTileStyles = makeStyles({
   root: {
@@ -11,6 +11,10 @@ export const useActionTileStyles = makeStyles({
     textAlign: 'left',
     paddingLeft: tokens.spacingHorizontalXXL,
     paddingRight: tokens.spacingHorizontalXXL,
+    cursor: 'pointer',
+    backgroundColor: 'transparent',
+    ...shorthands.borderStyle('none'),
+    ...shorthands.borderColor('transparent'),
   },
   withImage: {
     gridTemplateColumns: '1.75rem auto 1rem',

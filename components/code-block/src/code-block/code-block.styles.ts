@@ -3,6 +3,7 @@ import { makeStyles } from '@griffel/react';
 
 export const useCodeBlockStyles = makeStyles({
   root: {
+    boxSizing: 'border-box',
     width: '100%',
     paddingTop: '1rem',
     paddingBottom: '1.125rem',

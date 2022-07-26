@@ -6,7 +6,6 @@ import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@arbutus/component.tabs
 import { Text } from '@arbutus/component.text';
 import { Tile } from '@arbutus/component.tile';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
-import { mergeStyles } from '@fluentui/react';
 import { makeStyles, shorthands } from '@griffel/react';
 import React from 'react';
 
@@ -39,10 +38,10 @@ const Content = ({ index }: { index: string }) => {
   return (
     <Tile variant="solid-color">
       <article className={space.p6}>
-        <Text as="h3" variant="subheading">
+        <Text block as="h3" variant="subheading">
           This Is a Headline {index}!
         </Text>
-        <Text>
+        <Text block>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque
           dolores beatae sapiente enim rerum dolorum optio quasi quaerat reiciendis.
           Laboriosam doloremque itaque optio sint earum debitis nesciunt autem dolor?
@@ -58,10 +57,10 @@ export const PageSample = () => {
 
   return (
     <main className={classes.root}>
-      <Text as="h1" variant="jumbo">
+      <Text block as="h1" variant="jumbo">
         Button
       </Text>
-      <Text variant="leading" className={space.mb12}>
+      <Text block variant="leading" className={space.mb12}>
         A button denotes a single action to move a user forward in a flow.
       </Text>
 
@@ -76,10 +75,10 @@ export const PageSample = () => {
           <TabPanel>
             <MarkList>
               <MarkListItem>
-                <Text as="b" variant="caption">
+                <Text block as="span" variant="caption">
                   Natural on every platform.{' '}
                 </Text>
-                <Text as="span" color="secondary">
+                <Text block as="span" color="secondary">
                   You want to know what to do. Your experiences should adapt to the device
                   you’re on and should build off the familiar — designing for what you
                   already understand. You want to know what to do. Your experiences should
@@ -88,30 +87,30 @@ export const PageSample = () => {
                 </Text>
               </MarkListItem>
               <MarkListItem>
-                <Text as="b" variant="caption">
+                <Text block as="span" variant="caption">
                   One for all, all for one. You want to be included.{' '}
                 </Text>
-                <Text as="span" color="secondary">
+                <Text block as="span" color="secondary">
                   Your experiences should consider, learn, and reflect a range of
                   perspectives and abilities for the benefit of all.
                 </Text>
               </MarkListItem>
               <MarkListItem>
-                <Text as="b" variant="caption">
+                <Text block as="span" variant="caption">
                   Built for focus. You want to stay in the flow.{' '}
                 </Text>
 
-                <Text as="span" color="secondary">
+                <Text block as="span" color="secondary">
                   Your experiences should inspire action, drawing you forward, simply and
                   seamlessly.
                 </Text>
               </MarkListItem>
               <MarkListItem>
-                <Text as="b" variant="caption">
+                <Text block as="span" variant="caption">
                   Unmistakably Microsoft.{' '}
                 </Text>
 
-                <Text as="span" color="secondary">
+                <Text block as="span" color="secondary">
                   You want to recognize what you’re looking for. Your experiences should
                   feel like one Microsoft. One moment, one product, one experience at a
                   time.
@@ -130,10 +129,10 @@ export const PageSample = () => {
 
       <Divider className={space.my8} />
 
-      <Text as="h2" variant="subheading">
+      <Text block as="h2" variant="subheading">
         Overview
       </Text>
-      <Text variant="paragraph" className={space.mb8}>
+      <Text block variant="paragraph" className={space.mb8}>
         Our focus on legibility, scalability, accessibility, asethetic elegance, and
         emotional impact of text are surfaced via a set of carefully curated properties
         that work across devices and platforms.
@@ -157,7 +156,7 @@ export const PageSample = () => {
       </div>
 
       <Divider className={space.my12} />
-      <Text as="h2" variant="subheading" className={space.mb8}>
+      <Text block as="h2" variant="subheading" className={space.mb8}>
         Resources
       </Text>
       <div className={classes.thirds}>

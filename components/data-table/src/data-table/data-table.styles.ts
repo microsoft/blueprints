@@ -94,13 +94,13 @@ export const useDataTableStyles = makeStyles({
     '& pre, & code': {
       backgroundColor: tokens.colorNeutralBackground6,
       paddingTop: '0',
-      paddingRight: '0',
+      paddingRight: tokens.spacingHorizontalSNudge,
       paddingBottom: '0',
-      paddingLeft: '0',
-      borderTopLeftRadius: '0.375rem',
-      borderTopRightRadius: '0.375rem',
-      borderBottomRightRadius: '0.375rem',
-      borderBottomLeftRadius: '0.375rem',
+      paddingLeft: tokens.spacingHorizontalSNudge,
+      borderTopLeftRadius: tokens.borderRadiusSmall,
+      borderTopRightRadius: tokens.borderRadiusSmall,
+      borderBottomRightRadius: tokens.borderRadiusSmall,
+      borderBottomLeftRadius: tokens.borderRadiusSmall,
       fontSize: tokens.fontSizeBase200,
 
       '& span, & li, & p': {
