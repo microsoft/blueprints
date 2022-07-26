@@ -9,7 +9,11 @@ export const useIconButtonStyles = makeStyles({
     transitionProperty: 'all',
     transitionDuration: tokens.durationNormal,
     transitionTimingFunction: tokens.curveEasyEase,
-    lineHeight: tokens.spacingVerticalL,
+    lineHeight: 0,
+    borderTopStyle: 'none',
+    borderRightStyle: 'none',
+    borderBottomStyle: 'none',
+    borderLeftStyle: 'none',
     ':hover': {
       backgroundColor: tokens.colorNeutralBackground1Hover,
     },

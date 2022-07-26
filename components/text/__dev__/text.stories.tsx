@@ -8,16 +8,31 @@ import React from 'react';
 
 import type { TextProps } from '../src/index';
 import { Text } from '../src/index';
+import { colorClasses, variantClasses } from '../src/text/text.styles';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Atoms/Text',
   component: Text,
+  argTypes: {
+    variant: {
+      control: {
+        type: 'select',
+        options: Object.keys(variantClasses),
+      },
+    },
+    color: {
+      control: {
+        type: 'select',
+        options: Object.keys(colorClasses),
+      },
+    },
+  },
 } as ComponentMeta<typeof Text>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Text> = (args) => (
-  <Text {...args}>
+  <Text block {...args}>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi eveniet
     dolorum officiis assumenda similique a voluptas voluptatum ducimus temporibus. Culpa
     animi labore molestiae nesciunt suscipit, architecto optio sit iusto.
@@ -27,7 +42,7 @@ const Template: ComponentStory<typeof Text> = (args) => (
 export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<TextProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
-  color: 'text',
+  color: 'primary',
   variant: 'paragraph',
 };
 
@@ -51,10 +66,10 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
   return (
     <main className={space.pb12}>
-      <Text as="h1" variant="headline">
+      <Text block as="h1" variant="headline">
         Headline
       </Text>
-      <Text variant="leading">
+      <Text block variant="leading">
         Leading Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi
         eveniet dolorum officiis assumenda similique a voluptas voluptatum ducimus
         temporibus. Culpa animi labore molestiae nesciunt suscipit, architecto optio sit
@@ -63,10 +78,10 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
       <Divider className={space.my8} />
 
-      <Text as="h2" variant="subheading">
+      <Text block as="h2" variant="subheading">
         Subheading
       </Text>
-      <Text variant="paragraph" className={space.mb8}>
+      <Text block variant="paragraph" className={space.mb8}>
         Paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
         modi eveniet dolorum officiis assumenda similique a voluptas voluptatum ducimus
         temporibus. Culpa animi labore molestiae nesciunt suscipit, architecto optio sit
@@ -80,10 +95,10 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
             alt="Text demo 1"
             className={imageClasses}
           />
-          <Text as="h2" variant="caption" className={space.mb1}>
+          <Text block as="h2" variant="caption" className={space.mb1} color="positive">
             Caption: What do you see?
           </Text>
-          <Text variant="description" color="tertiary">
+          <Text block variant="description" color="tertiary">
             Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Cupiditate modi eveniet dolorum officiis assumenda similique a voluptas
             voluptatum ducimus temporibus. Culpa animi labore molestiae nesciunt suscipit,
@@ -96,10 +111,10 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
             alt="Text demo 1"
             className={imageClasses}
           />
-          <Text as="h2" variant="caption" className={space.mb1}>
+          <Text block as="h2" variant="caption" className={space.mb1} color="negative">
             Caption: What do you see?
           </Text>
-          <Text variant="description" color="tertiary">
+          <Text block variant="description" color="tertiary">
             Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Cupiditate modi eveniet dolorum officiis assumenda similique a voluptas
             voluptatum ducimus temporibus. Culpa animi labore molestiae nesciunt suscipit,
@@ -112,10 +127,10 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
       <div className={grid.root}>
         <section>
-          <Text as="h4" variant="jumbo" color="quaternary" className={space.mt4}>
+          <Text block as="h4" variant="jumbo" color="quaternary" className={space.mt4}>
             Jumbo Text
           </Text>
-          <Text variant="description" color="secondary">
+          <Text block variant="description" color="secondary">
             Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Cupiditate modi eveniet dolorum officiis assumenda similique a voluptas
             voluptatum ducimus temporibus. Culpa animi labore molestiae nesciunt suscipit,

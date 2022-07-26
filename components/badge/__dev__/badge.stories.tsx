@@ -3,6 +3,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { colorMap } from '../src/badge/badge.styles';
 import type { BadgeProps } from '../src/index';
 import { Badge } from '../src/index';
 
@@ -11,18 +12,12 @@ export default {
   title: 'Atoms/Badge',
   component: Badge,
   argTypes: {
-    // backgroundColor: {
-    //   control: {
-    //     type: 'select',
-    //     options: Object.keys(colorVars),
-    //   },
-    // },
-    // iconColor: {
-    //   control: {
-    //     type: 'select',
-    //     options: Object.keys(colorVars),
-    //   },
-    // },
+    color: {
+      control: {
+        type: 'select',
+        options: Object.keys(colorMap),
+      },
+    },
     iconName: {
       control: {
         type: 'select',

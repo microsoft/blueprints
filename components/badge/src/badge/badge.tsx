@@ -24,7 +24,7 @@ export const Badge: FC<BadgeProps> = ({
         className,
       )}
     >
-      <Icon size="small" iconName={iconName} />
+      <Icon size="small" iconName={iconName} color={`${color}-inverse`} />
     </span>
   );
 };

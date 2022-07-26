@@ -34,6 +34,8 @@ export const useTileStyles = makeStyles({
     marginRight: 0,
   },
   interactive: {
+    ...shorthands.borderStyle('none'),
+    ...shorthands.borderColor('transparent'),
     cursor: 'pointer',
     transitionProperty: 'all',
     transitionDuration: tokens.durationNormal,
@@ -44,12 +46,12 @@ export const useTileStyles = makeStyles({
   },
   card: {
     backgroundColor: tokens.colorNeutralBackground1,
-    ...shorthands.borderRadius('0.5rem'),
+    ...shorthands.borderRadius(tokens.borderRadiusLarge),
     boxShadow: tokens.shadow8,
   },
   image: {
     backgroundColor: tokens.colorNeutralBackground6,
-    ...shorthands.borderRadius(tokens.borderRadiusXLarge),
+    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
     backgroundSize: 'cover',
     backgroundPositionX: 'center',
     backgroundPositionY: 'center',

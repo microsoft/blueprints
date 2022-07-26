@@ -1,5 +1,5 @@
 import { makeStyles, makeStaticStyles } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme'
+import { tokens } from '@fluentui/react-theme';
 
 export const useStoryStyles = makeStaticStyles({
   'html, body, #root': {
@@ -19,10 +19,19 @@ export const useStoryStyles = makeStaticStyles({
 
 export const useFrameClasses = makeStyles({
   root: {
-    height: '100%',
+    height: '100vh',
     backgroundColor: tokens.colorNeutralBackground1,
     display: 'grid',
     alignItems: 'center',
     justifyItems: 'center',
+  },
+  fullHeight: {
+    minHeight: '100vh',
+  },
+  provider: {
+    minHeight: '100vh',
+    ['& .fui-FluentProvider']: {
+      minHeight: '100vh',
+    },
   },
 });

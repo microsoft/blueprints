@@ -4,53 +4,21 @@ import { makeStyles, shorthands } from '@griffel/react';
 
 import type { ColorMap, ColorValue } from './badge.types';
 
-const colorMap: ColorMap = {
-  accent: {
-    color: tokens.colorBrandForeground1,
-    backgroundColor: tokens.colorBrandBackground2,
-  },
-  primary: {
-    backgroundColor: tokens.colorNeutralBackground1,
-    color: tokens.colorNeutralForeground1,
-  },
-  secondary: {
-    backgroundColor: tokens.colorNeutralBackground2,
-    color: tokens.colorNeutralForeground2,
-  },
-  tertiary: {
-    backgroundColor: tokens.colorNeutralBackground3,
-    color: tokens.colorNeutralForeground3,
-  },
-  quaternary: {
-    backgroundColor: tokens.colorNeutralBackground4,
-    color: tokens.colorNeutralForeground4,
-  },
-  negative: {
-    backgroundColor: tokens.colorPaletteDarkOrangeBackground1,
-    color: tokens.colorPaletteDarkOrangeForeground1,
-  },
-  positive: {
-    backgroundColor: tokens.colorPaletteGreenBackground1,
-    color: tokens.colorPaletteGreenForeground1,
-  },
-  warning: {
-    backgroundColor: tokens.colorPaletteMarigoldBackground1,
-    color: tokens.colorPaletteMarigoldForeground1,
-  },
-  danger: {
-    backgroundColor: tokens.colorPaletteDarkOrangeBackground1,
-    color: tokens.colorPaletteDarkOrangeForeground1,
-  },
-  info: {
-    backgroundColor: tokens.colorBrandBackground2,
-    color: tokens.colorBrandForeground2,
-  },
+export const colorMap: ColorMap = {
+  accent: tokens.colorBrandBackground2,
+  primary: tokens.colorNeutralForeground1,
+  secondary: tokens.colorNeutralForeground2,
+  tertiary: tokens.colorNeutralForeground3,
+  quaternary: tokens.colorNeutralForeground4,
+  negative: tokens.colorPaletteDarkOrangeForeground1,
+  positive: tokens.colorPaletteGreenForeground1,
+  warning: tokens.colorPaletteMarigoldForeground1,
+  danger: tokens.colorPaletteDarkOrangeForeground1,
+  info: tokens.colorBrandForeground2,
 };
 
-const colorStyleFunction = ({ backgroundColor, color }: ColorValue) => ({
-  backgroundColor,
-  color,
-});
+const colorStyleFunction = (color: ColorValue) => ({ backgroundColor: color });
+
 const colorClasses = mapToStyles<ColorValue, ColorMap>(colorMap, colorStyleFunction);
 
 export const useBadgeStyles = makeStyles({

@@ -9,7 +9,6 @@ import {
   useSegoeUI600,
   useSegoeUI700,
 } from '../../styles/fonts/src';
-import { useGlobalStyles } from '../../styles/global/src';
 import { useFrameClasses, useStoryStyles } from './frame.styles';
 
 type FrameProps = { theme: 'light' | 'dark' };
@@ -19,11 +18,13 @@ export const Frame: FC<FrameProps> = ({ children, theme }) => {
   useSegoeUI400();
   useSegoeUI600();
   useSegoeUI700();
-  useGlobalStyles();
+  useStoryStyles();
   const classes = useFrameClasses();
   return (
-    <ThemeProvider currentThemeKey={theme}>
-      <div className={classes.root}>{children}</div>
-    </ThemeProvider>
+    <div className={classes.provider}>
+      <ThemeProvider currentThemeKey={theme}>
+          <div className={classes.root}>{children}</div>
+      </ThemeProvider>
+    </div>
   );
 };

@@ -26,12 +26,8 @@ export const colorClasses = mapToStyles<string, Record<ColorVariant, string>>(
   colorMap,
   colorStyleFunction,
 );
-export const useTextStyles = makeStyles({
-  ...colorClasses,
-  root: {
-    ...shorthands.margin(0),
-    ...shorthands.padding(0),
-  },
+
+export const variantClasses = {
   jumbo: {
     fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSizeHero1000,
@@ -73,5 +69,13 @@ export const useTextStyles = makeStyles({
     fontSize: tokens.fontSizeBase200,
     lineHeight: tokens.lineHeightBase200,
     fontWeight: tokens.fontWeightRegular,
+  },
+};
+export const useTextStyles = makeStyles({
+  ...colorClasses,
+  ...variantClasses,
+  root: {
+    ...shorthands.margin(0),
+    ...shorthands.padding(0),
   },
 });

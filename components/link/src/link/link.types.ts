@@ -27,4 +27,9 @@ export type LinkProps = {
    * Adds an icon that indicates that the link will open in a new tab.
    */
   withIcon?: boolean;
+
+  /**
+   * Adds an underline to the link.
+   */
+  isUnderlined?: boolean;
 };

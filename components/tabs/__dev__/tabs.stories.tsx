@@ -22,10 +22,10 @@ const Content = ({ index }: { index: string }) => {
   return (
     <Tile variant="solid-color" className={space.mt10}>
       <article className={space.p6}>
-        <Text as="h3" variant="subheading">
+        <Text as="h3" variant="subheading" block>
           This Is a Headline {index}!
         </Text>
-        <Text>
+        <Text as="p" block>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque
           dolores beatae sapiente enim rerum dolorum optio quasi quaerat reiciendis.
           Laboriosam doloremque itaque optio sint earum debitis nesciunt autem dolor?

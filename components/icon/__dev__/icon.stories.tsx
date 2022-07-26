@@ -6,6 +6,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { colorMap, sizeClasses } from '../src/icon/icon.styles';
 import type { IconProps } from '../src/index';
 import { Icon, paths } from '../src/index';
 
@@ -13,6 +14,26 @@ import { Icon, paths } from '../src/index';
 export default {
   title: 'Atoms/Icon',
   component: Icon,
+  argTypes: {
+    color: {
+      control: {
+        type: 'select',
+        options: Object.keys(colorMap),
+      },
+    },
+    iconName: {
+      control: {
+        type: 'select',
+        options: Object.keys(paths),
+      },
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: Object.keys(sizeClasses),
+      },
+    },
+  },
 } as ComponentMeta<typeof Icon>;
 
 const useGridStyles = makeStyles({

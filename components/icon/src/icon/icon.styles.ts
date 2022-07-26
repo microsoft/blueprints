@@ -4,7 +4,7 @@ import { makeStyles } from '@griffel/react';
 
 import type { ColorMap, ColorValue } from './icon.types';
 
-const colorMap: ColorMap = {
+export const colorMap: ColorMap = {
   accent: tokens.colorBrandForeground1,
   primary: tokens.colorNeutralForeground1,
   secondary: tokens.colorNeutralForeground2,
@@ -15,7 +15,18 @@ const colorMap: ColorMap = {
   warning: tokens.colorPaletteMarigoldForeground1,
   danger: tokens.colorPaletteDarkOrangeForeground1,
   info: tokens.colorBrandForeground2,
+  ['accent-inverse']: tokens.colorBrandBackground,
+  ['primary-inverse']: tokens.colorNeutralBackground1,
+  ['secondary-inverse']: tokens.colorNeutralBackground2,
+  ['tertiary-inverse']: tokens.colorNeutralBackground3,
+  ['quaternary-inverse']: tokens.colorNeutralBackground4,
+  ['negative-inverse']: tokens.colorPaletteDarkOrangeBackground1,
+  ['positive-inverse']: tokens.colorPaletteGreenBackground1,
+  ['warning-inverse']: tokens.colorPaletteMarigoldBackground1,
+  ['danger-inverse']: tokens.colorPaletteDarkOrangeBackground1,
+  ['info-inverse']: tokens.colorBrandBackground2,
 };
+
 const colorStyleFunction = (color: ColorValue) => ({
   color,
 });

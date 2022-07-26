@@ -1,7 +1,27 @@
 import type { sizeClasses } from './icon.styles';
 import type { paths } from './icons';
 
-export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info';
+export type ColorVariant =
+  | 'accent'
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'quaternary'
+  | 'negative'
+  | 'positive'
+  | 'warning'
+  | 'danger'
+  | 'info'
+  | 'accent-inverse'
+  | 'primary-inverse'
+  | 'secondary-inverse'
+  | 'tertiary-inverse'
+  | 'quaternary-inverse'
+  | 'negative-inverse'
+  | 'positive-inverse'
+  | 'warning-inverse'
+  | 'danger-inverse'
+  | 'info-inverse';
 export type ColorValue = string;
 export type ColorMap = Record<ColorVariant, ColorValue>;
 
