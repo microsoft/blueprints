@@ -1,6 +1,6 @@
 import type { ElementType, SyntheticEvent } from 'react';
 
-export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info' | 'tile';
+export type ColorVariant = 'none' | 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info' | 'tile';
 
 export type SolidColorTileProps = {
   variant: 'solid-color';

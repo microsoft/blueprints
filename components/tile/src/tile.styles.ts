@@ -5,6 +5,7 @@ import { makeStyles, shorthands } from '@griffel/react';
 import type { ColorVariant } from './tile.types';
 
 const colorMap: Record<ColorVariant, string> = {
+  none: 'transparent',
   primary: tokens.colorNeutralBackground1,
   secondary: tokens.colorNeutralBackground2,
   tertiary: tokens.colorNeutralBackground3,

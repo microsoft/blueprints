@@ -16,10 +16,4 @@ export const useRecommendationTileStyles = makeStyles({
     left: tokens.spacingHorizontalM,
     top: tokens.spacingHorizontalM,
   },
-  badgePositive: {
-    backgroundColor: 'var(--arbutus--color-positive-background)',
-  },
-  badgeNegative: {
-    backgroundColor: 'var(--arbutus--color-negative-background)',
-  },
 });
