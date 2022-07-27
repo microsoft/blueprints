@@ -5,19 +5,18 @@ import { useMemo } from 'react';
 
 import type { LogoSVGProps } from './logo-svg.types';
 
-export const Figma: FC<LogoSVGProps> = ({ className }) => {
+export const Figma: FC<LogoSVGProps> = ({ className, label = 'Figma logo' }) => {
   const a11yId = useMemo(() => `FigmaLogoSVG--${nanoid()}`, []);
 
   return (
     <svg
-      id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 200 300"
       className={className}
       role="img"
       aria-labelledby={a11yId}
     >
-      <title id={a11yId}>Figma logo</title>
+      <title id={a11yId}>{label}</title>
       <path
         fill="#0acf83"
         d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"

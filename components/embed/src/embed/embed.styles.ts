@@ -3,13 +3,13 @@ import { makeStyles, shorthands } from '@griffel/react';
 
 export const sizeClasses = {
   small: {
-    height: `calc(${tokens.spacingVerticalXS} * 50)`,
+    height: `calc(${tokens.spacingVerticalXS} * 76)`,
   },
   medium: {
-    height: `calc(${tokens.spacingVerticalXS} * 80)`,
+    height: `calc(${tokens.spacingVerticalXS} * 96)`,
   },
   large: {
-    height: `calc(${tokens.spacingVerticalXS} * 100)`,
+    height: `calc(${tokens.spacingVerticalXS} * 116)`,
   },
 };
 
@@ -18,10 +18,6 @@ export const useEmbedStyles = makeStyles({
     width: '100%',
     ...shorthands.borderRadius(tokens.borderRadiusMedium),
     ...shorthands.border('1px', 'solid', tokens.colorNeutralStroke1),
-    transitionProperty: 'background-color',
-    transitionDuration: tokens.durationSlow,
-    transitionTimingFunction: tokens.curveDecelerateMax,
-    backgroundColor: 'transparent',
   },
   header: {
     height: `calc(${tokens.spacingVerticalXL} + ${tokens.spacingVerticalSNudge}) + ${tokens.spacingVerticalSNudge}`,
@@ -29,8 +25,28 @@ export const useEmbedStyles = makeStyles({
     columnGap: tokens.spacingHorizontalXS,
     gridTemplateColumns: `${tokens.spacingHorizontalXXL} auto ${tokens.spacingHorizontalXXL}`,
   },
+  ...sizeClasses,
+  content: {
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+  },
+  overlay: {
+    position: 'absolute',
+    display: 'grid',
+    alignItems: 'center',
+    justifyItems: 'center',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    transitionProperty: 'all',
+    transitionDuration: tokens.durationSlow,
+    transitionTimingFunction: tokens.curveAccelerateMax,
+    backgroundColor: 'transparent',
+  },
   loading: {
-    backgroundColor: tokens.colorNeutralBackground4,
+    backgroundColor: tokens.colorNeutralBackground1,
   },
   iframe: {
     width: '100%',
@@ -38,5 +54,4 @@ export const useEmbedStyles = makeStyles({
     ...shorthands.borderColor('transparent'),
     ...shorthands.borderStyle('none'),
   },
-  ...sizeClasses,
 });

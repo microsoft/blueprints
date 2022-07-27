@@ -3,6 +3,7 @@ import { IconButton } from '@arbutus/component.icon-button';
 import { Logo } from '@arbutus/component.logo';
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
+import { Spinner } from '@fluentui/react-spinner';
 import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
@@ -10,6 +11,7 @@ import { useState } from 'react';
 
 import { useEmbedStyles } from './embed.styles';
 import type { EmbedProps } from './embed.types';
+import { getUrl } from './get-url';
 
 export const Embed: FC<EmbedProps> = ({
   allowFullScreen = true,
@@ -29,11 +31,8 @@ export const Embed: FC<EmbedProps> = ({
   const openClickHandler = () => {
     window?.open(url, '_blank')?.focus();
   };
-  const iframeClasses = mergeClasses(
-    classes.iframe,
-    classes[size],
-    isLoading && classes.loading,
-  );
+
+  const overlayClasses = mergeClasses(classes.overlay, isLoading && classes.loading);
 
   return (
     <div className={mergeClasses(classes.root, className)}>
@@ -51,15 +50,16 @@ export const Embed: FC<EmbedProps> = ({
         </div>
       </header>
       <Divider />
-      <iframe
-        onLoad={loadedHandler}
-        onError={() => alert('iframe error')}
-        title={title}
-        className={iframeClasses}
-        src={`https://www.figma.com/embed?embed_host=arbutus&url=\
-        ${url}`}
-        allowFullScreen={allowFullScreen}
-      />
+      <div className={classes.content}>
+        <div className={overlayClasses}>{isLoading && <Spinner />}</div>
+        <iframe
+          onLoad={loadedHandler}
+          title={title}
+          className={mergeClasses(classes.iframe, classes[size])}
+          src={getUrl({ type, url })}
+          allowFullScreen={allowFullScreen}
+        />
+      </div>
     </div>
   );
 };

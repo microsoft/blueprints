@@ -22,4 +22,9 @@ export type LogoProps = {
    * Sets the Icon to be an inline element.
    */
   isInline?: boolean;
+
+  /**
+   * Accessible label for the logo.
+   */
+  label?: string;
 };

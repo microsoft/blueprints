@@ -7,12 +7,18 @@ import { logos } from '../logos';
 import { useLogoStyles } from './logo.styles';
 import type { LogoProps } from './logo.types';
 
-export const Logo: FC<LogoProps> = ({ className, logoName, size = 'fill', isInline }) => {
+export const Logo: FC<LogoProps> = ({
+  className,
+  logoName,
+  size = 'fill',
+  isInline,
+  label,
+}) => {
   // Styles
   const classes = useLogoStyles();
   const LogoSVG = useMemo(() => logos[logoName], [logoName]);
 
   const rootClasses = mergeClasses(classes[size], isInline && classes.inline, className);
 
-  return <LogoSVG className={rootClasses} />;
+  return <LogoSVG className={rootClasses} label={label} />;
 };
