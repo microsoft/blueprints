@@ -16,6 +16,6 @@ module.exports = [
     name: 'version',
     message: 'What is the initial version of this package?',
     required: false,
-    initial: '0.0.0',
+    initial: '0.0.1',
   },
 ];
