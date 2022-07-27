@@ -12,6 +12,7 @@
     "build:packages": "lage build --scope @arbutus/*",
     "build:storybook": "build-storybook -o docs",
     "g:component": "hygen new component",
+    "packages:fix-mismatches": "syncpack fix-mismatches",
     "lint:eslint": "eslint . --fix",
     "lint:prettier": "prettier --write .",
     "lint:staged": "lint-staged",
@@ -26,7 +27,7 @@
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
-    "@arbutus/style.theming": "^0.0.1",
+    "@arbutus/style.theming": "0.0.1",
     "@fluentui/react": "^8.77.0",
     "@griffel/react": "^1.1.0",
     "@m365-admin/config.ts": "^0.1.2",
@@ -50,9 +51,18 @@
     "lint-staged": "^13.0.2",
     "npm-run-all": "4.1.5",
     "prettier": "^2.7.1",
-    "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react": "^17.0.2",
+    "syncpack": "^8.2.4",
     "wait-on": "6.0.1"
+  },
+  "syncpack": {
+    "semverRange": [
+      "<=",
+      ">="
+    ],
+    "workspace": true,
+    "peer": false
   },
   "resolutions": {
     "**/trim": "^1.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "@arbutus/component.data-table",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "DataTable component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
