@@ -8,9 +8,9 @@ to: components/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/README.md
 ## Get Started
 
 ```sh
-npm i "<%= h.changeCase.lower(h.inflection.dasherize(name)) %>"
+npm i "@arbutus/component.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>"
 ```
 
 ```
-import { <%= h.changeCase.pascal(name) %> } from "<%= h.changeCase.lower(h.inflection.dasherize(name)) %>";
+import { <%= h.changeCase.pascal(name) %> } from "@arbutus/component.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>";
 ```

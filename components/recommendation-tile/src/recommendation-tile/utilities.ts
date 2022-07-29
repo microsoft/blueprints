@@ -4,7 +4,10 @@ type GetBackgroundColorArgs = Pick<RecommendationTileProps, 'recommendation'> & 
   withImage: boolean;
 };
 
-export const getBackgroundColor = ({ withImage, recommendation }: GetBackgroundColorArgs) => {
+export const getBackgroundColor = ({
+  withImage,
+  recommendation,
+}: GetBackgroundColorArgs) => {
   switch (true) {
     case withImage: {
       return 'none';

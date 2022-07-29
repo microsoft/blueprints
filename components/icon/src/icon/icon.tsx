@@ -1,4 +1,4 @@
-import { mergeStyles } from '@fluentui/react';
+import { mergeClasses } from '@griffel/react';
 import { nanoid } from 'nanoid';
 import type { FC } from 'react';
 import { useMemo } from 'react';
@@ -38,7 +38,7 @@ export const Icon: FC<IconProps> = ({
 
   // Styles
   const classes = useIconStyles();
-  const rootClasses = mergeStyles(
+  const rootClasses = mergeClasses(
     classes.root,
     classes[color],
     classes[size],

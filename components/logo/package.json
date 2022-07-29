@@ -1,7 +1,7 @@
 {
-  "name": "@arbutus/hook.use-css-vars",
+  "name": "@arbutus/component.logo",
   "version": "0.0.0",
-  "description": "useCSSVars takes an object of theme values, generates CSS variables from them, and injects them into the document.",
+  "description": "Logo atomic component. Logo provides common logos to use in documentation sites.",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -20,7 +20,11 @@
     "react": ">=16.8.0 <=18.2.0",
     "react-dom": ">=16.8.0 <=18.2.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fluentui/react-theme": "^9.0.0",
+    "@griffel/react": "^1.1.0",
+    "nanoid": "^4.0.0"
+  },
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",
     "typescript": "^4.7.3"

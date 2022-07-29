@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "badge"
+npm i "@arbutus/component.badge"
 ```
 
 ```
-import { Badge } from "badge";
+import { Badge } from "@arbutus/component.badge";
 ```
