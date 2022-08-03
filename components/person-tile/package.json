@@ -1,7 +1,7 @@
 {
-  "name": "@arbutus/component.heading",
+  "name": "@arbutus/component.person-tile",
   "version": "0.0.1",
-  "description": "Heading component in Content collection. Heading is a text component that traditionally marks a new section. Heading also allows to copy a direct link to the section it marks.",
+  "description": "PersonTile is a component in Tile collection. PersonTile represents a person and is interactive.",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -21,9 +21,11 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@arbutus/component.icon-button": "0.0.1",
+    "@arbutus/component.icon": "0.0.1",
     "@arbutus/component.text": "0.0.1",
-    "@arbutus/hook.use-copy-to-clipboard": "0.0.1",
+    "@arbutus/component.tile": "0.0.1",
+    "@arbutus/style.use-space-styles": "0.0.1",
+    "@fluentui/react-avatar": "^9.0.4",
     "@fluentui/react-theme": "^9.0.0",
     "@griffel/react": "^1.1.0"
   },
