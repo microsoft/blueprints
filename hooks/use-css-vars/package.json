@@ -1,6 +1,6 @@
 {
   "name": "@arbutus/hook.use-css-vars",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "useCSSVars takes an object of theme values, generates CSS variables from them, and injects them into the document.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -20,7 +20,6 @@
     "react": ">=16.8.0 <=18.2.0",
     "react-dom": ">=16.8.0 <=18.2.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",
     "typescript": "^4.7.3"

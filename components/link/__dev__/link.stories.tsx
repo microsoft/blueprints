@@ -16,7 +16,6 @@ export default {
       },
     },
     withIcon: {
-      defaultValue: false,
       control: {
         type: 'boolean',
       },
