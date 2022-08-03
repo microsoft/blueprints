@@ -3,6 +3,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { colorMap } from '../src/icon-button/icon-button.styles';
 import type { IconButtonProps } from '../src/index';
 import { IconButton } from '../src/index';
 
@@ -15,6 +16,12 @@ export default {
       control: {
         type: 'select',
         options: Object.keys(paths),
+      },
+    },
+    color: {
+      control: {
+        type: 'select',
+        options: Object.keys(colorMap),
       },
     },
   },

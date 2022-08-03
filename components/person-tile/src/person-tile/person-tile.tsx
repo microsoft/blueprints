@@ -46,7 +46,7 @@ export const PersonTile: FC<PersonTileProps> = ({
           className={mergeClasses(classes.image, space.px3)}
         />
       ) : (
-        <Icon iconName="open" label={iconAlt} className={space.px3} />
+        <Icon iconName="open" label={iconAlt} className={space.px3} color="secondary" />
       )}
     </Tile>
   );
