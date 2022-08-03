@@ -24,11 +24,7 @@
     "packages:fix-mismatches": "syncpack fix-mismatches",
     "purge": "git clean -d -f -X -e .env -e .husky",
     "reset": "run-s purge i build:packages",
-    "start:backend": "npm run develop -w=apps/docsite-cms develop",
-    "start:frontend": "wait-on http://localhost:1337/admin && npm run start -w='apps/docsite-frontend'",
-    "start:ui": "start-storybook -p 6006",
-    "start": "cross-env FORCE_COLOR=1 npm-run-all -l -p start:*",
-    "storybook": "start-storybook -p 6006"
+    "start": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@arbutus/style.theming": "0.0.1",
