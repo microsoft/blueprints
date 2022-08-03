@@ -1,7 +1,7 @@
 {
-  "name": "@arbutus/component.cli-command",
+  "name": "@arbutus/component.command",
   "version": "0.0.1",
-  "description": "CLI Command component.",
+  "description": "Command component in Content collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -21,10 +21,10 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
+    "@arbutus/component.icon": "0.0.1",
     "@fluentui/react-theme": "^9.0.0",
     "@griffel/react": "^1.1.0",
-    "@reach/visually-hidden": "^0.17.0",
-    "copy-to-clipboard": "^3.3.1"
+    "@reach/visually-hidden": "^0.17.0"
   },
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",
