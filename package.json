@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build:packages": "lage build --scope @arbutus/*",
-    "build:storybook": "build-storybook -o docs",
+    "build:storybook": "NODE_OPTIONS=--max_old_space_size=4096 build-storybook -o docs",
     "g:component": "run-s hygen:component packages:fix-mismatches i",
     "g:hook": "run-s hygen:hook packages:fix-mismatches i",
     "hygen:component": "hygen new component",
