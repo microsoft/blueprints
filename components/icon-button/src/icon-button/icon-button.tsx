@@ -12,6 +12,7 @@ export const IconButton: FC<IconButtonProps> = ({
   label,
   iconName,
   onClick,
+  color = 'primary',
 }) => {
   // Styles
   const classes = useIconButtonStyles();
@@ -21,7 +22,7 @@ export const IconButton: FC<IconButtonProps> = ({
     <button
       onClick={onClick}
       aria-label={label}
-      className={mergeClasses(classes.root, space.p2, className)}
+      className={mergeClasses(classes.root, classes[color], space.p2, className)}
     >
       <Icon iconName={iconName} />
     </button>

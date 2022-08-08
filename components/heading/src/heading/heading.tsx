@@ -26,6 +26,7 @@ export const Heading: FC<HeadingProps> = ({
             onClick={() => copy(headingUrl)}
             label={copyLabel}
             iconName="link"
+            color="secondary"
           />
         </>
       )}
