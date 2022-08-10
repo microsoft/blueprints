@@ -42,7 +42,7 @@ export const ActionTile: FC<ActionTileProps> = ({
           </Text>
         )}
       </div>
-      <Icon iconName="chevron" color="tertiary" />
+      <Icon iconName="chevron-right" color="tertiary" />
     </Tile>
   );
 };

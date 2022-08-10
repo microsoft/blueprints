@@ -1,4 +1,4 @@
-export type { ConcertinaListProps } from './concertina-list';
-export { ConcertinaList, useConcertinaListStyles } from './concertina-list';
-export type { ConcertinaListItemProps } from './concertina-list-item';
-export { ConcertinaListItem, useConcertinaListItemStyles } from './concertina-list-item';
+export type { AccordionItemProps } from './accordion-item';
+export { AccordionItem, useAccordionItemStyles } from './accordion-item';
+export type { AccordionListProps } from './accordion-list';
+export { AccordionList, useAccordionListStyles } from './accordion-list';

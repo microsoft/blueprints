@@ -21,8 +21,11 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
+    "@arbutus/component.icon": "^0.0.1",
     "@fluentui/react-theme": "^9.0.0",
-    "@griffel/react": "^1.1.0"
+    "@griffel/react": "^1.1.0",
+    "framer-motion": "^6.3.12",
+    "nanoid": "^4.0.0"
   },
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",

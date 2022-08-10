@@ -1,5 +1,5 @@
 import { Check } from './check';
-import { Chevron } from './chevron';
+import { ChevronRight } from './chevron-right';
 import { Copy } from './copy';
 import { Download } from './download';
 import { Exclamation } from './exclamation';
@@ -11,7 +11,7 @@ import { X } from './x';
 
 export const paths = {
   check: Check,
-  chevron: Chevron,
+  ['chevron-right']: ChevronRight,
   copy: Copy,
   download: Download,
   exclamation: Exclamation,

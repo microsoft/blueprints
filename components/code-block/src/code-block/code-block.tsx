@@ -15,7 +15,7 @@ export const CodeBlock: FC<CodeBlockProps> = ({ language, code, isCopyable }) =>
   return (
     <div className={classes.root}>
       <div className={classes.overflow}>
-        <SyntaxHighlighter language={language} showLineNumbers={true} style={BlockStyles}>
+        <SyntaxHighlighter language={language} showLineNumbers={true} styles={BlockStyles}>
           {code}
         </SyntaxHighlighter>
       </div>
