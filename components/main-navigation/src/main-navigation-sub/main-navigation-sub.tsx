@@ -24,7 +24,7 @@ export const MainNavigationSub: FC<MainNavigationSubProps> = ({
     <Accordion className={className} collapsible>
       <AccordionItem>
         <AccordionButton className={classes.button}>
-          <Icon iconName="chevron" color="tertiary" />
+          <Icon iconName="chevron-right" color="tertiary" />
           {title}
         </AccordionButton>
         <AccordionPanel>
