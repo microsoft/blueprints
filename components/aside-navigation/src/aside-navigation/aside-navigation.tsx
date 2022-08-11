@@ -22,8 +22,7 @@ export const AsideNavigation: FC<AsideNavigationProps> = ({
   const space = useSpaceStyles();
   const count = Children.count(children);
   const highlightStyle = {
-    height: `calc(${100 / count}% - ${tokens.spacingVerticalM})`,
-    top: `calc((100% + ${tokens.spacingVerticalM}) / ${count} *  ${currentIndex})`,
+    top: `calc((100% + ${tokens.spacingVerticalS}) / ${count} * ${currentIndex})`,
   };
 
   return (
@@ -31,6 +30,7 @@ export const AsideNavigation: FC<AsideNavigationProps> = ({
       <Root className={className}>
         {title && (
           <Text
+            block
             as="h3"
             variant="caption"
             className={mergeClasses(space.pl4, space.pb6, space.pt1, classes.title)}

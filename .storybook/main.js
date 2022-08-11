@@ -2,7 +2,7 @@ module.exports = {
   stories: [
     '../components/**/*.stories.mdx',
     '../components/**/*.stories.@(js|jsx|ts|tsx)',
-    '../hook/**/*.stories.mdx',
+    '../hooks/**/*.stories.mdx',
     '../hooks/**/*.stories.@(js|jsx|ts|tsx)',
     '../styles/**/*.stories.mdx',
     '../styles/**/*.stories.@(js|jsx|ts|tsx)',
@@ -21,6 +21,8 @@ module.exports = {
   ],
   framework: '@storybook/react',
   core: {
-    builder: '@storybook/builder-vite',
+    builder: 'webpack5',
+    // Bug in @storybook/builder-vite: https://github.com/storybookjs/storybook/issues/18920
+    // builder: '@storybook/builder-vite',
   },
 };
