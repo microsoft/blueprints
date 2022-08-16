@@ -1,25 +1,8 @@
-import type { ReactNode } from 'react';
-
-export type ShellProps = {
+export type CrownProps = {
   /**
    * Consumer provided class.
    */
   className?: string;
-
-  /**
-   * A consumer defined header area.
-   */
-  headerArea: ReactNode;
-
-  /**
-   * A consumer defined footer area.
-   */
-  footerArea: ReactNode;
-
-  /**
-   * A consumer defined navigation area.
-   */
-  navigationArea: ReactNode;
 
   /**
    * Logo mark src.
@@ -35,6 +18,11 @@ export type ShellProps = {
    * Logo text.
    */
   logoText?: string;
+
+  /**
+   * Adds tablet tray controls.
+   */
+  isTabletLayout?: boolean;
 
   /**
    * Accessible text for the close tray action.

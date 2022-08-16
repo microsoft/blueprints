@@ -36,20 +36,20 @@ export const variantClasses = {
   },
   headline: {
     fontFamily: tokens.fontFamilyBase,
-    fontSize: tokens.fontSizeHero900,
-    lineHeight: tokens.lineHeightHero900,
-    fontWeight: tokens.fontWeightSemibold,
-  },
-  subheading: {
-    fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSizeHero800,
     lineHeight: tokens.lineHeightHero800,
     fontWeight: tokens.fontWeightSemibold,
   },
-  leading: {
+  subheading: {
     fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSizeHero700,
     lineHeight: tokens.lineHeightHero700,
+    fontWeight: tokens.fontWeightSemibold,
+  },
+  leading: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeBase600,
+    lineHeight: tokens.lineHeightBase600,
     fontWeight: tokens.fontWeightRegular,
   },
   paragraph: {

@@ -87,23 +87,9 @@ export const NavigationSample = () => {
   const classes = useNavStyles();
   const { breakpoint } = useBreakpoint(layout);
   const isTabletLayout = breakpoint === 'tablet' || breakpoint === 'mobile';
-  const { setIsOpen } = useTrayContext();
-  const onCloseTray = () => setIsOpen(false);
 
   return (
     <div className={!isTabletLayout ? classes.stickyHeader : ''}>
-      {isTabletLayout && (
-        <header className={classes.header}>
-          <IconButton
-            iconName="slide-in"
-            label="Close navigation"
-            onClick={onCloseTray}
-          />
-          <Text as="h1" variant="subheading">
-            Arbutus
-          </Text>
-        </header>
-      )}
       <NavigationMenu />
     </div>
   );

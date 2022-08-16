@@ -8,6 +8,7 @@ import type { FC } from 'react';
 import * as React from 'react';
 import useBreakpoint from 'use-breakpoint';
 
+import { Crown } from '../crown';
 import { useShellStyles } from './shell.styles';
 import type { ShellProps } from './shell.types';
 
@@ -17,6 +18,11 @@ export const Shell: FC<ShellProps> = ({
   footerArea,
   headerArea,
   navigationArea,
+  logoMarkAlt,
+  logoMarkSrc,
+  logoText,
+  closeTrayLabel,
+  openTrayLabel,
 }) => {
   // Styles
   const classes = useShellStyles();
@@ -29,7 +35,20 @@ export const Shell: FC<ShellProps> = ({
   return (
     <TrayProvider value={trayValue}>
       <div className={mergeClasses(classes.root, className)}>
-        <Header className={classes.header}>{headerArea}</Header>
+        {isTabletLayout && (
+          <div className={mergeClasses(classes.header, classes.headerTablet)}>
+            <Crown
+              isTabletLayout={isTabletLayout}
+              logoMarkAlt={logoMarkAlt}
+              logoMarkSrc={logoMarkSrc}
+              logoText={logoText}
+              closeTrayLabel={closeTrayLabel}
+              openTrayLabel={openTrayLabel}
+              className={mergeClasses(space.mx8, space.my5)}
+            />
+            <Header>{headerArea}</Header>
+          </div>
+        )}
 
         <main
           className={mergeClasses(classes.main, !isTabletLayout && classes.mainDesktop)}
@@ -39,15 +58,35 @@ export const Shell: FC<ShellProps> = ({
               {({ isOpen }) => (
                 <Tray isOpen={isOpen}>
                   <div className={mergeClasses(space.px8, space.py5)}>
+                    <Crown
+                      isTabletLayout={isTabletLayout}
+                      logoMarkAlt={logoMarkAlt}
+                      logoMarkSrc={logoMarkSrc}
+                      logoText={logoText}
+                      closeTrayLabel={closeTrayLabel}
+                      openTrayLabel={openTrayLabel}
+                    />
                     {navigationArea}
                   </div>
                 </Tray>
               )}
             </TrayConsumer>
           ) : (
-            <>{navigationArea}</>
+            <nav>
+              <Crown
+                isTabletLayout={isTabletLayout}
+                logoMarkAlt={logoMarkAlt}
+                logoMarkSrc={logoMarkSrc}
+                logoText={logoText}
+                className={space.my5}
+              />
+              {navigationArea}
+            </nav>
           )}
-          {children}
+          <div>
+            {!isTabletLayout && <Header className={classes.header}>{headerArea}</Header>}
+            {children}
+          </div>
         </main>
 
         <Footer className={classes.footer}>{footerArea}</Footer>

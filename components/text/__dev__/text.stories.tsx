@@ -1,7 +1,6 @@
 import { Divider } from '@arbutus/component.divider';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
-import { mergeStyles } from '@fluentui/react';
-import { makeStyles, shorthands } from '@griffel/react';
+import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
@@ -49,6 +48,8 @@ Simple.args = {
 const useGridStyles = makeStyles({
   root: {
     maxWidth: '60rem',
+  },
+  article: {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
     columnGap: '1rem',
@@ -62,11 +63,11 @@ const useGridStyles = makeStyles({
 const TemplateDemo: ComponentStory<typeof Text> = () => {
   const space = useSpaceStyles();
   const grid = useGridStyles();
-  const imageClasses = mergeStyles(grid.image, space.mb4);
+  const imageClasses = mergeClasses(grid.image, space.mb4);
 
   return (
-    <main className={space.pb12}>
-      <Text block as="h1" variant="headline">
+    <main className={mergeClasses(space.pb12, grid.root)}>
+      <Text block as="h1" variant="headline" className={space.my4}>
         Headline
       </Text>
       <Text block variant="leading">
@@ -78,7 +79,7 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
       <Divider className={space.my8} />
 
-      <Text block as="h2" variant="subheading">
+      <Text block as="h2" variant="subheading" className={space.mb2}>
         Subheading
       </Text>
       <Text block variant="paragraph" className={space.mb8}>
@@ -88,7 +89,7 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
         iusto.
       </Text>
 
-      <div className={grid.root}>
+      <div className={grid.article}>
         <section>
           <img
             src="https://via.placeholder.com/300x100.png/f0f0f0"
@@ -125,9 +126,9 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
       <Divider className={space.my12} />
 
-      <div className={grid.root}>
+      <div className={grid.article}>
         <section>
-          <Text block as="h4" variant="jumbo" color="quaternary" className={space.mt4}>
+          <Text block as="h4" variant="jumbo" color="quaternary" className={space.my6}>
             Jumbo Text
           </Text>
           <Text block variant="description" color="secondary">
@@ -138,7 +139,7 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
           </Text>
         </section>
         <img
-          src="https://via.placeholder.com/300x100.png/f0f0f0"
+          src="https://via.placeholder.com/300x200.png/f0f0f0"
           alt="Text demo 2"
           className={grid.image}
         />
