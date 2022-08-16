@@ -10,12 +10,6 @@ import { makeStyles, shorthands } from '@griffel/react';
 import React from 'react';
 
 const useMainStyles = makeStyles({
-  root: {
-    maxWidth: '61.25rem',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    paddingBottom: '48px',
-  },
   split: {
     display: 'grid',
     gridTemplateColumns: 'repeat(2, 1fr)',
@@ -25,6 +19,7 @@ const useMainStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     columnGap: '1rem',
+    paddingBottom: '40px',
   },
   image: {
     ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
@@ -56,7 +51,7 @@ export const PageSample = () => {
   const classes = useMainStyles();
 
   return (
-    <main className={classes.root}>
+    <>
       <Text block as="h1" variant="jumbo">
         Button
       </Text>
@@ -173,6 +168,6 @@ export const PageSample = () => {
           onClick={() => {}}
         />
       </div>
-    </main>
+    </>
   );
 };

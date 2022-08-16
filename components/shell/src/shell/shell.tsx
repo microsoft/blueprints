@@ -36,7 +36,7 @@ export const Shell: FC<ShellProps> = ({
     <TrayProvider value={trayValue}>
       <div className={mergeClasses(classes.root, className)}>
         {isTabletLayout && (
-          <div className={mergeClasses(classes.header, classes.headerTablet)}>
+          <div className={mergeClasses(classes.header, classes.grid, space.px7)}>
             <Crown
               isTabletLayout={isTabletLayout}
               logoMarkAlt={logoMarkAlt}
@@ -44,20 +44,18 @@ export const Shell: FC<ShellProps> = ({
               logoText={logoText}
               closeTrayLabel={closeTrayLabel}
               openTrayLabel={openTrayLabel}
-              className={mergeClasses(space.mx8, space.my5)}
+              className={space.my5}
             />
             <Header>{headerArea}</Header>
           </div>
         )}
 
-        <main
-          className={mergeClasses(classes.main, !isTabletLayout && classes.mainDesktop)}
-        >
+        <div className={!isTabletLayout ? classes.grid : undefined}>
           {isTabletLayout ? (
             <TrayConsumer>
               {({ isOpen }) => (
                 <Tray isOpen={isOpen}>
-                  <div className={mergeClasses(space.px8, space.py5)}>
+                  <div className={mergeClasses(space.px7, space.py5)}>
                     <Crown
                       isTabletLayout={isTabletLayout}
                       logoMarkAlt={logoMarkAlt}
@@ -72,7 +70,7 @@ export const Shell: FC<ShellProps> = ({
               )}
             </TrayConsumer>
           ) : (
-            <nav>
+            <aside className={classes.aside}>
               <Crown
                 isTabletLayout={isTabletLayout}
                 logoMarkAlt={logoMarkAlt}
@@ -81,13 +79,15 @@ export const Shell: FC<ShellProps> = ({
                 className={space.my5}
               />
               {navigationArea}
-            </nav>
+            </aside>
           )}
           <div>
             {!isTabletLayout && <Header className={classes.header}>{headerArea}</Header>}
-            {children}
+            <main className={mergeClasses(classes.main, classes.boundaries)}>
+              {children}
+            </main>
           </div>
-        </main>
+        </div>
 
         <Footer className={classes.footer}>{footerArea}</Footer>
       </div>

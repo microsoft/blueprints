@@ -1,10 +1,10 @@
-import { Text } from '@arbutus/component.text';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
 import type { ShellProps } from '../src/index';
 import { Shell } from '../src/index';
+import { Area } from './area';
 // @ts-ignore TS doesn’t recognize the image format.
 import logo from './fluentui-logo.svg';
 import { FooterSample } from './footer-sample';
@@ -20,16 +20,16 @@ export default {
 
 const Template: ComponentStory<typeof Shell> = (args) => (
   <Shell {...args}>
-    <Text>Main Area</Text>
+    <Area>Main Area</Area>
   </Shell>
 );
 
 export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<ShellProps>>;
 
 Simple.args = {
-  headerArea: <Text>Header Area</Text>,
-  navigationArea: <Text>Navigation Area</Text>,
-  footerArea: <Text>Footer Area</Text>,
+  headerArea: <Area>Header Area</Area>,
+  navigationArea: <Area>Navigation Area</Area>,
+  footerArea: <Area>Footer Area</Area>,
   logoText: 'Project Name',
   closeTrayLabel: 'Close navigation.',
   openTrayLabel: 'Open navigation.',
