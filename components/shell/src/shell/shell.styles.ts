@@ -1,27 +1,49 @@
+import { TRAY_WIDTH } from '@arbutus/component.tray';
+import { layout as BREAKPOINTS } from '@arbutus/style.theming';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
-const footerHeight = '10rem';
-const headerHeight = '5rem';
+const toRawValue = (value: `${string}px`) => Number(value.replace('px', ''));
+
+export const FOOTER_HEIGHT = '160px';
+export const HEADER_HEIGHT = '80px';
+export const CONTENT_WIDTH = '980px';
+export const CONTAINER_WIDTH = `${
+  toRawValue(CONTENT_WIDTH) + toRawValue(TRAY_WIDTH) + 24
+}px`;
 
 export const useShellStyles = makeStyles({
   root: {
     width: '100%',
   },
   main: {
-    minHeight: `calc(100vh - (${headerHeight} + ${footerHeight}))`,
+    width: '100%',
+    minHeight: `calc(100vh - (${HEADER_HEIGHT} + ${FOOTER_HEIGHT}))`,
+    maxWidth: CONTENT_WIDTH,
+    marginLeft: 'auto',
+    marginRight: 'auto',
   },
-  mainDesktop: {
+  boundaries: {
+    [`@media screen and (max-width: ${BREAKPOINTS.desktop}px)`]: {
+      paddingLeft: tokens.spacingHorizontalXXL,
+    },
+    [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
+      paddingRight: tokens.spacingHorizontalXXL,
+    },
+  },
+  grid: {
     display: 'grid',
-    paddingLeft: tokens.spacingHorizontalXXL,
-    paddingRight: tokens.spacingHorizontalXXL,
-    gridTemplateColumns: '17.5rem auto',
+    gridTemplateColumns: `${TRAY_WIDTH} auto`,
     columnGap: tokens.spacingHorizontalXXL,
   },
   footer: {
-    minHeight: footerHeight,
+    minHeight: FOOTER_HEIGHT,
   },
   header: {
-    minHeight: headerHeight,
+    minHeight: HEADER_HEIGHT,
+    paddingRight: tokens.spacingHorizontalL,
+  },
+  aside: {
+    paddingLeft: tokens.spacingHorizontalL,
   },
 });

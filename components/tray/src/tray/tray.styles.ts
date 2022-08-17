@@ -1,9 +1,11 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
+export const TRAY_WIDTH = '324px';
+
 // Add to vars
-const width = 20.25;
-const border = 0.0625;
+const width = 324;
+const border = 1;
 const stack = {
   base: 1,
   middle: 10,
@@ -15,12 +17,12 @@ export const useTrayStyles = makeStyles({
   root: {
     zIndex: stack.middle,
     position: 'fixed',
-    width: `${width}rem`,
+    width: `${width}px`,
     height: '100vh',
     borderRightColor: tokens.colorNeutralStroke1,
-    borderRightWidth: `${border}rem`,
+    borderRightWidth: `${border}px`,
     borderRightStyle: 'solid',
-    transform: `translate3D(-${width + border}rem, 0, 0)`,
+    transform: `translate3D(-${width + border}px, 0, 0)`,
     opacity: 0,
     left: 0,
     top: 0,
@@ -31,7 +33,7 @@ export const useTrayStyles = makeStyles({
       transitionDuration: tokens.durationNormal,
       transitionTimingFunction: tokens.curveEasyEase,
     },
-    [`@media screen and (max-width: ${width}rem)`]: {
+    [`@media screen and (max-width: ${width}px)`]: {
       width: '100%',
     },
   },
