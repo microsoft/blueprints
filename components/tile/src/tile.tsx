@@ -29,6 +29,7 @@ export const Tile: FC<TileProps> = ({
         classes.root,
         classes.card,
         onClick && classes.interactive,
+        onClick && classes.interactiveCard,
         className,
       );
 
