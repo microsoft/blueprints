@@ -48,7 +48,12 @@ export const useTileStyles = makeStyles({
   card: {
     backgroundColor: tokens.colorNeutralBackground1,
     ...shorthands.borderRadius(tokens.borderRadiusLarge),
-    boxShadow: tokens.shadow8,
+    boxShadow: tokens.shadow4,
+  },
+  interactiveCard: {
+    ':hover': {
+      boxShadow: tokens.shadow16,
+    },
   },
   image: {
     backgroundColor: tokens.colorNeutralBackground6,
