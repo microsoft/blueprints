@@ -28,7 +28,7 @@
     "@arbutus/style.use-space-styles": "0.0.1",
     "@fluentui/react-spinner": "^9.0.3",
     "@fluentui/react-theme": "^9.0.0",
-    "@griffel/react": "^1.3.0"
+    "@griffel/react": "^1.3.1"
   },
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",

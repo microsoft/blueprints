@@ -1,8 +1,7 @@
 import { Divider } from '@arbutus/component.divider';
 import { Text } from '@arbutus/component.text';
 import { useSpaceStyles } from '@arbutus/style.use-space-styles';
-import { mergeStyles } from '@fluentui/react';
-import { makeStyles, shorthands } from '@griffel/react';
+import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import React from 'react';
 
 const useGridStyles = makeStyles({
@@ -20,7 +19,7 @@ const useGridStyles = makeStyles({
 export const PageSample = () => {
   const space = useSpaceStyles();
   const grid = useGridStyles();
-  const imageClasses = mergeStyles(grid.image, space.mb4);
+  const imageClasses = mergeClasses(grid.image, space.mb4);
 
   return (
     <main className={space.pb12}>

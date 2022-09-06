@@ -25,7 +25,7 @@ to: components/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/package.j
   },
   "dependencies": {
     "@fluentui/react-theme": "^9.0.0",
-   "@griffel/react": "^1.3.0"
+   "@griffel/react": "^1.3.1"
   },
   "devDependencies": {
     "@m365-admin/config.ts": "^0.1.2",

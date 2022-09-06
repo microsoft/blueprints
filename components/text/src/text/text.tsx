@@ -1,4 +1,4 @@
-import { Text as FluentText } from '@fluentui/react';
+import { Text as FluentText } from '@fluentui/react-text';
 import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
