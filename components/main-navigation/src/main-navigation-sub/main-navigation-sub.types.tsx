@@ -8,4 +8,9 @@ export type MainNavigationSubProps = {
    * Subsection title
    */
   title: string;
+
+  /**
+   * Initial state of the accordion item.
+   */
+  initial?: 'collapsed' | 'expanded';
 };

@@ -15,7 +15,9 @@ export default {
 } as ComponentMeta<typeof MainNavigation>;
 
 const Link: FC<{ onClick: () => void }> = ({ children, onClick }) => (
-  <button onClick={onClick}>{children}</button>
+  <button onClick={onClick} style={{ padding: 0, cursor: 'pointer' }}>
+    {children}
+  </button>
 );
 
 const useNavigationStyles = makeStyles({
