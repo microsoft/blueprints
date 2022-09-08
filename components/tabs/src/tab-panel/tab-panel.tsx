@@ -18,6 +18,7 @@ export const TabPanel: FC<TabPanelProps> = ({ className, children, __index = 0 }
       isActive={isActive}
       className={className}
       id={`${id}-tabpanel-${__index}`}
+      hidden={!isActive}
     >
       <SlideMotion isActive={isActive}>{children}</SlideMotion>
     </AppearMotion>
