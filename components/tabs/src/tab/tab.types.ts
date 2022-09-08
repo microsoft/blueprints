@@ -1,8 +1,21 @@
-import type { TabProps as ReachTabProps } from '@reach/tabs';
-
 export type TabProps = {
   /**
    * Consumer provided class.
    */
   className?: string;
-} & ReachTabProps;
+  /**
+   * Set the tab to be disabled.
+   * @default false
+   */
+  disabled?: boolean;
+
+  /**
+   * [INTERNAL] Do not use.
+   */
+  __index?: number;
+
+  /**
+   * [INTERNAL] Do not use.
+   */
+  __total?: number;
+};

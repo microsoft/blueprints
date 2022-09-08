@@ -1,8 +1,11 @@
-import type { TabPanelProps as ReachTabPanelProps } from '@reach/tabs';
-
 export type TabPanelProps = {
   /**
    * Consumer provided class.
    */
   className?: string;
-} & ReachTabPanelProps;
+
+  /**
+   * [INTERNAL] Do not use. Index in the array of tabs.
+   */
+  __index?: number;
+};
