@@ -1,5 +1,3 @@
-import '@reach/accordion/styles.css';
-
 import { Icon } from '@arbutus/component.icon';
 import { AnimatePresence } from 'framer-motion';
 import { nanoid } from 'nanoid';
