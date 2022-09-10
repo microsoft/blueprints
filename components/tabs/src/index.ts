@@ -4,7 +4,6 @@ export type { TabListProps } from './tab-list';
 export { TabList } from './tab-list';
 export type { TabPanelProps } from './tab-panel';
 export { TabPanel } from './tab-panel';
-export type { TabPanelsProps } from './tab-panels';
 export { TabPanels } from './tab-panels';
 export type { TabsProps } from './tabs';
 export { Tabs, useTabsStyles } from './tabs';
