@@ -34,7 +34,7 @@ export const variantClasses = {
     lineHeight: tokens.lineHeightHero1000,
     fontWeight: tokens.fontWeightSemibold,
   },
-  headline: {
+  title: {
     fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSizeHero800,
     lineHeight: tokens.lineHeightHero800,
@@ -46,10 +46,16 @@ export const variantClasses = {
     lineHeight: tokens.lineHeightHero700,
     fontWeight: tokens.fontWeightSemibold,
   },
+  headline: {
+    fontFamily: tokens.fontFamilyBase,
+    fontSize: tokens.fontSizeBase500,
+    lineHeight: tokens.lineHeightBase500,
+    fontWeight: tokens.fontWeightSemibold,
+  },
   leading: {
     fontFamily: tokens.fontFamilyBase,
-    fontSize: tokens.fontSizeBase600,
-    lineHeight: tokens.lineHeightBase600,
+    fontSize: tokens.fontSizeBase400,
+    lineHeight: tokens.lineHeightBase400,
     fontWeight: tokens.fontWeightRegular,
   },
   paragraph: {

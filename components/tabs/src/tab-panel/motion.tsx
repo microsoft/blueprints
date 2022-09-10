@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import type { FC } from 'react';
+import type { FC, HTMLAttributes } from 'react';
 import * as React from 'react';
 
 const SLIDE_DURATION = 0.2;
@@ -14,23 +14,28 @@ const appearVariants = {
   },
 };
 
-export const AppearMotion: FC<{
-  isActive: boolean;
-  className?: string;
-  id: string;
-  role: string;
-  tabIndex: number;
-}> = ({ id, className, children, isActive, role, tabIndex }) => {
+type AppearMotionProps = HTMLAttributes<HTMLDivElement> & { isActive: boolean };
+
+export const AppearMotion: FC<AppearMotionProps> = ({
+  children,
+  className,
+  hidden,
+  id,
+  isActive,
+  role,
+  tabIndex,
+}) => {
   return (
     <motion.div
-      id={id}
+      animate={isActive ? 'active' : 'inactive'}
       className={className}
+      hidden={hidden}
+      id={id}
+      initial="inactive"
       role={role}
+      style={{ position: 'relative', top: 0 }}
       tabIndex={tabIndex}
       variants={appearVariants}
-      style={{ position: 'relative', top: 0 }}
-      animate={isActive ? 'active' : 'inactive'}
-      initial="inactive"
     >
       {children}
     </motion.div>
