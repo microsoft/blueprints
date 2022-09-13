@@ -7,9 +7,14 @@ export type IllustrationTileProps = {
   className?: string;
 
   /**
-   * Title of the bookmark.
+   * Title of the tile.
    */
-  title: string;
+  title?: string;
+
+  /**
+   * Description of the tile.
+   */
+  description?: string;
 
   /**
    * Custom optional icon.

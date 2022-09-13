@@ -20,7 +20,7 @@ export const useAsideNavigationStyles = makeStyles({
     position: 'absolute',
     height: tokens.lineHeightBase600,
     width: tokens.strokeWidthThick,
-    left: `-${tokens.strokeWidthThin}`,
+    left: `calc(${tokens.strokeWidthThin} * -1)`,
     backgroundColor: tokens.colorBrandForeground1,
   },
 });

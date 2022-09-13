@@ -3,4 +3,6 @@ import * as React from 'react';
 
 import { injectIndex } from '../utilities';
 
-export const TabPanels: FC = ({ children }) => <>{injectIndex({ children })}</>;
+export const TabPanels: FC<{ className: string }> = ({ children, className }) => (
+  <div className={className}>{injectIndex({ children })}</div>
+);

@@ -11,6 +11,7 @@ import type { IllustrationTileProps } from './illustration-tile.types';
 export const IllustrationTile: FC<IllustrationTileProps> = ({
   className,
   title,
+  description,
   illustrationAlt,
   illustrationSrc,
   onClick,
@@ -31,10 +32,23 @@ export const IllustrationTile: FC<IllustrationTileProps> = ({
       )}
       onClick={onClick}
     >
-      <img src={illustrationSrc} alt={illustrationAlt} className={space.mb4} />
-      <Text block variant="caption">
-        {title}
-      </Text>
+      <img src={illustrationSrc} alt={illustrationAlt} />
+      {title && (
+        <Text block variant="caption" align="center" className={space.mt4}>
+          {title}
+        </Text>
+      )}
+      {description && (
+        <Text
+          block
+          variant="description"
+          color="secondary"
+          align="center"
+          className={space.mt4}
+        >
+          {description}
+        </Text>
+      )}
     </Tile>
   );
 };
