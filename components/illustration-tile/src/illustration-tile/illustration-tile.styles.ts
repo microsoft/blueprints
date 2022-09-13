@@ -5,6 +5,7 @@ export const useIllustrationTileStyles = makeStyles({
     textAlign: 'center',
     '& img': {
       display: 'inline-block',
+      maxWidth: '100%',
     },
   },
   isInteractive: {

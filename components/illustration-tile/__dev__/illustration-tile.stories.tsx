@@ -50,6 +50,7 @@ export const Interactive = Template.bind({}) as ComponentStory<
 >;
 Interactive.args = {
   title: 'Accessibility',
+  description: 'Guidance on how you can make your products accessible with our library.',
   illustrationAlt: 'Icon representing accessibility',
   illustrationSrc: illustrationInteractive as string,
 };
@@ -58,7 +59,6 @@ export const Static = Template.bind({}) as ComponentStory<
   FunctionComponent<IllustrationTileProps>
 >;
 Static.args = {
-  title: 'Accessibility',
   illustrationAlt: 'Icon representing accessibility',
   illustrationSrc: illustrationStatic as string,
   onClick: undefined,
