@@ -27,6 +27,7 @@
     "start": "start-storybook -p 6006"
   },
   "devDependencies": {
+    "@arbutus/component.aside-navigation": "0.0.1",
     "@arbutus/component.bookmark-tile": "0.0.1",
     "@arbutus/component.link": "0.0.1",
     "@arbutus/component.mark-list": "0.0.1",
