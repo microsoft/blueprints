@@ -17,12 +17,12 @@ export type CalloutProps = {
   className?: string;
 
   /**
-   * String that renders as the Header text
+   * String that renders as the Header text.
    */
   title: string;
 
   /**
-   * String that renders as the Header text
+   * Status color variant options.
    */
   status?: StatusVariant;
 };
