@@ -55,9 +55,9 @@ export const useTabStyles = makeStyles({
   active: {
     backgroundColor: tokens.colorNeutralBackground1,
     fontWeight: tokens.fontWeightSemibold,
-    boxShadow: `0 0.125rem 0 0 ${tokens.colorBrandForeground1}`,
+    boxShadow: `0 2px 0 0 ${tokens.colorBrandForeground1}`,
     '&:focus-visible': {
-      boxShadow: `0 0.125rem 0 0 transparent`,
+      boxShadow: `0 2px 0 0 transparent`,
     },
   },
 

@@ -47,10 +47,13 @@ export const Tab: FC<TabProps> = ({
     }
   };
 
+  const isInitialMount = useRef<boolean>(true);
+
   useEffect(() => {
-    if (active) {
+    if (!isInitialMount.current && active) {
       ref.current?.focus();
     }
+    isInitialMount.current = false;
   }, [active]);
 
   // Styles
