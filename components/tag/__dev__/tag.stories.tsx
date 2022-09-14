@@ -20,4 +20,5 @@ Simple.args = {
   type: 'accent',
   children: 'Future',
   isInline: false,
+  size: 'medium',
 };

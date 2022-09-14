@@ -5,7 +5,13 @@ import * as React from 'react';
 import { useTagStyles } from './tag.styles';
 import type { TagProps } from './tag.types';
 
-export const Tag: FC<TagProps> = ({ className, children, isInline, type = 'accent' }) => {
+export const Tag: FC<TagProps> = ({
+  children,
+  className,
+  isInline,
+  size = 'medium',
+  type = 'accent',
+}) => {
   // Styles
   const classes = useTagStyles();
 
@@ -14,6 +20,7 @@ export const Tag: FC<TagProps> = ({ className, children, isInline, type = 'accen
       className={mergeClasses(
         classes.root,
         classes[type],
+        classes[size],
         isInline && classes.inline,
         className,
       )}

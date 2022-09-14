@@ -1,4 +1,5 @@
 export type TypeVariant = 'new' | 'error' | 'warning' | 'info' | 'success' | 'accent';
+export type SizeVariant = 'small' | 'medium';
 
 export type CalloutIconProps = {
   status?: TypeVariant;
@@ -22,6 +23,12 @@ export type TagProps = {
    * @default 'accent'
    */
   type?: TypeVariant;
+
+  /**
+   * Size variant options.
+   * @default 'medium'
+   */
+  size?: SizeVariant;
 
   /**
    * Inline variant.

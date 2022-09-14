@@ -42,17 +42,28 @@ export const useTagStyles = makeStyles({
   root: {
     color: tokens.colorNeutralForeground1,
     display: 'block',
+
+    textTransform: 'uppercase',
+    ...shorthands.borderRadius(tokens.borderRadiusMedium),
+  },
+  medium: {
     paddingTop: tokens.spacingVerticalXS,
     paddingBottom: tokens.spacingVerticalXS,
     paddingLeft: tokens.spacingHorizontalS,
     paddingRight: tokens.spacingHorizontalS,
-    columnGap: tokens.spacingHorizontalL,
     fontSize: tokens.fontSizeBase200,
     fontWeight: tokens.fontWeightSemibold,
-    textTransform: 'uppercase',
-    ...shorthands.borderRadius(tokens.borderRadiusMedium),
-    // ...shorthands.borderWidth(tokens.strokeWidthThin),
-    // ...shorthands.borderStyle('solid'),
+    lineHeight: tokens.lineHeightBase200,
+  },
+  small: {
+    paddingTop: tokens.spacingVerticalXXS,
+    paddingBottom: tokens.spacingVerticalXXS,
+    paddingLeft: tokens.spacingHorizontalXS,
+    paddingRight: tokens.spacingHorizontalXS,
+    fontSize: tokens.fontSizeBase100,
+    lineHeight: tokens.lineHeightBase100,
+    fontWeight: tokens.fontWeightSemibold,
+    letterSpacing: '0.5px',
   },
   ...typeClasses,
   inline: {
