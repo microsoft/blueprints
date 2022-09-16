@@ -1,5 +1,6 @@
 {
-  "name": "@arbutus/component.code-block",
+  "name": "@microsoft/arbutus.code-block",
+  "private": true,
   "version": "0.0.1",
   "description": "Code Block component.",
   "main": "lib/index.js",

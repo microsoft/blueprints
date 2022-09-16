@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/component.tray",
+  "name": "@microsoft/arbutus.tray",
   "version": "0.0.1",
   "description": "Tray composite component in the Layout collection.",
   "main": "lib/index.js",
@@ -26,11 +26,11 @@
     "framer-motion": "^6.3.12"
   },
   "devDependencies": {
-    "@arbutus/component.divider": "0.0.1",
-    "@arbutus/component.icon-button": "0.0.1",
-    "@arbutus/component.main-navigation": "0.0.1",
-    "@arbutus/component.text": "0.0.1",
-    "@arbutus/style.use-space-styles": "0.0.1",
+    "@microsoft/arbutus.divider": "0.0.1",
+    "@microsoft/arbutus.icon-button": "0.0.1",
+    "@microsoft/arbutus.main-navigation": "0.0.1",
+    "@microsoft/arbutus.text": "0.0.1",
+    "@microsoft/arbutus.use-space-styles": "0.0.1",
     "@m365-admin/config.ts": "^0.1.3",
     "typescript": "^4.8.2"
   }

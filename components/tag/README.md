@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.tag"
+npm i "@microsoft/arbutus.tag"
 ```
 
 ```
-import { Tag } from "@arbutus/component.tag";
+import { Tag } from "@microsoft/arbutus.tag";
 ```

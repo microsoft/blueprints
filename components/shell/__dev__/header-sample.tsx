@@ -1,6 +1,6 @@
-import { Link } from '@arbutus/component.link';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
+import { Link } from '@microsoft/arbutus.link';
 import type { SyntheticEvent } from 'react';
 import * as React from 'react';
 

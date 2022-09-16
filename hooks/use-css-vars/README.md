@@ -5,11 +5,11 @@
 ## Get Started
 
 ```sh
-npm i @arbutus/hook.use-css-vars
+npm i @microsoft/arbutus.use-css-vars
 ```
 
 ```tsx
-import { useCSSVars } from '@arbutus/hook.use-css-vars';
+import { useCSSVars } from '@microsoft/arbutus.use-css-vars';
 ```
 
 ## Usage

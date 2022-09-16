@@ -1,7 +1,7 @@
-import { Divider } from '@arbutus/component.divider';
-import { Link } from '@arbutus/component.link';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { makeStyles } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { Link } from '@microsoft/arbutus.link';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC, SyntheticEvent } from 'react';
 import * as React from 'react';
 

@@ -1,1 +1,2 @@
-export * from './guidance';
+export type { GuidanceLegendListItem, GuidanceProps } from './guidance';
+export { Guidance, useGuidanceStyles } from './guidance';

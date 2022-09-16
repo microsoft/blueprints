@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/style.use-space-styles",
+  "name": "@microsoft/arbutus.use-space-styles",
   "version": "0.0.1",
   "description": "Utility space classes.",
   "main": "lib/index.js",
@@ -25,6 +25,6 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
-    "@arbutus/style.theming": "0.0.1"
+    "@microsoft/arbutus.theming": "0.0.1"
   }
 }

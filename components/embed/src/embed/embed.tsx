@@ -1,10 +1,10 @@
-import { Divider } from '@arbutus/component.divider';
-import { IconButton } from '@arbutus/component.icon-button';
-import { Logo } from '@arbutus/component.logo';
-import { Text } from '@arbutus/component.text';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { Spinner } from '@fluentui/react-spinner';
 import { mergeClasses } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { IconButton } from '@microsoft/arbutus.icon-button';
+import { Logo } from '@microsoft/arbutus.logo';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
 import { useState } from 'react';

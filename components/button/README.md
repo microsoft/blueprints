@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.button"
+npm i "@microsoft/arbutus.button"
 ```
 
 ```
-import { Button } from "@arbutus/component.button";
+import { Button } from "@microsoft/arbutus.button";
 ```

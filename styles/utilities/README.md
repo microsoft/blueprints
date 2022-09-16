@@ -5,7 +5,7 @@
 ## Get Started
 
 ```sh
-npm i @arbutus/style.utilities
+npm i @microsoft/arbutus.style-utilities
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm i @arbutus/style.utilities
 **mapToStyles is designed to help generating styles variants. It generates Griffel classes from a map of values.**
 
 ```tsx
-import { mapToStyles } from "@arbutus/style.utilities";
+import { mapToStyles } from "@microsoft/arbutus.style-utilities";
 ```
 
 #### Parameters

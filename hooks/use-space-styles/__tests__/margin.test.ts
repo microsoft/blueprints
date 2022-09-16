@@ -1,4 +1,4 @@
-import { spaceScale } from '@arbutus/style.theming';
+import { spaceScale } from '@microsoft/arbutus.theming';
 
 import { margin } from '../src/margin';
 

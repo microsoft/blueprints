@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/component.tag",
+  "name": "@microsoft/arbutus.tag",
   "version": "0.0.1",
   "description": "Tag component in the Atoms collection.",
   "main": "lib/index.js",

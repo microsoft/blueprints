@@ -23,7 +23,7 @@ export default {
   },
 } as ComponentMeta<typeof Link>;
 
-const LinkSample = ({ children }) => {
+const LinkSample: React.FC<{ className: string }> = ({ children, className }) => {
   const onClick = (e: SyntheticEvent) => {
     e.preventDefault();
     alert('Clicked!');
@@ -31,6 +31,7 @@ const LinkSample = ({ children }) => {
 
   return (
     <button
+      className={className}
       style={{ background: 'transparent', border: 'none', outline: 'none' }}
       onClick={onClick}
     >

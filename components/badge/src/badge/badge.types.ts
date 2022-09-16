@@ -1,4 +1,4 @@
-import type { paths } from '@arbutus/component.icon';
+import type { paths } from '@microsoft/arbutus.icon';
 
 export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info';
 

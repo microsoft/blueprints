@@ -1,4 +1,4 @@
-import type { paths } from '@arbutus/component.icon';
+import type { paths } from '@microsoft/arbutus.icon';
 import type { SyntheticEvent } from 'react';
 
 export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info';

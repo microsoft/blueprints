@@ -1,5 +1,6 @@
 {
-  "name": "@arbutus/style.blocks",
+  "name": "@microsoft/arbutus.style-blocks",
+  "private": true,
   "version": "0.0.1",
   "description": "Reusable style blocks",
   "main": "lib/index.js",

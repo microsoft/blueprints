@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/style.fonts",
+  "name": "@microsoft/arbutus.fonts",
   "version": "0.0.1",
   "description": "Documentation fonts",
   "main": "lib/index.js",

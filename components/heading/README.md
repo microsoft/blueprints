@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.heading"
+npm i "@microsoft/arbutus.heading"
 ```
 
 ```
-import { Heading } from "@arbutus/component.heading";
+import { Heading } from "@microsoft/arbutus.heading";
 ```

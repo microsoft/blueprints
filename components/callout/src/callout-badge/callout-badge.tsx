@@ -1,4 +1,4 @@
-import { Badge } from '@arbutus/component.badge';
+import { Badge } from '@microsoft/arbutus.badge';
 import type { FC } from 'react';
 import * as React from 'react';
 

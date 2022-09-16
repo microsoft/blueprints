@@ -1,5 +1,6 @@
 {
-  "name": "@arbutus/component.data-table",
+  "name": "@microsoft/arbutus.data-table",
+  "private": true,
   "version": "0.0.1",
   "description": "DataTable component.",
   "main": "lib/index.js",

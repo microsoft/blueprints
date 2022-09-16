@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.image-tile"
+npm i "@microsoft/arbutus.image-tile"
 ```
 
 ```
-import { ImageTile } from "@arbutus/component.image-tile";
+import { ImageTile } from "@microsoft/arbutus.image-tile";
 ```

@@ -1,4 +1,4 @@
-import type { logos } from '@arbutus/component.logo';
+import type { logos } from '@microsoft/arbutus.logo';
 import type { ElementType } from 'react';
 
 export type GuidanceLegendListItem = {

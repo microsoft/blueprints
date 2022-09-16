@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.person-tile"
+npm i "@microsoft/arbutus.person-tile"
 ```
 
 ```
-import { PersonTile } from "@arbutus/component.person-tile";
+import { PersonTile } from "@microsoft/arbutus.person-tile";
 ```

@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/hook.use-copy-to-clipboard"
+npm i "@microsoft/arbutus.use-copy-to-clipboard"
 ```
 
 ```
-import { useCopyToClipboard } from "@arbutus/hook.use-copy-to-clipboard";
+import { useCopyToClipboard } from "@microsoft/arbutus.use-copy-to-clipboard";
 ```

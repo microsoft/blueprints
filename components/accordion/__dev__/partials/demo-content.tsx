@@ -1,5 +1,5 @@
-import { Text } from '@arbutus/component.text';
-import { Tile } from '@arbutus/component.tile';
+import { Text } from '@microsoft/arbutus.text';
+import { Tile } from '@microsoft/arbutus.tile';
 import * as React from 'react';
 
 export const DemoContent: React.FC = () => (

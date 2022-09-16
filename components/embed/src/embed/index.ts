@@ -1,4 +1,3 @@
-export * from './embed';
-export * from './embed.styles';
+export { Embed } from './embed';
+export { sizeClasses, useEmbedStyles } from './embed.styles';
 export type { EmbedProps } from './embed.types';
-

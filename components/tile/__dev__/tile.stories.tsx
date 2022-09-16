@@ -1,16 +1,16 @@
-import { Text } from '@arbutus/component.text';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
 import type { TileProps } from '../src/index';
 import { Tile } from '../src/index';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import background from './background.png';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import logo from './logo.svg';
 
 export default {

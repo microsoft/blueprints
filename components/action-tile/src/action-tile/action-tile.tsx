@@ -1,7 +1,7 @@
-import { Icon } from '@arbutus/component.icon';
-import { Text } from '@arbutus/component.text';
-import { Tile } from '@arbutus/component.tile';
 import { mergeClasses } from '@griffel/react';
+import { Icon } from '@microsoft/arbutus.icon';
+import { Text } from '@microsoft/arbutus.text';
+import { Tile } from '@microsoft/arbutus.tile';
 import type { FC } from 'react';
 import * as React from 'react';
 

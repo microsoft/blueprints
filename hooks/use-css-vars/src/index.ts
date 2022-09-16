@@ -12,7 +12,7 @@ import type { UseCSSVars } from './use-css-vars.types';
  * @example
  *
  * ```tsx
- * import { useCSSVars } from '@arbutus/hook.use-css-vars';
+ * import { useCSSVars } from '@microsoft/arbutus.use-css-vars';
  *
  * const theme = {
  *   color: {

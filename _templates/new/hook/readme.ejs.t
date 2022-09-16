@@ -8,9 +8,9 @@ to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/README.md
 ## Get Started
 
 ```sh
-npm i "@arbutus/hook.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>"
+npm i "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>"
 ```
 
 ```
-import { <%= h.changeCase.camel(name) %> } from "@arbutus/hook.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>";
+import { <%= h.changeCase.camel(name) %> } from "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>";
 ```

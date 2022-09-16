@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/hook.use-css-vars",
+  "name": "@microsoft/arbutus.use-css-vars",
   "version": "0.0.1",
   "description": "useCSSVars takes an object of theme values, generates CSS variables from them, and injects them into the document.",
   "main": "lib/index.js",

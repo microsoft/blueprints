@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.command"
+npm i "@microsoft/arbutus.command"
 ```
 
 ```
-import { Command } from "@arbutus/component.command";
+import { Command } from "@microsoft/arbutus.command";
 ```

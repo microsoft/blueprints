@@ -1,15 +1,15 @@
-import { Divider } from '@arbutus/component.divider';
-import { IconButton } from '@arbutus/component.icon-button';
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { IconButton } from '@microsoft/arbutus.icon-button';
 import {
   MainNavigation,
   MainNavigationLink,
   MainNavigationSub,
-} from '@arbutus/component.main-navigation';
-import { Text } from '@arbutus/component.text';
-import { useTrayContext } from '@arbutus/component.tray';
-import { layout } from '@arbutus/style.theming';
-import { tokens } from '@fluentui/react-theme';
-import { makeStyles } from '@griffel/react';
+} from '@microsoft/arbutus.main-navigation';
+import { Text } from '@microsoft/arbutus.text';
+import { layout } from '@microsoft/arbutus.theming';
+import { useTrayContext } from '@microsoft/arbutus.tray';
 import type { FC } from 'react';
 import * as React from 'react';
 import useBreakpoint from 'use-breakpoint';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type { FC } from 'react';
-import { ThemeProvider } from '@arbutus/style.theming';
+import { ThemeProvider } from '@microsoft/arbutus.theming';
 
 import {
   useSegoeUI100,

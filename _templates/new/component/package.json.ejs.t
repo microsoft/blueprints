@@ -2,7 +2,7 @@
 to: components/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/package.json
 ---
 {
-  "name": "@arbutus/component.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>",
+  "name": "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
   "main": "lib/index.js",

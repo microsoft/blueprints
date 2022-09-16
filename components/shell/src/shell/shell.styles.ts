@@ -1,7 +1,7 @@
-import { TRAY_WIDTH } from '@arbutus/component.tray';
-import { layout as BREAKPOINTS } from '@arbutus/style.theming';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
+import { TRAY_WIDTH } from '@microsoft/arbutus.tray';
 
 const toRawValue = (value: `${string}px`) => Number(value.replace('px', ''));
 

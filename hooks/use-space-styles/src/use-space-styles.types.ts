@@ -1,4 +1,4 @@
-import type { SpaceScale } from '@arbutus/style.theming';
+import type { SpaceScale } from '@microsoft/arbutus.theming';
 
 export type LonghandProperty = 'margin' | 'padding';
 export type ShorthandProperty = 'margin' | 'padding';

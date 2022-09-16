@@ -1,9 +1,9 @@
-import { Footer } from '@arbutus/component.footer';
-import { Header } from '@arbutus/component.header';
-import { Tray, TrayConsumer, TrayProvider, useTray } from '@arbutus/component.tray';
-import { layout as BREAKPOINTS } from '@arbutus/style.theming';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { mergeClasses } from '@griffel/react';
+import { Footer } from '@microsoft/arbutus.footer';
+import { Header } from '@microsoft/arbutus.header';
+import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
+import { Tray, TrayConsumer, TrayProvider, useTray } from '@microsoft/arbutus.tray';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
 import useBreakpoint from 'use-breakpoint';

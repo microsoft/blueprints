@@ -2,7 +2,7 @@
 to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/package.json
 ---
 {
-  "name": "@arbutus/hook.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>",
+  "name": "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
   "main": "lib/index.js",

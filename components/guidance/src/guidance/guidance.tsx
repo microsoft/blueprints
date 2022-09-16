@@ -1,9 +1,9 @@
-import { IconButton } from '@arbutus/component.icon-button';
-import { Logo } from '@arbutus/component.logo';
-import { OrderedList, OrderedListItem } from '@arbutus/component.ordered-list';
-import { Text } from '@arbutus/component.text';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { mergeClasses } from '@griffel/react';
+import { IconButton } from '@microsoft/arbutus.icon-button';
+import { Logo } from '@microsoft/arbutus.logo';
+import { OrderedList, OrderedListItem } from '@microsoft/arbutus.ordered-list';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import useResizeObserver from '@react-hook/resize-observer';
 import type { FC, MutableRefObject } from 'react';
 import * as React from 'react';

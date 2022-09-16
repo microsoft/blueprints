@@ -42,6 +42,9 @@ export const useCommandStyles = makeStyles({
     backgroundColor: tokens.colorNeutralBackground4,
   },
   complete: {
-    backgroundColor: tokens.colorPaletteGreenForeground1,
+    backgroundColor: tokens.colorPaletteGreenBackground2,
+    '& > svg': {
+      color: tokens.colorPaletteGreenForeground2,
+    },
   },
 });
