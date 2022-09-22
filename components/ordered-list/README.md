@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.ordered-list"
+npm i "@microsoft/arbutus.ordered-list"
 ```
 
 ```
-import { OrderedList } from "@arbutus/component.ordered-list";
+import { OrderedList } from "@microsoft/arbutus.ordered-list";
 ```

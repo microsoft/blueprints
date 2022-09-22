@@ -1,5 +1,5 @@
-import { Text } from '@arbutus/component.text';
 import { mergeClasses } from '@griffel/react';
+import { Text } from '@microsoft/arbutus.text';
 import type { FC } from 'react';
 import * as React from 'react';
 import { useContext } from 'react';

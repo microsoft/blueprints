@@ -1,4 +1,4 @@
-import type { ColorVariant, paths } from '@arbutus/component.icon';
+import type { ColorVariant, paths } from '@microsoft/arbutus.icon';
 
 export type MarkListProps = {
   /**

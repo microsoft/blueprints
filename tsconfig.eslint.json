@@ -3,7 +3,7 @@
 */
 {
   // Extends the base config.
-  "extends": "@m365-admin/config.ts",
+  "extends": "@microsoft/arbutus.ts",
   "compilerOptions": {
     // Ensures that nobody can accidentally use this config for a build.
     "noEmit": true

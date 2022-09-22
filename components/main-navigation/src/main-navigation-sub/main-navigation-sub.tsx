@@ -1,4 +1,4 @@
-import { Icon } from '@arbutus/component.icon';
+import { Icon } from '@microsoft/arbutus.icon';
 import { AnimatePresence } from 'framer-motion';
 import { nanoid } from 'nanoid';
 import type { FC } from 'react';

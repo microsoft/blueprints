@@ -1,7 +1,7 @@
-import { Divider } from '@arbutus/component.divider';
-import { Text } from '@arbutus/component.text';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import React from 'react';
 
 const useGridStyles = makeStyles({
@@ -23,10 +23,10 @@ export const PageSample = () => {
 
   return (
     <main className={space.pb12}>
-      <Text as="h1" variant="headline">
+      <Text block as="h1" variant="headline">
         Headline
       </Text>
-      <Text variant="leading">
+      <Text block variant="leading">
         Leading Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi
         eveniet dolorum officiis assumenda similique a voluptas voluptatum ducimus
         temporibus. Culpa animi labore molestiae nesciunt suscipit, architecto optio sit
@@ -35,10 +35,10 @@ export const PageSample = () => {
 
       <Divider className={space.my8} />
 
-      <Text as="h2" variant="subheading">
+      <Text block as="h2" variant="subheading">
         Subheading
       </Text>
-      <Text variant="paragraph" className={space.mb8}>
+      <Text block variant="paragraph" className={space.mb8}>
         Paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
         modi eveniet dolorum officiis assumenda similique a voluptas voluptatum ducimus
         temporibus. Culpa animi labore molestiae nesciunt suscipit, architecto optio sit
@@ -52,10 +52,10 @@ export const PageSample = () => {
             alt="Text demo 1"
             className={imageClasses}
           />
-          <Text as="h2" variant="caption" className={space.mb1}>
+          <Text block as="h2" variant="caption" className={space.mb1}>
             Caption: What do you see?
           </Text>
-          <Text variant="description" color="tertiary">
+          <Text block variant="description" color="tertiary">
             Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Cupiditate modi eveniet dolorum officiis assumenda similique a voluptas
             voluptatum ducimus temporibus. Culpa animi labore molestiae nesciunt suscipit,
@@ -68,10 +68,10 @@ export const PageSample = () => {
             alt="Text demo 1"
             className={imageClasses}
           />
-          <Text as="h2" variant="caption" className={space.mb1}>
+          <Text block as="h2" variant="caption" className={space.mb1}>
             Caption: What do you see?
           </Text>
-          <Text variant="description" color="tertiary">
+          <Text block variant="description" color="tertiary">
             Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Cupiditate modi eveniet dolorum officiis assumenda similique a voluptas
             voluptatum ducimus temporibus. Culpa animi labore molestiae nesciunt suscipit,
@@ -84,10 +84,10 @@ export const PageSample = () => {
 
       <div className={grid.root}>
         <section>
-          <Text as="h4" variant="jumbo" color="quaternary" className={space.mt4}>
+          <Text block as="h4" variant="jumbo" color="quaternary" className={space.mt4}>
             Jumbo Text
           </Text>
-          <Text variant="description" color="secondary">
+          <Text block variant="description" color="secondary">
             Description: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Cupiditate modi eveniet dolorum officiis assumenda similique a voluptas
             voluptatum ducimus temporibus. Culpa animi labore molestiae nesciunt suscipit,

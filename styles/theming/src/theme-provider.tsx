@@ -1,8 +1,8 @@
-import { useCSSVars } from '@arbutus/hook.use-css-vars';
-import { usePrefersColorScheme } from '@arbutus/hook.use-prefers-color-scheme';
 import { FluentProvider } from '@fluentui/react-provider';
 import type { Theme } from '@fluentui/react-theme';
 import { createDarkTheme, createLightTheme } from '@fluentui/react-theme';
+import { useCSSVars } from '@microsoft/arbutus.use-css-vars';
+import { usePrefersColorScheme } from '@microsoft/arbutus.use-prefers-color-scheme';
 import type { FC } from 'react';
 import * as React from 'react';
 import { useMemo, useState } from 'react';

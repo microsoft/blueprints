@@ -1,14 +1,14 @@
-import { Tile } from '@arbutus/component.tile';
 import { makeStyles } from '@griffel/react';
+import { Tile } from '@microsoft/arbutus.tile';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
 import type { IllustrationTileProps } from '../src/index';
 import { IllustrationTile } from '../src/index';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import illustrationInteractive from './interactive.svg';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import illustrationStatic from './static.svg';
 
 export default {

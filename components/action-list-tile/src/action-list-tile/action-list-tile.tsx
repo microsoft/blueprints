@@ -1,6 +1,6 @@
-import { Tile } from '@arbutus/component.tile';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { mergeClasses } from '@griffel/react';
+import { Tile } from '@microsoft/arbutus.tile';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
 

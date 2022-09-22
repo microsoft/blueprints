@@ -5,11 +5,11 @@
 ## Get Started
 
 ```sh
-npm i @arbutus/hook.use-prefers-color-scheme
+npm i @microsoft/arbutus.use-prefers-color-scheme
 ```
 
 ```ts
-import { usePrefersColorScheme } from '@arbutus/hook.use-prefers-color-scheme';
+import { usePrefersColorScheme } from '@microsoft/arbutus.use-prefers-color-scheme';
 ```
 
 ## Usage

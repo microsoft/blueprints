@@ -1,13 +1,13 @@
-import { Tile } from '@arbutus/component.tile';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import { Tile } from '@microsoft/arbutus.tile';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
 import type { ActionTileProps } from '../src/index';
 import { ActionTile } from '../src/index';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import icon from './icon.svg';
 
 export default {

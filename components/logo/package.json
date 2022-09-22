@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/component.logo",
+  "name": "@microsoft/arbutus.logo",
   "version": "0.0.1",
   "description": "Logo atomic component. Logo provides common logos to use in documentation sites.",
   "main": "lib/index.js",
@@ -21,12 +21,12 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@fluentui/react-theme": "^9.0.0",
+    "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.3.1",
     "nanoid": "^4.0.0"
   },
   "devDependencies": {
-    "@m365-admin/config.ts": "^0.1.3",
+    "@microsoft/arbutus.ts": "0.0.1",
     "typescript": "^4.8.2"
   }
 }

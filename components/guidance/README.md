@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.guidance"
+npm i "@microsoft/arbutus.guidance"
 ```
 
 ```
-import { Guidance } from "@arbutus/component.guidance";
+import { Guidance } from "@microsoft/arbutus.guidance";
 ```

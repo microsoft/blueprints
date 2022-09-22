@@ -1,0 +1,30 @@
+{
+  "name": "@microsoft/arbutus.use-space-styles",
+  "version": "0.0.1",
+  "description": "Utility space classes.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "exports": [
+    "./lib/index.js"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@microsoft/arbutus.ts": "0.0.1",
+    "@types/jest": "^28.1.1",
+    "jest": "^28.1.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@microsoft/arbutus.theming": "0.0.1"
+  }
+}

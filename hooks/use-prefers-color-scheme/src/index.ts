@@ -9,7 +9,7 @@ export type ColorScheme = 'light' | 'dark';
  *
  * @example
  * ```tsx
- * import { usePrefersColorScheme } from '@arbutus/hook.use-prefers-color-scheme';
+ * import { usePrefersColorScheme } from '@microsoft/arbutus.use-prefers-color-scheme';
  *
  * const MyComponent = () => {
  *   // "light" | "dark" | undefined

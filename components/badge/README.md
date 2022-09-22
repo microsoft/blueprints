@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.badge"
+npm i "@microsoft/arbutus.badge"
 ```
 
 ```
-import { Badge } from "@arbutus/component.badge";
+import { Badge } from "@microsoft/arbutus.badge";
 ```

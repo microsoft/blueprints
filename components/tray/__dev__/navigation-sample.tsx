@@ -1,9 +1,9 @@
-import { Divider } from '@arbutus/component.divider';
+import { Divider } from '@microsoft/arbutus.divider';
 import {
   MainNavigation,
   MainNavigationLink,
   MainNavigationSub,
-} from '@arbutus/component.main-navigation';
+} from '@microsoft/arbutus.main-navigation';
 import type { FC } from 'react';
 import * as React from 'react';
 

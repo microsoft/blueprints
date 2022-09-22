@@ -1,4 +1,4 @@
-import { colorClasses, variantClasses } from '@arbutus/component.text';
+import { colorClasses, variantClasses } from '@microsoft/arbutus.text';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';

@@ -4,7 +4,7 @@ import React from 'react';
 
 import type { GuidanceProps } from '../src/index';
 import { Guidance } from '../src/index';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import image from './image.png';
 
 const Wrapper = ({ children }) => (

@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.embed"
+npm i "@microsoft/arbutus.embed"
 ```
 
 ```
-import { Embed } from "@arbutus/component.embed";
+import { Embed } from "@microsoft/arbutus.embed";
 ```

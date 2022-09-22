@@ -1,4 +1,4 @@
-import { paths } from '@arbutus/component.icon';
+import { paths } from '@microsoft/arbutus.icon';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';

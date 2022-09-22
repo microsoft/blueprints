@@ -1,6 +1,6 @@
-import { IconButton } from '@arbutus/component.icon-button';
-import { Text } from '@arbutus/component.text';
-import { useCopyToClipboard } from '@arbutus/hook.use-copy-to-clipboard';
+import { IconButton } from '@microsoft/arbutus.icon-button';
+import { Text } from '@microsoft/arbutus.text';
+import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
 import type { FC } from 'react';
 import * as React from 'react';
 

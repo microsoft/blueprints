@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.logo"
+npm i "@microsoft/arbutus.logo"
 ```
 
 ```
-import { Logo } from "@arbutus/component.logo";
+import { Logo } from "@microsoft/arbutus.logo";
 ```

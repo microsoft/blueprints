@@ -1,4 +1,4 @@
-import type { TextProps } from '@arbutus/component.text';
+import type { TextProps } from '@microsoft/arbutus.text';
 
 export type HeadingUrlProps = {
   /**

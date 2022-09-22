@@ -1,6 +1,6 @@
-import { colorClasses, paths } from '@arbutus/component.icon';
-import { Text } from '@arbutus/component.text';
 import { makeStyles } from '@griffel/react';
+import { colorClasses, paths } from '@microsoft/arbutus.icon';
+import { Text } from '@microsoft/arbutus.text';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';

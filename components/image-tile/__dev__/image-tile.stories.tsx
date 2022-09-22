@@ -4,7 +4,7 @@ import React from 'react';
 
 import type { ImageTileProps } from '../src/index';
 import { ImageTile } from '../src/index';
-// @ts-ignore TS doesn't recognize the image format.
+// @ts-ignore TS doesn’t recognize the image format.
 import image from './image.svg';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

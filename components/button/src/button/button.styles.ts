@@ -1,6 +1,6 @@
-import { mapToStyles } from '@arbutus/style.utilities';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import { mapToStyles } from '@microsoft/arbutus.style-utilities';
 
 import type { ColorMap, ColorValue, SizeMap, SizeValue } from './button.types';
 

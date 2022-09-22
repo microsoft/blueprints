@@ -1,6 +1,6 @@
-import { mapToStyles } from '@arbutus/style.utilities';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
+import { mapToStyles } from '@microsoft/arbutus.style-utilities';
 
 import type { ColorVariant } from './text.types';
 

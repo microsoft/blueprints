@@ -1,5 +1,5 @@
-import { Tile } from '@arbutus/component.tile';
 import { makeStyles } from '@griffel/react';
+import { Tile } from '@microsoft/arbutus.tile';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';

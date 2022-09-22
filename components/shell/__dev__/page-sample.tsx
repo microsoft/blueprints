@@ -1,16 +1,16 @@
+import { makeStyles, shorthands } from '@griffel/react';
 import {
   AsideNavigation,
   AsideNavigationLink,
-} from '@arbutus/component.aside-navigation';
-import { BookmarkTile } from '@arbutus/component.bookmark-tile';
-import { Divider } from '@arbutus/component.divider';
-import { MarkList, MarkListItem } from '@arbutus/component.mark-list';
-import { RecommendationTile } from '@arbutus/component.recommendation-tile';
-import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@arbutus/component.tabs';
-import { Text } from '@arbutus/component.text';
-import { Tile } from '@arbutus/component.tile';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
-import { makeStyles, shorthands } from '@griffel/react';
+} from '@microsoft/arbutus.aside-navigation';
+import { BookmarkTile } from '@microsoft/arbutus.bookmark-tile';
+import { Divider } from '@microsoft/arbutus.divider';
+import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
+import { RecommendationTile } from '@microsoft/arbutus.recommendation-tile';
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@microsoft/arbutus.tabs';
+import { Text } from '@microsoft/arbutus.text';
+import { Tile } from '@microsoft/arbutus.tile';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import React, { useState } from 'react';
 
 const useMainStyles = makeStyles({
@@ -81,7 +81,7 @@ export const PageSample = () => {
             <Tab>Implementation</Tab>
           </TabList>
 
-          <TabPanels className={space.pt10}>
+          <TabPanels>
             <TabPanel>
               <MarkList>
                 <MarkListItem>

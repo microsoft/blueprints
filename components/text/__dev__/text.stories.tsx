@@ -1,6 +1,6 @@
-import { Divider } from '@arbutus/component.divider';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';

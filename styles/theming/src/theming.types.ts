@@ -1,5 +1,5 @@
-import type { ColorScheme } from '@arbutus/hook.use-prefers-color-scheme';
 import type { BrandVariants, Theme } from '@fluentui/react-theme';
+import type { ColorScheme } from '@microsoft/arbutus.use-prefers-color-scheme';
 
 export type ThemeOption = ColorScheme;
 

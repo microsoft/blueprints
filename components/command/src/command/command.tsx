@@ -1,6 +1,6 @@
-import { Icon } from '@arbutus/component.icon';
-import { useCopyToClipboard } from '@arbutus/hook.use-copy-to-clipboard';
 import { mergeClasses } from '@griffel/react';
+import { Icon } from '@microsoft/arbutus.icon';
+import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
 import { VisuallyHidden } from '@reach/visually-hidden';
 import type { FC } from 'react';
 import * as React from 'react';

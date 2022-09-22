@@ -1,6 +1,6 @@
-import { Text } from '@arbutus/component.text';
-import { useSpaceStyles } from '@arbutus/style.use-space-styles';
 import { mergeClasses } from '@griffel/react';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
 

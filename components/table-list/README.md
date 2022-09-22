@@ -5,9 +5,9 @@
 ## Get Started
 
 ```sh
-npm i "@arbutus/component.table-list"
+npm i "@microsoft/arbutus.table-list"
 ```
 
 ```
-import { TableList } from "@arbutus/component.table-list";
+import { TableList } from "@microsoft/arbutus.table-list";
 ```

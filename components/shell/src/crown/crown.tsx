@@ -1,7 +1,7 @@
-import { IconButton } from '@arbutus/component.icon-button';
-import { Text } from '@arbutus/component.text';
-import { useTrayContext } from '@arbutus/component.tray';
 import { mergeClasses } from '@griffel/react';
+import { IconButton } from '@microsoft/arbutus.icon-button';
+import { Text } from '@microsoft/arbutus.text';
+import { useTrayContext } from '@microsoft/arbutus.tray';
 import type { FC } from 'react';
 import * as React from 'react';
 
