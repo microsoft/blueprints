@@ -1,5 +1,5 @@
 {
-  "name": "@arbutus/illustration-tile",
+  "name": "@microsoft/arbutus.illustration-tile",
   "version": "0.0.1",
   "description": "IllustrationTile composite component in the Tiles collection.",
   "main": "lib/index.js",
