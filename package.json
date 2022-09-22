@@ -1,6 +1,10 @@
 {
   "name": "arbutus",
   "description": "Documentation site UI library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/arbutus.git"
+  },
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -10,6 +14,7 @@
     "utilities/*"
   ],
   "scripts": {
+    "publish:packages": "beachball publish",
     "build:packages": "lage build",
     "build:storybook": "build-storybook -o docs",
     "g:component": "run-s hygen:component packages:fix-mismatches i",
@@ -54,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
     "assert": "^2.0.0",
-    "beachball": "^2.30.1",
+    "beachball": "^2.31.0",
     "cross-env": "7.0.3",
     "esbuild": "^0.15.7",
     "eslint": "^8.23.0",
