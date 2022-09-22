@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/arbutus.ordered-list",
+  "entries": [
+    {
+      "date": "Thu, 22 Sep 2022 21:33:05 GMT",
+      "tag": "@microsoft/arbutus.ordered-list_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "none": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.ordered-list",
+            "commit": "aad57cf5578e376859889c0d2539e6f02fe990dc",
+            "comment": "Alpha release"
+          }
+        ]
+      }
+    }
+  ]
+}

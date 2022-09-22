@@ -1,0 +1,20 @@
+{
+  "name": "@arbutus/illustration-tile",
+  "entries": [
+    {
+      "date": "Thu, 22 Sep 2022 21:33:05 GMT",
+      "tag": "@arbutus/illustration-tile_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "none": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@arbutus/illustration-tile",
+            "commit": "aad57cf5578e376859889c0d2539e6f02fe990dc",
+            "comment": "Alpha release"
+          }
+        ]
+      }
+    }
+  ]
+}

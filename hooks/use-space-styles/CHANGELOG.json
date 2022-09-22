@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/arbutus.use-space-styles",
+  "entries": [
+    {
+      "date": "Thu, 22 Sep 2022 21:33:05 GMT",
+      "tag": "@microsoft/arbutus.use-space-styles_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "none": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.use-space-styles",
+            "commit": "aad57cf5578e376859889c0d2539e6f02fe990dc",
+            "comment": "Alpha release"
+          }
+        ]
+      }
+    }
+  ]
+}
