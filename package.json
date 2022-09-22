@@ -14,9 +14,9 @@
     "utilities/*"
   ],
   "scripts": {
-    "publish:packages": "beachball publish",
     "build:packages": "lage build",
     "build:storybook": "build-storybook -o docs",
+    "change": "beachball change",
     "g:component": "run-s hygen:component packages:fix-mismatches i",
     "g:hook": "run-s hygen:hook packages:fix-mismatches i",
     "hygen:component": "hygen new component",
@@ -28,6 +28,7 @@
     "lint:staged": "lint-staged",
     "lint": "lage lint",
     "packages:fix-mismatches": "syncpack fix-mismatches",
+    "publish:packages": "beachball publish",
     "purge": "git clean -d -f -X -e .env -e .husky",
     "reset": "run-s purge i build:packages",
     "start": "start-storybook -p 6006"
