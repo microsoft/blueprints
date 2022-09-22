@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Type Checking
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "node",
+
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // Interop Constraints
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "jsx": "react",
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+
+    // Completeness
+    "skipLibCheck": true
+  }
+}

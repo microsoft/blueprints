@@ -24,11 +24,11 @@ to: components/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/package.j
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@fluentui/react-theme": "^9.0.0",
+    "@fluentui/react-theme": "^9.1.0",
    "@griffel/react": "^1.3.1"
   },
   "devDependencies": {
-    "@m365-admin/config.ts": "^0.1.2",
+    "@microsoft/arbutus.ts": "0.0.1",
     "typescript": "^4.7.4"
   }
 }
