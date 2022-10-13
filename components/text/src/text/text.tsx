@@ -9,21 +9,36 @@ import type { TextProps } from './text.types';
 export const Text: FC<TextProps> = ({
   children,
   color = 'primary',
-  variant = 'paragraph',
+  variant,
   className,
+  weight,
+  size,
+  font,
   ...props
 }) => {
   // Styles
   const classes = useTextStyles();
-  const rootClasses = mergeClasses(
-    classes.root,
-    classes[color],
-    classes[variant],
-    className,
-  );
+
+  let variantClass = '';
+
+  if (!weight || !size || !font) {
+    if (variant) {
+      variantClass = classes[variant];
+    } else {
+      variantClass = classes.paragraph;
+    }
+  }
+
+  const rootClasses = mergeClasses(classes.root, classes[color], variantClass, className);
 
   return (
-    <FluentText className={rootClasses} {...props}>
+    <FluentText
+      weight={weight}
+      size={size}
+      font={font}
+      className={rootClasses}
+      {...props}
+    >
       {children}
     </FluentText>
   );

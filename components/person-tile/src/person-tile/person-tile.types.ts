@@ -44,7 +44,7 @@ export type PersonTileProps = {
   /**
    * Avatar of the person.
    */
-  avatarSrc: string;
+  avatarSrc?: string;
 
   /**
    * Role of the person.

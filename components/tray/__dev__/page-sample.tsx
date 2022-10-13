@@ -35,7 +35,7 @@ export const PageSample = () => {
 
       <Divider className={space.my8} />
 
-      <Text block as="h2" variant="subheading">
+      <Text block as="h2" variant="subtitle">
         Subheading
       </Text>
       <Text block variant="paragraph" className={space.mb8}>

@@ -44,7 +44,7 @@ WithCopyLinkButton.args = {
   as: 'h1',
   children: 'Section title',
   color: 'primary',
-  variant: 'subheading',
+  variant: 'subtitle',
   headingUrl: 'example.com',
   copyLabel: 'Copy heading URL to clipboard.',
 };

@@ -62,7 +62,7 @@ const NavigationExampleTemplate: ComponentStory<typeof Tray> = () => {
         <div className={space.p3}>
           <header className={classes.header}>
             <IconButton iconName="slide-in" label="Close navigation" onClick={onClose} />
-            <Text as="h1" variant="subheading">
+            <Text as="h1" variant="subtitle">
               Arbutus
             </Text>
           </header>
@@ -71,7 +71,7 @@ const NavigationExampleTemplate: ComponentStory<typeof Tray> = () => {
       </Tray>
       <header className={classes.header}>
         <IconButton iconName="slide-out" label="Open navigation" onClick={onOpen} />
-        <Text as="h1" variant="subheading">
+        <Text as="h1" variant="subtitle">
           Arbutus
         </Text>
       </header>

@@ -46,7 +46,7 @@ const Content = ({ index }: { index: string }) => {
   return (
     <Tile variant="solid-color">
       <article className={space.p6}>
-        <Text block as="h3" variant="subheading">
+        <Text block as="h3" variant="subtitle">
           This Is a Headline {index}!
         </Text>
         <Text block>
@@ -139,7 +139,7 @@ export const PageSample = () => {
 
         <Divider className={space.my8} />
 
-        <Text block as="h2" variant="subheading">
+        <Text block as="h2" variant="subtitle">
           Overview
         </Text>
         <Text block variant="paragraph" className={space.mb8}>
@@ -166,7 +166,7 @@ export const PageSample = () => {
         </div>
 
         <Divider className={space.my12} />
-        <Text block as="h2" variant="subheading" className={space.mb8}>
+        <Text block as="h2" variant="subtitle" className={space.mb8}>
           Resources
         </Text>
         <div className={classes.thirds}>
