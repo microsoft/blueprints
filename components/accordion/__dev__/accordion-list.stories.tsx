@@ -8,7 +8,7 @@ import { AccordionItem, AccordionList } from '../src/index';
 import { DemoContent } from './partials/demo-content';
 
 export default {
-  title: 'Content/AccordionList',
+  title: 'Blocks/AccordionList',
   component: AccordionItem,
 } as ComponentMeta<typeof AccordionItem>;
 

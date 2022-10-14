@@ -23,7 +23,7 @@ const code = `export const CodeBlock: FC<CodeBlockProps> = ({ language, code, is
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Content/CodeBlock',
+  title: 'Blocks/CodeBlock',
   component: CodeBlock,
 } as ComponentMeta<typeof CodeBlock>;
 

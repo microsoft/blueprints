@@ -7,7 +7,7 @@ import { Embed } from '../src/index';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Content/Embed',
+  title: 'Blocks/Embed',
   component: Embed,
   argTypes: {
     size: {

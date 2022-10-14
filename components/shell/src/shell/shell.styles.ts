@@ -25,10 +25,10 @@ export const useShellStyles = makeStyles({
   },
   boundaries: {
     [`@media screen and (max-width: ${BREAKPOINTS.desktop}px)`]: {
-      paddingLeft: tokens.spacingHorizontalXXL,
+      paddingLeft: tokens.spacingHorizontalL,
     },
     [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
-      paddingRight: tokens.spacingHorizontalXXL,
+      paddingRight: tokens.spacingHorizontalL,
     },
   },
   grid: {
@@ -45,5 +45,11 @@ export const useShellStyles = makeStyles({
   },
   aside: {
     paddingLeft: tokens.spacingHorizontalL,
+    position: 'relative',
+  },
+  stickyNavigation: {
+    position: 'sticky',
+    top: '0',
+    height: '25rem',
   },
 });

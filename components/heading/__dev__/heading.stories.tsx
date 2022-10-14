@@ -7,7 +7,7 @@ import type { HeadingProps } from '../src/index';
 import { Heading } from '../src/index';
 
 export default {
-  title: 'Content/Heading',
+  title: 'Blocks/Heading',
   component: Heading,
   argTypes: {
     variant: {
