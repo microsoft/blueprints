@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes the prop logic.",
+  "packageName": "@microsoft/arbutus.text",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}
