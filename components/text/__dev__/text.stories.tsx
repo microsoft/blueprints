@@ -67,8 +67,8 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
   return (
     <main className={mergeClasses(space.pb12, grid.root)}>
-      <Text block as="h1" variant="headline" className={space.my4}>
-        Headline
+      <Text block as="h1" variant="title" className={space.my4}>
+        Title
       </Text>
       <Text block variant="leading">
         Leading Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi
@@ -79,8 +79,20 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
 
       <Divider className={space.my8} />
 
-      <Text block as="h2" variant="subheading" className={space.mb2}>
+      <Text block as="h2" variant="subtitle" className={space.mb2}>
         Subheading
+      </Text>
+      <Text block variant="leading">
+        Leading Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi
+        eveniet dolorum officiis assumenda similique a voluptas voluptatum ducimus
+        temporibus. Culpa animi labore molestiae nesciunt suscipit, architecto optio sit
+        iusto.
+      </Text>
+
+      <Divider className={space.my8} />
+
+      <Text block as="h1" variant="headline" className={space.my4}>
+        Headline
       </Text>
       <Text block variant="paragraph" className={space.mb8}>
         Paragraph Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate

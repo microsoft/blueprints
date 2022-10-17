@@ -22,7 +22,7 @@ const Content = ({ index }: { index: string }) => {
   return (
     <Tile variant="solid-color" className={space.mt10}>
       <article className={space.p6}>
-        <Text as="h3" variant="subheading" block>
+        <Text as="h3" variant="subtitle" block>
           This Is a Headline {index}!
         </Text>
         <Text as="p" block>

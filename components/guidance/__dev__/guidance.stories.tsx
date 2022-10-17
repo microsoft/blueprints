@@ -12,7 +12,7 @@ const Wrapper = ({ children }) => (
 );
 
 export default {
-  title: 'Content/Guidance',
+  title: 'Blocks/Guidance',
   component: Guidance,
 } as ComponentMeta<typeof Guidance>;
 

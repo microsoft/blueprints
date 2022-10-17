@@ -78,7 +78,7 @@ const Children = () => {
 
   return (
     <div className={space.p6}>
-      <Text variant="subheading" as="h3" className={space.my2}>
+      <Text variant="subtitle" as="h3" className={space.my2}>
         Hello 👋
       </Text>
       <p>

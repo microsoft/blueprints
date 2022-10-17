@@ -8,7 +8,7 @@ import { Callout } from '../src/index';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Content/Callout',
+  title: 'Blocks/Callout',
   component: Callout,
   argTypes: {
     status: {

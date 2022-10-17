@@ -32,7 +32,7 @@ export const variantClasses = {
     fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSizeHero1000,
     lineHeight: tokens.lineHeightHero1000,
-    fontWeight: tokens.fontWeightSemibold,
+    fontWeight: tokens.fontWeightBold,
   },
   title: {
     fontFamily: tokens.fontFamilyBase,
@@ -40,7 +40,7 @@ export const variantClasses = {
     lineHeight: tokens.lineHeightHero800,
     fontWeight: tokens.fontWeightSemibold,
   },
-  subheading: {
+  subtitle: {
     fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSizeHero700,
     lineHeight: tokens.lineHeightHero700,

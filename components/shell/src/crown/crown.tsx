@@ -37,7 +37,7 @@ export const Crown: FC<CrownProps> = ({
         <img src={logoMarkSrc} alt={logoMarkAlt} className={classes.image} />
       )}
       {logoText && (
-        <Text as="h1" variant="subheading">
+        <Text as="h1" variant="subtitle">
           {logoText}
         </Text>
       )}

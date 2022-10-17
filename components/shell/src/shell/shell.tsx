@@ -6,7 +6,7 @@ import { Tray, TrayConsumer, TrayProvider, useTray } from '@microsoft/arbutus.tr
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
-import useBreakpoint from 'use-breakpoint';
+import { useBreakpoint } from 'use-breakpoint';
 
 import { Crown } from '../crown';
 import { useShellStyles } from './shell.styles';
@@ -71,14 +71,16 @@ export const Shell: FC<ShellProps> = ({
             </TrayConsumer>
           ) : (
             <aside className={classes.aside}>
-              <Crown
-                isTabletLayout={isTabletLayout}
-                logoMarkAlt={logoMarkAlt}
-                logoMarkSrc={logoMarkSrc}
-                logoText={logoText}
-                className={space.my5}
-              />
-              {navigationArea}
+              <div className={!isTabletLayout ? classes.stickyNavigation : ''}>
+                <Crown
+                  isTabletLayout={isTabletLayout}
+                  logoMarkAlt={logoMarkAlt}
+                  logoMarkSrc={logoMarkSrc}
+                  logoText={logoText}
+                  className={space.my5}
+                />
+                {navigationArea}
+              </div>
             </aside>
           )}
           <div>

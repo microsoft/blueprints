@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Improves the layout.",
+  "packageName": "@microsoft/arbutus.shell",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

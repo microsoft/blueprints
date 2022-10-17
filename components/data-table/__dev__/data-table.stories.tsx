@@ -28,7 +28,7 @@ const data = items.map((text) => [{ content: <Content text={text} /> }, image({ 
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Content/DataTable',
+  title: 'Blocks/DataTable',
   component: DataTable,
 } as ComponentMeta<typeof DataTable>;
 
