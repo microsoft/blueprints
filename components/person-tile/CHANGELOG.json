@@ -2,6 +2,39 @@
   "name": "@microsoft/arbutus.person-tile",
   "entries": [
     {
+      "date": "Mon, 17 Oct 2022 19:57:18 GMT",
+      "tag": "@microsoft/arbutus.person-tile_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.person-tile",
+            "commit": "2c48367bbbd177cac074e3c64ca6b7432ca94030",
+            "comment": "Fixes props typing, so the avatar source is optional."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.person-tile",
+            "comment": "Bump @microsoft/arbutus.icon to v0.0.2",
+            "commit": "e93a5f9d7165facd0fa933abc5e74586743540c3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.person-tile",
+            "comment": "Bump @microsoft/arbutus.text to v0.0.2",
+            "commit": "e93a5f9d7165facd0fa933abc5e74586743540c3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.person-tile",
+            "comment": "Bump @microsoft/arbutus.tile to v0.0.2",
+            "commit": "e93a5f9d7165facd0fa933abc5e74586743540c3"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Sep 2022 21:33:05 GMT",
       "tag": "@microsoft/arbutus.person-tile_v0.0.1",
       "version": "0.0.1",
