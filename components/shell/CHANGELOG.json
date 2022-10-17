@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Mon, 17 Oct 2022 19:57:18 GMT",
+      "tag": "@microsoft/arbutus.shell_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "2c48367bbbd177cac074e3c64ca6b7432ca94030",
+            "comment": "Improves the layout."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.tray to v0.0.2",
+            "commit": "e93a5f9d7165facd0fa933abc5e74586743540c3"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Sep 2022 21:33:05 GMT",
       "tag": "@microsoft/arbutus.shell_v0.0.1",
       "version": "0.0.1",

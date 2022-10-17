@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.shell",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shell component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@microsoft/arbutus.footer": "0.0.1",
     "@microsoft/arbutus.header": "0.0.1",
-    "@microsoft/arbutus.tray": "0.0.1",
+    "@microsoft/arbutus.tray": "0.0.2",
     "@microsoft/arbutus.theming": "0.0.1",
     "@microsoft/arbutus.use-space-styles": "0.0.1",
     "@fluentui/react-theme": "^9.1.0",

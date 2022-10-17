@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes props typing, so the avatar source is optional.",
-  "packageName": "@microsoft/arbutus.person-tile",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}
