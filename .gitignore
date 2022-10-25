@@ -18,3 +18,4 @@ layouts/**/src/**/*.js.map
 storybook-static
 
 node_modules
+.env
