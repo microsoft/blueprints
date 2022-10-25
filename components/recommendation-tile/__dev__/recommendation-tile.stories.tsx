@@ -14,9 +14,9 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
     recommendation: {
+      options: ['positive', 'negative'],
       control: {
         type: 'select',
-        options: ['positive', 'negative'],
       },
     },
   },

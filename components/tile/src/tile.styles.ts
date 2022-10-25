@@ -4,7 +4,7 @@ import { mapToStyles } from '@microsoft/arbutus.style-utilities';
 
 import type { ColorVariant } from './tile.types';
 
-const colorMap: Record<ColorVariant, string> = {
+export const colorMap: Record<ColorVariant, string> = {
   none: 'transparent',
   primary: tokens.colorNeutralBackground1,
   secondary: tokens.colorNeutralBackground2,

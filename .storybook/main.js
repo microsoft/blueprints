@@ -21,8 +21,8 @@ module.exports = {
   ],
   framework: '@storybook/react',
   core: {
-    builder: 'webpack5',
+    // builder: 'webpack5',
     // Bug in @storybook/builder-vite: https://github.com/storybookjs/storybook/issues/18920
-    // builder: '@storybook/builder-vite',
+    builder: '@storybook/builder-vite',
   },
 };

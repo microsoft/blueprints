@@ -11,9 +11,9 @@ export default {
   component: Embed,
   argTypes: {
     size: {
+      options: ['small', 'medium', 'large'],
       control: {
         type: 'select',
-        options: ['small', 'medium', 'large'],
       },
     },
     allowFullScreen: {

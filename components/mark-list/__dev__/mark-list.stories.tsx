@@ -17,7 +17,8 @@ export default {
       control: { type: 'select' },
     },
     iconColor: {
-      control: { type: 'select', options: Object.keys(colorClasses) },
+      options: Object.keys(colorClasses),
+      control: { type: 'select' },
     },
   },
 } as ComponentMeta<typeof MarkList>;

@@ -8,6 +8,7 @@ import React from 'react';
 
 import type { TileProps } from '../src/index';
 import { Tile } from '../src/index';
+import { colorMap } from '../src/tile.styles';
 // @ts-ignore TS doesn’t recognize the image format.
 import background from './background.png';
 // @ts-ignore TS doesn’t recognize the image format.
@@ -16,14 +17,14 @@ import logo from './logo.svg';
 export default {
   title: 'Atoms/Tile',
   component: Tile,
-  // argTypes: {
-  //   backgroundColor: {
-  //     control: {
-  //       type: 'select',
-  //       options: Object.keys(themeLight.color),
-  //     },
-  //   },
-  // },
+  argTypes: {
+    backgroundColor: {
+      options: Object.keys(colorMap),
+      control: {
+        type: 'select',
+      },
+    },
+  },
 } as ComponentMeta<typeof Tile>;
 
 const useGridStyles = makeStyles({

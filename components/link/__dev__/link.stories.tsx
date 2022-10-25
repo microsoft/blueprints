@@ -10,9 +10,9 @@ export default {
   component: Link,
   argTypes: {
     variant: {
+      options: ['primary', 'secondary', 'inverse', 'caption'],
       control: {
         type: 'select',
-        options: ['primary', 'secondary', 'inverse', 'caption'],
       },
     },
     withIcon: {

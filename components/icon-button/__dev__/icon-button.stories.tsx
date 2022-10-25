@@ -13,15 +13,15 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
     iconName: {
+      options: Object.keys(paths),
       control: {
         type: 'select',
-        options: Object.keys(paths),
       },
     },
     color: {
+      options: Object.keys(colorMap),
       control: {
         type: 'select',
-        options: Object.keys(colorMap),
       },
     },
   },

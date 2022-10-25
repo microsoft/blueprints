@@ -16,21 +16,21 @@ export default {
   component: Icon,
   argTypes: {
     color: {
+      options: Object.keys(colorMap),
       control: {
         type: 'select',
-        options: Object.keys(colorMap),
       },
     },
     iconName: {
+      options: Object.keys(paths),
       control: {
         type: 'select',
-        options: Object.keys(paths),
       },
     },
     size: {
+      options: Object.keys(sizeClasses),
       control: {
         type: 'select',
-        options: Object.keys(sizeClasses),
       },
     },
   },
