@@ -7,7 +7,6 @@ export type ThemeProviderProps = {
   defaultTheme?: ThemeOption;
   brandVariants?: BrandVariants;
   themes?: Record<ThemeOption, Theme>;
-  children: JSX.Element | JSX.Element[];
   currentThemeKey?: ThemeOption;
   setThemeKey?: (themeKey: ThemeOption) => void;
 };
