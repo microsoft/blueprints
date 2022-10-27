@@ -45,4 +45,10 @@ export type ShellProps = {
    * Accessible text for the open tray action.
    */
   openTrayLabel?: string;
+
+  /**
+   * Sets the Shell to be in full-width mode.
+   * @default false
+   * */
+  isHeroMode?: boolean;
 };

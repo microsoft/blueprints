@@ -33,4 +33,9 @@ export type CrownProps = {
    * Accessible text for the open tray action.
    */
   openTrayLabel?: string;
+
+  /**
+   * Click handler.
+   */
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };

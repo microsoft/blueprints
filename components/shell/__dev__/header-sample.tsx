@@ -45,14 +45,20 @@ const useHeaderSampleStyles = makeStyles({
   },
 });
 
-export const HeaderSample = () => {
+export const HeaderSample = ({ isHeroMode }: { isHeroMode?: boolean }) => {
   const classes = useHeaderSampleStyles();
 
   return (
     <div className={classes.root}>
-      <Link as={LinkSample}>Blog</Link>
-      <Link as={LinkSample}>GitHub</Link>
-      <Link as={LinkSample}>Contact Us</Link>
+      <Link as={LinkSample} variant={isHeroMode ? 'caption' : 'primary'}>
+        Blog
+      </Link>
+      <Link as={LinkSample} variant={isHeroMode ? 'caption' : 'primary'}>
+        GitHub
+      </Link>
+      <Link as={LinkSample} variant={isHeroMode ? 'caption' : 'primary'}>
+        Contact Us
+      </Link>
       <div className={classes.button}>Button</div>
     </div>
   );

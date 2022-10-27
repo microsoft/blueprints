@@ -23,6 +23,29 @@ export const useShellStyles = makeStyles({
     marginLeft: 'auto',
     marginRight: 'auto',
   },
+  hero: {
+    width: '100%',
+    minHeight: `calc(100vh - (${HEADER_HEIGHT} + ${FOOTER_HEIGHT}))`,
+  },
+  heroWrapper: {
+    position: 'relative',
+  },
+  heroHeader: {
+    position: 'relative',
+    zIndex: 100,
+    width: '100%',
+    maxWidth: CONTAINER_WIDTH,
+    minHeight: HEADER_HEIGHT,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    display: 'grid',
+    gridTemplateColumns: 'min-content auto',
+    columnGap: tokens.spacingHorizontalXXL,
+    [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
+      paddingRight: tokens.spacingHorizontalL,
+      paddingLeft: tokens.spacingHorizontalL,
+    },
+  },
   boundaries: {
     [`@media screen and (max-width: ${BREAKPOINTS.desktop}px)`]: {
       paddingLeft: tokens.spacingHorizontalL,

@@ -13,15 +13,16 @@ import { useShellStyles } from './shell.styles';
 import type { ShellProps } from './shell.types';
 
 export const Shell: FC<ShellProps> = ({
-  className,
   children,
+  className,
+  closeTrayLabel,
   footerArea,
   headerArea,
-  navigationArea,
+  isHeroMode,
   logoMarkAlt,
   logoMarkSrc,
   logoText,
-  closeTrayLabel,
+  navigationArea,
   openTrayLabel,
 }) => {
   // Styles
@@ -31,6 +32,25 @@ export const Shell: FC<ShellProps> = ({
   const { breakpoint } = useBreakpoint(BREAKPOINTS);
 
   const isTabletLayout = breakpoint === 'tablet' || breakpoint === 'mobile';
+
+  if (isHeroMode) {
+    return (
+      <div className={classes.heroWrapper}>
+        <div className={classes.heroHeader}>
+          <Crown
+            isTabletLayout={isTabletLayout}
+            logoMarkAlt={logoMarkAlt}
+            logoMarkSrc={logoMarkSrc}
+            logoText={logoText}
+            className={space.my5}
+          />
+          <Header>{headerArea}</Header>
+        </div>
+        <main className={classes.hero}>{children}</main>
+        <Footer className={classes.footer}>{footerArea}</Footer>
+      </div>
+    );
+  }
 
   return (
     <TrayProvider value={trayValue}>
