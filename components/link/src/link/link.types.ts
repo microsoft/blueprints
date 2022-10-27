@@ -1,3 +1,4 @@
+import type { paths } from '@microsoft/arbutus.icon';
 import type { ElementType } from 'react';
 
 type LinkVariant = 'primary' | 'secondary' | 'inverse' | 'caption';
@@ -32,4 +33,10 @@ export type LinkProps = {
    * Adds an underline to the link.
    */
   isUnderlined?: boolean;
+
+  /**
+   * Additional icon variants.
+   * @default 'open'
+   */
+  iconName?: keyof typeof paths;
 };
