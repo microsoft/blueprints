@@ -18,6 +18,8 @@ export const useEmbedStyles = makeStyles({
     width: '100%',
     ...shorthands.borderRadius(tokens.borderRadiusMedium),
     ...shorthands.border('1px', 'solid', tokens.colorNeutralStroke1),
+    overflowX: 'hidden',
+    overflowY: 'hidden',
   },
   header: {
     height: `calc(${tokens.spacingVerticalXL} + ${tokens.spacingVerticalSNudge}) + ${tokens.spacingVerticalSNudge}`,
@@ -44,6 +46,9 @@ export const useEmbedStyles = makeStyles({
     transitionDuration: tokens.durationSlow,
     transitionTimingFunction: tokens.curveAccelerateMax,
     backgroundColor: 'transparent',
+  },
+  removeOverlay: {
+    display: 'none',
   },
   loading: {
     backgroundColor: tokens.colorNeutralBackground1,

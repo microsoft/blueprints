@@ -2,6 +2,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { EmbedProps } from '../src/index';
 import { Embed } from '../src/index';
 
@@ -20,14 +21,19 @@ export default {
       control: 'boolean',
     },
   },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <div style={{ width: '90%' }}>
+          <Story />
+        </div>
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof Embed>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Embed> = (args) => (
-  <div style={{ width: '90%' }}>
-    <Embed {...args} />
-  </div>
-);
+const Template: ComponentStory<typeof Embed> = (args) => <Embed {...args} />;
 
 export const FigmaEmbed = Template.bind({}) as ComponentStory<
   FunctionComponent<EmbedProps>
