@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes Bookmark Tile to contain custom icons",
+  "packageName": "@microsoft/arbutus.bookmark-tile",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

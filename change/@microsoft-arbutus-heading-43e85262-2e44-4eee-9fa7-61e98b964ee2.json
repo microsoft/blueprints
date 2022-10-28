@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Improves copy functionality in Heading",
+  "packageName": "@microsoft/arbutus.heading",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

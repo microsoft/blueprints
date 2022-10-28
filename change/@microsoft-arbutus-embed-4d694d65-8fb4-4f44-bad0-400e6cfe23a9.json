@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes Embed's loading and layout",
+  "packageName": "@microsoft/arbutus.embed",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}
