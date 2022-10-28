@@ -1,25 +1,48 @@
+import type { ElementType } from 'react';
+
 type WithImage = {
   /**
-   * Custom optional icon.
+   * Image element.
    */
-  imageSrc?: string;
+  imageAs: ElementType;
 
   /**
-   * Accessible icon description.
+   * Image element props.
    */
-  imageAlt: string;
+  imageProps?: Record<string, unknown>;
 };
 
 type WithoutImage = {
+  imageAs?: never;
+  imageProps?: never;
+};
+
+type WithLink = {
   /**
-   * Custom optional icon.
+   * Link text.
    */
-  imageSrc?: never;
+  linkText: string;
+  /**
+   * Link element.
+   */
+  linkAs: ElementType;
 
   /**
-   * Accessible icon description.
+   * Link element props.
    */
-  imageAlt?: never;
+  linkProps?: Record<string, unknown>;
+
+  /**
+   * Adds an icon that indicates that the link will open in a new tab.
+   */
+  linkWithIcon?: boolean;
+};
+
+type WithoutLink = {
+  linkAs?: never;
+  linkText?: never;
+  linkProps?: never;
+  linkWithIcon?: never;
 };
 
 export type RecommendationTileProps = {
@@ -42,4 +65,5 @@ export type RecommendationTileProps = {
    * Sets whether this tile represents an encouraged or discouraged example
    */
   recommendation: 'positive' | 'negative';
-} & (WithImage | WithoutImage);
+} & (WithImage | WithoutImage) &
+  (WithLink | WithoutLink);

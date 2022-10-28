@@ -7,6 +7,22 @@ import React from 'react';
 import type { RecommendationTileProps } from '../src/index';
 import { RecommendationTile } from '../src/index';
 
+const DemoImage: FunctionComponent<{ alt: string; src: string; className: string }> = ({
+  className,
+  alt,
+  src,
+}) => <img className={className} alt={alt} src={src} />;
+
+const DemoLink: FunctionComponent<{ href: string; className: string }> = ({
+  className,
+  href,
+  children,
+}) => (
+  <a className={className} href={href} target="__blank">
+    {children}
+  </a>
+);
+
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Tiles/RecommendationTile',
@@ -56,8 +72,11 @@ Simple.args = {
   description:
     'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
   recommendation: 'positive',
-  imageSrc: 'https://via.placeholder.com/300x200.png/FAF9F8',
-  imageAlt: 'Image placeholder',
+  imageAs: DemoImage,
+  imageProps: {
+    src: 'https://via.placeholder.com/300x200.png/FAF9F8',
+    alt: 'Image placeholder',
+  },
 };
 
 export const NoImage = Template.bind({}) as ComponentStory<
@@ -69,6 +88,47 @@ NoImage.args = {
   description:
     'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
   recommendation: 'positive',
-  imageSrc: undefined,
-  imageAlt: undefined,
+  imageAs: undefined,
+  imageProps: undefined,
+};
+
+export const WithLink = Template.bind({}) as ComponentStory<
+  FunctionComponent<RecommendationTileProps>
+>;
+
+WithLink.args = {
+  title: 'Give primary buttons prominence',
+  description:
+    'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
+  recommendation: 'positive',
+  imageAs: DemoImage,
+  imageProps: {
+    src: 'https://via.placeholder.com/300x200.png/FAF9F8',
+    alt: 'Image placeholder',
+  },
+  linkAs: DemoLink,
+  linkText: 'Learn more',
+  linkWithIcon: true,
+  linkProps: {
+    href: 'https://www.microsoft.com',
+  },
+};
+
+export const NoImageWithLink = Template.bind({}) as ComponentStory<
+  FunctionComponent<RecommendationTileProps>
+>;
+
+NoImageWithLink.args = {
+  title: 'Give primary buttons prominence',
+  description:
+    'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
+  recommendation: 'positive',
+  imageAs: undefined,
+  imageProps: undefined,
+  linkAs: DemoLink,
+  linkText: 'Learn more',
+  linkWithIcon: true,
+  linkProps: {
+    href: 'https://www.microsoft.com',
+  },
 };

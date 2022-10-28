@@ -21,12 +21,13 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
+    "@fluentui/react-theme": "^9.1.0",
+    "@griffel/react": "^1.3.1",
     "@microsoft/arbutus.badge": "0.0.2",
+    "@microsoft/arbutus.link": "0.0.1",
     "@microsoft/arbutus.text": "0.0.2",
     "@microsoft/arbutus.tile": "0.0.2",
-    "@microsoft/arbutus.use-space-styles": "0.0.1",
-    "@fluentui/react-theme": "^9.1.0",
-    "@griffel/react": "^1.3.1"
+    "@microsoft/arbutus.use-space-styles": "0.0.1"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.1",
