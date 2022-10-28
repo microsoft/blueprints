@@ -30,11 +30,7 @@ const LinkSample: React.FC<{ className: string }> = ({ children, className }) =>
   };
 
   return (
-    <button
-      className={className}
-      style={{ background: 'transparent', border: 'none', outline: 'none' }}
-      onClick={onClick}
-    >
+    <button className={className} onClick={onClick}>
       {children}
     </button>
   );

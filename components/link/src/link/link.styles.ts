@@ -4,9 +4,10 @@ export const useLinkStyles = makeStyles({
   root: {
     cursor: 'pointer',
     backgroundColor: 'transparent',
-    ...shorthands.border('none'),
+    ...shorthands.borderStyle('none'),
     outlineStyle: 'none',
     display: 'inline-flex',
+    textDecorationLine: 'none',
     alignItems: 'center',
   },
   isUnderlined: {
