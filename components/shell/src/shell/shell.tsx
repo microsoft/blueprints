@@ -38,7 +38,7 @@ export const Shell: FC<ShellProps> = ({
       <div className={classes.heroWrapper}>
         <div className={classes.heroHeader}>
           <Crown
-            isTabletLayout={isTabletLayout}
+            isTabletLayout={false}
             logoMarkAlt={logoMarkAlt}
             logoMarkSrc={logoMarkSrc}
             logoText={logoText}
