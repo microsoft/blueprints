@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds custom image element. Adds an optional link variant.",
-  "packageName": "@microsoft/arbutus.recommendation-tile",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.link",
   "entries": [
     {
+      "date": "Mon, 31 Oct 2022 22:13:18 GMT",
+      "tag": "@microsoft/arbutus.link_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.link",
+            "commit": "0f8b10c809ab3a2819461f57e8b51c67a6cce36a",
+            "comment": "Fixes style resets in Link."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.link",
+            "comment": "Bump @microsoft/arbutus.icon to v0.0.3",
+            "commit": "43b5bb7fc4dc5ca84557f8cd32ce71e712745fbf"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.link",
+            "comment": "Bump @microsoft/arbutus.text to v0.0.3",
+            "commit": "43b5bb7fc4dc5ca84557f8cd32ce71e712745fbf"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 17 Oct 2022 19:57:18 GMT",
       "tag": "@microsoft/arbutus.link_v0.0.2",
       "version": "0.0.2",

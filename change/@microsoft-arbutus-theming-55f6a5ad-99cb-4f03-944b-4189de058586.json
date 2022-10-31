@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes ThemeProviderProps type, removes incorrect children",
-  "packageName": "@microsoft/arbutus.theming",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}
