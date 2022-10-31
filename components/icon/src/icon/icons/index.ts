@@ -1,3 +1,4 @@
+import { ArrowRight } from './arrow-right';
 import { Check } from './check';
 import { ChevronRight } from './chevron-right';
 import { Copy } from './copy';
@@ -10,6 +11,7 @@ import { SlideOut } from './slide-out';
 import { X } from './x';
 
 export const paths = {
+  ['arrow-right']: ArrowRight,
   check: Check,
   ['chevron-right']: ChevronRight,
   copy: Copy,

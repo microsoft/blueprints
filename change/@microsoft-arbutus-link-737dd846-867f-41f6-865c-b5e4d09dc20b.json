@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes style resets in Link.",
+  "packageName": "@microsoft/arbutus.link",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

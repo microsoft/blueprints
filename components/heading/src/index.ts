@@ -1,2 +1,2 @@
-export type { HeadingProps } from './heading';
+export type { HeadingProps, OnCopyArgs } from './heading';
 export { Heading } from './heading';

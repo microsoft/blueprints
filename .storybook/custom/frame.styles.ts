@@ -19,13 +19,7 @@ export const useStoryStyles = makeStaticStyles({
 
 export const useFrameClasses = makeStyles({
   root: {
-    height: '100vh',
     backgroundColor: tokens.colorNeutralBackground1,
-    display: 'grid',
-    alignItems: 'center',
-    justifyItems: 'center',
-  },
-  fullHeight: {
     minHeight: '100vh',
   },
   provider: {
@@ -35,3 +29,4 @@ export const useFrameClasses = makeStyles({
     },
   },
 });
+

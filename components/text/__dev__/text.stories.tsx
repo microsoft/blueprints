@@ -15,15 +15,15 @@ export default {
   component: Text,
   argTypes: {
     variant: {
+      options: Object.keys(variantClasses),
       control: {
         type: 'select',
-        options: Object.keys(variantClasses),
       },
     },
     color: {
+      options: Object.keys(colorClasses),
       control: {
         type: 'select',
-        options: Object.keys(colorClasses),
       },
     },
   },

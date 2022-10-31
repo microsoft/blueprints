@@ -11,9 +11,9 @@ export default {
   component: Button,
   argTypes: {
     color: {
+      options: Object.keys(colorMap),
       control: {
         type: 'select',
-        options: Object.keys(colorMap),
       },
     },
   },

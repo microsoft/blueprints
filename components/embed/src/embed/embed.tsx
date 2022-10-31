@@ -7,7 +7,7 @@ import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useEmbedStyles } from './embed.styles';
 import type { EmbedProps } from './embed.types';
@@ -23,6 +23,7 @@ export const Embed: FC<EmbedProps> = ({
   url,
 }) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const loadedHandler = () => setIsLoading(false);
 
   // Styles
@@ -32,7 +33,19 @@ export const Embed: FC<EmbedProps> = ({
     window?.open(url, '_blank')?.focus();
   };
 
-  const overlayClasses = mergeClasses(classes.overlay, isLoading && classes.loading);
+  const overlayClasses = mergeClasses(
+    classes.overlay,
+    isLoading && classes.loading,
+    isAnimationComplete && classes.removeOverlay,
+  );
+
+  // NOTE: This effect will remove the loading overlay after the blur-in animation is complete. See `embed.styles.ts`,
+  // tokens.durationSlow is 300ms.
+  useEffect(() => {
+    if (!isLoading) {
+      setTimeout(() => setIsAnimationComplete(true), 300);
+    }
+  }, [isLoading]);
 
   return (
     <div className={mergeClasses(classes.root, className)}>

@@ -45,6 +45,7 @@ export const Link: FC<LinkProps> = ({
   variant,
   withIcon,
   isUnderlined,
+  iconName = 'open',
 }) => {
   const space = useSpaceStyles();
   const classes = useLinkStyles();
@@ -59,7 +60,7 @@ export const Link: FC<LinkProps> = ({
         {children}
       </Text>
       {withIcon && (
-        <Icon iconName="open" color="tertiary" isInline className={space.ml3} />
+        <Icon iconName={iconName} color="tertiary" isInline className={space.ml3} />
       )}
     </Link>
   );

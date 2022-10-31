@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes TableList styles to be full width",
+  "packageName": "@microsoft/arbutus.table-list",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

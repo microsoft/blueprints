@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Adds arrow-right to Icon",
+  "packageName": "@microsoft/arbutus.icon",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

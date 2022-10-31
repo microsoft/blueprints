@@ -2,6 +2,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { CrownProps } from '../src/index';
 import { Crown } from '../src/index';
 // @ts-ignore TS doesn’t recognize the image format.
@@ -13,6 +14,18 @@ import logoMark from './logo.svg';
 export default {
   title: 'Layout/Crown',
   component: Crown,
+  argTypes: {
+    onClick: { action: 'clicked' },
+  },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <div style={{ maxWidth: ' ' }}>
+          <Story />
+        </div>
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof Crown>;
 
 const Template: ComponentStory<typeof Crown> = (args) => <Crown {...args} />;

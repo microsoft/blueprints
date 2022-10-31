@@ -12,16 +12,16 @@ export default {
   title: 'Atoms/Badge',
   component: Badge,
   argTypes: {
+    options: Object.keys(colorMap),
     color: {
       control: {
         type: 'select',
-        options: Object.keys(colorMap),
       },
     },
     iconName: {
+      options: Object.keys(paths),
       control: {
         type: 'select',
-        options: Object.keys(paths),
       },
     },
   },

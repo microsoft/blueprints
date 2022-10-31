@@ -8,8 +8,24 @@ import * as React from 'react';
 import { useCrownStyles } from './crown.styles';
 import type { CrownProps } from './crown.types';
 
+const Logo: FC<Pick<CrownProps, 'onClick'>> = ({ onClick, children }) => {
+  // Styles
+  const classes = useCrownStyles();
+
+  if (onClick) {
+    return (
+      <button className={mergeClasses(classes.logo, classes.interactive)}>
+        {children}
+      </button>
+    );
+  } else {
+    return <>{children}</>;
+  }
+};
+
 export const Crown: FC<CrownProps> = ({
   className,
+  onClick,
   closeTrayLabel = 'Close navigation',
   isTabletLayout,
   logoMarkAlt,
@@ -17,11 +33,12 @@ export const Crown: FC<CrownProps> = ({
   logoText,
   openTrayLabel = 'Open navigation',
 }) => {
-  // Styles
-  const classes = useCrownStyles();
   const { isOpen, setIsOpen } = useTrayContext();
   const onOpenTray = () => setIsOpen(true);
   const onCloseTray = () => setIsOpen(false);
+
+  // Styles
+  const classes = useCrownStyles();
 
   return (
     <div className={mergeClasses(classes.root, className)}>
@@ -33,14 +50,16 @@ export const Crown: FC<CrownProps> = ({
           aria-hidden={true}
         />
       )}
-      {logoMarkSrc && (
-        <img src={logoMarkSrc} alt={logoMarkAlt} className={classes.image} />
-      )}
-      {logoText && (
-        <Text as="h1" variant="subtitle">
-          {logoText}
-        </Text>
-      )}
+      <Logo onClick={onClick}>
+        {logoMarkSrc && (
+          <img src={logoMarkSrc} alt={logoMarkAlt} className={classes.image} />
+        )}
+        {logoText && (
+          <Text as="h1" variant="subtitle">
+            {logoText}
+          </Text>
+        )}
+      </Logo>
     </div>
   );
 };

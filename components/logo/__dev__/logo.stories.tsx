@@ -11,15 +11,15 @@ export default {
   component: Logo,
   argTypes: {
     logoName: {
+      options: Object.keys(logos),
       control: {
         type: 'select',
-        options: Object.keys(logos),
       },
     },
     size: {
+      options: ['small', 'medium', 'large', 'fill'],
       control: {
         type: 'select',
-        options: ['small', 'medium', 'large', 'fill'],
       },
     },
   },

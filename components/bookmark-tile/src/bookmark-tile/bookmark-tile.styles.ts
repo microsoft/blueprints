@@ -17,7 +17,7 @@ export const useBookmarkTileStyles = makeStyles({
   image: {
     height: tokens.spacingHorizontalXXXL,
     width: tokens.spacingHorizontalXXXL,
-    objectFit: 'cover',
+    objectFit: 'contain',
   },
   fallbackIcon: {
     height: tokens.spacingHorizontalXXXL,

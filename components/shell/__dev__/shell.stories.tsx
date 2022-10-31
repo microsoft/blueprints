@@ -9,6 +9,7 @@ import { Area } from './area';
 import logo from './fluentui-logo.svg';
 import { FooterSample } from './footer-sample';
 import { HeaderSample } from './header-sample';
+import { HeroSample } from './hero-sample';
 import { NavigationSample } from './navigation-sample';
 import { PageSample } from './page-sample';
 
@@ -52,4 +53,24 @@ FullExample.args = {
   logoMarkAlt: 'Fluent logo',
   closeTrayLabel: 'Close navigation.',
   openTrayLabel: 'Open navigation.',
+};
+
+const HeroExampleTemplate: ComponentStory<typeof Shell> = (args) => (
+  <Shell {...args}>
+    <HeroSample />
+  </Shell>
+);
+
+export const HeroExample = HeroExampleTemplate.bind({}) as ComponentStory<
+  FunctionComponent<ShellProps>
+>;
+HeroExample.args = {
+  headerArea: <HeaderSample isHeroMode />,
+  navigationArea: <NavigationSample />,
+  footerArea: <FooterSample />,
+  logoMarkSrc: logo as string,
+  logoMarkAlt: 'Fluent logo',
+  closeTrayLabel: 'Close navigation.',
+  openTrayLabel: 'Open navigation.',
+  isHeroMode: true,
 };

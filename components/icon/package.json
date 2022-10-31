@@ -21,9 +21,9 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.style-utilities": "0.0.1",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.3.1",
+    "@microsoft/arbutus.style-utilities": "0.0.1",
     "nanoid": "^4.0.0"
   },
   "devDependencies": {
