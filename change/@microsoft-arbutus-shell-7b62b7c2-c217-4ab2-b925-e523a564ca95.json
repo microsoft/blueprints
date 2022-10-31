@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds hero mode to Shell, click handler to Crown",
-  "packageName": "@microsoft/arbutus.shell",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

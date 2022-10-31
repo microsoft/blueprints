@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.theming",
   "entries": [
     {
+      "date": "Mon, 31 Oct 2022 22:13:18 GMT",
+      "tag": "@microsoft/arbutus.theming_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.theming",
+            "commit": "0f8b10c809ab3a2819461f57e8b51c67a6cce36a",
+            "comment": "Fixes ThemeProviderProps type, removes incorrect children"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Sep 2022 21:33:05 GMT",
       "tag": "@microsoft/arbutus.theming_v0.0.1",
       "version": "0.0.1",

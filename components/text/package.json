@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Atomic Text component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.theming": "0.0.1",
+    "@microsoft/arbutus.theming": "0.0.2",
     "@microsoft/arbutus.style-utilities": "0.0.1",
     "@fluentui/react-text": "^9.0.3",
     "@fluentui/react-theme": "^9.1.0",

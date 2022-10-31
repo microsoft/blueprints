@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Exports colorMap",
-  "packageName": "@microsoft/arbutus.tile",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

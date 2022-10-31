@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Mon, 31 Oct 2022 22:13:18 GMT",
+      "tag": "@microsoft/arbutus.icon_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "0f8b10c809ab3a2819461f57e8b51c67a6cce36a",
+            "comment": "Adds arrow-right to Icon"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 17 Oct 2022 19:57:18 GMT",
       "tag": "@microsoft/arbutus.icon_v0.0.2",
       "version": "0.0.2",
