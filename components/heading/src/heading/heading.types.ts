@@ -21,7 +21,7 @@ export type HeadingUrlProps = {
 };
 
 export type NoHeadingUrlProps = {
-  headingUrl: undefined;
+  headingUrl?: undefined;
   copyLabel?: never;
   onCopy?: (args0: OnCopyArgs) => void;
 };

@@ -97,11 +97,12 @@ export const Shell: FC<ShellProps> = ({
           ) : (
             <aside className={mergeClasses(classes.aside, classes.stickyAside)}>
               <Crown
+                className={space.my5}
                 isTabletLayout={isTabletLayout}
                 logoMarkAlt={logoMarkAlt}
                 logoMarkSrc={logoMarkSrc}
                 logoText={logoText}
-                className={space.my5}
+                onClick={onLogoClick}
               />
               {navigationArea}
             </aside>

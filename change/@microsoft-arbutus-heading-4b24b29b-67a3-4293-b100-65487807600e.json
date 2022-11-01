@@ -1,6 +1,6 @@
 {
   "type": "patch",
-  "comment": "Fixes Heading headingUrl prop type",
+  "comment": "Fixes headingUrl prop type.",
   "packageName": "@microsoft/arbutus.heading",
   "email": "riacarmin@microsoft.com",
   "dependentChangeType": "patch"
