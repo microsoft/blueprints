@@ -20,8 +20,6 @@ export type ColorScheme = 'light' | 'dark';
  */
 export const usePrefersColorScheme = () => {
   const [colorScheme, setColorScheme] = useState<ColorScheme>();
-  const darkModeMediaQuery = window?.matchMedia('(prefers-color-scheme: dark)');
-  const lightModeMediaQuery = window?.matchMedia('(prefers-color-scheme: light)');
 
   const darkModeHandler = useCallback((e: MediaQueryListEvent) => {
     setColorScheme(e.matches ? 'dark' : 'light');
@@ -31,14 +29,21 @@ export const usePrefersColorScheme = () => {
   }, []);
 
   useEffect(() => {
-    darkModeMediaQuery.addEventListener('change', darkModeHandler);
-    lightModeMediaQuery.addEventListener('change', lightModeHandler);
+    if (window !== undefined) {
+      const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+
+      darkModeMediaQuery.addEventListener('change', darkModeHandler);
+      lightModeMediaQuery.addEventListener('change', lightModeHandler);
+    }
 
     return function cleanup() {
-      window.removeEventListener('change', darkModeHandler);
-      window.removeEventListener('change', lightModeHandler);
+      if (window !== undefined) {
+        window.removeEventListener('change', darkModeHandler);
+        window.removeEventListener('change', lightModeHandler);
+      }
     };
-  }, []);
+  }, [darkModeHandler, lightModeHandler]);
 
   return colorScheme;
 };
