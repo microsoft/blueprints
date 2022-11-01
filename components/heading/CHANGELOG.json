@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.heading",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 03:38:48 GMT",
+      "tag": "@microsoft/arbutus.heading_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.heading",
+            "comment": "Bump @microsoft/arbutus.use-copy-to-clipboard to v0.0.2",
+            "commit": "4dedcfa9d15d20d5f01d1d661553e90c297dbf69"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 31 Oct 2022 22:13:18 GMT",
       "tag": "@microsoft/arbutus.heading_v0.0.3",
       "version": "0.0.3",

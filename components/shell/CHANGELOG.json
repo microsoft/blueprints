@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 03:38:48 GMT",
+      "tag": "@microsoft/arbutus.shell_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "c9b935ae5b005d0ec93283e21cc9d083d4160bbf",
+            "comment": "Fixes the aside not scrolling. Fixes the click handler not being passed into the Crown."
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 31 Oct 2022 22:13:18 GMT",
       "tag": "@microsoft/arbutus.shell_v0.0.3",
       "version": "0.0.3",

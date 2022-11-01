@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.recommendation-tile
 
-This log was last generated on Mon, 31 Oct 2022 22:13:18 GMT and should not be manually modified.
+This log was last generated on Tue, 01 Nov 2022 03:38:48 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.0
+
+Tue, 01 Nov 2022 03:38:48 GMT
+
+### Minor changes
+
+- Adds new recommendation list variant. (riacarmin@microsoft.com)
 
 ## 0.0.3
 

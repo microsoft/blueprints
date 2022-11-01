@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.shell",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shell component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

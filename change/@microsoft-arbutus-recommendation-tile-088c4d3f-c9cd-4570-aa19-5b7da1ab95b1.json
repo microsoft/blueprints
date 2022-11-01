@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Adds new recommendation list variant.",
-  "packageName": "@microsoft/arbutus.recommendation-tile",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

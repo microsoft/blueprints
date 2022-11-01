@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.recommendation-tile",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "RecommendationTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

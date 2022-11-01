@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Changes the way the Navigator presense is checked, so the hook doesn't get flagged during SSR.",
-  "packageName": "@microsoft/arbutus.use-copy-to-clipboard",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}
