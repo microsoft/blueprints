@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes the aside not scrolling. Fixes the click handler not being passed into the Crown.",
+  "packageName": "@microsoft/arbutus.shell",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}
