@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.heading",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Heading component in Content collection. Heading is a text component that traditionally marks a new section. Heading also allows to copy a direct link to the section it marks.",
   "main": "lib/index.js",
   "module": "lib/index.js",

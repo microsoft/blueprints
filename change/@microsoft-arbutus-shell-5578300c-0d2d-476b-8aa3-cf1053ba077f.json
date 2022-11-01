@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds a missing onLogoClick handler in Crown.",
-  "packageName": "@microsoft/arbutus.shell",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

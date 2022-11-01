@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 07:55:36 GMT",
+      "tag": "@microsoft/arbutus.shell_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "18f4095639158f61060b4bdb8cceebfdff41e786",
+            "comment": "Adds a missing onLogoClick handler in Crown."
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Nov 2022 03:38:48 GMT",
       "tag": "@microsoft/arbutus.shell_v0.0.4",
       "version": "0.0.4",
