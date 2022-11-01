@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.heading",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 09:24:44 GMT",
+      "tag": "@microsoft/arbutus.heading_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.heading",
+            "comment": "Bump @microsoft/arbutus.icon-button to v0.0.4",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.heading",
+            "comment": "Bump @microsoft/arbutus.text to v0.0.4",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.heading",
+            "comment": "Bump @microsoft/arbutus.use-copy-to-clipboard to v0.0.3",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Nov 2022 07:55:36 GMT",
       "tag": "@microsoft/arbutus.heading_v0.0.5",
       "version": "0.0.5",

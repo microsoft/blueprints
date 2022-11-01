@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Reorganizes the code to support SSR.",
-  "packageName": "@microsoft/arbutus.use-copy-to-clipboard",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.use-space-styles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utility space classes.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -17,7 +17,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@microsoft/arbutus.theming": "0.0.2"
+    "@microsoft/arbutus.theming": "0.0.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",

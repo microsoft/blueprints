@@ -2,6 +2,39 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 09:24:44 GMT",
+      "tag": "@microsoft/arbutus.shell_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.footer to v0.0.3",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.header to v0.0.3",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.theming to v0.0.3",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.3",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Nov 2022 07:55:36 GMT",
       "tag": "@microsoft/arbutus.shell_v0.0.5",
       "version": "0.0.5",

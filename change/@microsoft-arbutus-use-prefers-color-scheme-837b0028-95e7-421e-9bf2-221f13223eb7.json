@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Reorganizes the code to support SSR.",
-  "packageName": "@microsoft/arbutus.use-prefers-color-scheme",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

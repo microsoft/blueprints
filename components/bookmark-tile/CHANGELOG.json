@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.bookmark-tile",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 09:24:44 GMT",
+      "tag": "@microsoft/arbutus.bookmark-tile_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.bookmark-tile",
+            "comment": "Bump @microsoft/arbutus.text to v0.0.4",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.bookmark-tile",
+            "comment": "Bump @microsoft/arbutus.tile to v0.0.4",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.bookmark-tile",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.3",
+            "commit": "55fb80dd4bde32a4445d0eba4a49bb0020ea6e40"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 31 Oct 2022 22:13:18 GMT",
       "tag": "@microsoft/arbutus.bookmark-tile_v0.0.3",
       "version": "0.0.3",

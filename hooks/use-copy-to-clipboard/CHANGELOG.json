@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.use-copy-to-clipboard",
   "entries": [
     {
+      "date": "Tue, 01 Nov 2022 09:24:44 GMT",
+      "tag": "@microsoft/arbutus.use-copy-to-clipboard_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "riacarmin@microsoft.com",
+            "package": "@microsoft/arbutus.use-copy-to-clipboard",
+            "commit": "229403250046c21d41aa986deab8390f0b745a9c",
+            "comment": "Reorganizes the code to support SSR."
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Nov 2022 03:38:48 GMT",
       "tag": "@microsoft/arbutus.use-copy-to-clipboard_v0.0.2",
       "version": "0.0.2",
