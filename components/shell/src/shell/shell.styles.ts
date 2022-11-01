@@ -58,6 +58,7 @@ export const useShellStyles = makeStyles({
     display: 'grid',
     gridTemplateColumns: `${TRAY_WIDTH} auto`,
     columnGap: tokens.spacingHorizontalXXL,
+    position: 'relative',
   },
   footer: {
     minHeight: FOOTER_HEIGHT,
@@ -68,11 +69,16 @@ export const useShellStyles = makeStyles({
   },
   aside: {
     paddingLeft: tokens.spacingHorizontalL,
-    position: 'relative',
+    height: '100vh',
+    overflowY: 'auto',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none',
+    '&::-webkit-scrollbar': {
+      display: 'none',
+    },
   },
-  stickyNavigation: {
+  stickyAside: {
     position: 'sticky',
     top: '0',
-    height: '25rem',
   },
 });

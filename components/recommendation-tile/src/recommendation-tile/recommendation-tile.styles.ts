@@ -16,4 +16,7 @@ export const useRecommendationTileStyles = makeStyles({
     left: tokens.spacingHorizontalM,
     top: tokens.spacingHorizontalM,
   },
+  recommendationList: {
+    paddingLeft: 0,
+  },
 });

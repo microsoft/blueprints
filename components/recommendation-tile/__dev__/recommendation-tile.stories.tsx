@@ -4,6 +4,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { RecommendationTileProps } from '../src/index';
 import { RecommendationTile } from '../src/index';
 
@@ -36,6 +37,15 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <div style={{ maxWidth: '980px' }}>
+          <Story />
+        </div>
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof RecommendationTile>;
 
 const useTileGridStyles = makeStyles({
@@ -63,11 +73,33 @@ const Template: ComponentStory<typeof RecommendationTile> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
+export const WithImageAndWithLink = Template.bind({}) as ComponentStory<
   FunctionComponent<RecommendationTileProps>
 >;
 
-Simple.args = {
+WithImageAndWithLink.args = {
+  title: 'Give primary buttons prominence',
+  description:
+    'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
+  recommendation: 'positive',
+  imageAs: DemoImage,
+  imageProps: {
+    src: 'https://via.placeholder.com/300x200.png/FAF9F8',
+    alt: 'Image placeholder',
+  },
+  linkAs: DemoLink,
+  linkText: 'Learn more',
+  linkWithIcon: true,
+  linkProps: {
+    href: 'https://www.microsoft.com',
+  },
+};
+
+export const WithImage = Template.bind({}) as ComponentStory<
+  FunctionComponent<RecommendationTileProps>
+>;
+
+WithImage.args = {
   title: 'Give primary buttons prominence',
   description:
     'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
@@ -79,11 +111,11 @@ Simple.args = {
   },
 };
 
-export const NoImage = Template.bind({}) as ComponentStory<
+export const WithoutImage = Template.bind({}) as ComponentStory<
   FunctionComponent<RecommendationTileProps>
 >;
 
-NoImage.args = {
+WithoutImage.args = {
   title: 'Give primary buttons prominence',
   description:
     'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
@@ -101,28 +133,6 @@ WithLink.args = {
   description:
     'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
   recommendation: 'positive',
-  imageAs: DemoImage,
-  imageProps: {
-    src: 'https://via.placeholder.com/300x200.png/FAF9F8',
-    alt: 'Image placeholder',
-  },
-  linkAs: DemoLink,
-  linkText: 'Learn more',
-  linkWithIcon: true,
-  linkProps: {
-    href: 'https://www.microsoft.com',
-  },
-};
-
-export const NoImageWithLink = Template.bind({}) as ComponentStory<
-  FunctionComponent<RecommendationTileProps>
->;
-
-NoImageWithLink.args = {
-  title: 'Give primary buttons prominence',
-  description:
-    'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
-  recommendation: 'positive',
   imageAs: undefined,
   imageProps: undefined,
   linkAs: DemoLink,
@@ -131,4 +141,18 @@ NoImageWithLink.args = {
   linkProps: {
     href: 'https://www.microsoft.com',
   },
+};
+
+export const WithRecommendationList = Template.bind({}) as ComponentStory<
+  FunctionComponent<RecommendationTileProps>
+>;
+WithRecommendationList.args = {
+  title: 'Give primary buttons prominence',
+  recommendationsList: [
+    'Primary buttons have to draw users’s attention right away. Make sure there is only one primary button in the view.',
+    'Eu zril ignota quaestio nec, no agam meliore sit, duo posse utinam deleniti id. Ut his veniam verear, ei sea mazim mentitum probatus.',
+    'Ut sit alienum molestie referrentur, ius tollit definitiones ad, audiam vidisse gubergren id mea.',
+    'Elit veniam ocurreret et ius, menandri atomorum voluptaria eum ad. Ius ex dolor utamur partiendo.',
+  ],
+  recommendation: 'positive',
 };

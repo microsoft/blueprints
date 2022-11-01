@@ -59,11 +59,16 @@ export type RecommendationTileProps = {
   /**
    * Description of the bookmark.
    */
-  description: string;
+  description?: string;
 
   /**
    * Sets whether this tile represents an encouraged or discouraged example
    */
   recommendation: 'positive' | 'negative';
+
+  /**
+   * Adds an unordered list of recommendations.
+   */
+  recommendationsList?: string[];
 } & (WithImage | WithoutImage) &
   (WithLink | WithoutLink);

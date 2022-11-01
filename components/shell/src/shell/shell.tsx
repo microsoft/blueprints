@@ -23,6 +23,7 @@ export const Shell: FC<ShellProps> = ({
   logoMarkSrc,
   logoText,
   navigationArea,
+  onLogoClick,
   openTrayLabel,
 }) => {
   // Styles
@@ -38,11 +39,12 @@ export const Shell: FC<ShellProps> = ({
       <div className={classes.heroWrapper}>
         <div className={classes.heroHeader}>
           <Crown
+            className={space.my5}
             isTabletLayout={false}
             logoMarkAlt={logoMarkAlt}
             logoMarkSrc={logoMarkSrc}
             logoText={logoText}
-            className={space.my5}
+            onClick={onLogoClick}
           />
           <Header>{headerArea}</Header>
         </div>
@@ -58,13 +60,14 @@ export const Shell: FC<ShellProps> = ({
         {isTabletLayout && (
           <div className={mergeClasses(classes.header, classes.grid, space.px7)}>
             <Crown
+              className={space.my5}
+              closeTrayLabel={closeTrayLabel}
               isTabletLayout={isTabletLayout}
               logoMarkAlt={logoMarkAlt}
               logoMarkSrc={logoMarkSrc}
               logoText={logoText}
-              closeTrayLabel={closeTrayLabel}
+              onClick={onLogoClick}
               openTrayLabel={openTrayLabel}
-              className={space.my5}
             />
             <Header>{headerArea}</Header>
           </div>
@@ -74,33 +77,33 @@ export const Shell: FC<ShellProps> = ({
           {isTabletLayout ? (
             <TrayConsumer>
               {({ isOpen }) => (
-                <Tray isOpen={isOpen}>
-                  <div className={mergeClasses(space.px7, space.py5)}>
-                    <Crown
-                      isTabletLayout={isTabletLayout}
-                      logoMarkAlt={logoMarkAlt}
-                      logoMarkSrc={logoMarkSrc}
-                      logoText={logoText}
-                      closeTrayLabel={closeTrayLabel}
-                      openTrayLabel={openTrayLabel}
-                    />
-                    {navigationArea}
-                  </div>
+                <Tray
+                  isOpen={isOpen}
+                  className={mergeClasses(classes.aside, space.px7, space.py5)}
+                >
+                  <Crown
+                    closeTrayLabel={closeTrayLabel}
+                    isTabletLayout={isTabletLayout}
+                    logoMarkAlt={logoMarkAlt}
+                    logoMarkSrc={logoMarkSrc}
+                    logoText={logoText}
+                    onClick={onLogoClick}
+                    openTrayLabel={openTrayLabel}
+                  />
+                  {navigationArea}
                 </Tray>
               )}
             </TrayConsumer>
           ) : (
-            <aside className={classes.aside}>
-              <div className={!isTabletLayout ? classes.stickyNavigation : ''}>
-                <Crown
-                  isTabletLayout={isTabletLayout}
-                  logoMarkAlt={logoMarkAlt}
-                  logoMarkSrc={logoMarkSrc}
-                  logoText={logoText}
-                  className={space.my5}
-                />
-                {navigationArea}
-              </div>
+            <aside className={mergeClasses(classes.aside, classes.stickyAside)}>
+              <Crown
+                isTabletLayout={isTabletLayout}
+                logoMarkAlt={logoMarkAlt}
+                logoMarkSrc={logoMarkSrc}
+                logoText={logoText}
+                className={space.my5}
+              />
+              {navigationArea}
             </aside>
           )}
           <div>

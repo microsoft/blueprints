@@ -5,6 +5,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { MarkListProps } from '../src/index';
 import { MarkList, MarkListItem } from '../src/index';
 
@@ -21,6 +22,7 @@ export default {
       control: { type: 'select' },
     },
   },
+  decorators: [Centered],
 } as ComponentMeta<typeof MarkList>;
 
 const useTileGridStyles = makeStyles({

@@ -10,7 +10,11 @@ export const useCopyToClipboard: UseCopyToClipboard = (options) => {
   const [status, setStatus] = useState<'ready' | 'success' | 'error'>('ready');
 
   // Checking for Clipboard API availability.
-  const Clipboard = navigator?.clipboard;
+  let Clipboard: Clipboard | undefined;
+
+  if (typeof window !== 'undefined') {
+    Clipboard = window.navigator.clipboard;
+  }
 
   if (!Clipboard) {
     setError('Clipboard API is not supported');

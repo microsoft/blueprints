@@ -1,6 +1,7 @@
 import { mergeClasses } from '@griffel/react';
 import { Badge } from '@microsoft/arbutus.badge';
 import { Link } from '@microsoft/arbutus.link';
+import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
@@ -13,15 +14,16 @@ import { getBackgroundColor } from './utilities';
 
 export const RecommendationTile: FC<RecommendationTileProps> = ({
   className,
-  title,
   description,
-  recommendation,
   imageAs: Image,
   imageProps,
   linkAs,
   linkProps,
-  linkWithIcon,
   linkText,
+  linkWithIcon,
+  recommendation,
+  recommendationsList,
+  title,
 }) => {
   // Styles
   const classes = useRecommendationTileStyles();
@@ -43,20 +45,39 @@ export const RecommendationTile: FC<RecommendationTileProps> = ({
           <Image {...imageProps} className={mergeClasses(classes.image, space.mb4)} />
         </div>
       )}
-      <Text block variant="caption" color={recommendation} className={space.mb5}>
-        {!Image && (
-          <Badge
-            iconName={recommendation === 'positive' ? 'check' : 'x'}
-            color={recommendation === 'positive' ? 'positive' : 'negative'}
-            isInline
-            className={space.mr5}
-          />
-        )}
+      <Text
+        block
+        variant={recommendationsList ? 'headline' : 'caption'}
+        color={recommendation}
+        className={recommendationsList ? space.mb7 : space.mb5}
+      >
+        {!Image ||
+          (recommendationsList && (
+            <Badge
+              iconName={recommendation === 'positive' ? 'check' : 'x'}
+              color={recommendation === 'positive' ? 'positive' : 'negative'}
+              isInline
+              className={space.mr5}
+            />
+          ))}
         {title}
       </Text>
-      <Text block variant="description">
-        {description}
-      </Text>
+      {description && (
+        <Text block variant="description">
+          {description}
+        </Text>
+      )}
+      {recommendationsList && (
+        <MarkList
+          iconName={recommendation === 'positive' ? 'check' : 'x'}
+          iconColor={recommendation === 'positive' ? 'positive' : 'negative'}
+          className={mergeClasses(classes.recommendationList, space.mt5)}
+        >
+          {recommendationsList.map((recommendation, index) => (
+            <MarkListItem key={index}>{recommendation}</MarkListItem>
+          ))}
+        </MarkList>
+      )}
       {linkAs && linkText && (
         <Link
           as={linkAs}

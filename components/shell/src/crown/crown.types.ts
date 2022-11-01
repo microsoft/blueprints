@@ -37,5 +37,5 @@ export type CrownProps = {
   /**
    * Click handler.
    */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event?: React.MouseEvent<HTMLButtonElement>) => void;
 };

@@ -20,7 +20,7 @@ export default {
   decorators: [
     (Story) => (
       <Centered>
-        <div style={{ maxWidth: ' ' }}>
+        <div style={{ maxWidth: '360px' }}>
           <Story />
         </div>
       </Centered>
