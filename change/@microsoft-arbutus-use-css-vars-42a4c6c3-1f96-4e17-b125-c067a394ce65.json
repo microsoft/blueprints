@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Removes unnecessary import.",
+  "packageName": "@microsoft/arbutus.use-css-vars",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}

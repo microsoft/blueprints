@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Passes the className property to the image.",
+  "packageName": "@microsoft/arbutus.image-tile",
+  "email": "riacarmin@microsoft.com",
+  "dependentChangeType": "patch"
+}
