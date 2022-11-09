@@ -16,6 +16,7 @@ export default {
   component: Crown,
   argTypes: {
     onClick: { action: 'clicked' },
+    onLogoClick: { action: 'clicked' },
   },
   decorators: [
     (Story) => (

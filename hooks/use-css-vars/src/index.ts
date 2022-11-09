@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { useEffect } from 'react';
 
 import { generateCSSVarTuples } from './generate-css-vars';

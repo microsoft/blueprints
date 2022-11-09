@@ -22,7 +22,10 @@ export const ImageTile: FC<ImageTileProps> = ({
 
   return (
     <Tile variant="card" className={className} onClick={onClick}>
-      <Image {...imageProps} className={classes.image} />
+      <Image
+        {...imageProps}
+        className={mergeClasses(classes.image, imageProps?.className as string)}
+      />
       {(title || description) && (
         <div className={mergeClasses(space.px9, space.pb7, space.pt4)}>
           {title && (

@@ -5,7 +5,7 @@ import { TRAY_WIDTH } from '@microsoft/arbutus.tray';
 
 const toRawValue = (value: `${string}px`) => Number(value.replace('px', ''));
 
-export const FOOTER_HEIGHT = '160px';
+export const FOOTER_HEIGHT = '98px';
 export const HEADER_HEIGHT = '80px';
 export const CONTENT_WIDTH = '980px';
 export const CONTAINER_WIDTH = `${

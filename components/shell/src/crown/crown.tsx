@@ -14,7 +14,10 @@ const Logo: FC<Pick<CrownProps, 'onClick'>> = ({ onClick, children }) => {
 
   if (onClick) {
     return (
-      <button className={mergeClasses(classes.logo, classes.interactive)}>
+      <button
+        className={mergeClasses(classes.logo, classes.interactive)}
+        onClick={onClick}
+      >
         {children}
       </button>
     );
