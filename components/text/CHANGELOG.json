@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.text",
   "entries": [
     {
+      "date": "Wed, 09 Nov 2022 01:33:09 GMT",
+      "tag": "@microsoft/arbutus.text_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.text",
+            "comment": "Bump @microsoft/arbutus.theming to v0.0.4",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Nov 2022 09:24:44 GMT",
       "tag": "@microsoft/arbutus.text_v0.0.4",
       "version": "0.0.4",

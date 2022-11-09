@@ -2,6 +2,51 @@
   "name": "@microsoft/arbutus.recommendation-tile",
   "entries": [
     {
+      "date": "Wed, 09 Nov 2022 01:33:09 GMT",
+      "tag": "@microsoft/arbutus.recommendation-tile_v0.1.2",
+      "version": "0.1.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.badge to v0.0.5",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.link to v0.0.5",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.mark-list to v0.0.5",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.text to v0.0.5",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.tile to v0.0.5",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.4",
+            "commit": "a2234aa10663538c2006da34c78276d1766b49ff"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 01 Nov 2022 09:24:44 GMT",
       "tag": "@microsoft/arbutus.recommendation-tile_v0.1.1",
       "version": "0.1.1",

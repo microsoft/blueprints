@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes onLogoClick handler.",
-  "packageName": "@microsoft/arbutus.shell",
-  "email": "riacarmin@microsoft.com",
-  "dependentChangeType": "patch"
-}

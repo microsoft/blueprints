@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.use-css-vars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "useCSSVars takes an object of theme values, generates CSS variables from them, and injects them into the document.",
   "main": "lib/index.js",
   "module": "lib/index.js",

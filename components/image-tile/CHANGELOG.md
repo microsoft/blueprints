@@ -1,8 +1,19 @@
 # Change Log - @microsoft/arbutus.image-tile
 
-This log was last generated on Tue, 01 Nov 2022 09:24:44 GMT and should not be manually modified.
+This log was last generated on Wed, 09 Nov 2022 01:33:09 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.5
+
+Wed, 09 Nov 2022 01:33:09 GMT
+
+### Patches
+
+- Passes the className property to the image. (riacarmin@microsoft.com)
+- Bump @microsoft/arbutus.text to v0.0.5
+- Bump @microsoft/arbutus.tile to v0.0.5
+- Bump @microsoft/arbutus.use-space-styles to v0.0.4
 
 ## 0.0.4
 
