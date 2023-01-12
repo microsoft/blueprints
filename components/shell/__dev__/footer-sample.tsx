@@ -2,10 +2,10 @@ import { makeStyles } from '@griffel/react';
 import { Divider } from '@microsoft/arbutus.divider';
 import { Link } from '@microsoft/arbutus.link';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { FC, SyntheticEvent } from 'react';
+import type { FC, ReactNode, SyntheticEvent } from 'react';
 import * as React from 'react';
 
-const LinkSample = ({ children }) => {
+const LinkSample: FC<{ children?: ReactNode | undefined }> = ({ children }) => {
   const onClick = (e: SyntheticEvent) => {
     e.preventDefault();
     alert('Clicked!');

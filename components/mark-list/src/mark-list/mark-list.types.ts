@@ -1,4 +1,5 @@
 import type { ColorVariant, paths } from '@microsoft/arbutus.icon';
+import type { ReactNode } from 'react';
 
 export type MarkListProps = {
   /**
@@ -15,4 +16,6 @@ export type MarkListProps = {
    * Selection of icon color options.
    */
   iconColor?: ColorVariant;
+
+  children?: ReactNode | undefined;
 };

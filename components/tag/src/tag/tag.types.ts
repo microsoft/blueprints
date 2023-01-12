@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type TypeVariant = 'new' | 'error' | 'warning' | 'info' | 'success' | 'accent';
 export type SizeVariant = 'small' | 'medium';
 
@@ -35,4 +37,6 @@ export type TagProps = {
    * @default false
    */
   isInline?: boolean;
+
+  children?: ReactNode | undefined;
 };

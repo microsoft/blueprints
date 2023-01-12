@@ -1,4 +1,5 @@
 import type { TextProps } from '@microsoft/arbutus.text';
+import type { ReactNode } from 'react';
 
 export type OnCopyArgs = { url: string };
 
@@ -42,5 +43,7 @@ export type HeadingProps = {
    * Heading id.
    */
   id?: string;
+
+  children?: ReactNode | undefined;
 } & Pick<TextProps, 'color' | 'variant'> &
   (HeadingUrlProps | NoHeadingUrlProps);

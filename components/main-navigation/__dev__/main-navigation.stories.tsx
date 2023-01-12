@@ -3,7 +3,7 @@ import { makeStyles } from '@griffel/react';
 import { Divider } from '@microsoft/arbutus.divider';
 import { Tile } from '@microsoft/arbutus.tile';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
-import type { FC, FunctionComponent } from 'react';
+import type { FC, FunctionComponent, ReactNode } from 'react';
 import React, { useState } from 'react';
 
 import type { MainNavigationProps } from '../src/index';
@@ -14,7 +14,10 @@ export default {
   component: MainNavigation,
 } as ComponentMeta<typeof MainNavigation>;
 
-const Link: FC<{ onClick: () => void }> = ({ children, onClick }) => (
+const Link: FC<{ onClick: () => void; children?: ReactNode | undefined }> = ({
+  children,
+  onClick,
+}) => (
   <button onClick={onClick} style={{ padding: 0, cursor: 'pointer' }}>
     {children}
   </button>

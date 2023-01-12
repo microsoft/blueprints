@@ -1,4 +1,4 @@
-import type { ElementType, SyntheticEvent } from 'react';
+import type { ElementType, ReactNode, SyntheticEvent } from 'react';
 
 export type ColorVariant = 'none' | 'accent' | 'primary' | 'secondary' | 'tertiary' | 'quaternary' | 'negative' | 'positive' | 'warning' | 'danger' | 'info' | 'tile';
 
@@ -59,4 +59,6 @@ export type TileProps = {
    * Click handler.
    */
   onClick?: (e?: SyntheticEvent) => void;
+
+  children?: ReactNode | undefined;
 } & (CardTileProps | ImageTileProps | SolidColorTileProps);

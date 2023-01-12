@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type AccordionItemProps = {
   /**
    * Consumer-provided class name.
@@ -13,4 +15,6 @@ export type AccordionItemProps = {
    * Initial state of the accordion item.
    */
   initial?: 'collapsed' | 'expanded';
+
+  children?: ReactNode | undefined;
 };

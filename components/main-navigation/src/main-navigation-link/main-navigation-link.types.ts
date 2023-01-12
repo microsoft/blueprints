@@ -1,4 +1,4 @@
-import type { ElementType } from 'react';
+import type { ElementType, ReactNode } from 'react';
 
 export type MainNavigationLinkProps = {
   /**
@@ -15,4 +15,6 @@ export type MainNavigationLinkProps = {
    * Whether this link is currently active.
    */
   isActive?: boolean;
+
+  children?: ReactNode | undefined;
 };

@@ -1,5 +1,5 @@
 import type { paths } from '@microsoft/arbutus.icon';
-import type { ElementType } from 'react';
+import type { ElementType, ReactNode } from 'react';
 
 type LinkVariant = 'primary' | 'secondary' | 'inverse' | 'caption';
 
@@ -39,4 +39,6 @@ export type LinkProps = {
    * @default 'open'
    */
   iconName?: keyof typeof paths;
+
+  children?: ReactNode | undefined;
 };

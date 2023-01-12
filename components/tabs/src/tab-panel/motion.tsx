@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import type { FC, HTMLAttributes } from 'react';
+import type { FC, HTMLAttributes, ReactNode } from 'react';
 import * as React from 'react';
 
 const SLIDE_DURATION = 0.2;
@@ -14,7 +14,10 @@ const appearVariants = {
   },
 };
 
-type AppearMotionProps = HTMLAttributes<HTMLDivElement> & { isActive: boolean };
+type AppearMotionProps = HTMLAttributes<HTMLDivElement> & {
+  isActive: boolean;
+  children?: ReactNode | undefined;
+};
 
 export const AppearMotion: FC<AppearMotionProps> = ({
   children,

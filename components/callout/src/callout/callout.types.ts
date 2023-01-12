@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type StatusVariant = 'error' | 'warning' | 'info' | 'success' | 'accent';
 
 export type CalloutIconProps = {
@@ -25,4 +27,6 @@ export type CalloutProps = {
    * Status color variant options.
    */
   status?: StatusVariant;
+
+  children?: ReactNode | undefined;
 };

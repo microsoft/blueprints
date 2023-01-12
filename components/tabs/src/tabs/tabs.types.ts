@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type TabsProps = {
   /**
    * Consumer provided class.
@@ -9,4 +11,6 @@ export type TabsProps = {
    * @default 0
    */
   initialIndex?: number;
+
+  children?: ReactNode | undefined;
 };

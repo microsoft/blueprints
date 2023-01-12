@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import * as React from 'react';
 
 const SLIDE_DURATION = 0.2;
@@ -33,6 +33,7 @@ export const SlideMotion: FC<{
   a11yLabelId: string;
   a11yContentId: string;
   className?: string;
+  children?: ReactNode | undefined;
 }> = ({ children, initial, a11yLabelId, a11yContentId, className }) => (
   <motion.section
     initial={initial}
@@ -75,6 +76,7 @@ const fadeVariants = ({
 export const FadeMotion: FC<{
   initial: 'expanded' | 'collapsed';
   className?: string;
+  children?: ReactNode | undefined;
 }> = ({ children, initial }) => (
   <motion.div
     style={{ position: 'relative' }}
