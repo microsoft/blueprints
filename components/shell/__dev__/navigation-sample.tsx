@@ -4,10 +4,13 @@ import {
   MainNavigationLink,
   MainNavigationSub,
 } from '@microsoft/arbutus.main-navigation';
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import * as React from 'react';
 
-const Link: FC<{ href: string }> = ({ children, href }) => <a href={href}>{children}</a>;
+const Link: FC<{ href: string; children?: ReactNode | undefined }> = ({
+  children,
+  href,
+}) => <a href={href}>{children}</a>;
 
 export const NavigationMenu = () => (
   <MainNavigation>

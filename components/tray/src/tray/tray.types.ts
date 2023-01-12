@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type TrayProps = {
   /**
    * Consumer provided class.
@@ -8,4 +10,6 @@ export type TrayProps = {
    * Controls whether the tray is open or closed.
    */
   isOpen: boolean;
+
+  children?: ReactNode | undefined;
 };

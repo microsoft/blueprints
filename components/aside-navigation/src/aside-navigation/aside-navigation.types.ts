@@ -1,4 +1,4 @@
-import type { ElementType } from 'react';
+import type { ElementType, ReactNode } from 'react';
 
 export type AsideNavigationProps = {
   /**
@@ -20,4 +20,6 @@ export type AsideNavigationProps = {
    * Title of the navigation group.
    */
   title?: string;
+
+  children?: ReactNode | undefined;
 };

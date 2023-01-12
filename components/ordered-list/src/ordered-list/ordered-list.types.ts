@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 
 export type OrderedListProps = {
   /**
@@ -11,4 +11,6 @@ export type OrderedListProps = {
    * @default 1
    */
   start?: number;
+
+  children?: ReactNode | undefined;
 } & HTMLAttributes<HTMLOListElement>;

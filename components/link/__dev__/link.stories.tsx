@@ -1,5 +1,5 @@
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
-import type { FunctionComponent, SyntheticEvent } from 'react';
+import type { FunctionComponent, ReactNode, SyntheticEvent } from 'react';
 import React from 'react';
 
 import type { LinkProps } from '../src/index';
@@ -23,7 +23,10 @@ export default {
   },
 } as ComponentMeta<typeof Link>;
 
-const LinkSample: React.FC<{ className: string }> = ({ children, className }) => {
+const LinkSample: React.FC<{ className: string; children?: ReactNode | undefined }> = ({
+  children,
+  className,
+}) => {
   const onClick = (e: SyntheticEvent) => {
     e.preventDefault();
     alert('Clicked!');

@@ -56,4 +56,6 @@ export type ShellProps = {
    * Click handler for the logo. Usually used to return the user back to the home page.
    */
   onLogoClick?: (event?: React.MouseEvent<HTMLButtonElement>) => void;
+
+  children?: ReactNode | undefined;
 };

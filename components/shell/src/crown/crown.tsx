@@ -2,13 +2,16 @@ import { mergeClasses } from '@griffel/react';
 import { IconButton } from '@microsoft/arbutus.icon-button';
 import { Text } from '@microsoft/arbutus.text';
 import { useTrayContext } from '@microsoft/arbutus.tray';
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import * as React from 'react';
 
 import { useCrownStyles } from './crown.styles';
 import type { CrownProps } from './crown.types';
 
-const Logo: FC<Pick<CrownProps, 'onClick'>> = ({ onClick, children }) => {
+const Logo: FC<Pick<CrownProps, 'onClick'> & { children?: ReactNode | undefined }> = ({
+  onClick,
+  children,
+}) => {
   // Styles
   const classes = useCrownStyles();
 

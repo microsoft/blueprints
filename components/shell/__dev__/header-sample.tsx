@@ -1,10 +1,10 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 import { Link } from '@microsoft/arbutus.link';
-import type { SyntheticEvent } from 'react';
+import type { FC, ReactNode, SyntheticEvent } from 'react';
 import * as React from 'react';
 
-const LinkSample = ({ children }) => {
+const LinkSample: FC<{ children?: ReactNode | undefined }> = ({ children }) => {
   const onClick = (e: SyntheticEvent) => {
     e.preventDefault();
     alert('Clicked!');

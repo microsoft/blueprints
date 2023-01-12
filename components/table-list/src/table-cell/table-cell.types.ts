@@ -1,4 +1,4 @@
-import type { TdHTMLAttributes, ThHTMLAttributes } from 'react';
+import type { ReactNode, TdHTMLAttributes, ThHTMLAttributes } from 'react';
 
 export type TableData = {
   /**
@@ -24,4 +24,6 @@ export type TableCellProps = {
    * Sets the cell to be a header cell (`<th>`).
    */
   isHeader?: boolean;
+
+  children?: ReactNode | undefined;
 } & (TableData | TableHeader);

@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 
 export type OrderedListItemProps = {
   /**
@@ -11,6 +11,8 @@ export type OrderedListItemProps = {
    * @default 'primary'
    */
   variant?: 'primary' | 'secondary' | 'accent';
+
+  children?: ReactNode | undefined;
 
   /**
    * @private [INTERNAL] DO NOT USE.

@@ -1,7 +1,7 @@
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
-import type { FunctionComponent } from 'react';
+import type { FunctionComponent, ReactNode } from 'react';
 import React from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
@@ -14,11 +14,11 @@ const DemoImage: FunctionComponent<{ alt: string; src: string; className: string
   src,
 }) => <img className={className} alt={alt} src={src} />;
 
-const DemoLink: FunctionComponent<{ href: string; className: string }> = ({
-  className,
-  href,
-  children,
-}) => (
+const DemoLink: FunctionComponent<{
+  href: string;
+  className: string;
+  children?: ReactNode | undefined;
+}> = ({ className, href, children }) => (
   <a className={className} href={href} target="__blank">
     {children}
   </a>

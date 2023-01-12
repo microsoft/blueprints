@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 
 export type ColorKey = 'primary' | 'secondary' | 'danger' | 'warning' | 'success';
 export type ColorValue = {
@@ -35,4 +35,6 @@ export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
    * @default 'brick'
    */
   shape?: 'pill' | 'brick';
+
+  children?: ReactNode | undefined;
 };

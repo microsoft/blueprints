@@ -1,4 +1,4 @@
-import type { TableHTMLAttributes } from 'react';
+import type { ReactNode, TableHTMLAttributes } from 'react';
 
 export type TableListProps = {
   /**
@@ -10,4 +10,6 @@ export type TableListProps = {
    * Alternating row colors variant.
    */
   isAlternating?: boolean;
+
+  children?: ReactNode | undefined;
 } & TableHTMLAttributes<HTMLTableElement>;

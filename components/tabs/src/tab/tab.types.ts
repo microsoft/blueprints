@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type TabProps = {
   /**
    * Consumer provided class.
@@ -18,4 +20,6 @@ export type TabProps = {
    * [INTERNAL] Do not use.
    */
   __total?: number;
+
+  children?: ReactNode | undefined;
 };

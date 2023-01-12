@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type MainNavigationSubProps = {
   /**
    * Consumer provided class.
@@ -13,4 +15,6 @@ export type MainNavigationSubProps = {
    * Initial state of the accordion item.
    */
   initial?: 'collapsed' | 'expanded';
+
+  children?: ReactNode | undefined;
 };
