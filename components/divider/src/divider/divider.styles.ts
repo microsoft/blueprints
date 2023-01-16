@@ -11,7 +11,7 @@ export const useDividerStyles = makeStyles({
     borderBottomStyle: 'none',
     borderLeftStyle: 'none',
     backgroundColor: tokens.colorNeutralStroke1,
-    paddingBottom: 0,
-    paddingTop: 0,
+    marginBottom: 0,
+    marginTop: 0,
   },
 });
