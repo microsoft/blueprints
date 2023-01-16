@@ -1,4 +1,3 @@
-import { mergeClasses } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
@@ -11,8 +10,8 @@ export const ActionListTile: FC<ActionListTileProps> = ({ className, children })
   const space = useSpaceStyles();
 
   return (
-    <Tile variant="card">
-      <div className={mergeClasses(space.p9, className)}>{children}</div>
+    <Tile variant="card" className={className}>
+      <div className={space.p9}>{children}</div>
     </Tile>
   );
 };
