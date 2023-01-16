@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Adds explicit children prop type",
+  "packageName": "@microsoft/arbutus.style-utilities",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
