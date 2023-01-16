@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "Fixes lint script",
+  "packageName": "@microsoft/arbutus.ts",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "none"
+}
