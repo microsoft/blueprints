@@ -19,3 +19,4 @@ storybook-static
 
 node_modules
 .env
+.npmrc
