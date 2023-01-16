@@ -2,8 +2,8 @@
   "name": "@microsoft/arbutus.ts",
   "version": "0.0.1",
   "description": "Arbutus base TSConfig for working with Node 16.",
-  "main": "./tsconfig.json",
+  "main": "tsconfig.json",
   "files": [
-    "./tsconfig.json"
+    "tsconfig.json"
   ]
 }
