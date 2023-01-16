@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.ts",
   "entries": [
     {
+      "date": "Mon, 16 Jan 2023 21:52:50 GMT",
+      "tag": "@microsoft/arbutus.ts_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.ts",
+            "commit": "b44aecba058d3d36016222844d55709beb3cf41c",
+            "comment": "Fixes lint script"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Sep 2022 21:33:05 GMT",
       "tag": "@microsoft/arbutus.ts_v0.0.1",
       "version": "0.0.1",

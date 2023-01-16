@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.main-navigation",
   "entries": [
     {
+      "date": "Mon, 16 Jan 2023 21:52:50 GMT",
+      "tag": "@microsoft/arbutus.main-navigation_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.main-navigation",
+            "commit": "28603da9f5efadcdebecc63d052117f92059cdc6",
+            "comment": "Adds explicit children prop type"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.main-navigation",
+            "comment": "Bump @microsoft/arbutus.icon to v0.0.4",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.main-navigation",
+            "comment": "Bump @microsoft/arbutus.ts to v0.0.2",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 31 Oct 2022 22:13:18 GMT",
       "tag": "@microsoft/arbutus.main-navigation_v0.0.3",
       "version": "0.0.3",

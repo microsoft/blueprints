@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds explicit children prop type",
-  "packageName": "@microsoft/arbutus.person-tile",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

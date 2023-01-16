@@ -26,7 +26,7 @@
     "@griffel/react": "^1.5.2"
   },
   "devDependencies": {
-    "@microsoft/arbutus.ts": "0.0.1",
+    "@microsoft/arbutus.ts": "0.0.2",
     "typescript": "^4.9.4"
   }
 }

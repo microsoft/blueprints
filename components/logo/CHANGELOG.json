@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.logo",
   "entries": [
     {
+      "date": "Mon, 16 Jan 2023 21:52:50 GMT",
+      "tag": "@microsoft/arbutus.logo_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.logo",
+            "commit": "28603da9f5efadcdebecc63d052117f92059cdc6",
+            "comment": "Adds explicit children prop type"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.logo",
+            "comment": "Bump @microsoft/arbutus.ts to v0.0.2",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Sep 2022 21:33:05 GMT",
       "tag": "@microsoft/arbutus.logo_v0.0.1",
       "version": "0.0.1",

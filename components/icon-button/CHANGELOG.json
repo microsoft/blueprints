@@ -2,6 +2,45 @@
   "name": "@microsoft/arbutus.icon-button",
   "entries": [
     {
+      "date": "Mon, 16 Jan 2023 21:52:50 GMT",
+      "tag": "@microsoft/arbutus.icon-button_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon-button",
+            "commit": "28603da9f5efadcdebecc63d052117f92059cdc6",
+            "comment": "Adds explicit children prop type"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.icon-button",
+            "comment": "Bump @microsoft/arbutus.icon to v0.0.4",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.icon-button",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.5",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.icon-button",
+            "comment": "Bump @microsoft/arbutus.style-utilities to v0.0.2",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.icon-button",
+            "comment": "Bump @microsoft/arbutus.ts to v0.0.2",
+            "commit": "241e6dbe1542531e73bcefb157ce5c260d2b5f0b"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 09 Nov 2022 01:33:09 GMT",
       "tag": "@microsoft/arbutus.icon-button_v0.0.5",
       "version": "0.0.5",
