@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes missing dependency #52",
+  "packageName": "@microsoft/arbutus.shell",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
