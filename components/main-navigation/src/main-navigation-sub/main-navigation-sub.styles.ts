@@ -49,4 +49,15 @@ export const useMainNavigationSubStyles = makeStyles({
     gridTemplateColumns: '1fr',
     rowGap: tokens.spacingHorizontalS,
   },
+  toggle: {
+    transitionProperty: 'transform',
+    transitionDuration: tokens.durationNormal,
+    transitionTimingFunction: tokens.curveEasyEase,
+  },
+  toggleExpanded: {
+    transform: 'rotate(90deg)',
+  },
+  toggleIdle: {
+    transform: 'rotate(0deg)',
+  },
 });
