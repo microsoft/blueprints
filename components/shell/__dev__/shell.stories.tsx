@@ -1,9 +1,11 @@
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
-import type { FunctionComponent } from 'react';
+import type { FC } from 'react';
 import React from 'react';
 
 import type { ShellProps } from '../src/index';
-import { Shell } from '../src/index';
+import { Crown, Shell } from '../src/index';
 import { Area } from './area';
 // @ts-ignore TS doesn’t recognize the image format.
 import logo from './fluentui-logo.svg';
@@ -25,7 +27,7 @@ const Template: ComponentStory<typeof Shell> = (args) => (
   </Shell>
 );
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<ShellProps>>;
+export const Simple = Template.bind({}) as ComponentStory<FC<ShellProps>>;
 
 Simple.args = {
   headerArea: <Area>Header Area</Area>,
@@ -42,9 +44,7 @@ const FullExampleTemplate: ComponentStory<typeof Shell> = (args) => (
   </Shell>
 );
 
-export const FullExample = FullExampleTemplate.bind({}) as ComponentStory<
-  FunctionComponent<ShellProps>
->;
+export const FullExample = FullExampleTemplate.bind({}) as ComponentStory<FC<ShellProps>>;
 FullExample.args = {
   headerArea: <HeaderSample />,
   navigationArea: <NavigationSample />,
@@ -61,11 +61,39 @@ const HeroExampleTemplate: ComponentStory<typeof Shell> = (args) => (
   </Shell>
 );
 
-export const HeroExample = HeroExampleTemplate.bind({}) as ComponentStory<
-  FunctionComponent<ShellProps>
->;
+const useHeroHeaderStyles = makeStyles({
+  root: {
+    display: 'grid',
+    gridTemplateColumns: 'min-content auto',
+    columnGap: tokens.spacingHorizontalXXL,
+  },
+});
+
+const HeroHeader: FC<{
+  logoMarkAlt: string;
+  logoMarkSrc: string;
+  logoText?: string;
+  onLogoClick?: () => void;
+}> = ({ logoMarkAlt, logoMarkSrc, logoText, onLogoClick }) => {
+  const classes = useHeroHeaderStyles();
+
+  return (
+    <div className={classes.root}>
+      <Crown
+        isTabletLayout={false}
+        logoMarkAlt={logoMarkAlt}
+        logoMarkSrc={logoMarkSrc}
+        logoText={logoText}
+        onClick={onLogoClick}
+      />
+      <HeaderSample isHeroMode />
+    </div>
+  );
+};
+
+export const HeroExample = HeroExampleTemplate.bind({}) as ComponentStory<FC<ShellProps>>;
 HeroExample.args = {
-  headerArea: <HeaderSample isHeroMode />,
+  headerArea: <HeroHeader logoMarkAlt="Fluent logo" logoMarkSrc={logo as string} />,
   navigationArea: <NavigationSample />,
   footerArea: <FooterSample />,
   logoMarkSrc: logo as string,

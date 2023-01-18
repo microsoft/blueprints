@@ -38,9 +38,6 @@ export const useShellStyles = makeStyles({
     minHeight: HEADER_HEIGHT,
     marginLeft: 'auto',
     marginRight: 'auto',
-    display: 'grid',
-    gridTemplateColumns: 'min-content auto',
-    columnGap: tokens.spacingHorizontalXXL,
     [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
       paddingRight: tokens.spacingHorizontalL,
       paddingLeft: tokens.spacingHorizontalL,
