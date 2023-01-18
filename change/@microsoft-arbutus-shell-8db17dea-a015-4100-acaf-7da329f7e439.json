@@ -1,6 +1,6 @@
 {
   "type": "patch",
-  "comment": "Removes the Crown from the hero mode to offer more flexibility to the consumer. Fixes missing dependency.",
+  "comment": "Removes the Crown from the hero mode to offer more flexibility to the consumer. Improves minimum height layout. Fixes missing dependency.",
   "packageName": "@microsoft/arbutus.shell",
   "email": "akimalunar@gmail.com",
   "dependentChangeType": "patch"
