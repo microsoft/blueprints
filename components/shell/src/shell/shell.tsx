@@ -63,7 +63,11 @@ export const Shell: FC<ShellProps> = ({
           </div>
         )}
 
-        <div className={!isTabletLayout ? classes.grid : undefined}>
+        <div
+          className={
+            !isTabletLayout ? mergeClasses(classes.grid, classes.minHeight) : undefined
+          }
+        >
           {isTabletLayout ? (
             <TrayConsumer>
               {({ isOpen }) => (

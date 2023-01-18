@@ -18,7 +18,6 @@ export const useShellStyles = makeStyles({
   },
   main: {
     width: '100%',
-    minHeight: `calc(100vh - (${HEADER_HEIGHT} + ${FOOTER_HEIGHT}))`,
     maxWidth: CONTENT_WIDTH,
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -57,6 +56,9 @@ export const useShellStyles = makeStyles({
     columnGap: tokens.spacingHorizontalXXL,
     position: 'relative',
   },
+  minHeight: {
+    minHeight: `calc(100vh - ${FOOTER_HEIGHT})`,
+  },
   footer: {
     minHeight: FOOTER_HEIGHT,
   },
@@ -70,6 +72,9 @@ export const useShellStyles = makeStyles({
     overflowY: 'auto',
     scrollbarWidth: 'none',
     msOverflowStyle: 'none',
+    [`@media screen and (min-width: ${BREAKPOINTS.desktop}px)`]: {
+      height: `calc(100vh - ${FOOTER_HEIGHT})`,
+    },
     '&::-webkit-scrollbar': {
       display: 'none',
     },
