@@ -1,13 +1,19 @@
 import { tokens } from '@fluentui/react-theme';
-import { makeStyles } from '@griffel/react';
-import { Divider } from '@microsoft/arbutus.divider';
+import { makeStyles, mergeClasses } from '@griffel/react';
+import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FC, FunctionComponent, ReactNode } from 'react';
 import React, { useState } from 'react';
 
-import type { MainNavigationProps } from '../src/index';
-import { MainNavigation, MainNavigationLink, MainNavigationSub } from '../src/index';
+import type { MainNavigationProps, NavigationItems } from '../src/index';
+import {
+  isButton,
+  isSubMenu,
+  MainNavigation,
+  MainNavigationRenderer,
+} from '../src/index';
 
 export default {
   title: 'Layout/MainNavigation',
@@ -35,105 +41,121 @@ const useNavigationStyles = makeStyles({
   },
 });
 
+const menuItems: NavigationItems = {
+  aboutUs: {
+    id: 'about-us',
+    title: 'About us',
+  },
+  overview: {
+    id: 'overview',
+    title: 'Overview',
+  },
+  gettingStarted: {
+    id: 'getting-started',
+    title: 'Getting started',
+    hasDivider: true,
+  },
+  designFundamentals: {
+    title: 'Design fundamentals',
+    hasDivider: true,
+    items: {
+      typography: {
+        id: 'design-fundamentals/typography',
+        title: 'Typography',
+      },
+      colors: {
+        id: 'design-fundamentals/colors',
+        title: 'Colors',
+      },
+      spaceGrid: {
+        id: 'design-fundamentals/space-grid',
+        title: 'Space grid',
+      },
+    },
+  },
+  components: {
+    title: 'Components',
+    hasDivider: true,
+    items: {
+      button: {
+        title: 'Button',
+        items: {
+          primary: {
+            id: 'components/button/primary',
+            title: 'Primary',
+          },
+          secondary: {
+            id: 'components/button/secondary',
+            title: 'Secondary',
+          },
+          umph: {
+            id: 'components/button/umph',
+            title: 'Umph',
+          },
+        },
+      },
+      tile: {
+        id: 'components/tile',
+        title: 'Tile',
+      },
+      link: {
+        id: 'components/link',
+        title: 'Link',
+      },
+    },
+  },
+  credits: {
+    id: 'credits',
+    title: 'Credits',
+  },
+};
+
+const findTitle = (items: NavigationItems, id: string): string | undefined => {
+  for (const key in items) {
+    const item = items[key];
+
+    if (isButton(item)) {
+      if (item.id === id) {
+        console.log(item.id, id);
+
+        return item.title;
+      }
+    }
+
+    if (isSubMenu(item)) {
+      const result = findTitle(item.items, id);
+
+      if (result) {
+        return result;
+      }
+    }
+  }
+};
+
 const Template: ComponentStory<typeof MainNavigation> = () => {
   const classes = useNavigationStyles();
-  const [active, setActive] = useState(1);
-  const makeOnClick = (i: number) => () => setActive(i);
+  const space = useSpaceStyles();
+  const [active, setActive] = useState(
+    isButton(menuItems.overview) ? menuItems.overview.id : '',
+  );
+  const makeOnClick = (id: string) => setActive(id);
 
   return (
     <div className={classes.root}>
       <MainNavigation>
-        <MainNavigationSub title="About us">
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 1}
-            elementProps={{ onClick: makeOnClick(1) }}
-          >
-            Overview
-          </MainNavigationLink>
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 2}
-            elementProps={{ onClick: makeOnClick(2) }}
-          >
-            Getting started
-          </MainNavigationLink>
-        </MainNavigationSub>
-        <Divider />
-        <MainNavigationSub title="Design Fundamentals">
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 3}
-            elementProps={{ onClick: makeOnClick(3) }}
-          >
-            Typography
-          </MainNavigationLink>
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 4}
-            elementProps={{ onClick: makeOnClick(4) }}
-          >
-            Colors
-          </MainNavigationLink>
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 5}
-            elementProps={{ onClick: makeOnClick(5) }}
-          >
-            Space grid
-          </MainNavigationLink>
-        </MainNavigationSub>
-        <Divider />
-        <MainNavigationSub title="Components">
-          <MainNavigationSub title="Button">
-            <MainNavigationLink
-              as={Link}
-              isActive={active === 6}
-              elementProps={{ onClick: makeOnClick(6) }}
-            >
-              Primary
-            </MainNavigationLink>
-            <MainNavigationLink
-              as={Link}
-              isActive={active === 7}
-              elementProps={{ onClick: makeOnClick(7) }}
-            >
-              Secondary
-            </MainNavigationLink>
-            <MainNavigationLink
-              as={Link}
-              isActive={active === 8}
-              elementProps={{ onClick: makeOnClick(8) }}
-            >
-              Umph
-            </MainNavigationLink>
-          </MainNavigationSub>
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 9}
-            elementProps={{ onClick: makeOnClick(9) }}
-          >
-            Text
-          </MainNavigationLink>
-          <MainNavigationLink
-            as={Link}
-            isActive={active === 10}
-            elementProps={{ onClick: makeOnClick(10) }}
-          >
-            Link
-          </MainNavigationLink>
-        </MainNavigationSub>
-        <Divider />
-        <MainNavigationLink
-          as={Link}
-          isActive={active === 11}
-          elementProps={{ onClick: makeOnClick(11) }}
-        >
-          Credits
-        </MainNavigationLink>
+        <MainNavigationRenderer
+          items={menuItems}
+          activeItemId={active}
+          linkAs={Link}
+          onNavigationItemClick={makeOnClick}
+        />
       </MainNavigation>
 
-      <Tile variant="solid-color">&nbsp;</Tile>
+      <Tile variant="solid-color" className={mergeClasses(space.py10, space.px12)}>
+        <Text variant="title" color="quaternary">
+          {findTitle(menuItems, active)}
+        </Text>
+      </Tile>
     </div>
   );
 };
