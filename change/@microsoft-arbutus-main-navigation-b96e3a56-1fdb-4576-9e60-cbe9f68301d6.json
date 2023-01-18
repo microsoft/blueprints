@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Implements MainNavigationRenderer and its utilities.",
+  "packageName": "@microsoft/arbutus.main-navigation",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
