@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Removes default margins from hr element (root) in Divider",
-  "packageName": "@microsoft/arbutus.divider",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.shell
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Jan 2023 19:51:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.9
+
+Thu, 19 Jan 2023 19:51:35 GMT
+
+### Patches
+
+- Removes the Crown from the hero mode to offer more flexibility to the consumer. Improves minimum height layout. Fixes missing dependency. (akimalunar@gmail.com)
 
 ## 0.0.8
 

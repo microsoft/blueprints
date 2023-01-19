@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.divider",
   "entries": [
     {
+      "date": "Thu, 19 Jan 2023 19:51:35 GMT",
+      "tag": "@microsoft/arbutus.divider_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.divider",
+            "commit": "7a701a13dc6e10d54c580ba519f9bf43285ef0b8",
+            "comment": "Removes default margins from hr element (root) in Divider"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.divider_v0.0.2",
       "version": "0.0.2",

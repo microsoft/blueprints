@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.guidance
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Thu, 19 Jan 2023 19:51:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.7
+
+Thu, 19 Jan 2023 19:51:35 GMT
+
+### Patches
+
+- Improves the way keys are applied to OrderedListItem (akimalunar@gmail.com)
 
 ## 0.0.6
 

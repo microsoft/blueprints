@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.guidance",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Guidance composite component in the Content collection. Guidance is an interactive UI for showcasing best practices and anatomy.",
   "main": "lib/index.js",
   "module": "lib/index.js",

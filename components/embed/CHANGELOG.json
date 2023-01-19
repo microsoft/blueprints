@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.embed",
   "entries": [
     {
+      "date": "Thu, 19 Jan 2023 19:51:35 GMT",
+      "tag": "@microsoft/arbutus.embed_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.embed",
+            "comment": "Bump @microsoft/arbutus.divider to v0.0.3",
+            "commit": "a4afb561f7643fabf1dc3727f758d417bcf14620"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.embed_v0.0.6",
       "version": "0.0.6",

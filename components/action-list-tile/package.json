@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.action-list-tile",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "ActionListTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

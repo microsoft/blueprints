@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.main-navigation",
   "entries": [
     {
+      "date": "Thu, 19 Jan 2023 19:51:35 GMT",
+      "tag": "@microsoft/arbutus.main-navigation_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.main-navigation",
+            "commit": "ee164d4d71b500b9727387b2f1eb09842977ec69",
+            "comment": "Implements MainNavigationRenderer and its utilities."
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.main-navigation_v0.0.4",
       "version": "0.0.4",

@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.guidance",
   "entries": [
     {
+      "date": "Thu, 19 Jan 2023 19:51:35 GMT",
+      "tag": "@microsoft/arbutus.guidance_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.guidance",
+            "commit": "7a701a13dc6e10d54c580ba519f9bf43285ef0b8",
+            "comment": "Improves the way keys are applied to OrderedListItem"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.guidance_v0.0.6",
       "version": "0.0.6",

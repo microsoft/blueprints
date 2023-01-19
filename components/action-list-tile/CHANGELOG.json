@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.action-list-tile",
   "entries": [
     {
+      "date": "Thu, 19 Jan 2023 19:51:35 GMT",
+      "tag": "@microsoft/arbutus.action-list-tile_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.action-list-tile",
+            "commit": "7a701a13dc6e10d54c580ba519f9bf43285ef0b8",
+            "comment": "Applies the className to the right (root) DOM element"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.action-list-tile_v0.0.6",
       "version": "0.0.6",

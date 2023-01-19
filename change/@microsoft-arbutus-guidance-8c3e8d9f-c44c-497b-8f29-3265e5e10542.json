@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Improves the way keys are applied to OrderedListItem",
-  "packageName": "@microsoft/arbutus.guidance",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

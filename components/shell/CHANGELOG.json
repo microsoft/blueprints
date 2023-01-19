@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Thu, 19 Jan 2023 19:51:35 GMT",
+      "tag": "@microsoft/arbutus.shell_v0.0.9",
+      "version": "0.0.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "7a701a13dc6e10d54c580ba519f9bf43285ef0b8",
+            "comment": "Removes the Crown from the hero mode to offer more flexibility to the consumer. Improves minimum height layout. Fixes missing dependency."
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.shell_v0.0.8",
       "version": "0.0.8",
