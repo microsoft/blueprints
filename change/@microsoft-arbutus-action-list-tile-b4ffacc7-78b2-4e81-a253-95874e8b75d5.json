@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Applies the className to the right (root) DOM element",
+  "packageName": "@microsoft/arbutus.action-list-tile",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

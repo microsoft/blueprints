@@ -105,8 +105,8 @@ export const Guidance: FC<GuidanceProps> = ({
               key={index}
               start={index === 0 ? 1 : middle + 1}
             >
-              {list?.map(({ heading, description }) => (
-                <OrderedListItem key={heading} variant="primary">
+              {list?.map(({ heading, description }, index) => (
+                <OrderedListItem key={`${heading ?? ''}--${index}`} variant="primary">
                   <Text block variant="caption">
                     {heading}
                   </Text>

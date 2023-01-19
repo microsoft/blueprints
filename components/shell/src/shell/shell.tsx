@@ -37,17 +37,7 @@ export const Shell: FC<ShellProps> = ({
   if (isHeroMode) {
     return (
       <div className={classes.heroWrapper}>
-        <div className={classes.heroHeader}>
-          <Crown
-            className={space.my5}
-            isTabletLayout={false}
-            logoMarkAlt={logoMarkAlt}
-            logoMarkSrc={logoMarkSrc}
-            logoText={logoText}
-            onClick={onLogoClick}
-          />
-          <Header>{headerArea}</Header>
-        </div>
+        <Header className={classes.heroHeader}>{headerArea}</Header>
         <main className={classes.hero}>{children}</main>
         <Footer className={classes.footer}>{footerArea}</Footer>
       </div>
@@ -73,7 +63,11 @@ export const Shell: FC<ShellProps> = ({
           </div>
         )}
 
-        <div className={!isTabletLayout ? classes.grid : undefined}>
+        <div
+          className={
+            !isTabletLayout ? mergeClasses(classes.grid, classes.minHeight) : undefined
+          }
+        >
           {isTabletLayout ? (
             <TrayConsumer>
               {({ isOpen }) => (

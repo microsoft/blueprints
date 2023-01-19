@@ -21,13 +21,14 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.footer": "0.0.5",
-    "@microsoft/arbutus.header": "0.0.5",
-    "@microsoft/arbutus.tray": "0.0.3",
-    "@microsoft/arbutus.theming": "0.0.5",
-    "@microsoft/arbutus.use-space-styles": "0.0.5",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2",
+    "@microsoft/arbutus.footer": "0.0.5",
+    "@microsoft/arbutus.header": "0.0.5",
+    "@microsoft/arbutus.icon-button": "^0.0.6",
+    "@microsoft/arbutus.theming": "0.0.5",
+    "@microsoft/arbutus.tray": "0.0.3",
+    "@microsoft/arbutus.use-space-styles": "0.0.5",
     "use-breakpoint": "^3.0.3"
   },
   "devDependencies": {

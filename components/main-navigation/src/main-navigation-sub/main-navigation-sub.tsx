@@ -1,3 +1,4 @@
+import { mergeClasses } from '@griffel/react';
 import { Icon } from '@microsoft/arbutus.icon';
 import { AnimatePresence } from 'framer-motion';
 import { nanoid } from 'nanoid';
@@ -32,7 +33,14 @@ export const MainNavigationSub: FC<MainNavigationSubProps> = ({
         aria-expanded={isExpanded}
         onClick={handleExpandClick}
       >
-        <Icon iconName="chevron-right" color="tertiary" />
+        <Icon
+          iconName="chevron-right"
+          color="tertiary"
+          className={mergeClasses(
+            classes.toggle,
+            isExpanded ? classes.toggleExpanded : classes.toggleIdle,
+          )}
+        />
         {title}
       </button>
       <AnimatePresence initial={false}>
