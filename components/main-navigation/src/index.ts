@@ -3,9 +3,11 @@ export { MainNavigation } from './main-navigation';
 export type { MainNavigationLinkProps } from './main-navigation-link';
 export { MainNavigationLink } from './main-navigation-link';
 export type {
+  MainNavigationRendererContextValue,
   MainNavigationRendererProps,
-  NavigationButton,
   NavigationItems,
+  NavigationLink,
+  NavigationLinkClickValue,
   SubNavigation,
 } from './main-navigation-renderer';
 export {
