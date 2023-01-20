@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.main-navigation",
   "entries": [
     {
+      "date": "Fri, 20 Jan 2023 23:50:39 GMT",
+      "tag": "@microsoft/arbutus.main-navigation_v0.1.1",
+      "version": "0.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.main-navigation",
+            "commit": "a4895ab81a3cc8998078ef3b6d45dc075ebdaa38",
+            "comment": "Improves MainNavigation layout and API"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 19 Jan 2023 19:51:35 GMT",
       "tag": "@microsoft/arbutus.main-navigation_v0.1.0",
       "version": "0.1.0",

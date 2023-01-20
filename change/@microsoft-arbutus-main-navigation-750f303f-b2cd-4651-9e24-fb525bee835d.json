@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Improves MainNavigation layout and API",
-  "packageName": "@microsoft/arbutus.main-navigation",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

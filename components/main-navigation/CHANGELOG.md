@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.main-navigation
 
-This log was last generated on Thu, 19 Jan 2023 19:51:35 GMT and should not be manually modified.
+This log was last generated on Fri, 20 Jan 2023 23:50:39 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.1
+
+Fri, 20 Jan 2023 23:50:39 GMT
+
+### Patches
+
+- Improves MainNavigation layout and API (akimalunar@gmail.com)
 
 ## 0.1.0
 
