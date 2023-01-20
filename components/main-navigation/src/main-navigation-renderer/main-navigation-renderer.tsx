@@ -1,34 +1,31 @@
 import { Divider } from '@microsoft/arbutus.divider';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import { useContext } from 'react';
 import * as React from 'react';
 
 import { MainNavigationLink, MainNavigationSub } from '../index';
-import type {
-  MainNavigationRendererProps,
-  NavigationButton,
-  SubNavigation,
-} from './index';
+import type { MainNavigationRendererProps, NavigationLink, SubNavigation } from './index';
 import { MainNavigationRendererContext, MainNavigationRendererProvider } from './index';
 
-export const isSubMenu = (
-  item: NavigationButton | SubNavigation,
-): item is SubNavigation => 'items' in item;
+export const isSubMenu = (item: NavigationLink | SubNavigation): item is SubNavigation =>
+  'items' in item;
 
-export const isButton = (
-  item: NavigationButton | SubNavigation,
-): item is NavigationButton => 'id' in item;
+export const isButton = (item: NavigationLink | SubNavigation): item is NavigationLink =>
+  'id' in item;
 
-export const MainNavigationItems: FC<{ item: SubNavigation | NavigationButton }> = ({
+export const MainNavigationItems: FC<{ item: SubNavigation | NavigationLink }> = ({
   item,
 }) => {
-  const { linkAs, linkElementProps, activeItemId, onNavigationItemClick } = useContext(
+  const { linkAs, activeItemId, onNavigationItemClick } = useContext(
     MainNavigationRendererContext,
   );
 
+  const space = useSpaceStyles();
+
   const handleClickProp =
     isButton(item) && onNavigationItemClick
-      ? { onClick: () => onNavigationItemClick?.(item.id) }
+      ? { onClick: () => onNavigationItemClick?.(item) }
       : {};
 
   if (isButton(item)) {
@@ -37,11 +34,11 @@ export const MainNavigationItems: FC<{ item: SubNavigation | NavigationButton }>
         <MainNavigationLink
           isActive={item.id === activeItemId}
           as={linkAs}
-          elementProps={{ ...linkElementProps, ...handleClickProp }}
+          elementProps={{ ...(item.linkProps ?? {}), ...handleClickProp }}
         >
           {item.title}
         </MainNavigationLink>
-        {item.hasDivider && <Divider />}
+        {item.hasDivider && <Divider className={space.my4} />}
       </>
     );
   }
@@ -54,7 +51,7 @@ export const MainNavigationItems: FC<{ item: SubNavigation | NavigationButton }>
             <MainNavigationItems key={key} item={subItem} />
           ))}
         </MainNavigationSub>
-        {item.hasDivider && <Divider />}
+        {item.hasDivider && <Divider className={space.my4} />}
       </>
     );
   }

@@ -1,6 +1,6 @@
 import type { ElementType } from 'react';
 
-export type NavigationButton = {
+export type NavigationLink = {
   /**
    * Unique id of the item. Use the route path as id, if applicable. Id is used to determine the active item.
    */
@@ -16,6 +16,18 @@ export type NavigationButton = {
    * @default false
    */
   hasDivider?: boolean;
+
+  /**
+   * Rest of the props are passed to the link element.
+   */
+  linkProps?: {
+    [key: string]: unknown;
+  };
+
+  /**
+   * Overrides the link element passed to `MainNavigationRenderer`.
+   */
+  linkAs?: ElementType;
 };
 
 export type SubNavigation = {
@@ -27,7 +39,7 @@ export type SubNavigation = {
   /**
    * Navigation items of the sub-navigation.
    */
-  items: Record<string, NavigationButton | SubNavigation>;
+  items: Record<string, NavigationLink | SubNavigation>;
 
   /**
    * Adds an optional divider **after** the sub-navigation button.
@@ -36,7 +48,9 @@ export type SubNavigation = {
   hasDivider?: boolean;
 };
 
-export type NavigationItems = Record<string, NavigationButton | SubNavigation>;
+export type NavigationItems = Record<string, NavigationLink | SubNavigation>;
+
+export type NavigationLinkClickValue = Pick<NavigationLink, 'id' | 'linkProps'>;
 
 export type MainNavigationRendererProps = {
   /**
@@ -46,7 +60,7 @@ export type MainNavigationRendererProps = {
 
   /**
    * Id of the active navigation item. It is used to visually highlight an active page. `activeItemId` should match the
-   * `id` of the `NavigationButton` item in your `NavigationItems` object (passed through `items`).
+   * `id` of the `NavigationLink` item in your `NavigationItems` object (passed through `items`).
    *
    * If none is provided, no item will be highlighted.
    */
@@ -58,15 +72,10 @@ export type MainNavigationRendererProps = {
   linkAs: ElementType;
 
   /**
-   * Link element props.
-   */
-  linkElementProps?: Record<string, unknown>;
-
-  /**
    * Optional callback that is called when a navigation item is clicked.
    * @param id - Id of the `NavigationButton` item in your `NavigationItems` object (passed through `items`).
    */
-  onNavigationItemClick?: (id: string) => void;
+  onNavigationItemClick?: (item: NavigationLinkClickValue) => void;
 };
 
 export type MainNavigationRendererContextValue = Omit<MainNavigationRendererProps, 'items'>;

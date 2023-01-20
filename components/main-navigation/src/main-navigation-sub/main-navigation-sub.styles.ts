@@ -4,6 +4,7 @@ import { makeStyles, shorthands } from '@griffel/react';
 export const useMainNavigationSubStyles = makeStyles({
   button: {
     ...shorthands.padding(0, tokens.spacingHorizontalM, 0, tokens.spacingHorizontalS),
+    marginBottom: tokens.spacingHorizontalS,
     color: tokens.colorNeutralForeground1,
     fontWeight: tokens.fontWeightSemibold,
     fontSize: tokens.fontSizeBase300,
@@ -42,12 +43,7 @@ export const useMainNavigationSubStyles = makeStyles({
     },
   },
   subList: {
-    paddingTop: tokens.spacingHorizontalS,
-    paddingBottom: tokens.spacingHorizontalS,
     paddingLeft: tokens.spacingHorizontalXXL,
-    display: 'grid',
-    gridTemplateColumns: '1fr',
-    rowGap: tokens.spacingHorizontalS,
   },
   toggle: {
     transitionProperty: 'transform',

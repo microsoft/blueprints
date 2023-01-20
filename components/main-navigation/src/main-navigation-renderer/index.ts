@@ -10,8 +10,10 @@ export {
   MainNavigationRendererProvider,
 } from './main-navigation-renderer.context';
 export type {
+  MainNavigationRendererContextValue,
   MainNavigationRendererProps,
-  NavigationButton,
   NavigationItems,
+  NavigationLink,
+  NavigationLinkClickValue,
   SubNavigation,
 } from './main-navigation-renderer.types';

@@ -7,7 +7,11 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FC, FunctionComponent, ReactNode } from 'react';
 import React, { useState } from 'react';
 
-import type { MainNavigationProps, NavigationItems } from '../src/index';
+import type {
+  MainNavigationProps,
+  NavigationItems,
+  NavigationLinkClickValue,
+} from '../src/index';
 import {
   isButton,
   isSubMenu,
@@ -20,11 +24,12 @@ export default {
   component: MainNavigation,
 } as ComponentMeta<typeof MainNavigation>;
 
-const Link: FC<{ onClick: () => void; children?: ReactNode | undefined }> = ({
-  children,
-  onClick,
-}) => (
-  <button onClick={onClick} style={{ padding: 0, cursor: 'pointer' }}>
+const Link: FC<{
+  onClick: () => void;
+  children?: ReactNode | undefined;
+  className?: string;
+}> = ({ children, onClick, className }) => (
+  <button className={className} onClick={onClick}>
     {children}
   </button>
 );
@@ -138,7 +143,7 @@ const Template: ComponentStory<typeof MainNavigation> = () => {
   const [active, setActive] = useState(
     isButton(menuItems.overview) ? menuItems.overview.id : '',
   );
-  const makeOnClick = (id: string) => setActive(id);
+  const navigate = (item: NavigationLinkClickValue) => setActive(item.id);
 
   return (
     <div className={classes.root}>
@@ -147,7 +152,7 @@ const Template: ComponentStory<typeof MainNavigation> = () => {
           items={menuItems}
           activeItemId={active}
           linkAs={Link}
-          onNavigationItemClick={makeOnClick}
+          onNavigationItemClick={navigate}
         />
       </MainNavigation>
 

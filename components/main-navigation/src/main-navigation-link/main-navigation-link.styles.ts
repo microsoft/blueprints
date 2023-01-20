@@ -4,6 +4,9 @@ import { makeStyles, shorthands } from '@griffel/react';
 export const useMainNavigationLinkStyles = makeStyles({
   root: {
     ...shorthands.padding(0, tokens.spacingHorizontalM, 0, tokens.spacingHorizontalXXXL),
+    marginTop: tokens.spacingHorizontalS,
+    marginBottom: tokens.spacingHorizontalS,
+    paddingLeft: tokens.spacingHorizontalXXL,
     color: tokens.colorNeutralForeground1,
     fontWeight: tokens.fontWeightRegular,
     fontSize: tokens.fontSizeBase300,
