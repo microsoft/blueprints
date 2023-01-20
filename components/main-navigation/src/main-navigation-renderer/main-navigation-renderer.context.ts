@@ -5,7 +5,6 @@ import type { MainNavigationRendererContextValue } from './main-navigation-rende
 export const MainNavigationRendererContext =
   createContext<MainNavigationRendererContextValue>({
     linkAs: 'a',
-    linkElementProps: {},
   });
 
 export const MainNavigationRendererProvider = MainNavigationRendererContext.Provider;

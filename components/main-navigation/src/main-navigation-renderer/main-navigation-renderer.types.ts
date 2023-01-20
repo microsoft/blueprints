@@ -21,7 +21,7 @@ export type NavigationLink = {
    * Rest of the props are passed to the link element.
    */
   linkProps?: {
-    [key: string]: unknown;
+    [key: string]: unknown | never;
   };
 
   /**
