@@ -10,12 +10,13 @@ export const MainNavigationLink: FC<MainNavigationLinkProps> = ({
   children,
   elementProps,
   isActive,
+  className,
 }) => {
   const classes = useMainNavigationLinkStyles();
 
   return (
     <Link
-      className={mergeClasses(classes.root, isActive && classes.active)}
+      className={mergeClasses(classes.root, isActive && classes.active, className)}
       {...elementProps}
     >
       {children}
