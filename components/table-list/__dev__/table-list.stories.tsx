@@ -2,6 +2,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { TableListProps } from '../src/index';
 import { TableCell, TableList, TableRow } from '../src/index';
 
@@ -9,6 +10,15 @@ import { TableCell, TableList, TableRow } from '../src/index';
 export default {
   title: 'Lists/TableList',
   component: TableList,
+  decorators: [
+    (Story) => (
+      <Centered>
+        <div>
+          <Story />
+        </div>
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof TableList>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
