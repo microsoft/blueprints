@@ -1,5 +1,5 @@
 ---
-to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/__dev__/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>.stories.tsx
+to: utilities/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/__dev__/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>.stories.tsx
 ---
 import type { Meta, Story } from '@storybook/react';
 import React from 'react';
@@ -18,7 +18,7 @@ const DemoComponent = () => {
 }
 
 export default {
-  title: 'Hooks/<%= h.changeCase.pascalCase(name) %>',
+  title: 'Utilities/<%= h.changeCase.pascalCase(name) %>',
 } as Meta;
 
 const Template: Story = () => (

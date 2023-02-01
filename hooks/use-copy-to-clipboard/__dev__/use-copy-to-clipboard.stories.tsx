@@ -27,7 +27,7 @@ const DemoComponent = () => {
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Utilities/UseCopyToClipboard',
+  title: 'Hooks/UseCopyToClipboard',
 } as Meta;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
