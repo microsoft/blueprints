@@ -12,8 +12,8 @@ export type Config = {
    * @default '__prop-docs__'
    */
   outputDir: string;
-}
+};
 
-export type Manifest =  Record<string, ComponentDoc | never>;
+export type Manifest = Record<string, ComponentDoc | never>;
 
 export type PropDoc = ComponentDoc;

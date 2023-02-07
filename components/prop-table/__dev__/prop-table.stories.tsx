@@ -3,10 +3,9 @@ import type { FunctionComponent } from 'react';
 import React from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
+import demoComponentPropDoc from '../__prop-docs__/demo-component.props';
 import type { PropTableProps } from '../src/index';
 import { PropTable } from '../src/index';
-import demoComponentPropDoc from '../__prop-docs__/demo-component.props';
-
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {

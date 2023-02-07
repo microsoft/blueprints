@@ -1,11 +1,11 @@
 #! /usr/bin/env node
+import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
-import chalk from 'chalk';
 
-import type { Config } from './types.js';
-import { generate } from './generate.js';
 import { cleanDirectory } from './clean-directory.js';
+import { generate } from './generate.js';
+import type { Config } from './types.js';
 
 const args = process.argv.slice(2);
 const config: Config = {
@@ -17,7 +17,8 @@ try {
   const configPath = join(process.cwd(), 'arbutus-prop-docs.config.json');
   const componentPathsBuffer = await readFile(configPath, { encoding: 'utf8' });
 
-  const userConfig = JSON.parse(componentPathsBuffer);
+  const userConfig = JSON.parse(componentPathsBuffer) as Config;
+
   config.componentPaths = userConfig.componentPaths ?? [];
   config.outputDir = userConfig.outputDir ?? '__prop-docs__';
 } catch (err) {
@@ -26,7 +27,9 @@ try {
       'Configuration file is missing. Check that you have arbutus-prop-docs.config.json available at the root.',
     ),
   );
-  console.error(err.message);
+
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  err?.message && console.error(err.message);
 }
 
 if (args.includes('generate')) {
@@ -37,4 +40,4 @@ if (args.includes('clean')) {
   cleanDirectory(config.outputDir);
 }
 
-export type { Manifest, Config, PropDoc } from './types.js';
+export type { Config, Manifest, PropDoc } from './types.js';

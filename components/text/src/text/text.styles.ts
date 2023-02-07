@@ -93,5 +93,5 @@ export const useTextStyles = makeStyles({
     ...shorthands.borderRadius(tokens.borderRadiusSmall),
     paddingLeft: tokens.spacingHorizontalXS,
     paddingRight: tokens.spacingHorizontalXS,
-  }
+  },
 });

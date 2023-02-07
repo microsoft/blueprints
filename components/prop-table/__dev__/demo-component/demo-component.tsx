@@ -4,5 +4,5 @@ import * as React from 'react';
 import type { DemoComponentProps } from './demo-component.types';
 
 export const DemoComponent: FC<DemoComponentProps> = ({ className, text = 'Hello' }) => {
-  return <h1> ✅ {text}</h1>;
+  return <h1 className={className}> ✅ {text}</h1>;
 };

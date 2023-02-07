@@ -1,13 +1,13 @@
 #! /usr/bin/env node
-import { writeFile, existsSync, mkdirSync } from 'fs';
+import chalk from 'chalk';
+import { existsSync, mkdirSync, writeFile } from 'fs';
 import { join } from 'path';
 import type { ComponentDoc } from 'react-docgen-typescript';
 import { parse } from 'react-docgen-typescript';
-import chalk from 'chalk';
 import { paramCase } from 'text-case';
-import { Config, Manifest } from './types.js';
 
 import { cleanDirectory } from './clean-directory.js';
+import type { Config, Manifest } from './types.js';
 
 const options = {
   savePropValueAsString: true,
@@ -62,7 +62,9 @@ export default ${JSON.stringify(component)};
       });
     } catch (err) {
       console.error(chalk.red(`Error parsing ${path}`));
-      console.error(err.message);
+
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      err?.message && console.error(err?.message);
     }
   });
 

@@ -1,13 +1,14 @@
+import { Command } from '@microsoft/arbutus.command';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { Command } from '@microsoft/arbutus.command';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 
 import { Centered } from '../../../.storybook/decorators';
 
 const DemoComponent = () => {
   const space = useSpaceStyles();
+
   return (
     <div>
       <Text as="h1" block variant="headline" className={space.mb4}>
