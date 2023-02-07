@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.code-snippet",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Code Snippet component for simple code examples.",
   "main": "lib/index.js",
   "module": "lib/index.js",

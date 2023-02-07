@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/arbutus.code-snippet",
+  "entries": [
+    {
+      "date": "Tue, 07 Feb 2023 00:29:46 GMT",
+      "tag": "@microsoft/arbutus.code-snippet_v0.0.1-alpha.1",
+      "version": "0.0.1-alpha.1",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.code-snippet",
+            "commit": "545732f8800ef9b730495108bf3f259e9bc26e76",
+            "comment": "Pre-release alpha"
+          }
+        ]
+      }
+    }
+  ]
+}
