@@ -6,6 +6,8 @@ module.exports = {
     '../components/**/*.stories.@(js|jsx|ts|tsx)',
     '../hooks/**/*.stories.mdx',
     '../hooks/**/*.stories.@(js|jsx|ts|tsx)',
+    '../utilities/**/*.stories.mdx',
+    '../utilities/**/*.stories.@(js|jsx|ts|tsx)',
     '../styles/**/*.stories.mdx',
     '../styles/**/*.stories.@(js|jsx|ts|tsx)',
   ],

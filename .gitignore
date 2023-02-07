@@ -1,4 +1,5 @@
 **/lib/**
+**/bin/**
 **/.cache/**
 *.d.ts
 *.d.ts.map
