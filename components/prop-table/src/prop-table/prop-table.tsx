@@ -1,32 +1,33 @@
-import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
-import { parse } from 'react-docgen';
+import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
+import { Text } from '@microsoft/arbutus.text';
 
-import { usePropTableStyles } from './prop-table.styles';
 import type { PropTableProps } from './prop-table.types';
 
-const codeSample = `import { mergeClasses } from '@griffel/react';
-import type { FC } from 'react';
-import * as React from 'react';
+export const PropTable: FC<PropTableProps> = ({ className, propDoc }) => {
+  if (!propDoc) {
+    return null;
+  }
 
-import { usePropTableStyles } from './prop-table.styles';
-import type { PropTableProps } from './prop-table.types';
-
-export const PropTable: FC<PropTableProps> = ({ className, text }) => {
-  // Styles
-  const classes = usePropTableStyles();
-
-  return <h1 className={mergeClasses(classes.root, className)}> ✅ {text}</h1>;
-};
-
-`;
-
-export const PropTable: FC<PropTableProps> = ({ className, text }) => {
-  // Styles
-  const classes = usePropTableStyles();
-
-  console.log(parse(codeSample));
-
-  return <h1 className={mergeClasses(classes.root, className)}> ✅ {text}</h1>;
+  return (
+    <TableList className={className}>
+      <TableRow>
+        <TableCell isHeader>Name</TableCell>
+        <TableCell isHeader>Type</TableCell>
+        <TableCell isHeader>Description</TableCell>
+        <TableCell isHeader>Default</TableCell>
+      </TableRow>
+      {Object.values(propDoc.props).map((prop) => (
+        <TableRow>
+          <TableCell isHeader>{prop.name ?? ''}</TableCell>
+          <TableCell>{prop.type?.name ?? ''}</TableCell>
+          <TableCell>{prop.description ?? ''}</TableCell>
+          <TableCell>
+            <Text variant="code">{prop.defaultValue?.value ?? ''}</Text>
+          </TableCell>
+        </TableRow>
+      ))}
+    </TableList>
+  );
 };
