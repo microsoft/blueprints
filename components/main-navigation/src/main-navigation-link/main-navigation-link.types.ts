@@ -17,4 +17,6 @@ export type MainNavigationLinkProps = {
   isActive?: boolean;
 
   children?: ReactNode | undefined;
+
+  className?: string;
 };
