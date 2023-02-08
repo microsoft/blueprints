@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.accordion",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Accordion list component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@microsoft/arbutus.icon": "0.0.4",
-    "@microsoft/arbutus.text": "0.0.6",
+    "@microsoft/arbutus.text": "0.1.0",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2",
     "framer-motion": "^6.3.12",

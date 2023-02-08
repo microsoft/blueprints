@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/arbutus.prop-docs-cli",
+  "entries": [
+    {
+      "date": "Wed, 08 Feb 2023 21:46:45 GMT",
+      "tag": "@microsoft/arbutus.prop-docs-cli_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.prop-docs-cli",
+            "commit": "87af18430b45597b2942c1c44160c12844b944cb",
+            "comment": "Implements Prop Docs CLI"
+          }
+        ]
+      }
+    }
+  ]
+}

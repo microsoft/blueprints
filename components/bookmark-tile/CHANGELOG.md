@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.bookmark-tile
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Wed, 08 Feb 2023 21:46:45 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.7
+
+Wed, 08 Feb 2023 21:46:45 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.text to v0.1.0
 
 ## 0.0.6
 

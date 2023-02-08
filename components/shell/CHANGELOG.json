@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Wed, 08 Feb 2023 21:46:45 GMT",
+      "tag": "@microsoft/arbutus.shell_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "87af18430b45597b2942c1c44160c12844b944cb",
+            "comment": "Runs syncpack"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 19 Jan 2023 19:51:35 GMT",
       "tag": "@microsoft/arbutus.shell_v0.0.9",
       "version": "0.0.9",

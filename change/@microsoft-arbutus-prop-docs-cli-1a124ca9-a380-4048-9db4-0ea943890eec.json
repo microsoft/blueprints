@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Implements Prop Docs CLI",
-  "packageName": "@microsoft/arbutus.prop-docs-cli",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

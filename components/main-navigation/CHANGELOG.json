@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.main-navigation",
   "entries": [
     {
+      "date": "Wed, 08 Feb 2023 21:46:45 GMT",
+      "tag": "@microsoft/arbutus.main-navigation_v0.2.0",
+      "version": "0.2.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.main-navigation",
+            "commit": "e486f411a038bbdc407ad9ac321466d85b180145",
+            "comment": "Adds className to MainNavigationLink"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 20 Jan 2023 23:50:39 GMT",
       "tag": "@microsoft/arbutus.main-navigation_v0.1.1",
       "version": "0.1.1",

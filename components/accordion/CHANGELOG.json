@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.accordion",
   "entries": [
     {
+      "date": "Wed, 08 Feb 2023 21:46:45 GMT",
+      "tag": "@microsoft/arbutus.accordion_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.accordion",
+            "comment": "Bump @microsoft/arbutus.text to v0.1.0",
+            "commit": "ace4921ffc7a7ed7004a7ef74699b3066533cc0b"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.accordion_v0.0.4",
       "version": "0.0.4",
