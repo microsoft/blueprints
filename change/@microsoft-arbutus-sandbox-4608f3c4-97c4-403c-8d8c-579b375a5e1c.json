@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Implements Sandbox",
+  "packageName": "@microsoft/arbutus.sandbox",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
