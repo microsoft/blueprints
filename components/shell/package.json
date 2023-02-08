@@ -25,7 +25,7 @@
     "@griffel/react": "^1.5.2",
     "@microsoft/arbutus.footer": "0.0.5",
     "@microsoft/arbutus.header": "0.0.5",
-    "@microsoft/arbutus.icon-button": "^0.0.6",
+    "@microsoft/arbutus.icon-button": "0.0.6",
     "@microsoft/arbutus.theming": "0.0.5",
     "@microsoft/arbutus.tray": "0.0.3",
     "@microsoft/arbutus.use-space-styles": "0.0.5",

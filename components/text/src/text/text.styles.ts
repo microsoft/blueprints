@@ -84,4 +84,14 @@ export const useTextStyles = makeStyles({
     ...shorthands.margin(0),
     ...shorthands.padding(0),
   },
+  code: {
+    display: 'inline-block',
+    fontFamily: tokens.fontFamilyMonospace,
+    fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.lineHeightBase300,
+    backgroundColor: tokens.colorNeutralBackground3,
+    ...shorthands.borderRadius(tokens.borderRadiusSmall),
+    paddingLeft: tokens.spacingHorizontalXS,
+    paddingRight: tokens.spacingHorizontalXS,
+  },
 });

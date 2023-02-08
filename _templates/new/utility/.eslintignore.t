@@ -1,5 +1,5 @@
 ---
-to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/.eslintignore
+to: utilities/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/.eslintignore
 ---
 # configs
 just.config.js

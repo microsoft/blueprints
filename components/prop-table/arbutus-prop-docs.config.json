@@ -1,0 +1,4 @@
+{
+  "componentPaths": ["__dev__/demo-component/demo-component.tsx"],
+  "outputDir": "__prop-docs__"
+}

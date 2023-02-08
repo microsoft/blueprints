@@ -1,5 +1,5 @@
 ---
-to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/.npmignore
+to: utilities/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/.npmignore
 ---
 __tests__
 __dev__

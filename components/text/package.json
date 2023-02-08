@@ -21,11 +21,12 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.theming": "0.0.5",
-    "@microsoft/arbutus.style-utilities": "0.0.2",
     "@fluentui/react-text": "^9.0.3",
     "@fluentui/react-theme": "^9.1.0",
-    "@griffel/react": "^1.5.2"
+    "@griffel/react": "^1.5.2",
+    "@microsoft/arbutus.prop-docs-cli": "^0.0.1",
+    "@microsoft/arbutus.style-utilities": "0.0.2",
+    "@microsoft/arbutus.theming": "0.0.5"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",

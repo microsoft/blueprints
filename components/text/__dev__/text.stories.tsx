@@ -5,6 +5,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { TextProps } from '../src/index';
 import { Text } from '../src/index';
 import { colorClasses, variantClasses } from '../src/text/text.styles';
@@ -15,7 +16,7 @@ export default {
   component: Text,
   argTypes: {
     variant: {
-      options: Object.keys(variantClasses),
+      options: [...Object.keys(variantClasses), 'code'],
       control: {
         type: 'select',
       },
@@ -27,9 +28,17 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <div>
+          <Story />
+        </div>
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof Text>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Text> = (args) => (
   <Text block {...args}>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi eveniet
@@ -38,11 +47,21 @@ const Template: ComponentStory<typeof Text> = (args) => (
   </Text>
 );
 
+const CodeTemplate: ComponentStory<typeof Text> = (args) => (
+  <Text block {...args}>
+    {`<Text variant="code">Hello!</Text>`}
+  </Text>
+);
+
 export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<TextProps>>;
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   color: 'primary',
   variant: 'paragraph',
+};
+
+export const Code = CodeTemplate.bind({}) as ComponentStory<FunctionComponent<TextProps>>;
+Code.args = {
+  variant: 'code',
 };
 
 const useGridStyles = makeStyles({
