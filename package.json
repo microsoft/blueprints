@@ -31,7 +31,7 @@
     "lint": "lage lint",
     "syncpack:check": "syncpack list-mismatches",
     "syncpack:fix": "syncpack fix-mismatches",
-    "beachball:publish": "beachball publish --access=public",
+    "beachball:publish": "beachball publish --access=public --new",
     "beachball:check": "beachball check",
     "beachball:bump": "beachball bump",
     "publish:packages": "run-s build:packages beachball:publish",
