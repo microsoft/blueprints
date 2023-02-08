@@ -24,7 +24,7 @@ export default function App() {
 }`;
 
 export default {
-  title: 'Components/Sandbox',
+  title: 'Examples/Sandbox',
   component: Sandbox,
   decorators: [
     (Story) => (
