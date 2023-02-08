@@ -1,5 +1,5 @@
 {
-  "type": "patch",
+  "type": "minor",
   "comment": "Adds className to MainNavigationLink",
   "packageName": "@microsoft/arbutus.main-navigation",
   "email": "akimalunar@gmail.com",
