@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.prop-docs-cli",
   "entries": [
     {
+      "date": "Thu, 23 Feb 2023 02:58:25 GMT",
+      "tag": "@microsoft/arbutus.prop-docs-cli_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.prop-docs-cli",
+            "commit": "dd459d402f466c8667b05fbca8cb6dbe989a4c52",
+            "comment": "Adds a missing dependency."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:33:43 GMT",
       "tag": "@microsoft/arbutus.prop-docs-cli_v0.0.3",
       "version": "0.0.3",

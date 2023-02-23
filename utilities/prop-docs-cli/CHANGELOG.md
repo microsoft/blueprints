@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.prop-docs-cli
 
-This log was last generated on Thu, 23 Feb 2023 02:33:43 GMT and should not be manually modified.
+This log was last generated on Thu, 23 Feb 2023 02:58:25 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Thu, 23 Feb 2023 02:58:25 GMT
+
+### Patches
+
+- Adds a missing dependency. (akimalunar@gmail.com)
 
 ## 0.0.3
 
