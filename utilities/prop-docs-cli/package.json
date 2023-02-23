@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "chalk": "^5.2.0",
+    "react-docgen-typescript": "^2.2.2",
     "text-case": "^1.0.9"
   }
 }
