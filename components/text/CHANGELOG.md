@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.text
 
-This log was last generated on Wed, 08 Feb 2023 21:46:45 GMT and should not be manually modified.
+This log was last generated on Thu, 23 Feb 2023 02:33:43 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.1
+
+Thu, 23 Feb 2023 02:33:43 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.prop-docs-cli to v0.0.3
 
 ## 0.1.0
 

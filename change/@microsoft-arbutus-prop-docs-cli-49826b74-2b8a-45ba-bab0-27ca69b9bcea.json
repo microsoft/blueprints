@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes the files field in package.json",
-  "packageName": "@microsoft/arbutus.prop-docs-cli",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}
