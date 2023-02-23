@@ -7,7 +7,7 @@
     "./bin/index.js"
   ],
   "files": [
-    "./bin/**"
+    "bin/**"
   ],
   "type": "module",
   "bin": {
