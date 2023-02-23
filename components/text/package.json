@@ -24,7 +24,6 @@
     "@fluentui/react-text": "^9.0.3",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2",
-    "@microsoft/arbutus.prop-docs-cli": "^0.0.3",
     "@microsoft/arbutus.style-utilities": "0.0.2",
     "@microsoft/arbutus.theming": "0.0.5"
   },

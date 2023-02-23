@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Removes unnecessary dependency.",
+  "packageName": "@microsoft/arbutus.text",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
