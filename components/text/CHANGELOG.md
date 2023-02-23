@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.text
 
-This log was last generated on Thu, 23 Feb 2023 02:33:43 GMT and should not be manually modified.
+This log was last generated on Thu, 23 Feb 2023 02:40:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.2
+
+Thu, 23 Feb 2023 02:40:35 GMT
+
+### Patches
+
+- Removes unnecessary dependency. (akimalunar@gmail.com)
 
 ## 0.1.1
 

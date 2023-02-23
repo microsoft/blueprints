@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.action-tile",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "ActionTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@microsoft/arbutus.icon": "0.0.4",
-    "@microsoft/arbutus.text": "0.1.1",
+    "@microsoft/arbutus.text": "0.1.2",
     "@microsoft/arbutus.tile": "0.0.6",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2"

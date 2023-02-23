@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.illustration-tile",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "IllustrationTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "react-dom": ">=16.8.0 <=18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.text": "0.1.1",
+    "@microsoft/arbutus.text": "0.1.2",
     "@microsoft/arbutus.tile": "0.0.6",
     "@microsoft/arbutus.use-space-styles": "0.0.5",
     "@fluentui/react-theme": "^9.1.0",

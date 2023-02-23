@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.link",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Link atomic component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@microsoft/arbutus.icon": "0.0.4",
-    "@microsoft/arbutus.text": "0.1.1",
+    "@microsoft/arbutus.text": "0.1.2",
     "@griffel/react": "^1.5.2"
   },
   "devDependencies": {

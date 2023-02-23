@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.text",
   "entries": [
     {
+      "date": "Thu, 23 Feb 2023 02:40:35 GMT",
+      "tag": "@microsoft/arbutus.text_v0.1.2",
+      "version": "0.1.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.text",
+            "commit": "0731e71336aa70fc6ae9e4b8a5cda4def31a5c57",
+            "comment": "Removes unnecessary dependency."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:33:43 GMT",
       "tag": "@microsoft/arbutus.text_v0.1.1",
       "version": "0.1.1",

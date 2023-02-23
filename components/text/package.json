@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.text",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Atomic Text component.",
   "main": "lib/index.js",
   "module": "lib/index.js",

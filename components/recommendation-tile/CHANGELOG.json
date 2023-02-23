@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.recommendation-tile",
   "entries": [
     {
+      "date": "Thu, 23 Feb 2023 02:40:35 GMT",
+      "tag": "@microsoft/arbutus.recommendation-tile_v0.1.6",
+      "version": "0.1.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.link to v0.0.9",
+            "commit": "8988d5efbc4c03de3264676542f232eab1adb287"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.text to v0.1.2",
+            "commit": "8988d5efbc4c03de3264676542f232eab1adb287"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:33:43 GMT",
       "tag": "@microsoft/arbutus.recommendation-tile_v0.1.5",
       "version": "0.1.5",
