@@ -30,5 +30,6 @@ export const Simple = Template.bind({}) as ComponentStory<
 >;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
-  propDoc: demoComponentPropDoc,
+  propsDoc: demoComponentPropDoc,
+  caption: 'DemoComponent',
 };

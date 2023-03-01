@@ -1,35 +1,51 @@
+import type { PropItem, PropsDoc } from '@microsoft/arbutus.prop-docs-cli';
 import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
-import { Text } from '@microsoft/arbutus.text';
 import type { FC } from 'react';
 import * as React from 'react';
 
+import { TableRows } from './partials/table-rows';
 import type { PropTableProps } from './prop-table.types';
 
-export const PropTable: FC<PropTableProps> = ({ className, propDoc }) => {
-  if (!propDoc) {
+const filterPropsDoc = (props: PropsDoc['props']) => {
+  const required: PropItem[] = [];
+  const deprecated: PropItem[] = [];
+  const optional: PropItem[] = [];
+
+  Object.values(props).forEach((prop) => {
+    if (prop.description?.includes('@deprecated')) {
+      deprecated.push(prop);
+    } else if (prop.required) {
+      required.push(prop);
+    } else {
+      optional.push(prop);
+    }
+  });
+
+  return {
+    required,
+    deprecated,
+    optional,
+  };
+};
+
+export const PropTable: FC<PropTableProps> = ({ className, propsDoc, caption }) => {
+  if (!propsDoc) {
     return null;
   }
 
+  const { required, deprecated, optional } = filterPropsDoc(propsDoc.props);
+
   return (
-    <TableList className={className}>
+    <TableList className={className} caption={caption}>
       <TableRow>
         <TableCell isHeader>Name</TableCell>
         <TableCell isHeader>Type</TableCell>
         <TableCell isHeader>Description</TableCell>
         <TableCell isHeader>Default</TableCell>
       </TableRow>
-      {Object.values(propDoc.props).map((prop) => (
-        <TableRow key={prop.name}>
-          <TableCell isHeader>{prop.name ?? ''}</TableCell>
-          <TableCell>{prop.type?.name ?? ''}</TableCell>
-          <TableCell>{prop.description ?? ''}</TableCell>
-          <TableCell>
-            {/* `defaultValue` is meant to be `any`. */}
-            {/* eslint-disable-next-line @typescript-eslint/no-unsafe-member-access */}
-            <Text variant="code">{prop.defaultValue?.value ?? ''}</Text>
-          </TableCell>
-        </TableRow>
-      ))}
+      <TableRows propsDocItems={required} isRequired isDeprecated={false} />
+      <TableRows propsDocItems={optional} isRequired={false} isDeprecated={false} />
+      <TableRows propsDocItems={deprecated} isRequired={false} isDeprecated />
     </TableList>
   );
 };

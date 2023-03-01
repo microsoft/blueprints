@@ -1,13 +1,33 @@
 export type DemoComponentProps = {
   /**
+   * The title of the DemoComponent.
+   */
+  title: string;
+
+  /**
+   * Description of the DemoComponent.
+   */
+  description?: string;
+
+  /**
+   * Call to action text.
+   * @default 'Hello 👋'
+   */
+  callToAction?: string;
+
+  /**
    * Custom class name for the component root.
-   * @default undefined
    */
   className?: string;
 
   /**
-   * The text of the component.
-   * @default 'Hello'
+   * Click handler.
+   */
+  onClick: () => void;
+
+  /**
+   * Text to display.
+   * @deprecated Use `title` instead.
    */
   text?: string;
 };

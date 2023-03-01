@@ -33,11 +33,13 @@ try {
 }
 
 if (args.includes('generate')) {
-  generate({ config });
+  const isTypeScript = args.includes('--ts') || args.includes('--typescript');
+
+  generate({ config, isTypeScript });
 }
 
 if (args.includes('clean')) {
   cleanDirectory(config.outputDir);
 }
 
-export type { Config, Manifest, PropDoc } from './types.js';
+export type { Config, Manifest, PropItem, PropsDoc } from './types.js';

@@ -14,7 +14,7 @@
   "sideEffects": false,
   "scripts": {
     "arbutus-prop-docs:clean": "arbutus-prop-docs clean",
-    "arbutus-prop-docs:generate": "arbutus-prop-docs generate",
+    "arbutus-prop-docs:generate": "arbutus-prop-docs generate --ts && eslint __prop-docs__ --fix",
     "build": "tsc",
     "lint": "eslint . --fix"
   },
@@ -31,8 +31,7 @@
     "buffer": "^6.0.3",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
-    "process": "^0.11.10",
-    "react-docgen": "6.0.0-alpha.4"
+    "process": "^0.11.10"
   },
   "devDependencies": {
     "@microsoft/arbutus.prop-docs-cli": "^0.0.4",
