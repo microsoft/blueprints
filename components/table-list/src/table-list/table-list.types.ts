@@ -11,5 +11,10 @@ export type TableListProps = {
    */
   isAlternating?: boolean;
 
+  /**
+   * Table title (caption).
+   */
+  caption?: string;
+
   children?: ReactNode | undefined;
 } & TableHTMLAttributes<HTMLTableElement>;

@@ -1,4 +1,7 @@
-import type { ComponentDoc } from 'react-docgen-typescript';
+import type {
+  ComponentDoc,
+  PropItem as ReactDocgenPropItem,
+} from 'react-docgen-typescript';
 
 export type Config = {
   /**
@@ -16,4 +19,6 @@ export type Config = {
 
 export type Manifest = Record<string, ComponentDoc | never>;
 
-export type PropDoc = ComponentDoc;
+export type PropsDoc = ComponentDoc;
+
+export type PropItem = ReactDocgenPropItem;

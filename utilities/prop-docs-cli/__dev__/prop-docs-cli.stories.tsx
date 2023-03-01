@@ -33,7 +33,11 @@ const DemoComponent = () => {
       <Text as="h2" block variant="caption" className={space.my4}>
         Generate component props documentation:
       </Text>
-      <Command command="arbutus-prop-docs generate" isCopyable />
+      <Text as="p" block variant="paragraph" className={space.mb4}>
+        If you have a TypeScript project, add <Text variant="code">--ts</Text> to generate
+        TypeScript files instead.
+      </Text>
+      <Command command="arbutus-prop-docs generate --ts" isCopyable />
       <Text as="h2" block variant="caption" className={space.my4}>
         Clean:
       </Text>
