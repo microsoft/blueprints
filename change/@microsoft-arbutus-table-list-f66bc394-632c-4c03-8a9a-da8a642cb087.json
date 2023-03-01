@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Adds caption feature. Improves responsive layout.",
+  "packageName": "@microsoft/arbutus.table-list",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
