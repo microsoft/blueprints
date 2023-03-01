@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.table-list",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Table List component in the Lists collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

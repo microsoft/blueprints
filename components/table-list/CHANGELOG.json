@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.table-list",
   "entries": [
     {
+      "date": "Wed, 01 Mar 2023 04:05:09 GMT",
+      "tag": "@microsoft/arbutus.table-list_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.table-list",
+            "commit": "7d80cdfc2f16972a7229c36e17ceb124a73344d4",
+            "comment": "Adds caption feature. Improves responsive layout."
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.table-list_v0.0.3",
       "version": "0.0.3",

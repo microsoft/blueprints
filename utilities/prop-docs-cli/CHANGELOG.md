@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.prop-docs-cli
 
-This log was last generated on Thu, 23 Feb 2023 02:58:25 GMT and should not be manually modified.
+This log was last generated on Wed, 01 Mar 2023 04:05:09 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.0
+
+Wed, 01 Mar 2023 04:05:09 GMT
+
+### Minor changes
+
+- Implements TypeScript feature. (akimalunar@gmail.com)
 
 ## 0.0.4
 

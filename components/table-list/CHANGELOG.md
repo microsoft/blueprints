@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.table-list
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Wed, 01 Mar 2023 04:05:09 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.0
+
+Wed, 01 Mar 2023 04:05:09 GMT
+
+### Minor changes
+
+- Adds caption feature. Improves responsive layout. (akimalunar@gmail.com)
 
 ## 0.0.3
 

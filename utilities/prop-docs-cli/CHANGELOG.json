@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.prop-docs-cli",
   "entries": [
     {
+      "date": "Wed, 01 Mar 2023 04:05:09 GMT",
+      "tag": "@microsoft/arbutus.prop-docs-cli_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.prop-docs-cli",
+            "commit": "7d80cdfc2f16972a7229c36e17ceb124a73344d4",
+            "comment": "Implements TypeScript feature."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:58:25 GMT",
       "tag": "@microsoft/arbutus.prop-docs-cli_v0.0.4",
       "version": "0.0.4",

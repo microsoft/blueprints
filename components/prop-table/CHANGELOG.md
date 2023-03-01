@@ -1,8 +1,18 @@
 # Change Log - @microsoft/arbutus.prop-table
 
-This log was last generated on Thu, 23 Feb 2023 02:58:25 GMT and should not be manually modified.
+This log was last generated on Wed, 01 Mar 2023 04:05:09 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.5
+
+Wed, 01 Mar 2023 04:05:09 GMT
+
+### Patches
+
+- PropTable improvements (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.table-list to v0.1.0
+- Bump @microsoft/arbutus.prop-docs-cli to v0.1.0
 
 ## 0.0.4
 

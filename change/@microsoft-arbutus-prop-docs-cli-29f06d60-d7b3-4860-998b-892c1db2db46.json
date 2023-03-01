@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Implements TypeScript feature.",
-  "packageName": "@microsoft/arbutus.prop-docs-cli",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

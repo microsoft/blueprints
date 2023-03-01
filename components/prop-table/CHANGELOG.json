@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.prop-table",
   "entries": [
     {
+      "date": "Wed, 01 Mar 2023 04:05:09 GMT",
+      "tag": "@microsoft/arbutus.prop-table_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.prop-table",
+            "commit": "7d80cdfc2f16972a7229c36e17ceb124a73344d4",
+            "comment": "PropTable improvements"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.prop-table",
+            "comment": "Bump @microsoft/arbutus.table-list to v0.1.0",
+            "commit": "dbc7614b32e4216d96ddd58772d698245f9b6802"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.prop-table",
+            "comment": "Bump @microsoft/arbutus.prop-docs-cli to v0.1.0",
+            "commit": "dbc7614b32e4216d96ddd58772d698245f9b6802"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:58:25 GMT",
       "tag": "@microsoft/arbutus.prop-table_v0.0.4",
       "version": "0.0.4",
