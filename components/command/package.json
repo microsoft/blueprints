@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.command",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Command component in Content collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -2,6 +2,39 @@
   "name": "@microsoft/arbutus.action-list-tile",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 03:31:48 GMT",
+      "tag": "@microsoft/arbutus.action-list-tile_v0.1.5",
+      "version": "0.1.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.action-list-tile",
+            "commit": "29621f7908f4c86cb580a82728f5a43fead08991",
+            "comment": "Runs syncpack"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.action-list-tile",
+            "comment": "Bump @microsoft/arbutus.text to v0.1.3",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.action-list-tile",
+            "comment": "Bump @microsoft/arbutus.tile to v0.0.7",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.action-list-tile",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.6",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 02 Mar 2023 02:19:33 GMT",
       "tag": "@microsoft/arbutus.action-list-tile_v0.1.4",
       "version": "0.1.4",

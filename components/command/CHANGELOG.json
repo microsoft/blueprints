@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.command",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 03:31:48 GMT",
+      "tag": "@microsoft/arbutus.command_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.command",
+            "commit": "29621f7908f4c86cb580a82728f5a43fead08991",
+            "comment": "Runs syncpack"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 02 Mar 2023 02:19:33 GMT",
       "tag": "@microsoft/arbutus.command_v0.0.5",
       "version": "0.0.5",

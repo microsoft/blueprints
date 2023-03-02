@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes preferredTheme, themeKey",
-  "packageName": "@microsoft/arbutus.theming",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

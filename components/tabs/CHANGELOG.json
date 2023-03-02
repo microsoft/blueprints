@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.tabs",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 03:31:48 GMT",
+      "tag": "@microsoft/arbutus.tabs_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.tabs",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.6",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.tabs_v0.0.6",
       "version": "0.0.6",

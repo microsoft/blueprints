@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.mark-list",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 03:31:48 GMT",
+      "tag": "@microsoft/arbutus.mark-list_v0.0.8",
+      "version": "0.0.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.mark-list",
+            "comment": "Bump @microsoft/arbutus.badge to v0.0.8",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.mark-list",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v0.0.6",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 02 Mar 2023 02:19:33 GMT",
       "tag": "@microsoft/arbutus.mark-list_v0.0.7",
       "version": "0.0.7",

@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.theming",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 03:31:48 GMT",
+      "tag": "@microsoft/arbutus.theming_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.theming",
+            "commit": "29621f7908f4c86cb580a82728f5a43fead08991",
+            "comment": "Fixes preferredTheme, themeKey"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.theming",
+            "comment": "Bump @microsoft/arbutus.use-prefers-color-scheme to v0.0.4",
+            "commit": "4b15c90aea1ec981ecda18379215a1bc6bb79c41"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.theming_v0.0.5",
       "version": "0.0.5",

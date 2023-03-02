@@ -1,8 +1,17 @@
 # Change Log - @microsoft/arbutus.aside-navigation
 
-This log was last generated on Thu, 23 Feb 2023 02:40:35 GMT and should not be manually modified.
+This log was last generated on Thu, 02 Mar 2023 03:31:48 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.10
+
+Thu, 02 Mar 2023 03:31:48 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.text to v0.1.3
+- Bump @microsoft/arbutus.use-space-styles to v0.0.6
 
 ## 0.0.9
 

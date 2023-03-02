@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.use-prefers-color-scheme
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Thu, 02 Mar 2023 03:31:48 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Thu, 02 Mar 2023 03:31:48 GMT
+
+### Patches
+
+- Fixes colorScheme on first render (akimalunar@gmail.com)
 
 ## 0.0.3
 

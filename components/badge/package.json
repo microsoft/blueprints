@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.badge",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Badge atomic component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -25,7 +25,7 @@
     "@griffel/react": "^1.5.2",
     "@microsoft/arbutus.icon": "0.1.0",
     "@microsoft/arbutus.style-utilities": "0.0.2",
-    "@microsoft/arbutus.theming": "0.0.5"
+    "@microsoft/arbutus.theming": "0.0.6"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",

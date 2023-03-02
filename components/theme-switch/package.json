@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.theme-switch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ThemeSwitch is a composite component that indicates a currently selected theme and allows the user to change it between light and dark.",
   "main": "lib/index.js",
   "module": "lib/index.js",

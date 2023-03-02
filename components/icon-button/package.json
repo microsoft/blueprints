@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.icon-button",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "IconButton atomic component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@microsoft/arbutus.icon": "0.1.0",
-    "@microsoft/arbutus.use-space-styles": "0.0.5",
+    "@microsoft/arbutus.use-space-styles": "0.0.6",
     "@microsoft/arbutus.style-utilities": "0.0.2",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2"

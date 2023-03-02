@@ -1,8 +1,21 @@
 # Change Log - @microsoft/arbutus.recommendation-tile
 
-This log was last generated on Thu, 02 Mar 2023 02:19:33 GMT and should not be manually modified.
+This log was last generated on Thu, 02 Mar 2023 03:31:48 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.8
+
+Thu, 02 Mar 2023 03:31:48 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.badge to v0.0.8
+- Bump @microsoft/arbutus.link to v0.0.11
+- Bump @microsoft/arbutus.mark-list to v0.0.8
+- Bump @microsoft/arbutus.text to v0.1.3
+- Bump @microsoft/arbutus.tile to v0.0.7
+- Bump @microsoft/arbutus.use-space-styles to v0.0.6
 
 ## 0.1.7
 

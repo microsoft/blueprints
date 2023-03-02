@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.command
 
-This log was last generated on Thu, 02 Mar 2023 02:19:33 GMT and should not be manually modified.
+This log was last generated on Thu, 02 Mar 2023 03:31:48 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.6
+
+Thu, 02 Mar 2023 03:31:48 GMT
+
+### Patches
+
+- Runs syncpack (akimalunar@gmail.com)
 
 ## 0.0.5
 

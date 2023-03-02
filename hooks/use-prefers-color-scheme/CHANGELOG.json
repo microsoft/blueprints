@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.use-prefers-color-scheme",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 03:31:48 GMT",
+      "tag": "@microsoft/arbutus.use-prefers-color-scheme_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.use-prefers-color-scheme",
+            "commit": "29621f7908f4c86cb580a82728f5a43fead08991",
+            "comment": "Fixes colorScheme on first render"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.use-prefers-color-scheme_v0.0.3",
       "version": "0.0.3",
