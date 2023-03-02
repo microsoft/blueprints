@@ -27,7 +27,7 @@
     "@microsoft/arbutus.use-space-styles": "0.0.5",
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2",
-    "@reach/visually-hidden": "^0.17.0"
+    "@reach/visually-hidden": "^0.18.0"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",

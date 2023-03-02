@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Runs syncpack",
+  "packageName": "@microsoft/arbutus.command",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

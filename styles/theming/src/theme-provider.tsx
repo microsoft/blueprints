@@ -5,7 +5,7 @@ import { useCSSVars } from '@microsoft/arbutus.use-css-vars';
 import { usePrefersColorScheme } from '@microsoft/arbutus.use-prefers-color-scheme';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { ThemeContext } from './theme-context';
 import { arbutusBrandRamp, arbutusTokens } from './themes';
@@ -40,6 +40,12 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
 
   const [internalThemeKey, internalSetTheme] = useState<ThemeOption>(themeOption);
 
+  useEffect(() => {
+    if (!isControlled) {
+      internalSetTheme(themeOption);
+    }
+  }, [preferredTheme, themeOption, isControlled]);
+
   const themeKey = isControlled ? userThemeKey : internalThemeKey;
 
   const setTheme = isControlled ? userSetThemeKey : internalSetTheme;
@@ -50,7 +56,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
   useCSSVars({ theme: arbutusTokens[themeKey], prefix: 'arbutus' });
 
   return (
-    <ThemeContext.Provider value={{ setTheme, themeKey: themeOption, theme }}>
+    <ThemeContext.Provider value={{ setTheme, themeKey, theme }}>
       <FluentProvider theme={theme}>{children}</FluentProvider>
     </ThemeContext.Provider>
   );

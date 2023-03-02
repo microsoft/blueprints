@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.0",
     "@griffel/react": "^1.5.2",
-    "@microsoft/arbutus.icon": "^0.1.0",
+    "@microsoft/arbutus.icon": "0.1.0",
     "@reach/visually-hidden": "^0.18.0"
   },
   "devDependencies": {
