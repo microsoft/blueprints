@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.prop-table",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "PropTable is a composite component that generates documentation for React components.",
   "main": "lib/index.js",
   "module": "lib/index.js",

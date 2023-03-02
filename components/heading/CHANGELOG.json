@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.heading",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.heading_v0.0.12",
+      "version": "0.0.12",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.heading",
+            "comment": "Bump @microsoft/arbutus.icon-button to v0.0.7",
+            "commit": "6586d274101dbe309ee8c4b558d64f925242d48c"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:40:35 GMT",
       "tag": "@microsoft/arbutus.heading_v0.0.11",
       "version": "0.0.11",

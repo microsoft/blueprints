@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Adds sun, moon icons",
-  "packageName": "@microsoft/arbutus.icon",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

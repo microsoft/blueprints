@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.action-list-tile",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.action-list-tile_v0.1.4",
+      "version": "0.1.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.action-list-tile",
+            "comment": "Bump @microsoft/arbutus.icon to v0.1.0",
+            "commit": "6586d274101dbe309ee8c4b558d64f925242d48c"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:40:35 GMT",
       "tag": "@microsoft/arbutus.action-list-tile_v0.1.3",
       "version": "0.1.3",

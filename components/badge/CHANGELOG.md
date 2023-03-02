@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.badge
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Thu, 02 Mar 2023 02:19:33 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.7
+
+Thu, 02 Mar 2023 02:19:33 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.icon to v0.1.0
 
 ## 0.0.6
 

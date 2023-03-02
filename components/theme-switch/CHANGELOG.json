@@ -1,0 +1,26 @@
+{
+  "name": "@microsoft/arbutus.theme-switch",
+  "entries": [
+    {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.theme-switch_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.theme-switch",
+            "commit": "421e0c8f17cf292904d2eb4b1f604c0200346fa8",
+            "comment": "Implements ThemeSwitch component"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.theme-switch",
+            "comment": "Bump @microsoft/arbutus.icon to v0.1.0",
+            "commit": "6586d274101dbe309ee8c4b558d64f925242d48c"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.prop-table",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.prop-table_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.prop-table",
+            "commit": "421e0c8f17cf292904d2eb4b1f604c0200346fa8",
+            "comment": "Runs syncpack"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 01 Mar 2023 04:05:09 GMT",
       "tag": "@microsoft/arbutus.prop-table_v0.0.5",
       "version": "0.0.5",

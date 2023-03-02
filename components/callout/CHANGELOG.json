@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.callout",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.callout_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.callout",
+            "comment": "Bump @microsoft/arbutus.badge to v0.0.7",
+            "commit": "6586d274101dbe309ee8c4b558d64f925242d48c"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 23 Feb 2023 02:40:35 GMT",
       "tag": "@microsoft/arbutus.callout_v0.0.9",
       "version": "0.0.9",

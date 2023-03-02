@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Implements ThemeSwitch component",
-  "packageName": "@microsoft/arbutus.theme-switch",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.main-navigation",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.main-navigation_v0.2.1",
+      "version": "0.2.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.main-navigation",
+            "comment": "Bump @microsoft/arbutus.icon to v0.1.0",
+            "commit": "6586d274101dbe309ee8c4b558d64f925242d48c"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 08 Feb 2023 21:46:45 GMT",
       "tag": "@microsoft/arbutus.main-navigation_v0.2.0",
       "version": "0.2.0",

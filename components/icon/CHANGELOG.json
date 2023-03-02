@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Thu, 02 Mar 2023 02:19:33 GMT",
+      "tag": "@microsoft/arbutus.icon_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "421e0c8f17cf292904d2eb4b1f604c0200346fa8",
+            "comment": "Adds sun, moon icons"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.icon_v0.0.4",
       "version": "0.0.4",

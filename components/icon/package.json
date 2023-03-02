@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.icon",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Icon atomic component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
