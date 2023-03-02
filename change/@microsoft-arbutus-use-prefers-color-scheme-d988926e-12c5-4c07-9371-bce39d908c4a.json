@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes colorScheme on first render",
+  "packageName": "@microsoft/arbutus.use-prefers-color-scheme",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
