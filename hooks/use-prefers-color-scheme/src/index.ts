@@ -4,7 +4,7 @@ export type ColorScheme = 'light' | 'dark';
 
 /**
  * usePrefersColorScheme returns a value of `prefers-color-scheme` media query. Based on Media Queries Level 5: 11.5.
- * Detecting the desire for light or dark color schemes: the prefers-color-scheme feature.
+ * Detecting user’s preference for light or dark color schemes: the prefers-color-scheme feature.
  * @see https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
  *
  * @example
@@ -32,6 +32,14 @@ export const usePrefersColorScheme = () => {
     if (window !== undefined) {
       const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
       const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+
+      if (darkModeMediaQuery.matches) {
+        setColorScheme('dark');
+      }
+
+      if (lightModeMediaQuery.matches) {
+        setColorScheme('light');
+      }
 
       darkModeMediaQuery.addEventListener('change', darkModeHandler);
       lightModeMediaQuery.addEventListener('change', lightModeHandler);
