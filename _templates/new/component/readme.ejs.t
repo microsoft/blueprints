@@ -11,6 +11,6 @@ to: components/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/README.md
 npm i "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>"
 ```
 
-```
+```tsx
 import { <%= h.changeCase.pascal(name) %> } from "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>";
 ```

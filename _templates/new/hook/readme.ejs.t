@@ -11,6 +11,6 @@ to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/README.md
 npm i "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>"
 ```
 
-```
+```ts
 import { <%= h.changeCase.camel(name) %> } from "@microsoft/arbutus.<%= h.changeCase.lower(h.inflection.dasherize(name)) %>";
 ```
