@@ -6,6 +6,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import { colorMap, sizeClasses } from '../src/icon/icon.styles';
 import type { IconProps } from '../src/index';
 import { Icon, paths } from '../src/index';
@@ -34,6 +35,13 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <Story />
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof Icon>;
 
 const useGridStyles = makeStyles({

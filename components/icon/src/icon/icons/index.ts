@@ -5,9 +5,11 @@ import { Copy } from './copy';
 import { Download } from './download';
 import { Exclamation } from './exclamation';
 import { Link } from './link';
+import { Moon } from './moon';
 import { Open } from './open';
 import { SlideIn } from './slide-in';
 import { SlideOut } from './slide-out';
+import { Sun } from './sun';
 import { X } from './x';
 
 export const paths = {
@@ -22,4 +24,6 @@ export const paths = {
   x: X,
   ['slide-in']: SlideIn,
   ['slide-out']: SlideOut,
+  sun: Sun,
+  moon: Moon,
 };
