@@ -6,7 +6,7 @@ export type SandboxProps = {
   /**
    * Files of the sandboxed application.
    */
-  files: SandpackFiles;
+  files: SandpackFiles | Record<string, any>;
 
   /**
    * Dependencies of the sandboxed application.
