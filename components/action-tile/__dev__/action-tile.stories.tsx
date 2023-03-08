@@ -5,6 +5,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { ActionTileProps } from '../src/index';
 import { ActionTile } from '../src/index';
 // @ts-ignore TS doesn’t recognize the image format.
@@ -16,6 +17,15 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
   },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <div style={{ maxWidth: '980px' }}>
+          <Story />
+        </div>
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof ActionTile>;
 
 const useTileGridStyles = makeStyles({

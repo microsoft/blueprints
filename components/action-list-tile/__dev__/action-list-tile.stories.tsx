@@ -4,6 +4,7 @@ import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
+import { Centered } from '../../../.storybook/decorators';
 import type { ActionListTileProps } from '../src/index';
 import {
   ActionListHeader,
@@ -20,6 +21,13 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
   },
+  decorators: [
+    (Story) => (
+      <Centered>
+        <Story />
+      </Centered>
+    ),
+  ],
 } as ComponentMeta<typeof ActionListTile>;
 
 const useTileGridStyles = makeStyles({
