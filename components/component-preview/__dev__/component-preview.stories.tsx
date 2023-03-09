@@ -4,9 +4,9 @@ import type { FunctionComponent } from 'react';
 import React from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
-import rawCode from '../__raw__/example-component.raw';
 import type { ComponentPreviewProps } from '../src/index';
 import { ComponentPreview } from '../src/index';
+import rawCode from './__raw__/example-component.raw';
 import { ExampleComponent } from './example-component';
 import { ExampleWrapper } from './example-wrapper';
 
