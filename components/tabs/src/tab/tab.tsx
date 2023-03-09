@@ -20,7 +20,6 @@ export const Tab: FC<TabProps> = ({
   const ref = useRef<HTMLButtonElement>(null);
 
   const handleClick = () => {
-    console.log('handleClick');
     onChangeIndex({ nextIndex: __index });
   };
 
