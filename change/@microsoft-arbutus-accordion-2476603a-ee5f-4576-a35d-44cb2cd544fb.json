@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Upgrades \"framer-motion\"",
+  "packageName": "@microsoft/arbutus.accordion",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
