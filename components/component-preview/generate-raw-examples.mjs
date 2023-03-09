@@ -9,8 +9,6 @@ const config = {
 };
 
 const generateRawSourceFile = async (filePath) => {
-  // eslint-disable-next-line no-useless-escape
-  const regex = /\/([^\/.]+)\./;
   const match = filePath.match(/\/([^/.]+)\./);
   const fileName = match[1];
 
@@ -31,7 +29,6 @@ const generateRawExamples = async ({ outputDir, files }) => {
   // cleanDirectory(outputDir);
 
   // 3. Generate raw example files.
-  // await Promise.all(files.forEach((path) => generateRawSourceFile(path)));
   await Promise.all(files.map((path) => generateRawSourceFile(path)));
 };
 
