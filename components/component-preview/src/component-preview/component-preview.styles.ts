@@ -15,11 +15,11 @@ export const useComponentPreviewStyles = makeStyles({
     borderBottomWidth: tokens.strokeWidthThin,
     borderLeftWidth: tokens.strokeWidthThin,
     borderRightWidth: tokens.strokeWidthThin,
-    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
+    ...shorthands.borderRadius(tokens.borderRadiusMedium),
     overflowX: 'hidden',
     overflowY: 'hidden',
   },
-  header: {
+  previewHeader: {
     paddingTop: tokens.spacingVerticalM,
     paddingBottom: tokens.spacingVerticalM,
     paddingLeft: tokens.spacingHorizontalM,
@@ -41,8 +41,26 @@ export const useComponentPreviewStyles = makeStyles({
   menuItemIcon: {
     color: tokens.colorNeutralForeground2,
   },
+  menuItemIconSuccess: {
+    color: tokens.colorPaletteGreenForeground1,
+  },
   menuItemButton: {
     display: 'flex',
     columnGap: tokens.spacingHorizontalS,
+  },
+  codeSection: {
+    backgroundColor: tokens.colorNeutralBackground3,
+    maxHeight: '580px',
+    overflowY: 'auto',
+  },
+  codeHeader: {
+    paddingTop: tokens.spacingVerticalM,
+    paddingBottom: tokens.spacingVerticalM,
+    paddingLeft: tokens.spacingHorizontalM,
+    paddingRight: tokens.spacingHorizontalM,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    columnGap: tokens.spacingHorizontalM,
   },
 });

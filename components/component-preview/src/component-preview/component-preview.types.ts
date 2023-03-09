@@ -42,6 +42,12 @@ export type ComponentPreviewProps = {
    * @example () => window.open('https://bit.dev/bit/base-ui/preview', '_blank')
    */
   onFullScreen?: () => void;
+
+  /**
+   * If you want to render a button to open the preview in live edit mode, provide an on click handler for it here.
+   * @example () => window.open('https://bit.dev/bit/base-ui/edit', '_blank')
+   */
+  onLiveEdit?: () => void;
 };
 
 export type WrapperProps = {
