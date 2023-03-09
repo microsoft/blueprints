@@ -4,8 +4,7 @@
   "include": ["src"],
   "compilerOptions": {
     "outDir": "lib",
-    "isolatedModules": false,
-    "moduleResolution": "nodenext",
     "esModuleInterop": true,
+    "moduleResolution": "nodenext"
   }
 }
