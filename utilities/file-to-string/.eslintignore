@@ -1,3 +1,5 @@
+*.js
+
 # configs
 just.config.js
 **/.eslintrc.js

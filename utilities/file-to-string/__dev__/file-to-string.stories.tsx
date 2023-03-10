@@ -39,7 +39,10 @@ const DemoComponent = () => {
       <Text as="h2" block variant="caption">
         2. Add the script to your package.json.
       </Text>
-      <Command isCopyable command="node scripts/examples-to-string.mjs" />
+      <Command
+        isCopyable
+        command={`"generate-example-files": "node scripts/examples-to-string.mjs"`}
+      />
     </div>
   );
 };

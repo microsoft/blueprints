@@ -8,5 +8,5 @@ const config = {
 
 fileToString({ config })
   .then(() => console.log('Success!'))
-  .catch((err) => console.log('Did not work out: ', err));
+  .catch((err) => console.log(\`Did not work out: \${err}\`));
 `;
