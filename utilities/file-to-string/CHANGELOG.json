@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/arbutus.file-to-string",
+  "entries": [
+    {
+      "date": "Fri, 10 Mar 2023 03:58:36 GMT",
+      "tag": "@microsoft/arbutus.file-to-string_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.file-to-string",
+            "commit": "eb95a97b90ced60961aeb22de82adee3a9b5f9bb",
+            "comment": "Implements File To String utility"
+          }
+        ]
+      }
+    }
+  ]
+}

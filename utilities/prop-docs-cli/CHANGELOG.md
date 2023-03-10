@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.prop-docs-cli
 
-This log was last generated on Wed, 01 Mar 2023 04:05:09 GMT and should not be manually modified.
+This log was last generated on Fri, 10 Mar 2023 03:58:36 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.1
+
+Fri, 10 Mar 2023 03:58:36 GMT
+
+### Patches
+
+- Adds esModuleInterop (akimalunar@gmail.com)
 
 ## 0.1.0
 

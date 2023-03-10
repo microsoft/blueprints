@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.prop-table
 
-This log was last generated on Thu, 02 Mar 2023 03:31:48 GMT and should not be manually modified.
+This log was last generated on Fri, 10 Mar 2023 03:58:36 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.8
+
+Fri, 10 Mar 2023 03:58:36 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.prop-docs-cli to v0.1.1
 
 ## 0.0.7
 

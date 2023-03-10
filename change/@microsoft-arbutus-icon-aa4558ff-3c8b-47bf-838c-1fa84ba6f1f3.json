@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds full-screen, code icons",
-  "packageName": "@microsoft/arbutus.icon",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

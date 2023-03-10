@@ -1,0 +1,32 @@
+{
+  "name": "@microsoft/arbutus.component-preview",
+  "entries": [
+    {
+      "date": "Fri, 10 Mar 2023 03:58:36 GMT",
+      "tag": "@microsoft/arbutus.component-preview_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.component-preview",
+            "commit": "4c53ff721e97c5decae48537a9b22111b68f499f",
+            "comment": "Implements ComponentPreview component"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.icon to v0.1.1",
+            "commit": "aed3649e0d3a52cfcba87d1117a3b887504e2839"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.file-to-string to v0.0.2",
+            "commit": "aed3649e0d3a52cfcba87d1117a3b887504e2839"
+          }
+        ]
+      }
+    }
+  ]
+}

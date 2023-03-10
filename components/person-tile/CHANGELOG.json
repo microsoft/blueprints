@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.person-tile",
   "entries": [
     {
+      "date": "Fri, 10 Mar 2023 03:58:36 GMT",
+      "tag": "@microsoft/arbutus.person-tile_v0.0.12",
+      "version": "0.0.12",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.person-tile",
+            "comment": "Bump @microsoft/arbutus.icon to v0.1.1",
+            "commit": "aed3649e0d3a52cfcba87d1117a3b887504e2839"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 02 Mar 2023 03:31:48 GMT",
       "tag": "@microsoft/arbutus.person-tile_v0.0.11",
       "version": "0.0.11",

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.prop-table",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "PropTable is a composite component that generates documentation for React components.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -34,7 +34,7 @@
     "process": "^0.11.10"
   },
   "devDependencies": {
-    "@microsoft/arbutus.prop-docs-cli": "0.1.0",
+    "@microsoft/arbutus.prop-docs-cli": "0.1.1",
     "@microsoft/arbutus.ts": "0.0.2",
     "typescript": "^4.9.4"
   }

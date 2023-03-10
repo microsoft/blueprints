@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.code-snippet",
   "entries": [
     {
+      "date": "Fri, 10 Mar 2023 03:58:36 GMT",
+      "tag": "@microsoft/arbutus.code-snippet_v0.0.1-alpha.2",
+      "version": "0.0.1-alpha.2",
+      "comments": {
+        "prerelease": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.code-snippet",
+            "commit": "4c53ff721e97c5decae48537a9b22111b68f499f",
+            "comment": "Improves styling and markup structure"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 07 Feb 2023 00:29:46 GMT",
       "tag": "@microsoft/arbutus.code-snippet_v0.0.1-alpha.1",
       "version": "0.0.1-alpha.1",

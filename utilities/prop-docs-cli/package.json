@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.prop-docs-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prop Docs CLI generates documentation for React components in a format that is ready to be plugged into a PropTable component. It is best to use it as part of the build proccess.",
   "main": "./bin/index.js",
   "exports": [

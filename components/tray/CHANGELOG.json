@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.tray",
   "entries": [
     {
+      "date": "Fri, 10 Mar 2023 03:58:36 GMT",
+      "tag": "@microsoft/arbutus.tray_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.tray",
+            "commit": "eb95a97b90ced60961aeb22de82adee3a9b5f9bb",
+            "comment": "Upgrades \"framer-motion\""
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.tray_v0.0.3",
       "version": "0.0.3",

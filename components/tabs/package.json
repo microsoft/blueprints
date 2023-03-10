@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.tabs",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Tabs atomic component.",
   "main": "lib/index.js",
   "module": "lib/index.js",

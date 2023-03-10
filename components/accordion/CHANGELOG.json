@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.accordion",
   "entries": [
     {
+      "date": "Fri, 10 Mar 2023 03:58:36 GMT",
+      "tag": "@microsoft/arbutus.accordion_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.accordion",
+            "commit": "eb95a97b90ced60961aeb22de82adee3a9b5f9bb",
+            "comment": "Upgrades \"framer-motion\""
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.accordion",
+            "comment": "Bump @microsoft/arbutus.icon to v0.1.1",
+            "commit": "aed3649e0d3a52cfcba87d1117a3b887504e2839"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 02 Mar 2023 03:31:48 GMT",
       "tag": "@microsoft/arbutus.accordion_v0.0.9",
       "version": "0.0.9",
