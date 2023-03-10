@@ -1,0 +1,23 @@
+{
+  "name": "@microsoft/arbutus.parse-code-string",
+  "version": "0.0.1",
+  "description": "Utility functions that receive code as a string and return information about it.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "exports": [
+    "./lib/index.js"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@microsoft/arbutus.ts": "0.0.2",
+    "typescript": "^4.9.4"
+  }
+}
