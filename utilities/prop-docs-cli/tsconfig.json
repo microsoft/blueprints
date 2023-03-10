@@ -4,7 +4,7 @@
   "include": ["src"],
   "compilerOptions": {
     "outDir": "bin",
-    "isolatedModules": false,
+    "esModuleInterop": true,
     "moduleResolution": "nodenext"
   }
 }

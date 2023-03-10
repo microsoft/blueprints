@@ -11,7 +11,7 @@ const DemoComponent = () => {
 
   return (
     <div>
-      <Text as="h1" block variant="headline" className={space.mb4}>
+      <Text as="h1" block variant="title" className={space.mb4}>
         Prop Docs CLI
       </Text>
       <Text as="h2" block variant="caption" className={space.mb4}>
@@ -51,9 +51,7 @@ export default {
   decorators: [
     (Story) => (
       <Centered>
-        <div>
-          <Story />
-        </div>
+        <Story />
       </Centered>
     ),
   ],

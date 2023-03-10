@@ -25,7 +25,7 @@ export const useFrameClasses = makeStyles({
   provider: {
     minHeight: '100vh',
     ['& .fui-FluentProvider']: {
-      minHeight: '100vh',
+      height: '100%',
     },
   },
 });

@@ -1,19 +1,28 @@
+import { useTheme } from '@microsoft/arbutus.theming';
 import type { FC } from 'react';
 import * as React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import {
+  solarizedDark,
+  solarizedLight,
+} from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-import { useCodeSnippetStyles } from './code-snippet.styles';
 import type { CodeSnippetProps } from './code-snippet.types';
+import { syntaxHighlighterCustomStyles } from './syntax-highlighter.styles';
 
 export const CodeSnippet: FC<CodeSnippetProps> = ({ language, code }) => {
-  // Styles
-  const classes = useCodeSnippetStyles();
+  // Theme
+  const { themeKey } = useTheme();
+  const isDarkTheme = themeKey === 'dark';
 
   return (
-    <div className={classes.root}>
-      <SyntaxHighlighter language={language} showLineNumbers={true}>
-        {code}
-      </SyntaxHighlighter>
-    </div>
+    <SyntaxHighlighter
+      language={language}
+      showLineNumbers
+      style={isDarkTheme ? solarizedDark : solarizedLight}
+      customStyle={syntaxHighlighterCustomStyles}
+    >
+      {code}
+    </SyntaxHighlighter>
   );
 };
