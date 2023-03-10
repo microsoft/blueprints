@@ -32,10 +32,10 @@ const DemoComponent = () => {
       </Text>
       <Text as="h2" block variant="caption">
         1. Create a script file, for example:&emsp;
-        <Text variant="code">scripts/examples-to-string.js</Text>
+        <Text variant="code">scripts/examples-to-string.mjs</Text>
       </Text>
 
-      <CodeSnippet language="js" code={codeString} />
+      <CodeSnippet language="javascript" code={codeString} />
       <Text as="h2" block variant="caption">
         2. Add the script to your package.json.
       </Text>

@@ -12,7 +12,7 @@ const cleanDirectory = (dir: string) => {
     return;
   }
 
-  readdirSync(dir).forEach((file) => rmSync(join(dir, file)));
+  readdirSync(dir).forEach((file) => rmSync(join(dir, file), { recursive: true }));
 };
 
 const generateRawSourceFile = async (filePath: string, config: Config) => {

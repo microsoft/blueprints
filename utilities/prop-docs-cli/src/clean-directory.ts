@@ -9,6 +9,6 @@ export const cleanDirectory = (dir: string) => {
     return;
   }
 
-  readdirSync(dir).forEach((file) => rmSync(join(dir, file)));
+  readdirSync(dir).forEach((file) => rmSync(join(dir, file), { recursive: true }));
   console.log(chalk.green(`Cleared ${dir} directory 🧹`));
 };
