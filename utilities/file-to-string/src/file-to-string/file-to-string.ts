@@ -7,6 +7,9 @@ import type { Config, FileToStringArgs } from './file-to-string.types.js';
 const DEFAULT_OUTPUT_DIR = '__raw__';
 const DEFAULT_EXTENSION = 'ts';
 
+const escapeBackticksAndDollarSigns = (str: string) =>
+  str.replace(/[`$]/g, (match) => (match === '`' ? '\\`' : '\\$'));
+
 const cleanDirectory = (dir: string) => {
   if (!existsSync(dir)) {
     return;
@@ -27,7 +30,10 @@ const generateRawSourceFile = async (filePath: string, config: Config) => {
     `${fileName}.raw.${config.extension ?? DEFAULT_EXTENSION}`,
   );
 
-  await writeFile(outputFilePath, `export default \`${rawSource}\`;\n`);
+  await writeFile(
+    outputFilePath,
+    `export default \`${escapeBackticksAndDollarSigns(rawSource)}\`;\n`,
+  );
 };
 
 export const fileToString = async ({ config }: FileToStringArgs) => {
