@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.file-to-string",
   "entries": [
     {
+      "date": "Mon, 13 Mar 2023 23:26:22 GMT",
+      "tag": "@microsoft/arbutus.file-to-string_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.file-to-string",
+            "commit": "b88837e26fd1c4da5e1b75db7c76258cb9c1e57b",
+            "comment": "Fixes string literals"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 10 Mar 2023 03:58:36 GMT",
       "tag": "@microsoft/arbutus.file-to-string_v0.0.2",
       "version": "0.0.2",
