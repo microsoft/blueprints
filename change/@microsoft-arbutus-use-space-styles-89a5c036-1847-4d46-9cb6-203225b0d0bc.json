@@ -1,0 +1,7 @@
+{
+  "type": "major",
+  "comment": "Changes React peer depencency to ^18.2.0",
+  "packageName": "@microsoft/arbutus.use-space-styles",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

@@ -1,7 +1,0 @@
-{
-  "type": "major",
-  "comment": "Changes",
-  "packageName": "@microsoft/arbutus.guidance",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}
