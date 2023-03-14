@@ -18,8 +18,8 @@
     "generate-example-strings": "node ./__dev__/generate-example-strings.mjs"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 <=18.2.0",
-    "react-dom": ">=16.8.0 <=18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@fluentui/react-select": "^9.0.3",

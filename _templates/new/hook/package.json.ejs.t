@@ -20,8 +20,8 @@ to: hooks/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/package.json
     "lint": "eslint . --fix"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 <=18.2.0",
-    "react-dom": ">=16.8.0 <=18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@fluentui/react-theme": "^9.1.0",
