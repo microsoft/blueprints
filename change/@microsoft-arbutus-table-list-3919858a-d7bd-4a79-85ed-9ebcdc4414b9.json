@@ -1,7 +1,0 @@
-{
-  "type": "major",
-  "comment": "Changes React peer depencency to ^18.2.0",
-  "packageName": "@microsoft/arbutus.table-list",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

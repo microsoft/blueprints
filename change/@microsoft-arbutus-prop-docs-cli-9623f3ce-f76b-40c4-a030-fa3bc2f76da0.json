@@ -1,0 +1,7 @@
+{
+  "type": "major",
+  "comment": "Changes React peer dependency to ^18.2.0",
+  "packageName": "@microsoft/arbutus.prop-docs-cli",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
