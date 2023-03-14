@@ -1,14 +1,12 @@
-import { nanoid } from 'nanoid';
-import type { FC } from 'react';
+import { type FC, useId } from 'react';
 import * as React from 'react';
-import { useMemo } from 'react';
 
 import type { LogoSVGProps } from './logo-svg.types';
 
 export const Storybook: FC<LogoSVGProps> = ({ className, label = 'Storybook logo' }) => {
-  const a11yId = useMemo(() => `FigmaLogoSVG--${nanoid()}`, []);
-  const path1Id = useMemo(() => `FigmaLogoSVG-path1-${nanoid()}`, []);
-  const mask2Id = useMemo(() => `FigmaLogoSVG-mask2-${nanoid()}`, []);
+  const a11yId = `FigmaLogoSVG--${useId()}`;
+  const path1Id = `FigmaLogoSVG-path1-${useId()}`;
+  const mask2Id = `FigmaLogoSVG-mask2-${useId()}`;
 
   return (
     <svg

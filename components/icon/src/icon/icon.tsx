@@ -1,7 +1,6 @@
 import { mergeClasses } from '@griffel/react';
-import { nanoid } from 'nanoid';
 import type { FC } from 'react';
-import { useMemo } from 'react';
+import { useId, useMemo } from 'react';
 import * as React from 'react';
 
 import { useIconStyles } from './icon.styles';
@@ -19,7 +18,7 @@ export const Icon: FC<IconProps> = ({
   const Icon = useMemo(() => paths[iconName], [iconName]);
 
   // A11y
-  const a11yId = useMemo(() => nanoid(), []);
+  const a11yId = useId();
 
   type A11yProps = {
     role?: string;

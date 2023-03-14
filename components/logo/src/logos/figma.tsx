@@ -1,12 +1,11 @@
-import { nanoid } from 'nanoid';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useMemo } from 'react';
+import { useId } from 'react';
 
 import type { LogoSVGProps } from './logo-svg.types';
 
 export const Figma: FC<LogoSVGProps> = ({ className, label = 'Figma logo' }) => {
-  const a11yId = useMemo(() => `FigmaLogoSVG--${nanoid()}`, []);
+  const a11yId = `FigmaLogoSVG--${useId()}`;
 
   return (
     <svg
