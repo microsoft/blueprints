@@ -47,6 +47,7 @@ export const AppearMotion: FC<AppearMotionProps> = ({
 
 export const SlideMotion: FC<{
   isActive: boolean;
+  children?: ReactNode | undefined;
 }> = ({ children, isActive }) => {
   const shouldReduceMotion = useReducedMotion();
 
