@@ -99,12 +99,10 @@
     "webpack": "^5.76.1"
   },
   "syncpack": {
-    "semverRange": [
-      "<=",
-      ">="
-    ],
-    "workspace": true,
-    "peer": false
+    "dependencyTypes": [
+      "workspace",
+      "peer"
+    ]
   },
   "resolutions": {
     "**/trim": "^1.0.0"
