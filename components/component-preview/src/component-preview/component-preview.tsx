@@ -4,11 +4,10 @@ import { Button } from '@microsoft/arbutus.button';
 import { Icon } from '@microsoft/arbutus.icon';
 import { useTheme } from '@microsoft/arbutus.theming';
 import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import { AnimatePresence } from 'framer-motion';
 import type { FC } from 'react';
+import { useEffect, useState } from 'react';
 import * as React from 'react';
-import { useState } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {
   solarizedDark,
@@ -28,17 +27,25 @@ export const ComponentPreview: FC<ComponentPreviewProps> = ({
   themes,
   codeLanguage = 'tsx',
   onLiveEdit,
+  onThemeChange: onThemeChangeProp,
   wrapper: Wrapper = ({ children }) => <>{children}</>,
 }) => {
   // Styles
   const classes = useComponentPreviewStyles();
-  const space = useSpaceStyles();
 
   // Theme switcher
   const [themeKey, setThemeKey] = useState(themes?.[0].value);
   const onThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setThemeKey(event.target.value);
+    const value = event.target.value;
+
+    setThemeKey(value);
   };
+
+  useEffect(() => {
+    if (onThemeChangeProp && themeKey) {
+      onThemeChangeProp(themeKey);
+    }
+  }, [themeKey, onThemeChangeProp]);
 
   // Code viewer
   const [isShowingCode, setIsShowingCode] = useState(false);

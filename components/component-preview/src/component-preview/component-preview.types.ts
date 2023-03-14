@@ -48,6 +48,15 @@ export type ComponentPreviewProps = {
    * @example () => window.open('https://bit.dev/bit/base-ui/edit', '_blank')
    */
   onLiveEdit?: () => void;
+
+  /**
+   * If you need to access the currently selected theme, you can pass a callback here.
+   * @example ```tsx
+   *   const [currentTheme, setCurrentTheme] = React.useState<string>();
+   *   const onThemeChange = (theme: string) => setCurrentTheme(theme);
+   *  ```
+   */
+  onThemeChange?: (themeKey: string) => void;
 };
 
 export type WrapperProps = {
