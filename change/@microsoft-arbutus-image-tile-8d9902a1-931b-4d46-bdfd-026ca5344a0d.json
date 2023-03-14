@@ -1,0 +1,7 @@
+{
+  "type": "major",
+  "comment": "Changes",
+  "packageName": "@microsoft/arbutus.image-tile",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

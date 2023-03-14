@@ -1,0 +1,7 @@
+{
+  "type": "major",
+  "comment": "Changes",
+  "packageName": "@microsoft/arbutus.tabs",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
