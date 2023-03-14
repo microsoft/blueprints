@@ -44,9 +44,9 @@
     "@microsoft/arbutus.aside-navigation": "0.0.10",
     "@microsoft/arbutus.bookmark-tile": "0.0.12",
     "@microsoft/arbutus.code-snippet": "^0.0.1-alpha.2",
-    "@microsoft/arbutus.command": "^0.0.7",
+    "@microsoft/arbutus.command": "0.0.7",
     "@microsoft/arbutus.divider": "0.0.3",
-    "@microsoft/arbutus.file-to-string": "^0.0.3",
+    "@microsoft/arbutus.file-to-string": "0.0.3",
     "@microsoft/arbutus.icon": "0.1.1",
     "@microsoft/arbutus.icon-button": "0.0.9",
     "@microsoft/arbutus.link": "0.0.12",
@@ -97,12 +97,6 @@
     "typescript": "^4.9.5",
     "wait-on": "7.0.1",
     "webpack": "^5.76.1"
-  },
-  "syncpack": {
-    "dependencyTypes": [
-      "workspace",
-      "peer"
-    ]
   },
   "resolutions": {
     "**/trim": "^1.0.0"
