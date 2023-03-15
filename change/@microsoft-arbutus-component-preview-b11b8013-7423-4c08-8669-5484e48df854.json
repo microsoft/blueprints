@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Implements the ParseCodeString utilities",
+  "packageName": "@microsoft/arbutus.component-preview",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

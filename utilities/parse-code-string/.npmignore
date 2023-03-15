@@ -1,0 +1,8 @@
+__tests__
+__dev__
+.cache
+node_modules
+src
+.eslintrc
+.eslintignore
+tsconfig.json
