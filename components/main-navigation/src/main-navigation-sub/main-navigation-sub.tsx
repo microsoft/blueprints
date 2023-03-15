@@ -1,9 +1,8 @@
 import { mergeClasses } from '@griffel/react';
 import { Icon } from '@microsoft/arbutus.icon';
 import { AnimatePresence } from 'framer-motion';
-import { nanoid } from 'nanoid';
 import type { FC } from 'react';
-import { useMemo, useState } from 'react';
+import { useId, useState } from 'react';
 import * as React from 'react';
 
 import { useMainNavigationSubStyles } from './main-navigation-sub.styles';
@@ -19,8 +18,8 @@ export const MainNavigationSub: FC<MainNavigationSubProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
   const handleExpandClick = () => setIsExpanded(!isExpanded);
 
-  const a11yLabelId = useMemo(() => nanoid(), []);
-  const a11yContentId = useMemo(() => nanoid(), []);
+  const a11yLabelId = useId();
+  const a11yContentId = useId();
 
   const classes = useMainNavigationSubStyles();
 

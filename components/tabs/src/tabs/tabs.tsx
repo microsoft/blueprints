@@ -1,8 +1,7 @@
 import { mergeClasses } from '@griffel/react';
-import { nanoid } from 'nanoid';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useMemo, useState } from 'react';
+import { useId, useState } from 'react';
 
 import { TabsProvider } from '../tabs-context';
 import { useTabsStyles } from './tabs.styles';
@@ -17,7 +16,7 @@ export const Tabs: FC<TabsProps> = ({ className, children, initialIndex = 0 }) =
     setCurrentIndex(nextIndex);
   };
 
-  const id = useMemo(() => nanoid(), []);
+  const id = useId();
 
   // Styles
   const classes = useTabsStyles();

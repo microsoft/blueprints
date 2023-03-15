@@ -2,10 +2,9 @@ import { mergeClasses } from '@griffel/react';
 import { Icon } from '@microsoft/arbutus.icon';
 import { Text } from '@microsoft/arbutus.text';
 import { AnimatePresence } from 'framer-motion';
-import { nanoid } from 'nanoid';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useMemo, useState } from 'react';
+import { useId, useState } from 'react';
 
 import { useAccordionItemStyles } from './accordion-item.styles';
 import type { AccordionItemProps } from './accordion-item.types';
@@ -20,8 +19,8 @@ export const AccordionItem: FC<AccordionItemProps> = ({
   const [isExpanded, setIsExpanded] = useState(initial === 'expanded');
   const handleExpandClick = () => setIsExpanded(!isExpanded);
 
-  const a11yLabelId = useMemo(() => nanoid(), []);
-  const a11yContentId = useMemo(() => nanoid(), []);
+  const a11yLabelId = useId();
+  const a11yContentId = useId();
 
   // Styles
   const classes = useAccordionItemStyles();
