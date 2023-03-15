@@ -17,8 +17,8 @@
     "lint": "eslint . --fix"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 <=18.2.0",
-    "react-dom": ">=16.8.0 <=18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@microsoft/arbutus.icon-button": "0.0.9",
@@ -26,12 +26,12 @@
     "@microsoft/arbutus.ordered-list": "0.0.2",
     "@microsoft/arbutus.text": "0.1.3",
     "@microsoft/arbutus.use-space-styles": "0.0.6",
-    "@fluentui/react-theme": "^9.1.0",
-    "@griffel/react": "^1.5.2",
+    "@fluentui/react-theme": "^9.1.5",
+    "@griffel/react": "^1.5.5",
     "@react-hook/resize-observer": "^1.2.6"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }

@@ -17,12 +17,12 @@
     "lint": "eslint . --fix"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 <=18.2.0",
-    "react-dom": ">=16.8.0 <=18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@fluentui/react-theme": "^9.1.0",
-    "@griffel/react": "^1.5.2",
+    "@fluentui/react-theme": "^9.1.5",
+    "@griffel/react": "^1.5.5",
     "@microsoft/arbutus.badge": "0.0.9",
     "@microsoft/arbutus.link": "0.0.12",
     "@microsoft/arbutus.mark-list": "0.0.9",
@@ -32,6 +32,6 @@
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }

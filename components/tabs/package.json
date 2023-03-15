@@ -17,19 +17,19 @@
     "lint": "eslint . --fix"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 <=18.2.0",
-    "react-dom": ">=16.8.0 <=18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@microsoft/arbutus.use-space-styles": "0.0.6",
-    "@fluentui/react-theme": "^9.1.0",
-    "@griffel/react": "^1.5.2",
+    "@fluentui/react-theme": "^9.1.5",
+    "@griffel/react": "^1.5.5",
     "@reach/tabs": "^0.17.0",
-    "framer-motion": "^10.2.3",
+    "framer-motion": "^10.3.1",
     "nanoid": "^4.0.0"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }
