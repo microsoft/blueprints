@@ -1,7 +1,10 @@
+import { Text } from '@microsoft/arbutus.text';
 import type { ThemeOption } from '@microsoft/arbutus.theming';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 import type { FunctionComponent } from 'react';
-import React from 'react';
+import * as React from 'react';
+import { useState } from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
 import type { ComponentPreviewProps } from '../src/index';
@@ -33,6 +36,29 @@ const Template: ComponentStory<typeof ComponentPreview> = (args) => (
   <ComponentPreview {...args} />
 );
 
+const AccessingPreviewThemeTemplate: ComponentStory<typeof ComponentPreview> = (args) => {
+  const space = useSpaceStyles();
+
+  const [currentTheme, setCurrentTheme] = useState<string>();
+
+  const currentThemeLabel = themes.find((theme) => theme.value === currentTheme)?.label;
+
+  const handleThemeChange = (theme: string) => {
+    args.onThemeChange?.(theme);
+    setCurrentTheme(theme);
+  };
+
+  return (
+    <>
+      <div className={space.mb6}>
+        <Text variant="caption">{currentThemeLabel}&ensp;</Text>
+        <Text variant="code">{currentTheme}</Text>
+      </div>
+      <ComponentPreview {...args} onThemeChange={handleThemeChange} />
+    </>
+  );
+};
+
 export const Simple = Template.bind({}) as ComponentStory<
   FunctionComponent<ComponentPreviewProps>
 >;
@@ -46,6 +72,16 @@ export const WithMenu = Template.bind({}) as ComponentStory<
   FunctionComponent<ComponentPreviewProps>
 >;
 WithMenu.args = {
+  component: ExampleComponent,
+  wrapper: ExampleWrapper,
+  code: rawCode,
+  themes,
+};
+
+export const AccessingPreviewTheme = AccessingPreviewThemeTemplate.bind(
+  {},
+) as ComponentStory<FunctionComponent<ComponentPreviewProps>>;
+AccessingPreviewTheme.args = {
   component: ExampleComponent,
   wrapper: ExampleWrapper,
   code: rawCode,
