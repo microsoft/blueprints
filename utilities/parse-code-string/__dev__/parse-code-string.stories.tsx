@@ -3,6 +3,7 @@ import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
 import { Command } from '@microsoft/arbutus.command';
 import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
 import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { Meta, Story } from '@storybook/react';
 import React from 'react';
 
@@ -31,6 +32,7 @@ const defaultExportName = getDefaultExportName(codeStr);
 
 const DemoComponent = () => {
   const classes = useStyles();
+  const space = useSpaceStyles();
 
   const dependencies = getDependencies(codeStr);
   const defaultExportName = getDefaultExportName(codeStr);
@@ -46,7 +48,7 @@ const DemoComponent = () => {
       <Command isCopyable command="npm i @microsoft/arbutus.parse-code-string" />
       <CodeSnippet language="typescript" code={codeExample} />
       <Text as="h2" block variant="headline">
-        Examples
+        Example file
       </Text>
       <CodeSnippet language="javascript" code={codeStr} />
 
@@ -56,8 +58,10 @@ const DemoComponent = () => {
         <Text variant="code">@microsoft/arbutus.file-to-string</Text>
         package.
       </Text>
-
-      <TableList>
+      <Text as="h2" block variant="headline">
+        Result
+      </Text>
+      <TableList className={space.mb6}>
         <TableRow>
           <TableCell isHeader>Function</TableCell>
           <TableCell isHeader>Output</TableCell>
