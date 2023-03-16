@@ -1,8 +1,21 @@
 # Change Log - @microsoft/arbutus.guidance
 
-This log was last generated on Fri, 10 Mar 2023 03:58:36 GMT and should not be manually modified.
+This log was last generated on Thu, 16 Mar 2023 20:16:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0
+
+Thu, 16 Mar 2023 20:16:00 GMT
+
+### Major changes
+
+- Changes React peer dependency to ^18.2.0 (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.icon-button to v1.0.0
+- Bump @microsoft/arbutus.logo to v1.0.0
+- Bump @microsoft/arbutus.ordered-list to v1.0.0
+- Bump @microsoft/arbutus.text to v1.0.0
+- Bump @microsoft/arbutus.use-space-styles to v1.0.0
 
 ## 0.0.13
 

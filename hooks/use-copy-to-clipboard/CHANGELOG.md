@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.use-copy-to-clipboard
 
-This log was last generated on Mon, 16 Jan 2023 21:52:50 GMT and should not be manually modified.
+This log was last generated on Thu, 16 Mar 2023 20:16:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0
+
+Thu, 16 Mar 2023 20:16:00 GMT
+
+### Major changes
+
+- Changes React peer dependency to ^18.2.0 (akimalunar@gmail.com)
 
 ## 0.0.4
 

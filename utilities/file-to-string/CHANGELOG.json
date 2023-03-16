@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.file-to-string",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.file-to-string_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.file-to-string",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 13 Mar 2023 23:26:22 GMT",
       "tag": "@microsoft/arbutus.file-to-string_v0.0.3",
       "version": "0.0.3",

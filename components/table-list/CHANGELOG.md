@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.table-list
 
-This log was last generated on Wed, 01 Mar 2023 04:05:09 GMT and should not be manually modified.
+This log was last generated on Thu, 16 Mar 2023 20:16:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0
+
+Thu, 16 Mar 2023 20:16:00 GMT
+
+### Major changes
+
+- Changes React peer dependency to ^18.2.0 (akimalunar@gmail.com)
 
 ## 0.1.0
 

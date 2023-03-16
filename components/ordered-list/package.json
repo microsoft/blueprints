@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.ordered-list",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "OrderedList component in the Lists collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

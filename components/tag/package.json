@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.tag",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Tag component in the Atoms collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.5",
     "@griffel/react": "^1.5.5",
-    "@microsoft/arbutus.style-utilities": "0.0.2"
+    "@microsoft/arbutus.style-utilities": "1.0.0"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",

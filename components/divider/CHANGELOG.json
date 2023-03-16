@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.divider",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.divider_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.divider",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 19 Jan 2023 19:51:35 GMT",
       "tag": "@microsoft/arbutus.divider_v0.0.3",
       "version": "0.0.3",

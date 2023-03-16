@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.global-styles",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Documentation global styles",
   "main": "lib/index.js",
   "module": "lib/index.js",

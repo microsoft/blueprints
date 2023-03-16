@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.theme-switch",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.theme-switch_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.theme-switch",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.theme-switch",
+            "comment": "Bump @microsoft/arbutus.icon to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 10 Mar 2023 03:58:36 GMT",
       "tag": "@microsoft/arbutus.theme-switch_v0.0.4",
       "version": "0.0.4",

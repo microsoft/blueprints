@@ -2,6 +2,59 @@
   "name": "@microsoft/arbutus.component-preview",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.component-preview_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.component-preview",
+            "commit": "911243535960962e2a8d03490acbbd3088ac6436",
+            "comment": "Adds onThemeChange"
+          }
+        ],
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.component-preview",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.button to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.icon to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.theming to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.use-copy-to-clipboard to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.file-to-string to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 13 Mar 2023 23:26:22 GMT",
       "tag": "@microsoft/arbutus.component-preview_v0.0.3",
       "version": "0.0.3",

@@ -2,6 +2,57 @@
   "name": "@microsoft/arbutus.recommendation-tile",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.recommendation-tile_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.badge to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.link to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.mark-list to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.text to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.tile to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.recommendation-tile",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v1.0.0",
+            "commit": "48f869a06df87f1b8f12af3396306b07e84e74e3"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 10 Mar 2023 03:58:36 GMT",
       "tag": "@microsoft/arbutus.recommendation-tile_v0.1.9",
       "version": "0.1.9",

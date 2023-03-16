@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.divider",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Divider component",
   "main": "lib/index.js",
   "module": "lib/index.js",

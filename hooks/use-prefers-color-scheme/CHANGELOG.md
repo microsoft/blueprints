@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.use-prefers-color-scheme
 
-This log was last generated on Thu, 02 Mar 2023 03:31:48 GMT and should not be manually modified.
+This log was last generated on Thu, 16 Mar 2023 20:16:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.0
+
+Thu, 16 Mar 2023 20:16:00 GMT
+
+### Major changes
+
+- Changes React peer dependency to ^18.2.0 (akimalunar@gmail.com)
 
 ## 0.0.4
 

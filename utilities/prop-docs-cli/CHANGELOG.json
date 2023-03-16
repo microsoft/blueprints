@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.prop-docs-cli",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.prop-docs-cli_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.prop-docs-cli",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 10 Mar 2023 03:58:36 GMT",
       "tag": "@microsoft/arbutus.prop-docs-cli_v0.1.1",
       "version": "0.1.1",

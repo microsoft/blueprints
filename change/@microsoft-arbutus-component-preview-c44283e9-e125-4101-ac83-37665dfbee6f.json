@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Adds onThemeChange",
-  "packageName": "@microsoft/arbutus.component-preview",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

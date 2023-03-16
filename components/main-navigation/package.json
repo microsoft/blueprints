@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.main-navigation",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "MainNavigation component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.icon": "0.1.1",
+    "@microsoft/arbutus.icon": "1.0.0",
     "@fluentui/react-theme": "^9.1.5",
     "@griffel/react": "^1.5.5",
     "framer-motion": "^10.3.1"

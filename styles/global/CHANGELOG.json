@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.global-styles",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.global-styles_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.global-styles",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 16 Jan 2023 21:52:50 GMT",
       "tag": "@microsoft/arbutus.global-styles_v0.0.2",
       "version": "0.0.2",

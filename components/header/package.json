@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.header",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "Header componenet in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.use-space-styles": "0.0.6",
+    "@microsoft/arbutus.use-space-styles": "1.0.0",
     "@fluentui/react-theme": "^9.1.5",
     "@griffel/react": "^1.5.5"
   },

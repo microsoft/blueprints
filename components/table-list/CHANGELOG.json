@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.table-list",
   "entries": [
     {
+      "date": "Thu, 16 Mar 2023 20:16:00 GMT",
+      "tag": "@microsoft/arbutus.table-list_v1.0.0",
+      "version": "1.0.0",
+      "comments": {
+        "major": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.table-list",
+            "commit": "34d3912d599d9efedfecc85cad14e42de2e9a099",
+            "comment": "Changes React peer dependency to ^18.2.0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 01 Mar 2023 04:05:09 GMT",
       "tag": "@microsoft/arbutus.table-list_v0.1.0",
       "version": "0.1.0",
