@@ -1,6 +1,6 @@
 {
   "type": "minor",
-  "comment": "Adds variants to Link",
+  "comment": "Adds display, accent variants.",
   "packageName": "@microsoft/arbutus.link",
   "email": "akimalunar@gmail.com",
   "dependentChangeType": "patch"

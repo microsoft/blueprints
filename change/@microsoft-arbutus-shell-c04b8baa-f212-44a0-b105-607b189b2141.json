@@ -1,6 +1,6 @@
 {
   "type": "minor",
-  "comment": "Improves Shell API",
+  "comment": "Improves Shell API, adds iconAs prop.",
   "packageName": "@microsoft/arbutus.shell",
   "email": "akimalunar@gmail.com",
   "dependentChangeType": "patch"

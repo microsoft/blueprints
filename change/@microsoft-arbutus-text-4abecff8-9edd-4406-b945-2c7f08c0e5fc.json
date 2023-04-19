@@ -1,6 +1,6 @@
 {
   "type": "patch",
-  "comment": "Changes leading styles",
+  "comment": "Changes leading variant styles.",
   "packageName": "@microsoft/arbutus.text",
   "email": "akimalunar@gmail.com",
   "dependentChangeType": "patch"
