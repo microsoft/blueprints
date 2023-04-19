@@ -15,6 +15,16 @@ export type CrownProps = {
   logoMarkAlt?: string;
 
   /**
+   * Alternative logo element.
+   */
+  logoAs?: React.ElementType;
+
+  /**
+   * Props to be passed to the alternative logo element.
+   */
+  logoProps?: Record<string, unknown>;
+
+  /**
    * Logo text.
    */
   logoText?: string;
