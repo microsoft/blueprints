@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Improves Shell API",
+  "packageName": "@microsoft/arbutus.shell",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

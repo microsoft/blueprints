@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Adds variants to Link",
+  "packageName": "@microsoft/arbutus.link",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
