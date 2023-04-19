@@ -54,8 +54,8 @@ export const variantClasses = {
   },
   leading: {
     fontFamily: tokens.fontFamilyBase,
-    fontSize: tokens.fontSizeBase400,
-    lineHeight: tokens.lineHeightBase400,
+    fontSize: tokens.fontSizeBase500,
+    lineHeight: tokens.lineHeightBase500,
     fontWeight: tokens.fontWeightRegular,
   },
   paragraph: {

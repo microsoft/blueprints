@@ -1,3 +1,4 @@
+import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 
 export const useLinkStyles = makeStyles({
@@ -13,5 +14,8 @@ export const useLinkStyles = makeStyles({
   isUnderlined: {
     textDecorationLine: 'underline',
     textDecorationSkipInk: 'all',
+  },
+  flexLayout: {
+    columnGap: tokens.spacingHorizontalS,
   },
 });

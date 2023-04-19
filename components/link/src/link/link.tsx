@@ -11,6 +11,13 @@ import type { LinkProps } from './link.types';
 
 const getTextProps = ({ variant }: Pick<LinkProps, 'variant'>): TextProps => {
   switch (variant) {
+    case 'display': {
+      return {
+        variant: 'leading',
+        color: 'action',
+      };
+    }
+    case 'accent':
     case 'caption': {
       return {
         variant: 'caption',
@@ -42,7 +49,7 @@ export const Link: FC<LinkProps> = ({
   children,
   className,
   elementProps,
-  variant,
+  variant = 'primary',
   withIcon,
   isUnderlined,
   iconName = 'open',
@@ -50,8 +57,27 @@ export const Link: FC<LinkProps> = ({
   const space = useSpaceStyles();
   const classes = useLinkStyles();
 
+  const isComplexVariant = ['display', 'accent'].includes(variant);
+
   return (
-    <Link className={mergeClasses(classes.root, className)} {...elementProps}>
+    <Link
+      className={mergeClasses(
+        classes.root,
+        isComplexVariant && classes.flexLayout,
+        className,
+      )}
+      {...elementProps}
+    >
+      {isComplexVariant && (
+        <Icon
+          iconName="arrow-right"
+          size={variant === 'display' ? 'large' : 'medium'}
+          className={mergeClasses(
+            variant === 'display' ? space.mr3 : space.mr1,
+            variant === 'display' && space.mt1,
+          )}
+        />
+      )}
       <Text
         as="span"
         className={isUnderlined ? classes.isUnderlined : ''}
