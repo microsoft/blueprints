@@ -86,4 +86,5 @@ AccessingPreviewTheme.args = {
   wrapper: ExampleWrapper,
   code: rawCode,
   themes,
+  defaultThemeIndex: 1,
 };

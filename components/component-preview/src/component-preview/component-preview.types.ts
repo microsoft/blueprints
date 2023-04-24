@@ -27,6 +27,17 @@ export type ComponentPreviewProps = {
   }[];
 
   /**
+   * Default theme in the themes array to be used in theme switcher.
+   */
+  defaultThemeIndex?: number;
+
+  /**
+   * Label for the theme switcher select control.
+   * @default 'Theme'
+   */
+  themeSwitcherLabel?: string;
+
+  /**
    * If you would like to show code implementation of the component, you can pass the string here.
    */
   code?: string;
