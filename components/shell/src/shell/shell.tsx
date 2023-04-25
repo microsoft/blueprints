@@ -67,7 +67,7 @@ export const Shell: FC<ShellProps> = ({
             !heroScrollTopPosition && classes.heroHeaderScroll,
           )}
         >
-          {headerArea}
+          <div className={classes.heroHeaderContent}>{headerArea}</div>
         </Header>
         <main className={classes.hero}>{children}</main>
         <Footer className={classes.footer}>{footerArea}</Footer>

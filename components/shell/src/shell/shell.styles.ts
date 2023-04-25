@@ -36,22 +36,24 @@ export const useShellStyles = makeStyles({
     right: 0,
     zIndex: 100,
     width: '100%',
-    maxWidth: CONTAINER_WIDTH,
     minHeight: HEADER_HEIGHT,
-    marginLeft: 'auto',
-    marginRight: 'auto',
     transitionProperty: 'background-color',
     transitionDuration: tokens.durationFast,
     transitionTimingFunction: tokens.curveEasyEase,
-    [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
-      paddingRight: tokens.spacingHorizontalL,
-      paddingLeft: tokens.spacingHorizontalL,
-    },
   },
   heroHeaderScroll: {
     backgroundColor: 'var(--arbutus--color-overlay-background)',
     backdropFilter: 'blur(1rem)',
     boxShadow: tokens.shadow8,
+  },
+  heroHeaderContent: {
+    maxWidth: CONTAINER_WIDTH,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
+      paddingRight: tokens.spacingHorizontalL,
+      paddingLeft: tokens.spacingHorizontalL,
+    },
   },
   boundaries: {
     [`@media screen and (max-width: ${BREAKPOINTS.desktop}px)`]: {

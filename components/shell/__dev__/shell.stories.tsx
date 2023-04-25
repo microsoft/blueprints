@@ -121,6 +121,18 @@ HeroExample.args = {
   isHeroMode: true,
 };
 
+export const BlankExample = Template.bind({}) as ComponentStory<FC<ShellProps>>;
+BlankExample.args = {
+  headerArea: <HeroHeader logoMarkAlt="Fluent logo" logoMarkSrc={logo as string} />,
+  navigationArea: <NavigationSample />,
+  footerArea: <FooterSample />,
+  logoMarkSrc: logo as string,
+  logoMarkAlt: 'Fluent logo',
+  closeTrayLabel: 'Close navigation.',
+  openTrayLabel: 'Open navigation.',
+  isBlankMode: true,
+};
+
 const CustomLogo = ({ title }) => (
   <>
     <svg
