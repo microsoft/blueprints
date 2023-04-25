@@ -24,7 +24,7 @@ export const ComponentPreview: FC<ComponentPreviewProps> = ({
   code,
   codeLanguage = 'tsx',
   component: Component,
-  defaultThemeIndex,
+  defaultThemeIndex = 0,
   onFullScreen,
   onLiveEdit,
   onThemeChange: onThemeChangeProp,
@@ -36,7 +36,7 @@ export const ComponentPreview: FC<ComponentPreviewProps> = ({
   const classes = useComponentPreviewStyles();
 
   // Theme switcher
-  const [themeKey, setThemeKey] = useState(themes?.[defaultThemeIndex ?? 0].value);
+  const [themeKey, setThemeKey] = useState(themes?.[defaultThemeIndex].value);
   const onThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value;
 

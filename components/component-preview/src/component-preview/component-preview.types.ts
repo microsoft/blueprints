@@ -28,6 +28,7 @@ export type ComponentPreviewProps = {
 
   /**
    * Default theme in the themes array to be used in theme switcher.
+   * @default 0
    */
   defaultThemeIndex?: number;
 
