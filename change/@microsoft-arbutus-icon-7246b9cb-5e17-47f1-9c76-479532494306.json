@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Replaces the arrow-right icon with one that is more aligned to the overall style.",
+  "packageName": "@microsoft/arbutus.icon",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

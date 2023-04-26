@@ -21,20 +21,22 @@ import { syntaxHighlighterCustomStyles } from './syntax-highlighter.styles';
 
 export const ComponentPreview: FC<ComponentPreviewProps> = ({
   className,
-  component: Component,
   code,
-  onFullScreen,
-  themes,
   codeLanguage = 'tsx',
+  component: Component,
+  defaultThemeIndex = 0,
+  onFullScreen,
   onLiveEdit,
   onThemeChange: onThemeChangeProp,
+  themes,
+  themeSwitcherLabel = 'Theme',
   wrapper: Wrapper = ({ children }) => <>{children}</>,
 }) => {
   // Styles
   const classes = useComponentPreviewStyles();
 
   // Theme switcher
-  const [themeKey, setThemeKey] = useState(themes?.[0].value);
+  const [themeKey, setThemeKey] = useState(themes?.[defaultThemeIndex].value);
   const onThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value;
 
@@ -62,7 +64,13 @@ export const ComponentPreview: FC<ComponentPreviewProps> = ({
       {(themeKey || code || onFullScreen) && (
         <div className={classes.previewHeader}>
           {themeKey && (
-            <Select onChange={onThemeChange} className={classes.menuItem} size="small">
+            <Select
+              title={themeSwitcherLabel}
+              onChange={onThemeChange}
+              className={classes.menuItem}
+              size="small"
+              value={themeKey}
+            >
               {themes?.map(({ label, value }) => (
                 <option key={value} value={value}>
                   {label}

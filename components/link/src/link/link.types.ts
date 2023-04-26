@@ -1,7 +1,7 @@
 import type { paths } from '@microsoft/arbutus.icon';
 import type { ElementType, ReactNode } from 'react';
 
-type LinkVariant = 'primary' | 'secondary' | 'inverse' | 'caption';
+type LinkVariant = 'primary' | 'secondary' | 'inverse' | 'caption' | 'display' | 'accent';
 
 export type LinkProps = {
   /**
@@ -21,6 +21,7 @@ export type LinkProps = {
 
   /**
    * Selection of link styles.
+   * @default 'primary'
    */
   variant?: LinkVariant;
 

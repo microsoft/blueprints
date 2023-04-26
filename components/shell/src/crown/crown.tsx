@@ -36,6 +36,8 @@ export const Crown: FC<CrownProps> = ({
   isTabletLayout,
   logoMarkAlt,
   logoMarkSrc,
+  logoAs: CustomLogoMark,
+  logoProps,
   logoText,
   openTrayLabel = 'Open navigation',
 }) => {
@@ -57,6 +59,7 @@ export const Crown: FC<CrownProps> = ({
         />
       )}
       <Logo onClick={onClick}>
+        {CustomLogoMark && <CustomLogoMark {...logoProps} />}
         {logoMarkSrc && (
           <img src={logoMarkSrc} alt={logoMarkAlt} className={classes.image} />
         )}

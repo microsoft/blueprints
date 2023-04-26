@@ -4,12 +4,12 @@ import { Header } from '@microsoft/arbutus.header';
 import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
 import { Tray, TrayConsumer, TrayProvider, useTray } from '@microsoft/arbutus.tray';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { FC } from 'react';
+import { type FC, useEffect, useState } from 'react';
 import * as React from 'react';
 import { useBreakpoint } from 'use-breakpoint';
 
 import { Crown } from '../crown';
-import { useShellStyles } from './shell.styles';
+import { HEADER_HEIGHT, useShellStyles } from './shell.styles';
 import type { ShellProps } from './shell.types';
 
 export const Shell: FC<ShellProps> = ({
@@ -18,8 +18,11 @@ export const Shell: FC<ShellProps> = ({
   closeTrayLabel,
   footerArea,
   headerArea,
+  isBlankMode,
   isHeroMode,
   logoMarkAlt,
+  logoAs,
+  logoProps,
   logoMarkSrc,
   logoText,
   navigationArea,
@@ -33,11 +36,39 @@ export const Shell: FC<ShellProps> = ({
   const { breakpoint } = useBreakpoint(BREAKPOINTS);
 
   const isTabletLayout = breakpoint === 'tablet' || breakpoint === 'mobile';
+  const [heroScrollTopPosition, setHeroScrollTopPosition] = useState(true);
+
+  useEffect(() => {
+    if (isHeroMode && !!window) {
+      const handleScroll = () => {
+        setHeroScrollTopPosition(
+          window.scrollY >= parseInt(HEADER_HEIGHT) ? false : true,
+        );
+      };
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+
+    return;
+  }, [isHeroMode]);
+
+  if (isBlankMode) {
+    return <>{children}</>;
+  }
 
   if (isHeroMode) {
     return (
       <div className={classes.heroWrapper}>
-        <Header className={classes.heroHeader}>{headerArea}</Header>
+        <Header
+          className={mergeClasses(
+            classes.heroHeader,
+            !heroScrollTopPosition && classes.heroHeaderScroll,
+          )}
+        >
+          <div className={classes.heroHeaderContent}>{headerArea}</div>
+        </Header>
         <main className={classes.hero}>{children}</main>
         <Footer className={classes.footer}>{footerArea}</Footer>
       </div>
@@ -55,6 +86,8 @@ export const Shell: FC<ShellProps> = ({
               isTabletLayout={isTabletLayout}
               logoMarkAlt={logoMarkAlt}
               logoMarkSrc={logoMarkSrc}
+              logoAs={logoAs}
+              logoProps={logoProps}
               logoText={logoText}
               onClick={onLogoClick}
               openTrayLabel={openTrayLabel}
@@ -80,6 +113,8 @@ export const Shell: FC<ShellProps> = ({
                     isTabletLayout={isTabletLayout}
                     logoMarkAlt={logoMarkAlt}
                     logoMarkSrc={logoMarkSrc}
+                    logoAs={logoAs}
+                    logoProps={logoProps}
                     logoText={logoText}
                     onClick={onLogoClick}
                     openTrayLabel={openTrayLabel}
@@ -95,6 +130,8 @@ export const Shell: FC<ShellProps> = ({
                 isTabletLayout={isTabletLayout}
                 logoMarkAlt={logoMarkAlt}
                 logoMarkSrc={logoMarkSrc}
+                logoAs={logoAs}
+                logoProps={logoProps}
                 logoText={logoText}
                 onClick={onLogoClick}
               />

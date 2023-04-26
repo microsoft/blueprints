@@ -30,11 +30,24 @@ export const useShellStyles = makeStyles({
     position: 'relative',
   },
   heroHeader: {
-    position: 'relative',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
     zIndex: 100,
     width: '100%',
-    maxWidth: CONTAINER_WIDTH,
     minHeight: HEADER_HEIGHT,
+    transitionProperty: 'background-color',
+    transitionDuration: tokens.durationFast,
+    transitionTimingFunction: tokens.curveEasyEase,
+  },
+  heroHeaderScroll: {
+    backgroundColor: 'var(--arbutus--color-overlay-background)',
+    backdropFilter: 'blur(1rem)',
+    boxShadow: tokens.shadow8,
+  },
+  heroHeaderContent: {
+    maxWidth: CONTAINER_WIDTH,
     marginLeft: 'auto',
     marginRight: 'auto',
     [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {

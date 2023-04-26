@@ -37,6 +37,16 @@ export type ShellProps = {
   logoText?: string;
 
   /**
+   * Alternative logo element.
+   */
+  logoAs?: React.ElementType;
+
+  /**
+   * Props to be passed to the alternative logo element.
+   */
+  logoProps?: Record<string, unknown>;
+
+  /**
    * Accessible text for the close tray action.
    */
   closeTrayLabel?: string;
@@ -51,6 +61,13 @@ export type ShellProps = {
    * @default false
    * */
   isHeroMode?: boolean;
+
+  /**
+   * Sets the Shell to be in blank mode, meaning that the header and footer are not rendered. This is useful for pages
+   * that are not part of the main navigation or for preview pages.
+   * @default false
+   */
+  isBlankMode?: boolean;
 
   /**
    * Click handler for the logo. Usually used to return the user back to the home page.

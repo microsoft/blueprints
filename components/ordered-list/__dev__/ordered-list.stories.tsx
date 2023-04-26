@@ -16,34 +16,28 @@ export default {
 const Template: ComponentStory<typeof OrderedList> = (args) => (
   <OrderedList {...args}>
     <OrderedListItem>
-      <div>
-        <Text block variant="caption">
-          Primary variant
-        </Text>
-        <Text block variant="description">
-          Description item one on the list.
-        </Text>
-      </div>
+      <Text block variant="caption">
+        Primary variant
+      </Text>
+      <Text block variant="description">
+        Description item one on the list.
+      </Text>
     </OrderedListItem>
     <OrderedListItem variant="secondary">
-      <div>
-        <Text block variant="caption">
-          Secondary variant
-        </Text>
-        <Text block variant="description">
-          Description item two on the list.
-        </Text>
-      </div>
+      <Text block variant="caption">
+        Secondary variant
+      </Text>
+      <Text block variant="description">
+        Description item two on the list.
+      </Text>
     </OrderedListItem>
     <OrderedListItem variant="accent">
-      <div>
-        <Text block variant="caption">
-          Accent variant
-        </Text>
-        <Text block variant="description">
-          Description item three on the list.
-        </Text>
-      </div>
+      <Text block variant="caption">
+        Accent variant
+      </Text>
+      <Text block variant="description">
+        Description item three on the list.
+      </Text>
     </OrderedListItem>
   </OrderedList>
 );
