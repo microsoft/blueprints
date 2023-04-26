@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.use-css-vars
 
-This log was last generated on Thu, 16 Mar 2023 20:16:00 GMT and should not be manually modified.
+This log was last generated on Wed, 26 Apr 2023 20:19:06 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.1
+
+Wed, 26 Apr 2023 20:19:06 GMT
+
+### Patches
+
+- Removes unnecessary import (akimalunar@gmail.com)
 
 ## 1.0.0
 

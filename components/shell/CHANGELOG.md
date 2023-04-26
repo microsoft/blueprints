@@ -1,8 +1,21 @@
 # Change Log - @microsoft/arbutus.shell
 
-This log was last generated on Thu, 16 Mar 2023 20:16:00 GMT and should not be manually modified.
+This log was last generated on Wed, 26 Apr 2023 20:19:06 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.0
+
+Wed, 26 Apr 2023 20:19:06 GMT
+
+### Minor changes
+
+- Improves Shell API, adds iconAs prop. (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.footer to v1.0.1
+- Bump @microsoft/arbutus.header to v1.0.1
+- Bump @microsoft/arbutus.icon-button to v1.0.1
+- Bump @microsoft/arbutus.theming to v1.0.1
+- Bump @microsoft/arbutus.use-space-styles to v1.0.1
 
 ## 1.0.0
 

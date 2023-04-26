@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.use-css-vars",
   "entries": [
     {
+      "date": "Wed, 26 Apr 2023 20:19:06 GMT",
+      "tag": "@microsoft/arbutus.use-css-vars_v1.0.1",
+      "version": "1.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.use-css-vars",
+            "commit": "bde5e0e7af81293434b051e345bfc67053c15a93",
+            "comment": "Removes unnecessary import"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 16 Mar 2023 20:16:00 GMT",
       "tag": "@microsoft/arbutus.use-css-vars_v1.0.0",
       "version": "1.0.0",

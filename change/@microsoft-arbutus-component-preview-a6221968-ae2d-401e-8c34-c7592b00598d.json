@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Adds default theme index to ComponentPreview #92",
-  "packageName": "@microsoft/arbutus.component-preview",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

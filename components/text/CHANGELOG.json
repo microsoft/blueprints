@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.text",
   "entries": [
     {
+      "date": "Wed, 26 Apr 2023 20:19:06 GMT",
+      "tag": "@microsoft/arbutus.text_v1.0.1",
+      "version": "1.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.text",
+            "commit": "bde5e0e7af81293434b051e345bfc67053c15a93",
+            "comment": "Changes leading variant styles."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.text",
+            "comment": "Bump @microsoft/arbutus.theming to v1.0.1",
+            "commit": "5f415e00e3bc4f568429f07ed34ef0d2f846a982"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 16 Mar 2023 20:16:00 GMT",
       "tag": "@microsoft/arbutus.text_v1.0.0",
       "version": "1.0.0",
