@@ -2,6 +2,7 @@ import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import * as React from 'react';
 
 import { CONTAINER_WIDTH } from '../src';
@@ -65,6 +66,7 @@ const useMainStyles = makeStyles({
 
 export const HeroSample = () => {
   const classes = useMainStyles();
+  const space = useSpaceStyles();
 
   return (
     <div>
@@ -100,26 +102,27 @@ export const HeroSample = () => {
         </div>
       </div>
       <div className={classes.container}>
-        <Text block as="p" variant="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus
-          faucibus scelerisque eleifend. Turpis cursus in hac habitasse platea dictumst
-          quisque. Sed ullamcorper morbi tincidunt ornare massa eget. Dolor sit amet
-          consectetur adipiscing elit. Pellentesque elit ullamcorper dignissim cras
-          tincidunt lobortis feugiat. Bibendum ut tristique et egestas quis ipsum.
-          Maecenas accumsan lacus vel facilisis volutpat. Ac tortor dignissim convallis
-          aenean. Magnis dis parturient montes nascetur ridiculus mus mauris. Felis eget
-          velit aliquet sagittis id. Hendrerit dolor magna eget est lorem. Quam id leo in
-          vitae turpis massa sed elementum tempus. Tortor condimentum lacinia quis vel.
-          Lacus vel facilisis volutpat est velit. Morbi tristique senectus et netus et
-          malesuada. Fames ac turpis egestas maecenas pharetra. Integer malesuada nunc vel
-          risus commodo viverra maecenas. Sit amet justo donec enim diam vulputate.
-          Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nulla
-          at volutpat diam ut venenatis tellus in. Sed felis eget velit aliquet. Egestas
-          diam in arcu cursus euismod quis. Convallis tellus id interdum velit laoreet id.
-          Integer quis auctor elit sed vulputate mi. Sed id semper risus in hendrerit
-          gravida rutrum. Nec ultrices dui sapien eget mi proin. Ipsum dolor sit amet
-          consectetur adipiscing elit duis tristique. Adipiscing bibendum est ultricies
+        <Text block as="p" variant="description" className={space.mb12}>
+          Scroll down to see header animation. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend.
+          Turpis cursus in hac habitasse platea dictumst quisque. Sed ullamcorper morbi
+          tincidunt ornare massa eget. Dolor sit amet consectetur adipiscing elit.
+          Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.
+          Bibendum ut tristique et egestas quis ipsum. Maecenas accumsan lacus vel
+          facilisis volutpat. Ac tortor dignissim convallis aenean. Magnis dis parturient
+          montes nascetur ridiculus mus mauris. Felis eget velit aliquet sagittis id.
+          Hendrerit dolor magna eget est lorem. Quam id leo in vitae turpis massa sed
+          elementum tempus. Tortor condimentum lacinia quis vel. Lacus vel facilisis
+          volutpat est velit. Morbi tristique senectus et netus et malesuada. Fames ac
+          turpis egestas maecenas pharetra. Integer malesuada nunc vel risus commodo
+          viverra maecenas. Sit amet justo donec enim diam vulputate. Fermentum et
+          sollicitudin ac orci phasellus egestas tellus rutrum tellus. Nulla at volutpat
+          diam ut venenatis tellus in. Sed felis eget velit aliquet. Egestas diam in arcu
+          cursus euismod quis. Convallis tellus id interdum velit laoreet id. Integer quis
+          auctor elit sed vulputate mi. Sed id semper risus in hendrerit gravida rutrum.
+          Nec ultrices dui sapien eget mi proin. Ipsum dolor sit amet consectetur
+          adipiscing elit duis tristique. Adipiscing bibendum est ultricies integer.
           integer. Mattis nunc sed blandit libero volutpat sed cras ornare. Fringilla est
           ullamcorper eget nulla facilisi etiam dignissim diam. Ipsum consequat nisl vel
           pretium lectus quam. Vitae auctor eu augue ut lectus. Placerat vestibulum lectus

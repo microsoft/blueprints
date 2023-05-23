@@ -98,7 +98,9 @@ export const Shell: FC<ShellProps> = ({
 
         <div
           className={
-            !isTabletLayout ? mergeClasses(classes.grid, classes.minHeight) : undefined
+            !isTabletLayout
+              ? mergeClasses(classes.grid, classes.minHeight)
+              : classes.minHeightTablet
           }
         >
           {isTabletLayout ? (
