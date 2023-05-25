@@ -1,6 +1,6 @@
 import { makeStyles } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -30,10 +30,10 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof TableList>;
+} as Meta<typeof TableList>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof TableList> = (args) => {
+const Template: StoryFn<typeof TableList> = (args) => {
   const classes = useTemplateStyles();
 
   return (
@@ -86,15 +86,13 @@ const Template: ComponentStory<typeof TableList> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<TableListProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TableListProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   isAlternating: false,
   caption: 'TableList Example',
 };
-export const Alternating = Template.bind({}) as ComponentStory<
+export const Alternating = Template.bind({}) as StoryFn<
   FunctionComponent<TableListProps>
 >;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

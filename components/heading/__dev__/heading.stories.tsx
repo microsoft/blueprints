@@ -1,5 +1,5 @@
 import { colorClasses, Text, variantClasses } from '@microsoft/arbutus.text';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React, { useCallback, useState } from 'react';
 
@@ -23,21 +23,24 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Heading>;
+} as Meta<typeof Heading>;
 
-const Template: ComponentStory<typeof Heading> = (args) => {
+const Template: StoryFn<typeof Heading> = (args) => {
   const [copied, setCopied] = useState<boolean>(false);
   const [headingUrl, setHeadingUrl] = useState<string>('');
 
-  const onCopy = useCallback(({ url }: OnCopyArgs) => {
-    args.onCopy?.({ url });
-    setCopied(true);
-    setHeadingUrl(url);
-    setTimeout(() => {
-      setCopied(false);
-      setHeadingUrl('');
-    }, 2000);
-  }, []);
+  const onCopy = useCallback(
+    ({ url }: OnCopyArgs) => {
+      args.onCopy?.({ url });
+      setCopied(true);
+      setHeadingUrl(url);
+      setTimeout(() => {
+        setCopied(false);
+        setHeadingUrl('');
+      }, 2000);
+    },
+    [args],
+  );
 
   return (
     <>
@@ -51,9 +54,7 @@ const Template: ComponentStory<typeof Heading> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<HeadingProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<HeadingProps>>;
 Simple.args = {
   as: 'h1',
   children: 'Heading',
@@ -61,7 +62,7 @@ Simple.args = {
   variant: 'headline',
 };
 
-export const WithCopyLinkButton = Template.bind({}) as ComponentStory<
+export const WithCopyLinkButton = Template.bind({}) as StoryFn<
   FunctionComponent<HeadingProps>
 >;
 WithCopyLinkButton.args = {

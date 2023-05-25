@@ -41,6 +41,7 @@ const useMainStyles = makeStyles({
     width: '100%',
     position: 'absolute',
     bottom: '0',
+    backgroundImage: `linear-gradient(180deg, transparent, ${tokens.colorNeutralBackground1})`,
   },
   container: {
     position: 'relative',
@@ -72,13 +73,7 @@ export const HeroSample = () => {
     <div>
       <div className={classes.heroBackground} aria-hidden="true">
         <img className={classes.backgroundImage} src={heroBackground as string} alt="" />
-        <div
-          // @todo File a bug on Griffel.
-          style={{
-            background: `linear-gradient(180deg, transparent, ${tokens.colorNeutralBackground1})`,
-          }}
-          className={classes.gradientTransition}
-        />
+        <div className={classes.gradientTransition} />
       </div>
       <div className={classes.container}>
         <Text block as="h1" variant="jumbo" className={classes.titleMarginTop}>

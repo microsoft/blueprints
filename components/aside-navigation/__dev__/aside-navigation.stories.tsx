@@ -1,7 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React, { useEffect, useState } from 'react';
 
@@ -11,7 +11,7 @@ import { AsideNavigation, AsideNavigationLink } from '../src/index';
 export default {
   title: 'Layout/AsideNavigation',
   component: AsideNavigation,
-} as ComponentMeta<typeof AsideNavigation>;
+} as Meta<typeof AsideNavigation>;
 
 const items = ['Overview', 'Variants', 'Layout', 'Accessibility', 'Content'];
 
@@ -25,10 +25,7 @@ const useNavigationStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof AsideNavigation> = ({
-  title,
-  currentIndex: _i,
-}) => {
+const Template: StoryFn<typeof AsideNavigation> = ({ title, currentIndex: _i }) => {
   const [currentIndex, setCurrentIndex] = useState<number>(_i ?? 0);
 
   useEffect(() => setCurrentIndex(_i ?? 0), [_i]);
@@ -54,7 +51,7 @@ const Template: ComponentStory<typeof AsideNavigation> = ({
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
+export const Simple = Template.bind({}) as StoryFn<
   FunctionComponent<AsideNavigationProps>
 >;
 

@@ -9,6 +9,8 @@ lage.config.js
 __snapshots__
 .cache
 dist
+bin
+docs
 lib
 node_modules
 

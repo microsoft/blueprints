@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -16,14 +16,12 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
   },
-} as ComponentMeta<typeof PersonTile>;
+} as Meta<typeof PersonTile>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof PersonTile> = (args) => <PersonTile {...args} />;
+const Template: StoryFn<typeof PersonTile> = (args) => <PersonTile {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<PersonTileProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<PersonTileProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   firstName: 'Joanne',
@@ -32,7 +30,7 @@ Simple.args = {
   avatarSrc: avatar as string,
 };
 
-export const WithCustomIcon = Template.bind({}) as ComponentStory<
+export const WithCustomIcon = Template.bind({}) as StoryFn<
   FunctionComponent<PersonTileProps>
 >;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

@@ -3,7 +3,7 @@ import { makeStyles } from '@griffel/react';
 import { IconButton } from '@microsoft/arbutus.icon-button';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React, { useState } from 'react';
 
@@ -15,7 +15,7 @@ import { PageSample } from './page-sample';
 export default {
   title: 'Layout/Tray',
   component: Tray,
-} as ComponentMeta<typeof Tray>;
+} as Meta<typeof Tray>;
 
 const useGridStyles = makeStyles({
   root: {
@@ -30,7 +30,7 @@ const useGridStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof Tray> = (args) => {
+const Template: StoryFn<typeof Tray> = (args) => {
   const classes = useGridStyles();
   const space = useSpaceStyles();
 
@@ -44,12 +44,12 @@ const Template: ComponentStory<typeof Tray> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<TrayProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TrayProps>>;
 Simple.args = {
   isOpen: true,
 };
 
-const NavigationExampleTemplate: ComponentStory<typeof Tray> = () => {
+const NavigationExampleTemplate: StoryFn<typeof Tray> = () => {
   const classes = useGridStyles();
   const space = useSpaceStyles();
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -80,6 +80,6 @@ const NavigationExampleTemplate: ComponentStory<typeof Tray> = () => {
   );
 };
 
-export const NavigationExample = NavigationExampleTemplate.bind({}) as ComponentStory<
+export const NavigationExample = NavigationExampleTemplate.bind({}) as StoryFn<
   FunctionComponent<TrayProps>
 >;

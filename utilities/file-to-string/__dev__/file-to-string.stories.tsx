@@ -2,7 +2,7 @@ import { makeStyles } from '@griffel/react';
 import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
 import { Command } from '@microsoft/arbutus.command';
 import { Text } from '@microsoft/arbutus.text';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
@@ -50,14 +50,14 @@ const DemoComponent = () => {
 export default {
   title: 'Utilities/File To String',
   decorators: [
-    (Story) => (
+    (StoryFn) => (
       <Centered>
-        <Story />
+        <StoryFn />
       </Centered>
     ),
   ],
 } as Meta;
 
-const Template: Story = () => <DemoComponent />;
+const Template: StoryFn = () => <DemoComponent />;
 
-export const Demo = Template.bind({}) as Story;
+export const Demo = Template.bind({}) as StoryFn;

@@ -1,6 +1,6 @@
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -15,7 +15,7 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
   },
-} as ComponentMeta<typeof BookmarkTile>;
+} as Meta<typeof BookmarkTile>;
 
 const useTileGridStyles = makeStyles({
   root: {
@@ -31,7 +31,7 @@ const useTileGridStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof BookmarkTile> = (args) => {
+const Template: StoryFn<typeof BookmarkTile> = (args) => {
   const classes = useTileGridStyles();
 
   return (
@@ -43,14 +43,12 @@ const Template: ComponentStory<typeof BookmarkTile> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<BookmarkTileProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<BookmarkTileProps>>;
 Simple.args = {
   title: 'Link Name',
   description: 'BookmarkTile communicates to the user that this is a link to a resource.',
 };
-export const WithCustomIcon = Template.bind({}) as ComponentStory<
+export const WithCustomIcon = Template.bind({}) as StoryFn<
   FunctionComponent<BookmarkTileProps>
 >;
 WithCustomIcon.args = {

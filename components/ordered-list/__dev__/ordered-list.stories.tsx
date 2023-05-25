@@ -1,5 +1,5 @@
 import { Text } from '@microsoft/arbutus.text';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -10,10 +10,10 @@ import { OrderedList, OrderedListItem } from '../src/index';
 export default {
   title: 'Lists/OrderedList',
   component: OrderedList,
-} as ComponentMeta<typeof OrderedList>;
+} as Meta<typeof OrderedList>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof OrderedList> = (args) => (
+const Template: StoryFn<typeof OrderedList> = (args) => (
   <OrderedList {...args}>
     <OrderedListItem>
       <Text block variant="caption">
@@ -42,8 +42,6 @@ const Template: ComponentStory<typeof OrderedList> = (args) => (
   </OrderedList>
 );
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<OrderedListProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<OrderedListProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {};

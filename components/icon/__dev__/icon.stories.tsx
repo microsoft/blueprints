@@ -2,7 +2,7 @@ import { tokens } from '@fluentui/react-theme';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -42,7 +42,7 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof Icon>;
+} as Meta<typeof Icon>;
 
 const useGridStyles = makeStyles({
   root: {
@@ -74,7 +74,7 @@ const useGridStyles = makeStyles({
 });
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Icon> = (args) => {
+const Template: StoryFn<typeof Icon> = (args) => {
   const classes = useGridStyles();
   const space = useSpaceStyles();
 
@@ -95,7 +95,7 @@ const Template: ComponentStory<typeof Icon> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<IconProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<IconProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   iconName: 'exclamation',

@@ -1,7 +1,7 @@
 import { Text } from '@microsoft/arbutus.text';
 import type { ThemeOption } from '@microsoft/arbutus.theming';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import * as React from 'react';
 import { useState } from 'react';
@@ -30,13 +30,13 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof ComponentPreview>;
+} as Meta<typeof ComponentPreview>;
 
-const Template: ComponentStory<typeof ComponentPreview> = (args) => (
+const Template: StoryFn<typeof ComponentPreview> = (args) => (
   <ComponentPreview {...args} />
 );
 
-const AccessingPreviewThemeTemplate: ComponentStory<typeof ComponentPreview> = (args) => {
+const AccessingPreviewThemeTemplate: StoryFn<typeof ComponentPreview> = (args) => {
   const space = useSpaceStyles();
 
   const [currentTheme, setCurrentTheme] = useState<string>();
@@ -59,7 +59,7 @@ const AccessingPreviewThemeTemplate: ComponentStory<typeof ComponentPreview> = (
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
+export const Simple = Template.bind({}) as StoryFn<
   FunctionComponent<ComponentPreviewProps>
 >;
 Simple.args = {
@@ -68,7 +68,7 @@ Simple.args = {
   onFullScreen: undefined,
 };
 
-export const WithMenu = Template.bind({}) as ComponentStory<
+export const WithMenu = Template.bind({}) as StoryFn<
   FunctionComponent<ComponentPreviewProps>
 >;
 WithMenu.args = {
@@ -78,9 +78,9 @@ WithMenu.args = {
   themes,
 };
 
-export const AccessingPreviewTheme = AccessingPreviewThemeTemplate.bind(
-  {},
-) as ComponentStory<FunctionComponent<ComponentPreviewProps>>;
+export const AccessingPreviewTheme = AccessingPreviewThemeTemplate.bind({}) as StoryFn<
+  FunctionComponent<ComponentPreviewProps>
+>;
 AccessingPreviewTheme.args = {
   component: ExampleComponent,
   wrapper: ExampleWrapper,

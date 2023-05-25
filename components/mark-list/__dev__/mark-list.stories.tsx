@@ -1,7 +1,7 @@
 import { makeStyles } from '@griffel/react';
 import { colorClasses, paths } from '@microsoft/arbutus.icon';
 import { Text } from '@microsoft/arbutus.text';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -23,7 +23,7 @@ export default {
     },
   },
   decorators: [Centered],
-} as ComponentMeta<typeof MarkList>;
+} as Meta<typeof MarkList>;
 
 const useTileGridStyles = makeStyles({
   root: {
@@ -39,7 +39,7 @@ const useTileGridStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof MarkList> = (args) => (
+const Template: StoryFn<typeof MarkList> = (args) => (
   <MarkList {...args}>
     <MarkListItem>
       <Text as="span" variant="caption">
@@ -84,7 +84,7 @@ const Template: ComponentStory<typeof MarkList> = (args) => (
   </MarkList>
 );
 
-const TemplateWithIcon: ComponentStory<typeof MarkList> = (args) => {
+const TemplateWithIcon: StoryFn<typeof MarkList> = (args) => {
   const classes = useTileGridStyles();
 
   return (
@@ -113,15 +113,13 @@ const TemplateWithIcon: ComponentStory<typeof MarkList> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<MarkListProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<MarkListProps>>;
 Simple.args = {
   iconName: undefined,
   iconColor: undefined,
 };
 
-export const WithIcon = TemplateWithIcon.bind({}) as ComponentStory<
+export const WithIcon = TemplateWithIcon.bind({}) as StoryFn<
   FunctionComponent<MarkListProps>
 >;
 

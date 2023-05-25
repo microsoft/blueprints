@@ -6,7 +6,7 @@ import type { UseCopyToClipboard } from './use-copy-to-clipboard.types';
 const isBrowser = typeof window !== 'undefined';
 
 export const useCopyToClipboard: UseCopyToClipboard = (options) => {
-  const { resetTimeout = 2500 } = options || {};
+  const { resetTimeout = 2500 } = options ?? {};
 
   const [isCopied, setIsCopied] = useState<boolean>(false);
   const [error, setError] = useState<undefined | string>();

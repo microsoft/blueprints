@@ -1,6 +1,6 @@
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -28,7 +28,7 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof ActionListTile>;
+} as Meta<typeof ActionListTile>;
 
 const useTileGridStyles = makeStyles({
   root: {
@@ -83,7 +83,7 @@ const TileExample = ({ type }: { type: 'downloads' | 'links' }) => {
   );
 };
 
-const DownloadsTemplate: ComponentStory<typeof ActionListTile> = () => {
+const DownloadsTemplate: StoryFn<typeof ActionListTile> = () => {
   const classes = useTileGridStyles();
 
   return (
@@ -95,11 +95,11 @@ const DownloadsTemplate: ComponentStory<typeof ActionListTile> = () => {
   );
 };
 
-export const DownloadsExample = DownloadsTemplate.bind({}) as ComponentStory<
+export const DownloadsExample = DownloadsTemplate.bind({}) as StoryFn<
   FunctionComponent<ActionListTileProps>
 >;
 
-const LinksTemplate: ComponentStory<typeof ActionListTile> = () => {
+const LinksTemplate: StoryFn<typeof ActionListTile> = () => {
   const classes = useTileGridStyles();
 
   return (
@@ -111,6 +111,6 @@ const LinksTemplate: ComponentStory<typeof ActionListTile> = () => {
   );
 };
 
-export const LinksExample = LinksTemplate.bind({}) as ComponentStory<
+export const LinksExample = LinksTemplate.bind({}) as StoryFn<
   FunctionComponent<ActionListTileProps>
 >;

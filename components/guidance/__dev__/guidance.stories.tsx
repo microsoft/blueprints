@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent, ReactNode } from 'react';
 import React from 'react';
 
@@ -14,7 +14,7 @@ const Wrapper = ({ children }: { children?: ReactNode | undefined }) => (
 export default {
   title: 'Blocks/Guidance',
   component: Guidance,
-} as ComponentMeta<typeof Guidance>;
+} as Meta<typeof Guidance>;
 
 const legendListItems = Array.from({ length: 7 }, (_, index) => ({
   heading: `Heading ${index + 1}`,
@@ -23,13 +23,13 @@ const legendListItems = Array.from({ length: 7 }, (_, index) => ({
   }. Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.`,
 }));
 
-const Template: ComponentStory<typeof Guidance> = (args) => (
+const Template: StoryFn<typeof Guidance> = (args) => (
   <Wrapper>
     <Guidance {...args} />
   </Wrapper>
 );
 
-export const Full = Template.bind({}) as ComponentStory<FunctionComponent<GuidanceProps>>;
+export const Full = Template.bind({}) as StoryFn<FunctionComponent<GuidanceProps>>;
 
 Full.args = {
   imageProps: {
@@ -47,9 +47,7 @@ Full.args = {
   legendListItems: legendListItems,
 };
 
-export const Minimal = Template.bind({}) as ComponentStory<
-  FunctionComponent<GuidanceProps>
->;
+export const Minimal = Template.bind({}) as StoryFn<FunctionComponent<GuidanceProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Minimal.args = {
   imageProps: {

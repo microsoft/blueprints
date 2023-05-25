@@ -1,4 +1,4 @@
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
 import { useCopyToClipboard } from '../src/index';
@@ -31,6 +31,6 @@ export default {
 } as Meta;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: Story = () => <DemoComponent />;
+const Template: StoryFn = () => <DemoComponent />;
 
-export const Demo = Template.bind({}) as Story;
+export const Demo = Template.bind({}) as StoryFn;

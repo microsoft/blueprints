@@ -1,7 +1,7 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import { Divider } from '@microsoft/arbutus.divider';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -37,9 +37,9 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof Text>;
+} as Meta<typeof Text>;
 
-const Template: ComponentStory<typeof Text> = (args) => (
+const Template: StoryFn<typeof Text> = (args) => (
   <Text block {...args}>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate modi eveniet
     dolorum officiis assumenda similique a voluptas voluptatum ducimus temporibus. Culpa
@@ -47,19 +47,19 @@ const Template: ComponentStory<typeof Text> = (args) => (
   </Text>
 );
 
-const CodeTemplate: ComponentStory<typeof Text> = (args) => (
+const CodeTemplate: StoryFn<typeof Text> = (args) => (
   <Text block {...args}>
     {`<Text variant="code">Hello!</Text>`}
   </Text>
 );
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<TextProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TextProps>>;
 Simple.args = {
   color: 'primary',
   variant: 'paragraph',
 };
 
-export const Code = CodeTemplate.bind({}) as ComponentStory<FunctionComponent<TextProps>>;
+export const Code = CodeTemplate.bind({}) as StoryFn<FunctionComponent<TextProps>>;
 Code.args = {
   variant: 'code',
 };
@@ -79,7 +79,7 @@ const useGridStyles = makeStyles({
   },
 });
 
-const TemplateDemo: ComponentStory<typeof Text> = () => {
+const TemplateDemo: StoryFn<typeof Text> = () => {
   const space = useSpaceStyles();
   const grid = useGridStyles();
   const imageClasses = mergeClasses(grid.image, space.mb4);
@@ -179,6 +179,4 @@ const TemplateDemo: ComponentStory<typeof Text> = () => {
   );
 };
 
-export const StylesDemo = TemplateDemo.bind({}) as ComponentStory<
-  FunctionComponent<TextProps>
->;
+export const StylesDemo = TemplateDemo.bind({}) as StoryFn<FunctionComponent<TextProps>>;

@@ -1,6 +1,6 @@
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent, ReactNode } from 'react';
 import React from 'react';
 
@@ -46,7 +46,7 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof RecommendationTile>;
+} as Meta<typeof RecommendationTile>;
 
 const useTileGridStyles = makeStyles({
   root: {
@@ -62,7 +62,7 @@ const useTileGridStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof RecommendationTile> = (args) => {
+const Template: StoryFn<typeof RecommendationTile> = (args) => {
   const classes = useTileGridStyles();
 
   return (
@@ -73,7 +73,7 @@ const Template: ComponentStory<typeof RecommendationTile> = (args) => {
   );
 };
 
-export const WithImageAndWithLink = Template.bind({}) as ComponentStory<
+export const WithImageAndWithLink = Template.bind({}) as StoryFn<
   FunctionComponent<RecommendationTileProps>
 >;
 
@@ -95,7 +95,7 @@ WithImageAndWithLink.args = {
   },
 };
 
-export const WithImage = Template.bind({}) as ComponentStory<
+export const WithImage = Template.bind({}) as StoryFn<
   FunctionComponent<RecommendationTileProps>
 >;
 
@@ -111,7 +111,7 @@ WithImage.args = {
   },
 };
 
-export const WithoutImage = Template.bind({}) as ComponentStory<
+export const WithoutImage = Template.bind({}) as StoryFn<
   FunctionComponent<RecommendationTileProps>
 >;
 
@@ -124,7 +124,7 @@ WithoutImage.args = {
   imageProps: undefined,
 };
 
-export const WithLink = Template.bind({}) as ComponentStory<
+export const WithLink = Template.bind({}) as StoryFn<
   FunctionComponent<RecommendationTileProps>
 >;
 
@@ -143,7 +143,7 @@ WithLink.args = {
   },
 };
 
-export const WithRecommendationList = Template.bind({}) as ComponentStory<
+export const WithRecommendationList = Template.bind({}) as StoryFn<
   FunctionComponent<RecommendationTileProps>
 >;
 WithRecommendationList.args = {

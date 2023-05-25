@@ -1,7 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FC } from 'react';
 import React from 'react';
 
@@ -20,7 +20,7 @@ import { PageSample } from './page-sample';
 export default {
   title: 'Layout/Shell',
   component: Shell,
-} as ComponentMeta<typeof Shell>;
+} as Meta<typeof Shell>;
 
 const useMainAreaStyles = makeStyles({
   main: {
@@ -39,13 +39,13 @@ const NavigationArea: FC<{ children?: React.ReactNode }> = ({ children }) => (
   <Area className={useMainAreaStyles().navigation}>{children}</Area>
 );
 
-const Template: ComponentStory<typeof Shell> = (args) => (
+const Template: StoryFn<typeof Shell> = (args) => (
   <Shell {...args}>
     <Area className={useMainAreaStyles().main}>Main Area</Area>
   </Shell>
 );
 
-export const Simple = Template.bind({}) as ComponentStory<FC<ShellProps>>;
+export const Simple = Template.bind({}) as StoryFn<FC<ShellProps>>;
 
 Simple.args = {
   headerArea: <Area>Header Area</Area>,
@@ -56,13 +56,13 @@ Simple.args = {
   openTrayLabel: 'Open navigation.',
 };
 
-const FullExampleTemplate: ComponentStory<typeof Shell> = (args) => (
+const FullExampleTemplate: StoryFn<typeof Shell> = (args) => (
   <Shell {...args}>
     <PageSample />
   </Shell>
 );
 
-export const FullExample = FullExampleTemplate.bind({}) as ComponentStory<FC<ShellProps>>;
+export const FullExample = FullExampleTemplate.bind({}) as StoryFn<FC<ShellProps>>;
 FullExample.args = {
   headerArea: <HeaderSample />,
   navigationArea: <NavigationSample />,
@@ -73,7 +73,7 @@ FullExample.args = {
   openTrayLabel: 'Open navigation.',
 };
 
-const HeroExampleTemplate: ComponentStory<typeof Shell> = (args) => (
+const HeroExampleTemplate: StoryFn<typeof Shell> = (args) => (
   <Shell {...args}>
     <HeroSample />
   </Shell>
@@ -109,7 +109,7 @@ const HeroHeader: FC<{
   );
 };
 
-export const HeroExample = HeroExampleTemplate.bind({}) as ComponentStory<FC<ShellProps>>;
+export const HeroExample = HeroExampleTemplate.bind({}) as StoryFn<FC<ShellProps>>;
 HeroExample.args = {
   headerArea: <HeroHeader logoMarkAlt="Fluent logo" logoMarkSrc={logo as string} />,
   navigationArea: <NavigationSample />,
@@ -121,7 +121,7 @@ HeroExample.args = {
   isHeroMode: true,
 };
 
-export const BlankExample = Template.bind({}) as ComponentStory<FC<ShellProps>>;
+export const BlankExample = Template.bind({}) as StoryFn<FC<ShellProps>>;
 BlankExample.args = {
   headerArea: <HeroHeader logoMarkAlt="Fluent logo" logoMarkSrc={logo as string} />,
   navigationArea: <NavigationSample />,
@@ -155,7 +155,7 @@ const CustomLogo = ({ title }) => (
   </>
 );
 
-export const WithCustomLogo = Template.bind({}) as ComponentStory<FC<ShellProps>>;
+export const WithCustomLogo = Template.bind({}) as StoryFn<FC<ShellProps>>;
 
 WithCustomLogo.args = {
   headerArea: <Area>Header Area</Area>,

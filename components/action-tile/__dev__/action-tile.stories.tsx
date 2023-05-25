@@ -1,7 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -26,7 +26,7 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof ActionTile>;
+} as Meta<typeof ActionTile>;
 
 const useTileGridStyles = makeStyles({
   root: {
@@ -43,7 +43,7 @@ const useTileGridStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof ActionTile> = (args) => {
+const Template: StoryFn<typeof ActionTile> = (args) => {
   const classes = useTileGridStyles();
 
   return (
@@ -57,7 +57,7 @@ const Template: ComponentStory<typeof ActionTile> = (args) => {
   );
 };
 
-export const WithoutImage = Template.bind({}) as ComponentStory<
+export const WithoutImage = Template.bind({}) as StoryFn<
   FunctionComponent<ActionTileProps>
 >;
 WithoutImage.args = {
@@ -65,9 +65,7 @@ WithoutImage.args = {
   description: 'Component',
 };
 
-export const WithImage = Template.bind({}) as ComponentStory<
-  FunctionComponent<ActionTileProps>
->;
+export const WithImage = Template.bind({}) as StoryFn<FunctionComponent<ActionTileProps>>;
 WithImage.args = {
   title: 'ActionTile',
   description: 'Component',

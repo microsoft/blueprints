@@ -2,7 +2,7 @@ import { makeStyles } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -39,10 +39,10 @@ const Content = ({ index }: { index: string }) => {
 export default {
   title: 'Atoms/Tabs',
   component: Tabs,
-} as ComponentMeta<typeof Tabs>;
+} as Meta<typeof Tabs>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Tabs> = (args) => {
+const Template: StoryFn<typeof Tabs> = (args) => {
   const classes = usePreviewStyles();
 
   return (
@@ -68,4 +68,4 @@ const Template: ComponentStory<typeof Tabs> = (args) => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<TabsProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TabsProps>>;

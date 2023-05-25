@@ -1,0 +1,22 @@
+{
+  "sourceType": "unambiguous",
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": 100
+        }
+      }
+    ],
+    "@babel/preset-react",
+    [
+      "@babel/preset-typescript", {
+        "isTSX": true,
+        "allExtensions": true,
+        "onlyRemoveTypeImports": true
+      }
+    ]
+  ],
+  "plugins": []
+}

@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -16,10 +16,10 @@ export default {
       control: { type: 'select' },
     },
   },
-} as ComponentMeta<typeof Callout>;
+} as Meta<typeof Callout>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Callout> = (args) => (
+const Template: StoryFn<typeof Callout> = (args) => (
   <Callout {...args}>
     <p>
       Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
@@ -31,9 +31,7 @@ const Template: ComponentStory<typeof Callout> = (args) => (
   </Callout>
 );
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<CalloutProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<CalloutProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   title: 'Simple Callout Example',

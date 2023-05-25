@@ -2,7 +2,7 @@ import { tokens } from '@fluentui/react-theme';
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -25,7 +25,7 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Tile>;
+} as Meta<typeof Tile>;
 
 const useGridStyles = makeStyles({
   root: {
@@ -111,9 +111,7 @@ const Template = (args) => {
   );
 };
 
-export const CardVariant = Template.bind({}) as ComponentStory<
-  FunctionComponent<TileProps>
->;
+export const CardVariant = Template.bind({}) as StoryFn<FunctionComponent<TileProps>>;
 CardVariant.args = {
   variant: 'card',
 };
@@ -138,7 +136,7 @@ const ImageTemplate = (args) => {
   );
 };
 
-export const ImageVariant = ImageTemplate.bind({}) as ComponentStory<
+export const ImageVariant = ImageTemplate.bind({}) as StoryFn<
   FunctionComponent<TileProps>
 >;
 ImageVariant.args = {
@@ -146,7 +144,7 @@ ImageVariant.args = {
   imageSrc: background as string,
 };
 
-export const SolidColorVariant = Template.bind({}) as ComponentStory<
+export const SolidColorVariant = Template.bind({}) as StoryFn<
   FunctionComponent<TileProps>
 >;
 SolidColorVariant.args = {
@@ -205,6 +203,6 @@ const InteractiveTemplate = () => {
   );
 };
 
-export const InteractiveVariant = InteractiveTemplate.bind({}) as ComponentStory<
+export const InteractiveVariant = InteractiveTemplate.bind({}) as StoryFn<
   FunctionComponent<TileProps>
 >;

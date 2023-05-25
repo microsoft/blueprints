@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Package upgrades: Storybook v7, Typescript v5.",
+  "packageName": "@microsoft/arbutus.global-styles",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

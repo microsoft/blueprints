@@ -1,7 +1,7 @@
 import { Command } from '@microsoft/arbutus.command';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
@@ -49,14 +49,14 @@ const DemoComponent = () => {
 export default {
   title: 'Utilities/Prop Docs CLI',
   decorators: [
-    (Story) => (
+    (StoryFn) => (
       <Centered>
-        <Story />
+        <StoryFn />
       </Centered>
     ),
   ],
 } as Meta;
 
-const Template: Story = () => <DemoComponent />;
+const Template: StoryFn = () => <DemoComponent />;
 
-export const Demo = Template.bind({}) as Story;
+export const Demo = Template.bind({}) as StoryFn;

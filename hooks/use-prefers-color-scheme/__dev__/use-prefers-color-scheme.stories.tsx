@@ -1,5 +1,5 @@
 import { Text } from '@microsoft/arbutus.text';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -33,16 +33,16 @@ const DemoComponent: FunctionComponent = () => {
 export default {
   title: 'Hooks/UsePrefersColorScheme',
   decorators: [
-    (Story) => (
+    (StoryFn) => (
       <Centered>
         <div style={{ width: '90%' }}>
-          <Story />
+          <StoryFn />
         </div>
       </Centered>
     ),
   ],
 } as Meta;
 
-const Template: Story = () => <DemoComponent />;
+const Template: StoryFn = () => <DemoComponent />;
 
-export const Simple = Template.bind({}) as Story;
+export const Simple = Template.bind({}) as StoryFn;
