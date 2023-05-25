@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes the minimum height of main in hero, tablet layouts.",
+  "packageName": "@microsoft/arbutus.shell",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

@@ -7,10 +7,10 @@ import {
 import type { FC, ReactNode } from 'react';
 import * as React from 'react';
 
-const Link: FC<{ href: string; children?: ReactNode | undefined }> = ({
+const Link: FC<{ href: string; children?: ReactNode | undefined, className?: string }> = ({
   children,
-  href,
-}) => <a href={href}>{children}</a>;
+  ...props
+}) => <a {...props}>{children}</a>;
 
 export const NavigationMenu = () => (
   <MainNavigation>

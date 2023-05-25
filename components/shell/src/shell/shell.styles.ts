@@ -24,7 +24,7 @@ export const useShellStyles = makeStyles({
   },
   hero: {
     width: '100%',
-    minHeight: `calc(100vh - (${HEADER_HEIGHT} + ${FOOTER_HEIGHT}))`,
+    minHeight: `calc(100vh - ${FOOTER_HEIGHT})`,
   },
   heroWrapper: {
     position: 'relative',
@@ -71,6 +71,9 @@ export const useShellStyles = makeStyles({
   },
   minHeight: {
     minHeight: `calc(100vh - ${FOOTER_HEIGHT})`,
+  },
+  minHeightTablet: {
+    minHeight: `calc(100vh - (${FOOTER_HEIGHT} + ${HEADER_HEIGHT}))`,
   },
   footer: {
     minHeight: FOOTER_HEIGHT,
