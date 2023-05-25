@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -9,12 +9,12 @@ import { Tag } from '../src/index';
 export default {
   title: 'Atoms/Tag',
   component: Tag,
-} as ComponentMeta<typeof Tag>;
+} as Meta<typeof Tag>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Tag> = (args) => <Tag {...args} />;
+const Template: StoryFn<typeof Tag> = (args) => <Tag {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<TagProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TagProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   type: 'accent',

@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -33,13 +33,11 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof Sandbox>;
+} as Meta<typeof Sandbox>;
 
-const Template: ComponentStory<typeof Sandbox> = (args) => <Sandbox {...args} />;
+const Template: StoryFn<typeof Sandbox> = (args) => <Sandbox {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<SandboxProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<SandboxProps>>;
 Simple.args = {
   files: {
     '/App.tsx': {

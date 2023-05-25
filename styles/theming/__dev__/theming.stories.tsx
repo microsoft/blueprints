@@ -1,7 +1,7 @@
 import { Button } from '@microsoft/arbutus.button';
 import { Text } from '@microsoft/arbutus.text';
 import { ThemeSwitch } from '@microsoft/arbutus.theme-switch';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -29,10 +29,10 @@ export default {
   title: 'Styles/Theming',
 } as Meta;
 
-const Template: Story = () => (
+const Template: StoryFn = () => (
   <ThemeProvider>
     <DemoComponent />
   </ThemeProvider>
 );
 
-export const Simple = Template.bind({}) as Story;
+export const Simple = Template.bind({}) as StoryFn;

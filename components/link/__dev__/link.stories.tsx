@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent, ReactNode, SyntheticEvent } from 'react';
 import React from 'react';
 
@@ -21,7 +21,7 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Link>;
+} as Meta<typeof Link>;
 
 const LinkSample: React.FC<{ className: string; children?: ReactNode | undefined }> = ({
   children,
@@ -39,24 +39,22 @@ const LinkSample: React.FC<{ className: string; children?: ReactNode | undefined
   );
 };
 
-const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
+const Template: StoryFn<typeof Link> = (args) => <Link {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<LinkProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<LinkProps>>;
 Simple.args = {
   children: 'Simple Link Example',
   as: LinkSample,
 };
 
-export const IsUnderlined = Template.bind({}) as ComponentStory<
-  FunctionComponent<LinkProps>
->;
+export const IsUnderlined = Template.bind({}) as StoryFn<FunctionComponent<LinkProps>>;
 IsUnderlined.args = {
   children: 'Queen of Style',
   isUnderlined: true,
   as: LinkSample,
 };
 
-export const WithIcon = Template.bind({}) as ComponentStory<FunctionComponent<LinkProps>>;
+export const WithIcon = Template.bind({}) as StoryFn<FunctionComponent<LinkProps>>;
 WithIcon.args = {
   children: 'Open in new tab',
   withIcon: true,

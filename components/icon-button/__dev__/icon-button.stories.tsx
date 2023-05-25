@@ -1,5 +1,5 @@
 import { paths } from '@microsoft/arbutus.icon';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -25,13 +25,11 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof IconButton>;
+} as Meta<typeof IconButton>;
 
-const Template: ComponentStory<typeof IconButton> = (args) => <IconButton {...args} />;
+const Template: StoryFn<typeof IconButton> = (args) => <IconButton {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<IconButtonProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<IconButtonProps>>;
 Simple.args = {
   label: 'Simple IconButton Example',
   iconName: 'x',

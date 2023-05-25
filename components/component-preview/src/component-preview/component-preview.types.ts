@@ -16,6 +16,8 @@ export type ComponentPreviewProps = {
    * @default ({ children }) => <>{children}</>
    * @example ({ children, currentThemeKey }) => <ThemeProvider theme={currentThemeKey}>{children}</ThemeProvider>
    */
+  // This is exposed to the consumer, so we have to use any here.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   wrapper?: ({ children, themeKey }: WrapperProps) => ReactElement<any, any> | null;
 
   /**

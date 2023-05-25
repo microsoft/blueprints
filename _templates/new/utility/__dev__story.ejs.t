@@ -1,7 +1,7 @@
 ---
 to: utilities/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>/__dev__/<%= h.changeCase.lower(h.inflection.dasherize(name)) %>.stories.tsx
 ---
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
 import { <%= h.changeCase.camel(name) %> } from '../src/index';
@@ -21,8 +21,8 @@ export default {
   title: 'Utilities/<%= h.changeCase.pascalCase(name) %>',
 } as Meta;
 
-const Template: Story = () => (
+const Template: StoryFn = () => (
   <DemoComponent />
 );
 
-export const Demo = Template.bind({}) as Story;
+export const Demo = Template.bind({}) as StoryFn;

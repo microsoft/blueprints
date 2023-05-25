@@ -12,20 +12,24 @@ import { useLayoutEffect, useRef, useState } from 'react';
 import { useGuidanceStyles } from './guidance.styles';
 import type { GuidanceProps } from './guidance.types';
 
-const useSize = (target: MutableRefObject<null>): { width: number; height: number } => {
-  const [size, setSize] = useState();
+/**
+ * @todo [Extract useSize into its own package #103](https://github.com/microsoft/arbutus/issues/103)
+ * */
+type Size = { width: number; height: number };
+
+function useSize<T extends HTMLElement>(
+  target: MutableRefObject<T | null>,
+): Size | undefined {
+  const [size, setSize] = useState<Size>();
 
   useLayoutEffect(() => {
-    // @ts-ignore-next-line Need to access the bounding client rect on mount.
     setSize(target?.current?.getBoundingClientRect());
   }, [target]);
 
-  // @ts-ignore-next-line
   useResizeObserver(target, (entry) => setSize(entry.contentRect));
 
-  // @ts-ignore-next-line
-  return size as { width: number; height: number };
-};
+  return size;
+}
 
 export const Guidance: FC<GuidanceProps> = ({
   className,
@@ -40,9 +44,9 @@ export const Guidance: FC<GuidanceProps> = ({
   openButtonLabel,
   url,
 }) => {
-  const ref = useRef(null);
-  const value = useSize(ref);
-  const width = value?.width ?? 726;
+  const ref = useRef<HTMLDivElement | null>(null);
+  const size = useSize<HTMLDivElement>(ref);
+  const width = size?.width ?? 726;
   let lists = [legendListItems];
   let middle = 0;
   const isTwoColumn = legendListItems && width > 726;

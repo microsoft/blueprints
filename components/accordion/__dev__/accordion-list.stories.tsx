@@ -1,5 +1,5 @@
 import { Text } from '@microsoft/arbutus.text';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -10,9 +10,9 @@ import { DemoContent } from './partials/demo-content';
 export default {
   title: 'Lists/AccordionList',
   component: AccordionItem,
-} as ComponentMeta<typeof AccordionItem>;
+} as Meta<typeof AccordionItem>;
 
-const ItemTemplate: ComponentStory<typeof AccordionItem> = (args) => (
+const ItemTemplate: StoryFn<typeof AccordionItem> = (args) => (
   <div style={{ width: '600px' }}>
     <AccordionItem {...args} />
   </div>
@@ -21,7 +21,7 @@ const ItemTemplate: ComponentStory<typeof AccordionItem> = (args) => (
 const lorem =
   'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas cupiditate inventore id voluptatum ipsa. Voluptatibus, id. Deserunt modi labore culpa quis consectetur aut corporis reiciendis, eligendi sit, maxime harum magnam.';
 
-export const Item = ItemTemplate.bind({}) as ComponentStory<
+export const Item = ItemTemplate.bind({}) as StoryFn<
   FunctionComponent<AccordionItemProps>
 >;
 Item.args = {
@@ -29,13 +29,13 @@ Item.args = {
   children: <Text block>{lorem}</Text>,
 };
 
-const ListTemplate: ComponentStory<typeof AccordionItem> = (args) => (
+const ListTemplate: StoryFn<typeof AccordionItem> = (args) => (
   <div style={{ width: '600px', height: '100%' }}>
     <AccordionList {...args} />
   </div>
 );
 
-export const List = ListTemplate.bind({}) as ComponentStory<
+export const List = ListTemplate.bind({}) as StoryFn<
   FunctionComponent<AccordionListProps>
 >;
 

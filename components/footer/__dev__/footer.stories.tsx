@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -8,11 +8,11 @@ import { Footer } from '../src/index';
 export default {
   title: 'Layout/Footer',
   component: Footer,
-} as ComponentMeta<typeof Footer>;
+} as Meta<typeof Footer>;
 
-const Template: ComponentStory<typeof Footer> = (args) => <Footer {...args} />;
+const Template: StoryFn<typeof Footer> = (args) => <Footer {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<FooterProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<FooterProps>>;
 Simple.args = {
   children: 'Simple Footer Example',
 };

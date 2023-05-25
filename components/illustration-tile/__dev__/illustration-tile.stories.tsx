@@ -1,6 +1,6 @@
 import { makeStyles } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -17,7 +17,7 @@ export default {
   argTypes: {
     onClick: { action: 'clicked' },
   },
-} as ComponentMeta<typeof IllustrationTile>;
+} as Meta<typeof IllustrationTile>;
 
 const useTileGridStyles = makeStyles({
   root: {
@@ -33,7 +33,7 @@ const useTileGridStyles = makeStyles({
   },
 });
 
-const Template: ComponentStory<typeof IllustrationTile> = (args) => {
+const Template: StoryFn<typeof IllustrationTile> = (args) => {
   const classes = useTileGridStyles();
 
   return (
@@ -45,7 +45,7 @@ const Template: ComponentStory<typeof IllustrationTile> = (args) => {
   );
 };
 
-export const Interactive = Template.bind({}) as ComponentStory<
+export const Interactive = Template.bind({}) as StoryFn<
   FunctionComponent<IllustrationTileProps>
 >;
 Interactive.args = {
@@ -55,7 +55,7 @@ Interactive.args = {
   illustrationSrc: illustrationInteractive as string,
 };
 
-export const Static = Template.bind({}) as ComponentStory<
+export const Static = Template.bind({}) as StoryFn<
   FunctionComponent<IllustrationTileProps>
 >;
 Static.args = {

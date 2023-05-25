@@ -3,7 +3,7 @@ import { makeStyles, mergeClasses } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FC, FunctionComponent, ReactNode } from 'react';
 import React, { useState } from 'react';
 
@@ -22,7 +22,7 @@ import {
 export default {
   title: 'Layout/MainNavigation',
   component: MainNavigation,
-} as ComponentMeta<typeof MainNavigation>;
+} as Meta<typeof MainNavigation>;
 
 const Link: FC<{
   onClick: () => void;
@@ -137,7 +137,7 @@ const findTitle = (items: NavigationItems, id: string): string | undefined => {
   }
 };
 
-const Template: ComponentStory<typeof MainNavigation> = () => {
+const Template: StoryFn<typeof MainNavigation> = () => {
   const classes = useNavigationStyles();
   const space = useSpaceStyles();
   const [active, setActive] = useState(
@@ -165,6 +165,6 @@ const Template: ComponentStory<typeof MainNavigation> = () => {
   );
 };
 
-export const Simple = Template.bind({}) as ComponentStory<
+export const Simple = Template.bind({}) as StoryFn<
   FunctionComponent<MainNavigationProps>
 >;

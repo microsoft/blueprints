@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -20,14 +20,12 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof PropTable>;
+} as Meta<typeof PropTable>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof PropTable> = (args) => <PropTable {...args} />;
+const Template: StoryFn<typeof PropTable> = (args) => <PropTable {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<PropTableProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<PropTableProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   propsDoc: demoComponentPropDoc,

@@ -1,5 +1,5 @@
 import { paths } from '@microsoft/arbutus.icon';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -25,25 +25,23 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Badge>;
+} as Meta<typeof Badge>;
 
-const Template: ComponentStory<typeof Badge> = (args) => <Badge {...args} />;
+const Template: StoryFn<typeof Badge> = (args) => <Badge {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<BadgeProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<BadgeProps>>;
 Simple.args = {
   color: 'positive',
   iconName: 'check',
 };
 
-const InlineTemplate: ComponentStory<typeof Badge> = (args) => (
+const InlineTemplate: StoryFn<typeof Badge> = (args) => (
   <p>
     <Badge {...args} /> Lorem ipsum dolor.
   </p>
 );
 
-export const Inline = InlineTemplate.bind({}) as ComponentStory<
-  FunctionComponent<BadgeProps>
->;
+export const Inline = InlineTemplate.bind({}) as StoryFn<FunctionComponent<BadgeProps>>;
 Inline.args = {
   color: 'positive',
   iconName: 'exclamation',

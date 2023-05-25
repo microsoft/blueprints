@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -24,14 +24,12 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof ImageTile>;
+} as Meta<typeof ImageTile>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ImageTile> = (args) => <ImageTile {...args} />;
+const Template: StoryFn<typeof ImageTile> = (args) => <ImageTile {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<ImageTileProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<ImageTileProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   title: 'InfoTip',
@@ -42,9 +40,7 @@ Simple.args = {
   },
 };
 
-export const TitleOnly = Template.bind({}) as ComponentStory<
-  FunctionComponent<ImageTileProps>
->;
+export const TitleOnly = Template.bind({}) as StoryFn<FunctionComponent<ImageTileProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 TitleOnly.args = {
   title: 'InfoTip',
@@ -54,7 +50,7 @@ TitleOnly.args = {
   },
 };
 
-export const DescriptionOnly = Template.bind({}) as ComponentStory<
+export const DescriptionOnly = Template.bind({}) as StoryFn<
   FunctionComponent<ImageTileProps>
 >;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args

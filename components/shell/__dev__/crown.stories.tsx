@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -27,11 +27,11 @@ export default {
       </Centered>
     ),
   ],
-} as ComponentMeta<typeof Crown>;
+} as Meta<typeof Crown>;
 
-const Template: ComponentStory<typeof Crown> = (args) => <Crown {...args} />;
+const Template: StoryFn<typeof Crown> = (args) => <Crown {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<FunctionComponent<CrownProps>>;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<CrownProps>>;
 
 Simple.args = {
   logoMarkAlt: 'Arbutus logo',
@@ -40,9 +40,7 @@ Simple.args = {
   isTabletLayout: false,
 };
 
-export const TabletLayout = Template.bind({}) as ComponentStory<
-  FunctionComponent<CrownProps>
->;
+export const TabletLayout = Template.bind({}) as StoryFn<FunctionComponent<CrownProps>>;
 
 TabletLayout.args = {
   logoMarkAlt: 'Arbutus logo',
@@ -51,9 +49,7 @@ TabletLayout.args = {
   isTabletLayout: true,
 };
 
-export const ImageOnly = Template.bind({}) as ComponentStory<
-  FunctionComponent<CrownProps>
->;
+export const ImageOnly = Template.bind({}) as StoryFn<FunctionComponent<CrownProps>>;
 
 ImageOnly.args = {
   logoMarkAlt: 'Fluent logo',
@@ -83,7 +79,7 @@ const CustomLogo = ({ title }) => (
   </>
 );
 
-export const WithCustomLogoMarkElement = Template.bind({}) as ComponentStory<
+export const WithCustomLogoMarkElement = Template.bind({}) as StoryFn<
   FunctionComponent<CrownProps>
 >;
 

@@ -1,4 +1,4 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
@@ -30,14 +30,12 @@ const data = items.map((text) => [{ content: <Content text={text} /> }, image({ 
 export default {
   title: 'Blocks/DataTable',
   component: DataTable,
-} as ComponentMeta<typeof DataTable>;
+} as Meta<typeof DataTable>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof DataTable> = (args) => <DataTable {...args} />;
+const Template: StoryFn<typeof DataTable> = (args) => <DataTable {...args} />;
 
-export const Simple = Template.bind({}) as ComponentStory<
-  FunctionComponent<DataTableProps>
->;
+export const Simple = Template.bind({}) as StoryFn<FunctionComponent<DataTableProps>>;
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Simple.args = {
   rows: data,
