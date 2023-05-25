@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.use-prefers-color-scheme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "usePrefersColorScheme returns a value of prefers-color-scheme media query. Based on Media Queries Level 5: 11.5. Detecting the desire for light or dark color schemes: the prefers-color-scheme feature.",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -1,8 +1,23 @@
 # Change Log - @microsoft/arbutus.shell
 
-This log was last generated on Wed, 26 Apr 2023 20:19:06 GMT and should not be manually modified.
+This log was last generated on Thu, 25 May 2023 22:37:04 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.1
+
+Thu, 25 May 2023 22:37:04 GMT
+
+### Patches
+
+- Fixes the minimum height of main in hero, tablet layouts. (akimalunar@gmail.com)
+- Package upgrades: Storybook v7, Typescript v5. (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.footer to v1.0.2
+- Bump @microsoft/arbutus.header to v1.0.2
+- Bump @microsoft/arbutus.icon-button to v1.0.2
+- Bump @microsoft/arbutus.theming to v1.0.2
+- Bump @microsoft/arbutus.tray to v1.0.1
+- Bump @microsoft/arbutus.use-space-styles to v1.0.2
 
 ## 1.1.0
 

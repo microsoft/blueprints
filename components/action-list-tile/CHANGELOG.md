@@ -1,8 +1,20 @@
 # Change Log - @microsoft/arbutus.action-list-tile
 
-This log was last generated on Wed, 26 Apr 2023 20:19:06 GMT and should not be manually modified.
+This log was last generated on Thu, 25 May 2023 22:37:05 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.2
+
+Thu, 25 May 2023 22:37:05 GMT
+
+### Patches
+
+- Package upgrades: Storybook v7, Typescript v5. (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.icon to v1.0.2
+- Bump @microsoft/arbutus.text to v1.0.2
+- Bump @microsoft/arbutus.tile to v1.0.2
+- Bump @microsoft/arbutus.use-space-styles to v1.0.2
 
 ## 1.0.1
 

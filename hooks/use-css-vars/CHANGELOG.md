@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.use-css-vars
 
-This log was last generated on Wed, 26 Apr 2023 20:19:06 GMT and should not be manually modified.
+This log was last generated on Thu, 25 May 2023 22:37:04 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.2
+
+Thu, 25 May 2023 22:37:04 GMT
+
+### Patches
+
+- Package upgrades: Storybook v7, Typescript v5. (akimalunar@gmail.com)
 
 ## 1.0.1
 

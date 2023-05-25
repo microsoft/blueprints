@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.file-to-string",
   "entries": [
     {
+      "date": "Thu, 25 May 2023 22:37:05 GMT",
+      "tag": "@microsoft/arbutus.file-to-string_v1.0.1",
+      "version": "1.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.file-to-string",
+            "commit": "7c992479d0e7cd911482ffd1366661bad572fd7c",
+            "comment": "Package upgrades: Storybook v7, Typescript v5."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 16 Mar 2023 20:16:00 GMT",
       "tag": "@microsoft/arbutus.file-to-string_v1.0.0",
       "version": "1.0.0",
