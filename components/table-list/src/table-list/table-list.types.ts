@@ -7,14 +7,24 @@ export type TableListProps = {
   className?: string;
 
   /**
-   * Alternating row colors variant.
+   * Table style variants.
+   * @default 'default'.
    */
-  isAlternating?: boolean;
-
+  variant?: 'default' | 'alternating' | 'borderless';
   /**
-   * Table title (caption).
+   * Table title (accessible caption).
    */
   caption?: string;
+
+  /**
+   * Accessible description for the table.
+   */
+  description?: string;
+
+  /**
+   * Table column widths.
+   */
+  columnWeights?: (number | string)[];
 
   children?: ReactNode | undefined;
 } & TableHTMLAttributes<HTMLTableElement>;

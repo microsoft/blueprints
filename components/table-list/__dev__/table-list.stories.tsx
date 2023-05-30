@@ -23,11 +23,9 @@ export default {
   component: TableList,
   decorators: [
     (Story) => (
-      <Centered>
-        <div>
-          <Story />
-        </div>
-      </Centered>
+      <div style={{ maxWidth: '980px', padding: '24px', margin: '0 auto' }}>
+        <Story />
+      </div>
     ),
   ],
 } as Meta<typeof TableList>;
@@ -73,6 +71,16 @@ const Template: StoryFn<typeof TableList> = (args) => {
         </TableRow>
         <TableRow>
           <TableCell isHeader className={classes.header}>
+            Text
+          </TableCell>
+          <TableCell className={classes.domain}>Typography</TableCell>
+          <TableCell>
+            <Text variant="code">{`<Link href="#">Click me!</Link>`}</Text>
+          </TableCell>
+          <TableCell>No additional info.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell isHeader className={classes.header}>
             Link
           </TableCell>
           <TableCell className={classes.domain}>Navigation</TableCell>
@@ -87,15 +95,31 @@ const Template: StoryFn<typeof TableList> = (args) => {
 };
 
 export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TableListProps>>;
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
 Simple.args = {
-  isAlternating: false,
+  variant: 'default',
   caption: 'TableList Example',
+  description:
+    'This is an example of a TableList description. This helps users understand the context of the data.',
 };
 export const Alternating = Template.bind({}) as StoryFn<
   FunctionComponent<TableListProps>
 >;
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
 Alternating.args = {
-  isAlternating: true,
+  variant: 'alternating',
+};
+
+export const Borderless = Template.bind({}) as StoryFn<FunctionComponent<TableListProps>>;
+
+Borderless.args = {
+  variant: 'borderless',
+};
+
+export const ColumnWeights = Template.bind({}) as StoryFn<
+  FunctionComponent<TableListProps>
+>;
+
+ColumnWeights.args = {
+  columnWeights: [1, 1, 2, 1],
 };

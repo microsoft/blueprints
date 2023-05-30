@@ -14,7 +14,7 @@ export default {
   decorators: [
     (Story) => (
       <Centered>
-        <div>
+        <div style={{ maxWidth: '980px', padding: '0 24px' }}>
           <Story />
         </div>
       </Centered>
