@@ -6,7 +6,7 @@ export const useTableRowStyles = makeStyles({
     display: 'grid',
   },
   alternating: {
-    '&:nth-child(even) td, &:nth-child(even) th': {
+    '&:nth-child(even)': {
       backgroundColor: tokens.colorNeutralBackground3,
       ...shorthands.borderRadius(tokens.borderRadiusMedium),
     },
@@ -17,5 +17,9 @@ export const useTableRowStyles = makeStyles({
       borderBottomWidth: tokens.strokeWidthThin,
       borderBottomColor: tokens.colorNeutralStroke1,
     },
+  },
+  collapsed: {
+    paddingTop: tokens.spacingVerticalXL,
+    paddingBottom: tokens.spacingVerticalXL,
   },
 });

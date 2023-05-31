@@ -25,5 +25,10 @@ export type TableCellProps = {
    */
   isHeader?: boolean;
 
+  /**
+   * @private [INTERNAL] DO NOT USE.
+   */
+  __index?: number;
+
   children?: ReactNode | undefined;
 } & (TableData | TableHeader);

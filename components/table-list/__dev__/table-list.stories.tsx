@@ -4,18 +4,8 @@ import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
-import { Centered } from '../../../.storybook/decorators';
 import type { TableListProps } from '../src/index';
 import { TableCell, TableList, TableRow } from '../src/index';
-
-const useTemplateStyles = makeStyles({
-  header: {
-    width: '120px',
-  },
-  domain: {
-    width: '120px',
-  },
-});
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -32,64 +22,105 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: StoryFn<typeof TableList> = (args) => {
-  const classes = useTemplateStyles();
-
   return (
     <TableList {...args}>
       <thead>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="col">
             Component
           </TableCell>
-          <TableCell isHeader className={classes.domain}>
+          <TableCell isHeader scope="col">
             Domain
           </TableCell>
-          <TableCell isHeader>Example</TableCell>
-          <TableCell isHeader>Notes</TableCell>
+          <TableCell isHeader scope="col">
+            Example
+          </TableCell>
+          <TableCell isHeader scope="col">
+            Notes
+          </TableCell>
         </TableRow>
       </thead>
       <tbody>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
             Table
           </TableCell>
-          <TableCell className={classes.domain}>Lists</TableCell>
+          <TableCell>Lists</TableCell>
           <TableCell>
             <Text variant="code">{`<TableList>{children}</TableList>`}</Text>
           </TableCell>
           <TableCell>No additional info.</TableCell>
         </TableRow>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
             Button
           </TableCell>
-          <TableCell className={classes.domain}>Actions</TableCell>
+          <TableCell>Actions</TableCell>
           <TableCell>
             <Text variant="code">{`<Button onClick={() => {}}>Click me!</Button>`}</Text>
           </TableCell>
           <TableCell>No additional info.</TableCell>
         </TableRow>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
             Text
           </TableCell>
-          <TableCell className={classes.domain}>Typography</TableCell>
+          <TableCell>Typography</TableCell>
           <TableCell>
             <Text variant="code">{`<Link href="#">Click me!</Link>`}</Text>
           </TableCell>
           <TableCell>No additional info.</TableCell>
         </TableRow>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
             Link
           </TableCell>
-          <TableCell className={classes.domain}>Navigation</TableCell>
+          <TableCell>Navigation</TableCell>
           <TableCell>
             <Text variant="code">{`<Link onClick={() => {}}>Click me!</Link>`}</Text>
           </TableCell>
           <TableCell>Deprecated</TableCell>
         </TableRow>
       </tbody>
+    </TableList>
+  );
+};
+
+const HeadlessTemplate: StoryFn<typeof TableList> = (args) => {
+  return (
+    <TableList {...args}>
+      <TableRow>
+        <TableCell isHeader>Table</TableCell>
+        <TableCell>Lists</TableCell>
+        <TableCell>
+          <Text variant="code">{`<TableList>{children}</TableList>`}</Text>
+        </TableCell>
+        <TableCell>No additional info.</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell isHeader>Button</TableCell>
+        <TableCell>Actions</TableCell>
+        <TableCell>
+          <Text variant="code">{`<Button onClick={() => {}}>Click me!</Button>`}</Text>
+        </TableCell>
+        <TableCell>No additional info.</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell isHeader>Text</TableCell>
+        <TableCell>Typography</TableCell>
+        <TableCell>
+          <Text variant="code">{`<Link href="#">Click me!</Link>`}</Text>
+        </TableCell>
+        <TableCell>No additional info.</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell isHeader>Link</TableCell>
+        <TableCell>Navigation</TableCell>
+        <TableCell>
+          <Text variant="code">{`<Link onClick={() => {}}>Click me!</Link>`}</Text>
+        </TableCell>
+        <TableCell>Deprecated</TableCell>
+      </TableRow>
     </TableList>
   );
 };
@@ -123,3 +154,7 @@ export const ColumnWeights = Template.bind({}) as StoryFn<
 ColumnWeights.args = {
   columnWeights: [1, 1, 2, 1],
 };
+
+export const Headless = HeadlessTemplate.bind({}) as StoryFn<
+  FunctionComponent<TableListProps>
+>;

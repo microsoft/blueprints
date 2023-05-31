@@ -28,7 +28,7 @@ export const TableRows: FC<TableRowsProps> = ({
     <>
       {propsDocItems.map((prop) => (
         <TableRow key={prop.name}>
-          <TableCell isHeader>
+          <TableCell isHeader scope="row">
             <Text className={isDeprecated ? classes.deprecated : ''}>
               {prop.name ?? ''}
             </Text>

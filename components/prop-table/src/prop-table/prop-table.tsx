@@ -37,15 +37,27 @@ export const PropTable: FC<PropTableProps> = ({ className, propsDoc, caption }) 
 
   return (
     <TableList className={className} caption={caption}>
-      <TableRow>
-        <TableCell isHeader>Name</TableCell>
-        <TableCell isHeader>Type</TableCell>
-        <TableCell isHeader>Description</TableCell>
-        <TableCell isHeader>Default</TableCell>
-      </TableRow>
-      <TableRows propsDocItems={required} isRequired isDeprecated={false} />
-      <TableRows propsDocItems={optional} isRequired={false} isDeprecated={false} />
-      <TableRows propsDocItems={deprecated} isRequired={false} isDeprecated />
+      <thead>
+        <TableRow>
+          <TableCell isHeader scope="col">
+            Name
+          </TableCell>
+          <TableCell isHeader scope="col">
+            Type
+          </TableCell>
+          <TableCell isHeader scope="col">
+            Description
+          </TableCell>
+          <TableCell isHeader scope="col">
+            Default
+          </TableCell>
+        </TableRow>
+      </thead>
+      <tbody>
+        <TableRows propsDocItems={required} isRequired isDeprecated={false} />
+        <TableRows propsDocItems={optional} isRequired={false} isDeprecated={false} />
+        <TableRows propsDocItems={deprecated} isRequired={false} isDeprecated />
+      </tbody>
     </TableList>
   );
 };
