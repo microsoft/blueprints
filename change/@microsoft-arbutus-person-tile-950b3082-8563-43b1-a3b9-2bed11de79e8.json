@@ -1,6 +1,6 @@
 {
   "type": "patch",
-  "comment": "Upgrades @fluentui/react-theme to ^9.1.5",
+  "comment": "Upgrades @fluentui/react-provider to ^9.7.2",
   "packageName": "@microsoft/arbutus.person-tile",
   "email": "akimalunar@gmail.com",
   "dependentChangeType": "patch"
