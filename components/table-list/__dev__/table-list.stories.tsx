@@ -1,21 +1,10 @@
-import { makeStyles } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
-import { Centered } from '../../../.storybook/decorators';
 import type { TableListProps } from '../src/index';
 import { TableCell, TableList, TableRow } from '../src/index';
-
-const useTemplateStyles = makeStyles({
-  header: {
-    width: '120px',
-  },
-  domain: {
-    width: '120px',
-  },
-});
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -23,59 +12,69 @@ export default {
   component: TableList,
   decorators: [
     (Story) => (
-      <Centered>
-        <div>
-          <Story />
-        </div>
-      </Centered>
+      <div style={{ maxWidth: '980px', padding: '24px', margin: '0 auto' }}>
+        <Story />
+      </div>
     ),
   ],
 } as Meta<typeof TableList>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: StoryFn<typeof TableList> = (args) => {
-  const classes = useTemplateStyles();
-
   return (
     <TableList {...args}>
       <thead>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="col">
             Component
           </TableCell>
-          <TableCell isHeader className={classes.domain}>
+          <TableCell isHeader scope="col">
             Domain
           </TableCell>
-          <TableCell isHeader>Example</TableCell>
-          <TableCell isHeader>Notes</TableCell>
+          <TableCell isHeader scope="col">
+            Example
+          </TableCell>
+          <TableCell isHeader scope="col">
+            Notes
+          </TableCell>
         </TableRow>
       </thead>
       <tbody>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
             Table
           </TableCell>
-          <TableCell className={classes.domain}>Lists</TableCell>
+          <TableCell>Lists</TableCell>
           <TableCell>
             <Text variant="code">{`<TableList>{children}</TableList>`}</Text>
           </TableCell>
           <TableCell>No additional info.</TableCell>
         </TableRow>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
             Button
           </TableCell>
-          <TableCell className={classes.domain}>Actions</TableCell>
+          <TableCell>Actions</TableCell>
           <TableCell>
             <Text variant="code">{`<Button onClick={() => {}}>Click me!</Button>`}</Text>
           </TableCell>
           <TableCell>No additional info.</TableCell>
         </TableRow>
         <TableRow>
-          <TableCell isHeader className={classes.header}>
+          <TableCell isHeader scope="row">
+            Text
+          </TableCell>
+          <TableCell>Typography</TableCell>
+          <TableCell>
+            <Text variant="code">{`<Link href="#">Click me!</Link>`}</Text>
+          </TableCell>
+          <TableCell>No additional info.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell isHeader scope="row">
             Link
           </TableCell>
-          <TableCell className={classes.domain}>Navigation</TableCell>
+          <TableCell>Navigation</TableCell>
           <TableCell>
             <Text variant="code">{`<Link onClick={() => {}}>Click me!</Link>`}</Text>
           </TableCell>
@@ -86,16 +85,75 @@ const Template: StoryFn<typeof TableList> = (args) => {
   );
 };
 
+const HeadlessTemplate: StoryFn<typeof TableList> = (args) => {
+  return (
+    <TableList {...args}>
+      <TableRow>
+        <TableCell isHeader>Table</TableCell>
+        <TableCell>Lists</TableCell>
+        <TableCell>
+          <Text variant="code">{`<TableList>{children}</TableList>`}</Text>
+        </TableCell>
+        <TableCell>No additional info.</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell isHeader>Button</TableCell>
+        <TableCell>Actions</TableCell>
+        <TableCell>
+          <Text variant="code">{`<Button onClick={() => {}}>Click me!</Button>`}</Text>
+        </TableCell>
+        <TableCell>No additional info.</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell isHeader>Text</TableCell>
+        <TableCell>Typography</TableCell>
+        <TableCell>
+          <Text variant="code">{`<Link href="#">Click me!</Link>`}</Text>
+        </TableCell>
+        <TableCell>No additional info.</TableCell>
+      </TableRow>
+      <TableRow>
+        <TableCell isHeader>Link</TableCell>
+        <TableCell>Navigation</TableCell>
+        <TableCell>
+          <Text variant="code">{`<Link onClick={() => {}}>Click me!</Link>`}</Text>
+        </TableCell>
+        <TableCell>Deprecated</TableCell>
+      </TableRow>
+    </TableList>
+  );
+};
+
 export const Simple = Template.bind({}) as StoryFn<FunctionComponent<TableListProps>>;
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
 Simple.args = {
-  isAlternating: false,
+  variant: 'default',
   caption: 'TableList Example',
+  description:
+    'This is an example of a TableList description. This helps users understand the context of the data.',
 };
 export const Alternating = Template.bind({}) as StoryFn<
   FunctionComponent<TableListProps>
 >;
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
 Alternating.args = {
-  isAlternating: true,
+  variant: 'alternating',
 };
+
+export const Borderless = Template.bind({}) as StoryFn<FunctionComponent<TableListProps>>;
+
+Borderless.args = {
+  variant: 'borderless',
+};
+
+export const CustomColumnSizing = Template.bind({}) as StoryFn<
+  FunctionComponent<TableListProps>
+>;
+
+CustomColumnSizing.args = {
+  columnSizing: [1, 1, 2, 1],
+};
+
+export const Headless = HeadlessTemplate.bind({}) as StoryFn<
+  FunctionComponent<TableListProps>
+>;

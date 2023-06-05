@@ -3,7 +3,7 @@ import { createContext, useContext } from 'react';
 import type { TableListContextProps } from './table-list-context.types';
 
 export const TableListContext = createContext<TableListContextProps>({
-  isAlternating: false,
+  variant: 'default',
 });
 
 export const TableListProvider = TableListContext.Provider;

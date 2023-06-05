@@ -2,7 +2,6 @@ import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
 import React from 'react';
 
-import { Centered } from '../../../.storybook/decorators';
 import demoComponentPropDoc from '../__prop-docs__/demo-component.props';
 import type { PropTableProps } from '../src/index';
 import { PropTable } from '../src/index';
@@ -13,11 +12,9 @@ export default {
   component: PropTable,
   decorators: [
     (Story) => (
-      <Centered>
-        <div>
-          <Story />
-        </div>
-      </Centered>
+      <div style={{ maxWidth: '980px', padding: '24px', margin: '0 auto' }}>
+        <Story />
+      </div>
     ),
   ],
 } as Meta<typeof PropTable>;

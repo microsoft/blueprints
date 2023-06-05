@@ -121,8 +121,6 @@ const findTitle = (items: NavigationItems, id: string): string | undefined => {
 
     if (isButton(item)) {
       if (item.id === id) {
-        console.log(item.id, id);
-
         return item.title;
       }
     }
