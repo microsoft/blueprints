@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Upgrades @fluentui/react-theme to ^9.1.5",
+  "packageName": "@microsoft/arbutus.table-list",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
