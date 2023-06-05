@@ -4,7 +4,7 @@ import type { TableListProps } from '../table-list/table-list.types';
 
 export type TableListContextProps = {
   variant?: TableListProps['variant'];
-  columnWeights?: TableListProps['columnWeights'];
+  columnSizing?: TableListProps['columnSizing'];
   headerItems?: (string | number | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal)[];
   isCollapsed?: boolean;
 };

@@ -22,9 +22,13 @@ export type TableListProps = {
   description?: string;
 
   /**
-   * Table column widths.
+   * Table column widths or weights. See [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)
+   * specification.
+   *
+   * @example [1, 1, 2, 1]
+   * @example ['230px', auto, auto, auto]
    */
-  columnWeights?: (number | string)[];
+  columnSizing?: (number | string)[];
 
   children?: ReactNode | undefined;
 } & TableHTMLAttributes<HTMLTableElement>;

@@ -8,7 +8,7 @@ import { useTableRowStyles } from './table-row.styles';
 import type { TableRowProps } from './table-row.types';
 
 const makeGridColumns = (
-  columnWeights: TableListContextProps['columnWeights'],
+  columnSizing: TableListContextProps['columnSizing'],
   isCollapsed = false,
   numberOfColumns = 1,
 ) => {
@@ -18,9 +18,9 @@ const makeGridColumns = (
       return { gridTemplateColumns: '1fr' };
 
     // If the consumer passes custom column weights, use them.
-    case Array.isArray(columnWeights):
+    case Array.isArray(columnSizing):
       return {
-        gridTemplateColumns: columnWeights
+        gridTemplateColumns: columnSizing
           ?.map((weight) => {
             if (typeof weight === 'number') {
               return `${weight}fr`;
@@ -38,7 +38,7 @@ const makeGridColumns = (
 };
 
 export const TableRow: FC<TableRowProps> = ({ className, children }) => {
-  const { variant, columnWeights } = useTableListContext();
+  const { variant, columnSizing } = useTableListContext();
   const isDefault = variant === 'default';
   const isAlternating = variant === 'alternating';
   const numberOfColumns = Children.count(children);
@@ -47,15 +47,15 @@ export const TableRow: FC<TableRowProps> = ({ className, children }) => {
   // Styles
   const classes = useTableRowStyles();
 
-  const customColumnWeightStyles = makeGridColumns(
-    columnWeights,
+  const customColumnSizingStyles = makeGridColumns(
+    columnSizing,
     isCollapsed,
     numberOfColumns,
   );
 
   return (
     <tr
-      style={customColumnWeightStyles}
+      style={customColumnSizingStyles}
       className={mergeClasses(
         classes.root,
         isCollapsed && classes.collapsed,

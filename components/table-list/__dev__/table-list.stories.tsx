@@ -1,4 +1,3 @@
-import { makeStyles } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import type { Meta, StoryFn } from '@storybook/react';
 import type { FunctionComponent } from 'react';
@@ -147,12 +146,12 @@ Borderless.args = {
   variant: 'borderless',
 };
 
-export const ColumnWeights = Template.bind({}) as StoryFn<
+export const CustomColumnSizing = Template.bind({}) as StoryFn<
   FunctionComponent<TableListProps>
 >;
 
-ColumnWeights.args = {
-  columnWeights: [1, 1, 2, 1],
+CustomColumnSizing.args = {
+  columnSizing: [1, 1, 2, 1],
 };
 
 export const Headless = HeadlessTemplate.bind({}) as StoryFn<

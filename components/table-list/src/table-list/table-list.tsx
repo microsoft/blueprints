@@ -42,7 +42,7 @@ export const TableList: FC<TableListProps> = ({
   children,
   description,
   caption,
-  columnWeights,
+  columnSizing,
   ...rest
 }) => {
   // Styles
@@ -95,7 +95,7 @@ export const TableList: FC<TableListProps> = ({
   }
 
   return (
-    <TableListProvider value={{ variant, columnWeights, headerItems, isCollapsed }}>
+    <TableListProvider value={{ variant, columnSizing, headerItems, isCollapsed }}>
       {caption && (
         <Text block variant="headline" id={labelById} className={classes.caption}>
           {caption}
