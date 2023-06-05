@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Upgrades @fluentui/react-provider to ^9.7.2",
+  "packageName": "@microsoft/arbutus.link",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
