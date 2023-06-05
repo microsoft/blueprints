@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Updates the styling from a table layout to a grid layout.",
-  "packageName": "@microsoft/arbutus.table-list",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

@@ -1,8 +1,21 @@
 # Change Log - @microsoft/arbutus.table-list
 
-This log was last generated on Thu, 25 May 2023 22:37:04 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.0
+
+Mon, 05 Jun 2023 20:43:46 GMT
+
+### Minor changes
+
+- Updates the styling from a table layout to a grid layout. (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.text to v1.0.3
+
+### Patches
+
+- Upgrades @fluentui/react-provider to ^9.7.2 (akimalunar@gmail.com)
 
 ## 1.0.1
 

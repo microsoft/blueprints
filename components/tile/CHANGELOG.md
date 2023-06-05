@@ -1,8 +1,18 @@
 # Change Log - @microsoft/arbutus.tile
 
-This log was last generated on Thu, 25 May 2023 22:37:04 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.3
+
+Mon, 05 Jun 2023 20:43:46 GMT
+
+### Patches
+
+- Upgrades @fluentui/react-provider to ^9.7.2 (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.theming to v1.0.3
+- Bump @microsoft/arbutus.style-utilities to v1.0.2
 
 ## 1.0.2
 

@@ -1,7 +1,7 @@
 {
   "name": "@microsoft/arbutus.file-to-string",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "File To String takes a path to a file and generates a new file that exports it as a string. This utility is useful for documenting code examples that you might want to show the source code for. There are options for output in JavaScript and TypeScript.",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.accordion",
   "entries": [
     {
+      "date": "Mon, 05 Jun 2023 20:43:46 GMT",
+      "tag": "@microsoft/arbutus.accordion_v1.0.3",
+      "version": "1.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.accordion",
+            "commit": "5d67c8de609006ad2e9da1a6f30771d2a6962921",
+            "comment": "Upgrades @fluentui/react-provider to ^9.7.2"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.accordion",
+            "comment": "Bump @microsoft/arbutus.icon to v1.0.3",
+            "commit": "206376188c332d474643c63d178f95e5e2e1bc1c"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.accordion",
+            "comment": "Bump @microsoft/arbutus.text to v1.0.3",
+            "commit": "206376188c332d474643c63d178f95e5e2e1bc1c"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 25 May 2023 22:37:05 GMT",
       "tag": "@microsoft/arbutus.accordion_v1.0.2",
       "version": "1.0.2",

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.logo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Logo atomic component. Logo provides common logos to use in documentation sites.",
   "main": "lib/index.js",
   "module": "lib/index.js",

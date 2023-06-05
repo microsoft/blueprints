@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.tray",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tray composite component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -1,8 +1,21 @@
 # Change Log - @microsoft/arbutus.embed
 
-This log was last generated on Thu, 25 May 2023 22:37:05 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.3
+
+Mon, 05 Jun 2023 20:43:46 GMT
+
+### Patches
+
+- Upgrades @fluentui/react-provider to ^9.7.2 (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.divider to v1.0.2
+- Bump @microsoft/arbutus.icon-button to v1.0.3
+- Bump @microsoft/arbutus.logo to v1.0.2
+- Bump @microsoft/arbutus.text to v1.0.3
+- Bump @microsoft/arbutus.use-space-styles to v1.0.3
 
 ## 1.0.2
 
