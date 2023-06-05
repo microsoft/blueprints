@@ -23,11 +23,11 @@
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^1.20.8",
-    "@fluentui/react-theme": "^9.1.5",
+    "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   }
 }
