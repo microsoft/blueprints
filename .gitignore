@@ -5,6 +5,9 @@
 *.d.ts.map
 *.js.map
 
+.cache
+public
+
 components/**/src/**/*.js
 components/**/src/**/*.js.map
 
