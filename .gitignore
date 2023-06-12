@@ -16,8 +16,8 @@ sections/**/src/**/*.js.map
 
 layouts/**/src/**/*.js
 layouts/**/src/**/*.js.map
-storybook-static
 
+storybook-static
 node_modules
 .env
 .npmrc

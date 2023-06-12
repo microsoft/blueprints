@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "build:packages": "lage build",
-    "build:storybook": "storybook build -o docs",
+    "build:storybook": "storybook build -o storybook-static",
+    "build:docs": "run-s build:packages build:storybook",
     "change": "beachball change",
     "g:component": "run-s hygen:component syncpack:fix i",
     "g:hook": "run-s hygen:hook syncpack:fix i",
