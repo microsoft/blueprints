@@ -3,6 +3,7 @@ import type { FC } from 'react';
 import type { HeadFC } from 'gatsby';
 import { graphql } from 'gatsby';
 import type { PageProps } from 'gatsby';
+import { type IGatsbyImageData } from 'gatsby-plugin-image';
 
 import { HomeLayout, type HomeLayoutProps } from '../layouts/home';
 
@@ -12,16 +13,33 @@ type HomePageData = {
       title: string;
       description: string;
     };
-  }
+  };
   homeJson: {
     title: string;
     leading: string;
+    statements: {
+      headline: string;
+      description: string;
+    }[];
+    articles: {
+      title: string;
+      description: string;
+      image: {
+        src: {
+          publicURL: string;
+          childrenImageSharp?: { gatsbyImageData: IGatsbyImageData }[];
+        };
+        alt: string;
+      };
+    }[];
   };
 };
 
 const getHomeContent = (data?: HomePageData): HomeLayoutProps => ({
   title: data?.homeJson?.title ?? '',
-  leading: data?.homeJson?.leading ?? ''
+  leading: data?.homeJson?.leading ?? '',
+  statements: data?.homeJson?.statements ?? [],
+  articles: data?.homeJson?.articles ?? [],
 });
 
 const IndexPage: FC<PageProps<HomePageData>> = ({ data }) => {
@@ -30,7 +48,11 @@ const IndexPage: FC<PageProps<HomePageData>> = ({ data }) => {
   return <HomeLayout {...homeLayoutProps} />;
 };
 
-export const Head: HeadFC<HomePageData> = () => <title>Home Page</title>;
+export const Head: HeadFC<HomePageData> = ({ data }) => {
+  const { title: site } = data.site?.siteMetadata ?? '';
+
+  return <title>{`${site} | Welcome!`}</title>;
+};
 
 export default IndexPage;
 
@@ -45,6 +67,20 @@ export const query = graphql`
     homeJson(_layout: { eq: "home" }) {
       title
       leading
+      statements {
+        headline
+        description
+      }
+      articles {
+        title
+        description
+        image {
+          src {
+            publicURL
+          }
+          alt
+        }
+      }
     }
   }
 `;

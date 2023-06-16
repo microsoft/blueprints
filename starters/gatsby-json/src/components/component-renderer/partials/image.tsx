@@ -16,12 +16,12 @@ const useImageComponentStyles = makeStyles({
     marginLeft: 0,
     marginRight: 0,
     '& img': {
-      ...shorthands.borderRadius(tokens.borderRadiusXLarge)
+      ...shorthands.borderRadius(tokens.borderRadiusXLarge),
     },
     '& figcaption': {
-      marginTop: tokens.spacingVerticalL
-    }
-  }
+      marginTop: tokens.spacingVerticalL,
+    },
+  },
 });
 
 export const ImageComponent: FC<ImageComponentProps> = ({ image, description }) => {
@@ -29,7 +29,7 @@ export const ImageComponent: FC<ImageComponentProps> = ({ image, description }) 
 
   return (
     <figure className={classes.figure}>
-      <Image image={image}/>
+      <Image image={image} />
       {description && (
         <figcaption>
           <Text variant="description" color="secondary">

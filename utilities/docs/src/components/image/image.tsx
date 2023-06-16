@@ -6,10 +6,23 @@ import type { ImageProps } from './image.types';
 import { useImageStyles } from './image.styles';
 import { mergeClasses } from '@griffel/react';
 
-export const Image: FC<ImageProps> = ({ image, src, alt, className, isRounded, isHero, gatsbyImageProps }) => {
+export const Image: FC<ImageProps> = ({
+  image,
+  src,
+  alt,
+  className,
+  isRounded,
+  isHero,
+  gatsbyImageProps,
+}) => {
   // Styles
   const classes = useImageStyles();
-  const rootClasses = mergeClasses(classes.root, isRounded && classes.rounded, isHero && classes.hero, className);
+  const rootClasses = mergeClasses(
+    classes.root,
+    isRounded && classes.rounded,
+    isHero && classes.hero,
+    className,
+  );
 
   const imageSrc = image?.localFile?.childrenImageSharp[0]?.gatsbyImageData;
   const isSvg = image?.url?.endsWith('.svg');
@@ -31,6 +44,11 @@ export const Image: FC<ImageProps> = ({ image, src, alt, className, isRounded, i
 
   // Gatsby image
   return (
-    <GatsbyImage image={imageSrc!} alt={image?.alternativeText ?? ''} className={rootClasses} {...gatsbyImageProps} />
+    <GatsbyImage
+      image={imageSrc!}
+      alt={image?.alternativeText ?? ''}
+      className={rootClasses}
+      {...gatsbyImageProps}
+    />
   );
 };

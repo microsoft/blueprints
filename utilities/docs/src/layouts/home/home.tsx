@@ -1,26 +1,80 @@
 import * as React from 'react';
 import type { FC } from 'react';
-import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import { Text } from '@fluentui/react-text';
+import { Tile } from '@microsoft/arbutus.tile';
 
-import type { HomeLayoutProps } from './home.types';
+import { Statement, StatementItem } from './partials';
+import { MicrosoftLogo } from '../../components/microsoft-logo';
 import { useHomeStyles } from './home.styles';
+import { Grid } from '../../components/grid';
 import { mergeClasses } from '@griffel/react';
 
-export const HomeLayout: FC<HomeLayoutProps> = ({ title, leading }) => {
+import type { HomeLayoutProps } from './home.types';
+
+export const HomeLayout: FC<HomeLayoutProps> = ({
+  title,
+  leading,
+  statements,
+  articles,
+}) => {
   const classes = useHomeStyles();
   const space = useSpaceStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={mergeClasses(classes.welcomeCard, space.py12, space.px9)}>
-        <Text as="h1" block variant="jumbo">
-          {title}
-        </Text>
-        <Text as="p" block variant="subtitle">
-          {leading}
-        </Text>
+    <>
+      <div className={classes.root}>
+        <div className={classes.container}>
+          <MicrosoftLogo />
+          <Text block as="h1" weight="bold" className={classes.title}>
+            {title}
+          </Text>
+          <Text block size={800} weight="bold">
+            {leading}
+          </Text>
+          <Statement>
+            {statements.map(({ headline, description }, i) => (
+              <StatementItem
+                key={i}
+                number={i + 1}
+                headline={headline}
+                description={description}
+              />
+            ))}
+          </Statement>
+        </div>
       </div>
-    </div>
+      <Grid layout="large" className={classes.articles}>
+        {articles.map(({ title, description, image }, i) => (
+          <Tile
+            variant="image"
+            key={i}
+            imageSrc={image.src.publicURL}
+            className={mergeClasses(
+              i === 0 ? space.p12 : space.p9,
+              i === 0 && classes.articleFeatured,
+            )}
+          >
+            <Text
+              block
+              as="h2"
+              size={i === 0 ? 1000 : 600}
+              weight="bold"
+              className={classes.articleTitle}
+            >
+              {title}
+            </Text>
+            <Text
+              block
+              size={i === 0 ? 500 : 300}
+              weight="semibold"
+              className={classes.articleDescription}
+            >
+              {description}
+            </Text>
+          </Tile>
+        ))}
+      </Grid>
+    </>
   );
 };

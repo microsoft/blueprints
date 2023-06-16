@@ -25,7 +25,7 @@ type FooterQuery = {
 
 const getFooterContent = (data?: FooterQuery) => ({
   primaryLinks: data?.footerJson?.primaryLinks ?? [],
-  secondaryLinks: data?.footerJson?.secondaryLinks ?? []
+  secondaryLinks: data?.footerJson?.secondaryLinks ?? [],
 });
 
 export const Footer: FC = () => {
@@ -34,7 +34,7 @@ export const Footer: FC = () => {
 
   const data = useStaticQuery<FooterQuery>(graphql`
     query FooterQuery {
-      footerJson(_layout: {eq: "footer"}) {
+      footerJson(_layout: { eq: "footer" }) {
         primaryLinks {
           isExternal
           text
@@ -66,7 +66,12 @@ export const Footer: FC = () => {
       <div className={classes.root}>
         <div className={classes.links}>
           {secondaryLinks.map(({ to, text, isExternal }, index) => (
-            <Link key={`${to}${index}`} variant="secondary" to={to} isExternal={isExternal}>
+            <Link
+              key={`${to}${index}`}
+              variant="secondary"
+              to={to}
+              isExternal={isExternal}
+            >
               {text}
             </Link>
           ))}

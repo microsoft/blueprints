@@ -10,14 +10,15 @@ type OrderedListComponentProps = OrderedListComponentData;
 
 export const OrderedListComponent: FC<OrderedListComponentProps> = ({ listItems }) => {
   const space = useSpaceStyles();
-  
+
   return (
     <OrderedList className={space.mx5}>
       {listItems.map(({ headline, text }) => (
         <OrderedListItem key={headline}>
           {headline && (
             <Text as="span" variant="caption">
-              {headline}<br />
+              {headline}
+              <br />
             </Text>
           )}
           <Text as="span" color="secondary">

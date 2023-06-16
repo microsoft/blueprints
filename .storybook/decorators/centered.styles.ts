@@ -9,4 +9,3 @@ export const useCenteredClasses = makeStyles({
     justifyItems: 'center',
   },
 });
-

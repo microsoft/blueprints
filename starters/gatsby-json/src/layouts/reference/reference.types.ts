@@ -1,4 +1,4 @@
-import { ComponentData } from "../../components/component-renderer";
+import { ComponentData } from '../../components/component-renderer';
 
 type Contributor = {
   firstName: string;
@@ -16,8 +16,10 @@ export type ReferenceLayoutProps = {
   definition: string;
   packageName: string;
   owners: Contributor[];
-  tabs: {
-    tab: string;
-    content?: ComponentData[];
-  }[] | [];
+  tabs:
+    | {
+        tab: string;
+        content?: ComponentData[];
+      }[]
+    | [];
 };

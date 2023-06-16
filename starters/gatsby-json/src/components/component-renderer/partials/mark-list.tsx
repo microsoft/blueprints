@@ -8,14 +8,15 @@ import type { MarkListComponentData } from '../component-renderer.types';
 
 export const MarkListComponent: FC<MarkListComponentData> = ({ listItems }) => {
   const space = useSpaceStyles();
-  
+
   return (
     <MarkList className={space.mx5}>
       {listItems.map(({ headline, text }) => (
         <MarkListItem key={headline}>
           {headline && (
             <Text as="span" variant="caption">
-              {headline}<br />
+              {headline}
+              <br />
             </Text>
           )}
           <Text as="span" color="secondary">

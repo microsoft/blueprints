@@ -1,0 +1,22 @@
+<svg width="1792" height="952" viewBox="0 0 1792 952" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_220_44" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1792" height="952">
+<rect width="1792" height="952" rx="16" fill="black"/>
+</mask>
+<g mask="url(#mask0_220_44)">
+<rect y="0.00012207" width="1792" height="952" rx="16" fill="url(#paint0_radial_220_44)"/>
+<g filter="url(#filter0_f_220_44)">
+<ellipse cx="1024.25" cy="1085.2" rx="1024.25" ry="1085.2" transform="matrix(0.94426 0.329201 -0.918105 0.396336 266.656 -933.937)" fill="#C8CCED" fill-opacity="0.51"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_220_44" x="-1751.06" y="-1313.19" width="3977.1" height="2293.08" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="300" result="effect1_foregroundBlur_220_44"/>
+</filter>
+<radialGradient id="paint0_radial_220_44" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-0.000358631 491.505) rotate(7.67202) scale(1823.82 553564)">
+<stop stop-color="#0F8A6F"/>
+<stop offset="1" stop-color="#354E9A"/>
+</radialGradient>
+</defs>
+</svg>

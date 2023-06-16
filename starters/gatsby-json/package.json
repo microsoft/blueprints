@@ -8,13 +8,11 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
-    "build:develop": "dotenv -e .env.development -- gatsby develop",
-    "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "develop": "gatsby develop",
+    "lint": "eslint . --fix",
+    "start": "gatsby develop"
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.6.7",

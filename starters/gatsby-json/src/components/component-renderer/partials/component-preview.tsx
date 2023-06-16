@@ -17,11 +17,16 @@ const SANDBOX = 'edit';
 
 // Utilities
 const removeExampleExtension = (str: string) => str.replace(/\.example\.(tsx|ts)$/, '');
-const replaceExampleWithRaw = (str: string) => str.replace(/\.example\.(tsx|ts)$/, '.raw.ts');
+const replaceExampleWithRaw = (str: string) =>
+  str.replace(/\.example\.(tsx|ts)$/, '.raw.ts');
 
 // Example component dynamic import
 const importExample = (examplePath: string) =>
-  lazy(() => import(`../../../code-examples/${examplePath}`).catch(() => import('./component-preview-not-found')));
+  lazy(() =>
+    import(`../../../code-examples/${examplePath}`).catch(
+      () => import('./component-preview-not-found'),
+    ),
+  );
 
 // Raw code string dynamic import
 const importExampleRaw = (examplePath: string): Promise<string> => {
@@ -38,7 +43,7 @@ const importExampleRaw = (examplePath: string): Promise<string> => {
 // Theme wrapper
 const themes: { value: ThemeOption; label: string }[] = [
   { value: 'light', label: 'Light Theme' },
-  { value: 'dark', label: 'Dark Theme' }
+  { value: 'dark', label: 'Dark Theme' },
 ];
 
 const useWrapperStyles = makeStyles({
@@ -52,8 +57,8 @@ const useWrapperStyles = makeStyles({
     paddingBottom: '40px',
     paddingLeft: '40px',
     paddingRight: '40px',
-    backgroundColor: tokens.colorNeutralBackground1
-  }
+    backgroundColor: tokens.colorNeutralBackground1,
+  },
 });
 
 export const ExampleWrapper: FC<WrapperProps> = ({ children, themeKey }) => {
@@ -68,7 +73,10 @@ export const ExampleWrapper: FC<WrapperProps> = ({ children, themeKey }) => {
 
 type ComponentPreviewComponentProps = ComponentPreviewComponentData;
 
-export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({ exampleFile, withMenu }) => {
+export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({
+  exampleFile,
+  withMenu,
+}) => {
   // Example component
   const [Example, setExample] = useState<FC | null>(null);
   const [exampleRaw, setExampleRaw] = useState<string>('');
@@ -103,12 +111,14 @@ export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({ 
     themes,
     defaultThemeIndex: isDarkThemeDefault ? 1 : 0,
     wrapper: ExampleWrapper,
-    onFullScreen: handleOpenPreview
+    onFullScreen: handleOpenPreview,
   };
 
   return (
     <Suspense fallback={<>Loading component preview.</>}>
-      {Example && <ComponentPreview component={Example} {...(withMenu ? menuProps : {})} />}
+      {Example && (
+        <ComponentPreview component={Example} {...(withMenu ? menuProps : {})} />
+      )}
     </Suspense>
   );
 };

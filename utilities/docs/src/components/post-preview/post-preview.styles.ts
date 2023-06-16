@@ -11,5 +11,5 @@ export const usePostPreviewStyles = makeStyles({
     ...shorthands.padding(0),
     backgroundColor: 'transparent',
     textAlign: 'left',
-  }
+  },
 });

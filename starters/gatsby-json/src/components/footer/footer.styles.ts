@@ -10,6 +10,6 @@ export const useFooterStyles = makeStyles({
   links: {
     display: 'flex',
     justifyContent: 'flex-end',
-    columnGap: tokens.spacingHorizontalM
-  }
+    columnGap: tokens.spacingHorizontalM,
+  },
 });

@@ -21,4 +21,4 @@ const ExampleComponent = () => {
   );
 };
 
-export default ExampleComponent
+export default ExampleComponent;

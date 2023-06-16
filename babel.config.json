@@ -11,7 +11,8 @@
     ],
     "@babel/preset-react",
     [
-      "@babel/preset-typescript", {
+      "@babel/preset-typescript",
+      {
         "isTSX": true,
         "allExtensions": true,
         "onlyRemoveTypeImports": true

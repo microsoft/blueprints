@@ -15,9 +15,15 @@ export const NavigationTile: FC<NavigationTileProps> = ({ links, title, thumbnai
   const space = useSpaceStyles();
   return (
     <Tile variant="card" className={classes.root}>
-      {thumbnail ? <Image image={thumbnail} className={classes.image} /> : <div className={classes.placeholder} />}
+      {thumbnail ? (
+        <Image image={thumbnail} className={classes.image} />
+      ) : (
+        <div className={classes.placeholder} />
+      )}
       <div className={space.py10}>
-        <Text size={700} weight='bold'>{title}</Text>
+        <Text size={700} weight="bold">
+          {title}
+        </Text>
         <ul className={classes.links}>
           {links.map(({ text, to, isExternal }) => (
             <li key={text} className={classes.link}>

@@ -2,7 +2,11 @@ import * as React from 'react';
 import type { FC } from 'react';
 import { mergeClasses } from '@griffel/react';
 
-import type { ComponentRendererProps, ComponentProps, ComponentType } from './component-renderer.types';
+import type {
+  ComponentRendererProps,
+  ComponentProps,
+  ComponentType,
+} from './component-renderer.types';
 import { components } from './partials';
 import { useGridStyles, GRID_SETTINGS } from './use-grid-styles';
 import { formatData } from './format-data';

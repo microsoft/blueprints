@@ -9,14 +9,19 @@ import { ComponentRenderer } from '../../components/component-renderer';
 import { Image } from '../../components/image';
 import type { BasicLayoutProps } from './basic.types';
 
-export const BasicLayout: FC<BasicLayoutProps> = ({ title, leading, content, heroImage }) => {
+export const BasicLayout: FC<BasicLayoutProps> = ({
+  title,
+  leading,
+  content,
+  heroImage,
+}) => {
   const space = useSpaceStyles();
 
   const image = {
     alternativeText: heroImage?.alt ?? '',
     localFile: heroImage?.src,
-    url: heroImage?.src?.publicURL ?? ''
-  }
+    url: heroImage?.src?.publicURL ?? '',
+  };
 
   return (
     <>

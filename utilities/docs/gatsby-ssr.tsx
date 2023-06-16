@@ -14,4 +14,6 @@ export const wrapRootElement = ({ element }) => (
   </RendererProvider>
 );
 
-export const wrapPageElement = ({ element, props }) => <Shell {...props}>{element}</Shell>;
+export const wrapPageElement = ({ element, props }) => (
+  <Shell {...props}>{element}</Shell>
+);

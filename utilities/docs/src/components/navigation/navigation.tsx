@@ -1,7 +1,10 @@
 import * as React from 'react';
 import type { FC } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import { MainNavigation, MainNavigationRenderer } from '@microsoft/arbutus.main-navigation';
+import {
+  MainNavigation,
+  MainNavigationRenderer,
+} from '@microsoft/arbutus.main-navigation';
 import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import { useLocation } from '@reach/router';
 
@@ -61,17 +64,47 @@ export const Navigation: FC<NavigationProps> = () => {
       title: 'Getting Started',
       id: '/getting-started',
       linkProps: { to: '/getting-started' },
-      hasDivider: true
+      hasDivider: true,
     },
     guidance: {
       title: 'Guidance',
-      items: guidance
+      items: guidance,
     },
-    components: {
-      title: 'Components',
+    documentation: {
+      title: 'Documentation',
       hasDivider: true,
-      items: components
-    }
+      items: {
+        quickStart: {
+          title: 'Quick Start',
+          id: '/documentation/quick-start',
+          linkProps: { to: '/documentation/quick-start' },
+        },
+        theming: {
+          title: 'Theming',
+          id: '/documentation/theming',
+          linkProps: { to: '/documentation/theming' },
+        },
+        content: {
+          title: 'Content',
+          id: '/documentation/content',
+          linkProps: { to: '/documentation/content' },
+        },
+        starters: {
+          title: 'Starters',
+          items: {
+            gatsbyJson: {
+              title: 'Gatsby & JSON',
+              id: '/documentation/starters/gatsby-json',
+              linkProps: { to: '/documentation/starters/gatsby-json' },
+            },
+          },
+        },
+        components: {
+          title: 'Components',
+          items: components,
+        },
+      },
+    },
   };
 
   return (

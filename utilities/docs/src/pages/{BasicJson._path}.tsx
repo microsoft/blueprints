@@ -18,7 +18,10 @@ type BasicPageData = {
     leading: string;
     heroImage?: {
       alt: string;
-      src: { publicURL: string; childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[] };
+      src: {
+        publicURL: string;
+        childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[];
+      };
     };
     content: ComponentData[];
   };
@@ -62,7 +65,12 @@ export const query = graphql`
         src {
           publicURL
           childrenImageSharp {
-            gatsbyImageData(height: 620, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF], quality: 100)
+            gatsbyImageData(
+              height: 620
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+              quality: 100
+            )
           }
         }
       }
@@ -88,7 +96,12 @@ export const query = graphql`
           src {
             publicURL
             childrenImageSharp {
-              gatsbyImageData(height: 620, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF], quality: 100)
+              gatsbyImageData(
+                height: 620
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                quality: 100
+              )
             }
           }
         }

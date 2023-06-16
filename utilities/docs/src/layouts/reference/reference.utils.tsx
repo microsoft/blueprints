@@ -17,14 +17,14 @@ const filterKnownTabs = (tabs: ReferenceLayoutProps['tabs']) => {
 };
 
 const sortAlphabetically = (a: string, b: string) => {
-    if (a < b) {
-      return -1;
-    }
-    if (a > b) {
-      return 1;
-    }
-    return 0;
-  };
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return 0;
+};
 
 const sortByOrder = (a: string, b: string) => {
   const aIndex = tabOrder.indexOf(a);
@@ -39,4 +39,4 @@ export const sortTabs = (tabs: ReferenceLayoutProps['tabs']) => {
     ...knownTabs.sort((a, b) => sortByOrder(a.tab, b.tab)),
     ...unknownTabs.sort((a, b) => sortAlphabetically(a.tab, b.tab)),
   ];
-}
+};

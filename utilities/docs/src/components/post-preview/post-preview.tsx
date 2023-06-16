@@ -30,7 +30,7 @@ export const PostPreview: FC<PostPreviewProps> = ({
           {title}
         </Text>
         <div className={space.mt4}>
-          <Avatar {...avatarProps}/>
+          <Avatar {...avatarProps} />
           <Text variant="description" color="secondary">
             &ensp; {firstName} {lastName} — {timestamp}
           </Text>

@@ -2,13 +2,13 @@ import { makeStyles } from '@griffel/react';
 
 export const useImageStyles = makeStyles({
   root: {
-    width: '100%'
+    width: '100%',
   },
   rounded: {
     borderTopLeftRadius: 'var(--arbutus--shape-border-radius)',
     borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
     borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
-    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)'
+    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
   },
   hero: {
     width: '100%',
@@ -17,6 +17,6 @@ export const useImageStyles = makeStyles({
     borderTopLeftRadius: 'var(--arbutus--shape-border-radius)',
     borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
     borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
-    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)'
-  }
+    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
+  },
 });

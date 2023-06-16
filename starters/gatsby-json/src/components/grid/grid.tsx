@@ -8,5 +8,9 @@ import { useGridStyles } from './grid.styles';
 export const Grid: FC<GridProps> = ({ children, layout, className }) => {
   const classes = useGridStyles();
 
-  return <div className={mergeClasses(classes.root, layout && classes[layout], className)}>{children}</div>;
+  return (
+    <div className={mergeClasses(classes.root, layout && classes[layout], className)}>
+      {children}
+    </div>
+  );
 };

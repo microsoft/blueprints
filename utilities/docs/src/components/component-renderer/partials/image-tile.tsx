@@ -9,19 +9,31 @@ const useStyles = makeStyles({
   thumbnail: {
     height: '180px',
     width: '100%',
-    objectFit: 'cover'
-  }
+    objectFit: 'cover',
+  },
 });
 
 import { ImageTileComponentData } from '../component-renderer.types';
 
 type ImageTileComponentProps = ImageTileComponentData;
 
-const SVGImage = ({ src, alt, className }: { src: string; alt: string; className: string }) => (
-  <img src={src} alt={alt} className={className} />
-);
+const SVGImage = ({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className: string;
+}) => <img src={src} alt={alt} className={className} />;
 
-export const ImageTileComponent: FC<ImageTileComponentProps> = ({ image, isExternal, to, description, title }) => {
+export const ImageTileComponent: FC<ImageTileComponentProps> = ({
+  image,
+  isExternal,
+  to,
+  description,
+  title,
+}) => {
   const classes = useStyles();
 
   const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
@@ -31,12 +43,12 @@ export const ImageTileComponent: FC<ImageTileComponentProps> = ({ image, isExter
     ? {
         src: image.url,
         alt: image.alternativeText,
-        className: classes.thumbnail
+        className: classes.thumbnail,
       }
     : {
         image: getImage(image.localFile),
         alt: image.alternativeText,
-        className: classes.thumbnail
+        className: classes.thumbnail,
       };
 
   return (

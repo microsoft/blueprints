@@ -15,8 +15,8 @@ type TextProps = TextComponentData;
 export const TextComponent: FC<TextProps> = (data) => {
   const {
     childStrapiComponentBlocksTextTextTextnode: {
-      childMarkdownRemark: { rawMarkdownBody }
-    }
+      childMarkdownRemark: { rawMarkdownBody },
+    },
   } = data;
 
   if (!rawMarkdownBody) {
@@ -85,7 +85,7 @@ export const TextComponent: FC<TextProps> = (data) => {
               <ArbutusText variant="code">{children}</ArbutusText>
             </code>
           );
-        }
+        },
       }}
     />
   );

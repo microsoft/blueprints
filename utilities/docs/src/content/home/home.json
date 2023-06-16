@@ -1,6 +1,58 @@
 {
   "_layout": "home",
   "_isSingleton": true,
-  "title": "Home",
-  "leading": "Welcome to the home page!"
+  "title": "Arbutus",
+  "leading": "Design and build your documentation site.",
+  "statements": [
+    {
+      "headline": "Best Practices",
+      "description": "Learn about the best practices for documentation sites based on rigorous research and testing."
+    },
+    {
+      "headline": "Shell and Layouts",
+      "description": "Use our shell to create a consistent experience across your documentation site. Choose from a variety of layouts to create the right experience."
+    },
+    {
+      "headline": "Theming",
+      "description": "Make the documentation site your own with theming."
+    },
+    {
+      "headline": "Components and Utilities",
+      "description": "Build your documentation site with our React components and utilities."
+    }
+  ],
+  "articles": [
+    {
+      "title": "Guide for designing documentation sites",
+      "description": "Proven strategies and patterns for designing documentation sites.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop.svg",
+        "alt": "Gradient"
+      }
+    },
+    {
+      "title": "Server side rendering vs static site generation",
+      "description": "Learn the pros and cons to see which approach is best for your documentation site.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop-2.svg",
+        "alt": "Gradient"
+      }
+    },
+    {
+      "title": "How to use the documentation site shell",
+      "description": "Learn how to use the documentation site shell to create a consistent experience across your documentation site.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop-3.svg",
+        "alt": "Gradient"
+      }
+    },
+    {
+      "title": "Effective technical writing",
+      "description": "Check list for writing effective technical documentation.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop-4.svg",
+        "alt": "Gradient"
+      }
+    }
+  ]
 }

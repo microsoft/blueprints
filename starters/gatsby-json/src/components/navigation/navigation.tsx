@@ -1,7 +1,10 @@
 import * as React from 'react';
 import type { FC } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import { MainNavigation, MainNavigationRenderer } from '@microsoft/arbutus.main-navigation';
+import {
+  MainNavigation,
+  MainNavigationRenderer,
+} from '@microsoft/arbutus.main-navigation';
 import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import { useLocation } from '@reach/router';
 
@@ -61,17 +64,17 @@ export const Navigation: FC<NavigationProps> = () => {
       title: 'Getting Started',
       id: '/getting-started',
       linkProps: { to: '/getting-started' },
-      hasDivider: true
+      hasDivider: true,
     },
     guidance: {
       title: 'Guidance',
-      items: guidance
+      items: guidance,
     },
     components: {
       title: 'Components',
       hasDivider: true,
-      items: components
-    }
+      items: components,
+    },
   };
 
   return (

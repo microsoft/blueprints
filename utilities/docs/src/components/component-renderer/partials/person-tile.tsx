@@ -14,9 +14,9 @@ export const PersonTileComponent: FC<PersonTileComponentProps> = ({
   role,
   isExternal,
   to,
-  icon
+  icon,
 }) => {
-  const onClick = () => isExternal ? window.open(to, '_blank') : navigate(to);
+  const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
 
   return (
     <PersonTile

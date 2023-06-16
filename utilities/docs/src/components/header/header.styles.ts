@@ -1,5 +1,5 @@
-import { tokens } from "@fluentui/react-theme";
-import { makeStyles } from "@griffel/react";
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
 
 export const useHeaderStyles = makeStyles({
   root: {
@@ -10,4 +10,4 @@ export const useHeaderStyles = makeStyles({
     paddingTop: tokens.spacingVerticalM,
     paddingBottom: tokens.spacingVerticalM,
   },
-})
+});

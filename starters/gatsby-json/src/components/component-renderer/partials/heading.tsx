@@ -19,7 +19,7 @@ export const HeadingComponent: FC<HeadingComponentProps> = ({
   withCopyLink,
   size = 'headline',
   as = 'h2',
-  withDivider
+  withDivider,
 }) => {
   const space = useSpaceStyles();
   const { href } = useLocation();

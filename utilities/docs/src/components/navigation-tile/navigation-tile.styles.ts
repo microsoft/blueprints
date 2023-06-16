@@ -26,5 +26,5 @@ export const useNavigationTileStyles = makeStyles({
   },
   link: {
     listStyleType: 'none',
-  }
+  },
 });

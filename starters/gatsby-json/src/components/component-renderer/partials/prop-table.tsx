@@ -6,7 +6,10 @@ import propDocs from '../../../__prop-docs__';
 
 type PropTableComponentProps = PropTableComponentData;
 
-export const PropTableComponent: React.FC<PropTableComponentProps> = ({ componentName, componentPropType }) => {
+export const PropTableComponent: React.FC<PropTableComponentProps> = ({
+  componentName,
+  componentPropType,
+}) => {
   const propsDoc = propDocs[componentName];
 
   console.log('propDocs', propsDoc);
@@ -15,5 +18,7 @@ export const PropTableComponent: React.FC<PropTableComponentProps> = ({ componen
     return null;
   }
 
-  return <PropTable propsDoc={propsDoc} caption={`${componentName}: ${componentPropType}`} />;
+  return (
+    <PropTable propsDoc={propsDoc} caption={`${componentName}: ${componentPropType}`} />
+  );
 };

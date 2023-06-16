@@ -12,7 +12,7 @@ type HomePageData = {
       title: string;
       description: string;
     };
-  }
+  };
   homeJson: {
     title: string;
     leading: string;
@@ -21,7 +21,7 @@ type HomePageData = {
 
 const getHomeContent = (data?: HomePageData): HomeLayoutProps => ({
   title: data?.homeJson?.title ?? '',
-  leading: data?.homeJson?.leading ?? ''
+  leading: data?.homeJson?.leading ?? '',
 });
 
 const IndexPage: FC<PageProps<HomePageData>> = ({ data }) => {
@@ -30,7 +30,11 @@ const IndexPage: FC<PageProps<HomePageData>> = ({ data }) => {
   return <HomeLayout {...homeLayoutProps} />;
 };
 
-export const Head: HeadFC<HomePageData> = () => <title>Home Page</title>;
+export const Head: HeadFC<HomePageData> = ({ data }) => {
+  const { title: site } = data.site?.siteMetadata ?? '';
+
+  return <title>{`${site} | Welcome!`}</title>;
+};
 
 export default IndexPage;
 

@@ -9,5 +9,5 @@ npm i @microsoft/arbutus.code-snippet
 ```
 
 ```jsx
-import { CodeSnippet } from "@microsoft/arbutus.code-snippet";
+import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
 ```

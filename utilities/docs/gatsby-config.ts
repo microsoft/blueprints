@@ -2,14 +2,14 @@ import type { GatsbyConfig } from 'gatsby';
 import * as dotenv from 'dotenv';
 
 dotenv.config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 });
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Title`,
     description: 'Fluent extension component library',
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -25,15 +25,15 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/assets/favicon.png'
-      }
+        icon: 'src/assets/favicon.png',
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: `${__dirname}/src/assets`
-      }
+        path: `${__dirname}/src/assets`,
+      },
     },
     // Plugins to parse content JSON files.
     `gatsby-transformer-json`,
@@ -41,17 +41,17 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content-json',
-        path: `${__dirname}/src/content`
-      }
+        path: `${__dirname}/src/content`,
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'code-examples',
-        path: './src/code-examples/'
-      }
-    }
-  ]
+        path: './src/code-examples/',
+      },
+    },
+  ],
 };
 
 export default config;

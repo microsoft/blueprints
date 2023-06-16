@@ -16,7 +16,10 @@ export const RecommendationTileComponent: FC<RecommendationTileComponentProps> =
   image,
 }) => {
   const recommendationsListItems = recommendationsList?.map(
-    (recommendation) => `${recommendation.headline ? `${recommendation.headline} ` : ''}${recommendation.text}`
+    (recommendation) =>
+      `${recommendation.headline ? `${recommendation.headline} ` : ''}${
+        recommendation.text
+      }`,
   );
 
   const imageProps: Pick<RecommendationTileProps, 'imageAs' | 'imageProps'> = {};
@@ -26,7 +29,7 @@ export const RecommendationTileComponent: FC<RecommendationTileComponentProps> =
     imageProps.imageProps = {
       image: getImage(image.localFile),
       alt: image.alternativeText,
-    }
+    };
   }
 
   return (

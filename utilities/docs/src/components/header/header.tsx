@@ -18,7 +18,7 @@ type HeaderQuery = {
 };
 
 const getHeaderContent = (data: HeaderQuery) => ({
-  links: data.headerJson.links ?? []
+  links: data.headerJson.links ?? [],
 });
 
 export const Header: FC = () => {

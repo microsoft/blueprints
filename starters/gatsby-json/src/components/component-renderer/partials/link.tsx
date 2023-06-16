@@ -11,8 +11,8 @@ type LinkComponentProps = LinkComponentData;
 
 const useLinkStyles = makeStyles({
   root: {
-    textDecorationLine: 'none'
-  }
+    textDecorationLine: 'none',
+  },
 });
 
 export const LinkComponent: FC<LinkComponentProps> = ({ to, isExternal, text }) => {

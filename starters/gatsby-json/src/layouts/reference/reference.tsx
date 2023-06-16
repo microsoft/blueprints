@@ -12,12 +12,22 @@ import { ComponentRenderer } from '../../components/component-renderer';
 import { useReferenceStyles } from './reference.styles';
 import { sortTabs } from './reference.utils';
 
-export const ReferenceLayout: FC<ReferenceLayoutProps> = ({ title, definition, owners, packageName, tabs }) => {
+export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
+  title,
+  definition,
+  owners,
+  packageName,
+  tabs,
+}) => {
   const space = useSpaceStyles();
   const classes = useReferenceStyles();
 
   const makeTeamsLink = (alias?: string) => () =>
-    alias && window?.open(`https://teams.microsoft.com/l/chat/0/0?users=${alias}@microsoft.com`, '_blank');
+    alias &&
+    window?.open(
+      `https://teams.microsoft.com/l/chat/0/0?users=${alias}@microsoft.com`,
+      '_blank',
+    );
 
   return (
     <>
@@ -45,17 +55,19 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({ title, definition, o
       <Tabs className={space.mt12}>
         <TabList>
           {sortTabs(tabs).map((tab, index) => {
-              const currentTab = tabs.find((t) => t.tab === tab.tab);
-              return (
-                <Tab key={`${index}--${currentTab?.tab}`} className={classes.tab}>
+            const currentTab = tabs.find((t) => t.tab === tab.tab);
+            return (
+              <Tab key={`${index}--${currentTab?.tab}`} className={classes.tab}>
                 {currentTab?.tab}
               </Tab>
-              )
+            );
           })}
         </TabList>
         <TabPanels>
           {sortTabs(tabs).map(({ tab, content }, index) => (
-            <TabPanel key={`${index}--${tab}`}>{content && <ComponentRenderer content={content} />}</TabPanel>
+            <TabPanel key={`${index}--${tab}`}>
+              {content && <ComponentRenderer content={content} />}
+            </TabPanel>
           ))}
         </TabPanels>
       </Tabs>

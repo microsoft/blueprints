@@ -13,13 +13,13 @@ export const useHomeStyles = makeStyles({
 
     [`@media (max-width: ${CONTAINER_WIDTH})`]: {
       paddingLeft: tokens.spacingHorizontalXL,
-      paddingRight: tokens.spacingHorizontalXL
+      paddingRight: tokens.spacingHorizontalXL,
     },
 
     [`@media (max-width: ${BREAKPOINTS.tablet})`]: {
       paddingLeft: tokens.spacingVerticalL,
-      paddingRight: tokens.spacingVerticalL
-    }
+      paddingRight: tokens.spacingVerticalL,
+    },
   },
 
   welcomeCard: {
@@ -27,6 +27,6 @@ export const useHomeStyles = makeStyles({
     borderTopLeftRadius: tokens.borderRadiusXLarge,
     borderTopRightRadius: tokens.borderRadiusXLarge,
     borderBottomLeftRadius: tokens.borderRadiusXLarge,
-    borderBottomRightRadius: tokens.borderRadiusXLarge
-  }
+    borderBottomRightRadius: tokens.borderRadiusXLarge,
+  },
 });

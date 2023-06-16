@@ -9,5 +9,5 @@ npm i "@microsoft/arbutus.file-to-string"
 ```
 
 ```ts
-import { fileToString } from "@microsoft/arbutus.file-to-string";
+import { fileToString } from '@microsoft/arbutus.file-to-string';
 ```

@@ -18,7 +18,10 @@ type GuidancePageData = {
     leading: string;
     heroImage?: {
       alt: string;
-      src: { publicURL: string; childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[] };
+      src: {
+        publicURL: string;
+        childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[];
+      };
     };
     content: ComponentData[];
   };
@@ -28,7 +31,7 @@ export const getGuidancePageContent = (data?: GuidancePageData) => ({
   title: data?.guidanceJson?.title ?? '[title]',
   leading: data?.guidanceJson?.leading ?? '[leading]',
   heroImage: data?.guidanceJson?.heroImage,
-  content: data?.guidanceJson?.content ?? []
+  content: data?.guidanceJson?.content ?? [],
 });
 
 const GuidancePage: FC<PageProps<GuidancePageData, { _path: string }>> = ({ data }) => {
@@ -62,7 +65,12 @@ export const query = graphql`
         src {
           publicURL
           childrenImageSharp {
-            gatsbyImageData(height: 620, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF], quality: 100)
+            gatsbyImageData(
+              height: 620
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+              quality: 100
+            )
           }
         }
       }

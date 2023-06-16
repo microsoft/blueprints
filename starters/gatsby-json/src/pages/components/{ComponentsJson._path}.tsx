@@ -33,15 +33,19 @@ type ComponentPageQuery = {
   };
 };
 
-export const getComponentPageContent = (data?: ComponentPageQuery): ReferenceLayoutProps => ({
+export const getComponentPageContent = (
+  data?: ComponentPageQuery,
+): ReferenceLayoutProps => ({
   title: data?.componentsJson?.title ?? '[title]',
   definition: data?.componentsJson?.definition ?? '[definition]',
   packageName: data?.componentsJson?.packageName ?? '[packageName]',
   owners: data?.componentsJson?.owners ?? [],
-  tabs: data?.componentsJson?.tabs ?? []
+  tabs: data?.componentsJson?.tabs ?? [],
 });
 
-const ReferencePage: FC<PageProps<ComponentPageQuery, { _path: string }>> = ({ data }) => {
+const ReferencePage: FC<PageProps<ComponentPageQuery, { _path: string }>> = ({
+  data,
+}) => {
   const referenceLayoutProps = getComponentPageContent(data);
 
   return <ReferenceLayout {...referenceLayoutProps} />;

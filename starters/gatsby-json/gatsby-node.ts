@@ -30,14 +30,11 @@ export const createPages: GatsbyNode['createPages'] = async ({
           }
         }
       }
-    `
+    `,
   );
 
   if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your pages data.`,
-      result.errors
-    );
+    reporter.panicOnBuild(`There was an error loading your pages data.`, result.errors);
 
     return;
   }

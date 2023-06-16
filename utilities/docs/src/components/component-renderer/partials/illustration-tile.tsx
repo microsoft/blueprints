@@ -11,8 +11,8 @@ import { makeStyles } from '@griffel/react';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: '316px'
-  }
+    maxWidth: '316px',
+  },
 });
 
 export const IllustrationTileComponent: FC<IllustrationTileComponentProps> = ({
@@ -20,7 +20,7 @@ export const IllustrationTileComponent: FC<IllustrationTileComponentProps> = ({
   description,
   image,
   isExternal,
-  title
+  title,
 }) => {
   const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
 

@@ -2,9 +2,8 @@
 name: Component request
 about: Suggest an idea for a new component
 title: ''
-labels: "⚠️ needs triage"
+labels: '⚠️ needs triage'
 assignees: ''
-
 ---
 
 # [Suggested component name]
@@ -29,6 +28,7 @@ Anything else that could be useful to the team.
 ---
 
 ## Checklist
+
 - [ ] The proposed component is usable for people of different abilities.
 - [ ] The proposed component is scalable to be used for broader documentation sites, and not a very particular one-off product.
 - [ ] The proposed component can be themed.

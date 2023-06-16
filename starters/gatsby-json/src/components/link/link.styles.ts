@@ -11,5 +11,5 @@ export const useLinkStyles = makeStyles({
       marginTop: 0,
       marginRight: tokens.spacingHorizontalM,
     },
-  }
+  },
 });

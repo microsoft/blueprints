@@ -9,14 +9,20 @@ const useStyles = makeStyles({
     maxWidth: '316px',
     display: 'inline-flex',
     alignItems: 'unset',
-  }
+  },
 });
 
 import { BookmarkTileComponentData } from '../component-renderer.types';
 
 type BookmarkTileComponentProps = BookmarkTileComponentData;
 
-export const BookmarkTileComponent: FC<BookmarkTileComponentProps> = ({ description, isExternal, title, to, icon }) => {
+export const BookmarkTileComponent: FC<BookmarkTileComponentProps> = ({
+  description,
+  isExternal,
+  title,
+  to,
+  icon,
+}) => {
   const classes = useStyles();
   const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
 
