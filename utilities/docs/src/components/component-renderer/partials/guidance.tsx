@@ -1,10 +1,10 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { navigate } from 'gatsby';
 import { Guidance } from '@microsoft/arbutus.guidance';
+import { navigate } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { GuidanceComponentData } from '../component-renderer.types';
+import type { GuidanceComponentData } from '../component-renderer.types';
 
 type GuidanceComponentProps = GuidanceComponentData;
 

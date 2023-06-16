@@ -1,13 +1,13 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { ComponentPreview } from '@microsoft/arbutus.component-preview';
-import { useLocation } from '@reach/router';
-import { lazy, Suspense, useEffect, useState } from 'react';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import type { WrapperProps } from '@microsoft/arbutus.component-preview';
+import { ComponentPreview } from '@microsoft/arbutus.component-preview';
 import type { ThemeOption } from '@microsoft/arbutus.theming';
 import { ThemeProvider, useTheme } from '@microsoft/arbutus.theming';
-import type { WrapperProps } from '@microsoft/arbutus.component-preview';
+import { useLocation } from '@reach/router';
+import type { FC } from 'react';
+import * as React from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 
 import type { ComponentPreviewComponentData } from '../component-renderer.types';
 
@@ -36,6 +36,7 @@ const importExampleRaw = (examplePath: string): Promise<string> => {
     .then((result) => result.default)
     .catch((err) => {
       console.log(err);
+
       return '';
     });
 };
@@ -84,9 +85,11 @@ export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({
   useEffect(() => {
     async function loadExample() {
       const Module = await importExample(exampleFile);
+
       setExample(Module);
 
       const rawCode = await importExampleRaw(exampleFile);
+
       setExampleRaw(rawCode ?? '');
     }
     loadExample();

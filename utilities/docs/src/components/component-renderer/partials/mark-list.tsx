@@ -1,8 +1,8 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import type { MarkListComponentData } from '../component-renderer.types';
 

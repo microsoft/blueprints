@@ -65,6 +65,7 @@
     "@microsoft/arbutus.tile": "1.0.3",
     "@microsoft/arbutus.ts": "0.0.2",
     "@microsoft/arbutus.use-space-styles": "1.0.3",
+    "@microsoft/eslint-config-arbutus": "^0.0.1",
     "@rnx-kit/eslint-plugin": "^0.4.2",
     "@storybook/addon-actions": "^7.0.17",
     "@storybook/addon-essentials": "^7.0.17",

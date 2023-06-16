@@ -1,5 +1,5 @@
-import type { ElementType, SyntheticEvent } from 'react';
 import type { AvatarProps } from '@fluentui/react-avatar';
+import type { ElementType, SyntheticEvent } from 'react';
 
 export type PostPreviewProps = {
   /**

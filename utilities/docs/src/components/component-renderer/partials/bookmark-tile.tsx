@@ -1,8 +1,8 @@
-import * as React from 'react';
-import type { FC } from 'react';
+import { makeStyles } from '@griffel/react';
 import { BookmarkTile } from '@microsoft/arbutus.bookmark-tile';
 import { navigate } from 'gatsby';
-import { makeStyles } from '@griffel/react';
+import type { FC } from 'react';
+import * as React from 'react';
 
 const useStyles = makeStyles({
   root: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles({
   },
 });
 
-import { BookmarkTileComponentData } from '../component-renderer.types';
+import type { BookmarkTileComponentData } from '../component-renderer.types';
 
 type BookmarkTileComponentProps = BookmarkTileComponentData;
 

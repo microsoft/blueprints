@@ -1,13 +1,12 @@
-import * as React from 'react';
-import { PageProps } from 'gatsby';
-import { navigate, withPrefix } from 'gatsby';
-
-import type { FC } from 'react';
 import { Shell as ArbutusShell } from '@microsoft/arbutus.shell';
+import type { PageProps } from 'gatsby';
+import { navigate, withPrefix } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { Navigation } from '../navigation';
-import { Header } from '../header';
 import { Footer } from '../footer';
+import { Header } from '../header';
+import { Navigation } from '../navigation';
 import { useLogoStyles } from './shell.styles';
 
 const Logo: FC = () => (
@@ -29,7 +28,7 @@ const Logo: FC = () => (
   </svg>
 );
 
-export const Shell: FC<PageProps<{}>> = ({ children, location }) => {
+export const Shell: FC<PageProps> = ({ children, location }) => {
   const isHome = location.pathname === withPrefix('/');
   const isComponentPreview = location.pathname.includes('/preview/');
   const isComponentSandbox = location.pathname.includes('/sandbox/');

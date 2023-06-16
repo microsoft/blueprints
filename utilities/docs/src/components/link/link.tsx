@@ -1,10 +1,10 @@
-import * as React from 'react';
-import type { FC, ReactNode } from 'react';
-import { Link as GatsbyLink } from 'gatsby';
 import { Link as ArbutusLink } from '@microsoft/arbutus.link';
+import { Link as GatsbyLink } from 'gatsby';
+import type { FC, ReactNode } from 'react';
+import * as React from 'react';
 
-import type { LinkProps } from './link.types';
 import { useLinkStyles } from './link.styles';
+import type { LinkProps } from './link.types';
 
 const ExternalLink: FC<{ href: string; className: string; children: ReactNode }> = ({
   children,

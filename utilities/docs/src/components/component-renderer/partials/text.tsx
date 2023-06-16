@@ -1,14 +1,14 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import Markdown from 'react-markdown';
-import { Text as ArbutusText } from '@microsoft/arbutus.text';
+import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
+import { Divider } from '@microsoft/arbutus.divider';
 import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
 import { OrderedList, OrderedListItem } from '@microsoft/arbutus.ordered-list';
-import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
+import { Text as ArbutusText } from '@microsoft/arbutus.text';
+import type { FC } from 'react';
+import * as React from 'react';
+import Markdown from 'react-markdown';
 
 import { Image } from '../../image';
-import { TextComponentData } from '../component-renderer.types';
-import { Divider } from '@microsoft/arbutus.divider';
+import type { TextComponentData } from '../component-renderer.types';
 
 type TextProps = TextComponentData;
 

@@ -1,10 +1,10 @@
-import * as React from 'react';
-import type { FC } from 'react';
+import type { RecommendationTileProps } from '@microsoft/arbutus.recommendation-tile';
 import { RecommendationTile } from '@microsoft/arbutus.recommendation-tile';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import type { RecommendationTileProps } from '@microsoft/arbutus.recommendation-tile';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { RecommendationComponentData } from '../component-renderer.types';
+import type { RecommendationComponentData } from '../component-renderer.types';
 
 type RecommendationTileComponentProps = RecommendationComponentData;
 

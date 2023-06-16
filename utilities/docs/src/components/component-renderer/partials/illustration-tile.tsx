@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { navigate } from 'gatsby';
 import { IllustrationTile } from '@microsoft/arbutus.illustration-tile';
+import { navigate } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { IllustrationTileComponentData } from '../component-renderer.types';
+import type { IllustrationTileComponentData } from '../component-renderer.types';
 
 type IllustrationTileComponentProps = IllustrationTileComponentData;
 
@@ -25,6 +25,7 @@ export const IllustrationTileComponent: FC<IllustrationTileComponentProps> = ({
   const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
 
   const classes = useStyles();
+
   return (
     <IllustrationTile
       className={classes.root}

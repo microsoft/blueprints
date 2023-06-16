@@ -1,11 +1,11 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { makeStyles, shorthands } from '@griffel/react';
 import { tokens } from '@fluentui/react-theme';
+import { makeStyles, shorthands } from '@griffel/react';
+import { Text } from '@microsoft/arbutus.text';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { ImageComponentData } from '../component-renderer.types';
 import { Image } from '../../image';
+import type { ImageComponentData } from '../component-renderer.types';
 
 type ImageComponentProps = ImageComponentData;
 

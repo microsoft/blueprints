@@ -1,8 +1,8 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { ThemeSwitch } from '@microsoft/arbutus.theme-switch';
 import { useTheme } from '@microsoft/arbutus.theming';
 import { graphql, useStaticQuery } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { Link } from '../link';
 import { useHeaderStyles } from './header.styles';

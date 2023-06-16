@@ -1,6 +1,6 @@
-import path from 'path';
-import type { GatsbyNode } from 'gatsby';
 import { sentenceCase } from 'change-case';
+import type { GatsbyNode } from 'gatsby';
+import path from 'path';
 
 type Result = {
   allFile: {
@@ -46,6 +46,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
       const match = absolutePath.match(/\/([^\/.]+)\.example./);
       const fileName = match?.[1] ?? 'file';
       const title = sentenceCase(fileName);
+
       createPage({
         path: `/preview/${fileName}`,
         component: PreviewPage,

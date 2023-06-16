@@ -1,16 +1,15 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import { Text } from '@fluentui/react-text';
+import { mergeClasses } from '@griffel/react';
 import { Tile } from '@microsoft/arbutus.tile';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { Statement, StatementItem } from './partials';
+import { Grid } from '../../components/grid';
 import { MicrosoftLogo } from '../../components/microsoft-logo';
 import { useHomeStyles } from './home.styles';
-import { Grid } from '../../components/grid';
-import { mergeClasses } from '@griffel/react';
-
 import type { HomeLayoutProps } from './home.types';
+import { Statement, StatementItem } from './partials';
 
 export const HomeLayout: FC<HomeLayoutProps> = ({
   title,

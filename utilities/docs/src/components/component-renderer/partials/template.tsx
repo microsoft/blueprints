@@ -1,7 +1,7 @@
-import * as React from 'react';
 import type { FC } from 'react';
-// import { navigate } from 'gatsby';
+import * as React from 'react';
 
+// import { navigate } from 'gatsby';
 import {} from '../component-renderer.types';
 
 type TemplateComponentProps = {};

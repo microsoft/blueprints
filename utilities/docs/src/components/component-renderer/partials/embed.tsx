@@ -1,8 +1,8 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { Embed } from '@microsoft/arbutus.embed';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { EmbedComponentData } from '../component-renderer.types';
+import type { EmbedComponentData } from '../component-renderer.types';
 
 type EmbedComponentProps = EmbedComponentData;
 

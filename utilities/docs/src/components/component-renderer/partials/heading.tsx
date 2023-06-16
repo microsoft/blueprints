@@ -1,15 +1,15 @@
-import * as React from 'react';
-import { useMemo } from 'react';
-import type { FC } from 'react';
+import { Divider } from '@microsoft/arbutus.divider';
 import type { HeadingProps } from '@microsoft/arbutus.heading';
 import { Heading } from '@microsoft/arbutus.heading';
 import { Text } from '@microsoft/arbutus.text';
-import { Divider } from '@microsoft/arbutus.divider';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import { useLocation } from '@reach/router';
+import type { FC } from 'react';
+import * as React from 'react';
+import { useMemo } from 'react';
 
-import type { HeadingComponentData } from '../component-renderer.types';
 import { textToUrlString } from '../../../utilities';
+import type { HeadingComponentData } from '../component-renderer.types';
 
 type HeadingComponentProps = HeadingComponentData;
 
@@ -27,6 +27,7 @@ export const HeadingComponent: FC<HeadingComponentProps> = ({
   const headingUrl = useMemo(() => `${href}#${headingId}`, [href, headingId]);
 
   const copyProps: Pick<HeadingProps, 'headingUrl' | 'copyLabel'> = {};
+
   if (withCopyLink) {
     copyProps.headingUrl = headingUrl;
     copyProps.copyLabel = 'Copy link to this section';

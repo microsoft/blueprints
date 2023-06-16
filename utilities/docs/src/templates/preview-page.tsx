@@ -1,7 +1,7 @@
+import type { HeadFC, PageProps } from 'gatsby';
+import type { FC } from 'react';
 import * as React from 'react';
 import { lazy, Suspense, useEffect, useState } from 'react';
-import type { FC } from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
 
 type PreviewPageContext = {
   title: string;
@@ -25,6 +25,7 @@ const PreviewPage: FC<PageProps<undefined, PreviewPageContext>> = ({
   useEffect(() => {
     async function loadExample() {
       const Module = await importExample(examplePath);
+
       setExample(Module);
     }
     loadExample();

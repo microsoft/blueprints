@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { graphql, useStaticQuery } from 'gatsby';
 import { Divider } from '@microsoft/arbutus.divider';
+import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import { graphql, useStaticQuery } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { Link } from '../link';
 import { useFooterStyles } from './footer.styles';

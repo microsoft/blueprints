@@ -1,8 +1,8 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { OrderedList, OrderedListItem } from '@microsoft/arbutus.ordered-list';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import type { OrderedListComponentData } from '../component-renderer.types';
 

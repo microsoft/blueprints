@@ -1,12 +1,12 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import {
   MainNavigation,
   MainNavigationRenderer,
 } from '@microsoft/arbutus.main-navigation';
-import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import { useLocation } from '@reach/router';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { getNavigationContent } from './get-navigation-content';
 import type { NavigationProps } from './navigation.types';

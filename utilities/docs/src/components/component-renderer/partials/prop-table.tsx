@@ -1,8 +1,8 @@
-import * as React from 'react';
 import { PropTable } from '@microsoft/arbutus.prop-table';
+import * as React from 'react';
 
-import { PropTableComponentData } from '../component-renderer.types';
 import propDocs from '../../../__prop-docs__';
+import type { PropTableComponentData } from '../component-renderer.types';
 
 type PropTableComponentProps = PropTableComponentData;
 

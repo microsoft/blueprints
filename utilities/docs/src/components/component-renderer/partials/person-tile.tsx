@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { navigate } from 'gatsby';
 import { PersonTile } from '@microsoft/arbutus.person-tile';
+import { navigate } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { PersonTileComponentData } from '../component-renderer.types';
+import type { PersonTileComponentData } from '../component-renderer.types';
 
 type PersonTileComponentProps = PersonTileComponentData;
 

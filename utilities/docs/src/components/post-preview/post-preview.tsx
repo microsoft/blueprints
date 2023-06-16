@@ -1,11 +1,11 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { Avatar } from '@fluentui/react-avatar';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { PostPreviewProps } from './post-preview.types';
 import { usePostPreviewStyles } from './post-preview.styles';
+import type { PostPreviewProps } from './post-preview.types';
 
 export const PostPreview: FC<PostPreviewProps> = ({
   avatarProps,

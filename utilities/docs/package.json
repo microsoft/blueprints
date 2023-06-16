@@ -1,8 +1,8 @@
 {
-  "name": "arbutus-boilerplate-gatsby",
+  "name": "arbutus-docs",
   "version": "1.0.0",
   "private": true,
-  "description": "Documentation site starter for Gatsby projects with Arbutus components",
+  "description": "Documentation for Arbutus",
   "author": "Ria Carmin",
   "keywords": [
     "gatsby"

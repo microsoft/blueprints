@@ -1,6 +1,6 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
-import { components } from './partials';
+import type { components } from './partials';
 
 export type ComponentData =
   | ActionListTileComponentData

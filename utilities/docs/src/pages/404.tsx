@@ -1,7 +1,8 @@
-import * as React from 'react';
-import { Link as GatsbyLink, HeadFC } from 'gatsby';
-import { Text } from '@microsoft/arbutus.text';
 import { Link } from '@microsoft/arbutus.link';
+import { Text } from '@microsoft/arbutus.text';
+import type { HeadFC } from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
+import * as React from 'react';
 
 const NotFoundPage = () => {
   return (

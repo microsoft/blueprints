@@ -1,13 +1,13 @@
-import * as React from 'react';
-import type { FC } from 'react';
+import { makeStyles } from '@griffel/react';
 import {
-  ActionListTile,
   ActionListHeader,
   ActionListItem,
   ActionListItems,
+  ActionListTile,
 } from '@microsoft/arbutus.action-list-tile';
 import { navigate } from 'gatsby';
-import { makeStyles } from '@griffel/react';
+import type { FC } from 'react';
+import * as React from 'react';
 
 const useStyles = makeStyles({
   root: {
@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-import { ActionListTileComponentData } from '../component-renderer.types';
+import type { ActionListTileComponentData } from '../component-renderer.types';
 
 type ActionListTileComponentProps = ActionListTileComponentData;
 

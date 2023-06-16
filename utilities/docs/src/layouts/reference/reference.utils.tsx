@@ -3,7 +3,7 @@ import type { ReferenceLayoutProps } from './reference.types';
 const tabOrder = ['usage', 'design', 'develop', 'code', 'accessibility', 'content'];
 
 const filterKnownTabs = (tabs: ReferenceLayoutProps['tabs']) => {
-  let result: [ReferenceLayoutProps['tabs'], ReferenceLayoutProps['tabs']] = [[], []];
+  const result: [ReferenceLayoutProps['tabs'], ReferenceLayoutProps['tabs']] = [[], []];
 
   tabs.forEach((tab) => {
     if (tabOrder.includes(tab.tab)) {
@@ -20,15 +20,18 @@ const sortAlphabetically = (a: string, b: string) => {
   if (a < b) {
     return -1;
   }
+
   if (a > b) {
     return 1;
   }
+
   return 0;
 };
 
 const sortByOrder = (a: string, b: string) => {
   const aIndex = tabOrder.indexOf(a);
   const bIndex = tabOrder.indexOf(b);
+
   return aIndex - bIndex;
 };
 

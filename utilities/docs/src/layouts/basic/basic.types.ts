@@ -1,6 +1,6 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
-import { ComponentData } from '../../components/component-renderer';
+import type { ComponentData } from '../../components/component-renderer';
 
 export type BasicLayoutProps = {
   title: string;

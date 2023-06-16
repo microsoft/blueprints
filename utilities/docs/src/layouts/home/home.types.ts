@@ -1,4 +1,4 @@
-import { IGatsbyImageData } from 'gatsby-plugin-image';
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export type HomeLayoutProps = {
   title: string;

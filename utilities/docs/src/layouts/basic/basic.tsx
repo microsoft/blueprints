@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { Divider } from '@microsoft/arbutus.divider';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import { mergeClasses } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { ComponentRenderer } from '../../components/component-renderer';
 import { Image } from '../../components/image';

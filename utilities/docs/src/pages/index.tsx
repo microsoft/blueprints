@@ -1,9 +1,8 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import type { HeadFC } from 'gatsby';
+import type { HeadFC, PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
-import type { PageProps } from 'gatsby';
 import { type IGatsbyImageData } from 'gatsby-plugin-image';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { HomeLayout, type HomeLayoutProps } from '../layouts/home';
 

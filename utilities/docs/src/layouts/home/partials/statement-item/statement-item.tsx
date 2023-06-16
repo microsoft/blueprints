@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { Text } from '@fluentui/react-text';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { useStatementItemStyles } from './statement-item.styles';
-import { StatementItemProps } from './statement-item.types';
+import type { StatementItemProps } from './statement-item.types';
 
 export const StatementItem: FC<StatementItemProps> = ({
   number,
@@ -11,6 +11,7 @@ export const StatementItem: FC<StatementItemProps> = ({
   description,
 }) => {
   const classes = useStatementItemStyles();
+
   return (
     <li>
       <h3 className={classes.statementHeading}>
