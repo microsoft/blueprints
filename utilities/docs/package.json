@@ -11,7 +11,7 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "lint": "eslint . --fix",
+    "lint": "eslint . --fix -c .eslintrc.js",
     "start": "gatsby develop"
   },
   "dependencies": {
@@ -73,6 +73,7 @@
   "devDependencies": {
     "@microsoft/arbutus.prop-docs-cli": "1.0.2",
     "@microsoft/arbutus.ts": "0.0.2",
+    "@microsoft/eslint-config-arbutus": "^0.0.1",
     "@types/node": "^18.16.3",
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",

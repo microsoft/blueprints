@@ -58,7 +58,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
             const currentTab = tabs.find((t) => t.tab === tab.tab);
 
             return (
-              <Tab key={`${index}--${currentTab?.tab}`} className={classes.tab}>
+              <Tab key={`${index}--${currentTab?.tab ?? ''}`} className={classes.tab}>
                 {currentTab?.tab}
               </Tab>
             );

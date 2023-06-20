@@ -1,10 +1,3 @@
-const project = [
-  'components/*/tsconfig.json',
-  'hooks/*/tsconfig.json',
-  'styles/*/tsconfig.json',
-  'utilities/*/tsconfig.json',
-];
-
 module.exports = {
   extends: [
     '@microsoft/eslint-config-arbutus',
@@ -12,12 +5,12 @@ module.exports = {
   ],
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.eslint.json', ...project],
+    project: ['./tsconfig.json'],
   },
   settings: {
     'import/resolver': {
       typescript: {
-        project,
+        project: ['./tsconfig.json'],
       },
     },
   },

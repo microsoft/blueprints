@@ -9,7 +9,6 @@ import type { FC } from 'react';
 import * as React from 'react';
 
 import { getNavigationContent } from './get-navigation-content';
-import type { NavigationProps } from './navigation.types';
 
 export type ComponentPageData = {
   _path: string;
@@ -34,7 +33,7 @@ export type NavigationQuery = {
   };
 };
 
-export const Navigation: FC<NavigationProps> = () => {
+export const Navigation: FC = () => {
   const { pathname } = useLocation();
 
   const data = useStaticQuery<NavigationQuery>(graphql`

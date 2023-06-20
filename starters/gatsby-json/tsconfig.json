@@ -105,6 +105,8 @@
     "./src/**/*",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
+    "./gatsby-browser.ts",
+    "./gatsby-ssr.ts",
     "./plugins/**/*",
     "consts/consts.ts"
   ]

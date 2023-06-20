@@ -38,7 +38,7 @@ export type BookmarkTileComponentData = {
   contentComponentId: 'tiles.bookmark-tile';
   title: string;
   description: string;
-  isExternal: string;
+  isExternal: boolean;
   to: string;
   icon?: {
     alternativeText: string;

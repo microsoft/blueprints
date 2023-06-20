@@ -1,5 +1,5 @@
 import { mergeClasses } from '@griffel/react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import type { FC } from 'react';
 import * as React from 'react';
 
@@ -43,12 +43,16 @@ export const Image: FC<ImageProps> = ({
   }
 
   // Gatsby image
-  return (
-    <GatsbyImage
-      image={imageSrc!}
-      alt={image?.alternativeText ?? ''}
-      className={rootClasses}
-      {...gatsbyImageProps}
-    />
-  );
+  if (imageSrc) {
+    return (
+      <GatsbyImage
+        image={imageSrc}
+        alt={image?.alternativeText ?? ''}
+        className={rootClasses}
+        {...gatsbyImageProps}
+      />
+    );
+  }
+
+  return null;
 };

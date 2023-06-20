@@ -9,7 +9,6 @@ import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import { useLocation } from '@reach/router';
 
 import { getNavigationContent } from './get-navigation-content';
-import type { NavigationProps } from './navigation.types';
 
 export type ComponentPageData = {
   _path: string;
@@ -34,7 +33,7 @@ export type NavigationQuery = {
   };
 };
 
-export const Navigation: FC<NavigationProps> = () => {
+export const Navigation: FC = () => {
   const { pathname } = useLocation();
 
   const data = useStaticQuery<NavigationQuery>(graphql`

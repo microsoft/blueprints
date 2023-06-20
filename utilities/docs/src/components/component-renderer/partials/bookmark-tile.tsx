@@ -1,8 +1,9 @@
 import { makeStyles } from '@griffel/react';
 import { BookmarkTile } from '@microsoft/arbutus.bookmark-tile';
-import { navigate } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
+
+import { makeNavigate } from '../../../utilities';
 
 const useStyles = makeStyles({
   root: {
@@ -24,7 +25,8 @@ export const BookmarkTileComponent: FC<BookmarkTileComponentProps> = ({
   icon,
 }) => {
   const classes = useStyles();
-  const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
+
+  const onClick = makeNavigate({ isExternal, to });
 
   return (
     <BookmarkTile

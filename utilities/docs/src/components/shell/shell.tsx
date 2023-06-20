@@ -1,13 +1,16 @@
 import { Shell as ArbutusShell } from '@microsoft/arbutus.shell';
 import type { PageProps } from 'gatsby';
-import { navigate, withPrefix } from 'gatsby';
+import { withPrefix } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
+import { makeNavigate } from '../../utilities';
 import { Footer } from '../footer';
 import { Header } from '../header';
 import { Navigation } from '../navigation';
 import { useLogoStyles } from './shell.styles';
+
+const navigateHome = makeNavigate({ isExternal: false, to: '/' });
 
 const Logo: FC = () => (
   <svg
@@ -44,7 +47,7 @@ export const Shell: FC<PageProps> = ({ children, location }) => {
       openTrayLabel="Open navigation"
       isHeroMode={isHome}
       isBlankMode={isComponentPreview || isComponentSandbox}
-      onLogoClick={() => navigate('/')}
+      onLogoClick={navigateHome}
     >
       {children}
     </ArbutusShell>

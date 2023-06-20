@@ -13,7 +13,6 @@ import type { ComponentPreviewComponentData } from '../component-renderer.types'
 
 // URL route constants
 const PREVIEW = 'preview';
-const SANDBOX = 'edit';
 
 // Utilities
 const removeExampleExtension = (str: string) => str.replace(/\.example\.(tsx|ts)$/, '');

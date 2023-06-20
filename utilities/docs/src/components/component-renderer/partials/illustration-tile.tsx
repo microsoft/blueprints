@@ -1,19 +1,11 @@
 import { IllustrationTile } from '@microsoft/arbutus.illustration-tile';
-import { navigate } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
+import { makeNavigate } from '../../../utilities';
 import type { IllustrationTileComponentData } from '../component-renderer.types';
 
 type IllustrationTileComponentProps = IllustrationTileComponentData;
-
-import { makeStyles } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: '316px',
-  },
-});
 
 export const IllustrationTileComponent: FC<IllustrationTileComponentProps> = ({
   to,
@@ -22,13 +14,10 @@ export const IllustrationTileComponent: FC<IllustrationTileComponentProps> = ({
   isExternal,
   title,
 }) => {
-  const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
-
-  const classes = useStyles();
+  const onClick = makeNavigate({ isExternal, to });
 
   return (
     <IllustrationTile
-      className={classes.root}
       description={description}
       illustrationAlt={image.alternativeText}
       illustrationSrc={image.url}
