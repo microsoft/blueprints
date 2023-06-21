@@ -1,5 +1,4 @@
 # configs
-just.config.js
 **/.eslintrc.js
 **/tsconfig.js
 lage.config.js
@@ -14,6 +13,3 @@ docs
 lib
 node_modules
 public
-
-# template files which actually follow a different language's formatting
-_templates

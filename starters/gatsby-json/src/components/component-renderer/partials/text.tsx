@@ -1,20 +1,20 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import Markdown from 'react-markdown';
-import { Text as ArbutusText } from '@microsoft/arbutus.text';
+import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
+import { Divider } from '@microsoft/arbutus.divider';
 import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
 import { OrderedList, OrderedListItem } from '@microsoft/arbutus.ordered-list';
-import { CodeSnippet } from '@microsoft/arbutus.code-snippet';
+import { Text as ArbutusText } from '@microsoft/arbutus.text';
+import type { FC } from 'react';
+import * as React from 'react';
+import Markdown from 'react-markdown';
 
 import { Image } from '../../image';
-import { TextComponentData } from '../component-renderer.types';
-import { Divider } from '@microsoft/arbutus.divider';
+import type { TextComponentData } from '../component-renderer.types';
 
 type TextProps = TextComponentData;
 
 export const TextComponent: FC<TextProps> = (data) => {
   const {
-      childMarkdownRemark: { rawMarkdownBody },
+    childMarkdownRemark: { rawMarkdownBody },
   } = data;
 
   if (!rawMarkdownBody) {
@@ -23,7 +23,6 @@ export const TextComponent: FC<TextProps> = (data) => {
 
   return (
     <Markdown
-      children={rawMarkdownBody}
       components={{
         h1: ({ children }) => (
           <ArbutusText as="h1" variant="jumbo" block>
@@ -76,8 +75,8 @@ export const TextComponent: FC<TextProps> = (data) => {
           const isMultiline = node?.position?.start.line !== node?.position?.end.line;
 
           return isMultiline ? (
-            // @ts-ignore-next-line Value does exist.
-            <CodeSnippet code={node?.children[0]?.value ?? ''} language={match[1]} />
+            // @ts-ignore-next-line Value does exist in markdown AST.
+            <CodeSnippet code={node?.children[0]?.value ?? ''} language={match[1]} /> // eslint-disable-line @typescript-eslint/no-unsafe-assignment -- Value does exist in markdown AST.
           ) : (
             <code>
               <ArbutusText variant="code">{children}</ArbutusText>
@@ -85,6 +84,8 @@ export const TextComponent: FC<TextProps> = (data) => {
           );
         },
       }}
-    />
+    >
+      {rawMarkdownBody}
+    </Markdown>
   );
 };

@@ -1,6 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
-import { ComponentType } from './component-renderer.types';
+
+import type { ComponentType } from './component-renderer.types';
 
 const gridClasses = {
   full: {

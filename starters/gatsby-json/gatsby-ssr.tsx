@@ -1,8 +1,9 @@
-import * as React from 'react';
-import { Theme } from './src/components/theme';
-import { Shell } from './src/components/shell';
 import { SSRProvider } from '@fluentui/react-utilities';
 import { createDOMRenderer, RendererProvider } from '@griffel/react';
+import * as React from 'react';
+
+import { Shell } from './src/components/shell';
+import { Theme } from './src/components/theme';
 
 const renderer = createDOMRenderer();
 

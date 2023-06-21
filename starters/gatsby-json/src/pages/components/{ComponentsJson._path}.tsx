@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { graphql, type HeadFC, type PageProps } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
+import type { ComponentData } from '../../components/component-renderer';
 import { ReferenceLayout, type ReferenceLayoutProps } from '../../layouts/reference';
-import { ComponentData } from '../../components/component-renderer';
 
 type ComponentPageQuery = {
   site: {

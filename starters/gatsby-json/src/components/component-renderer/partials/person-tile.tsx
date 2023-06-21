@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { navigate } from 'gatsby';
 import { PersonTile } from '@microsoft/arbutus.person-tile';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import { PersonTileComponentData } from '../component-renderer.types';
+import { makeNavigate } from '../../../utilities';
+import type { PersonTileComponentData } from '../component-renderer.types';
 
 type PersonTileComponentProps = PersonTileComponentData;
 
@@ -15,18 +15,14 @@ export const PersonTileComponent: FC<PersonTileComponentProps> = ({
   isExternal,
   to,
   icon,
-}) => {
-  const onClick = () => (isExternal ? window.open(to, '_blank') : navigate(to));
-
-  return (
-    <PersonTile
-      avatarSrc={avatar?.url}
-      firstName={firstName}
-      lastName={lastName}
-      role={role}
-      iconSrc={icon?.url}
-      iconAlt={icon?.alternativeText}
-      onClick={onClick}
-    />
-  );
-};
+}) => (
+  <PersonTile
+    avatarSrc={avatar?.url}
+    firstName={firstName}
+    lastName={lastName}
+    role={role}
+    iconSrc={icon?.url}
+    iconAlt={icon?.alternativeText}
+    onClick={makeNavigate({ isExternal, to })}
+  />
+);

@@ -1,6 +1,7 @@
-import path from 'path';
-import type { GatsbyNode } from 'gatsby';
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-argument */
 import { sentenceCase } from 'change-case';
+import type { GatsbyNode } from 'gatsby';
+import path from 'path';
 
 type Result = {
   allFile: {
@@ -43,9 +44,11 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
   if (examplePages.length > 0) {
     examplePages.forEach(({ absolutePath, relativePath }) => {
+      // eslint-disable-next-line no-useless-escape -- This RegEx is correct.
       const match = absolutePath.match(/\/([^\/.]+)\.example./);
       const fileName = match?.[1] ?? 'file';
       const title = sentenceCase(fileName);
+
       createPage({
         path: `/preview/${fileName}`,
         component: PreviewPage,

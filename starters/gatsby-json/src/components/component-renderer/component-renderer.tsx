@@ -1,16 +1,16 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { mergeClasses } from '@griffel/react';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import type {
-  ComponentRendererProps,
+  ComponentData,
   ComponentProps,
+  ComponentRendererProps,
   ComponentType,
 } from './component-renderer.types';
-import { components } from './partials';
-import { useGridStyles, GRID_SETTINGS } from './use-grid-styles';
 import { formatData } from './format-data';
-import { ComponentData } from './component-renderer.types';
+import { components } from './partials';
+import { GRID_SETTINGS, useGridStyles } from './use-grid-styles';
 
 const getComponent = (type: ComponentType) => components[type] ?? null;
 
@@ -25,13 +25,13 @@ const Component: FC<ComponentProps> = ({ type, content }) => {
   }
 
   if (!isGrid) {
-    // @ts-ignore
+    // @ts-ignore Intended behavior
     return <Component {...content[0]} />;
   } else {
     return (
       <div className={mergeClasses(gridClasses.root, gridClasses[gridSetting])}>
         {content.map((props, index) => (
-          // @ts-ignore
+          // @ts-ignore Intended behavior
           <Component key={index} {...props} />
         ))}
       </div>
@@ -40,11 +40,12 @@ const Component: FC<ComponentProps> = ({ type, content }) => {
 };
 
 export const ComponentRenderer: FC<ComponentRendererProps> = ({ content }) => {
+  const gridClasses = useGridStyles();
+
   if (!content || content.length === 0) {
     return null;
   }
 
-  const gridClasses = useGridStyles();
   const data = formatData(content as ComponentData[]);
 
   return (

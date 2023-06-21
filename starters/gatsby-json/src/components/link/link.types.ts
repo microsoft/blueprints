@@ -1,4 +1,4 @@
-import { LinkProps as ArbutusLinkProps } from '@microsoft/arbutus.link';
+import type { LinkProps as ArbutusLinkProps } from '@microsoft/arbutus.link';
 import type { ReactNode } from 'react';
 
 export type LinkProps = {

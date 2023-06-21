@@ -1,18 +1,18 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { Text } from '@fluentui/react-text';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
+import { Image } from '../image';
 import { Link } from '../link';
 import { useNavigationTileStyles } from './navigation-tile.styles';
-import { Image } from '../image';
-
 import type { NavigationTileProps } from './navigation-tile.types';
 
 export const NavigationTile: FC<NavigationTileProps> = ({ links, title, thumbnail }) => {
   const classes = useNavigationTileStyles();
   const space = useSpaceStyles();
+
   return (
     <Tile variant="card" className={classes.root}>
       {thumbnail ? (

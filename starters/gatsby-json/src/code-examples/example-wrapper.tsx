@@ -1,10 +1,10 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import type { WrapperProps } from '@microsoft/arbutus.component-preview';
 import type { ThemeOption } from '@microsoft/arbutus.theming';
 import { ThemeProvider } from '@microsoft/arbutus.theming';
 import type { FC } from 'react';
 import * as React from 'react';
-import type { WrapperProps } from '@microsoft/arbutus.component-preview';
 
 const useWrapperStyles = makeStyles({
   root: {

@@ -1,4 +1,4 @@
-import { ComponentData } from '../../components/component-renderer';
+import type { ComponentData } from '../../components/component-renderer';
 
 type Contributor = {
   firstName: string;

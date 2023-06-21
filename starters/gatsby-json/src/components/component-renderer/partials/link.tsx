@@ -1,11 +1,11 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Link as ArbutusLink } from '@microsoft/arbutus.link';
-import { Link as GatsbyLink } from 'gatsby';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-
-import { LinkComponentData } from '../component-renderer.types';
 import { makeStyles, mergeClasses } from '@griffel/react';
+import { Link as ArbutusLink } from '@microsoft/arbutus.link';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import { Link as GatsbyLink } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
+
+import type { LinkComponentData } from '../component-renderer.types';
 
 type LinkComponentProps = LinkComponentData;
 
@@ -20,6 +20,7 @@ export const LinkComponent: FC<LinkComponentProps> = ({ to, isExternal, text }) 
   const space = useSpaceStyles();
 
   const linkProps = {} as { to?: string; onClick?: () => void };
+
   if (isExternal) {
     linkProps['to'] = to;
   } else {

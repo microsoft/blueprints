@@ -1,6 +1,7 @@
-import * as React from 'react';
-import type { ReactNode } from 'react';
-import { ThemeProvider } from '@microsoft/arbutus.theming';
+import 'normalize.css';
+
+import { tokens } from '@fluentui/react-theme';
+import { makeStaticStyles } from '@griffel/react';
 import {
   useSegoeUI100,
   useSegoeUI200,
@@ -8,10 +9,9 @@ import {
   useSegoeUI600,
   useSegoeUI700,
 } from '@microsoft/arbutus.fonts';
-import type { FC } from 'react';
-import 'normalize.css';
-import { makeStaticStyles } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
+import { ThemeProvider } from '@microsoft/arbutus.theming';
+import type { FC, ReactNode } from 'react';
+import * as React from 'react';
 
 const useGlobalStyles = makeStaticStyles({
   '*': {

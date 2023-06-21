@@ -1,14 +1,16 @@
-import * as React from 'react';
 import type { FC } from 'react';
-// import { navigate } from 'gatsby';
+import * as React from 'react';
 
-import {} from '../component-renderer.types';
+// import { ... } from '../component-renderer.types';
+// import { makeNavigate } from '../../../utilities';
 
-type TemplateComponentProps = {};
+type TemplateComponentProps = {
+  exampleProp?: string;
+};
 
-export const TemplateComponent: FC<TemplateComponentProps> = ({}) => {
-  // const handleClick = ({ isExternal, to }: Pick<TemplateComponentProps['listItems'][0], 'isExternal' | 'to'>) =>
-  //   isExternal ? window.open(to, '_blank') : navigate(to);
+export const TemplateComponent: FC<TemplateComponentProps> = ({ exampleProp }) => {
+  // Example of adding a handler that will navigate to a page on click.
+  // const onClick = makeNavigate({ isExternal, to });
 
-  return null;
+  return <>{exampleProp}</>;
 };

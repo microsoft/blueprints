@@ -1,6 +1,6 @@
 import { createDOMRenderer, RendererProvider } from '@griffel/react';
-import * as React from 'react';
 import type { FC, ReactNode } from 'react';
+import * as React from 'react';
 
 const renderer = createDOMRenderer();
 

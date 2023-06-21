@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Theme } from './src/components/theme';
+
 import { Shell } from './src/components/shell';
 import { SSRSetup } from './src/components/ssr-setup';
+import { Theme } from './src/components/theme';
 
 export const wrapRootElement = ({ element }) => {
   return (

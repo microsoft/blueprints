@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { makeStyles } from '@griffel/react';
 import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
+import { Text } from '@microsoft/arbutus.text';
+import * as React from 'react';
 
 const useWrapperStyles = makeStyles({
   root: {

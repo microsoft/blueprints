@@ -1,10 +1,11 @@
-import * as React from 'react';
+import type { HeadFC, PageProps } from 'gatsby';
+import { graphql } from 'gatsby';
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import type { FC } from 'react';
-import { graphql, HeadFC, type PageProps } from 'gatsby';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
+import * as React from 'react';
 
+import type { ComponentData } from '../../components/component-renderer';
 import { BasicLayout } from '../../layouts/basic';
-import { ComponentData } from '../../components/component-renderer';
 
 type GuidancePageData = {
   site: {

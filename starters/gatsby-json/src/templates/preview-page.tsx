@@ -1,7 +1,7 @@
+import type { HeadFC, PageProps } from 'gatsby';
+import type { FC } from 'react';
 import * as React from 'react';
 import { lazy, Suspense, useEffect, useState } from 'react';
-import type { FC } from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
 
 type PreviewPageContext = {
   title: string;
@@ -11,7 +11,9 @@ type PreviewPageContext = {
 
 const importExample = (examplePath: string) =>
   lazy(() =>
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return -- import() is supposed to return a promise of type any.
     import(`../code-examples/${examplePath}`).catch(
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return -- import() is supposed to return a promise of type any.
       () => import('./preview-page-not-found'),
     ),
   );
@@ -23,8 +25,9 @@ const PreviewPage: FC<PageProps<undefined, PreviewPageContext>> = ({
   const [Example, setExample] = useState<FC | null>(null);
 
   useEffect(() => {
-    async function loadExample() {
-      const Module = await importExample(examplePath);
+    function loadExample() {
+      const Module = importExample(examplePath);
+
       setExample(Module);
     }
     loadExample();

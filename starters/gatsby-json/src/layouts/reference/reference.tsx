@@ -1,22 +1,22 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { PersonTile } from '@microsoft/arbutus.person-tile';
-import { Tabs, TabList, TabPanel, TabPanels, Tab } from '@microsoft/arbutus.tabs';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import { mergeClasses } from '@griffel/react';
+import { PersonTile } from '@microsoft/arbutus.person-tile';
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@microsoft/arbutus.tabs';
+import { Text } from '@microsoft/arbutus.text';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import type { ReferenceLayoutProps } from './reference.types';
-import { Grid } from '../../components/grid';
 import { ComponentRenderer } from '../../components/component-renderer';
+import { Grid } from '../../components/grid';
 import { useReferenceStyles } from './reference.styles';
+import type { ReferenceLayoutProps } from './reference.types';
 import { sortTabs } from './reference.utils';
 
 export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
   title,
   definition,
   owners,
-  packageName,
+  // packageName,
   tabs,
 }) => {
   const space = useSpaceStyles();
@@ -56,8 +56,9 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
         <TabList>
           {sortTabs(tabs).map((tab, index) => {
             const currentTab = tabs.find((t) => t.tab === tab.tab);
+
             return (
-              <Tab key={`${index}--${currentTab?.tab}`} className={classes.tab}>
+              <Tab key={`${index}--${currentTab?.tab ?? ''}`} className={classes.tab}>
                 {currentTab?.tab}
               </Tab>
             );

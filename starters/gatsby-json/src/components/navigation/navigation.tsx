@@ -1,12 +1,12 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import {
   MainNavigation,
   MainNavigationRenderer,
 } from '@microsoft/arbutus.main-navigation';
-import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import { useLocation } from '@reach/router';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import { getNavigationContent } from './get-navigation-content';
 
@@ -69,10 +69,40 @@ export const Navigation: FC = () => {
       title: 'Guidance',
       items: guidance,
     },
-    components: {
-      title: 'Components',
+    documentation: {
+      title: 'Documentation',
       hasDivider: true,
-      items: components,
+      items: {
+        quickStart: {
+          title: 'Quick Start',
+          id: '/documentation/quick-start',
+          linkProps: { to: '/documentation/quick-start' },
+        },
+        theming: {
+          title: 'Theming',
+          id: '/documentation/theming',
+          linkProps: { to: '/documentation/theming' },
+        },
+        content: {
+          title: 'Content',
+          id: '/documentation/content',
+          linkProps: { to: '/documentation/content' },
+        },
+        starters: {
+          title: 'Starters',
+          items: {
+            gatsbyJson: {
+              title: 'Gatsby & JSON',
+              id: '/documentation/starters/gatsby-json',
+              linkProps: { to: '/documentation/starters/gatsby-json' },
+            },
+          },
+        },
+        components: {
+          title: 'Components',
+          items: components,
+        },
+      },
     },
   };
 

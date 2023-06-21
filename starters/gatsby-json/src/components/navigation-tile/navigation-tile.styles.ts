@@ -1,5 +1,5 @@
-import { makeStyles } from '@griffel/react';
 import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
 
 export const useNavigationTileStyles = makeStyles({
   root: {

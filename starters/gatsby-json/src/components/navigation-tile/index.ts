@@ -1,2 +1,2 @@
 export { NavigationTile } from './navigation-tile';
-export type { NavigationTileProps, NavigationTileLink } from './navigation-tile.types';
+export type { NavigationTileLink, NavigationTileProps } from './navigation-tile.types';

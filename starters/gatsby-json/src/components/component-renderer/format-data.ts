@@ -1,5 +1,4 @@
-import { ComponentData } from './component-renderer.types';
-import { ComponentProps, ComponentType } from './component-renderer.types';
+import type { ComponentData, ComponentType } from './component-renderer.types';
 
 export const formatData = (data: ComponentData[]) => {
   let position = 0;

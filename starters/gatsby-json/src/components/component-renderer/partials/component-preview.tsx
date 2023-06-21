@@ -1,19 +1,18 @@
-import * as React from 'react';
-import type { FC } from 'react';
-import { ComponentPreview } from '@microsoft/arbutus.component-preview';
-import { useLocation } from '@reach/router';
-import { lazy, Suspense, useEffect, useState } from 'react';
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import type { WrapperProps } from '@microsoft/arbutus.component-preview';
+import { ComponentPreview } from '@microsoft/arbutus.component-preview';
 import type { ThemeOption } from '@microsoft/arbutus.theming';
 import { ThemeProvider, useTheme } from '@microsoft/arbutus.theming';
-import type { WrapperProps } from '@microsoft/arbutus.component-preview';
+import { useLocation } from '@reach/router';
+import type { FC } from 'react';
+import * as React from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 
 import type { ComponentPreviewComponentData } from '../component-renderer.types';
 
 // URL route constants
 const PREVIEW = 'preview';
-const SANDBOX = 'edit';
 
 // Utilities
 const removeExampleExtension = (str: string) => str.replace(/\.example\.(tsx|ts)$/, '');
@@ -23,6 +22,7 @@ const replaceExampleWithRaw = (str: string) =>
 // Example component dynamic import
 const importExample = (examplePath: string) =>
   lazy(() =>
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return -- import() is supposed to return a promise of type any.
     import(`../../../code-examples/${examplePath}`).catch(
       () => import('./component-preview-not-found'),
     ),
@@ -32,12 +32,17 @@ const importExample = (examplePath: string) =>
 const importExampleRaw = (examplePath: string): Promise<string> => {
   const exampleRawPath = replaceExampleWithRaw(examplePath);
 
-  return import(`../../../code-examples/__raw__/${exampleRawPath}`)
-    .then((result) => result.default)
-    .catch((err) => {
-      console.log(err);
-      return '';
-    });
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return -- import() is supposed to return a promise of type any.
+  return (
+    import(`../../../code-examples/__raw__/${exampleRawPath}`)
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-return -- .default is a property of a module and refers to default export.
+      .then((result) => result.default)
+      .catch((err) => {
+        console.log(err);
+
+        return '';
+      })
+  );
 };
 
 // Theme wrapper
@@ -83,13 +88,18 @@ export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({
 
   useEffect(() => {
     async function loadExample() {
-      const Module = await importExample(exampleFile);
+      const Module = importExample(exampleFile);
+
       setExample(Module);
 
       const rawCode = await importExampleRaw(exampleFile);
+
       setExampleRaw(rawCode ?? '');
     }
-    loadExample();
+
+    loadExample().catch((err) => {
+      process?.env?.NODE_ENV === 'development' && console.error(err);
+    });
   }, [exampleFile]);
 
   // Theme

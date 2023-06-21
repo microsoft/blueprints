@@ -1,4 +1,4 @@
-import { NavigationItems } from '@microsoft/arbutus.main-navigation';
+import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 
 import type {
   ComponentPageData,
@@ -15,9 +15,11 @@ const sortAlphabetically = (
   if (a.title < b.title) {
     return -1;
   }
+
   if (a.title > b.title) {
     return 1;
   }
+
   return 0;
 };
 
@@ -25,12 +27,15 @@ const sortByIndex = (a: GuidelinesPageData, b: GuidelinesPageData) => {
   if (!a._orderInNav || !b._orderInNav) {
     return 0;
   }
+
   if (a._orderInNav < b._orderInNav) {
     return -1;
   }
+
   if (a._orderInNav > b._orderInNav) {
     return 1;
   }
+
   return 0;
 };
 
@@ -46,6 +51,7 @@ const formatPagesForNavigation = (
       id: `/${section}/${_path}/`,
       linkProps: { to: `/${section}/${_path}` },
     };
+
     return acc;
   }, {} as NavigationItems) ?? {};
 
