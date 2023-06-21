@@ -1,4 +1,4 @@
-import type { HeadFC, type PageProps } from 'gatsby';
+import type { HeadFC, PageProps } from 'gatsby';
 import { graphql } from 'gatsby';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 import type { FC } from 'react';

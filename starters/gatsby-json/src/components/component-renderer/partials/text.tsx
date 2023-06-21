@@ -14,9 +14,7 @@ type TextProps = TextComponentData;
 
 export const TextComponent: FC<TextProps> = (data) => {
   const {
-    childStrapiComponentBlocksTextTextTextnode: {
       childMarkdownRemark: { rawMarkdownBody },
-    },
   } = data;
 
   if (!rawMarkdownBody) {

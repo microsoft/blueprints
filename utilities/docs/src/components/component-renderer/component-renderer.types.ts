@@ -186,11 +186,9 @@ export type PropTableComponentData = {
 
 export type TextComponentData = {
   contentComponentId: 'blocks.text';
-  childStrapiComponentBlocksTextTextTextnode: {
-    childMarkdownRemark: {
-      html?: string;
-      rawMarkdownBody?: string;
-    };
+  childMarkdownRemark: {
+    html?: string;
+    rawMarkdownBody?: string;
   };
 };
 

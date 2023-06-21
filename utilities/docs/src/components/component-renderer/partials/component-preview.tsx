@@ -22,6 +22,7 @@ const replaceExampleWithRaw = (str: string) =>
 // Example component dynamic import
 const importExample = (examplePath: string) =>
   lazy(() =>
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return -- import() is supposed to return a promise of type any.
     import(`../../../code-examples/${examplePath}`).catch(
       () => import('./component-preview-not-found'),
     ),
@@ -31,13 +32,17 @@ const importExample = (examplePath: string) =>
 const importExampleRaw = (examplePath: string): Promise<string> => {
   const exampleRawPath = replaceExampleWithRaw(examplePath);
 
-  return import(`../../../code-examples/__raw__/${exampleRawPath}`)
-    .then((result) => result.default)
-    .catch((err) => {
-      console.log(err);
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return -- import() is supposed to return a promise of type any.
+  return (
+    import(`../../../code-examples/__raw__/${exampleRawPath}`)
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-return -- .default is a property of a module and refers to default export.
+      .then((result) => result.default)
+      .catch((err) => {
+        console.log(err);
 
-      return '';
-    });
+        return '';
+      })
+  );
 };
 
 // Theme wrapper
@@ -83,7 +88,7 @@ export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({
 
   useEffect(() => {
     async function loadExample() {
-      const Module = await importExample(exampleFile);
+      const Module = importExample(exampleFile);
 
       setExample(Module);
 
@@ -91,7 +96,10 @@ export const ComponentPreviewComponent: FC<ComponentPreviewComponentProps> = ({
 
       setExampleRaw(rawCode ?? '');
     }
-    loadExample();
+
+    loadExample().catch((err) => {
+      process?.env?.NODE_ENV === 'development' && console.error(err);
+    });
   }, [exampleFile]);
 
   // Theme

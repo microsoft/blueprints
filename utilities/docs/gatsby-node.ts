@@ -44,6 +44,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
   if (examplePages.length > 0) {
     examplePages.forEach(({ absolutePath, relativePath }) => {
+      // eslint-disable-next-line no-useless-escape -- This RegEx is correct.
       const match = absolutePath.match(/\/([^\/.]+)\.example./);
       const fileName = match?.[1] ?? 'file';
       const title = sentenceCase(fileName);

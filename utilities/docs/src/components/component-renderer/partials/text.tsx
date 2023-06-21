@@ -14,9 +14,7 @@ type TextProps = TextComponentData;
 
 export const TextComponent: FC<TextProps> = (data) => {
   const {
-    childStrapiComponentBlocksTextTextTextnode: {
-      childMarkdownRemark: { rawMarkdownBody },
-    },
+    childMarkdownRemark: { rawMarkdownBody },
   } = data;
 
   if (!rawMarkdownBody) {
@@ -25,7 +23,6 @@ export const TextComponent: FC<TextProps> = (data) => {
 
   return (
     <Markdown
-      children={rawMarkdownBody}
       components={{
         h1: ({ children }) => (
           <ArbutusText as="h1" variant="jumbo" block>
@@ -78,8 +75,8 @@ export const TextComponent: FC<TextProps> = (data) => {
           const isMultiline = node?.position?.start.line !== node?.position?.end.line;
 
           return isMultiline ? (
-            // @ts-ignore-next-line Value does exist.
-            <CodeSnippet code={node?.children[0]?.value ?? ''} language={match[1]} />
+            // @ts-ignore-next-line Value does exist in markdown AST.
+            <CodeSnippet code={node?.children[0]?.value ?? ''} language={match[1]} /> // eslint-disable-line @typescript-eslint/no-unsafe-assignment -- Value does exist in markdown AST.
           ) : (
             <code>
               <ArbutusText variant="code">{children}</ArbutusText>
@@ -87,6 +84,8 @@ export const TextComponent: FC<TextProps> = (data) => {
           );
         },
       }}
-    />
+    >
+      {rawMarkdownBody}
+    </Markdown>
   );
 };
