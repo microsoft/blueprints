@@ -5,6 +5,14 @@
 *.d.ts.map
 *.js.map
 
+.env
+.env.production
+.env.development
+.env.test
+
+.cache
+public
+
 components/**/src/**/*.js
 components/**/src/**/*.js.map
 
@@ -16,8 +24,8 @@ sections/**/src/**/*.js.map
 
 layouts/**/src/**/*.js
 layouts/**/src/**/*.js.map
-storybook-static
 
+storybook-static
 node_modules
 .env
 .npmrc

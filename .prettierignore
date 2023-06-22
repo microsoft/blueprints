@@ -6,6 +6,7 @@ lib
 lib-amd
 lib-commonjs
 node_modules
+public
 
 # template files which actually follow a different language's formatting
 _templates

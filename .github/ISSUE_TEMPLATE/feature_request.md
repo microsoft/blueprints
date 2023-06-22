@@ -2,9 +2,8 @@
 name: Feature request
 about: Suggest an idea for an existing component
 title: ''
-labels: "⚠️ needs triage"
+labels: '⚠️ needs triage'
 assignees: ''
-
 ---
 
 **Which component are you suggesting the feature for??**

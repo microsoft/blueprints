@@ -24,7 +24,6 @@
     "@microsoft/arbutus.use-space-styles": "1.0.3",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
-    "@reach/tabs": "^0.17.0",
     "framer-motion": "^10.12.16"
   },
   "devDependencies": {

@@ -9,5 +9,5 @@ npm i "@microsoft/arbutus.component-preview"
 ```
 
 ```tsx
-import { ComponentPreview } from "@microsoft/arbutus.component-preview";
+import { ComponentPreview } from '@microsoft/arbutus.component-preview';
 ```

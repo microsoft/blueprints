@@ -1,0 +1,33 @@
+{
+  "_layout": "footer",
+  "_isSingleton": true,
+  "primaryLinks": [
+    {
+      "to": "/getting-started/",
+      "text": "Getting Started",
+      "isExternal": false
+    },
+    {
+      "to": "/guidance/page-1/",
+      "text": "Guidelines",
+      "isExternal": false
+    },
+    {
+      "to": "/components/reference-page-1/",
+      "text": "Components",
+      "isExternal": false
+    }
+  ],
+  "secondaryLinks": [
+    {
+      "to": "https://develop.fluentui.dev/",
+      "text": "Fluent",
+      "isExternal": true
+    },
+    {
+      "to": "https://microsoft.com/",
+      "text": "Microsoft Design",
+      "isExternal": true
+    }
+  ]
+}

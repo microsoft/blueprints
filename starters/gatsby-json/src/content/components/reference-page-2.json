@@ -1,0 +1,75 @@
+{
+  "_layout": "reference",
+  "_path": "reference-page-2",
+  "_includeInNav": true,
+  "title": "Reference Page 2",
+  "definition": "This is a reference page.",
+  "owners": [
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "alias": "janedoe",
+      "role": "Technical Writer"
+    },
+    {
+      "firstName": "Jake",
+      "lastName": "Doe",
+      "alias": "jakedoe",
+      "role": "Designer"
+    }
+  ],
+  "tabs": [
+    {
+      "tab": "usage",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h1",
+          "title": "Usage",
+          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "size": "title",
+          "withCopyLink": false,
+          "withDivider": false
+        }
+      ]
+    },
+    {
+      "tab": "design",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h1",
+          "title": "Design",
+          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "size": "title",
+          "withCopyLink": false,
+          "withDivider": false
+        }
+      ]
+    },
+    {
+      "tab": "develop",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h1",
+          "title": "Develop",
+          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "size": "title",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "my-component.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "DemoComponent",
+          "componentPropType": "DemoComponentProps"
+        }
+      ]
+    }
+  ]
+}

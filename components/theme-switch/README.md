@@ -9,5 +9,5 @@ npm i "@microsoft/arbutus.theme-switch"
 ```
 
 ```tsx
-import { ThemeSwitch } from "@microsoft/arbutus.theme-switch";
+import { ThemeSwitch } from '@microsoft/arbutus.theme-switch';
 ```

@@ -1,0 +1,15 @@
+# configs
+**/.eslintrc.js
+**/tsconfig.js
+lage.config.js
+**/*.config.js
+
+# generated folders
+__snapshots__
+.cache
+dist
+bin
+docs
+lib
+node_modules
+public

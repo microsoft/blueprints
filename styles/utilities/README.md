@@ -15,7 +15,7 @@ npm i @microsoft/arbutus.style-utilities
 **mapToStyles is designed to help generating styles variants. It generates Griffel classes from a map of values.**
 
 ```tsx
-import { mapToStyles } from "@microsoft/arbutus.style-utilities";
+import { mapToStyles } from '@microsoft/arbutus.style-utilities';
 ```
 
 #### Parameters
@@ -33,12 +33,15 @@ An object with keys from the map and values as GriffelStyle returned by the `sty
 
 ```tsx
 type ColorValue = string;
-const textColors = { primary: 'red', secondary: 'blue' }
+const textColors = { primary: 'red', secondary: 'blue' };
 const textStyleFunction = (color: ColorValue) => ({
   color,
-  '&:visited': { color }
-})
-const textColorClasses = mapToStyles<ColorValue, typeof textColors>(textColors, textStyleFunction);
+  '&:visited': { color },
+});
+const textColorClasses = mapToStyles<ColorValue, typeof textColors>(
+  textColors,
+  textStyleFunction,
+);
 // Output
 // {
 //   primary: {
