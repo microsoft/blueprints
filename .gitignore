@@ -5,6 +5,11 @@
 *.d.ts.map
 *.js.map
 
+.env
+.env.production
+.env.development
+.env.test
+
 .cache
 public
 
