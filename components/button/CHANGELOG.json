@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.button",
   "entries": [
     {
+      "date": "Thu, 22 Jun 2023 22:45:06 GMT",
+      "tag": "@microsoft/arbutus.button_v1.0.2",
+      "version": "1.0.2",
+      "comments": {
+        "none": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.button",
+            "commit": "3a0b614b75bcb8d77af738148d75422dec2d7e3c",
+            "comment": "Runs Eslint"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 05 Jun 2023 20:43:46 GMT",
       "tag": "@microsoft/arbutus.button_v1.0.2",
       "version": "1.0.2",

@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/eslint-config-arbutus",
+  "entries": [
+    {
+      "date": "Thu, 22 Jun 2023 22:45:06 GMT",
+      "tag": "@microsoft/eslint-config-arbutus_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/eslint-config-arbutus",
+            "commit": "3a0b614b75bcb8d77af738148d75422dec2d7e3c",
+            "comment": "Adds Eslint config for Arbutus projects."
+          }
+        ]
+      }
+    }
+  ]
+}

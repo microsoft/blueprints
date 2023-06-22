@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "Runs Eslint",
-  "packageName": "@microsoft/arbutus.person-tile",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "none"
-}

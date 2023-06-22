@@ -1,0 +1,13 @@
+# Change Log - @microsoft/eslint-config-arbutus
+
+This log was last generated on Thu, 22 Jun 2023 22:45:06 GMT and should not be manually modified.
+
+<!-- Start content -->
+
+## 0.0.2
+
+Thu, 22 Jun 2023 22:45:06 GMT
+
+### Patches
+
+- Adds Eslint config for Arbutus projects. (akimalunar@gmail.com)

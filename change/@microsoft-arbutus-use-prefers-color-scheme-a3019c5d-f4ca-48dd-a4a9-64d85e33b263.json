@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "Runs Eslint",
-  "packageName": "@microsoft/arbutus.use-prefers-color-scheme",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "none"
-}
