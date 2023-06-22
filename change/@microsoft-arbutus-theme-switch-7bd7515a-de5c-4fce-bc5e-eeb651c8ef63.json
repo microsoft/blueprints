@@ -1,7 +1,0 @@
-{
-  "type": "none",
-  "comment": "Runs Eslint",
-  "packageName": "@microsoft/arbutus.theme-switch",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "none"
-}

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/eslint-config-arbutus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An eslintrc base for Arbutus projects.",
   "exports": "./.eslintrc",
   "files": [
