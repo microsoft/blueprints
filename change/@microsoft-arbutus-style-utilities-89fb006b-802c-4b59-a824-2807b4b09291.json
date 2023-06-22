@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "Runs Eslint",
+  "packageName": "@microsoft/arbutus.style-utilities",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "none"
+}

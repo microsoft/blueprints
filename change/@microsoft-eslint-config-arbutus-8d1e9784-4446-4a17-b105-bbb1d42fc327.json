@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Adds Eslint config for Arbutus projects.",
+  "packageName": "@microsoft/eslint-config-arbutus",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

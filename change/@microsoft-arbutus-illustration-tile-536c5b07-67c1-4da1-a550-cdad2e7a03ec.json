@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "Runs Eslint",
+  "packageName": "@microsoft/arbutus.illustration-tile",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "none"
+}
