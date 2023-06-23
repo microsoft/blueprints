@@ -1,7 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
-import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
 import { CONTAINER_WIDTH, HEADER_HEIGHT } from '@microsoft/arbutus.shell';
+import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
 
 export const useHomeStyles = makeStyles({
   root: {

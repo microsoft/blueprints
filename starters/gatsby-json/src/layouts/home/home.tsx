@@ -1,11 +1,11 @@
-import * as React from 'react';
-import type { FC } from 'react';
+import { mergeClasses } from '@griffel/react';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import type { FC } from 'react';
+import * as React from 'react';
 
-import type { HomeLayoutProps } from './home.types';
 import { useHomeStyles } from './home.styles';
-import { mergeClasses } from '@griffel/react';
+import type { HomeLayoutProps } from './home.types';
 
 export const HomeLayout: FC<HomeLayoutProps> = ({ title, leading }) => {
   const classes = useHomeStyles();
