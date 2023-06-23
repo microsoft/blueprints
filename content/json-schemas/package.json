@@ -1,0 +1,12 @@
+{
+  "name": "@microsoft/arbutus.json-schemas",
+  "version": "0.0.1",
+  "description": "Content schemas.",
+  "exports": {
+    "my-component": "./components/my-component.json"
+  },
+  "files": [
+    "./components/my-component.json"
+  ],
+  "dependencies": {}
+}

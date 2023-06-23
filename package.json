@@ -9,6 +9,7 @@
   "private": true,
   "workspaces": [
     "components/*",
+    "content/*",
     "hooks/*",
     "styles/*",
     "utilities/*"

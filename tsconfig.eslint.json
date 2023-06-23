@@ -8,5 +8,5 @@
     // Ensures that nobody can accidentally use this config for a build.
     "noEmit": true
   },
-  "include": ["components", "styles", "hooks", "utilities"]
+  "include": ["components", "content", "hooks", "styles", "utilities"]
 }
