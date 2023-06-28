@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/tiles/bookmark-tile.schema.json",
+  "title": "JSON Schema for bookmark tile component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "tiles.bookmark-tile" ]
+    },
+    "title": {
+      "type": "string",
+      "description": "This describes the link's destination."
+    },
+    "to": {
+      "type": "string",
+      "description": "The URL of the page the tile goes to."
+    },
+    "isExternal": {
+      "type": "boolean",
+      "description": ""
+    },
+    "icon": {
+      "$ref": "./../../common/image.schema.json"
+    },
+    "description": {
+      "type": [ "string", "null" ],
+      "description": "The tile description."
+    }
+  },
+  "required": [ "contentComponentId", "title", "to" ],
+  "additionalProperties": false
+}

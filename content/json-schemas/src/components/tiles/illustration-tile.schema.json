@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/tiles/illustration-tile.schema.json",
+  "title": "JSON Schema for illustration tile component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "tiles.illustration-tile" ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "to": {
+      "type": [ "string", "null" ]
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "The path to the image file."
+        },
+        "alternativeText": {
+          "type": ["string", "null"],
+          "description": "The alt text for the image."
+        }
+      },
+      "additionalProperties": false
+    },
+    "isExternal": {
+      "type": "boolean"
+    }
+  },
+  "required": [ "contentComponentId", "title" ],
+  "additionalProperties": false
+}

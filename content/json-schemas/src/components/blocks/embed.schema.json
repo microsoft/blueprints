@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/blocks/embed.schema.json",
+  "title": "JSON Schema for embed component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "blocks.embed" ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [ "figma" ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    }
+  },
+  "required": [ "contentComponentId", "title", "type", "url" ],
+  "additionalProperties": false
+}

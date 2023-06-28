@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/blocks/prop-table.schema.json",
+  "title": "JSON Schema for prop table component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "blocks.prop-table" ]
+    },
+    "componentName": {
+      "type": "string"
+    },
+    "componentPropType": {
+      "type": "string"
+    }
+  },
+  "required": [ "contentComponentId", "componentName", "componentPropType" ],
+  "additionalProperties": false
+}

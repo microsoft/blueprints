@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "layouts/header.schema.json",
+  "title": "JSON Schema for Header Page",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to the json schema which the document will be validated by."
+    },
+    "_layout": {
+      "type": "string",
+      "enum": [ "header" ],
+      "description": "Type of layout."
+    },
+    "_isSingleton": {
+      "type": "boolean"
+    },
+    "links": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "isExternal": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [ "_layout", "_isSingleton" ],
+  "additionalProperties": false
+}

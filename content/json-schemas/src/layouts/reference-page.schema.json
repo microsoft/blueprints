@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "layouts/reference-page.schema.json",
+  "title": "JSON Schema for Reference Page",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to the json schema which the document will be validated by."
+    },
+    "_layout": {
+      "type": "string",
+      "enum": [ "reference" ],
+      "description": "Type of layout."
+    },
+    "_path": {
+      "type": "string",
+      "description": "URL path of the page."
+    },
+    "_includeInNav": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the page."
+    },
+    "definition": {
+      "type": "string"
+    },
+    "owners": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "alias": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        },
+        "required": [ "firstName", "lastName" ],
+        "additionalProperties": false
+      }
+    },
+    "tabs": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "tab": {
+            "type": "string"
+          },
+          "content": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+              "type": "object",
+              "anyOf": [
+                {
+                  "$ref": "./../components/atoms/link.schema.json"
+                },
+                {
+                  "$ref": "./../components/blocks/code-snippet.schema.json"
+                },
+                {
+                  "$ref": "./../components/blocks/component-preview.schema.json"
+                },
+                {
+                  "$ref": "./../components/blocks/embed.schema.json"
+                },
+                {
+                  "$ref": "./../components/blocks/guidance.schema.json"
+                },
+                {
+                  "$ref": "./../components/blocks/heading.schema.json"
+                },
+                {
+                  "$ref": "./../components/blocks/prop-table.schema.json"
+                },
+                {
+                  "$ref": "./../components/lists/mark-list.schema.json"
+                },
+                {
+                  "$ref": "./../components/lists/ordered-list.schema.json"
+                },
+                {
+                  "$ref": "./../components/tiles/action-list-tile.schema.json"
+                },
+                {
+                  "$ref": "./../components/tiles/bookmark-tile.schema.json"
+                },
+                {
+                  "$ref": "./../components/tiles/illustration-tile.schema.json"
+                },
+                {
+                  "$ref": "./../components/tiles/recommendation.schema.json"
+                },
+                {
+                  "$ref": "./../components/tiles/person-tile.schema.json"
+                },
+                {
+                  "$ref": "./../components/others/image.schema.json"
+                },
+                {
+                  "$ref": "./../components/others/empty.schema.json"
+                }
+              ]
+            }
+          }
+        },
+        "required": [ "tab" ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [ "_layout", "_path", "title" ],
+  "additionalProperties": false
+}

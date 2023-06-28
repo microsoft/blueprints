@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "JSON Schema for Layout Page",
+  "type": "object",
+  "anyOf": [
+    {
+      "$ref": "./../layouts/basic.schema.json"
+    },
+    {
+      "$ref": "./../layouts/home.schema.json"
+    },
+    {
+      "$ref": "./../layouts/reference-page.schema.json"
+    },
+    {
+      "$ref": "./../layouts/header.schema.json"
+    },
+    {
+      "$ref": "./../layouts/footer.schema.json"
+    }
+  ]
+}
