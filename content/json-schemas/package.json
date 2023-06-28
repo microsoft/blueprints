@@ -18,7 +18,8 @@
     ]
   },
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.5",
