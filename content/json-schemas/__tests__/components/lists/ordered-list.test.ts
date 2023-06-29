@@ -1,71 +1,78 @@
 ﻿import { describe, expect, test } from '@jest/globals';
-import { addSchema, compile } from './../../utils/ajv-utils';
+import type { ValidateFunction } from 'ajv';
 
-let validate;
+import { addSchema, compile } from '../../utils/ajv-utils';
+
+let validate: ValidateFunction<unknown>;
 
 try {
-    addSchema('@microsoft/arbutus.json-schemas/common/image.schema.json');
-    validate = compile('@microsoft/arbutus.json-schemas/components/lists/ordered-list.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/common/image.schema.json');
+  // prettier-ignore
+  validate = compile('@microsoft/arbutus.json-schemas/components/lists/ordered-list.schema.json');
 } catch (ex) {
-    console.error(ex);
+  console.error(ex);
 }
 
 describe('ordered list schema', () => {
-    test('filling out all fields should be valid', () => {
-        const data = {
-            contentComponentId: "lists.ordered-list",
-            listItems: [
-                {
-                    text: "Test text",
-                    headline: "Test headline"
-                }
-            ],
-            variant: "primary"
-        };
+  test('filling out all fields should be valid', () => {
+    const data = {
+      contentComponentId: 'lists.ordered-list',
+      listItems: [
+        {
+          text: 'Test text',
+          headline: 'Test headline',
+        },
+      ],
+      variant: 'primary',
+    };
 
-        const valid = validate(data);
-        if (!valid) console.log(validate.errors);
-        expect(valid).toBe(true);
-    });
+    const valid = validate(data);
 
-    test('only filling out required fields should be valid', () => {
-        const data = {
-            contentComponentId: "lists.ordered-list",
-            listItems: [
-                {
-                    text: "Test text",
-                    headline: "Test headline"
-                }
-            ]
-        };
+    if (!valid) console.log(validate.errors);
+    expect(valid).toBe(true);
+  });
 
-        const valid = validate(data);
-        if (!valid) console.log(validate.errors);
-        expect(valid).toBe(true);
-    });
+  test('only filling out required fields should be valid', () => {
+    const data = {
+      contentComponentId: 'lists.ordered-list',
+      listItems: [
+        {
+          text: 'Test text',
+          headline: 'Test headline',
+        },
+      ],
+    };
 
-    test('missing a required field [listItems] should not be valid', () => {
-        const data = {
-            contentComponentId: "lists.ordered-list"
-        };
+    const valid = validate(data);
 
-        const valid = validate(data);
-        expect(valid).toBe(false);
-    });
+    if (!valid) console.log(validate.errors);
+    expect(valid).toBe(true);
+  });
 
-    test('adding non-existing field should not be valid', () => {
-        const data = {
-            contentComponentId: "lists.ordered-list",
-            listItems: [
-                {
-                    text: "Test text",
-                    headline: "Test headline"
-                }
-            ],
-            nonExistingField: "Invalid field"   // this random field is required for this testing
-        };
+  test('missing a required field [listItems] should not be valid', () => {
+    const data = {
+      contentComponentId: 'lists.ordered-list',
+    };
 
-        const valid = validate(data);
-        expect(valid).toBe(false);
-    });
+    const valid = validate(data);
+
+    expect(valid).toBe(false);
+  });
+
+  test('adding non-existing field should not be valid', () => {
+    const data = {
+      contentComponentId: 'lists.ordered-list',
+      listItems: [
+        {
+          text: 'Test text',
+          headline: 'Test headline',
+        },
+      ],
+      nonExistingField: 'Invalid field', // this random field is required for this testing
+    };
+
+    const valid = validate(data);
+
+    expect(valid).toBe(false);
+  });
 });

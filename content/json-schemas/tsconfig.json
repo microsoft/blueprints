@@ -1,16 +1,4 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "Node",
-    "noImplicitAny": false,
-    "noEmitOnError": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "module": "CommonJS",
-    "target": "ES6",
-    "jsx": "react",
-    "skipLibCheck": true
-  },
-  "exclude": [
-    "node_modules/*"
-  ]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@microsoft/arbutus.ts"
 }

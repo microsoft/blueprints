@@ -1,20 +1,24 @@
-﻿import { beforeAll, describe, expect, test } from '@jest/globals';
-import { addAllSchemas, compile } from '../utils/ajv-utils';
+﻿import { describe, expect, test } from '@jest/globals';
+import type { ValidateFunction } from 'ajv';
 
-let validate;
+import { addAllSchemas, compile, loadJsonObject } from '../utils/ajv-utils';
+
+let validate: ValidateFunction<unknown>;
 
 try {
-    addAllSchemas();
-    validate = compile('@microsoft/arbutus.json-schemas/layouts/layout.schema.json');
+  addAllSchemas();
+  validate = compile('@microsoft/arbutus.json-schemas/layouts/layout.schema.json');
 } catch (ex) {
-    console.error(ex);
+  console.error(ex);
 }
 
 describe('footer page schema', () => {
-    test('footer.json should be valid', () => {
-        const data = require('./../../../../starters/gatsby-json/src/content/footer/footer.json');
-        const valid = validate(data);
-        if (!valid) console.log(validate.errors);
-        expect(valid).toBe(true);
-    });
+  test('footer.json should be valid', () => {
+    // prettier-ignore
+    const data = loadJsonObject('./../../../../starters/gatsby-json/src/content/footer/footer.json');
+    const valid = validate(data);
+
+    if (!valid) console.log(validate.errors);
+    expect(valid).toBe(true);
+  });
 });

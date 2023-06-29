@@ -1,56 +1,63 @@
 ﻿import { describe, expect, test } from '@jest/globals';
-import { compile } from './../../utils/ajv-utils';
+import type { ValidateFunction } from 'ajv';
 
-let validate;
+import { compile } from '../../utils/ajv-utils';
+
+let validate: ValidateFunction<unknown>;
 
 try {
-    validate = compile('@microsoft/arbutus.json-schemas/components/blocks/component-preview.schema.json');
+  // prettier-ignore
+  validate = compile('@microsoft/arbutus.json-schemas/components/blocks/component-preview.schema.json');
 } catch (ex) {
-    console.error(ex);
+  console.error(ex);
 }
 
 describe('component preview schema', () => {
-    test('filling out all fields should be valid', () => {
-        const data = {
-            contentComponentId: "blocks.component-preview",
-            exampleFile: "Test code",
-            withMenu: true
-        };
+  test('filling out all fields should be valid', () => {
+    const data = {
+      contentComponentId: 'blocks.component-preview',
+      exampleFile: 'Test code',
+      withMenu: true,
+    };
 
-        const valid = validate(data);
-        if (!valid) console.log(validate.errors);
-        expect(valid).toBe(true);
-    });
+    const valid = validate(data);
 
-    test('only filling out required fields should be valid', () => {
-        const data = {
-            contentComponentId: "blocks.component-preview",
-            exampleFile: "Test code"
-        };
+    if (!valid) console.log(validate.errors);
+    expect(valid).toBe(true);
+  });
 
-        const valid = validate(data);
-        if (!valid) console.log(validate.errors);
-        expect(valid).toBe(true);
-    });
+  test('only filling out required fields should be valid', () => {
+    const data = {
+      contentComponentId: 'blocks.component-preview',
+      exampleFile: 'Test code',
+    };
 
-    test('missing a required field [exampleFile] should not be valid', () => {
-        const data = {
-            contentComponentId: "blocks.component-preview"
-        };
+    const valid = validate(data);
 
-        const valid = validate(data);
-        expect(valid).toBe(false);
-    });
+    if (!valid) console.log(validate.errors);
+    expect(valid).toBe(true);
+  });
 
-    test('adding non-existing field should not be valid', () => {
-        const data = {
-            contentComponentId: "blocks.component-preview",
-            exampleFile: "Test code",
-            withMenu: true,
-            nonExistingField: "Invalid field"   // this random field is required for this testing
-        };
+  test('missing a required field [exampleFile] should not be valid', () => {
+    const data = {
+      contentComponentId: 'blocks.component-preview',
+    };
 
-        const valid = validate(data);
-        expect(valid).toBe(false);
-    });
+    const valid = validate(data);
+
+    expect(valid).toBe(false);
+  });
+
+  test('adding non-existing field should not be valid', () => {
+    const data = {
+      contentComponentId: 'blocks.component-preview',
+      exampleFile: 'Test code',
+      withMenu: true,
+      nonExistingField: 'Invalid field', // this random field is required for this testing
+    };
+
+    const valid = validate(data);
+
+    expect(valid).toBe(false);
+  });
 });

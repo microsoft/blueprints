@@ -1,4 +1,6 @@
-﻿const Ajv = require("ajv");
+﻿import type { SchemaObject, ValidateFunction } from 'ajv';
+import Ajv from 'ajv';
+
 const ajv = new Ajv();
 
 /**
@@ -8,42 +10,44 @@ const ajv = new Ajv();
  * @param schemaPath relative path to the json schema
  */
 export const addSchema = (schemaPath: string) => {
-    const schema = require(schemaPath);
-    const key = schema['$id'];
-    if (!key) {
-        throw new Error('$id field in the json schema is undefined');
-    }
+  const schema = loadJsonSchema(schemaPath);
+  const key = schema.$id as string;
 
-    ajv.addSchema(schema);
-    ajv.addSchema(schema, "/" + key);
+  if (!key) {
+    throw new Error('$id field in the json schema is undefined');
+  }
+
+  ajv.addSchema(schema);
+  ajv.addSchema(schema, '/' + key);
 };
 
 /**
  * This function adds all component json schemas necessary for layout schemas
  */
+// prettier-ignore
 export const addAllSchemas = () => {
-    addSchema('@microsoft/arbutus.json-schemas/common/image.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/atoms/link.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/blocks/code-snippet.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/blocks/component-preview.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/blocks/embed.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/blocks/guidance.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/blocks/heading.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/blocks/prop-table.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/lists/mark-list.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/lists/ordered-list.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/others/empty.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/others/image.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/tiles/action-list-tile.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/tiles/bookmark-tile.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/tiles/illustration-tile.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/tiles/recommendation.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/components/tiles/person-tile.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/layouts/basic.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/layouts/home.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/layouts/reference-page.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/layouts/header.schema.json');
-    addSchema('@microsoft/arbutus.json-schemas/layouts/footer.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/common/image.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/atoms/link.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/blocks/code-snippet.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/blocks/component-preview.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/blocks/embed.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/blocks/guidance.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/blocks/heading.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/blocks/prop-table.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/lists/mark-list.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/lists/ordered-list.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/others/empty.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/others/image.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/tiles/action-list-tile.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/tiles/bookmark-tile.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/tiles/illustration-tile.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/tiles/recommendation.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/components/tiles/person-tile.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/layouts/basic.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/layouts/home.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/layouts/reference-page.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/layouts/header.schema.json');
+  addSchema('@microsoft/arbutus.json-schemas/layouts/footer.schema.json');
 };
 
 /**
@@ -51,7 +55,28 @@ export const addAllSchemas = () => {
  * @param schemaPath relative path to the json schema
  * @returns
  */
-export const compile = (schemaPath: string): any => {
-    const schema = require(schemaPath);
-    return ajv.compile(schema);
-}
+export const compile = (schemaPath: string): ValidateFunction<unknown> => {
+  const schema = loadJsonSchema(schemaPath);
+
+  return ajv.compile(schema);
+};
+
+export const loadJsonSchema = (schemaPath: string): SchemaObject => {
+  /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+  /* eslint-disable @typescript-eslint/no-var-requires */
+  const schema: SchemaObject = require(schemaPath);
+  /* eslint-enable @typescript-eslint/no-unsafe-assignment */
+  /* eslint-enable @typescript-eslint/no-var-requires */
+
+  return schema;
+};
+
+export const loadJsonObject = (schemaPath: string): JSON => {
+  /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+  /* eslint-disable @typescript-eslint/no-var-requires */
+  const jsonObject: JSON = require(schemaPath);
+  /* eslint-enable @typescript-eslint/no-unsafe-assignment */
+  /* eslint-enable @typescript-eslint/no-var-requires */
+
+  return jsonObject;
+};
