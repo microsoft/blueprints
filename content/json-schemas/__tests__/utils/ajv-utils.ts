@@ -3,14 +3,18 @@ import Ajv from 'ajv';
 
 const ajv = new Ajv();
 
+interface ImportedJSON extends JSON {
+  default: JSON;
+}
+
 /**
  * This function adds json schema into Ajv object for resolving $refs found in the schema.
  * Ajv requires $id to start with or without '/' depending on the level of nested references.
  * This function will add json schema twice with and without '/' to cover all levels of nested references.
  * @param schemaPath relative path to the json schema
  */
-export const addSchema = (schemaPath: string) => {
-  const schema = loadJsonSchema(schemaPath);
+export const addSchema = async (schemaPath: string): Promise<void> => {
+  const schema = await loadJsonSchema(schemaPath);
   const key = schema.$id as string;
 
   if (!key) {
@@ -25,29 +29,29 @@ export const addSchema = (schemaPath: string) => {
  * This function adds all component json schemas necessary for layout schemas
  */
 // prettier-ignore
-export const addAllSchemas = () => {
-  addSchema('@microsoft/arbutus.json-schemas/common/image.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/atoms/link.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/blocks/code-snippet.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/blocks/component-preview.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/blocks/embed.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/blocks/guidance.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/blocks/heading.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/blocks/prop-table.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/lists/mark-list.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/lists/ordered-list.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/others/empty.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/others/image.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/tiles/action-list-tile.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/tiles/bookmark-tile.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/tiles/illustration-tile.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/tiles/recommendation.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/components/tiles/person-tile.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/layouts/basic.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/layouts/home.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/layouts/reference-page.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/layouts/header.schema.json');
-  addSchema('@microsoft/arbutus.json-schemas/layouts/footer.schema.json');
+export const addAllSchemas = async () : Promise<void> => {
+  await addSchema('@microsoft/arbutus.json-schemas/common/image.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/atoms/link.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/blocks/code-snippet.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/blocks/component-preview.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/blocks/embed.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/blocks/guidance.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/blocks/heading.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/blocks/prop-table.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/lists/mark-list.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/lists/ordered-list.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/others/empty.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/others/image.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/tiles/action-list-tile.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/tiles/bookmark-tile.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/tiles/illustration-tile.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/tiles/recommendation.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/components/tiles/person-tile.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/layouts/basic.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/layouts/home.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/layouts/reference-page.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/layouts/header.schema.json');
+  await addSchema('@microsoft/arbutus.json-schemas/layouts/footer.schema.json');
 };
 
 /**
@@ -55,28 +59,22 @@ export const addAllSchemas = () => {
  * @param schemaPath relative path to the json schema
  * @returns
  */
-export const compile = (schemaPath: string): ValidateFunction<unknown> => {
-  const schema = loadJsonSchema(schemaPath);
+export const compile = async (schemaPath: string): Promise<ValidateFunction<unknown>> => {
+  const schema = await loadJsonSchema(schemaPath);
 
   return ajv.compile(schema);
 };
 
-export const loadJsonSchema = (schemaPath: string): SchemaObject => {
-  /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-  /* eslint-disable @typescript-eslint/no-var-requires */
-  const schema: SchemaObject = require(schemaPath);
-  /* eslint-enable @typescript-eslint/no-unsafe-assignment */
-  /* eslint-enable @typescript-eslint/no-var-requires */
+export const loadJsonSchema = async (schemaPath: string): Promise<SchemaObject> => {
+  const schema = (await import(schemaPath)) as SchemaObject;
 
   return schema;
 };
 
-export const loadJsonObject = (schemaPath: string): JSON => {
-  /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-  /* eslint-disable @typescript-eslint/no-var-requires */
-  const jsonObject: JSON = require(schemaPath);
-  /* eslint-enable @typescript-eslint/no-unsafe-assignment */
-  /* eslint-enable @typescript-eslint/no-var-requires */
+export const loadJsonObject = async (jsonPath: string): Promise<JSON> => {
+  const { default: jsonObject } = (await import(jsonPath, {
+    assert: { type: 'json' },
+  })) as ImportedJSON;
 
   return jsonObject;
 };

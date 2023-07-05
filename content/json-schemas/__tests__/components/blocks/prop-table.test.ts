@@ -1,16 +1,18 @@
-﻿import { describe, expect, test } from '@jest/globals';
+﻿import { beforeAll, describe, expect, test } from '@jest/globals';
 import type { ValidateFunction } from 'ajv';
 
 import { compile } from '../../utils/ajv-utils';
 
 let validate: ValidateFunction<unknown>;
 
-try {
-  // prettier-ignore
-  validate = compile('@microsoft/arbutus.json-schemas/components/blocks/prop-table.schema.json');
-} catch (ex) {
-  console.error(ex);
-}
+beforeAll(async () => {
+  try {
+    // prettier-ignore
+    validate = await compile('@microsoft/arbutus.json-schemas/components/blocks/prop-table.schema.json');
+  } catch (ex) {
+    console.error(ex);
+  }
+});
 
 describe('prop table schema', () => {
   test('filling out all fields should be valid', () => {
