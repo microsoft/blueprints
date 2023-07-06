@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/blocks/component-preview.schema.json",
+  "title": "JSON Schema for component preview component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "blocks.component-preview" ]
+    },
+    "exampleFile": {
+      "type": "string"
+    },
+    "withMenu": {
+      "type": "boolean"
+    }
+  },
+  "required": [ "contentComponentId", "exampleFile" ],
+  "additionalProperties": false
+}

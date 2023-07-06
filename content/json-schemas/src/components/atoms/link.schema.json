@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/atoms/link.schema.json",
+  "title": "JSON Schema for link component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "atoms.link" ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean"
+    }
+  },
+  "required": [ "contentComponentId", "text", "to" ],
+  "additionalProperties": false
+}

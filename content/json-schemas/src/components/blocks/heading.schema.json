@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "components/blocks/heading.schema.json",
+  "title": "JSON Schema for heading component",
+  "type": "object",
+  "properties": {
+    "contentComponentId": {
+      "type": "string",
+      "enum": [ "blocks.heading" ]
+    },
+    "as": {
+      "type": "string",
+      "enum": [ "h1", "h2", "h3", "h4", "h5", "h6" ]
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the page."
+    },
+    "size": {
+      "type": "string",
+      "description": ""
+    },
+    "leading": {
+      "type": [ "string", "null" ],
+      "description": "Leading description of the page."
+    },
+    "withCopyLink": {
+      "type": [ "boolean", "null" ],
+      "description": ""
+    },
+    "withDivider": {
+      "type": [ "boolean", "null" ],
+      "description": ""
+    }
+  },
+  "required": [ "contentComponentId", "title", "as" ],
+  "additionalProperties": false
+}

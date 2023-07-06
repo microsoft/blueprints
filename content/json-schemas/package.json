@@ -3,10 +3,30 @@
   "version": "0.0.1",
   "description": "Content schemas.",
   "exports": {
-    "my-component": "./components/my-component.json"
+    "./common/": "./src/common/",
+    "./components/": "./src/components/",
+    "./layouts/": "./src/layouts/"
   },
   "files": [
-    "./components/my-component.json"
+    "./src/common/*.json",
+    "./src/components/**/*.json",
+    "./src/layouts/*.json"
   ],
-  "dependencies": {}
+  "jest": {
+    "testPathIgnorePatterns": [
+      "__tests__/utils"
+    ]
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-import-attributes": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@microsoft/arbutus.ts": "0.0.2",
+    "ajv": "^8.12.0",
+    "ts-jest": "^29.1.0"
+  }
 }

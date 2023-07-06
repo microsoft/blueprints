@@ -203,7 +203,9 @@
       "icon": null,
       "description": "[bookmark description]"
     },
-    {},
+    {
+      "contentComponentId": "empty"
+    },
     {
       "as": "h2",
       "leading": "Provide users with guidance on best practices. Recommendation Tiles come in three flavours: image, text, and list.",
