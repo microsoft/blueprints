@@ -1,1 +1,1 @@
-## Minimal doc site starter 
+## Minimal doc site starter

@@ -1,0 +1,27 @@
+{
+  "customTypes": [],
+  "dependencyTypes": ["dev", "overrides", "prod", "resolutions", "workspace"],
+  "filter": ".",
+  "indent": "  ",
+  "semverGroups": [],
+  "semverRange": "",
+  "sortAz": [
+    "contributors",
+    "dependencies",
+    "devDependencies",
+    "keywords",
+    "peerDependencies",
+    "resolutions",
+    "scripts"
+  ],
+  "sortFirst": ["name", "description", "version", "author"],
+  "source": [
+    "package.json",
+    "components/*/package.json",
+    "content/*/package.json",
+    "hooks/*/package.json",
+    "styles/*/package.json",
+    "utilities/*/package.json"
+  ],
+  "versionGroups": []
+}

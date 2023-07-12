@@ -6,14 +6,14 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "blocks.embed" ]
+      "enum": ["blocks.embed"]
     },
     "url": {
       "type": "string"
     },
     "type": {
       "type": "string",
-      "enum": [ "figma" ]
+      "enum": ["figma"]
     },
     "title": {
       "type": "string"
@@ -22,6 +22,6 @@
       "type": "string"
     }
   },
-  "required": [ "contentComponentId", "title", "type", "url" ],
+  "required": ["contentComponentId", "title", "type", "url"],
   "additionalProperties": false
 }

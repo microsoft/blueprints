@@ -7,6 +7,8 @@ lib-amd
 lib-commonjs
 node_modules
 public
+docs
+**/bin/**
 
 # template files which actually follow a different language's formatting
 _templates

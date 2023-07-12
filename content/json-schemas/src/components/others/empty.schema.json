@@ -6,9 +6,9 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "empty" ]
+      "enum": ["empty"]
     }
   },
-  "required": [ "contentComponentId" ],
+  "required": ["contentComponentId"],
   "additionalProperties": false
 }

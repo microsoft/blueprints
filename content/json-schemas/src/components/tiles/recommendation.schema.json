@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "tiles.recommendation" ]
+      "enum": ["tiles.recommendation"]
     },
     "title": {
       "type": "string"
@@ -34,6 +34,6 @@
       }
     }
   },
-  "required": [ "contentComponentId", "title" ],
+  "required": ["contentComponentId", "title"],
   "additionalProperties": false
 }

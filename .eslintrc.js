@@ -6,10 +6,7 @@ const project = [
 ];
 
 module.exports = {
-  extends: [
-    '@microsoft/eslint-config-arbutus',
-    'plugin:storybook/recommended',
-  ],
+  extends: ['@microsoft/eslint-config-arbutus', 'plugin:storybook/recommended'],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.eslint.json', ...project],

@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "lists.ordered-list" ]
+      "enum": ["lists.ordered-list"]
     },
     "listItems": {
       "type": "array",
@@ -26,9 +26,9 @@
     },
     "variant": {
       "type": "string",
-      "enum": [ "primary" ]
+      "enum": ["primary"]
     }
   },
-  "required": [ "contentComponentId", "listItems" ],
+  "required": ["contentComponentId", "listItems"],
   "additionalProperties": false
 }

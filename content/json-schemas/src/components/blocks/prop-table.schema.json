@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "blocks.prop-table" ]
+      "enum": ["blocks.prop-table"]
     },
     "componentName": {
       "type": "string"
@@ -15,6 +15,6 @@
       "type": "string"
     }
   },
-  "required": [ "contentComponentId", "componentName", "componentPropType" ],
+  "required": ["contentComponentId", "componentName", "componentPropType"],
   "additionalProperties": false
 }

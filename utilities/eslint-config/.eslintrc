@@ -15,12 +15,7 @@
     "plugin:react-hooks/recommended",
     "plugin:react/recommended"
   ],
-  "plugins": [
-    "@rnx-kit",
-    "@typescript-eslint",
-    "simple-import-sort",
-    "deprecation"
-  ],
+  "plugins": ["@rnx-kit", "@typescript-eslint", "simple-import-sort", "deprecation"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -72,25 +67,13 @@
       },
       {
         "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
+        "prev": ["const", "let", "var"],
         "next": "*"
       },
       {
         "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
       }
     ],
     "@rnx-kit/no-export-all": "error",

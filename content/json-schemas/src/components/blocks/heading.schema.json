@@ -6,11 +6,11 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "blocks.heading" ]
+      "enum": ["blocks.heading"]
     },
     "as": {
       "type": "string",
-      "enum": [ "h1", "h2", "h3", "h4", "h5", "h6" ]
+      "enum": ["h1", "h2", "h3", "h4", "h5", "h6"]
     },
     "title": {
       "type": "string",
@@ -21,18 +21,18 @@
       "description": ""
     },
     "leading": {
-      "type": [ "string", "null" ],
+      "type": ["string", "null"],
       "description": "Leading description of the page."
     },
     "withCopyLink": {
-      "type": [ "boolean", "null" ],
+      "type": ["boolean", "null"],
       "description": ""
     },
     "withDivider": {
-      "type": [ "boolean", "null" ],
+      "type": ["boolean", "null"],
       "description": ""
     }
   },
-  "required": [ "contentComponentId", "title", "as" ],
+  "required": ["contentComponentId", "title", "as"],
   "additionalProperties": false
 }

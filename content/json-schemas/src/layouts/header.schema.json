@@ -10,7 +10,7 @@
     },
     "_layout": {
       "type": "string",
-      "enum": [ "header" ],
+      "enum": ["header"],
       "description": "Type of layout."
     },
     "_isSingleton": {
@@ -36,6 +36,6 @@
       }
     }
   },
-  "required": [ "_layout", "_isSingleton" ],
+  "required": ["_layout", "_isSingleton"],
   "additionalProperties": false
 }

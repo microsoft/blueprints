@@ -10,7 +10,7 @@
     },
     "_layout": {
       "type": "string",
-      "enum": [ "reference" ],
+      "enum": ["reference"],
       "description": "Type of layout."
     },
     "_path": {
@@ -46,7 +46,7 @@
             "type": "string"
           }
         },
-        "required": [ "firstName", "lastName" ],
+        "required": ["firstName", "lastName"],
         "additionalProperties": false
       }
     },
@@ -117,11 +117,11 @@
             }
           }
         },
-        "required": [ "tab" ],
+        "required": ["tab"],
         "additionalProperties": false
       }
     }
   },
-  "required": [ "_layout", "_path", "title" ],
+  "required": ["_layout", "_path", "title"],
   "additionalProperties": false
 }

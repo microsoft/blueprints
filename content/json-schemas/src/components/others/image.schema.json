@@ -12,18 +12,18 @@
           "description": "The path to the image file."
         },
         "alternativeText": {
-          "type": [ "string", "null" ],
+          "type": ["string", "null"],
           "description": "The alt text for the image."
         },
         "caption": {
-          "type": [ "string", "null" ],
+          "type": ["string", "null"],
           "description": "The caption for the image."
         }
       },
-      "required": [ "url" ],
+      "required": ["url"],
       "additionalProperties": false
     }
   },
-  "required": [ "image" ],
+  "required": ["image"],
   "additionalProperties": false
 }

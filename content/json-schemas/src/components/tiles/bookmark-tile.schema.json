@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "tiles.bookmark-tile" ]
+      "enum": ["tiles.bookmark-tile"]
     },
     "title": {
       "type": "string",
@@ -24,10 +24,10 @@
       "$ref": "./../../common/image.schema.json"
     },
     "description": {
-      "type": [ "string", "null" ],
+      "type": ["string", "null"],
       "description": "The tile description."
     }
   },
-  "required": [ "contentComponentId", "title", "to" ],
+  "required": ["contentComponentId", "title", "to"],
   "additionalProperties": false
 }

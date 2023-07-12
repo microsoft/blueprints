@@ -10,7 +10,7 @@
     },
     "_layout": {
       "type": "string",
-      "enum": [ "home" ],
+      "enum": ["home"],
       "description": "Type of layout."
     },
     "_isSingleton": {
@@ -69,6 +69,6 @@
       }
     }
   },
-  "required": [ "_layout", "_isSingleton" ],
+  "required": ["_layout", "_isSingleton"],
   "additionalProperties": false
 }
