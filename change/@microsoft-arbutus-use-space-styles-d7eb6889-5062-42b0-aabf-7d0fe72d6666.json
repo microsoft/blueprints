@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Upgrades @babel/preset-env to ^7.21.5, @babel/preset-typescript to ^7.21.5.",
+  "packageName": "@microsoft/arbutus.use-space-styles",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
