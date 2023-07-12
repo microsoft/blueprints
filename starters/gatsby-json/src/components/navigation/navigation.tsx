@@ -69,40 +69,9 @@ export const Navigation: FC = () => {
       title: 'Guidance',
       items: guidance,
     },
-    documentation: {
-      title: 'Documentation',
-      hasDivider: true,
-      items: {
-        quickStart: {
-          title: 'Quick Start',
-          id: '/documentation/quick-start',
-          linkProps: { to: '/documentation/quick-start' },
-        },
-        theming: {
-          title: 'Theming',
-          id: '/documentation/theming',
-          linkProps: { to: '/documentation/theming' },
-        },
-        content: {
-          title: 'Content',
-          id: '/documentation/content',
-          linkProps: { to: '/documentation/content' },
-        },
-        starters: {
-          title: 'Starters',
-          items: {
-            gatsbyJson: {
-              title: 'Gatsby & JSON',
-              id: '/documentation/starters/gatsby-json',
-              linkProps: { to: '/documentation/starters/gatsby-json' },
-            },
-          },
-        },
-        components: {
-          title: 'Components',
-          items: components,
-        },
-      },
+    components: {
+      title: 'Components',
+      items: components,
     },
   };
 
