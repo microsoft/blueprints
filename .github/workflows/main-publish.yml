@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-      - run: npm run beachball:check
       - run: npm ci
+      - run: npm run beachball:check
       - run: npm run publish:packages
         env:
           github-token: ${{ secrets.GITHUB_TOKEN }}
