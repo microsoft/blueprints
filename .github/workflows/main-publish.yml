@@ -28,7 +28,7 @@ jobs:
         run: npm run publish:packages
         env:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Building Storybook
         run: npm run build:storybook
