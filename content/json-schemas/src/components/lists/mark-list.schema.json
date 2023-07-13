@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "lists.mark-list" ]
+      "enum": ["lists.mark-list"]
     },
     "listItems": {
       "type": "array",
@@ -25,6 +25,6 @@
       }
     }
   },
-  "required": [ "contentComponentId", "listItems" ],
+  "required": ["contentComponentId", "listItems"],
   "additionalProperties": false
 }

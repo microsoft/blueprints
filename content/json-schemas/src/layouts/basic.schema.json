@@ -10,7 +10,7 @@
     },
     "_layout": {
       "type": "string",
-      "enum": [ "basic" ],
+      "enum": ["basic"],
       "description": "Type of layout."
     },
     "_path": {
@@ -41,7 +41,7 @@
           "type": "string"
         }
       },
-      "required": [ "src" ],
+      "required": ["src"],
       "additionalProperties": false
     },
     "content": {
@@ -103,6 +103,6 @@
       }
     }
   },
-  "required": [ "_layout", "_path", "title" ],
+  "required": ["_layout", "_path", "title"],
   "additionalProperties": false
 }

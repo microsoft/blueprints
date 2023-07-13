@@ -1,0 +1,25 @@
+name: 'PR: Check'
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out code
+        uses: actions/checkout@v2
+
+      - name: Setting up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Installing dependencies
+        run: npm ci
+
+      - name: Checking PR
+        run: npm run pr:check

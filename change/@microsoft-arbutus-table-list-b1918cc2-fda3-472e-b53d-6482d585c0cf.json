@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Updates TableListContextProps, instead of using any, use unknown.",
+  "packageName": "@microsoft/arbutus.table-list",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

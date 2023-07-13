@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "blocks.component-preview" ]
+      "enum": ["blocks.component-preview"]
     },
     "exampleFile": {
       "type": "string"
@@ -15,6 +15,6 @@
       "type": "boolean"
     }
   },
-  "required": [ "contentComponentId", "exampleFile" ],
+  "required": ["contentComponentId", "exampleFile"],
   "additionalProperties": false
 }

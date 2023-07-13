@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Remove extending of @typescript-eslint recommended rules, because they are duplicating TS config.",
+  "packageName": "@microsoft/eslint-config-arbutus",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

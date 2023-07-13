@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "tiles.person-tile" ]
+      "enum": ["tiles.person-tile"]
     },
     "firstName": {
       "type": "string",
@@ -57,6 +57,6 @@
       "additionalProperties": false
     }
   },
-  "required": [ "contentComponentId", "firstName", "lastName", "to" ],
+  "required": ["contentComponentId", "firstName", "lastName", "to"],
   "additionalProperties": false
 }

@@ -6,21 +6,13 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/recommended"
   ],
-  "plugins": [
-    "@rnx-kit",
-    "@typescript-eslint",
-    "simple-import-sort",
-    "deprecation"
-  ],
+  "plugins": ["@rnx-kit", "@typescript-eslint", "simple-import-sort", "deprecation"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -72,25 +64,13 @@
       },
       {
         "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
+        "prev": ["const", "let", "var"],
         "next": "*"
       },
       {
         "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
       }
     ],
     "@rnx-kit/no-export-all": "error",
@@ -106,15 +86,6 @@
         "minimumDescriptionLength": 5
       }
     ],
-    "@typescript-eslint/no-floating-promises": "warn",
-    "@typescript-eslint/no-unsafe-argument": "warn",
-    "@typescript-eslint/no-unsafe-assignment": "warn",
-    "@typescript-eslint/no-unsafe-call": "warn",
-    "@typescript-eslint/no-unsafe-member-access": "warn",
-    "@typescript-eslint/no-unsafe-return": "warn",
-    "@typescript-eslint/prefer-nullish-coalescing": "warn",
-    "@typescript-eslint/prefer-optional-chain": "warn",
-    "@typescript-eslint/restrict-template-expressions": "warn",
     "deprecation/deprecation": "warn",
     "import/no-unresolved": "off"
   },

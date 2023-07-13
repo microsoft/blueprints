@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "atoms.link" ]
+      "enum": ["atoms.link"]
     },
     "text": {
       "type": "string"
@@ -18,6 +18,6 @@
       "type": "boolean"
     }
   },
-  "required": [ "contentComponentId", "text", "to" ],
+  "required": ["contentComponentId", "text", "to"],
   "additionalProperties": false
 }

@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "tiles.action-list-tile" ]
+      "enum": ["tiles.action-list-tile"]
     },
     "title": {
       "type": "string"
@@ -37,6 +37,6 @@
       }
     }
   },
-  "required": [ "contentComponentId", "title" ],
+  "required": ["contentComponentId", "title"],
   "additionalProperties": false
 }

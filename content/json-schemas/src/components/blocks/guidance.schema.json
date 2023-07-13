@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "blocks.guidance" ]
+      "enum": ["blocks.guidance"]
     },
     "heading": {
       "type": "string"
@@ -50,9 +50,9 @@
     },
     "fileType": {
       "type": "string",
-      "enum": [ "figma" ]
+      "enum": ["figma"]
     }
   },
-  "required": [ "contentComponentId", "heading", "fileType", "url" ],
+  "required": ["contentComponentId", "heading", "fileType", "url"],
   "additionalProperties": false
 }

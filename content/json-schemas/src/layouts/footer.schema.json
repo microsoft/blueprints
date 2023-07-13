@@ -10,7 +10,7 @@
     },
     "_layout": {
       "type": "string",
-      "enum": [ "footer" ],
+      "enum": ["footer"],
       "description": "Type of layout."
     },
     "_isSingleton": {
@@ -55,6 +55,6 @@
       }
     }
   },
-  "required": [ "_layout", "_isSingleton" ],
+  "required": ["_layout", "_isSingleton"],
   "additionalProperties": false
 }

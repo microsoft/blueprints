@@ -6,7 +6,7 @@
   "properties": {
     "contentComponentId": {
       "type": "string",
-      "enum": [ "tiles.illustration-tile" ]
+      "enum": ["tiles.illustration-tile"]
     },
     "title": {
       "type": "string"
@@ -15,7 +15,7 @@
       "type": "string"
     },
     "to": {
-      "type": [ "string", "null" ]
+      "type": ["string", "null"]
     },
     "image": {
       "type": "object",
@@ -35,6 +35,6 @@
       "type": "boolean"
     }
   },
-  "required": [ "contentComponentId", "title" ],
+  "required": ["contentComponentId", "title"],
   "additionalProperties": false
 }
