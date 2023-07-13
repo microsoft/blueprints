@@ -18,7 +18,7 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
 
-      - name: Installiing dependencies
+      - name: Installing dependencies
         run: npm ci
 
       - name: Checking PR
