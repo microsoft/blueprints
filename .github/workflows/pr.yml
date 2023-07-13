@@ -9,10 +9,17 @@ jobs:
   lint-and-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checking out code
+        uses: actions/checkout@v2
+
+      - name: Setting up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm run pr:check
+
+      - name: Installiing dependencies
+        run: npm ci
+
+      - name: Checking PR
+        run: npm run pr:check
