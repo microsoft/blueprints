@@ -1,0 +1,20 @@
+{
+  "name": "@microsoft/arbutus.json-schemas",
+  "entries": [
+    {
+      "date": "Fri, 14 Jul 2023 18:31:17 GMT",
+      "tag": "@microsoft/arbutus.json-schemas_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "none": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.json-schemas",
+            "commit": "583edb61d57fcb0ac6d4f0c60b56183642861fcd",
+            "comment": "Runs Prettier"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -25,9 +25,12 @@ jobs:
         run: npm run beachball:check
 
       - name: Building and publishing packages
-        run: npm run publish:packages
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          npm run publish:packages
         env:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Building Storybook

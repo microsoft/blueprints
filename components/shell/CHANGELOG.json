@@ -2,6 +2,39 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Fri, 14 Jul 2023 18:31:17 GMT",
+      "tag": "@microsoft/arbutus.shell_v1.1.3",
+      "version": "1.1.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.footer to v1.0.4",
+            "commit": "b89710e9414695a67c745ef2c4b51af12703db94"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.header to v1.0.4",
+            "commit": "b89710e9414695a67c745ef2c4b51af12703db94"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.icon-button to v1.0.4",
+            "commit": "b89710e9414695a67c745ef2c4b51af12703db94"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v1.0.4",
+            "commit": "b89710e9414695a67c745ef2c4b51af12703db94"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.shell_v1.1.2",
       "version": "1.1.2",

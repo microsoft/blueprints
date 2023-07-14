@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.use-space-styles",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utility space classes.",
   "main": "lib/index.js",
   "module": "lib/index.js",

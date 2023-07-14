@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.table-list
 
-This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
+This log was last generated on Fri, 14 Jul 2023 18:31:17 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.1
+
+Fri, 14 Jul 2023 18:31:17 GMT
+
+### Patches
+
+- Updates TableListContextProps, instead of using any, use unknown. (akimalunar@gmail.com)
 
 ## 1.1.0
 

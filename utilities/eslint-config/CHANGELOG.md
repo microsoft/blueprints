@@ -1,8 +1,16 @@
 # Change Log - @microsoft/eslint-config-arbutus
 
-This log was last generated on Thu, 22 Jun 2023 22:45:06 GMT and should not be manually modified.
+This log was last generated on Fri, 14 Jul 2023 18:31:17 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.3
+
+Fri, 14 Jul 2023 18:31:17 GMT
+
+### Patches
+
+- Remove extending of @typescript-eslint recommended rules, because they are duplicating TS config. (akimalunar@gmail.com)
 
 ## 0.0.2
 

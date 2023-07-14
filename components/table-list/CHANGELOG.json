@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.table-list",
   "entries": [
     {
+      "date": "Fri, 14 Jul 2023 18:31:17 GMT",
+      "tag": "@microsoft/arbutus.table-list_v1.1.1",
+      "version": "1.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.table-list",
+            "commit": "583edb61d57fcb0ac6d4f0c60b56183642861fcd",
+            "comment": "Updates TableListContextProps, instead of using any, use unknown."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.table-list_v1.1.0",
       "version": "1.1.0",

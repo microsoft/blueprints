@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.person-tile",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PersonTile is a component in Tile collection. PersonTile represents a person and is interactive.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -24,7 +24,7 @@
     "@microsoft/arbutus.icon": "1.0.3",
     "@microsoft/arbutus.text": "1.0.3",
     "@microsoft/arbutus.tile": "1.0.3",
-    "@microsoft/arbutus.use-space-styles": "1.0.3",
+    "@microsoft/arbutus.use-space-styles": "1.0.4",
     "@fluentui/react-avatar": "^9.5.5",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7"

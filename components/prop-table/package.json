@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.prop-table",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "PropTable is a composite component that generates documentation for React components.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -25,8 +25,8 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
-    "@microsoft/arbutus.table-list": "1.1.0",
-    "@microsoft/arbutus.use-space-styles": "1.0.3",
+    "@microsoft/arbutus.table-list": "1.1.1",
+    "@microsoft/arbutus.use-space-styles": "1.0.4",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "os-browserify": "^0.3.0",

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.action-list-tile",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ActionListTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -24,7 +24,7 @@
     "@microsoft/arbutus.icon": "1.0.3",
     "@microsoft/arbutus.text": "1.0.3",
     "@microsoft/arbutus.tile": "1.0.3",
-    "@microsoft/arbutus.use-space-styles": "1.0.3",
+    "@microsoft/arbutus.use-space-styles": "1.0.4",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
     "@reach/visually-hidden": "^0.18.0"

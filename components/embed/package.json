@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.embed",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Embed component in the Content collection. Embed allows users to add third-party iframe content blocks.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -22,10 +22,10 @@
   },
   "dependencies": {
     "@microsoft/arbutus.divider": "1.0.2",
-    "@microsoft/arbutus.icon-button": "1.0.3",
+    "@microsoft/arbutus.icon-button": "1.0.4",
     "@microsoft/arbutus.logo": "1.0.2",
     "@microsoft/arbutus.text": "1.0.3",
-    "@microsoft/arbutus.use-space-styles": "1.0.3",
+    "@microsoft/arbutus.use-space-styles": "1.0.4",
     "@fluentui/react-spinner": "^9.2.2",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7"

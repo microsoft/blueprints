@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.use-space-styles",
   "entries": [
     {
+      "date": "Fri, 14 Jul 2023 18:31:17 GMT",
+      "tag": "@microsoft/arbutus.use-space-styles_v1.0.4",
+      "version": "1.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.use-space-styles",
+            "commit": "583edb61d57fcb0ac6d4f0c60b56183642861fcd",
+            "comment": "Upgrades @babel/preset-env to ^7.21.5, @babel/preset-typescript to ^7.21.5."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.use-space-styles_v1.0.3",
       "version": "1.0.3",

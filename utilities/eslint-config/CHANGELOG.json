@@ -2,6 +2,21 @@
   "name": "@microsoft/eslint-config-arbutus",
   "entries": [
     {
+      "date": "Fri, 14 Jul 2023 18:31:17 GMT",
+      "tag": "@microsoft/eslint-config-arbutus_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/eslint-config-arbutus",
+            "commit": "583edb61d57fcb0ac6d4f0c60b56183642861fcd",
+            "comment": "Remove extending of @typescript-eslint recommended rules, because they are duplicating TS config."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/eslint-config-arbutus_v0.0.2",
       "version": "0.0.2",
