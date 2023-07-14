@@ -43,5 +43,5 @@ jobs:
       - name: Merging new Storybook build
         run: |
           git add .
-          git commit -m "Build Storybook on merge"
+          git commit -m "[skip actions] Build Storybook on merge"
           git push origin HEAD:main
