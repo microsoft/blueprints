@@ -1,5 +1,7 @@
-export type Value = Record<string, unknown | never> | string;
+/* eslint-disable no-unused-vars */
+export type Value = Record<string, any> | string;
+export type Theme = Record<string, Value> | {};
 export type CSSVarsArray = [string, string][] | [];
-export type TraverseObject = (v: Value, pre?: string, acc?: CSSVarsArray | []) => void;
-export type GenerateCSSVarTuples = (theme: Record<string, Value>, prefix?: string) => CSSVarsArray | [];
-export type UseCSSVars = ({ theme, prefix }: { theme: Record<string, Value>; prefix: string }) => void;
+export type GenerateCSSVarTuples = (theme: Record<string, Value> | Value, prefix?: string) => CSSVarsArray | [];
+export type GenerateTokensMap<T> = (theme: Record<string, Value>, prefix?: string) => T | {};
+export type UseCSSVarsArgs = { theme: Record<string, Value>; currentThemeKey?: string; prefix?: string };

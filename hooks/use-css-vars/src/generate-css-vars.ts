@@ -1,9 +1,4 @@
-import type {
-  CSSVarsArray,
-  GenerateCSSVarTuples,
-  TraverseObject,
-  Value,
-} from './use-css-vars.types';
+import type { CSSVarsArray, GenerateCSSVarTuples, Value } from './use-css-vars.types';
 
 const isObject = (value: unknown) =>
   !!(value && typeof value === 'object' && !Array.isArray(value));
@@ -18,7 +13,8 @@ const isEmptyObject = (obj: Value) => {
 
 export const generateCSSVarTuples: GenerateCSSVarTuples = (theme, prefix) => {
   let acc: CSSVarsArray = [];
-  const traverseObject: TraverseObject = (v, pre = prefix ? `--${prefix}-` : '-') => {
+
+  const traverseObject = (v: Value, pre = prefix ? `--${prefix}-` : '-') => {
     if (typeof v === 'string') {
       acc = [...acc, [pre, v]];
     }
