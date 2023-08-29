@@ -8,7 +8,7 @@ import * as React from 'react';
 import { useEffect, useMemo, useState } from 'react';
 
 import { ThemeContext } from './theme-context';
-import { arbutusBrandRamp, arbutusTokens } from './themes';
+import { arbutusBrandRamp, arbutusTheme } from './themes';
 import type { ThemeOption, ThemeProviderProps } from './theming.types';
 
 export const ThemeProvider: FC<ThemeProviderProps> = ({
@@ -53,7 +53,7 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({
   const theme = themes[themeKey];
 
   // Injecting CSS Vars
-  useCSSVars({ theme: arbutusTokens[themeKey], prefix: 'arbutus' });
+  useCSSVars({ theme: arbutusTheme, currentThemeKey: themeKey, prefix: 'arbutus' });
 
   return (
     <ThemeContext.Provider value={{ setTheme, themeKey, theme }}>
