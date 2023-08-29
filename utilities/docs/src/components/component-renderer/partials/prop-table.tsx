@@ -12,8 +12,6 @@ export const PropTableComponent: React.FC<PropTableComponentProps> = ({
 }) => {
   const propsDoc = propDocs[componentName];
 
-  console.log('propDocs', propsDoc);
-
   if (!propsDoc) {
     return null;
   }
