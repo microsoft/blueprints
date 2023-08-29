@@ -1,22 +1,23 @@
 import { makeStyles } from '@griffel/react';
+import { arbutusTokens } from '@microsoft/arbutus.theming';
 
 export const useImageStyles = makeStyles({
   root: {
     width: '100%',
   },
   rounded: {
-    borderTopLeftRadius: 'var(--arbutus--shape-border-radius)',
-    borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
-    borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
-    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
+    borderTopLeftRadius: arbutusTokens.shape.borderRadius,
+    borderTopRightRadius: arbutusTokens.shape.borderRadius,
+    borderBottomLeftRadius: arbutusTokens.shape.borderRadius,
+    borderBottomRightRadius: arbutusTokens.shape.borderRadius,
   },
   hero: {
     width: '100%',
     height: '220px',
     objectFit: 'cover',
-    borderTopLeftRadius: 'var(--arbutus--shape-border-radius)',
-    borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
-    borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
-    borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
+    borderTopLeftRadius: arbutusTokens.shape.borderRadius,
+    borderTopRightRadius: arbutusTokens.shape.borderRadius,
+    borderBottomLeftRadius: arbutusTokens.shape.borderRadius,
+    borderBottomRightRadius: arbutusTokens.shape.borderRadius,
   },
 });

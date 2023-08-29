@@ -1,5 +1,6 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
+import { arbutusTokens } from '@microsoft/arbutus.theming';
 
 export const TRAY_WIDTH = '324px';
 
@@ -39,7 +40,7 @@ export const useTrayStyles = makeStyles({
   },
   isOpen: {
     opacity: 1,
-    backgroundColor: 'var(--arbutus--color-overlay-background)',
+    backgroundColor: arbutusTokens.color.overlay.background,
     transform: 'translate3d(0, 0, 0)',
   },
 });

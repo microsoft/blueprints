@@ -1,6 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
 import { mapToStyles } from '@microsoft/arbutus.style-utilities';
+import { arbutusTokens } from '@microsoft/arbutus.theming';
 
 import type { ColorVariant } from './tile.types';
 
@@ -57,13 +58,13 @@ export const useTileStyles = makeStyles({
   },
   image: {
     backgroundColor: tokens.colorNeutralBackground6,
-    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
+    ...shorthands.borderRadius(arbutusTokens.shape.borderRadius),
     backgroundSize: 'cover',
     backgroundPositionX: 'center',
     backgroundPositionY: 'center',
   },
   solidColor: {
-    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
+    ...shorthands.borderRadius(arbutusTokens.shape.borderRadius),
   },
   ...colorClasses,
 });

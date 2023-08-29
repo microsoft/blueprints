@@ -1,9 +1,10 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
+import { arbutusTokens } from '@microsoft/arbutus.theming';
 
 export const useRecommendationTileStyles = makeStyles({
   image: {
-    ...shorthands.borderRadius('var(--arbutus--shape-border-radius)'),
+    ...shorthands.borderRadius(arbutusTokens.shape.borderRadius),
     height: '13.75rem',
     width: '100%',
     objectFit: 'cover',
