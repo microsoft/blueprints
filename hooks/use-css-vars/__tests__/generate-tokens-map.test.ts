@@ -39,14 +39,10 @@ describe('Generate tokens map', () => {
   it('should generate tokens map', () => {
     const tokensMap = generateTokensMap(testTheme.light);
 
-    console.log(tokensMap);
-
     expect(tokensMap).toStrictEqual(expectedOutput);
   });
   it('should generate tokens map with prefix', () => {
     const tokensMap = generateTokensMap(testTheme.light, 'test');
-
-    console.log(tokensMap);
 
     expect(tokensMap).toStrictEqual(expectedOutputWithPrefix);
   });

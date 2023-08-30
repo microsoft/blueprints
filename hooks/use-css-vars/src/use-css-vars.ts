@@ -76,11 +76,7 @@ export const useCSSVars = ({ theme, currentThemeKey, prefix }: UseCSSVarsArgs): 
   const themeObj = currentThemeKey ? theme[currentThemeKey] : theme;
   const styleId = `${prefix ?? 'arbutus'}-css-vars`;
 
-  console.log('useCSSVars running', currentThemeKey);
-
   useInsertionEffect(() => {
-    console.log('useInsertionEffect running', currentThemeKey);
-
     // If theme object wasn’t, do nothing. We can’t generate CSS variables without a theme.
     if (!themeObj) {
       return;
