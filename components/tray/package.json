@@ -23,6 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
+    "@microsoft/arbutus.theming": "1.0.3",
     "framer-motion": "^10.12.16"
   },
   "devDependencies": {
