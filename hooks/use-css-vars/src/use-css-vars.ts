@@ -82,7 +82,7 @@ export const useCSSVars = ({ theme, currentThemeKey, prefix }: UseCSSVarsArgs): 
       return;
     }
 
-    // Clear excising style tag with CSS Vars.
+    // Clear existing style tag with CSS Vars.
     const styleTagWithCSSVars = document.getElementById(styleId) as HTMLStyleElement;
 
     if (styleTagWithCSSVars) {
