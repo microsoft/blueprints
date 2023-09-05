@@ -2,7 +2,7 @@ import { useIsomorphicLayoutEffect } from '@fluentui/utilities';
 import * as React from 'react';
 
 import { generateCSSVarTuples } from './generate-css-vars';
-import type { UseCSSVarsArgs } from './use-css-vars.types';
+import type { Value } from './use-css-vars.types';
 
 /**
  * String concatenation is used to prevent bundlers to complain with older versions of React.
@@ -72,7 +72,15 @@ const useInsertionEffect = (React as never)['useInsertion' + 'Effect']
  * }
  * ```
  */
-export const useCSSVars = ({ theme, currentThemeKey, prefix }: UseCSSVarsArgs): void => {
+export const useCSSVars = ({
+  theme,
+  currentThemeKey,
+  prefix,
+}: {
+  theme: Record<string, Value>;
+  currentThemeKey?: string;
+  prefix?: string;
+}): void => {
   const themeObj = currentThemeKey ? theme[currentThemeKey] : theme;
   const styleId = `${prefix ?? 'arbutus'}-css-vars`;
 

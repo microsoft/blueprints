@@ -1,4 +1,6 @@
-import type { CSSVarsArray, GenerateCSSVarTuples, Value } from './use-css-vars.types';
+import type { Value } from './use-css-vars.types';
+
+type CSSVarsArray = [string, string][] | [];
 
 const isObject = (value: unknown) =>
   !!(value && typeof value === 'object' && !Array.isArray(value));
@@ -11,7 +13,10 @@ const isEmptyObject = (obj: Value) => {
   }
 };
 
-export const generateCSSVarTuples: GenerateCSSVarTuples = (theme, prefix) => {
+export const generateCSSVarTuples = (
+  theme: Record<string, Value> | Value,
+  prefix?: string,
+): CSSVarsArray | [] => {
   let acc: CSSVarsArray = [];
 
   const traverseObject = (v: Value, pre = prefix ? `--${prefix}-` : '-') => {
