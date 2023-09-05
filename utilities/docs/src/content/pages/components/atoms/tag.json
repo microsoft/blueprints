@@ -1,21 +1,21 @@
 {
   "_layout": "reference",
-  "_path": "reference-page-1",
+  "_path": "tag",
   "_includeInNav": true,
-  "title": "Reference Page 1",
+  "title": "Tag",
   "definition": "This is a reference page.",
   "owners": [
     {
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "alias": "janedoe",
-      "role": "Technical Writer"
+      "firstName": "Eric",
+      "lastName": "Tsoi",
+      "alias": "erictsoi",
+      "role": "Designer"
     },
     {
-      "firstName": "Jake",
-      "lastName": "Doe",
-      "alias": "jakedoe",
-      "role": "Designer"
+      "firstName": "Ria",
+      "lastName": "Carmin",
+      "alias": "riacarmin",
+      "role": "UXE"
     }
   ],
   "tabs": [
@@ -28,7 +28,7 @@
           "title": "Usage",
           "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           "size": "title",
-          "withCopyLink": null,
+          "withCopyLink": false,
           "withDivider": false
         }
       ]
@@ -42,7 +42,7 @@
           "title": "Design",
           "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           "size": "title",
-          "withCopyLink": null,
+          "withCopyLink": false,
           "withDivider": false
         }
       ]
@@ -56,7 +56,7 @@
           "title": "Develop",
           "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           "size": "title",
-          "withCopyLink": null,
+          "withCopyLink": false,
           "withDivider": false
         },
         {

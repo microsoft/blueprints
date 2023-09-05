@@ -3,6 +3,10 @@ import { sentenceCase } from 'change-case';
 import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
+import { ReferenceLayout, type ReferenceLayoutProps } from './src/layouts/reference';
+import { BasicLayout, type BasicLayoutProps } from './src/layouts/basic';
+import PreviewPage from './src/templates/preview-page';
+
 type Result = {
   allFile: {
     nodes: {
@@ -10,6 +14,11 @@ type Result = {
       relativePath: string;
     }[];
   };
+};
+
+const layoutMap = {
+  basic: BasicLayout,
+  reference: ReferenceLayout,
 };
 
 export const createPages: GatsbyNode['createPages'] = async ({

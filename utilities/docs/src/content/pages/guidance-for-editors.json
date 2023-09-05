@@ -1,9 +1,9 @@
 {
   "_layout": "basic",
-  "_path": "page-2",
+  "_path": "guidance-for-editors",
   "_orderInNav": 2,
   "_includeInNav": true,
-  "title": "Page 2",
+  "title": "Guidance For Editors",
   "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in Strapi content management system. ",
   "heroImage": {
     "src": "../../assets/demo-image-3.png",

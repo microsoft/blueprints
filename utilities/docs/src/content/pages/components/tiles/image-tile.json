@@ -1,21 +1,21 @@
 {
   "_layout": "reference",
-  "_path": "reference-page-2",
+  "_path": "image-tile",
   "_includeInNav": true,
-  "title": "Reference Page 2",
+  "title": "ImageTile",
   "definition": "This is a reference page.",
   "owners": [
     {
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "alias": "janedoe",
-      "role": "Technical Writer"
+      "firstName": "Eric",
+      "lastName": "Tsoi",
+      "alias": "erictsoi",
+      "role": "Designer"
     },
     {
-      "firstName": "Jake",
-      "lastName": "Doe",
-      "alias": "jakedoe",
-      "role": "Designer"
+      "firstName": "Ria",
+      "lastName": "Carmin",
+      "alias": "riacarmin",
+      "role": "UXE"
     }
   ],
   "tabs": [
