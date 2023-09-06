@@ -46,6 +46,6 @@ const PreviewPage: FC<PageProps<undefined, PreviewPageContext>> = ({
 
 export const Head: HeadFC<undefined, PreviewPageContext> = ({
   pageContext: { title },
-}) => <title>{`MADS | Preview: ${title}`}</title>;
+}) => <title>{`Blueprints | Preview: ${title}`}</title>;
 
 export default PreviewPage;

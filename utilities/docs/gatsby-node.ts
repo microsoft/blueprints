@@ -3,11 +3,42 @@ import { sentenceCase } from 'change-case';
 import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
-import { ReferenceLayout, type ReferenceLayoutProps } from './src/layouts/reference';
-import { BasicLayout, type BasicLayoutProps } from './src/layouts/basic';
-import PreviewPage from './src/templates/preview-page';
+import { generatePageQuery, findLayout, getPath, findTitle } from './src/utilities/generating-pages';
+import type { Layout } from './src/layouts/layouts.types';
+ 
+type JsonPageResult = {
+  allFile: {
+    nodes: {
+      relativePath: string;
+      childAtomsJson: {
+        title: string;
+        _layout: Layout;
+      } | null;
+      childComponentsJson: {
+        title: string;
+        _layout: Layout;
+      } | null;
+      childGuidanceJson: {
+        title: string;
+        _layout: Layout;
+      } | null;
+      childListsJson: {
+        title: string;
+        _layout: Layout;
+      } | null;
+      childPagesJson: {
+        title: string;
+        _layout: Layout;
+      } | null;
+      childTilesJson: {
+        title: string;
+        _layout: Layout;
+      } | null;
+    }
+  }[]
+}
 
-type Result = {
+type ExamplePageResult = {
   allFile: {
     nodes: {
       absolutePath: string;
@@ -16,10 +47,8 @@ type Result = {
   };
 };
 
-const layoutMap = {
-  basic: BasicLayout,
-  reference: ReferenceLayout,
-};
+const knownPageCollections = ['Atoms', 'Components', 'Guidance', 'Lists', 'Pages', 'Tiles'];
+const pageQuery = generatePageQuery(knownPageCollections);
 
 export const createPages: GatsbyNode['createPages'] = async ({
   graphql,
@@ -28,9 +57,45 @@ export const createPages: GatsbyNode['createPages'] = async ({
 }) => {
   const { createPage } = actions;
 
+  // Generating pages from JSON files.
+  const JsonPage = path.resolve('./src/templates/json-page.tsx');
+
+  const jsonPagesQuery = await graphql<JsonPageResult>(pageQuery);
+
+  if (jsonPagesQuery.errors) {
+    reporter.panicOnBuild(`There was an error loading your pages data.`, jsonPagesQuery.errors);
+
+    return;
+  };
+
+  const jsonPages = jsonPagesQuery?.data?.allFile.nodes ?? [];
+
+  if (jsonPages.length > 0) {
+    jsonPages.forEach(({ relativePath, ...childJson }) => {
+      const layout = findLayout(childJson);
+      const title = findTitle(childJson);
+      const pagePath = getPath(relativePath);
+      console.log(pagePath, layout);
+
+      if (layout !== null) {
+        createPage({
+          path: pagePath,
+          component: JsonPage,
+          context: {
+            title: title,
+            layout: layout,
+            relativePath: relativePath,
+          },
+        });
+      }
+    });
+  };
+
+  // Generating pages for example files.
+
   const PreviewPage = path.resolve('./src/templates/preview-page.tsx');
 
-  const result = await graphql<Result>(
+  const examplePageQuery = await graphql<ExamplePageResult>(
     `
       {
         allFile(filter: { relativePath: { glob: "*.example.*" } }) {
@@ -43,13 +108,13 @@ export const createPages: GatsbyNode['createPages'] = async ({
     `,
   );
 
-  if (result.errors) {
-    reporter.panicOnBuild(`There was an error loading your pages data.`, result.errors);
+  if (examplePageQuery.errors) {
+    reporter.panicOnBuild(`There was an error loading your pages data.`, examplePageQuery.errors);
 
     return;
   }
 
-  const examplePages = result?.data?.allFile.nodes ?? [];
+  const examplePages = examplePageQuery?.data?.allFile.nodes ?? [];
 
   if (examplePages.length > 0) {
     examplePages.forEach(({ absolutePath, relativePath }) => {

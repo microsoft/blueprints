@@ -1,0 +1,1 @@
+export type Layout = 'basic' | 'reference' | 'home';
