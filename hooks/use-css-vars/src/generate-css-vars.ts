@@ -2,8 +2,16 @@ import type { Value } from './use-css-vars.types';
 
 type CSSVarsArray = [string, string][] | [];
 
+/**
+ * @todo Extract isObject into its own utility.
+ */
+
 const isObject = (value: unknown) =>
   !!(value && typeof value === 'object' && !Array.isArray(value));
+
+/**
+ * @todo Extract isEmptyObject into its own utility.
+ */
 
 const isEmptyObject = (obj: Value) => {
   if (typeof obj === 'object' && obj != null && Object.keys(obj).length !== 0) {
