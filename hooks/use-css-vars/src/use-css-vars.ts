@@ -72,6 +72,7 @@ const useInsertionEffect = (React as never)['useInsertion' + 'Effect']
  * }
  * ```
  */
+
 export const useCSSVars = ({
   theme,
   currentThemeKey,

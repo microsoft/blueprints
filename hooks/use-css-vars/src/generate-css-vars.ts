@@ -13,6 +13,34 @@ const isEmptyObject = (obj: Value) => {
   }
 };
 
+/**
+ * A utility function that generates a list of CSS variable tuples from a theme object, where the first item in the
+ * tuple is the CSS variable name, and the second item is the CSS variable value.
+ * @param theme Theme object.
+ * @param prefix Optional prefix to add to the CSS variable name (e.g. `--my-prefix--color-button-primary`).
+ * @returns An array of CSS variable tuples, where the first item in the tuple is the CSS variable name, and the second
+ * item is the CSS variable value (e.g. `[['--color-button-primary', '#fff'], ['--color-button-secondary', '#000']]`)
+ *
+ * @example
+ * ```tsx
+ * const theme = {
+ *   color: {
+ *     button: {
+ *      primary: '#fff',
+ *      secondary: '#000',
+ *    },
+ *   },
+ * };
+ *
+ * const CSS_VAR_TUPLES = generateCSSVarTuples(theme, 'my-prefix');
+ * // Output:
+ * // [
+ * //  ['--my-prefix--color-button-primary', '#fff'],
+ * //  ['--my-prefix--color-button-secondary', '#000'],
+ * // ];
+ * ```
+ */
+
 export const generateCSSVarTuples = (
   theme: Record<string, Value> | Value,
   prefix?: string,

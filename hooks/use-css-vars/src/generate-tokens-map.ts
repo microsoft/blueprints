@@ -57,6 +57,7 @@ const isEmptyObject = (obj: Value) => {
  *
  * ```
  */
+
 export function generateTokensMap<T>(theme: Record<string, Value>, prefix?: string): T {
   const traverseObject = (obj: Theme, pre: string) => {
     const newObj: Record<string, any> = {};
