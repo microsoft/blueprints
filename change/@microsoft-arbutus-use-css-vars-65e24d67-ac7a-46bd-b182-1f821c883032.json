@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Implements generateTokensMap utility function to generate a companion tokens map for CSS var themes.",
-  "packageName": "@microsoft/arbutus.use-css-vars",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

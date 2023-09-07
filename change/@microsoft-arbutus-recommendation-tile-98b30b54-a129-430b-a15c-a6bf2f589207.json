@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Replaces CSS vars with arbutusTokens map.",
-  "packageName": "@microsoft/arbutus.recommendation-tile",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.use-css-vars",
   "entries": [
     {
+      "date": "Thu, 07 Sep 2023 19:43:12 GMT",
+      "tag": "@microsoft/arbutus.use-css-vars_v1.1.0",
+      "version": "1.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.use-css-vars",
+            "commit": "629c43284dbb92a36097ae7ca6b67850ac7317ec",
+            "comment": "Implements generateTokensMap utility function to generate a companion tokens map for CSS var themes."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.use-css-vars_v1.0.3",
       "version": "1.0.3",

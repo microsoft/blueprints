@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.table-list",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Table List component in the Lists collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
-    "@microsoft/arbutus.text": "1.0.3",
+    "@microsoft/arbutus.text": "1.0.4",
     "@react-hook/resize-observer": "^1.2.6"
   },
   "devDependencies": {

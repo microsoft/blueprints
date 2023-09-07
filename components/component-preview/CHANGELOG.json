@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.component-preview",
   "entries": [
     {
+      "date": "Thu, 07 Sep 2023 19:43:12 GMT",
+      "tag": "@microsoft/arbutus.component-preview_v1.1.3",
+      "version": "1.1.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.theming to v1.1.0",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.component-preview_v1.1.2",
       "version": "1.1.2",

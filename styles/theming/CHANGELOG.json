@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.theming",
   "entries": [
     {
+      "date": "Thu, 07 Sep 2023 19:43:12 GMT",
+      "tag": "@microsoft/arbutus.theming_v1.1.0",
+      "version": "1.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.theming",
+            "commit": "629c43284dbb92a36097ae7ca6b67850ac7317ec",
+            "comment": "Implements arbutusTokens object and ArbutusTokens type to help consumers use the tokens mapped to CSS vars."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.theming",
+            "comment": "Bump @microsoft/arbutus.use-css-vars to v1.1.0",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.theming_v1.0.3",
       "version": "1.0.3",

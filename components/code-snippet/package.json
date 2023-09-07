@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.code-snippet",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Code Snippet component for simple code examples.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
-    "@microsoft/arbutus.theming": "1.0.3",
+    "@microsoft/arbutus.theming": "1.1.0",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {

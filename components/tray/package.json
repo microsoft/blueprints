@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.tray",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tray composite component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
-    "@microsoft/arbutus.theming": "1.0.3",
+    "@microsoft/arbutus.theming": "1.1.0",
     "framer-motion": "^10.12.16"
   },
   "devDependencies": {

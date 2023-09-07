@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.tile",
   "entries": [
     {
+      "date": "Thu, 07 Sep 2023 19:43:12 GMT",
+      "tag": "@microsoft/arbutus.tile_v1.0.4",
+      "version": "1.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.tile",
+            "commit": "629c43284dbb92a36097ae7ca6b67850ac7317ec",
+            "comment": "Replaces CSS vars with arbutusTokens map."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.tile",
+            "comment": "Bump @microsoft/arbutus.theming to v1.1.0",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.tile_v1.0.3",
       "version": "1.0.3",

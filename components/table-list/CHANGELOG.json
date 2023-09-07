@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.table-list",
   "entries": [
     {
+      "date": "Thu, 07 Sep 2023 19:43:12 GMT",
+      "tag": "@microsoft/arbutus.table-list_v1.1.2",
+      "version": "1.1.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.table-list",
+            "comment": "Bump @microsoft/arbutus.text to v1.0.4",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 14 Jul 2023 18:31:17 GMT",
       "tag": "@microsoft/arbutus.table-list_v1.1.1",
       "version": "1.1.1",

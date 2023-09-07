@@ -1,8 +1,17 @@
 # Change Log - @microsoft/arbutus.code-snippet
 
-This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
+This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.4
+
+Thu, 07 Sep 2023 19:43:12 GMT
+
+### Patches
+
+- Replaces CSS vars with arbutusTokens map. (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.theming to v1.1.0
 
 ## 1.0.3
 

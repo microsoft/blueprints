@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.use-css-vars
 
-This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
+This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.0
+
+Thu, 07 Sep 2023 19:43:12 GMT
+
+### Minor changes
+
+- Implements generateTokensMap utility function to generate a companion tokens map for CSS var themes. (akimalunar@gmail.com)
 
 ## 1.0.3
 

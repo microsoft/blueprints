@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Implements arbutusTokens object and ArbutusTokens type to help consumers use the tokens mapped to CSS vars.",
-  "packageName": "@microsoft/arbutus.theming",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.callout",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Callout component.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,9 +21,9 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.badge": "1.0.3",
-    "@microsoft/arbutus.text": "1.0.3",
-    "@microsoft/arbutus.use-space-styles": "1.0.4",
+    "@microsoft/arbutus.badge": "1.0.4",
+    "@microsoft/arbutus.text": "1.0.4",
+    "@microsoft/arbutus.use-space-styles": "1.0.5",
     "@microsoft/arbutus.style-utilities": "1.0.2",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7"

@@ -1,8 +1,17 @@
 # Change Log - @microsoft/arbutus.heading
 
-This log was last generated on Fri, 14 Jul 2023 18:31:17 GMT and should not be manually modified.
+This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.5
+
+Thu, 07 Sep 2023 19:43:12 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.icon-button to v1.0.5
+- Bump @microsoft/arbutus.text to v1.0.4
 
 ## 1.0.4
 

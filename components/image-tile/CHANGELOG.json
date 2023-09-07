@@ -2,6 +2,33 @@
   "name": "@microsoft/arbutus.image-tile",
   "entries": [
     {
+      "date": "Thu, 07 Sep 2023 19:43:12 GMT",
+      "tag": "@microsoft/arbutus.image-tile_v1.0.5",
+      "version": "1.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.image-tile",
+            "comment": "Bump @microsoft/arbutus.text to v1.0.4",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.image-tile",
+            "comment": "Bump @microsoft/arbutus.tile to v1.0.4",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.image-tile",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v1.0.5",
+            "commit": "f8ba85f006b4d9348957a59498cc8f504d119b1a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 14 Jul 2023 18:31:17 GMT",
       "tag": "@microsoft/arbutus.image-tile_v1.0.4",
       "version": "1.0.4",

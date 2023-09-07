@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.table-list
 
-This log was last generated on Fri, 14 Jul 2023 18:31:17 GMT and should not be manually modified.
+This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.2
+
+Thu, 07 Sep 2023 19:43:12 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.text to v1.0.4
 
 ## 1.1.1
 

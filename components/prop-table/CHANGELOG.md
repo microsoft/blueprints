@@ -1,8 +1,17 @@
 # Change Log - @microsoft/arbutus.prop-table
 
-This log was last generated on Fri, 14 Jul 2023 18:31:17 GMT and should not be manually modified.
+This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.5
+
+Thu, 07 Sep 2023 19:43:12 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.table-list to v1.1.2
+- Bump @microsoft/arbutus.use-space-styles to v1.0.5
 
 ## 1.0.4
 
