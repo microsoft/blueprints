@@ -5,5 +5,6 @@ export { spaceScale } from './space-scale';
 export { ThemeContext } from './theme-context';
 export { ThemeProvider } from './theme-provider';
 export { arbutusBrandRamp, arbutusTokens, dark, light } from './themes';
+export type { ArbutusTheme, ArbutusTokens } from './themes/themes.types';
 export type { ThemeContextValue, ThemeOption, ThemeProviderProps } from './theming.types';
 export { useTheme } from './use-theme';

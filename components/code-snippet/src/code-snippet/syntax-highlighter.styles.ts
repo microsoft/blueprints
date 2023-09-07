@@ -1,4 +1,5 @@
 import { tokens } from '@fluentui/react-theme';
+import { arbutusTokens } from '@microsoft/arbutus.theming';
 import type { CSSProperties } from 'react';
 
 export const syntaxHighlighterCustomStyles: CSSProperties = {
@@ -11,8 +12,8 @@ export const syntaxHighlighterCustomStyles: CSSProperties = {
   paddingBottom: tokens.spacingVerticalL,
   paddingLeft: tokens.spacingVerticalXXL,
   paddingRight: tokens.spacingVerticalXXL,
-  borderTopLeftRadius: 'var(--arbutus--shape-border-radius)',
-  borderTopRightRadius: 'var(--arbutus--shape-border-radius)',
-  borderBottomRightRadius: 'var(--arbutus--shape-border-radius)',
-  borderBottomLeftRadius: 'var(--arbutus--shape-border-radius)',
+  borderTopLeftRadius: arbutusTokens.shape.borderRadius,
+  borderTopRightRadius: arbutusTokens.shape.borderRadius,
+  borderBottomRightRadius: arbutusTokens.shape.borderRadius,
+  borderBottomLeftRadius: arbutusTokens.shape.borderRadius,
 };

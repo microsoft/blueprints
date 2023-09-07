@@ -8,7 +8,7 @@ export const dark = {
     },
   },
   shape: {
-    ['border-radius']: '1rem',
+    borderRadius: '1rem',
   },
   breakpoints,
   layout,

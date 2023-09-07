@@ -1,6 +1,6 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
-import { layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
+import { arbutusTokens, layout as BREAKPOINTS } from '@microsoft/arbutus.theming';
 import { TRAY_WIDTH } from '@microsoft/arbutus.tray';
 
 const toRawValue = (value: `${string}px`) => Number(value.replace('px', ''));
@@ -42,7 +42,7 @@ export const useShellStyles = makeStyles({
     transitionTimingFunction: tokens.curveEasyEase,
   },
   heroHeaderScroll: {
-    backgroundColor: 'var(--arbutus--color-overlay-background)',
+    backgroundColor: arbutusTokens.color.overlay.background,
     backdropFilter: 'blur(1rem)',
     boxShadow: tokens.shadow8,
   },
