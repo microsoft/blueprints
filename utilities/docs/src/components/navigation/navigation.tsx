@@ -8,172 +8,88 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
-import { getNavigationContent } from './get-navigation-content';
+import { getNavigationContent, makeNavigationQuery } from './get-navigation-content';
+import type { ComponentPageData, GuidelinesPageData } from './navigation.types';
 
-export type ComponentPageData = {
-  _path: string;
-  _orderInNav?: number;
-  _includeInNav?: boolean;
+const MainNavigationQuery = graphql`
+  query MainNavigationQuery {
+    mainNavigationJson {
+      items {
+        hasDivider
+        id
+        linkProps {
+          to
+        }
+        title
+        items {
+          collection
+          exclude
+          id
+          order
+          title
+          linkProps {
+            to
+          }
+          items {
+            collection
+            order
+          }
+        }
+      }
+    }
+  }
+`;
+
+export type MainNavigationItem = {
   title: string;
+  id: string;
+  linkProps: {
+    to: string;
+  }
 };
 
-export type GuidelinesPageData = {
-  _path: string;
-  _orderInNav?: number;
-  _includeInNav?: boolean;
+export type MainNavigationCollection = {
+  collection: string;
+  exclude?: string[];
+  include?: string[];
+  order?: 'alphabetical' | 'by-index';
+}
+
+export type MainNavigationHeader = {
   title: string;
-};
+  items: MainNavigationItemType[];
+  hasDivider?: boolean;
+}
+
+export type MainNavigationItemType = MainNavigationItem | MainNavigationCollection | MainNavigationHeader;
 
 export type NavigationQuery = {
-  allComponentsJson: {
-    nodes: ComponentPageData[];
-  };
-  allGuidanceJson: {
-    nodes: GuidelinesPageData[];
+  mainNavigationJson: {
+    items: MainNavigationItemType[];
   };
 };
+
+export type CollectionsQuery = {
+  [key: string]: {
+    nodes: {
+      title: string;
+      _path: string;
+    }[];
+  }
+}
 
 export const Navigation: FC = () => {
   const { pathname } = useLocation();
 
-  const data = useStaticQuery<NavigationQuery>(graphql`
-    query MyQuery {
-      allGuidanceJson {
-        nodes {
-          _path
-          _orderInNav
-          _includeInNav
-          title
-        }
-      }
-      allComponentsJson {
-        nodes {
-          _path
-          _includeInNav
-          title
-        }
-      }
-    }
-  `);
+  const navigationData = useStaticQuery<NavigationQuery>(MainNavigationQuery);
 
-  const { components, guidance } = getNavigationContent(data);
+  const { query, aliases } = makeNavigationQuery(navigationData.mainNavigationJson.items);
 
-  const items: NavigationItems = {
-    gettingStarted: {
-      title: 'Getting Started',
-      id: '/getting-started',
-      linkProps: { to: '/getting-started' },
-    },
-    about: {
-      title: 'About',
-      id: '/about',
-      linkProps: { to: '/about' },
-      hasDivider: true,
-    },
-    guidance: {
-      title: 'Guidance',
-      items: {
-        introduction: {
-          title: 'Introduction',
-          id: '/guidance/introduction',
-          linkProps: { to: '/content-design/introduction' },
-        },
-        informationArchitecture: {
-          title: 'Information Architecture',
-          id: '/guidance/information-architecture',
-          linkProps: { to: '/content-design/information-architecture' },
-        },
-      },
-      hasDivider: true,
-    },
-    layouts: {
-      title: 'Layouts',
-      items: {
-        introduction: {
-          title: 'Introduction',
-          id: '/layouts/introduction',
-          linkProps: { to: '/layouts/introduction' },
-        },
-      },
-    },
-    patterns: {
-      title: 'Patterns',
-      items: {
-        introduction: {
-          title: 'Introduction',
-          id: '/patterns/introduction',
-          linkProps: { to: '/patterns/introduction' },
-        },
-      },
-    },
-    components: {
-      title: 'Components',
-      items:  {
-        introduction: {
-          title: 'Introduction',
-          id: '/components/introduction',
-          linkProps: { to: '/components/introduction' },
-        },
-      },
-    },
-    styles: {
-      title: 'Styles',
-      items: {
-        introduction: {
-          title: 'Introduction',
-          id: '/styles/introduction',
-          linkProps: { to: '/styles/introduction' },
-        },
-        theming: {
-          title: 'Theming',
-          id: '/styles/theming',
-          linkProps: { to: '/styles/theming' },
-        },
-        global: {
-          title: 'Global',
-          id: '/styles/global',
-          linkProps: { to: '/styles/global' },
-        },
-        fonts: {
-          title: 'Fonts',
-          id: '/styles/fonts',
-          linkProps: { to: '/styles/fonts' },
-        },
-        styleUtilities: {
-          title: 'Style Utilities',
-          id: 'styles/utilities',
-          linkProps: { to: '/styles/utilities' },
-        },
-      },
-      hasDivider: true,
-    },
-    starters: {
-      title: 'Starters',
-      items: {
-        introduction: {
-          title: 'Introduction',
-          id: '/starters/introduction',
-          linkProps: { to: '/starters/introduction' },
-        },
-      },
-      hasDivider: true,
-    },
-    cms: {
-      title: 'CMS',
-      items: {
-        introduction: {
-          title: 'Introduction',
-          id: '/cms/introduction',
-          linkProps: { to: '/cms/introduction' },
-        },
-      },
-      hasDivider: true,
-    },
-  };
+  const itemsData = useStaticQuery<CollectionsQuery>(query);
 
   return (
     <MainNavigation>
-      <MainNavigationRenderer items={items} linkAs={Link} activeItemId={pathname} />
+      {/* <MainNavigationRenderer items={items} linkAs={Link} activeItemId={pathname} /> */}
     </MainNavigation>
   );
 };

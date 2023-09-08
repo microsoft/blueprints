@@ -1,79 +1,115 @@
 import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
+import { graphql } from 'gatsby';
 
 import type {
-  ComponentPageData,
-  GuidelinesPageData,
+  MainNavigationCollection,
   NavigationQuery,
+  MainNavigationItemType,
+  MainNavigationHeader,
+  MainNavigationItem,
 } from './navigation';
 
 /* Common utilities. */
 
-const sortAlphabetically = (
-  a: ComponentPageData | GuidelinesPageData,
-  b: ComponentPageData | GuidelinesPageData,
-) => {
-  if (a.title < b.title) {
-    return -1;
-  }
+// const sortAlphabetically = (
+//   a: ComponentPageData | GuidelinesPageData,
+//   b: ComponentPageData | GuidelinesPageData,
+// ) => {
+//   if (a.title < b.title) {
+//     return -1;
+//   }
 
-  if (a.title > b.title) {
-    return 1;
-  }
+//   if (a.title > b.title) {
+//     return 1;
+//   }
 
-  return 0;
-};
+//   return 0;
+// };
 
-const sortByIndex = (a: GuidelinesPageData, b: GuidelinesPageData) => {
-  if (!a._orderInNav || !b._orderInNav) {
-    return 0;
-  }
+// const sortByIndex = (a: GuidelinesPageData, b: GuidelinesPageData) => {
+//   if (!a._orderInNav || !b._orderInNav) {
+//     return 0;
+//   }
 
-  if (a._orderInNav < b._orderInNav) {
-    return -1;
-  }
+//   if (a._orderInNav < b._orderInNav) {
+//     return -1;
+//   }
 
-  if (a._orderInNav > b._orderInNav) {
-    return 1;
-  }
+//   if (a._orderInNav > b._orderInNav) {
+//     return 1;
+//   }
 
-  return 0;
-};
+//   return 0;
+// };
 
 /* Page formatting. */
+function isMainNavigationCollection(item: MainNavigationItemType): item is MainNavigationCollection {
+  return 'collection' in item;
+}
 
-const formatPagesForNavigation = (
-  data: ComponentPageData[],
-  section: 'components' | 'guidance',
-) =>
-  data.reduce((acc, { title, _path }) => {
-    acc[_path] = {
-      title,
-      id: `/${section}/${_path}/`,
-      linkProps: { to: `/${section}/${_path}` },
-    };
+function isMainNavigationHeader(item: MainNavigationItemType): item is MainNavigationHeader {
+  return 'items' in item;
+}
 
-    return acc;
-  }, {} as NavigationItems) ?? {};
+function isMainNavigationItem(item: MainNavigationItemType): item is MainNavigationItem {
+  return 'linkProps' in item;
+}
 
-const sortPages = (data: ComponentPageData[] | GuidelinesPageData[]) => {
-  const filtered = data.filter((page) => page._includeInNav);
-  const indexedPages = filtered
-    .filter((page) => typeof page._orderInNav === 'number')
-    .sort(sortByIndex);
-  const restOfPages = filtered
-    .filter((page) => typeof page._orderInNav !== 'number')
-    .sort(sortAlphabetically);
+export const makeNavigationQuery = (items: NavigationQuery["mainNavigationJson"]["items"]) => {
+  function findObjectsWithCollectionKey(items: NavigationQuery["mainNavigationJson"]["items"]) {
+    const objectsWithCollectionKey: MainNavigationCollection[] = [];
+  
+    for (const item of items) {
+      if (isMainNavigationCollection(item)) {
+        objectsWithCollectionKey.push(item);
+      } else if (isMainNavigationHeader(item)) {
+        const nestedObjects = findObjectsWithCollectionKey(item.items);
 
-  return [...indexedPages, ...restOfPages];
-};
+        if (nestedObjects.length > 0) {
+          objectsWithCollectionKey.push(...nestedObjects);
+        }
+      }
+    }
+  
+    return objectsWithCollectionKey;
+  }
 
-/* Final navigation object. */
+  const collections = findObjectsWithCollectionKey(items).map(({ collection }) => {
+    const alias = collection.replace('/', '');
 
-export const getNavigationContent = (data: NavigationQuery) => ({
-  guidance: data.allGuidanceJson
-    ? formatPagesForNavigation(sortPages(data.allGuidanceJson.nodes), 'guidance')
-    : {},
-  components: data.allComponentsJson
-    ? formatPagesForNavigation(sortPages(data.allComponentsJson.nodes), 'components')
-    : {},
-});
+    return `
+      allPagesJson(filter: {_path: {glob: "${collection}*"}}) {
+        nodes {
+          title
+        }
+      }
+    `}
+  );
+
+  return {
+    aliases: {
+      componentsAtoms: '/components/atoms/*',
+      guidance: '/guidance/*',
+    },
+    query: graphql`
+      query MyQuery {
+        componentsAtoms: allPagesJson(filter: {_path: {glob: "/components/atoms/*"}}) {
+          nodes {
+            _path
+            title
+          }
+        }
+        guidance: allPagesJson(filter: {_path: {glob: "/guidance/*"}}) {
+          nodes {
+            _path
+            title
+          }
+        }
+      }
+    `
+  }
+}
+
+export const getNavigationContent = (data: NavigationQuery, collectionsKey: Record<string, string>): NavigationItems => {
+  return {}
+}

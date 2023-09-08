@@ -3,39 +3,17 @@ import { sentenceCase } from 'change-case';
 import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
-import { generatePageQuery, findLayout, getPath, findTitle } from './src/utilities/generating-pages';
+import { findDuplicates } from './src/utilities/generating-pages';
 import type { Layout } from './src/layouts/layouts.types';
- 
+
 type JsonPageResult = {
-  allFile: {
+  allPagesJson: {
     nodes: {
-      relativePath: string;
-      childAtomsJson: {
-        title: string;
-        _layout: Layout;
-      } | null;
-      childComponentsJson: {
-        title: string;
-        _layout: Layout;
-      } | null;
-      childGuidanceJson: {
-        title: string;
-        _layout: Layout;
-      } | null;
-      childListsJson: {
-        title: string;
-        _layout: Layout;
-      } | null;
-      childPagesJson: {
-        title: string;
-        _layout: Layout;
-      } | null;
-      childTilesJson: {
-        title: string;
-        _layout: Layout;
-      } | null;
-    }
-  }[]
+      title: string;
+      _path: string;
+      _layout: Layout;
+    }[]
+  }
 }
 
 type ExamplePageResult = {
@@ -47,9 +25,6 @@ type ExamplePageResult = {
   };
 };
 
-const knownPageCollections = ['Atoms', 'Components', 'Guidance', 'Lists', 'Pages', 'Tiles'];
-const pageQuery = generatePageQuery(knownPageCollections);
-
 export const createPages: GatsbyNode['createPages'] = async ({
   graphql,
   actions,
@@ -58,9 +33,19 @@ export const createPages: GatsbyNode['createPages'] = async ({
   const { createPage } = actions;
 
   // Generating pages from JSON files.
-  const JsonPage = path.resolve('./src/templates/json-page.tsx');
+  const JSONPage = path.resolve('./src/templates/json-page.tsx');
 
-  const jsonPagesQuery = await graphql<JsonPageResult>(pageQuery);
+  const jsonPagesQuery = await graphql<JsonPageResult>(`
+    query JSONPagesQuery {
+      allPagesJson {
+        nodes {
+          title
+          _path
+          _layout
+        }
+      }
+    }
+  `);
 
   if (jsonPagesQuery.errors) {
     reporter.panicOnBuild(`There was an error loading your pages data.`, jsonPagesQuery.errors);
@@ -68,45 +53,48 @@ export const createPages: GatsbyNode['createPages'] = async ({
     return;
   };
 
-  const jsonPages = jsonPagesQuery?.data?.allFile.nodes ?? [];
+  const jsonPages = jsonPagesQuery?.data?.allPagesJson.nodes ?? [];
 
   if (jsonPages.length > 0) {
-    jsonPages.forEach(({ relativePath, ...childJson }) => {
-      const layout = findLayout(childJson);
-      const title = findTitle(childJson);
-      const pagePath = getPath(relativePath);
-      console.log(pagePath, layout);
+    const paths = jsonPages.map(({ _path }) => _path);
+    const { hasDuplicates, duplicates } = findDuplicates(paths);
+    if (hasDuplicates) {
+      console.error(`There are multiple pages with the same path: ${duplicates.toString()}.
+Skipping generating pages from JSON files. Please ensure that all pages have a unique path.`);
+    } else {
 
-      if (layout !== null) {
-        createPage({
-          path: pagePath,
-          component: JsonPage,
-          context: {
-            title: title,
-            layout: layout,
-            relativePath: relativePath,
-          },
-        });
-      }
-    });
+      jsonPages.forEach(({ title, _path, _layout }) => {
+        if (_layout !== null) {
+          console.log(`Generating page from JSON file: ${_path}`);
+
+          createPage({
+            path: _path,
+            component: JSONPage,
+            context: {
+              title: title,
+              layout: _layout,
+              path: _path,
+            },
+          });
+        }
+      });
+    }
   };
 
   // Generating pages for example files.
 
   const PreviewPage = path.resolve('./src/templates/preview-page.tsx');
 
-  const examplePageQuery = await graphql<ExamplePageResult>(
-    `
-      {
-        allFile(filter: { relativePath: { glob: "*.example.*" } }) {
-          nodes {
-            relativePath
-            absolutePath
-          }
+  const examplePageQuery = await graphql<ExamplePageResult>(`
+    query ExamplePagesQuery {
+      allFile(filter: { relativePath: { glob: "*.example.*" } }) {
+        nodes {
+          relativePath
+          absolutePath
         }
       }
-    `,
-  );
+    }
+  `);
 
   if (examplePageQuery.errors) {
     reporter.panicOnBuild(`There was an error loading your pages data.`, examplePageQuery.errors);

@@ -1,13 +1,13 @@
 {
   "_layout": "basic",
-  "_path": "/guidance-for-editors",
-  "_orderInNav": 2,
+  "_path": "/guidance/information-architecture",
+  "_orderInNav": 1,
   "_includeInNav": true,
-  "title": "Guidance For Editors",
+  "title": "Information Architecture",
   "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in Strapi content management system. ",
   "heroImage": {
-    "src": "../../assets/demo-image-3.png",
-    "alt": "Demo image 3"
+    "src": "../../assets/demo-image-2.png",
+    "alt": "Demo image 2"
   },
   "content": [
     {
@@ -16,7 +16,7 @@
       "size": "title",
       "contentComponentId": "blocks.heading",
       "title": "Get Started with Strapi",
-      "withCopyLink": null,
+      "withCopyLink": false,
       "withDivider": false
     },
     {
@@ -25,7 +25,7 @@
       "contentComponentId": "tiles.bookmark-tile",
       "isExternal": true,
       "icon": {
-        "alternativeText": null,
+        "alternativeText": "Strapi logo",
         "src": "https://admincontrolsdemoapps.blob.core.windows.net/docsite-assets/Strapi_monogram_logo_73cfc84f53.png"
       },
       "description": "This user guide explains all features available in the admin panel of your Strapi CMS."

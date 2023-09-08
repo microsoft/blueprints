@@ -38,10 +38,12 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Building Storybook
-        run: npm run build:storybook
+        run: |
+          git pull
+          npm run build:storybook
 
       - name: Merging new Storybook build
         run: |
           git add .
-          git commit -m "[skip actions] Build Storybook on merge"
+          git commit -m "[skip actions] Rebuild Storybook on merge."
           git push origin HEAD:main
