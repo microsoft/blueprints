@@ -8,13 +8,18 @@
       "isExternal": false
     },
     {
-      "to": "/guidance/page-1/",
-      "text": "Guidelines",
+      "to": "/guidance/introduction",
+      "text": "Guidance",
       "isExternal": false
     },
     {
-      "to": "/components/reference-page-1/",
-      "text": "Components",
+      "to": "/starters/introduction",
+      "text": "Starters",
+      "isExternal": false
+    },
+    {
+      "to": "/cms/introduction",
+      "text": "CMS",
       "isExternal": false
     }
   ],

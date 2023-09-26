@@ -4,14 +4,14 @@ import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
 import { findDuplicates } from './src/utilities/generating-pages';
-import type { Layout } from './src/layouts/layouts.types';
+import type { LayoutKey } from './src/layouts/layouts.types';
 
 type JsonPageResult = {
   allPagesJson: {
     nodes: {
       title: string;
       _path: string;
-      _layout: Layout;
+      _layout: LayoutKey;
     }[]
   }
 }

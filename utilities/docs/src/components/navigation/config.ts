@@ -41,7 +41,7 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
       {
         id: '/guidance/introduction',
         linkProps: {
-          to: '/content-design/introduction'
+          to: '/guidance/introduction'
         },
         title: 'Introduction'
       },

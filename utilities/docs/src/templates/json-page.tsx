@@ -2,22 +2,32 @@ import type { HeadFC, PageProps } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
-import type { Layout } from '../layouts/layouts.types';
+import type { LayoutKey } from '../layouts/layouts.types';
+import { WorkInProgressLayout } from '../layouts/work-in-progress';
+import { BasicLayout } from '../layouts/basic';
+import { ReferenceLayout } from '../layouts/reference';
+import { HomeLayout } from '../layouts/home';
+
 
 type JsonPageContext = {
   relativePath: string;
   title: string;
-  layout: Layout;
+  layout: LayoutKey;
+}
+
+const LAYOUTS_MAP = {
+  basic: BasicLayout,
+  home: HomeLayout,
+  reference: ReferenceLayout,
+  'work-in-progress': WorkInProgressLayout,
 }
 
 const JsonPage: FC<PageProps<undefined, JsonPageContext>> = ({
   pageContext: { relativePath, layout, title },
 }) => {
+  const PageLayout = LAYOUTS_MAP[layout];
   return (
-    <>
-      <h1>{title}</h1>
-      <pre>{JSON.stringify({ relativePath, layout }, null, 2)}</pre>
-    </>
+    <WorkInProgressLayout title={title} />
   );
 };
 
