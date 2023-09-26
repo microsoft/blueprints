@@ -1,7 +1,6 @@
 {
   "_layout": "reference",
   "_path": "/components/tiles/bookmark-tile",
-  "_includeInNav": true,
   "title": "BookmarkTile",
   "definition": "This is a reference page.",
   "owners": [

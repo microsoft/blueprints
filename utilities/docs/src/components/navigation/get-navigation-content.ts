@@ -1,115 +1,114 @@
 import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
-import { graphql } from 'gatsby';
+import { camelCase } from 'change-case';
 
-import type {
+import type { MainNavigationCollectionsQuery } from './index';
+import {
   MainNavigationCollection,
-  NavigationQuery,
+  MainNavigationConfig,
   MainNavigationItemType,
-  MainNavigationHeader,
-  MainNavigationItem,
-} from './navigation';
+} from './index';
+import {
+  isMainNavigationCollection,
+  isMainNavigationHeader,
+  isMainNavigationItem,
+} from './config';
 
 /* Common utilities. */
 
-// const sortAlphabetically = (
-//   a: ComponentPageData | GuidelinesPageData,
-//   b: ComponentPageData | GuidelinesPageData,
-// ) => {
-//   if (a.title < b.title) {
-//     return -1;
-//   }
-
-//   if (a.title > b.title) {
-//     return 1;
-//   }
-
-//   return 0;
-// };
-
-// const sortByIndex = (a: GuidelinesPageData, b: GuidelinesPageData) => {
-//   if (!a._orderInNav || !b._orderInNav) {
-//     return 0;
-//   }
-
-//   if (a._orderInNav < b._orderInNav) {
-//     return -1;
-//   }
-
-//   if (a._orderInNav > b._orderInNav) {
-//     return 1;
-//   }
-
-//   return 0;
-// };
-
-/* Page formatting. */
-function isMainNavigationCollection(item: MainNavigationItemType): item is MainNavigationCollection {
-  return 'collection' in item;
-}
-
-function isMainNavigationHeader(item: MainNavigationItemType): item is MainNavigationHeader {
-  return 'items' in item;
-}
-
-function isMainNavigationItem(item: MainNavigationItemType): item is MainNavigationItem {
-  return 'linkProps' in item;
-}
-
-export const makeNavigationQuery = (items: NavigationQuery["mainNavigationJson"]["items"]) => {
-  function findObjectsWithCollectionKey(items: NavigationQuery["mainNavigationJson"]["items"]) {
-    const objectsWithCollectionKey: MainNavigationCollection[] = [];
-  
-    for (const item of items) {
-      if (isMainNavigationCollection(item)) {
-        objectsWithCollectionKey.push(item);
-      } else if (isMainNavigationHeader(item)) {
-        const nestedObjects = findObjectsWithCollectionKey(item.items);
-
-        if (nestedObjects.length > 0) {
-          objectsWithCollectionKey.push(...nestedObjects);
-        }
-      }
-    }
-  
-    return objectsWithCollectionKey;
+const sortAlphabetically = (a: string, b: string) => {
+  if (a < b) {
+    return -1;
   }
 
-  const collections = findObjectsWithCollectionKey(items).map(({ collection }) => {
-    const alias = collection.replace('/', '');
+  if (a > b) {
+    return 1;
+  }
 
-    return `
-      allPagesJson(filter: {_path: {glob: "${collection}*"}}) {
-        nodes {
-          title
-        }
-      }
-    `}
+  return 0;
+};
+
+const generateCollectionItems = (
+  collection: MainNavigationCollection,
+  data: MainNavigationCollectionsQuery,
+): NavigationItems => {
+  const { exclude = [], order = 'alphabetical' } = collection;
+  const { nodes } = data[collection.collectionId];
+
+  const nodesSortedAlphabetically = nodes.sort(
+    (a: { title: string }, b: { title: string }) => sortAlphabetically(a.title, b.title),
   );
 
-  return {
-    aliases: {
-      componentsAtoms: '/components/atoms/*',
-      guidance: '/guidance/*',
-    },
-    query: graphql`
-      query MyQuery {
-        componentsAtoms: allPagesJson(filter: {_path: {glob: "/components/atoms/*"}}) {
-          nodes {
-            _path
-            title
-          }
-        }
-        guidance: allPagesJson(filter: {_path: {glob: "/guidance/*"}}) {
-          nodes {
-            _path
-            title
-          }
-        }
-      }
-    `
-  }
-}
+  const sortedNodes = order === 'alphabetical' ? nodesSortedAlphabetically : nodes;
 
-export const getNavigationContent = (data: NavigationQuery, collectionsKey: Record<string, string>): NavigationItems => {
-  return {}
-}
+  return sortedNodes.reduce(
+    (
+      acc: NavigationItems,
+      node: {
+        _path: string;
+        title: string;
+      },
+    ) => {
+      const key = camelCase(node.title);
+
+      if (exclude.includes(node._path)) {
+        return acc;
+      }
+
+      return {
+        ...acc,
+        [key]: {
+          id: node._path,
+          title: node.title,
+          linkProps: {
+            to: node._path,
+          },
+        },
+      };
+    },
+    {},
+  );
+};
+
+export const getNavigationContent = ({
+  collectionsData,
+  config,
+}: {
+  collectionsData: MainNavigationCollectionsQuery;
+  config: MainNavigationConfig;
+}): NavigationItems => {
+  const generateNavigation = (items: MainNavigationItemType[]): NavigationItems => {
+    if (!items || items.length === 0) {
+      return {};
+    }
+
+    return items.reduce((acc: NavigationItems, item: MainNavigationItemType) => {
+      if (isMainNavigationItem(item)) {
+        const key = camelCase(item.title);
+
+        return {
+          ...acc,
+          [key]: item,
+        };
+      }
+
+      if (isMainNavigationCollection(item)) {
+        return { ...acc, ...generateCollectionItems(item, collectionsData) };
+      }
+
+      if (isMainNavigationHeader(item)) {
+        const key = camelCase(item.title);
+
+        acc[key] = {
+          title: item.title,
+          hasDivider: item.hasDivider,
+          items: generateNavigation(item.items),
+        };
+        return acc;
+      }
+
+      return acc;
+    }, {});
+  };
+
+  return generateNavigation(config);
+};

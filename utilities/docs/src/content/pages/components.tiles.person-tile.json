@@ -1,7 +1,6 @@
 {
   "_layout": "reference",
   "_path": "/components/tiles/person-tile",
-  "_includeInNav": true,
   "title": "PersonTile",
   "definition": "This is a reference page.",
   "owners": [

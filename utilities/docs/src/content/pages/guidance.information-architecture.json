@@ -1,8 +1,6 @@
 {
   "_layout": "basic",
   "_path": "/guidance/information-architecture",
-  "_orderInNav": 1,
-  "_includeInNav": true,
   "title": "Information Architecture",
   "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in Strapi content management system. ",
   "heroImage": {

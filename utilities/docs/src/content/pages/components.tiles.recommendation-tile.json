@@ -1,7 +1,6 @@
 {
   "_layout": "reference",
   "_path": "/components/tiles/recommendation-tile",
-  "_includeInNav": true,
   "title": "RecommendationTile",
   "definition": "This is a reference page.",
   "owners": [

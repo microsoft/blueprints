@@ -1,8 +1,6 @@
 {
   "_layout": "basic",
   "_path": "/patterns/introduction",
-  "_orderInNav": 1,
-  "_includeInNav": true,
   "title": "Introduction",
   "leading": "Introduction to Patterns.",
   "heroImage": {

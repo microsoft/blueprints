@@ -2,7 +2,6 @@
   "_layout": "basic",
   "_path": "/components/introduction",
   "_orderInNav": 1,
-  "_includeInNav": true,
   "title": "Introduction",
   "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in Strapi content management system. ",
   "heroImage": {

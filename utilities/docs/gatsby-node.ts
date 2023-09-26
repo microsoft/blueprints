@@ -73,7 +73,7 @@ Skipping generating pages from JSON files. Please ensure that all pages have a u
             context: {
               title: title,
               layout: _layout,
-              path: _path,
+              _path: _path,
             },
           });
         }
