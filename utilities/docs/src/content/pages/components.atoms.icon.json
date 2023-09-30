@@ -3,6 +3,7 @@
   "_path": "/components/atoms/icon",
   "title": "Icon",
   "definition": "This is a reference page.",
+  "packageName": "@microsoft/blueprints.icon",
   "owners": [
     {
       "firstName": "Eric",

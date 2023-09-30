@@ -3,19 +3,6 @@ import { sentenceCase } from 'change-case';
 import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
-import { findDuplicates } from './src/utilities/generating-pages';
-import type { LayoutKey } from './src/layouts/layouts.types';
-
-type JsonPageResult = {
-  allPagesJson: {
-    nodes: {
-      title: string;
-      _path: string;
-      _layout: LayoutKey;
-    }[]
-  }
-}
-
 type ExamplePageResult = {
   allFile: {
     nodes: {
@@ -31,55 +18,6 @@ export const createPages: GatsbyNode['createPages'] = async ({
   reporter,
 }) => {
   const { createPage } = actions;
-
-  // Generating pages from JSON files.
-  const JSONPage = path.resolve('./src/templates/json-page.tsx');
-
-  const jsonPagesQuery = await graphql<JsonPageResult>(`
-    query JSONPagesQuery {
-      allPagesJson {
-        nodes {
-          title
-          _path
-          _layout
-        }
-      }
-    }
-  `);
-
-  if (jsonPagesQuery.errors) {
-    reporter.panicOnBuild(`There was an error loading your pages data.`, jsonPagesQuery.errors);
-
-    return;
-  };
-
-  const jsonPages = jsonPagesQuery?.data?.allPagesJson.nodes ?? [];
-
-  if (jsonPages.length > 0) {
-    const paths = jsonPages.map(({ _path }) => _path);
-    const { hasDuplicates, duplicates } = findDuplicates(paths);
-    if (hasDuplicates) {
-      console.error(`There are multiple pages with the same path: ${duplicates.toString()}.
-Skipping generating pages from JSON files. Please ensure that all pages have a unique path.`);
-    } else {
-
-      jsonPages.forEach(({ title, _path, _layout }) => {
-        if (_layout !== null) {
-          console.log(`Generating page from JSON file: ${_path}`);
-
-          createPage({
-            path: _path,
-            component: JSONPage,
-            context: {
-              title: title,
-              layout: _layout,
-              _path: _path,
-            },
-          });
-        }
-      });
-    }
-  };
 
   // Generating pages for example files.
 
@@ -97,7 +35,10 @@ Skipping generating pages from JSON files. Please ensure that all pages have a u
   `);
 
   if (examplePageQuery.errors) {
-    reporter.panicOnBuild(`There was an error loading your pages data.`, examplePageQuery.errors);
+    reporter.panicOnBuild(
+      `There was an error loading your pages data.`,
+      examplePageQuery.errors,
+    );
 
     return;
   }

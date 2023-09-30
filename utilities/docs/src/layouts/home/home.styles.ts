@@ -1,49 +1,51 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
-import { HEADER_HEIGHT } from '@microsoft/arbutus.shell';
+import { HEADER_HEIGHT, CONTAINER_WIDTH } from '@microsoft/arbutus.shell';
+
+const lightThemeGrid = `url('data:image/svg+xml,<svg width="31" height="63" viewBox="0 0 31 63" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.13118e-08" x2="0.499997" y2="63" stroke="%23C2DBFF"/><line x1="1" y1="0.5" x2="30.9667" y2="0.499997" stroke="%23C2DBFF"/><line x1="1" y1="31.5" x2="30.9667" y2="31.5" stroke="%23C2DBFF"/></svg>')`;
 
 export const useHomeStyles = makeStyles({
-  root: {
-    minHeight: 'calc(100vh)',
+  heroLayout: {
     display: 'grid',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundImage: 'linear-gradient(180deg, #EAF3EF 0%, #DADFEC 100%)',
+    backgroundImage: 'linear-gradient(293.96deg, #F0F3FF 28.46%, #9BCCFD 100%)',
+    gridTemplateColumns: `auto ${CONTAINER_WIDTH} auto`,
+    minHeight: 'calc(100vh)',
   },
-  container: {
-    width: `calc(100vw - 2 * ${tokens.spacingHorizontalXXXL})`,
-    borderTopLeftRadius: '24px',
-    borderTopRightRadius: '24px',
-    borderBottomRightRadius: '24px',
-    borderBottomLeftRadius: '24px',
+  heroContainer: {
+    height: `calc(100% - ${HEADER_HEIGHT})`,
+    gridColumnStart: 2,
+    gridColumnEnd: 4,
     marginTop: HEADER_HEIGHT,
-    paddingTop: tokens.spacingHorizontalXXXL,
-    paddingBottom: tokens.spacingHorizontalXXXL,
+    borderTopLeftRadius: '24px',
+    backgroundColor: 'red',
     paddingLeft: tokens.spacingHorizontalXXXL,
     paddingRight: tokens.spacingHorizontalXXXL,
-    backgroundImage: `linear-gradient(180deg, ${tokens.colorNeutralBackground1} 0%, ${tokens.colorNeutralBackground1} 50%, rgba(255,255,255,0) 100%)`,
+    paddingTop: tokens.spacingHorizontalXXXL,
+    paddingBottom: tokens.spacingHorizontalXXXL,
+    backgroundImage: `linear-gradient(115deg, #C0DFFE 2%, rgba(240, 243, 255, 0.65) 56%, rgba(240, 243, 255, 0.00) 100%), ${lightThemeGrid}, linear-gradient(105.51deg, #C0DFFE 5.67%, #F0F3FF 73.77%)`,
+    backgroundRepeatY: 'repeat',
+    backgroundRepeatX: 'repeat',
   },
-  gradientTransition: {
-    height: '340px',
-    width: '100%',
-    position: 'absolute',
-    bottom: '0',
-  },
+  // gradientTransition: {
+  //   height: '340px',
+  //   width: '100%',
+  //   position: 'absolute',
+  //   bottom: '0',
+  // },
   title: {
     fontSize: '120px',
-    marginTop: '80px',
-    marginBottom: '20px',
     lineHeight: '120px',
-    backgroundImage: 'linear-gradient(90.63deg, #65DBA9 0%, #436DCD 54.72%)',
-    backgroundClip: 'text',
-    textFillColor: 'transparent',
+    color: tokens.colorNeutralForeground1,
   },
   articles: {
-    paddingLeft: tokens.spacingHorizontalL,
-    paddingRight: tokens.spacingHorizontalL,
+    backgroundImage: 'linear-gradient(180deg, #DADFEC 0%, rgba(255,255,255,1) 100%)',
+  },
+  articlesContainer: {
+    maxWidth: CONTAINER_WIDTH,
+    marginLeft: 'auto',
+    marginRight: 'auto',
     paddingBottom: tokens.spacingHorizontalL,
     paddingTop: tokens.spacingHorizontalL,
-    backgroundImage: 'linear-gradient(180deg, #DADFEC 0%, rgba(255,255,255,1) 100%)',
     gridAutoRows: 'minmax(200px, auto)',
     gridRowGap: tokens.spacingHorizontalM,
     gridColumnGap: tokens.spacingHorizontalM,

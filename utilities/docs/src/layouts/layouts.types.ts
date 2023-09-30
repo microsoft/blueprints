@@ -1,1 +1,1 @@
-export type LayoutKey = 'basic' | 'reference' | 'home' | 'work-in-progress';
+export type LayoutKey = 'basic' | 'reference' | 'work-in-progress';

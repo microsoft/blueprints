@@ -22,7 +22,7 @@ export const HomeLayout: FC<HomeLayoutProps> = ({
 
   return (
     <>
-      <div className={classes.root}>
+      {/* <div className={classes.root}>
         <div className={classes.container}>
           <MicrosoftLogo />
           <Text block as="h1" weight="bold" className={classes.title}>
@@ -42,38 +42,48 @@ export const HomeLayout: FC<HomeLayoutProps> = ({
             ))}
           </Statement>
         </div>
+      </div> */}
+      <div className={classes.heroLayout}>
+        <div className={classes.heroContainer}>
+          <MicrosoftLogo />
+          <Text block as="h1" weight="bold" className={classes.title}>
+            {title}
+          </Text>
+        </div>
       </div>
-      <Grid layout="large" className={classes.articles}>
-        {articles.map(({ title, description, image }, i) => (
-          <Tile
-            variant="image"
-            key={i}
-            imageSrc={image.src.publicURL}
-            className={mergeClasses(
-              i === 0 ? space.p12 : space.p9,
-              i === 0 && classes.articleFeatured,
-            )}
-          >
-            <Text
-              block
-              as="h2"
-              size={i === 0 ? 1000 : 600}
-              weight="bold"
-              className={classes.articleTitle}
+      <div className={classes.articles}>
+        <Grid layout="large" className={classes.articlesContainer}>
+          {articles.map(({ title, description, image }, i) => (
+            <Tile
+              variant="image"
+              key={i}
+              imageSrc={image.src.publicURL}
+              className={mergeClasses(
+                i === 0 ? space.p12 : space.p9,
+                i === 0 && classes.articleFeatured,
+              )}
             >
-              {title}
-            </Text>
-            <Text
-              block
-              size={i === 0 ? 500 : 300}
-              weight="semibold"
-              className={classes.articleDescription}
-            >
-              {description}
-            </Text>
-          </Tile>
-        ))}
-      </Grid>
+              <Text
+                block
+                as="h2"
+                size={i === 0 ? 1000 : 600}
+                weight="bold"
+                className={classes.articleTitle}
+              >
+                {title}
+              </Text>
+              <Text
+                block
+                size={i === 0 ? 500 : 300}
+                weight="semibold"
+                className={classes.articleDescription}
+              >
+                {description}
+              </Text>
+            </Tile>
+          ))}
+        </Grid>
+      </div>
     </>
   );
 };
