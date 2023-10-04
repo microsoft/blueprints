@@ -22,34 +22,30 @@ export const HomeLayout: FC<HomeLayoutProps> = ({
 
   return (
     <>
-      {/* <div className={classes.root}>
-        <div className={classes.container}>
-          <MicrosoftLogo />
-          <Text block as="h1" weight="bold" className={classes.title}>
-            {title}
-          </Text>
-          <Text block size={800} weight="bold">
-            {leading}
-          </Text>
-          <Statement>
-            {statements.map(({ headline, description }, i) => (
-              <StatementItem
-                key={i}
-                number={i + 1}
-                headline={headline}
-                description={description}
-              />
-            ))}
-          </Statement>
-        </div>
-      </div> */}
       <div className={classes.heroLayout}>
         <div className={classes.heroContainer}>
           <MicrosoftLogo />
           <Text block as="h1" weight="bold" className={classes.title}>
             {title}
           </Text>
+          <Grid layout="large">
+            <div className={classes.heroTile}>
+              <Text block as="h2" size={600} weight="bold">
+                Create a documentation site
+              </Text>
+              <Text block as="p" size={400}>
+                Get started with writing, designing and building documentation for your
+                project.
+              </Text>
+            </div>
+          </Grid>
         </div>
+      </div>
+      <div className={classes.valueContainer}>
+        <Text block className={classes.valueText}>
+          En ecosystem of guidance, components and tools for creating your best
+          documentation yet.
+        </Text>
       </div>
       <div className={classes.articles}>
         <Grid layout="large" className={classes.articlesContainer}>

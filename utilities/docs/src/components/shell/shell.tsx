@@ -42,7 +42,7 @@ export const Shell: FC<PageProps> = ({ children, location }) => {
       headerArea={<Header />}
       navigationArea={<Navigation />}
       logoAs={Logo}
-      logoText="Documentation"
+      logoText="Blueprints"
       closeTrayLabel="Close navigation"
       openTrayLabel="Open navigation"
       isHeroMode={isHome}
