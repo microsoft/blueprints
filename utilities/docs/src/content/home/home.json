@@ -2,25 +2,7 @@
   "_layout": "home",
   "_isSingleton": true,
   "title": "Arbutus",
-  "leading": "Design and build your documentation site.",
-  "statements": [
-    {
-      "headline": "Best Practices",
-      "description": "Learn about the best practices for documentation sites based on rigorous research and testing."
-    },
-    {
-      "headline": "Shell and Layouts",
-      "description": "Use our shell to create a consistent experience across your documentation site. Choose from a variety of layouts to create the right experience."
-    },
-    {
-      "headline": "Theming",
-      "description": "Make the documentation site your own with theming."
-    },
-    {
-      "headline": "Components and Utilities",
-      "description": "Build your documentation site with our React components and utilities."
-    }
-  ],
+  "leading": "Write, design and build documentation for your project.",
   "articles": [
     {
       "title": "Guide for designing documentation sites",

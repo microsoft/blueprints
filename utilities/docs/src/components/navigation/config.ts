@@ -142,6 +142,11 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
         linkProps: {
           to: '/styles/introduction'
         }
+      },
+      {
+        collection: '/styles/*',
+        collectionId: 'styles',
+        order: 'alphabetical',
       }
     ]
   },

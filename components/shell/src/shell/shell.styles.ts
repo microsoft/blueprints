@@ -47,13 +47,8 @@ export const useShellStyles = makeStyles({
     boxShadow: tokens.shadow8,
   },
   heroHeaderContent: {
-    maxWidth: CONTAINER_WIDTH,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    [`@media screen and (max-width: ${CONTAINER_WIDTH})`]: {
-      paddingRight: tokens.spacingHorizontalL,
-      paddingLeft: tokens.spacingHorizontalL,
-    },
+    paddingRight: tokens.spacingHorizontalL,
+    paddingLeft: tokens.spacingHorizontalL,
   },
   boundaries: {
     [`@media screen and (max-width: ${BREAKPOINTS.desktop}px)`]: {

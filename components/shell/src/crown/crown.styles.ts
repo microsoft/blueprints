@@ -21,6 +21,12 @@ export const useCrownStyles = makeStyles({
     height: '100%',
     columnGap: tokens.spacingHorizontalM,
   },
+  logoButton: {
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+  },
   interactive: {
     backgroundColor: 'transparent',
     borderLeftWidth: 'none',

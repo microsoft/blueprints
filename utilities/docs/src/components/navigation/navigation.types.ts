@@ -36,6 +36,12 @@ export type MainNavigationCollectionsQuery = {
       title: string;
     }[];
   };
+  styles: {
+    nodes: {
+      _path: string;
+      title: string;
+    }[];
+  };
 }
 
 

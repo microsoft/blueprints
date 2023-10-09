@@ -66,10 +66,6 @@ export const query = graphql`
     homeJson(_layout: { eq: "home" }) {
       title
       leading
-      statements {
-        headline
-        description
-      }
       articles {
         title
         description

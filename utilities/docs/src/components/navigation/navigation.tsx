@@ -49,6 +49,12 @@ const MainNavigationCollectionsQuery = graphql`
         title
       }
     }
+    styles: allPagesJson(filter: { _path: { glob: "/styles/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
   }
 `;
 
