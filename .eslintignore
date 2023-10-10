@@ -14,6 +14,7 @@ docs
 lib
 node_modules
 public
+scripts
 
 # template files which actually follow a different language's formatting
 _templates

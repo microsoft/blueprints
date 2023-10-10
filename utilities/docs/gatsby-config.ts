@@ -6,6 +6,7 @@ dotenv.config({
 });
 
 const config: GatsbyConfig = {
+  pathPrefix: process.env.PATH_PREFIX ?? '/',
   siteMetadata: {
     title: `Blueprints`,
     description:
