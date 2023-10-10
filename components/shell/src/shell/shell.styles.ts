@@ -49,6 +49,7 @@ export const useShellStyles = makeStyles({
   heroHeaderContent: {
     paddingRight: tokens.spacingHorizontalL,
     paddingLeft: tokens.spacingHorizontalL,
+    width: '100%',
   },
   boundaries: {
     [`@media screen and (max-width: ${BREAKPOINTS.desktop}px)`]: {

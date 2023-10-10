@@ -9,9 +9,10 @@ import {
   useSegoeUI600,
   useSegoeUI700,
 } from '@microsoft/arbutus.fonts';
-import { ThemeProvider } from '@microsoft/arbutus.theming';
+import { ThemeProvider, useTheme } from '@microsoft/arbutus.theming';
 import type { FC, ReactNode } from 'react';
 import * as React from 'react';
+
 
 const useGlobalStyles = makeStaticStyles({
   '*': {

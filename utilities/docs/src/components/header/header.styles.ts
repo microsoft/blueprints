@@ -3,6 +3,7 @@ import { makeStyles } from '@griffel/react';
 
 export const useHeaderStyles = makeStyles({
   root: {
+    width: '100%',
     display: 'flex',
     columnGap: tokens.spacingHorizontalXL,
     alignItems: 'center',

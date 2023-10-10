@@ -3,6 +3,11 @@
   "_isSingleton": true,
   "title": "Arbutus",
   "leading": "Write, design and build documentation for your project.",
+  "cta": {
+    "label": "Get started",
+    "href": "/docs/getting-started"
+  },
+  "valueStatement": "An ecosystem of guidance, components and tools for creating your best documentation yet.",
   "articles": [
     {
       "title": "Guide for designing documentation sites",

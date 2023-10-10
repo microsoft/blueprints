@@ -11,7 +11,7 @@ export const makeCTAButtonStyles = makeStyles({
     paddingLeft: tokens.spacingVerticalL,
     paddingRight: tokens.spacingVerticalL,
     backgroundColor: tokens.colorNeutralBackgroundInverted,
-    color: tokens.colorNeutralForegroundStaticInverted,
+    color: tokens.colorNeutralForegroundInverted,
     boxShadow: tokens.shadow4,
     backdropFilter: 'blur(8px)',
     borderTopLeftRadius: '24px',
@@ -41,7 +41,7 @@ export const makeCTAButtonStyles = makeStyles({
   },
 
   icon: {
-    color: tokens.colorNeutralForegroundStaticInverted,
+    color: tokens.colorNeutralForegroundInverted,
     opacity: 0,
     position: 'absolute',
     right: tokens.spacingVerticalL,
