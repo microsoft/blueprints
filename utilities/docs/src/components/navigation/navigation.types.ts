@@ -1,4 +1,4 @@
-export type MainNavigationCollectionKeys = keyof MainNavigationCollectionsQuery;;
+export type MainNavigationCollectionKeys = keyof MainNavigationCollectionsQuery;
 export type MainNavigationCollectionsQuery = {
   guidance: {
     nodes: {
@@ -42,15 +42,14 @@ export type MainNavigationCollectionsQuery = {
       title: string;
     }[];
   };
-}
-
+};
 
 export type MainNavigationItem = {
   title: string;
   id: string;
   linkProps: {
     to: string;
-  }
+  };
 };
 
 export type MainNavigationCollection = {
@@ -59,13 +58,13 @@ export type MainNavigationCollection = {
   exclude?: string[];
   include?: string[];
   order?: 'alphabetical' | 'chronological';
-}
+};
 
 export type MainNavigationHeader = {
   title: string;
   items: MainNavigationItemType[];
   hasDivider?: boolean;
-}
+};
 
 export type MainNavigationItemType = MainNavigationItem | MainNavigationCollection | MainNavigationHeader;
 
@@ -83,5 +82,5 @@ export type CollectionsQuery = {
       title: string;
       _path: string;
     }[];
-  }
-}
+  };
+};

@@ -50,7 +50,7 @@ export const ThemeSwitcherIllustration: FC<{ className?: string }> = ({ classNam
       width="62"
       height="31"
       rx="15.5"
-      fill={blueprintsDocsTokens.color.illustration["00"]}
+      fill={blueprintsDocsTokens.color.illustration['00']}
       stroke={blueprintsDocsTokens.color.illustration[40]}
     />
     <path
@@ -70,7 +70,11 @@ export const ThemeSwitcherIllustration: FC<{ className?: string }> = ({ classNam
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.296875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.6875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1_532"
@@ -83,7 +87,11 @@ export const ThemeSwitcherIllustration: FC<{ className?: string }> = ({ classNam
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.296875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.6875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint2_linear_1_532"
@@ -96,7 +104,11 @@ export const ThemeSwitcherIllustration: FC<{ className?: string }> = ({ classNam
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.296875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.6875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint3_linear_1_532"
@@ -109,7 +121,11 @@ export const ThemeSwitcherIllustration: FC<{ className?: string }> = ({ classNam
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.296875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.6875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

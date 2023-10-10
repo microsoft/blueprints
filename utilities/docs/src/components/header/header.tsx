@@ -2,7 +2,7 @@ import { ThemeSwitch } from '@microsoft/arbutus.theme-switch';
 import { useTheme } from '@microsoft/arbutus.theming';
 import useResizeObserver from '@react-hook/resize-observer';
 import { graphql, useStaticQuery } from 'gatsby';
-import  { type FC, type MutableRefObject, useLayoutEffect, useState, useRef } from 'react';
+import { type FC, type MutableRefObject, useLayoutEffect, useState, useRef } from 'react';
 import * as React from 'react';
 
 import { Link } from '../link';
@@ -47,7 +47,7 @@ export const Header: FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const size = useSize<HTMLDivElement>(ref);
   const width = size?.width ?? 549;
-  const isCompact =  width < 570;
+  const isCompact = width < 570;
 
   const data = useStaticQuery<HeaderQuery>(graphql`
     query HeaderQuery {
@@ -72,11 +72,12 @@ export const Header: FC = () => {
 
   return (
     <nav className={classes.root} ref={ref}>
-      {!isCompact && links.map(({ to, text, isExternal }) => (
-        <Link key={to} variant="caption" to={to} isExternal={isExternal}>
-          {text}
-        </Link>
-      ))}
+      {!isCompact &&
+        links.map(({ to, text, isExternal }) => (
+          <Link key={to} variant="caption" to={to} isExternal={isExternal}>
+            {text}
+          </Link>
+        ))}
       <ThemeSwitch isDark={isDark} onToggle={onToggle} />
     </nav>
   );

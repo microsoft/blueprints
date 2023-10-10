@@ -6,15 +6,21 @@ import type {
   MainNavigationItemType,
 } from './index';
 
-export function isMainNavigationCollection(item: MainNavigationItemType): item is MainNavigationCollection {
+export function isMainNavigationCollection(
+  item: MainNavigationItemType,
+): item is MainNavigationCollection {
   return 'collection' in item;
 }
 
-export function isMainNavigationHeader(item: MainNavigationItemType): item is MainNavigationHeader {
+export function isMainNavigationHeader(
+  item: MainNavigationItemType,
+): item is MainNavigationHeader {
   return 'items' in item;
 }
 
-export function isMainNavigationItem(item: MainNavigationItemType): item is MainNavigationItem {
+export function isMainNavigationItem(
+  item: MainNavigationItemType,
+): item is MainNavigationItem {
   return 'linkProps' in item;
 }
 
@@ -23,16 +29,16 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
     title: 'Getting Started',
     id: '/getting-started',
     linkProps: {
-      to: '/getting-started'
-    }
+      to: '/getting-started',
+    },
   },
   {
     hasDivider: true,
     id: '/about',
     linkProps: {
-      to: '/about'
+      to: '/about',
     },
-    title: 'About'
+    title: 'About',
   },
   {
     title: 'Guidance',
@@ -41,17 +47,17 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
       {
         id: '/guidance/introduction',
         linkProps: {
-          to: '/guidance/introduction'
+          to: '/guidance/introduction',
         },
-        title: 'Introduction'
+        title: 'Introduction',
       },
       {
         collection: '/guidance/*',
         collectionId: 'guidance',
         exclude: ['/guidance/introduction'],
-        order: 'alphabetical'
-      }
-    ]
+        order: 'alphabetical',
+      },
+    ],
   },
   {
     title: 'Layouts',
@@ -59,17 +65,17 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
       {
         id: '/layouts/introduction',
         linkProps: {
-          to: '/layouts/introduction'
+          to: '/layouts/introduction',
         },
-        title: 'Introduction'
+        title: 'Introduction',
       },
-    {
+      {
         collection: '/layouts/*',
         collectionId: 'layouts',
         exclude: ['/layouts/introduction'],
-        order: 'alphabetical'
-      }
-    ]
+        order: 'alphabetical',
+      },
+    ],
   },
   {
     title: 'Patterns',
@@ -77,17 +83,17 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
       {
         id: '/patterns/introduction',
         linkProps: {
-          to: '/patterns/introduction'
+          to: '/patterns/introduction',
         },
-        title: 'Introduction'
+        title: 'Introduction',
       },
       {
         collection: '/patterns/*',
         collectionId: 'patterns',
         exclude: ['/patterns/introduction'],
-        order: 'alphabetical'
-      }
-    ]
+        order: 'alphabetical',
+      },
+    ],
   },
   {
     title: 'Components',
@@ -97,8 +103,8 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
         title: 'Introduction',
         id: '/components/introduction',
         linkProps: {
-          to: '/components/introduction'
-        }
+          to: '/components/introduction',
+        },
       },
       {
         title: 'Atoms',
@@ -106,9 +112,9 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
           {
             collection: '/components/atoms/*',
             collectionId: 'componentsAtoms',
-            order: 'alphabetical'
-          }
-        ]
+            order: 'alphabetical',
+          },
+        ],
       },
       {
         title: 'Lists',
@@ -116,9 +122,9 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
           {
             collection: '/components/lists/*',
             collectionId: 'componentsLists',
-            order: 'alphabetical'
-          }
-        ]
+            order: 'alphabetical',
+          },
+        ],
       },
       {
         title: 'Tiles',
@@ -126,11 +132,11 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
           {
             collection: '/components/tiles/*',
             collectionId: 'componentsTiles',
-            order: 'alphabetical'
-          }
-        ]
-      } 
-    ]
+            order: 'alphabetical',
+          },
+        ],
+      },
+    ],
   },
   {
     title: 'Styles',
@@ -140,15 +146,15 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
         title: 'Introduction',
         id: '/styles/introduction',
         linkProps: {
-          to: '/styles/introduction'
-        }
+          to: '/styles/introduction',
+        },
       },
       {
         collection: '/styles/*',
         collectionId: 'styles',
         order: 'alphabetical',
-      }
-    ]
+      },
+    ],
   },
   {
     title: 'Starters',
@@ -158,10 +164,10 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
         title: 'Introduction',
         id: '/starters/introduction',
         linkProps: {
-          to: '/starters/introduction'
-        }
-      }
-    ]
+          to: '/starters/introduction',
+        },
+      },
+    ],
   },
   {
     title: 'CMS',
@@ -170,10 +176,10 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
       {
         id: '/cms/introduction',
         linkProps: {
-          to: '/cms/introduction'
+          to: '/cms/introduction',
         },
-        title: 'Introduction'
-      }
-    ]
-  }
-]
+        title: 'Introduction',
+      },
+    ],
+  },
+];

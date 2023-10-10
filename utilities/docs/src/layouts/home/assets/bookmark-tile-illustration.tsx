@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import * as React from 'react';
 
-import { blueprintsDocsTokens } from '../../../components/theme'
+import { blueprintsDocsTokens } from '../../../components/theme';
 
 export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className }) => (
   <svg
@@ -44,7 +44,14 @@ export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className
       stroke="url(#paint3_linear_28_2894)"
       strokeOpacity="0.6"
     />
-    <rect x="62.5" y="62.5" width="248" height="124" rx="3.5" fill={blueprintsDocsTokens.color.illustration["00"]} />
+    <rect
+      x="62.5"
+      y="62.5"
+      width="248"
+      height="124"
+      rx="3.5"
+      fill={blueprintsDocsTokens.color.illustration['00']}
+    />
     <path
       d="M88.1988 86.9981C88.3518 86.9982 88.499 87.0568 88.6103 87.1619C88.7216 87.2669 88.7885 87.4105 88.7975 87.5633C88.8065 87.716 88.7568 87.8664 88.6586 87.9838C88.5603 88.1011 88.421 88.1766 88.2691 88.1946L88.1988 88.1988H86.9981C86.5292 88.1984 86.0787 88.3808 85.7422 88.7072C85.4056 89.0337 85.2097 89.4785 85.1959 89.9471C85.1822 90.4158 85.3517 90.8713 85.6685 91.217C85.9853 91.5626 86.4243 91.7711 86.8924 91.7981L86.9981 91.8011H88.1988C88.3518 91.8013 88.499 91.8599 88.6103 91.965C88.7216 92.07 88.7885 92.2136 88.7975 92.3663C88.8065 92.5191 88.7568 92.6695 88.6586 92.7868C88.5603 92.9042 88.421 92.9797 88.2691 92.9977L88.1988 93.0019H86.9981C86.2139 93.0009 85.4612 92.6931 84.901 92.1442C84.3409 91.5954 84.0177 90.8492 84.0007 90.0652C83.9837 89.2811 84.2741 88.5216 84.8099 87.949C85.3457 87.3763 86.0843 87.0361 86.8678 87.0011L86.9981 86.9981H88.1988ZM93.0019 86.9981C93.7861 86.9991 94.5388 87.3069 95.0989 87.8557C95.6591 88.4046 95.9823 89.1508 95.9993 89.9348C96.0163 90.7189 95.7258 91.4784 95.19 92.051C94.6542 92.6236 93.9156 92.9638 93.1322 92.9989L93.0019 93.0019H91.8012C91.6481 93.0017 91.501 92.9431 91.3897 92.8381C91.2784 92.7331 91.2114 92.5895 91.2025 92.4367C91.1935 92.284 91.2432 92.1335 91.3414 92.0162C91.4396 91.8988 91.579 91.8234 91.7309 91.8053L91.8012 91.8011H93.0019C93.4707 91.8016 93.9213 91.6193 94.2578 91.2928C94.5943 90.9663 94.7903 90.5215 94.804 90.0528C94.8178 89.5842 94.6482 89.1287 94.3315 88.783C94.0147 88.4374 93.5757 88.2289 93.1076 88.2018L93.0019 88.1988H91.8012C91.6481 88.1987 91.501 88.1401 91.3897 88.035C91.2784 87.93 91.2114 87.7864 91.2025 87.6336C91.1935 87.4809 91.2432 87.3304 91.3414 87.2131C91.4396 87.0958 91.579 87.0203 91.7309 87.0023L91.8012 86.9981H93.0019ZM86.9981 89.3996H93.0019C93.1549 89.3998 93.3021 89.4584 93.4134 89.5634C93.5247 89.6685 93.5916 89.812 93.6006 89.9648C93.6096 90.1176 93.5598 90.268 93.4617 90.3853C93.3634 90.5027 93.2242 90.5781 93.0721 90.5962L93.0019 90.6004H86.9981C86.845 90.6002 86.6978 90.5416 86.5866 90.4366C86.4753 90.3315 86.4083 90.1879 86.3994 90.0352C86.3904 89.8824 86.4401 89.732 86.5383 89.6146C86.6365 89.4973 86.7759 89.4219 86.9278 89.4038L86.9981 89.3996Z"
       fill={blueprintsDocsTokens.color.illustration[40]}
@@ -68,7 +75,14 @@ export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className
       fill={blueprintsDocsTokens.color.illustration[20]}
       stroke={blueprintsDocsTokens.color.illustration[40]}
     />
-    <rect x="62.5" y="62.5" width="248" height="124" rx="3.5" stroke={blueprintsDocsTokens.color.illustration[40]} />
+    <rect
+      x="62.5"
+      y="62.5"
+      width="248"
+      height="124"
+      rx="3.5"
+      stroke={blueprintsDocsTokens.color.illustration[40]}
+    />
     <defs>
       <linearGradient
         id="paint0_linear_28_2894"
@@ -81,7 +95,11 @@ export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.125" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint1_linear_28_2894"
@@ -94,7 +112,11 @@ export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.125" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint2_linear_28_2894"
@@ -105,9 +127,16 @@ export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
-        <stop offset="0.0833333" stopColor={blueprintsDocsTokens.color.illustration[40]} />
+        <stop
+          offset="0.0833333"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+        />
         <stop offset="0.916667" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint3_linear_28_2894"
@@ -118,12 +147,24 @@ export const BookmarkTileIllustration: FC<{ className?: string }> = ({ className
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
-        <stop offset="0.0833333" stopColor={blueprintsDocsTokens.color.illustration[40]} />
+        <stop
+          offset="0.0833333"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+        />
         <stop offset="0.916667" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <clipPath id="clip0_28_2894">
-        <rect width="16" height="16" fill={blueprintsDocsTokens.color.illustration["00"]} transform="translate(279 82)" />
+        <rect
+          width="16"
+          height="16"
+          fill={blueprintsDocsTokens.color.illustration['00']}
+          transform="translate(279 82)"
+        />
       </clipPath>
     </defs>
   </svg>

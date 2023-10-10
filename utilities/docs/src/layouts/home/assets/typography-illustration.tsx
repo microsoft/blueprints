@@ -44,7 +44,11 @@ export const TypographyIllustration: FC<{ className?: string }> = ({ className }
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.296875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.6875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1_501"
@@ -57,7 +61,11 @@ export const TypographyIllustration: FC<{ className?: string }> = ({ className }
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.296875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.6875" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

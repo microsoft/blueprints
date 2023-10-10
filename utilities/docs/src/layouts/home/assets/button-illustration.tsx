@@ -39,7 +39,14 @@ export const ButtonIllustration: FC<{ className?: string }> = ({ className }) =>
       fill={blueprintsDocsTokens.color.illustration[10]}
       stroke={blueprintsDocsTokens.color.illustration[40]}
     />
-    <rect x="62.5" y="31.5" width="186" height="62" rx="4.5" stroke={blueprintsDocsTokens.color.illustration[40]} />
+    <rect
+      x="62.5"
+      y="31.5"
+      width="186"
+      height="62"
+      rx="4.5"
+      stroke={blueprintsDocsTokens.color.illustration[40]}
+    />
     <path
       d="M200.5 69.2731C200.5 66.0591 204.284 64.3192 206.736 66.4151L234.174 89.8653C236.778 92.0903 235.299 96.3483 231.867 96.4852L219.414 96.9819C217.941 97.0406 216.555 97.6919 215.572 98.7876L207.093 108.236C204.779 110.815 200.5 109.18 200.5 105.727V69.2731Z"
       fill={blueprintsDocsTokens.color.illustration[40]}
@@ -57,7 +64,11 @@ export const ButtonIllustration: FC<{ className?: string }> = ({ className }) =>
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.101306" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.897081" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1_542"
@@ -70,7 +81,11 @@ export const ButtonIllustration: FC<{ className?: string }> = ({ className }) =>
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.101306" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.897081" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint2_linear_1_542"
@@ -83,7 +98,11 @@ export const ButtonIllustration: FC<{ className?: string }> = ({ className }) =>
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.125445" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.894915" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint3_linear_1_542"
@@ -96,7 +115,11 @@ export const ButtonIllustration: FC<{ className?: string }> = ({ className }) =>
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.125445" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.894915" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

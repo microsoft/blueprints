@@ -21,13 +21,14 @@ const Logo: FC = () => {
   const classes = useLogoStyles();
 
   return (
-  <>
-    <FluentLogo className={classes.svg} />
-    <Text as="h1" size={700} weight="bold" className={classes.text}>
-      Blueprints
-    </Text>
-  </>
-)};
+    <>
+      <FluentLogo className={classes.svg} />
+      <Text as="h1" size={700} weight="bold" className={classes.text}>
+        Blueprints
+      </Text>
+    </>
+  );
+};
 
 export const Shell: FC<PageProps> = ({ children, location }) => {
   const isHome = location.pathname === withPrefix('/');
@@ -35,9 +36,13 @@ export const Shell: FC<PageProps> = ({ children, location }) => {
   const isComponentSandbox = location.pathname.includes('/sandbox/');
 
   const { themeKey } = useTheme();
-  useCSSVars({ theme: BLUEPRINTS_DOCS_THEME, currentThemeKey: themeKey, prefix: BLUEPRINTS_DOCS_PREFIX });
+  useCSSVars({
+    theme: BLUEPRINTS_DOCS_THEME,
+    currentThemeKey: themeKey,
+    prefix: BLUEPRINTS_DOCS_PREFIX,
+  });
 
-  console.log(themeKey)
+  console.log(themeKey);
 
   return (
     <ArbutusShell

@@ -68,7 +68,14 @@ export const CalloutIllustration: FC<{ className?: string }> = ({ className }) =
       fill={blueprintsDocsTokens.color.illustration[30]}
       stroke={blueprintsDocsTokens.color.illustration[40]}
     />
-    <rect x="93.5" y="62.5" width="372" height="93" rx="3.5" stroke={blueprintsDocsTokens.color.illustration[40]} />
+    <rect
+      x="93.5"
+      y="62.5"
+      width="372"
+      height="93"
+      rx="3.5"
+      stroke={blueprintsDocsTokens.color.illustration[40]}
+    />
     <defs>
       <linearGradient
         id="paint0_linear_1_505"
@@ -81,7 +88,11 @@ export const CalloutIllustration: FC<{ className?: string }> = ({ className }) =
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.150056" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.852954" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1_505"
@@ -94,7 +105,11 @@ export const CalloutIllustration: FC<{ className?: string }> = ({ className }) =
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
         <stop offset="0.150056" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         <stop offset="0.852954" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint2_linear_1_505"
@@ -105,9 +120,16 @@ export const CalloutIllustration: FC<{ className?: string }> = ({ className }) =
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
-        <stop offset="0.0864634" stopColor={blueprintsDocsTokens.color.illustration[40]} />
+        <stop
+          offset="0.0864634"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+        />
         <stop offset="0.920177" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="paint3_linear_1_505"
@@ -118,9 +140,16 @@ export const CalloutIllustration: FC<{ className?: string }> = ({ className }) =
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
-        <stop offset="0.0864634" stopColor={blueprintsDocsTokens.color.illustration[40]} />
+        <stop
+          offset="0.0864634"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+        />
         <stop offset="0.920177" stopColor={blueprintsDocsTokens.color.illustration[40]} />
-        <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
+        <stop
+          offset="1"
+          stopColor={blueprintsDocsTokens.color.illustration[40]}
+          stopOpacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

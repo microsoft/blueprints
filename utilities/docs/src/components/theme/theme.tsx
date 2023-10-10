@@ -37,5 +37,9 @@ export const Theme: FC<{ children: ReactNode }> = ({ children }) => {
   useSegoeUI700();
   useGlobalStyles();
 
-  return <ThemeProvider brandVariants={BLUEPRINTS_DOCS_BRAND_VARIANTS}>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider brandVariants={BLUEPRINTS_DOCS_BRAND_VARIANTS}>
+      {children}
+    </ThemeProvider>
+  );
 };

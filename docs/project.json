@@ -1,1 +1,34 @@
+<<<<<<< HEAD
 {"generatedAt":1694116165276,"hasCustomBabel":false,"hasCustomWebpack":true,"hasStaticDirs":false,"hasStorybookEslint":true,"refCount":0,"monorepo":"Workspaces","packageManager":{"type":"npm","version":"9.8.1"},"framework":{"name":"@storybook/react-webpack5","options":{}},"builder":"@storybook/builder-webpack5","renderer":"@storybook/react","storybookVersion":"7.0.21","storybookVersionSpecifier":"^7.0.17","language":"typescript","storybookPackages":{"@storybook/addon-actions":{"version":"7.0.21"},"@storybook/jest":{"version":"0.1.0"},"@storybook/react":{"version":"7.0.21"},"@storybook/react-webpack5":{"version":"7.0.21"},"@storybook/testing-library":{"version":"0.1.0"},"eslint-plugin-storybook":{"version":"0.6.12"},"storybook":{"version":"7.0.21"}},"addons":{"@storybook/addon-links":{"version":"7.0.21"},"@storybook/addon-essentials":{"options":{"docs":false},"version":"7.0.21"},"@storybook/addon-interactions":{"version":"7.0.21"}}}
+=======
+{
+  "generatedAt": 1689368515354,
+  "hasCustomBabel": false,
+  "hasCustomWebpack": true,
+  "hasStaticDirs": false,
+  "hasStorybookEslint": true,
+  "refCount": 0,
+  "monorepo": "Workspaces",
+  "packageManager": { "type": "npm", "version": "9.7.2" },
+  "framework": { "name": "@storybook/react-webpack5", "options": {} },
+  "builder": "@storybook/builder-webpack5",
+  "renderer": "@storybook/react",
+  "storybookVersion": "7.0.21",
+  "storybookVersionSpecifier": "^7.0.17",
+  "language": "typescript",
+  "storybookPackages": {
+    "@storybook/addon-actions": { "version": "7.0.21" },
+    "@storybook/jest": { "version": "0.1.0" },
+    "@storybook/react": { "version": "7.0.21" },
+    "@storybook/react-webpack5": { "version": "7.0.21" },
+    "@storybook/testing-library": { "version": "0.1.0" },
+    "eslint-plugin-storybook": { "version": "0.6.12" },
+    "storybook": { "version": "7.0.21" }
+  },
+  "addons": {
+    "@storybook/addon-links": { "version": "7.0.21" },
+    "@storybook/addon-essentials": { "options": { "docs": false }, "version": "7.0.21" },
+    "@storybook/addon-interactions": { "version": "7.0.21" }
+  }
+}
+>>>>>>> 0a42c43 (Runs lint)

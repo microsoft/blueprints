@@ -3,17 +3,17 @@ import type { ElementType, ReactNode, ButtonHTMLAttributes, LinkHTMLAttributes }
 type CTAButtonAsButton = {
   as?: 'button';
   elementProps?: ButtonHTMLAttributes<HTMLButtonElement>;
-}
+};
 
 type CTAButtonAsLink = {
   as: 'a';
   elementProps?: LinkHTMLAttributes<HTMLAnchorElement>;
-}
+};
 
 type CTAButtonAsElementType = {
   as: ElementType;
   elementProps?: { [key: string]: any };
-}
+};
 
 export type CTAButtonProps = {
   /**

@@ -60,9 +60,7 @@ const JsonPage: FC<PageProps<JsonPageData, JsonPageContext>> = ({ data }) => {
     return <WorkInProgressLayout {...(props as WorkInProgressLayoutProps)} />;
   }
 
-  return (
-    <WorkInProgressLayout title={data.pagesJson.title ?? 'Page title'} />
-  );
+  return <WorkInProgressLayout title={data.pagesJson.title ?? 'Page title'} />;
 };
 
 export const Head: HeadFC<JsonPageData> = ({ data }) => (

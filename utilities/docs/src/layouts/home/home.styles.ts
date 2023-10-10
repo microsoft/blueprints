@@ -228,8 +228,7 @@ export const useHomeStyles = makeStyles({
     [`@media screen and (max-width: ${breakpoints.small})`]: {
       gridRowGap: tokens.spacingHorizontalL,
       gridTemplateColumns: '1fr',
-    }
-
+    },
   },
   articleFeatured: {
     gridColumnStart: 1,

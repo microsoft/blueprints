@@ -19,7 +19,7 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-labelledby={titleId}
-      role='img'
+      role="img"
     >
       <title id={titleId}>{title}</title>
       <line
@@ -159,10 +159,23 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="31.2711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={blueprintsDocsTokens.color.illustration[40]} stop-opacity="0" />
-          <stop offset="0.255208" stop-color={blueprintsDocsTokens.color.illustration[40]} />
-          <stop offset="0.598958" stop-color={blueprintsDocsTokens.color.illustration[40]} />
-          <stop offset="0.796875" stop-color={blueprintsDocsTokens.color.illustration[40]} stop-opacity="0" />
+          <stop
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.255208"
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+          />
+          <stop
+            offset="0.598958"
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+          />
+          <stop
+            offset="0.796875"
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint1_linear_55_2535"
@@ -172,10 +185,23 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="93.2711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={blueprintsDocsTokens.color.illustration[40]} stop-opacity="0" />
-          <stop offset="0.255208" stop-color={blueprintsDocsTokens.color.illustration[40]} />
-          <stop offset="0.598958" stop-color={blueprintsDocsTokens.color.illustration[40]} />
-          <stop offset="0.796875" stop-color={blueprintsDocsTokens.color.illustration[40]} stop-opacity="0" />
+          <stop
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.255208"
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+          />
+          <stop
+            offset="0.598958"
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+          />
+          <stop
+            offset="0.796875"
+            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint2_linear_55_2535"
@@ -186,7 +212,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint3_linear_55_2535"
@@ -197,7 +226,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint4_linear_55_2535"
@@ -208,7 +240,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint5_linear_55_2535"
@@ -219,7 +254,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint6_linear_55_2535"
@@ -230,7 +268,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint7_linear_55_2535"
@@ -241,7 +282,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint8_linear_55_2535"
@@ -252,7 +296,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint9_linear_55_2535"
@@ -263,7 +310,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint10_linear_55_2535"
@@ -274,7 +324,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint11_linear_55_2535"
@@ -285,7 +338,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.651042" stop-color={blueprintsDocsTokens.color.illustration[10]} />
+          <stop
+            offset="0.651042"
+            stop-color={blueprintsDocsTokens.color.illustration[10]}
+          />
         </linearGradient>
         <linearGradient
           id="paint12_linear_55_2535"
@@ -296,7 +352,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -308,7 +368,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -320,7 +384,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -332,7 +400,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -344,7 +416,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -356,7 +432,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -368,7 +448,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -380,7 +464,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -392,7 +480,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
@@ -404,7 +496,11 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color={tokens.colorNeutralForeground1} />
-          <stop offset="0.544342" stop-color={tokens.colorNeutralForeground1} stop-opacity="0" />
+          <stop
+            offset="0.544342"
+            stop-color={tokens.colorNeutralForeground1}
+            stop-opacity="0"
+          />
           <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
       </defs>
