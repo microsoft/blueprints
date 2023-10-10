@@ -18,7 +18,7 @@
     "beachball:bump": "beachball bump",
     "beachball:check": "beachball check",
     "beachball:publish": "beachball publish --access=public --new",
-    "build:docs": "run-s build:packages build:storybook",
+    "build:docs": "run-s build:packages",
     "build:packages": "lage build",
     "build:storybook": "storybook build -o docs",
     "change": "beachball change",
