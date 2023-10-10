@@ -60,11 +60,6 @@
           "withDivider": false
         },
         {
-          "contentComponentId": "blocks.component-preview",
-          "exampleFile": "my-component.example.tsx",
-          "withMenu": true
-        },
-        {
           "contentComponentId": "blocks.prop-table",
           "componentName": "DemoComponent",
           "componentPropType": "DemoComponentProps"

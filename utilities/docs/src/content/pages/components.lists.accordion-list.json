@@ -1,6 +1,6 @@
 {
   "_layout": "reference",
-  "_path": "/components/lists/badge",
+  "_path": "/components/lists/accordion-list",
   "title": "Accordion List",
   "definition": "This is a reference page.",
   "owners": [
@@ -57,11 +57,6 @@
           "size": "title",
           "withCopyLink": false,
           "withDivider": false
-        },
-        {
-          "contentComponentId": "blocks.component-preview",
-          "exampleFile": "my-component.example.tsx",
-          "withMenu": true
         },
         {
           "contentComponentId": "blocks.prop-table",

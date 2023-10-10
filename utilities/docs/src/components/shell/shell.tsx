@@ -42,8 +42,6 @@ export const Shell: FC<PageProps> = ({ children, location }) => {
     prefix: BLUEPRINTS_DOCS_PREFIX,
   });
 
-  console.log(themeKey);
-
   return (
     <ArbutusShell
       footerArea={<Footer />}
