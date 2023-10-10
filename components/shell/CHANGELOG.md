@@ -1,8 +1,17 @@
 # Change Log - @microsoft/arbutus.shell
 
-This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
+This log was last generated on Tue, 10 Oct 2023 23:12:41 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.5
+
+Tue, 10 Oct 2023 23:12:41 GMT
+
+### Patches
+
+- Fixes hero layout. (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.header to v1.0.6
 
 ## 1.1.4
 

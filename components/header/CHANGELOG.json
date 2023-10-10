@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.header",
   "entries": [
     {
+      "date": "Tue, 10 Oct 2023 23:12:41 GMT",
+      "tag": "@microsoft/arbutus.header_v1.0.6",
+      "version": "1.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.header",
+            "commit": "96ca77b50a6fcf5e9063b19de1183cb30c67b272",
+            "comment": "Improves layout."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 07 Sep 2023 19:43:12 GMT",
       "tag": "@microsoft/arbutus.header_v1.0.5",
       "version": "1.0.5",

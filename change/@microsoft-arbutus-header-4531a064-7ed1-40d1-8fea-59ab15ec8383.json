@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Improves layout.",
-  "packageName": "@microsoft/arbutus.header",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

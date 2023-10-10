@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.header",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Header componenet in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

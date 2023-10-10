@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Tue, 10 Oct 2023 23:12:41 GMT",
+      "tag": "@microsoft/arbutus.shell_v1.1.5",
+      "version": "1.1.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "96ca77b50a6fcf5e9063b19de1183cb30c67b272",
+            "comment": "Fixes hero layout."
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.header to v1.0.6",
+            "commit": "d9a3b8066ea2968fc8ac8d2566aa6343c953db75"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 07 Sep 2023 19:43:12 GMT",
       "tag": "@microsoft/arbutus.shell_v1.1.4",
       "version": "1.1.4",

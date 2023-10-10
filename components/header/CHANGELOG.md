@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.header
 
-This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
+This log was last generated on Tue, 10 Oct 2023 23:12:41 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.6
+
+Tue, 10 Oct 2023 23:12:41 GMT
+
+### Patches
+
+- Improves layout. (akimalunar@gmail.com)
 
 ## 1.0.5
 
