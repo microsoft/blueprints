@@ -1,3 +1,4 @@
+import { type BrandVariants } from '@fluentui/react-theme';
 import { generateTokensMap } from '@microsoft/arbutus.use-css-vars';
 
 export type BlueprintsTheme = {
@@ -40,6 +41,25 @@ export const BLUEPRINTS_DOCS_THEME: {
       },
     },
   },
+};
+
+export const BLUEPRINTS_DOCS_BRAND_VARIANTS: BrandVariants = {
+  10: '#151515',
+  20: '#1E1F22',
+  30: '#26282E',
+  40: '#2D303D',
+  50: '#34394F',
+  60: '#3A4261',
+  70: '#304391',
+  80: '#3853BD',
+  90: '#405BC6',
+  100: '#5E78E0',
+  110: '#7188E6',
+  120: '#8398EB',
+  130: '#9FAFF1',
+  140: '#B7C4F7',
+  150: '#CFD8FA',
+  160: '#EBEEFC',
 };
 
 export const blueprintsDocsTokens = generateTokensMap<BlueprintsTheme>(
