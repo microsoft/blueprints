@@ -18,7 +18,7 @@ const Logo: FC<Pick<CrownProps, 'onClick'> & { children?: ReactNode | undefined 
   if (onClick) {
     return (
       <button
-        className={mergeClasses(classes.logo, classes.interactive)}
+        className={mergeClasses(classes.logoButton, classes.logo, classes.interactive)}
         onClick={onClick}
       >
         {children}

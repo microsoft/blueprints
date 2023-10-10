@@ -1,4 +1,3 @@
-import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import {
   MainNavigation,
   MainNavigationRenderer,
@@ -9,102 +8,63 @@ import type { FC } from 'react';
 import * as React from 'react';
 
 import { getNavigationContent } from './get-navigation-content';
+import type { MainNavigationCollectionsQuery } from './navigation.types';
+import { MAIN_NAVIGATION } from './config';
 
-export type ComponentPageData = {
-  _path: string;
-  _orderInNav?: number;
-  _includeInNav?: boolean;
-  title: string;
-};
-
-export type GuidelinesPageData = {
-  _path: string;
-  _orderInNav?: number;
-  _includeInNav?: boolean;
-  title: string;
-};
-
-export type NavigationQuery = {
-  allComponentsJson: {
-    nodes: ComponentPageData[];
-  };
-  allGuidanceJson: {
-    nodes: GuidelinesPageData[];
-  };
-};
+const MainNavigationCollectionsQuery = graphql`
+  query MainNavigationCollectionsQuery {
+    guidance: allPagesJson(filter: { _path: { glob: "/guidance/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+    layouts: allPagesJson(filter: { _path: { glob: "/layouts/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+    patterns: allPagesJson(filter: { _path: { glob: "/patterns/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+    componentsAtoms: allPagesJson(filter: { _path: { glob: "/components/atoms/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+    componentsLists: allPagesJson(filter: { _path: { glob: "/components/lists/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+    componentsTiles: allPagesJson(filter: { _path: { glob: "/components/tiles/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+    styles: allPagesJson(filter: { _path: { glob: "/styles/*" } }) {
+      nodes {
+        _path
+        title
+      }
+    }
+  }
+`;
 
 export const Navigation: FC = () => {
   const { pathname } = useLocation();
 
-  const data = useStaticQuery<NavigationQuery>(graphql`
-    query MyQuery {
-      allGuidanceJson {
-        nodes {
-          _path
-          _orderInNav
-          _includeInNav
-          title
-        }
-      }
-      allComponentsJson {
-        nodes {
-          _path
-          _includeInNav
-          title
-        }
-      }
-    }
-  `);
-
-  const { components, guidance } = getNavigationContent(data);
-
-  const items: NavigationItems = {
-    gettingStarted: {
-      title: 'Getting Started',
-      id: '/getting-started',
-      linkProps: { to: '/getting-started' },
-      hasDivider: true,
-    },
-    guidance: {
-      title: 'Guidance',
-      items: guidance,
-    },
-    documentation: {
-      title: 'Documentation',
-      hasDivider: true,
-      items: {
-        quickStart: {
-          title: 'Quick Start',
-          id: '/documentation/quick-start',
-          linkProps: { to: '/documentation/quick-start' },
-        },
-        theming: {
-          title: 'Theming',
-          id: '/documentation/theming',
-          linkProps: { to: '/documentation/theming' },
-        },
-        content: {
-          title: 'Content',
-          id: '/documentation/content',
-          linkProps: { to: '/documentation/content' },
-        },
-        starters: {
-          title: 'Starters',
-          items: {
-            gatsbyJson: {
-              title: 'Gatsby & JSON',
-              id: '/documentation/starters/gatsby-json',
-              linkProps: { to: '/documentation/starters/gatsby-json' },
-            },
-          },
-        },
-        components: {
-          title: 'Components',
-          items: components,
-        },
-      },
-    },
-  };
+  const collectionsData = useStaticQuery<MainNavigationCollectionsQuery>(
+    MainNavigationCollectionsQuery,
+  );
+  const items = getNavigationContent({ collectionsData, config: MAIN_NAVIGATION });
 
   return (
     <MainNavigation>

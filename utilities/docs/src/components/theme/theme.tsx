@@ -1,5 +1,6 @@
 import 'normalize.css';
 
+import { ThemeProvider } from '@microsoft/arbutus.theming';
 import { tokens } from '@fluentui/react-theme';
 import { makeStaticStyles } from '@griffel/react';
 import {
@@ -9,9 +10,10 @@ import {
   useSegoeUI600,
   useSegoeUI700,
 } from '@microsoft/arbutus.fonts';
-import { ThemeProvider } from '@microsoft/arbutus.theming';
 import type { FC, ReactNode } from 'react';
 import * as React from 'react';
+
+import { BLUEPRINTS_DOCS_BRAND_VARIANTS } from './blueprints-brand-theme';
 
 const useGlobalStyles = makeStaticStyles({
   '*': {
@@ -35,5 +37,9 @@ export const Theme: FC<{ children: ReactNode }> = ({ children }) => {
   useSegoeUI700();
   useGlobalStyles();
 
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider brandVariants={BLUEPRINTS_DOCS_BRAND_VARIANTS}>
+      {children}
+    </ThemeProvider>
+  );
 };

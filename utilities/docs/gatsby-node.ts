@@ -3,7 +3,7 @@ import { sentenceCase } from 'change-case';
 import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
-type Result = {
+type ExamplePageResult = {
   allFile: {
     nodes: {
       absolutePath: string;
@@ -19,28 +19,31 @@ export const createPages: GatsbyNode['createPages'] = async ({
 }) => {
   const { createPage } = actions;
 
+  // Generating pages for example files.
+
   const PreviewPage = path.resolve('./src/templates/preview-page.tsx');
 
-  const result = await graphql<Result>(
-    `
-      {
-        allFile(filter: { relativePath: { glob: "*.example.*" } }) {
-          nodes {
-            relativePath
-            absolutePath
-          }
+  const examplePageQuery = await graphql<ExamplePageResult>(`
+    query ExamplePagesQuery {
+      allFile(filter: { relativePath: { glob: "*.example.*" } }) {
+        nodes {
+          relativePath
+          absolutePath
         }
       }
-    `,
-  );
+    }
+  `);
 
-  if (result.errors) {
-    reporter.panicOnBuild(`There was an error loading your pages data.`, result.errors);
+  if (examplePageQuery.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your pages data.`,
+      examplePageQuery.errors,
+    );
 
     return;
   }
 
-  const examplePages = result?.data?.allFile.nodes ?? [];
+  const examplePages = examplePageQuery?.data?.allFile.nodes ?? [];
 
   if (examplePages.length > 0) {
     examplePages.forEach(({ absolutePath, relativePath }) => {

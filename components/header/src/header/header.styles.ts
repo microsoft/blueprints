@@ -1,8 +1,9 @@
-import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
 export const useHeaderStyles = makeStyles({
   root: {
-    color: tokens.colorNeutralForeground1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'end',
   },
 });

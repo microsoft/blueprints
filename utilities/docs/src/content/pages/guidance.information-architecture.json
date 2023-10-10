@@ -1,0 +1,43 @@
+{
+  "_layout": "basic",
+  "_path": "/guidance/information-architecture",
+  "title": "Information Architecture",
+  "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in Strapi content management system. ",
+  "heroImage": {
+    "src": "../../assets/demo-image-2.png",
+    "alt": "Demo image 2"
+  },
+  "content": [
+    {
+      "as": "h1",
+      "leading": "This documentation site is powered by Strapi. It is a content management system (a.k.a. CMS). All the content, images and illustrations you see on this site come from the CMS.",
+      "size": "title",
+      "contentComponentId": "blocks.heading",
+      "title": "Get Started with Strapi",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "to": "https://docs.strapi.io/user-docs/latest/getting-started/introduction.html",
+      "title": "Strapi User Guide",
+      "contentComponentId": "tiles.bookmark-tile",
+      "isExternal": true,
+      "icon": {
+        "alternativeText": "Strapi logo",
+        "src": "https://admincontrolsdemoapps.blob.core.windows.net/docsite-assets/Strapi_monogram_logo_73cfc84f53.png"
+      },
+      "description": "This user guide explains all features available in the admin panel of your Strapi CMS."
+    },
+    {
+      "to": "http://mads-strapi.westus.cloudapp.azure.com:1337/admin",
+      "title": "MADS Content Panel",
+      "contentComponentId": "tiles.bookmark-tile",
+      "isExternal": true,
+      "icon": {
+        "alternativeText": null,
+        "src": "https://admincontrolsdemoapps.blob.core.windows.net/docsite-assets/Strapi_monogram_logo_73cfc84f53.png"
+      },
+      "description": "Access and edit the content here. If you don’t have the login yet, please contact the administrators."
+    }
+  ]
+}

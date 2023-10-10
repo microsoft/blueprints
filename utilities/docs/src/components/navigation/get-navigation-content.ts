@@ -1,79 +1,114 @@
 import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
+import { camelCase } from 'change-case';
 
-import type {
-  ComponentPageData,
-  GuidelinesPageData,
-  NavigationQuery,
-} from './navigation';
+import type { MainNavigationCollectionsQuery } from './index';
+import {
+  MainNavigationCollection,
+  MainNavigationConfig,
+  MainNavigationItemType,
+} from './index';
+import {
+  isMainNavigationCollection,
+  isMainNavigationHeader,
+  isMainNavigationItem,
+} from './config';
 
 /* Common utilities. */
 
-const sortAlphabetically = (
-  a: ComponentPageData | GuidelinesPageData,
-  b: ComponentPageData | GuidelinesPageData,
-) => {
-  if (a.title < b.title) {
+const sortAlphabetically = (a: string, b: string) => {
+  if (a < b) {
     return -1;
   }
 
-  if (a.title > b.title) {
+  if (a > b) {
     return 1;
   }
 
   return 0;
 };
 
-const sortByIndex = (a: GuidelinesPageData, b: GuidelinesPageData) => {
-  if (!a._orderInNav || !b._orderInNav) {
-    return 0;
-  }
+const generateCollectionItems = (
+  collection: MainNavigationCollection,
+  data: MainNavigationCollectionsQuery,
+): NavigationItems => {
+  const { exclude = [], order = 'alphabetical' } = collection;
+  const { nodes } = data[collection.collectionId];
 
-  if (a._orderInNav < b._orderInNav) {
-    return -1;
-  }
+  const nodesSortedAlphabetically = nodes.sort(
+    (a: { title: string }, b: { title: string }) => sortAlphabetically(a.title, b.title),
+  );
 
-  if (a._orderInNav > b._orderInNav) {
-    return 1;
-  }
+  const sortedNodes = order === 'alphabetical' ? nodesSortedAlphabetically : nodes;
 
-  return 0;
+  return sortedNodes.reduce(
+    (
+      acc: NavigationItems,
+      node: {
+        _path: string;
+        title: string;
+      },
+    ) => {
+      const key = camelCase(node.title);
+
+      if (exclude.includes(node._path)) {
+        return acc;
+      }
+
+      return {
+        ...acc,
+        [key]: {
+          id: node._path,
+          title: node.title,
+          linkProps: {
+            to: node._path,
+          },
+        },
+      };
+    },
+    {},
+  );
 };
 
-/* Page formatting. */
+export const getNavigationContent = ({
+  collectionsData,
+  config,
+}: {
+  collectionsData: MainNavigationCollectionsQuery;
+  config: MainNavigationConfig;
+}): NavigationItems => {
+  const generateNavigation = (items: MainNavigationItemType[]): NavigationItems => {
+    if (!items || items.length === 0) {
+      return {};
+    }
 
-const formatPagesForNavigation = (
-  data: ComponentPageData[],
-  section: 'components' | 'guidance',
-) =>
-  data.reduce((acc, { title, _path }) => {
-    acc[_path] = {
-      title,
-      id: `/${section}/${_path}/`,
-      linkProps: { to: `/${section}/${_path}` },
-    };
+    return items.reduce((acc: NavigationItems, item: MainNavigationItemType) => {
+      if (isMainNavigationItem(item)) {
+        const key = camelCase(item.title);
 
-    return acc;
-  }, {} as NavigationItems) ?? {};
+        return {
+          ...acc,
+          [key]: item,
+        };
+      }
 
-const sortPages = (data: ComponentPageData[] | GuidelinesPageData[]) => {
-  const filtered = data.filter((page) => page._includeInNav);
-  const indexedPages = filtered
-    .filter((page) => typeof page._orderInNav === 'number')
-    .sort(sortByIndex);
-  const restOfPages = filtered
-    .filter((page) => typeof page._orderInNav !== 'number')
-    .sort(sortAlphabetically);
+      if (isMainNavigationCollection(item)) {
+        return { ...acc, ...generateCollectionItems(item, collectionsData) };
+      }
 
-  return [...indexedPages, ...restOfPages];
+      if (isMainNavigationHeader(item)) {
+        const key = camelCase(item.title);
+
+        acc[key] = {
+          title: item.title,
+          hasDivider: item.hasDivider,
+          items: generateNavigation(item.items),
+        };
+        return acc;
+      }
+
+      return acc;
+    }, {});
+  };
+
+  return generateNavigation(config);
 };
-
-/* Final navigation object. */
-
-export const getNavigationContent = (data: NavigationQuery) => ({
-  guidance: data.allGuidanceJson
-    ? formatPagesForNavigation(sortPages(data.allGuidanceJson.nodes), 'guidance')
-    : {},
-  components: data.allComponentsJson
-    ? formatPagesForNavigation(sortPages(data.allComponentsJson.nodes), 'components')
-    : {},
-});

@@ -7,8 +7,9 @@ dotenv.config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Title`,
-    description: 'Fluent extension component library',
+    title: `Blueprints`,
+    description:
+      'An ecosystem of guidance, components and tools for creating your best documentation yet. Built by the team at Fluent, Microsoft Design.',
     siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
