@@ -2,7 +2,7 @@
   "_layout": "basic",
   "_path": "/getting-started",
   "title": "Getting Started",
-  "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in our content management system. ",
+  "leading": "Let’s figure out how we can help you get started with your documentation site. There are lots of different resources under Blueprints, so we’ll give you a high level picture.",
   "heroImage": {
     "src": "../../assets/demo-image-1.png",
     "alt": "Demo image 1"
@@ -10,8 +10,8 @@
   "content": [
     {
       "contentComponentId": "blocks.heading",
-      "title": "Get the boilerplate",
-      "leading": "This documentation site is powered by Arbutus, a library to create documentation sites. Firstly, let’s make sure you get started with the right boilerplate.",
+      "title": "⚠️ Content under development ⚠️",
+      "leading": "The content of this site is under development and we are adding new pages every week! Please stay tuned and follow our project on Github ✌️.",
       "as": "h1",
       "size": "title",
       "withCopyLink": null,
