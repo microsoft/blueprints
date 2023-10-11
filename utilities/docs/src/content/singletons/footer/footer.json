@@ -25,6 +25,11 @@
   ],
   "secondaryLinks": [
     {
+      "to": "https://github.com/microsoft/blueprints",
+      "text": "GitHub",
+      "isExternal": true
+    },
+    {
       "to": "https://develop.fluentui.dev/",
       "text": "Fluent",
       "isExternal": true
