@@ -1,8 +1,8 @@
 {
-  "_layout": "basic",
+  "_layout": "work-in-progress",
   "_path": "/starters/introduction",
   "title": "Introduction",
-  "leading": "Introduction to Styles.",
+  "leading": "Introduction to Starters.",
   "heroImage": {
     "src": "../../assets/demo-image-2.png",
     "alt": "Demo image 2"

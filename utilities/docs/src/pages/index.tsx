@@ -16,6 +16,11 @@ type HomePageData = {
   homeJson: {
     title: string;
     leading: string;
+    cta: {
+      label: string;
+      href: string;
+    };
+    valueStatement: string;
     statements: {
       headline: string;
       description: string;
@@ -30,6 +35,8 @@ type HomePageData = {
         };
         alt: string;
       };
+      isExternal: boolean;
+      to: string;
     }[];
   };
 };
@@ -37,6 +44,8 @@ type HomePageData = {
 const getHomeContent = (data?: HomePageData): HomeLayoutProps => ({
   title: data?.homeJson?.title ?? '',
   leading: data?.homeJson?.leading ?? '',
+  cta: data?.homeJson?.cta ?? { label: '', href: '' },
+  valueStatement: data?.homeJson?.valueStatement ?? '',
   statements: data?.homeJson?.statements ?? [],
   articles: data?.homeJson?.articles ?? [],
 });
@@ -66,6 +75,11 @@ export const query = graphql`
     homeJson(_layout: { eq: "home" }) {
       title
       leading
+      cta {
+        label
+        href
+      }
+      valueStatement
       articles {
         title
         description
@@ -75,6 +89,8 @@ export const query = graphql`
           }
           alt
         }
+        isExternal
+        to
       }
     }
   }

@@ -1,9 +1,9 @@
 {
-  "_layout": "basic",
+  "_layout": "work-in-progress",
   "_path": "/components/introduction",
   "_orderInNav": 1,
   "title": "Introduction",
-  "leading": "Are you writing documentation? You are awesome! This guide is for you. It covers editing functionality and options in Strapi content management system. ",
+  "leading": "",
   "heroImage": {
     "src": "../../assets/demo-image-2.png",
     "alt": "Demo image 2"
