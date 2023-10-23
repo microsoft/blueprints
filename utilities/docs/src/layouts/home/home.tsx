@@ -90,9 +90,12 @@ export const HomeLayout: FC<HomeLayoutProps> = ({
         <Grid layout="large" className={classes.articlesContainer}>
           {articles.map(({ title, description, image, isExternal, to }, i) => {
             const navigate = makeNavigate({ isExternal, to });
-            const handleClick = useCallback((e: React.SyntheticEvent<Element, Event> | undefined) => {
-              navigate(e);
-            }, [isExternal, to]);
+            const handleClick = useCallback(
+              (e: React.SyntheticEvent<Element, Event> | undefined) => {
+                navigate(e);
+              },
+              [isExternal, to],
+            );
             return (
               <Tile
                 variant="image"
