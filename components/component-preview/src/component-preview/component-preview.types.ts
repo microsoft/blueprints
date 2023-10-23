@@ -1,4 +1,4 @@
-import type { ElementType, ReactElement, ReactNode } from 'react';
+import type { ElementType, ReactNode } from 'react';
 
 export type ComponentPreviewProps = {
   /**
@@ -17,8 +17,8 @@ export type ComponentPreviewProps = {
    * @example ({ children, currentThemeKey }) => <ThemeProvider theme={currentThemeKey}>{children}</ThemeProvider>
    */
   // This is exposed to the consumer, so we have to use any here.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  wrapper?: ({ children, themeKey }: WrapperProps) => ReactElement<any, any> | null;
+  // eslint-disable-next-line no-unused-vars
+  wrapper?: ({ children, themeKey }: WrapperProps) => ReactNode;
 
   /**
    * Themes to be passed to the wrapper, if you want to add theme switcher.
@@ -70,6 +70,7 @@ export type ComponentPreviewProps = {
    *   const onThemeChange = (theme: string) => setCurrentTheme(theme);
    *  ```
    */
+  // eslint-disable-next-line no-unused-vars
   onThemeChange?: (themeKey: string) => void;
 };
 
