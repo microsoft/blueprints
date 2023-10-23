@@ -27,7 +27,7 @@
     "@microsoft/arbutus.bookmark-tile": "1.0.5",
     "@microsoft/arbutus.callout": "1.0.5",
     "@microsoft/arbutus.code-snippet": "1.0.4",
-    "@microsoft/arbutus.component-preview": "1.1.3",
+    "@microsoft/arbutus.component-preview": "1.1.4",
     "@microsoft/arbutus.divider": "1.0.2",
     "@microsoft/arbutus.embed": "1.0.5",
     "@microsoft/arbutus.file-to-string": "1.0.2",

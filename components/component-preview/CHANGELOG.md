@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.component-preview
 
-This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
+This log was last generated on Mon, 23 Oct 2023 21:24:11 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.4
+
+Mon, 23 Oct 2023 21:24:11 GMT
+
+### Patches
+
+- Fixes ComponentPreviewProps wrapper type. (akimalunar@gmail.com)
 
 ## 1.1.3
 

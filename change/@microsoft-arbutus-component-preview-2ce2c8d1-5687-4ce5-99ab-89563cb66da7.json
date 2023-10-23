@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes ComponentPreviewProps wrapper type.",
-  "packageName": "@microsoft/arbutus.component-preview",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}
