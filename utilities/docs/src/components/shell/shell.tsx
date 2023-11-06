@@ -30,10 +30,7 @@ const Logo: FC = () => {
   );
 };
 
-export const Shell: FC<ShellProps> = ({
-  children,
-  location,
-}) => {
+export const Shell: FC<ShellProps> = ({ children, location }) => {
   const isHome = location.pathname === withPrefix('/');
   const isComponentPreview = location.pathname.includes('/preview/');
   const isComponentSandbox = location.pathname.includes('/sandbox/');

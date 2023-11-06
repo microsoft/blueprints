@@ -1,5 +1,5 @@
 import * as React from 'react';
-import type { WrapRootElementBrowserArgs, WrapPageElementBrowserArgs } from 'gatsby'
+import type { WrapRootElementBrowserArgs, WrapPageElementBrowserArgs } from 'gatsby';
 
 import { Shell } from './src/components/shell';
 import { SSRSetup } from './src/components/ssr-setup';

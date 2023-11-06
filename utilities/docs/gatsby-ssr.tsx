@@ -1,7 +1,7 @@
 import { SSRProvider } from '@fluentui/react-utilities';
 import { createDOMRenderer, RendererProvider } from '@griffel/react';
 import * as React from 'react';
-import type { WrapRootElementNodeArgs, WrapPageElementNodeArgs } from 'gatsby'
+import type { WrapRootElementNodeArgs, WrapPageElementNodeArgs } from 'gatsby';
 
 import { Shell } from './src/components/shell';
 import { Theme } from './src/components/theme';
