@@ -21,9 +21,10 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.icon": "1.0.3",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.7",
+    "@microsoft/arbutus.icon": "1.0.3",
+    "@microsoft/arbutus.use-space-styles": "^1.0.5",
     "framer-motion": "^10.12.16"
   },
   "devDependencies": {
