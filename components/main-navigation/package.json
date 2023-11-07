@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.main-navigation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "MainNavigation component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds missing dependency",
-  "packageName": "@microsoft/arbutus.main-navigation",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

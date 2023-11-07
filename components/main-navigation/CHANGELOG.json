@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.main-navigation",
   "entries": [
     {
+      "date": "Tue, 07 Nov 2023 23:55:19 GMT",
+      "tag": "@microsoft/arbutus.main-navigation_v1.0.4",
+      "version": "1.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.main-navigation",
+            "commit": "366a391ce3bc7e4dfcd1477c3d4773175d2c59aa",
+            "comment": "Adds missing dependency"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.main-navigation_v1.0.3",
       "version": "1.0.3",

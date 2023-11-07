@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.main-navigation
 
-This log was last generated on Mon, 05 Jun 2023 20:43:46 GMT and should not be manually modified.
+This log was last generated on Tue, 07 Nov 2023 23:55:19 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.4
+
+Tue, 07 Nov 2023 23:55:19 GMT
+
+### Patches
+
+- Adds missing dependency (akimalunar@gmail.com)
 
 ## 1.0.3
 
