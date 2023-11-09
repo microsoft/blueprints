@@ -1,8 +1,18 @@
 # Change Log - @microsoft/arbutus.main-navigation
 
-This log was last generated on Tue, 07 Nov 2023 23:55:19 GMT and should not be manually modified.
+This log was last generated on Thu, 09 Nov 2023 19:14:33 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.5
+
+Thu, 09 Nov 2023 19:14:33 GMT
+
+### Patches
+
+- Package upgrades (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.icon to v1.0.4
+- Bump @microsoft/arbutus.use-space-styles to v1.0.6
 
 ## 1.0.4
 

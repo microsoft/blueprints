@@ -1,8 +1,21 @@
 # Change Log - @microsoft/arbutus.component-preview
 
-This log was last generated on Mon, 23 Oct 2023 21:24:11 GMT and should not be manually modified.
+This log was last generated on Thu, 09 Nov 2023 19:14:33 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.5
+
+Thu, 09 Nov 2023 19:14:33 GMT
+
+### Patches
+
+- Package upgrades (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.button to v1.0.3
+- Bump @microsoft/arbutus.icon to v1.0.4
+- Bump @microsoft/arbutus.theming to v1.1.1
+- Bump @microsoft/arbutus.use-copy-to-clipboard to v1.0.3
+- Bump @microsoft/arbutus.file-to-string to v1.0.3
 
 ## 1.1.4
 

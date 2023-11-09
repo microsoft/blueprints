@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.divider",
   "entries": [
     {
+      "date": "Thu, 09 Nov 2023 19:14:33 GMT",
+      "version": "1.0.3",
+      "tag": "@microsoft/arbutus.divider_v1.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.divider",
+            "commit": "6504c81fe30ef59254cfe7d80bc056cb35aed422",
+            "comment": "Package upgrades"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 22 Jun 2023 22:45:06 GMT",
       "tag": "@microsoft/arbutus.divider_v1.0.2",
       "version": "1.0.2",

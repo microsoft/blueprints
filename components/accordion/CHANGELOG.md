@@ -1,8 +1,18 @@
 # Change Log - @microsoft/arbutus.accordion
 
-This log was last generated on Thu, 07 Sep 2023 19:43:12 GMT and should not be manually modified.
+This log was last generated on Thu, 09 Nov 2023 19:14:32 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.5
+
+Thu, 09 Nov 2023 19:14:32 GMT
+
+### Patches
+
+- Package upgrades (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.icon to v1.0.4
+- Bump @microsoft/arbutus.text to v1.0.5
 
 ## 1.0.4
 

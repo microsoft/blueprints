@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.json-schemas",
   "entries": [
     {
+      "date": "Thu, 09 Nov 2023 19:14:33 GMT",
+      "version": "0.0.2",
+      "tag": "@microsoft/arbutus.json-schemas_v0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.json-schemas",
+            "commit": "6504c81fe30ef59254cfe7d80bc056cb35aed422",
+            "comment": "Package upgrades"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 14 Jul 2023 18:31:17 GMT",
       "tag": "@microsoft/arbutus.json-schemas_v0.0.1",
       "version": "0.0.1",

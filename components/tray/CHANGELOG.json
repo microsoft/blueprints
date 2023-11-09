@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.tray",
   "entries": [
     {
+      "date": "Thu, 09 Nov 2023 19:14:33 GMT",
+      "version": "1.0.4",
+      "tag": "@microsoft/arbutus.tray_v1.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.tray",
+            "commit": "6504c81fe30ef59254cfe7d80bc056cb35aed422",
+            "comment": "Package upgrades"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.tray",
+            "comment": "Bump @microsoft/arbutus.theming to v1.1.1",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 07 Sep 2023 19:43:12 GMT",
       "tag": "@microsoft/arbutus.tray_v1.0.3",
       "version": "1.0.3",

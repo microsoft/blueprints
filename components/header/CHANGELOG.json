@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.header",
   "entries": [
     {
+      "date": "Thu, 09 Nov 2023 19:14:33 GMT",
+      "version": "1.0.7",
+      "tag": "@microsoft/arbutus.header_v1.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.header",
+            "commit": "6504c81fe30ef59254cfe7d80bc056cb35aed422",
+            "comment": "Package upgrades"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.header",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v1.0.6",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 10 Oct 2023 23:12:41 GMT",
       "tag": "@microsoft/arbutus.header_v1.0.6",
       "version": "1.0.6",

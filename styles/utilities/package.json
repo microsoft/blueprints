@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.style-utilities",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Collection of utilities for styling with Griffel.",
   "main": "lib/index.js",
   "module": "lib/index.js",

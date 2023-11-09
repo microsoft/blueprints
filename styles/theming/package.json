@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.theming",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Documentation themes",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,8 +21,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@microsoft/arbutus.use-css-vars": "1.1.0",
-    "@microsoft/arbutus.use-prefers-color-scheme": "1.0.2",
+    "@microsoft/arbutus.use-css-vars": "1.1.1",
+    "@microsoft/arbutus.use-prefers-color-scheme": "1.0.3",
     "@fluentui/react-provider": "^9.7.2",
     "@fluentui/react-theme": "^9.1.8"
   }

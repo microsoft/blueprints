@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.button",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Button component in the Atoms collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.style-utilities": "1.0.2",
+    "@microsoft/arbutus.style-utilities": "1.0.3",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.17"
   },

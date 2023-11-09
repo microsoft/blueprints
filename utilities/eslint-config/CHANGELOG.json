@@ -2,6 +2,21 @@
   "name": "@microsoft/eslint-config-arbutus",
   "entries": [
     {
+      "date": "Thu, 09 Nov 2023 19:14:33 GMT",
+      "version": "0.0.4",
+      "tag": "@microsoft/eslint-config-arbutus_v0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/eslint-config-arbutus",
+            "commit": "6504c81fe30ef59254cfe7d80bc056cb35aed422",
+            "comment": "Package upgrades"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 14 Jul 2023 18:31:17 GMT",
       "tag": "@microsoft/eslint-config-arbutus_v0.0.3",
       "version": "0.0.3",

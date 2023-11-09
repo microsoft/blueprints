@@ -1,8 +1,22 @@
 # Change Log - @microsoft/arbutus.shell
 
-This log was last generated on Tue, 10 Oct 2023 23:12:41 GMT and should not be manually modified.
+This log was last generated on Thu, 09 Nov 2023 19:14:33 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.6
+
+Thu, 09 Nov 2023 19:14:33 GMT
+
+### Patches
+
+- Package upgrades (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.footer to v1.0.6
+- Bump @microsoft/arbutus.header to v1.0.7
+- Bump @microsoft/arbutus.icon-button to v1.0.6
+- Bump @microsoft/arbutus.theming to v1.1.1
+- Bump @microsoft/arbutus.tray to v1.0.4
+- Bump @microsoft/arbutus.use-space-styles to v1.0.6
 
 ## 1.1.5
 

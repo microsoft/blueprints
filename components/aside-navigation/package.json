@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.aside-navigation",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "AsideNavigation composite component in the Layout collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,8 +21,8 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.text": "1.0.4",
-    "@microsoft/arbutus.use-space-styles": "1.0.5",
+    "@microsoft/arbutus.text": "1.0.5",
+    "@microsoft/arbutus.use-space-styles": "1.0.6",
     "@fluentui/react-theme": "^9.1.8",
     "@griffel/react": "^1.5.17"
   },
