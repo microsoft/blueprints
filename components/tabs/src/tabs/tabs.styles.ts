@@ -4,6 +4,7 @@ import { makeStyles, shorthands } from '@griffel/react';
 export const useTabsStyles = makeStyles({
   root: {
     color: tokens.colorNeutralForeground1,
+    // @ts-ignore Griffel is not supporting 1 as a value for CSS variables.
     ':global(:root)': { '--reach-tabs': 1 },
 
     '& [data-reach-tabs][data-orientation="vertical"]': {

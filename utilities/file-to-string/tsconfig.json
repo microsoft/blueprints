@@ -5,6 +5,7 @@
   "compilerOptions": {
     "outDir": "lib",
     "esModuleInterop": true,
+    "module": "NodeNext",
     "moduleResolution": "nodenext"
   }
 }

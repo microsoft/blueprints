@@ -1,6 +1,6 @@
 {
   "customTypes": [],
-  "dependencyTypes": ["dev", "overrides", "prod", "resolutions", "workspace"],
+  "dependencyTypes": ["dev", "overrides", "prod", "resolutions", "local"],
   "filter": ".",
   "indent": "  ",
   "semverGroups": [],
