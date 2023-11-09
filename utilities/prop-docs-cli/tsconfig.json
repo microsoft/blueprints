@@ -5,6 +5,7 @@
   "compilerOptions": {
     "outDir": "bin",
     "esModuleInterop": true,
+    "module": "NodeNext",
     "moduleResolution": "nodenext"
   }
 }

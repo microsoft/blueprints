@@ -32,9 +32,12 @@ export function mapToStyles<Value, Map>(
   map: Record<keyof Map, Value>,
   styleFunction: (i: Value) => GriffelStyle,
 ) {
-  return Object.entries(map).reduce((acc, [key, value]) => {
-    acc[key as keyof Map] = styleFunction(value as Value);
+  return Object.entries(map).reduce(
+    (acc, [key, value]) => {
+      acc[key as keyof Map] = styleFunction(value as Value);
 
-    return acc;
-  }, {} as Record<keyof Map, GriffelStyle>);
+      return acc;
+    },
+    {} as Record<keyof Map, GriffelStyle>,
+  );
 }

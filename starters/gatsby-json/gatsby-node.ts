@@ -21,18 +21,16 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
   const PreviewPage = path.resolve('./src/templates/preview-page.tsx');
 
-  const result = await graphql<Result>(
-    `
-      {
-        allFile(filter: { relativePath: { glob: "*.example.*" } }) {
-          nodes {
-            relativePath
-            absolutePath
-          }
+  const result = await graphql<Result>(`
+    {
+      allFile(filter: { relativePath: { glob: "*.example.*" } }) {
+        nodes {
+          relativePath
+          absolutePath
         }
       }
-    `,
-  );
+    }
+  `);
 
   if (result.errors) {
     reporter.panicOnBuild(`There was an error loading your pages data.`, result.errors);
