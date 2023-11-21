@@ -26,12 +26,12 @@
     "@microsoft/arbutus.ordered-list": "1.0.3",
     "@microsoft/arbutus.text": "1.0.5",
     "@microsoft/arbutus.use-space-styles": "1.0.6",
-    "@fluentui/react-theme": "^9.1.8",
-    "@griffel/react": "^1.5.17",
+    "@fluentui/react-theme": "^9.1.16",
+    "@griffel/react": "^1.5.18",
     "@react-hook/resize-observer": "^1.2.6"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }

@@ -23,10 +23,10 @@
   "dependencies": {
     "@microsoft/arbutus.icon": "1.0.4",
     "@microsoft/arbutus.text": "1.0.5",
-    "@griffel/react": "^1.5.17"
+    "@griffel/react": "^1.5.18"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }
