@@ -1,18 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-argument */
 import { sentenceCase } from 'change-case';
-import type { GatsbyNode } from 'gatsby';
 import path from 'path';
 
-type ExamplePageResult = {
-  allFile: {
-    nodes: {
-      absolutePath: string;
-      relativePath: string;
-    }[];
-  };
-};
-
-export const createPages: GatsbyNode['createPages'] = async ({
+export const createPages = async ({
   graphql,
   actions,
   reporter,
@@ -23,7 +13,7 @@ export const createPages: GatsbyNode['createPages'] = async ({
 
   const PreviewPage = path.resolve('./src/templates/preview-page.tsx');
 
-  const examplePageQuery = await graphql<ExamplePageResult>(`
+  const examplePageQuery = await graphql(`
     query ExamplePagesQuery {
       allFile(filter: { relativePath: { glob: "*.example.*" } }) {
         nodes {

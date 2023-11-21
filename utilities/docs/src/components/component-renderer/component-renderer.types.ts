@@ -16,7 +16,8 @@ export type ComponentData =
   | MarkListComponentData
   | OrderedListComponentData
   | PersonTileComponentData
-  | RecommendationComponentData;
+  | RecommendationComponentData
+  | TextComponentData;
 
 export type HeadingComponentData = {
   contentComponentId: 'blocks.heading';
@@ -186,9 +187,8 @@ export type PropTableComponentData = {
 
 export type TextComponentData = {
   contentComponentId: 'blocks.text';
-  childMarkdownRemark: {
-    html?: string;
-    rawMarkdownBody?: string;
+  markdown: {
+    raw?: string;
   };
 };
 
