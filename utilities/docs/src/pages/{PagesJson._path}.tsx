@@ -110,6 +110,12 @@ export const query = graphql`
       raw
     }
   }
+  fragment IntroductionTextComponent on PagesJsonContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+  }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
       ...Metadata
@@ -118,6 +124,7 @@ export const query = graphql`
       ...HeroImage
       content {
         ...HeadingComponent
+        ...IntroductionTextComponent
         ...TextComponent
       }
       tabs {

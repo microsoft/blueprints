@@ -12,6 +12,7 @@ export type ComponentData =
   | IllustrationTileComponentData
   | ImageComponentData
   | ImageTileComponentData
+  | IntroductionTextComponentData
   | LinkComponentData
   | MarkListComponentData
   | OrderedListComponentData
@@ -187,6 +188,13 @@ export type PropTableComponentData = {
 
 export type TextComponentData = {
   contentComponentId: 'blocks.text';
+  markdown: {
+    raw?: string;
+  };
+};
+
+export type IntroductionTextComponentData = {
+  contentComponentId: 'blocks.introduction-text';
   markdown: {
     raw?: string;
   };

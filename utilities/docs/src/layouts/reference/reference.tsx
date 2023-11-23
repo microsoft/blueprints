@@ -10,7 +10,6 @@ import { ComponentRenderer } from '../../components/component-renderer';
 import { Grid } from '../../components/grid';
 import { useReferenceStyles } from './reference.styles';
 import type { ReferenceLayoutProps } from './reference.types';
-import { sortTabs } from './reference.utils';
 
 export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
   title,
@@ -54,7 +53,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
 
       <Tabs className={space.mt12}>
         <TabList>
-          {sortTabs(tabs).map((tab, index) => {
+          {tabs.map((tab, index) => {
             const currentTab = tabs.find((t) => t.tab === tab.tab);
 
             return (
@@ -65,7 +64,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
           })}
         </TabList>
         <TabPanels>
-          {sortTabs(tabs).map(({ tab, content }, index) => (
+          {tabs.map(({ tab, content }, index) => (
             <TabPanel key={`${index}--${tab}`}>
               {content && <ComponentRenderer content={content} />}
             </TabPanel>

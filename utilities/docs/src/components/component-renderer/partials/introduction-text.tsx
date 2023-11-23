@@ -8,11 +8,11 @@ import * as React from 'react';
 import Markdown from 'react-markdown';
 
 import { Image } from '../../image';
-import type { TextComponentData } from '../component-renderer.types';
+import type { IntroductionTextComponentData } from '../component-renderer.types';
 
-type TextProps = TextComponentData;
+type IntroductionTextProps = IntroductionTextComponentData;
 
-export const TextComponent: FC<TextProps> = (data) => {
+export const IntroductionTextComponent: FC<IntroductionTextProps> = (data) => {
   const rawMarkdown = data?.markdown?.raw;
 
   console.log(data?.markdown?.raw)
@@ -56,7 +56,7 @@ export const TextComponent: FC<TextProps> = (data) => {
         ),
         img: ({ src, alt }) => <Image isRounded src={src} alt={alt} />,
         p: ({ children }) => (
-          <ArbutusText block as="p" variant="paragraph">
+          <ArbutusText block as="p" variant="leading">
             {children}
           </ArbutusText>
         ),

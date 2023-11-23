@@ -8,6 +8,7 @@ import { HeadingComponent } from './heading';
 import { IllustrationTileComponent } from './illustration-tile';
 import { ImageComponent } from './image';
 import { ImageTileComponent } from './image-tile';
+import { IntroductionTextComponent } from './introduction-text';
 import { LinkComponent } from './link';
 import { MarkListComponent } from './mark-list';
 import { OrderedListComponent } from './ordered-list';
@@ -24,6 +25,7 @@ export const components = {
   'blocks.guidance': GuidanceComponent,
   'blocks.heading': HeadingComponent,
   'blocks.image': ImageComponent,
+  'blocks.introduction-text': IntroductionTextComponent,
   'blocks.prop-table': PropTableComponent,
   'blocks.text': TextComponent,
   'lists.mark-list': MarkListComponent,
