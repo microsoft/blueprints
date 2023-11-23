@@ -15,8 +15,6 @@ type IntroductionTextProps = IntroductionTextComponentData;
 export const IntroductionTextComponent: FC<IntroductionTextProps> = (data) => {
   const rawMarkdown = data?.markdown?.raw;
 
-  console.log(data?.markdown?.raw)
-
   if (!rawMarkdown) {
     return null;
   }

@@ -15,8 +15,6 @@ type TextProps = TextComponentData;
 export const TextComponent: FC<TextProps> = (data) => {
   const rawMarkdown = data?.markdown?.raw;
 
-  console.log(data?.markdown?.raw)
-
   if (!rawMarkdown) {
     return null;
   }
