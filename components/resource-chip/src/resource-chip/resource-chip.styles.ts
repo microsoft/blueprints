@@ -1,7 +1,7 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
 
-import type { SizeMap } from './resource-pill.types';
+import type { SizeMap } from './resource-chip.types';
 
 const sizeMap: SizeMap = {
   small: {
@@ -27,15 +27,14 @@ const sizeMap: SizeMap = {
   },
 };
 
-export const useResourcePillStyles = makeStyles({
+export const useResourceChipStyles = makeStyles({
   root: {
     display: 'inline-flex',
     alignItems: 'center',
+    verticalAlign: 'bottom',
   },
-
   small: {
     position: 'relative',
-    verticalAlign: 'bottom',
     borderLeftWidth: '0px',
     borderTopWidth: '0px',
     borderRightWidth: '0px',
@@ -81,7 +80,6 @@ export const useResourcePillStyles = makeStyles({
       transitionTimingFunction: tokens.curveEasyEase,
     },
   },
-
   medium: {
     paddingTop: sizeMap.medium.padding,
     paddingBottom: sizeMap.medium.padding,
@@ -92,7 +90,6 @@ export const useResourcePillStyles = makeStyles({
       backgroundColor: tokens.colorBrandBackground2Hover,
     },
   },
-
   large: {
     paddingTop: sizeMap.large.padding,
     paddingBottom: sizeMap.large.padding,
@@ -103,17 +100,18 @@ export const useResourcePillStyles = makeStyles({
       backgroundColor: tokens.colorBrandBackground2Hover,
     },
   },
-
-  rootWithLogo: {
-    gridTemplateColumns: `auto auto ${sizeMap.medium.actionIcon}`,
+  smallRightPadding: {
+    paddingRight: sizeMap.small.paddingL,
   },
-
-  rootWithoutLogo: {
-    gridTemplateColumns: `auto ${sizeMap.medium.actionIcon}`,
+  mediumRightPadding: {
+    paddingRight: sizeMap.medium.paddingL,
+  },
+  largeRightPadding: {
+    paddingRight: sizeMap.large.paddingL,
   },
 });
 
-export const useResourcePillActionStyles = makeStyles({
+export const useResourceChipActionStyles = makeStyles({
   root: {
     display: 'inline-flex',
     alignItems: 'center',
@@ -159,11 +157,12 @@ export const useResourcePillActionStyles = makeStyles({
   },
 });
 
-export const useResourcePillLogoStyles = makeStyles({
+export const useResourceChipLogoStyles = makeStyles({
   root: {
     width: 'auto',
     alignSelf: 'center',
     justifySelf: 'center',
+    overflowY: 'hidden',
   },
   small: {
     height: sizeMap.small.logo,

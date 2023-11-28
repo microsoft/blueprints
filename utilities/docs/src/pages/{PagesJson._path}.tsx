@@ -122,6 +122,7 @@ export const query = graphql`
       ...Description
       ...Owners
       ...HeroImage
+      packageName
       content {
         ...HeadingComponent
         ...IntroductionTextComponent

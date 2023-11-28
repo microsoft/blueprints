@@ -7,7 +7,7 @@ export type SizeValue = Record<'actionIcon' | 'logo' | 'padding' | 'paddingL' | 
 
 export type SizeMap = Record<SizeKey, SizeValue>;
 
-export type ResourcePillProps = {
+export type ResourceChipProps = {
   /**
    * Consumer provided class.
    */
@@ -19,10 +19,10 @@ export type ResourcePillProps = {
   text: string;
 
   /**
-   * Selection of icons for indicating the type of action when the user clicks on ResourcePill.
+   * Selection of icons for indicating the type of action when the user clicks on ResourceChip.
    * @default 'link'
    */
-  actionIconName: keyof typeof paths;
+  actionIconName?: keyof typeof paths;
 
   /**
    * Click handler.
