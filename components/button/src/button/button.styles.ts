@@ -40,7 +40,7 @@ const colorPillStyleFunction = ({ foreground, background, stroke }: ColorValue) 
   borderBottomColor: stroke,
   '&:focus-visible, &:hover': {
     backgroundColor: background,
-    boxShadow: `0 0 2px ${background}, 0 8px 16px ${background}, inset 0 0 0px 0.5px ${stroke}`,
+    boxShadow: `0 0 2px ${background}, inset 0 0 0px 0.5px ${stroke}`,
   },
 });
 
@@ -61,7 +61,7 @@ const colorBrickStyleFunction = ({ foreground, background, stroke }: ColorValue)
   },
 });
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line no-unused-vars
 const { primary, ...restColors } = colorMap;
 const colorBrickClasses = mapToStyles<ColorValue, typeof restColors>(
   restColors,

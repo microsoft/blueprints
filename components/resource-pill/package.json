@@ -1,0 +1,34 @@
+{
+  "name": "@microsoft/arbutus.resource-pill",
+  "version": "0.0.1",
+  "description": "ResourcePill represents a shortcut to a single resource like a file or a link.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "exports": [
+    "./lib/index.js"
+  ],
+  "files": [
+    "lib/**"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@fluentui/react-theme": "^9.1.16",
+    "@griffel/react": "^1.5.18",
+    "@microsoft/arbutus.button": "^1.0.3",
+    "@microsoft/arbutus.logo": "^1.0.3",
+    "@microsoft/arbutus.text": "^1.0.5"
+  },
+  "devDependencies": {
+    "@microsoft/arbutus.ts": "0.0.2",
+    "typescript": "^5.3.2"
+  }
+}
