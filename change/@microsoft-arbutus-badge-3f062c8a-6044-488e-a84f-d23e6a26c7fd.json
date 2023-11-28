@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Upgrades packages",
+  "packageName": "@microsoft/arbutus.badge",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

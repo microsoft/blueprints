@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Upgrades packages",
+  "packageName": "@microsoft/arbutus.image-tile",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
