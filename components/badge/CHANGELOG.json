@@ -2,6 +2,39 @@
   "name": "@microsoft/arbutus.badge",
   "entries": [
     {
+      "date": "Wed, 29 Nov 2023 00:19:57 GMT",
+      "version": "1.0.6",
+      "tag": "@microsoft/arbutus.badge_v1.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.badge",
+            "commit": "e0d04447de136abcc37d24881d39d8c575c3d687",
+            "comment": "Upgrades packages"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.badge",
+            "comment": "Bump @microsoft/arbutus.icon to v1.0.5",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.badge",
+            "comment": "Bump @microsoft/arbutus.style-utilities to v1.0.4",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.badge",
+            "comment": "Bump @microsoft/arbutus.theming to v1.1.2",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 09 Nov 2023 19:14:33 GMT",
       "version": "1.0.5",
       "tag": "@microsoft/arbutus.badge_v1.0.5",

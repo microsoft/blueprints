@@ -2,6 +2,51 @@
   "name": "@microsoft/arbutus.component-preview",
   "entries": [
     {
+      "date": "Wed, 29 Nov 2023 00:19:57 GMT",
+      "version": "1.1.6",
+      "tag": "@microsoft/arbutus.component-preview_v1.1.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.component-preview",
+            "commit": "e0d04447de136abcc37d24881d39d8c575c3d687",
+            "comment": "Upgrades packages"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.button to v1.0.4",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.icon to v1.0.5",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.theming to v1.1.2",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.use-copy-to-clipboard to v1.0.4",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.file-to-string to v1.0.4",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 09 Nov 2023 19:14:33 GMT",
       "version": "1.1.5",
       "tag": "@microsoft/arbutus.component-preview_v1.1.5",

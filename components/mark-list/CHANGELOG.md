@@ -1,8 +1,19 @@
 # Change Log - @microsoft/arbutus.mark-list
 
-This log was last generated on Thu, 09 Nov 2023 19:14:33 GMT and should not be manually modified.
+This log was last generated on Wed, 29 Nov 2023 00:19:57 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.7
+
+Wed, 29 Nov 2023 00:19:57 GMT
+
+### Patches
+
+- Upgrades packages (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.badge to v1.0.6
+- Bump @microsoft/arbutus.icon to v1.0.5
+- Bump @microsoft/arbutus.use-space-styles to v1.0.7
 
 ## 1.0.6
 

@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.tag",
   "entries": [
     {
+      "date": "Wed, 29 Nov 2023 00:19:57 GMT",
+      "version": "1.0.4",
+      "tag": "@microsoft/arbutus.tag_v1.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.tag",
+            "commit": "e0d04447de136abcc37d24881d39d8c575c3d687",
+            "comment": "Upgrades packages"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.tag",
+            "comment": "Bump @microsoft/arbutus.style-utilities to v1.0.4",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 09 Nov 2023 19:14:33 GMT",
       "version": "1.0.3",
       "tag": "@microsoft/arbutus.tag_v1.0.3",

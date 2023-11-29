@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.tile",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Tile component",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,8 +21,8 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.theming": "1.1.1",
-    "@microsoft/arbutus.style-utilities": "1.0.3",
+    "@microsoft/arbutus.theming": "1.1.2",
+    "@microsoft/arbutus.style-utilities": "1.0.4",
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18"
   },

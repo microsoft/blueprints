@@ -2,6 +2,57 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Wed, 29 Nov 2023 00:19:57 GMT",
+      "version": "1.1.7",
+      "tag": "@microsoft/arbutus.shell_v1.1.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.shell",
+            "commit": "e0d04447de136abcc37d24881d39d8c575c3d687",
+            "comment": "Upgrades packages"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.footer to v1.0.7",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.header to v1.0.8",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.icon-button to v1.0.7",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.theming to v1.1.2",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.tray to v1.0.5",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.use-space-styles to v1.0.7",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 09 Nov 2023 19:14:33 GMT",
       "version": "1.1.6",
       "tag": "@microsoft/arbutus.shell_v1.1.6",

@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.use-copy-to-clipboard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "useCopyToClipboard hook returns an action that can be used in user events to copy text into clipboard.",
   "main": "lib/index.js",
   "module": "lib/index.js",

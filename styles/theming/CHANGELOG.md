@@ -1,8 +1,18 @@
 # Change Log - @microsoft/arbutus.theming
 
-This log was last generated on Thu, 09 Nov 2023 19:14:33 GMT and should not be manually modified.
+This log was last generated on Wed, 29 Nov 2023 00:19:57 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.2
+
+Wed, 29 Nov 2023 00:19:57 GMT
+
+### Patches
+
+- Upgrades packages (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.use-css-vars to v1.1.2
+- Bump @microsoft/arbutus.use-prefers-color-scheme to v1.0.4
 
 ## 1.1.1
 

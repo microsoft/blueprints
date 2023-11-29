@@ -1,8 +1,19 @@
 # Change Log - @microsoft/arbutus.heading
 
-This log was last generated on Thu, 09 Nov 2023 19:14:33 GMT and should not be manually modified.
+This log was last generated on Wed, 29 Nov 2023 00:19:57 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.7
+
+Wed, 29 Nov 2023 00:19:57 GMT
+
+### Patches
+
+- Upgrades packages (akimalunar@gmail.com)
+- Bump @microsoft/arbutus.icon-button to v1.0.7
+- Bump @microsoft/arbutus.text to v1.0.6
+- Bump @microsoft/arbutus.use-copy-to-clipboard to v1.0.4
 
 ## 1.0.6
 

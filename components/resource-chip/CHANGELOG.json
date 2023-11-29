@@ -1,0 +1,38 @@
+{
+  "name": "@microsoft/arbutus.resource-chip",
+  "entries": [
+    {
+      "date": "Wed, 29 Nov 2023 00:19:57 GMT",
+      "version": "0.0.2",
+      "tag": "@microsoft/arbutus.resource-chip_v0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.resource-chip",
+            "commit": "e0d04447de136abcc37d24881d39d8c575c3d687",
+            "comment": "Implements ResourcePill"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.resource-chip",
+            "comment": "Bump @microsoft/arbutus.button to v1.0.4",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.resource-chip",
+            "comment": "Bump @microsoft/arbutus.logo to v1.0.4",
+            "commit": "not available"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.resource-chip",
+            "comment": "Bump @microsoft/arbutus.text to v1.0.6",
+            "commit": "not available"
+          }
+        ]
+      }
+    }
+  ]
+}

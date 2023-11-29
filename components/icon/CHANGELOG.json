@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Wed, 29 Nov 2023 00:19:57 GMT",
+      "version": "1.0.5",
+      "tag": "@microsoft/arbutus.icon_v1.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "e0d04447de136abcc37d24881d39d8c575c3d687",
+            "comment": "Upgrades packages"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.icon",
+            "comment": "Bump @microsoft/arbutus.style-utilities to v1.0.4",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 09 Nov 2023 19:14:33 GMT",
       "version": "1.0.4",
       "tag": "@microsoft/arbutus.icon_v1.0.4",

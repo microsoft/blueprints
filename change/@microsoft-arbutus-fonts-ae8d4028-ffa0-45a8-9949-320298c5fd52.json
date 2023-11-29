@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Upgrades packages",
-  "packageName": "@microsoft/arbutus.fonts",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}
