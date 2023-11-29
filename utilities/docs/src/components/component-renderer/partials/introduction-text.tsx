@@ -62,14 +62,14 @@ export const IntroductionTextComponent: FC<IntroductionTextProps> = (data) => {
         ul: ({ children }) => <MarkList>{children}</MarkList>,
         ol: ({ children }) => <OrderedList>{children}</OrderedList>,
         // @ts-ignore-next-line Value does exist, but not stable. Might break.
-        li: ({ children, __index}) => {
+        li: ({ children, __index }) => {
           const ordered = Boolean(__index);
           const index = __index ?? 0;
           return ordered ? (
             <OrderedListItem __index={index}>{children}</OrderedListItem>
           ) : (
             <MarkListItem>{children}</MarkListItem>
-          )
+          );
         },
         hr: () => <Divider />,
         code: ({ children, node, className }) => {

@@ -2,11 +2,7 @@
 import { sentenceCase } from 'change-case';
 import path from 'path';
 
-export const createPages = async ({
-  graphql,
-  actions,
-  reporter,
-}) => {
+export const createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   // Generating pages for example files.

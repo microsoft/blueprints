@@ -9,5 +9,5 @@ npm i "@microsoft/arbutus.resource-chip"
 ```
 
 ```tsx
-import { ResourceChip } from "@microsoft/arbutus.resource-chip";
+import { ResourceChip } from '@microsoft/arbutus.resource-chip';
 ```

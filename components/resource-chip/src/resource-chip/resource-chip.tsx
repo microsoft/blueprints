@@ -31,11 +31,16 @@ export const ResourceChip: FC<ResourceChipProps> = ({
     small: classes.smallRightPadding,
     medium: classes.mediumRightPadding,
     large: classes.largeRightPadding,
-  }
+  };
 
   return (
     <Button
-      className={mergeClasses(classes.root, classes[size], !hasAction && rightPaddingMap[size], className)}
+      className={mergeClasses(
+        classes.root,
+        classes[size],
+        !hasAction && rightPaddingMap[size],
+        className,
+      )}
       shape="pill"
       color="secondary"
       size="large"
