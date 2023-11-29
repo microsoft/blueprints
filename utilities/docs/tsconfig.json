@@ -104,10 +104,10 @@
   "include": [
     "./gatsby-browser.tsx",
     "./gatsby-config.ts",
-    "./gatsby-node.ts",
     "./gatsby-ssr.tsx",
     "./plugins/**/*",
     "./src/**/*",
     "consts/consts.ts"
-  ]
+  ],
+  "exclude": ["gatsby-node.mjs"]
 }

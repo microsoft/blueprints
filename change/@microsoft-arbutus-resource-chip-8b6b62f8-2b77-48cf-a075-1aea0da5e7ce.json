@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Implements ResourcePill",
+  "packageName": "@microsoft/arbutus.resource-chip",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

@@ -21,14 +21,14 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@fluentui/react-theme": "^9.1.8",
-    "@griffel/react": "^1.5.17",
+    "@fluentui/react-theme": "^9.1.16",
+    "@griffel/react": "^1.5.18",
     "@microsoft/arbutus.theming": "1.1.1",
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
     "@microsoft/arbutus.ts": "0.0.2",
-    "@types/react-syntax-highlighter": "^15.5.7",
-    "typescript": "^5.2.2"
+    "@types/react-syntax-highlighter": "^15.5.10",
+    "typescript": "^5.3.2"
   }
 }

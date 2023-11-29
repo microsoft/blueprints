@@ -3,20 +3,21 @@ import { PersonTile } from '@microsoft/arbutus.person-tile';
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@microsoft/arbutus.tabs';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import { ResourceChip } from '@microsoft/arbutus.resource-chip';
 import type { FC } from 'react';
 import * as React from 'react';
+import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
 
 import { ComponentRenderer } from '../../components/component-renderer';
 import { Grid } from '../../components/grid';
 import { useReferenceStyles } from './reference.styles';
 import type { ReferenceLayoutProps } from './reference.types';
-import { sortTabs } from './reference.utils';
 
 export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
   title,
   definition,
   owners,
-  // packageName,
+  packageName,
   tabs,
 }) => {
   const space = useSpaceStyles();
@@ -29,13 +30,39 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
       '_blank',
     );
 
+  const { copy: copyPackageName } = useCopyToClipboard();
+  const handleCopyPackageName = () => copyPackageName(packageName);
+  const handleFigmaToolkitClick = () =>
+    window.open('https://www.figma.com/@microsoft', '_blank');
+
   return (
     <>
       <Text block variant="jumbo" as="h1">
         {title}
       </Text>
+      <div className={space.my5}>
+        <ResourceChip
+          text="Figma Toolkit"
+          actionIconName="link"
+          onClick={handleFigmaToolkitClick}
+          logoName="figma"
+          logoLabel="Figma"
+          className={space.mr3}
+        />
+        <ResourceChip
+          text={packageName}
+          actionIconName="copy"
+          onClick={handleCopyPackageName}
+          className={space.mr3}
+        />
+      </div>
       {definition && (
-        <Text block variant="leading" className={mergeClasses(space.my5, space.mb10)}>
+        <Text
+          block
+          variant="leading"
+          as="p"
+          className={mergeClasses(space.my5, space.mb10)}
+        >
           {definition}
         </Text>
       )}
@@ -54,7 +81,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
 
       <Tabs className={space.mt12}>
         <TabList>
-          {sortTabs(tabs).map((tab, index) => {
+          {tabs.map((tab, index) => {
             const currentTab = tabs.find((t) => t.tab === tab.tab);
 
             return (
@@ -65,7 +92,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
           })}
         </TabList>
         <TabPanels>
-          {sortTabs(tabs).map(({ tab, content }, index) => (
+          {tabs.map(({ tab, content }, index) => (
             <TabPanel key={`${index}--${tab}`}>
               {content && <ComponentRenderer content={content} />}
             </TabPanel>

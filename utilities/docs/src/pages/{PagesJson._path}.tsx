@@ -95,15 +95,25 @@ export const query = graphql`
       }
     }
   }
-  fragment HeadingComponent on PagesJson {
-    content {
-      contentComponentId
-      title
-      leading
-      withCopyLink
-      withDivider
-      size
-      as
+  fragment HeadingComponent on PagesJsonContent {
+    contentComponentId
+    title
+    leading
+    withCopyLink
+    withDivider
+    size
+    as
+  }
+  fragment TextComponent on PagesJsonContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+  }
+  fragment IntroductionTextComponent on PagesJsonContent {
+    contentComponentId
+    markdown {
+      raw
     }
   }
   query JsonPageQuery($_path: String!) {
@@ -112,7 +122,12 @@ export const query = graphql`
       ...Description
       ...Owners
       ...HeroImage
-      ...HeadingComponent
+      packageName
+      content {
+        ...HeadingComponent
+        ...IntroductionTextComponent
+        ...TextComponent
+      }
       tabs {
         tab
         content {

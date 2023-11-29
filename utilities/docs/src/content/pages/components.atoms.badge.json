@@ -1,5 +1,56 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/badge",
-  "title": "Badge"
+  "title": "Badge",
+  "definition": "Badge is a small, circular component that aids in visualizing status or metadata.  They serve as a visual indicator that attracts the user’s attention to new or important items, like warnings or updates. Badge’s appearance can be customized to match its semantic context.",
+  "packageName": "@microsoft/blueprints.badge",
+  "owners": [
+    {
+      "firstName": "Ria",
+      "lastName": "Carmin",
+      "role": "User Experience Engineer",
+      "alias": "akimalunar"
+    }
+  ],
+  "tabs": [
+    {
+      "tab": "Usage",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h1",
+          "size": "title",
+          "title": "Anatomy",
+          "withCopyLink": false,
+          "withDivider": false
+        }
+      ]
+    },
+    {
+      "tab": "Design",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h1",
+          "size": "title",
+          "title": "Guidance",
+          "withCopyLink": false,
+          "withDivider": false
+        }
+      ]
+    },
+    {
+      "tab": "Code",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h1",
+          "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        }
+      ]
+    }
+  ]
 }

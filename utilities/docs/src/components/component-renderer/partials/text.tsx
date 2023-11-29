@@ -13,11 +13,9 @@ import type { TextComponentData } from '../component-renderer.types';
 type TextProps = TextComponentData;
 
 export const TextComponent: FC<TextProps> = (data) => {
-  const {
-    childMarkdownRemark: { rawMarkdownBody },
-  } = data;
+  const rawMarkdown = data?.markdown?.raw;
 
-  if (!rawMarkdownBody) {
+  if (!rawMarkdown) {
     return null;
   }
 
@@ -63,12 +61,16 @@ export const TextComponent: FC<TextProps> = (data) => {
         strong: ({ children }) => <ArbutusText variant="caption">{children}</ArbutusText>,
         ul: ({ children }) => <MarkList>{children}</MarkList>,
         ol: ({ children }) => <OrderedList>{children}</OrderedList>,
-        li: ({ children, ordered, index }) =>
-          ordered ? (
-            <OrderedListItem __index={index + 1}>{children}</OrderedListItem>
+        // @ts-ignore-next-line Value does exist, but not stable. Might break.
+        li: ({ children, __index }) => {
+          const ordered = Boolean(__index);
+          const index = __index ?? 0;
+          return ordered ? (
+            <OrderedListItem __index={index}>{children}</OrderedListItem>
           ) : (
             <MarkListItem>{children}</MarkListItem>
-          ),
+          );
+        },
         hr: () => <Divider />,
         code: ({ children, node, className }) => {
           const match = /language-(\w+)/.exec(className ?? '');
@@ -76,7 +78,7 @@ export const TextComponent: FC<TextProps> = (data) => {
 
           return isMultiline ? (
             // @ts-ignore-next-line Value does exist in markdown AST.
-            <CodeSnippet code={node?.children[0]?.value ?? ''} language={match[1]} /> // eslint-disable-line @typescript-eslint/no-unsafe-assignment -- Value does exist in markdown AST.
+            <CodeSnippet code={node?.children[0]?.value ?? ''} language={match[1]} />
           ) : (
             <code>
               <ArbutusText variant="code">{children}</ArbutusText>
@@ -85,7 +87,7 @@ export const TextComponent: FC<TextProps> = (data) => {
         },
       }}
     >
-      {rawMarkdownBody}
+      {rawMarkdown}
     </Markdown>
   );
 };
