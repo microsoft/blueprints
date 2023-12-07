@@ -12,7 +12,8 @@ const formatListItemData = (listItems: GuidanceComponentProps['listItems']) =>
 
 export const GuidanceComponent: FC<GuidanceComponentProps> = ({
   fileTitle,
-  fileType,
+  logoName,
+  logoLabel,
   image,
   url,
   description,
@@ -20,17 +21,18 @@ export const GuidanceComponent: FC<GuidanceComponentProps> = ({
   listItems,
 }) => {
   const legendListItems = formatListItemData(listItems);
-  const imageSrc = image?.src?.childrenImageSharp[0]?.gatsbyImageData;
+  console.log(image)
+  const imageSrc = image?.src?.childImageSharp?.gatsbyImageData;
 
   return (
     <Guidance
       fileTitle={fileTitle}
-      logoName={fileType}
-      logoLabel={`${fileType} file`}
-      openButtonLabel={`Open the ${fileType} file`}
+      logoName={logoName}
+      logoLabel={logoLabel}
+      openButtonLabel={`Open the ${logoName} file`}
       url={url}
       imageAs={GatsbyImage}
-      imageProps={{ image: imageSrc, alt: image.alternativeText }}
+      imageProps={{ image: imageSrc, alt: image.alt }}
       heading={heading}
       description={description}
       legendListItems={legendListItems}

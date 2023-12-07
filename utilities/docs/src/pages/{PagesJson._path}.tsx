@@ -104,7 +104,22 @@ export const query = graphql`
     size
     as
   }
+  fragment HeadingComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    title
+    leading
+    withCopyLink
+    withDivider
+    size
+    as
+  }
   fragment TextComponent on PagesJsonContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+  }
+  fragment TextComponentTabs on PagesJsonTabsContent {
     contentComponentId
     markdown {
       raw
@@ -114,6 +129,30 @@ export const query = graphql`
     contentComponentId
     markdown {
       raw
+    }
+  }
+  fragment IntroductionTextComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+  }
+  fragment ComponentPreviewComponent on PagesJsonContent {
+    contentComponentId
+    exampleFile
+    withMenu
+  }
+  fragment ComponentPreviewComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    exampleFile
+    withMenu
+  }
+  fragment AnatomyComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    embedUrl
+    listItems {
+      headline
+      text
     }
   }
   query JsonPageQuery($_path: String!) {
@@ -138,6 +177,9 @@ export const query = graphql`
           withDivider
           size
           as
+          ...HeadingComponentTabs
+          ...ComponentPreviewComponentTabs
+          ...AnatomyComponentTabs
         }
       }
     }

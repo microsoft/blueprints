@@ -23,6 +23,61 @@
           "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D1%253A140%26mode%3Ddesign%26t%3DeatBAwr8xG0IUCVJ-1",
+          "listItems": [
+            {
+              "headline": "Badge",
+              "text": "A small, circular component that aids in visualizing status or metadata. Badge comes in an array of colors and can be customized to match its semantic context."
+            },
+            {
+              "headline": "Inline text (customization)",
+              "text": "You can add text to a badge or position it next to text with the inline variant."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "headline",
+          "title": "Base Example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "badge-basic.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "title": "Color Variants",
+          "leading": "Badge comes in an array of colors and can be customized to match its semantic context. The default color is primary or neutral foreground in your theme.",
+          "as": "h2",
+          "size": "headline",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "badge-color-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "title": "Inline Example",
+          "leading": "A technical aspect of positioning the badge next to or in line with text.",
+          "as": "h2",
+          "size": "headline",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "badge-inline.example.tsx",
+          "withMenu": true
         }
       ]
     },

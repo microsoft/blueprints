@@ -1,11 +1,18 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles, shorthands } from '@griffel/react';
+import { arbutusTokens } from '@microsoft/arbutus.theming';
 
 export const useGuidanceStyles = makeStyles({
   image: {
     width: '100%',
     height: 'auto',
     objectFit: 'cover',
+  },
+  imageStandalone: {
+    borderTopLeftRadius: arbutusTokens.shape.borderRadius,
+    borderTopRightRadius: arbutusTokens.shape.borderRadius,
+    borderBottomLeftRadius: arbutusTokens.shape.borderRadius,
+    borderBottomRightRadius: arbutusTokens.shape.borderRadius,
   },
   figure: {
     display: 'grid',

@@ -1,4 +1,5 @@
 import { ActionListTileComponent } from './action-list-tile';
+import { AnatomyComponent } from './anatomy';
 import { BookmarkTileComponent } from './bookmark-tile';
 import { CodeSnippetComponent } from './code-snippet';
 import { ComponentPreviewComponent } from './component-preview';
@@ -19,6 +20,7 @@ import { TextComponent } from './text';
 
 export const components = {
   'atoms.link': LinkComponent,
+  'blocks.anatomy': AnatomyComponent,
   'blocks.code-snippet': CodeSnippetComponent,
   'blocks.component-preview': ComponentPreviewComponent,
   'blocks.embed': EmbedComponent,

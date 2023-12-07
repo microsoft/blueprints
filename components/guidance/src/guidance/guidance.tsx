@@ -65,28 +65,37 @@ export const Guidance: FC<GuidanceProps> = ({
     window?.open(url, '_blank')?.focus();
   };
 
+  const isFile = Boolean(fileTitle && url);
+
   return (
     <article className={className} ref={ref}>
-      <figure className={classes.figure}>
-        <Image {...imageProps} className={classes.image} />
-        <figcaption
-          className={mergeClasses(
-            classes.figcaption,
-            space.p5,
-            withLogo ? classes.figcaptionWithLogo : classes.figcaptionWithoutLogo,
-          )}
-        >
-          {withLogo && <Logo logoName={logoName} label={logoLabel} size="medium" />}
-          <Text as="h3" variant="caption" className={space.mt2}>
-            {fileTitle}
-          </Text>
-          <IconButton
-            label={openButtonLabel ?? 'Open file.'}
-            iconName="open"
-            onClick={openClickHandler}
-          />
-        </figcaption>
-      </figure>
+      {isFile ? (
+        <figure className={classes.figure}>
+          <Image {...imageProps} className={classes.image} />
+          <figcaption
+            className={mergeClasses(
+              classes.figcaption,
+              space.p5,
+              withLogo ? classes.figcaptionWithLogo : classes.figcaptionWithoutLogo,
+            )}
+          >
+            {withLogo && <Logo logoName={logoName} label={logoLabel} size="medium" />}
+            <Text as="h3" variant="caption" className={space.mt2}>
+              {fileTitle}
+            </Text>
+            <IconButton
+              label={openButtonLabel ?? 'Open file.'}
+              iconName="open"
+              onClick={openClickHandler}
+            />
+          </figcaption>
+        </figure>
+      ) : (
+        <Image
+          {...imageProps}
+          className={mergeClasses(classes.image, classes.imageStandalone)}
+        />
+      )}
       {(heading || description) && (
         <div className={space.mt7}>
           {heading && (

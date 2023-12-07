@@ -6,6 +6,7 @@ export type ComponentData =
   | ActionListTileComponentData
   | BookmarkTileComponentData
   | CodeSnippetComponentData
+  | ComponentPreviewComponentData
   | EmbedComponentData
   | GuidanceComponentData
   | HeadingComponentData
@@ -84,15 +85,27 @@ export type ActionListTileComponentData = {
 
 export type GuidanceComponentData = {
   contentComponentId: 'blocks.guidance';
+  image: {
+    alt: string;
+    src: { publicURL: string; childImageSharp: { gatsbyImageData: IGatsbyImageData } };
+  };
   fileTitle: string;
-  fileType: 'figma' | 'storybook';
+  logoName?: 'figma' | 'storybook';
+  logoLabel?: string;
   url: string;
   heading?: string;
   description?: string;
-  image: {
-    alternativeText: string;
-    src: { publicURL: string; childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[] };
-  };
+  listItems?: {
+    headline?: string;
+    text: string;
+  }[];
+};
+
+export type AnatomyComponentData = {
+  contentComponentId: 'blocks.anatomy';
+  embedUrl: string;
+  heading?: string;
+  description?: string;
   listItems?: {
     headline?: string;
     text: string;
@@ -204,7 +217,6 @@ export type ComponentPreviewComponentData = {
   contentComponentId: 'blocks.component-preview';
   exampleFile: string;
   withMenu: boolean;
-  wrapper: 'display' | 'minimal' | 'none';
 };
 
 export type ComponentRendererProps = {

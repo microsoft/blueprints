@@ -11,6 +11,7 @@
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
+    "examples-to-strings": "node src/scripts/examples-to-strings.mjs",
     "lint": "eslint . --fix -c .eslintrc.js",
     "start": "gatsby develop"
   },
@@ -24,6 +25,7 @@
     "@fluentui/react-utilities": "^9.15.2",
     "@griffel/react": "^1.5.18",
     "@microsoft/arbutus.action-list-tile": "1.0.7",
+    "@microsoft/arbutus.badge": "^1.0.6",
     "@microsoft/arbutus.bookmark-tile": "1.0.7",
     "@microsoft/arbutus.callout": "1.0.7",
     "@microsoft/arbutus.code-snippet": "1.0.6",

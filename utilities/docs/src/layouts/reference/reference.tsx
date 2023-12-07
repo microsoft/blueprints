@@ -40,6 +40,17 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
       <Text block variant="jumbo" as="h1">
         {title}
       </Text>
+
+      {definition && (
+        <Text
+          block
+          variant="leading"
+          as="p"
+          className={mergeClasses(space.my5, space.mb10)}
+        >
+          {definition}
+        </Text>
+      )}
       <div className={space.my5}>
         <ResourceChip
           text="Figma Toolkit"
@@ -56,17 +67,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
           className={space.mr3}
         />
       </div>
-      {definition && (
-        <Text
-          block
-          variant="leading"
-          as="p"
-          className={mergeClasses(space.my5, space.mb10)}
-        >
-          {definition}
-        </Text>
-      )}
-      <Grid layout="small">
+      {/* <Grid layout="small">
         {owners.map((owner, index) => (
           <PersonTile
             key={index}
@@ -77,7 +78,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
             onClick={makeTeamsLink(owner.alias)}
           />
         ))}
-      </Grid>
+      </Grid> */}
 
       <Tabs className={space.mt12}>
         <TabList>
