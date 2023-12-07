@@ -4,16 +4,12 @@ type SandpackFiles = SandpackProps['files'];
 
 export type SandboxProps = {
   /**
-   * Files of the sandboxed application.
+   * Component code to render.
    */
-  // This is passed to a third-party component, so we have to use any here.
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  files: SandpackFiles | Record<string, any>;
+  componentCode: string;
 
   /**
    * Dependencies of the sandboxed application.
    */
-  dependencies: {
-    [dependency: string]: string;
-  };
+  dependencies?: (string | [string, string])[];
 };
