@@ -19,6 +19,7 @@ export type ComponentData =
   | OrderedListComponentData
   | PersonTileComponentData
   | RecommendationComponentData
+  | SandboxComponentData
   | TextComponentData;
 
 export type HeadingComponentData = {
@@ -221,6 +222,12 @@ export type ComponentPreviewComponentData = {
 
 export type ComponentRendererProps = {
   content?: ComponentData[] | [];
+};
+
+export type SandboxComponentData = {
+  contentComponentId: 'blocks.sandbox';
+  codeFile: string;
+  dependencies?: ([string, string] | string)[];
 };
 
 export type ComponentProps = {

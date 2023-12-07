@@ -16,6 +16,7 @@ import { OrderedListComponent } from './ordered-list';
 import { PersonTileComponent } from './person-tile';
 import { PropTableComponent } from './prop-table';
 import { RecommendationTileComponent } from './recommendation-tile';
+import { SandboxComponent } from './sandbox';
 import { TextComponent } from './text';
 
 export const components = {
@@ -29,6 +30,7 @@ export const components = {
   'blocks.image': ImageComponent,
   'blocks.introduction-text': IntroductionTextComponent,
   'blocks.prop-table': PropTableComponent,
+  'blocks.sandbox': SandboxComponent,
   'blocks.text': TextComponent,
   'lists.mark-list': MarkListComponent,
   'lists.ordered-list': OrderedListComponent,

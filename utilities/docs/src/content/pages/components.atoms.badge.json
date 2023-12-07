@@ -104,6 +104,11 @@
           "title": "Sandbox",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "code": "badge-basic.example.tsx",
+          "dependencies": ["@microsoft/arbutus.badge"]
         }
       ]
     }

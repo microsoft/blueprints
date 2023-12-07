@@ -155,6 +155,11 @@ export const query = graphql`
       text
     }
   }
+  fragment SandboxComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    codeFile
+    dependencies
+  }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
       ...Metadata
