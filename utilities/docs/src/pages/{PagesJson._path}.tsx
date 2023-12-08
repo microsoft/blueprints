@@ -19,12 +19,13 @@ type JsonPageContext = {
 
 export type JsonPageData = {
   pagesJson: {
-    packageName: string;
     _layout: LayoutKey;
     _path: string;
     title: string;
     leading?: string;
     definition?: string;
+    packageName?: string;
+    figmaLink?: string;
     owners?: {
       alias: string;
       firstName: string;
@@ -104,7 +105,22 @@ export const query = graphql`
     size
     as
   }
+  fragment HeadingComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    title
+    leading
+    withCopyLink
+    withDivider
+    size
+    as
+  }
   fragment TextComponent on PagesJsonContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+  }
+  fragment TextComponentTabs on PagesJsonTabsContent {
     contentComponentId
     markdown {
       raw
@@ -116,6 +132,47 @@ export const query = graphql`
       raw
     }
   }
+  fragment IntroductionTextComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+  }
+  fragment ComponentPreviewComponent on PagesJsonContent {
+    contentComponentId
+    exampleFile
+    withMenu
+  }
+  fragment ComponentPreviewComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    exampleFile
+    withMenu
+  }
+  fragment AnatomyComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    embedUrl
+    listItems {
+      headline
+      text
+    }
+  }
+  fragment SandboxComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    codeFile
+    dependencies
+  }
+  fragment EmbedTabs on PagesJsonTabsContent {
+    contentComponentId
+    url
+    type
+    title
+    size
+  }
+  fragment PropTableTabs on PagesJsonTabsContent {
+    contentComponentId
+    componentName
+    componentPropType
+  }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
       ...Metadata
@@ -123,6 +180,7 @@ export const query = graphql`
       ...Owners
       ...HeroImage
       packageName
+      figmaLink
       content {
         ...HeadingComponent
         ...IntroductionTextComponent
@@ -138,6 +196,12 @@ export const query = graphql`
           withDivider
           size
           as
+          ...HeadingComponentTabs
+          ...AnatomyComponentTabs
+          ...ComponentPreviewComponentTabs
+          ...EmbedTabs
+          ...SandboxComponentTabs
+          ...PropTableTabs
         }
       }
     }

@@ -53,7 +53,7 @@ const themes: { value: ThemeOption; label: string }[] = [
 
 const useWrapperStyles = makeStyles({
   root: {
-    minHeight: '480px',
+    minHeight: '240px',
     display: 'grid',
     justifyItems: 'center',
     alignItems: 'center',

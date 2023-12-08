@@ -14,7 +14,8 @@ type Contributor = {
 export type ReferenceLayoutProps = {
   title: string;
   definition: string;
-  packageName: string;
+  packageName?: string;
+  figmaLink?: string;
   owners: Contributor[];
   tabs:
     | {

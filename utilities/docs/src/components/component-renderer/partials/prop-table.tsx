@@ -16,7 +16,5 @@ export const PropTableComponent: React.FC<PropTableComponentProps> = ({
     return null;
   }
 
-  return (
-    <PropTable propsDoc={propsDoc} caption={`${componentName}: ${componentPropType}`} />
-  );
+  return <PropTable propsDoc={propsDoc} caption={componentPropType} />;
 };

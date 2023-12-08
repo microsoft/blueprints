@@ -9,29 +9,22 @@ import * as React from 'react';
 import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
 
 import { ComponentRenderer } from '../../components/component-renderer';
-import { Grid } from '../../components/grid';
 import { useReferenceStyles } from './reference.styles';
 import type { ReferenceLayoutProps } from './reference.types';
 
 export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
-  title,
   definition,
+  figmaLink,
   owners,
   packageName,
   tabs,
+  title,
 }) => {
   const space = useSpaceStyles();
   const classes = useReferenceStyles();
 
-  const makeTeamsLink = (alias?: string) => () =>
-    alias &&
-    window?.open(
-      `https://teams.microsoft.com/l/chat/0/0?users=${alias}@microsoft.com`,
-      '_blank',
-    );
-
-  const { copy: copyPackageName } = useCopyToClipboard();
-  const handleCopyPackageName = () => copyPackageName(packageName);
+  const { copy: copyPackageName, status } = useCopyToClipboard();
+  const handleCopyPackageName = () => copyPackageName(packageName ?? '');
   const handleFigmaToolkitClick = () =>
     window.open('https://www.figma.com/@microsoft', '_blank');
 
@@ -40,22 +33,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
       <Text block variant="jumbo" as="h1">
         {title}
       </Text>
-      <div className={space.my5}>
-        <ResourceChip
-          text="Figma Toolkit"
-          actionIconName="link"
-          onClick={handleFigmaToolkitClick}
-          logoName="figma"
-          logoLabel="Figma"
-          className={space.mr3}
-        />
-        <ResourceChip
-          text={packageName}
-          actionIconName="copy"
-          onClick={handleCopyPackageName}
-          className={space.mr3}
-        />
-      </div>
+
       {definition && (
         <Text
           block
@@ -66,18 +44,26 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
           {definition}
         </Text>
       )}
-      <Grid layout="small">
-        {owners.map((owner, index) => (
-          <PersonTile
-            key={index}
-            firstName={owner.firstName}
-            lastName={owner.lastName ?? ''}
-            role={owner.role}
-            avatarSrc={owner.avatar?.url}
-            onClick={makeTeamsLink(owner.alias)}
+      <div className={space.my5}>
+        {figmaLink && (
+          <ResourceChip
+            text="Figma Toolkit"
+            actionIconName="link"
+            onClick={handleFigmaToolkitClick}
+            logoName="figma"
+            logoLabel="Figma"
+            className={space.mr3}
           />
-        ))}
-      </Grid>
+        )}
+        {packageName && (
+          <ResourceChip
+            text={packageName}
+            actionIconName={status === 'ready' ? 'copy' : 'check'}
+            onClick={handleCopyPackageName}
+            className={space.mr3}
+          />
+        )}
+      </div>
 
       <Tabs className={space.mt12}>
         <TabList>

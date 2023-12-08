@@ -4,90 +4,66 @@
 import type { Manifest } from '@microsoft/arbutus.prop-docs-cli';
 
 const manifest: Manifest = {
-  DemoComponent: {
+  Badge: {
     tags: {},
-    filePath: '__dev__/demo-component/demo-component.tsx',
+    filePath: '../../components/badge/src/badge/badge.tsx',
     description: '',
-    displayName: 'DemoComponent',
+    displayName: 'Badge',
     methods: [],
     props: {
-      title: {
-        defaultValue: null,
-        description: 'The title of the DemoComponent.',
-        name: 'title',
-        declarations: [
-          {
-            fileName: 'prop-table/__dev__/demo-component/demo-component.types.tsx',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: true,
-        type: { name: 'string' },
-      },
-      description: {
-        defaultValue: null,
-        description: 'Description of the DemoComponent.',
-        name: 'description',
-        declarations: [
-          {
-            fileName: 'prop-table/__dev__/demo-component/demo-component.types.tsx',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: false,
-        type: { name: 'string' },
-      },
-      callToAction: {
-        defaultValue: { value: 'Hello 👋' },
-        description: 'Call to action text.',
-        name: 'callToAction',
-        declarations: [
-          {
-            fileName: 'prop-table/__dev__/demo-component/demo-component.types.tsx',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: false,
-        type: { name: 'string' },
-      },
       className: {
         defaultValue: null,
-        description: 'Custom class name for the component root.',
+        description: 'Consumer provided class.',
         name: 'className',
         declarations: [
           {
-            fileName: 'prop-table/__dev__/demo-component/demo-component.types.tsx',
+            fileName: 'arbutus/components/badge/src/badge/badge.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: false,
         type: { name: 'string' },
       },
-      onClick: {
-        defaultValue: null,
-        description: 'Click handler.',
-        name: 'onClick',
+      color: {
+        defaultValue: { value: 'primary' },
+        description: 'Selection of color options.',
+        name: 'color',
         declarations: [
           {
-            fileName: 'prop-table/__dev__/demo-component/demo-component.types.tsx',
+            fileName: 'arbutus/components/badge/src/badge/badge.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'ColorVariant' },
+      },
+      iconName: {
+        defaultValue: null,
+        description: 'Selection of icons.',
+        name: 'iconName',
+        declarations: [
+          {
+            fileName: 'arbutus/components/badge/src/badge/badge.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: true,
-        type: { name: '() => void' },
+        type: {
+          name: '"arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "code" | "copy" | "download" | "exclamation" | "link" | "moon" | "open" | "sun" | "x"',
+        },
       },
-      text: {
+      isInline: {
         defaultValue: null,
-        description: 'Text to display.\n@deprecated Use `title` instead.',
-        name: 'text',
+        description: 'Sets the Badge to be an inline element.',
+        name: 'isInline',
         declarations: [
           {
-            fileName: 'prop-table/__dev__/demo-component/demo-component.types.tsx',
+            fileName: 'arbutus/components/badge/src/badge/badge.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: false,
-        type: { name: 'string' },
+        type: { name: 'boolean' },
       },
     },
   },

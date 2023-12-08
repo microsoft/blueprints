@@ -58,3 +58,14 @@ Minimal.args = {
   url: 'https://www.figma.com',
   openButtonLabel: 'Open in Figma',
 };
+
+export const StandaloneImage = Template.bind({}) as StoryFn<
+  FunctionComponent<GuidanceProps>
+>;
+StandaloneImage.args = {
+  imageProps: {
+    src: image,
+    alt: 'Image alt text',
+  },
+  legendListItems: legendListItems,
+};

@@ -1,0 +1,4 @@
+{
+  "componentPaths": ["../../components/badge/src/badge/badge.tsx"],
+  "outputDir": "src/__prop-docs__"
+}
