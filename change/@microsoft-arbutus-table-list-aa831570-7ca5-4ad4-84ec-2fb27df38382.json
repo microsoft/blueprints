@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Adds a layout improvement, so the caption and description always have predictable spacing in between.",
+  "packageName": "@microsoft/arbutus.table-list",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}

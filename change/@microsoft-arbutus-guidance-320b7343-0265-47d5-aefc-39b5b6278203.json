@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Adds new variant for Guidance without a file.",
+  "packageName": "@microsoft/arbutus.guidance",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
