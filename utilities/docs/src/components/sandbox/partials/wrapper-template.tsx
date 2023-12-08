@@ -1,4 +1,4 @@
-export const theme = `import 'normalize.css';
+export const themeProvider = `import 'normalize.css';
 
 import { makeStaticStyles } from '@griffel/react';
 import {

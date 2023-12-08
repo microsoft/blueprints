@@ -18,6 +18,7 @@ export type ComponentData =
   | MarkListComponentData
   | OrderedListComponentData
   | PersonTileComponentData
+  | PropTableComponentData
   | RecommendationComponentData
   | SandboxComponentData
   | TextComponentData;

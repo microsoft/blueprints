@@ -96,30 +96,37 @@ export const TableList: FC<TableListProps> = ({
 
   return (
     <TableListProvider value={{ variant, columnSizing, headerItems, isCollapsed }}>
-      {caption && (
-        <Text block variant="headline" id={labelById} className={classes.caption}>
-          {caption}
-        </Text>
-      )}
-      {description && (
-        <Text block variant="description" id={describedById} className={classes.caption}>
-          {description}
-        </Text>
-      )}
-      <table
-        className={mergeClasses(
-          classes.root,
-          variant === 'default' && classes.boundary,
-          isCollapsed && classes.collapsed,
-          className,
+      <div>
+        {caption && (
+          <Text block variant="headline" id={labelById} className={classes.caption}>
+            {caption}
+          </Text>
         )}
-        ref={tableRef}
-        {...(caption ? { 'aria-labelledby': labelById } : {})}
-        {...(description ? { 'aria-describedby': describedById } : {})}
-        {...rest}
-      >
-        {children}
-      </table>
+        {description && (
+          <Text
+            block
+            variant="description"
+            id={describedById}
+            className={classes.caption}
+          >
+            {description}
+          </Text>
+        )}
+        <table
+          className={mergeClasses(
+            classes.root,
+            variant === 'default' && classes.boundary,
+            isCollapsed && classes.collapsed,
+            className,
+          )}
+          ref={tableRef}
+          {...(caption ? { 'aria-labelledby': labelById } : {})}
+          {...(description ? { 'aria-describedby': describedById } : {})}
+          {...rest}
+        >
+          {children}
+        </table>
+      </div>
     </TableListProvider>
   );
 };

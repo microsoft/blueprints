@@ -19,12 +19,13 @@ type JsonPageContext = {
 
 export type JsonPageData = {
   pagesJson: {
-    packageName: string;
     _layout: LayoutKey;
     _path: string;
     title: string;
     leading?: string;
     definition?: string;
+    packageName?: string;
+    figmaLink?: string;
     owners?: {
       alias: string;
       firstName: string;
@@ -160,6 +161,17 @@ export const query = graphql`
     codeFile
     dependencies
   }
+  fragment EmbedTabs on PagesJsonTabsContent {
+    contentComponentId
+    url
+    type
+    title
+  }
+  fragment PropTableTabs on PagesJsonTabsContent {
+    contentComponentId
+    componentName
+    componentPropType
+  }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
       ...Metadata
@@ -167,6 +179,7 @@ export const query = graphql`
       ...Owners
       ...HeroImage
       packageName
+      figmaLink
       content {
         ...HeadingComponent
         ...IntroductionTextComponent
@@ -183,8 +196,11 @@ export const query = graphql`
           size
           as
           ...HeadingComponentTabs
-          ...ComponentPreviewComponentTabs
           ...AnatomyComponentTabs
+          ...ComponentPreviewComponentTabs
+          ...EmbedTabs
+          ...SandboxComponentTabs
+          ...PropTableTabs
         }
       }
     }

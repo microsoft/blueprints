@@ -6,6 +6,8 @@ import type { EmbedComponentData } from '../component-renderer.types';
 
 type EmbedComponentProps = EmbedComponentData;
 
-export const EmbedComponent: FC<EmbedComponentProps> = ({ url, size, title, type }) => (
+export const EmbedComponent: FC<EmbedComponentProps> = ({ url, size, title, type }) => {
+  console.table({ url, size, title, type })
+  return (
   <Embed title={title} type={type} url={url} size={size ?? 'medium'} />
-);
+)};

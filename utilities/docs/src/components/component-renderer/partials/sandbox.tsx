@@ -31,13 +31,13 @@ export const SandboxComponent: FC<SandboxComponentProps> = ({
   dependencies,
 }) => {
   // Getting a code example file as a string.
-  const [code, setCode] = useState<string>('');
+  const [code, setCode] = useState<string>();
 
   useEffect(() => {
     async function loadExample() {
       const rawCode = await importExampleRaw(codeFile);
 
-      setCode(rawCode ?? '');
+      setCode(rawCode);
     }
 
     loadExample().catch((err) => {
@@ -45,10 +45,9 @@ export const SandboxComponent: FC<SandboxComponentProps> = ({
     });
   }, [codeFile]);
 
-  return (
-    <Sandbox
-      componentCode={code}
-      dependencies={dependencies}
-    />
-  );
+  if (!code) {
+    return null;
+  }
+
+  return <Sandbox componentCode={code} dependencies={dependencies} />;
 };

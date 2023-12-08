@@ -4,6 +4,7 @@
   "title": "Badge",
   "definition": "Badge is a small, circular component that aids in visualizing status or metadata.  They serve as a visual indicator that attracts the user’s attention to new or important items, like warnings or updates. Badge’s appearance can be customized to match its semantic context.",
   "packageName": "@microsoft/blueprints.badge",
+  "figmaLink": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1014%3A3408&mode=design&t=2XPOSCIx96AOt7qn-1",
   "owners": [
     {
       "firstName": "Ria",
@@ -91,6 +92,13 @@
           "title": "Guidance",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.embed",
+          "url": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FV2bt7PbLPJEDXCEIcUwrEa%2FFluent-Blueprints-UI-Kit%3Ftype%3Ddesign%26node-id%3D1014%253A3408%26mode%3Ddesign%26t%3D2XPOSCIx96AOt7qn-1",
+          "type": "figma",
+          "size": "large",
+          "title": "Badge UI kit"
         }
       ]
     },
@@ -107,8 +115,13 @@
         },
         {
           "contentComponentId": "blocks.sandbox",
-          "code": "badge-basic.example.tsx",
+          "codeFile": "badge-basic.example.tsx",
           "dependencies": ["@microsoft/arbutus.badge"]
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "Badge",
+          "componentPropType": "BadgeProps"
         }
       ]
     }

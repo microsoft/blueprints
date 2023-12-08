@@ -1,12 +1,14 @@
-import type { SandpackSetup } from '@codesandbox/sandpack-react';
+import type { SandpackSetup, SandpackThemeProp } from '@codesandbox/sandpack-react';
 import { Sandpack } from '@codesandbox/sandpack-react';
 import type { FC } from 'react';
 import * as React from 'react';
+import { useTheme } from '@microsoft/arbutus.theming';
 
 import { app } from './partials/app-template';
 import { centered } from './partials/centered-template';
-import { theme } from './partials/wrapper-template';
+import { themeProvider } from './partials/wrapper-template';
 import type { SandboxProps } from './sandbox.types';
+import { entry } from './partials/index-template';
 
 export const Sandbox: FC<SandboxProps> = ({ componentCode, dependencies }) => {
   // (1) Constructing a dependency object.
@@ -30,7 +32,7 @@ export const Sandbox: FC<SandboxProps> = ({ componentCode, dependencies }) => {
 
   // (2) Constructing Sandbox configuration.
   const customSetup: SandpackSetup = {
-    entry: '/app.tsx',
+    entry: '/index.tsx',
     dependencies: {
       '@griffel/react': 'latest',
       '@microsoft/arbutus.fonts': 'latest',
@@ -45,13 +47,21 @@ export const Sandbox: FC<SandboxProps> = ({ componentCode, dependencies }) => {
 
   const files = {
     '/component.tsx': {
-      componentCode,
+      code: componentCode,
       active: true,
     },
     '/app.tsx': app,
-    '/theme.tsx': theme,
+    '/theme.tsx': themeProvider,
     '/centered.tsx': centered,
+    '/index.tsx': {
+      code: entry,
+      hidden: true,
+    },
   };
 
-  return <Sandpack template="react-ts" files={files} customSetup={customSetup} />;
+  // (3) Getting theme.
+  const { themeKey } = useTheme();
+  const theme: SandpackThemeProp = themeKey === 'light' ? 'light' : 'dark';
+
+  return <Sandpack theme={theme} template="react-ts" files={files} customSetup={customSetup} />;
 };

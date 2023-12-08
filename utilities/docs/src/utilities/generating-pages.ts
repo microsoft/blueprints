@@ -79,6 +79,7 @@ export function formatDataToProps({
         title: data.title,
         definition: data.definition,
         packageName: data.packageName,
+        figmaLink: data.figmaLink,
         owners: data.owners ?? [],
         tabs: data.tabs ?? [],
       } as ReferenceLayoutProps,
