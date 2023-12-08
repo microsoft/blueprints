@@ -60,7 +60,7 @@ export const usePreviewStyles = makeStyles({
     borderBottomStyle: 'none',
     borderLeftStyle: 'none',
     borderRightStyle: 'none',
-  }
+  },
 });
 
 const Preview: FC<Pick<AnatomyComponentProps, 'embedUrl'> & { className: string }> = ({

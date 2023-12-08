@@ -63,5 +63,7 @@ export const Sandbox: FC<SandboxProps> = ({ componentCode, dependencies }) => {
   const { themeKey } = useTheme();
   const theme: SandpackThemeProp = themeKey === 'light' ? 'light' : 'dark';
 
-  return <Sandpack theme={theme} template="react-ts" files={files} customSetup={customSetup} />;
+  return (
+    <Sandpack theme={theme} template="react-ts" files={files} customSetup={customSetup} />
+  );
 };

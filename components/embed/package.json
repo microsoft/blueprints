@@ -26,7 +26,7 @@
     "@microsoft/arbutus.logo": "1.0.4",
     "@microsoft/arbutus.text": "1.0.6",
     "@microsoft/arbutus.use-space-styles": "1.0.7",
-    "@fluentui/react-spinner": "^9.2.2",
+    "@fluentui/react-spinner": "^9.3.31",
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18"
   },

@@ -3,9 +3,9 @@ import { readdirSync } from 'fs';
 
 const EXAMPLES_DIR = './src/code-examples';
 
-const files = readdirSync(EXAMPLES_DIR).map(
-  (file) => `${EXAMPLES_DIR}/${file}`
-).filter((file) => file.includes('.example.'));
+const files = readdirSync(EXAMPLES_DIR)
+  .map((file) => `${EXAMPLES_DIR}/${file}`)
+  .filter((file) => file.includes('.example.'));
 
 console.log(files);
 

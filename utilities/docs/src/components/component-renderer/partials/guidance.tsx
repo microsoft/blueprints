@@ -21,7 +21,6 @@ export const GuidanceComponent: FC<GuidanceComponentProps> = ({
   listItems,
 }) => {
   const legendListItems = formatListItemData(listItems);
-  console.log(image)
   const imageSrc = image?.src?.childImageSharp?.gatsbyImageData;
 
   return (
