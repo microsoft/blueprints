@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Fri, 08 Dec 2023 23:06:24 GMT",
+      "version": "1.0.6",
+      "tag": "@microsoft/arbutus.icon_v1.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "05afd448eaa47e0e772df6587404e502c3fc772b",
+            "comment": "Improves sizing on the check icon."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.0.5",
       "tag": "@microsoft/arbutus.icon_v1.0.5",

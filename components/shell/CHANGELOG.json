@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.shell",
   "entries": [
     {
+      "date": "Fri, 08 Dec 2023 23:06:24 GMT",
+      "version": "1.1.8",
+      "tag": "@microsoft/arbutus.shell_v1.1.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.shell",
+            "comment": "Bump @microsoft/arbutus.icon-button to v1.0.8",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.1.7",
       "tag": "@microsoft/arbutus.shell_v1.1.7",

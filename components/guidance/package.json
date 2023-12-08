@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.guidance",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Guidance composite component in the Content collection. Guidance is an interactive UI for showcasing best practices and anatomy.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.icon-button": "1.0.7",
+    "@microsoft/arbutus.icon-button": "1.0.8",
     "@microsoft/arbutus.logo": "1.0.4",
     "@microsoft/arbutus.ordered-list": "1.0.4",
     "@microsoft/arbutus.text": "1.0.6",

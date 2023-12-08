@@ -2,6 +2,27 @@
   "name": "@microsoft/arbutus.embed",
   "entries": [
     {
+      "date": "Fri, 08 Dec 2023 23:06:24 GMT",
+      "version": "1.0.8",
+      "tag": "@microsoft/arbutus.embed_v1.0.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.embed",
+            "commit": "c2d7ebc132f5e5d70d41e89bee9e3b77d8f6cc85",
+            "comment": "Dependencies upgrade"
+          },
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.embed",
+            "comment": "Bump @microsoft/arbutus.icon-button to v1.0.8",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.0.7",
       "tag": "@microsoft/arbutus.embed_v1.0.7",

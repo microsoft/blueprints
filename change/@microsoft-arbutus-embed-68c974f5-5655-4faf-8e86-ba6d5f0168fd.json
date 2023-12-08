@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Dependencies upgrade",
-  "packageName": "@microsoft/arbutus.embed",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

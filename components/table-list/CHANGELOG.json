@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.table-list",
   "entries": [
     {
+      "date": "Fri, 08 Dec 2023 23:06:24 GMT",
+      "version": "1.1.5",
+      "tag": "@microsoft/arbutus.table-list_v1.1.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.table-list",
+            "commit": "05afd448eaa47e0e772df6587404e502c3fc772b",
+            "comment": "Adds a layout improvement, so the caption and description always have predictable spacing in between."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.1.4",
       "tag": "@microsoft/arbutus.table-list_v1.1.4",

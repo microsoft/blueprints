@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.prop-table",
   "entries": [
     {
+      "date": "Fri, 08 Dec 2023 23:06:24 GMT",
+      "version": "1.0.8",
+      "tag": "@microsoft/arbutus.prop-table_v1.0.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.prop-table",
+            "comment": "Bump @microsoft/arbutus.table-list to v1.1.5",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.0.7",
       "tag": "@microsoft/arbutus.prop-table_v1.0.7",
