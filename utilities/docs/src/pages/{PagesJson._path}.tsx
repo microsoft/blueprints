@@ -166,6 +166,7 @@ export const query = graphql`
     url
     type
     title
+    size
   }
   fragment PropTableTabs on PagesJsonTabsContent {
     contentComponentId
