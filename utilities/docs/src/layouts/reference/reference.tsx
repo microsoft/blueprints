@@ -25,8 +25,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
 
   const { copy: copyPackageName, status } = useCopyToClipboard();
   const handleCopyPackageName = () => copyPackageName(packageName ?? '');
-  const handleFigmaToolkitClick = () =>
-    window.open(figmaLink, '_blank');
+  const handleFigmaToolkitClick = () => window.open(figmaLink, '_blank');
 
   return (
     <>
