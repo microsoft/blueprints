@@ -173,6 +173,12 @@ export const query = graphql`
     componentName
     componentPropType
   }
+  fragment TableListComponentTabs on PagesJsonTabsContent {
+    contentComponentId
+    variant
+    data
+    columnSizing
+  }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
       ...Metadata
@@ -202,6 +208,7 @@ export const query = graphql`
           ...EmbedTabs
           ...SandboxComponentTabs
           ...PropTableTabs
+          ...TableListComponentTabs
         }
       }
     }
