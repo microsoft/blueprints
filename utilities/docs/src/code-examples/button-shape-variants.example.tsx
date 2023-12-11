@@ -17,11 +17,13 @@ const ExampleComponent = () => {
     <>
       <div className={classes.root}>
         <Button>Primary brick</Button>
-        <Button color='secondary'>Secondary brick</Button>
+        <Button color="secondary">Secondary brick</Button>
       </div>
       <div className={classes.root}>
-        <Button shape="pill" >Primary pill</Button>
-        <Button shape="pill" color='secondary'>Secondary pill</Button>
+        <Button shape="pill">Primary pill</Button>
+        <Button shape="pill" color="secondary">
+          Secondary pill
+        </Button>
       </div>
     </>
   );

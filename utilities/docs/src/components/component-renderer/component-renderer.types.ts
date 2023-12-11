@@ -224,14 +224,13 @@ export type ComponentPreviewComponentData = {
 
 export type TableListComponentData = {
   contentComponentId: 'lists.table-list';
-  data: string[][],
+  data: string[][];
   headers?: {
     text: string;
   }[];
   variant?: 'default' | 'alternating' | 'borderless';
   columnSizing?: (number | string)[];
-
-}
+};
 
 export type ComponentRendererProps = {
   content?: ComponentData[] | [];

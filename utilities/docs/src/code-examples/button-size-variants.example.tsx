@@ -16,9 +16,15 @@ const ExampleComponent = () => {
 
   return (
     <div className={classes.root}>
-      <Button color="secondary" size="small">Small</Button>
-      <Button color="secondary" size="medium">Medium</Button>
-      <Button color="secondary" size="large">Large</Button>
+      <Button color="secondary" size="small">
+        Small
+      </Button>
+      <Button color="secondary" size="medium">
+        Medium
+      </Button>
+      <Button color="secondary" size="large">
+        Large
+      </Button>
     </div>
   );
 };
