@@ -21,6 +21,7 @@ export type ComponentData =
   | PropTableComponentData
   | RecommendationComponentData
   | SandboxComponentData
+  | TableListComponentData
   | TextComponentData;
 
 export type HeadingComponentData = {
@@ -220,6 +221,17 @@ export type ComponentPreviewComponentData = {
   exampleFile: string;
   withMenu: boolean;
 };
+
+export type TableListComponentData = {
+  contentComponentId: 'lists.table-list';
+  data: string[][],
+  headers?: {
+    text: string;
+  }[];
+  variant?: 'default' | 'alternating' | 'borderless';
+  columnSizing?: (number | string)[];
+
+}
 
 export type ComponentRendererProps = {
   content?: ComponentData[] | [];

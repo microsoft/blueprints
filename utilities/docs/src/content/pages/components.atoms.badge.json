@@ -19,7 +19,7 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
+          "as": "h2",
           "size": "title",
           "title": "Anatomy",
           "withCopyLink": false,
@@ -42,6 +42,14 @@
         {
           "contentComponentId": "blocks.heading",
           "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
           "size": "headline",
           "title": "Base Example",
           "withCopyLink": false,
@@ -56,7 +64,7 @@
           "contentComponentId": "blocks.heading",
           "title": "Color Variants",
           "leading": "Badge comes in an array of colors and can be customized to match its semantic context. The default color is primary or neutral foreground in your theme.",
-          "as": "h2",
+          "as": "h3",
           "size": "headline",
           "withCopyLink": false,
           "withDivider": false
@@ -70,7 +78,7 @@
           "contentComponentId": "blocks.heading",
           "title": "Inline Example",
           "leading": "A technical aspect of positioning the badge next to or in line with text.",
-          "as": "h2",
+          "as": "h3",
           "size": "headline",
           "withCopyLink": false,
           "withDivider": false
@@ -87,7 +95,7 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
+          "as": "h2",
           "size": "title",
           "title": "Guidance",
           "withCopyLink": false,
@@ -107,7 +115,7 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
+          "as": "h2",
           "size": "title",
           "title": "Sandbox",
           "withCopyLink": false,
@@ -117,6 +125,14 @@
           "contentComponentId": "blocks.sandbox",
           "codeFile": "badge-basic.example.tsx",
           "dependencies": ["@microsoft/arbutus.badge"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
