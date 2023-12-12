@@ -7,7 +7,7 @@ const ExampleComponent = () => {
    * [optional] Use the `useSpaceStyles` hook to easily apply spacing to any component. In this case, we will use `my`,
    * which will translate to margin top and bottom. `my6` will apply a margin of 6 vertical units or
    * `tokens.spacingHorizontalM`.
-   * 
+   *
    * @see https://microsoft.github.io/blueprints/utilities/hooks/use-space-styles/
    */
   const space = useSpaceStyles();

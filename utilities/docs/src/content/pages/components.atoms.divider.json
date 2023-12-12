@@ -106,7 +106,10 @@
         {
           "contentComponentId": "blocks.sandbox",
           "codeFile": "divider-basic.example.tsx",
-          "dependencies": ["@microsoft/arbutus.divider", "@microsoft/arbutus.use-space-styles"]
+          "dependencies": [
+            "@microsoft/arbutus.divider",
+            "@microsoft/arbutus.use-space-styles"
+          ]
         },
         {
           "contentComponentId": "blocks.heading",
