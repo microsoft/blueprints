@@ -1,31 +1,27 @@
 import { mergeClasses } from '@griffel/react';
-import { PersonTile } from '@microsoft/arbutus.person-tile';
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@microsoft/arbutus.tabs';
 import { Text } from '@microsoft/arbutus.text';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import { ResourceChip } from '@microsoft/arbutus.resource-chip';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
 
 import { ComponentRenderer } from '../../components/component-renderer';
 import { useReferenceStyles } from './reference.styles';
 import type { ReferenceLayoutProps } from './reference.types';
+import {
+  QuickResource,
+  isCopyResource,
+  isLinkResource,
+} from '../../components/quick-resource';
 
 export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
   definition,
-  figmaLink,
-  owners,
-  packageName,
+  quickResources,
   tabs,
   title,
 }) => {
   const space = useSpaceStyles();
   const classes = useReferenceStyles();
-
-  const { copy: copyPackageName, status } = useCopyToClipboard();
-  const handleCopyPackageName = () => copyPackageName(packageName ?? '');
-  const handleFigmaToolkitClick = () => window.open(figmaLink, '_blank');
 
   return (
     <>
@@ -43,26 +39,27 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
           {definition}
         </Text>
       )}
-      <div className={space.my5}>
-        {figmaLink && (
-          <ResourceChip
-            text="Figma Toolkit"
-            actionIconName="link"
-            onClick={handleFigmaToolkitClick}
-            logoName="figma"
-            logoLabel="Figma"
-            className={space.mr3}
-          />
-        )}
-        {packageName && (
-          <ResourceChip
-            text={packageName}
-            actionIconName={status === 'ready' ? 'copy' : 'check'}
-            onClick={handleCopyPackageName}
-            className={space.mr3}
-          />
-        )}
-      </div>
+      {quickResources && (
+        <div className={space.my5}>
+          {quickResources.map((resource, index) => {
+            let key = '';
+            if (isCopyResource(resource)) {
+              key = resource.copyText;
+            }
+            if (isLinkResource(resource)) {
+              key = resource.label;
+            }
+
+            return (
+              <QuickResource
+                key={`${index}--${key}`}
+                data={resource}
+                className={space.mr3}
+              />
+            );
+          })}
+        </div>
+      )}
 
       <Tabs className={space.mt12}>
         <TabList>

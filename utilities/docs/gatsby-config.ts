@@ -22,7 +22,6 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    // gatsby-transformer-remark is used to parse rich text fields in Strapi.
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-manifest',

@@ -24,8 +24,16 @@ export type JsonPageData = {
     title: string;
     leading?: string;
     definition?: string;
-    packageName?: string;
-    figmaLink?: string;
+    quickResources: (
+      | {
+          label: string;
+          url: string;
+          type: 'figma' | 'storybook';
+        }
+      | {
+          copyText: string;
+        }
+    )[];
     owners?: {
       alias: string;
       firstName: string;
@@ -185,8 +193,12 @@ export const query = graphql`
       ...Description
       ...Owners
       ...HeroImage
-      packageName
-      figmaLink
+      quickResources {
+        label
+        url
+        type
+        copyText
+      }
       content {
         ...HeadingComponent
         ...IntroductionTextComponent

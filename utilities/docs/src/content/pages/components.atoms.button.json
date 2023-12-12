@@ -3,8 +3,16 @@
   "_path": "/components/atoms/button",
   "title": "Button",
   "definition": "A button triggers a single action or event. Use buttons for important actions like submitting a response, committing a change, or moving to the next step. For navigating to another place, try a link instead.",
-  "packageName": "@microsoft/blueprints.button",
-  "figmaLink": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A4009&mode=design&t=6bKJpme0RA4u7J7O-1",
+  "quickResources": [
+    {
+      "label": "FigmaToolkit",
+      "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A4009&mode=design&t=6bKJpme0RA4u7J7O-1",
+      "type": "figma"
+    },
+    {
+      "copyText": "@microsoft/blueprints.button"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
