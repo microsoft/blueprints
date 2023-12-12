@@ -1,3 +1,7 @@
+import type {
+  QuickResourceCopyTextProps,
+  QuickResourceLinkProps,
+} from '../components/quick-resource';
 import { BasicLayoutProps } from '../layouts/basic';
 import { ReferenceLayoutProps } from '../layouts/reference';
 import { WorkInProgressLayoutProps } from '../layouts/work-in-progress';
@@ -33,6 +37,16 @@ export function findDuplicates(arrayOfPaths: string[]) {
   }
 
   return { hasDuplicates: duplicates.length > 0, duplicates };
+}
+
+function removeNullProperties<T>(obj: T) {
+  const newObj = { ...obj };
+  for (const key in newObj) {
+    if (newObj[key] === null) {
+      delete newObj[key];
+    }
+  }
+  return newObj;
 }
 
 type FormatDataToPropsReturnValue =
@@ -73,13 +87,18 @@ export function formatDataToProps({
   }
 
   if (_layout === 'reference') {
+    const { quickResources = [] } = data;
+
+    const formattedQuickResources = quickResources?.map((resource) =>
+      removeNullProperties<QuickResourceCopyTextProps | QuickResourceLinkProps>(resource),
+    );
+
     return {
       key: 'reference',
       props: {
         title: data.title,
         definition: data.definition,
-        packageName: data.packageName,
-        figmaLink: data.figmaLink,
+        quickResources: formattedQuickResources,
         owners: data.owners ?? [],
         tabs: data.tabs ?? [],
       } as ReferenceLayoutProps,
