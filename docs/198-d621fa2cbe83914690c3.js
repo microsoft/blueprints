@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[198],{198:function(n,o,e){e.r(o),o.default="import * as React from 'react';\nimport { Icon } from '@microsoft/arbutus.icon';\n\nconst ExampleComponent = () => (\n  <p>\n    <Icon isInline color=\"positive\" iconName=\"check\" />\n    &ensp;Lorem ipsum dolor.\n  </p>\n);\n\nexport default ExampleComponent;\n"}}]);
+//# sourceMappingURL=198-d621fa2cbe83914690c3.js.map

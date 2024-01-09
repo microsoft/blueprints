@@ -33,12 +33,12 @@ const Logo: FC = () => {
 export const Shell: FC<ShellProps> = ({ children, location }) => {
   const isHome = location.pathname === withPrefix('/');
   const isComponentPreview = location.pathname.includes('/preview/');
-  const isComponentSandbox = location.pathname.includes('/sandbox/');
 
   const { themeKey } = useTheme();
+
   useCSSVars({
-    theme: BLUEPRINTS_DOCS_THEME,
     currentThemeKey: themeKey,
+    theme: BLUEPRINTS_DOCS_THEME,
     prefix: BLUEPRINTS_DOCS_PREFIX,
   });
 
@@ -51,7 +51,7 @@ export const Shell: FC<ShellProps> = ({ children, location }) => {
       closeTrayLabel="Close navigation"
       openTrayLabel="Open navigation"
       isHeroMode={isHome}
-      isBlankMode={isComponentPreview || isComponentSandbox}
+      isBlankMode={isComponentPreview}
       onLogoClick={navigateHome}
     >
       {children}

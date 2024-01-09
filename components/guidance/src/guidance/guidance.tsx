@@ -37,7 +37,7 @@ export const Guidance: FC<GuidanceProps> = ({
   fileTitle,
   heading,
   imageAs: Image = 'img',
-  imageProps,
+  imageProps = {},
   legendListItems,
   logoLabel,
   logoName,

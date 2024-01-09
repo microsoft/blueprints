@@ -138,7 +138,7 @@
           "contentComponentId": "blocks.heading",
           "as": "h2",
           "size": "title",
-          "title": "Sandbox",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },

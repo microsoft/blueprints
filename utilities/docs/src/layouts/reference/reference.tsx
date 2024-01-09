@@ -39,6 +39,7 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
           {definition}
         </Text>
       )}
+
       {quickResources && (
         <div className={space.my5}>
           {quickResources.map((resource, index) => {

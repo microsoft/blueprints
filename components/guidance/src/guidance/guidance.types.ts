@@ -75,12 +75,12 @@ export type GuidanceProps = {
    * Image element.
    * @default 'img'
    */
-  imageAs: ElementType;
+  imageAs?: ElementType;
 
   /**
    * Image element props.
    */
-  imageProps: Record<string, unknown>;
+  imageProps?: Record<string, unknown>;
 
   /**
    * Heading text.

@@ -1,9 +1,19 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/icon",
   "title": "Icon",
-  "definition": "This is a reference page.",
+  "definition": "Icons represent concepts, objects, or actions, and have semantic purpose within a layout. They should always be recognizable, functional, and easily understood.",
   "packageName": "@microsoft/blueprints.icon",
+  "quickResources": [
+    {
+      "label": "FigmaToolkit",
+      "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A4352&mode=design&t=Y9ohLhrBRnfRZ5BN-1",
+      "type": "figma"
+    },
+    {
+      "copyText": "@microsoft/blueprints.icon"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -24,12 +34,92 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D461%253A25%26mode%3Ddesign%26t%3DryiFbRsGTQSpcyEJ-1",
+          "listItems": [
+            {
+              "headline": "Icon",
+              "text": "Icons represent concepts, objects, or actions, and have semantic purpose within interface. They should always be recognizable. If you are using an icon to for an action, make sure there is a visible and screen-readable label. Do not expect the user to understand the meaning of the icon without a label."
+            },
+            {
+              "headline": "Color variants",
+              "text": "Icons come in semantic and neutral colors. Semantic colors are used to convey meaning and are used in the context of the action. Neutral colors are used for decorative purposes and are used in the context of the layout."
+            },
+            {
+              "headline": "Size",
+              "text": "Icons come in three sizes: small, medium, and large. All sizes align with the vertical rhythm of the grid."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "List of available icons",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "icon-list.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Color Variants",
+          "leading": "Color of the button signifies semantic meaning. Primary is the default.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "icon-color-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Size Variants",
+          "leading": "Medium size is the default.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "icon-size-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Inline example",
+          "leading": "A technical aspect of positioning the icon next to or in line with text.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "icon-inline.example.tsx",
+          "withMenu": true
         }
       ]
     },
@@ -38,12 +128,18 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Guidance",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.embed",
+          "url": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FV2bt7PbLPJEDXCEIcUwrEa%2FFluent-Blueprints-UI-Kit%3Ftype%3Ddesign%26node-id%3D1015%253A4352%26mode%3Ddesign%26t%3DY9ohLhrBRnfRZ5BN-1",
+          "type": "figma",
+          "size": "large",
+          "title": "Icon UI kit"
         }
       ]
     },
@@ -52,17 +148,29 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "icon-basic.example.tsx",
+          "dependencies": ["@microsoft/arbutus.icon"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "Icon",
+          "componentPropType": "IconProps"
         }
       ]
     }

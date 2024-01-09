@@ -3,7 +3,7 @@ import { Button } from '@microsoft/arbutus.button';
 import { makeStyles } from '@griffel/react';
 import { tokens } from '@fluentui/react-theme';
 
-const containerStyles = makeStyles({
+const useContainerStyles = makeStyles({
   root: {
     display: 'flex',
     columnGap: tokens.spacingHorizontalM,
@@ -11,7 +11,7 @@ const containerStyles = makeStyles({
 });
 
 const ExampleComponent = () => {
-  const classes = containerStyles();
+  const classes = useContainerStyles();
 
   return (
     <div className={classes.root}>

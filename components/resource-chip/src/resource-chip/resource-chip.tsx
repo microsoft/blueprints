@@ -14,7 +14,7 @@ import {
 import type { ResourceChipProps } from './resource-chip.types';
 
 export const ResourceChip: FC<ResourceChipProps> = ({
-  actionIconName,
+  actionIconName = 'link',
   className,
   logoLabel,
   logoName,

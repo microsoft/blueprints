@@ -4,7 +4,7 @@ export type ImageProps = {
   image?: {
     alternativeText: string;
     url?: string;
-    localFile?: { publicURL: string; childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[] };
+    localFile?: { publicURL: string; childImageSharp: { gatsbyImageData: IGatsbyImageData } };
   };
   src?: string;
   alt?: string;

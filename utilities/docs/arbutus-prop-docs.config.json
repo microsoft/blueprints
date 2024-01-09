@@ -2,7 +2,8 @@
   "componentPaths": [
     "../../components/badge/src/badge/badge.tsx",
     "../../components/button/src/button/button.tsx",
-    "../../components/divider/src/divider/divider.tsx"
+    "../../components/divider/src/divider/divider.tsx",
+    "../../components/icon/src/icon/icon.tsx"
   ],
   "outputDir": "src/__prop-docs__"
 }
