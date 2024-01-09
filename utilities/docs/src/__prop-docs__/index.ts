@@ -4781,6 +4781,87 @@ const manifest: Manifest = {
       },
     },
   },
+  IconButton: {
+    tags: {},
+    filePath: '../../components/icon-button/src/icon-button/icon-button.tsx',
+    description: '',
+    displayName: 'IconButton',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      label: {
+        defaultValue: null,
+        description: 'Descriptive label of the button.',
+        name: 'label',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'string' },
+      },
+      iconName: {
+        defaultValue: null,
+        description: 'Selection of icons.',
+        name: 'iconName',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: {
+          name: '"arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "code" | "copy" | "download" | "exclamation" | "link" | "moon" | "open" | "sun" | "x"',
+        },
+      },
+      color: {
+        defaultValue: { value: 'primary' },
+        description: 'Selection of color options.',
+        name: 'color',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'ColorVariant' },
+      },
+      onClick: {
+        defaultValue: null,
+        description: 'Click handler.',
+        name: 'onClick',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: '(e?: SyntheticEvent<Element, Event>) => void' },
+      },
+    },
+  },
 };
 
 export default manifest;

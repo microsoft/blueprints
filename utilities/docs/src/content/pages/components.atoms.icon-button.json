@@ -1,8 +1,13 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/icon-button",
   "title": "IconButton",
-  "definition": "This is a reference page.",
+  "definition": "Icon button is an icon that triggers an action when clicked or tapped. It is used to perform actions on small elements, where a regular button doesn’t make sense. For example, it can be used to open a settings menu or to delete an item.",
+  "quickResources": [
+    {
+      "copyText": "@microsoft/blueprints.icon-button"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -17,32 +22,105 @@
       "role": "UXE"
     }
   ],
-  "tabs": [
+  "tabs":[
     {
       "tab": "usage",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
-        }
-      ]
-    },
-    {
-      "tab": "design",
-      "content": [
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D496%253A15%26mode%3Ddesign%26t%3DJCHGfPC9oZ1gjTkT-1",
+          "listItems": [
+            {
+              "headline": "Icon",
+              "text": "See Icon for the list of available icons to use here as a button."
+            },
+            {
+              "headline": "Color variants",
+              "text": "Choose a color that matches the semantic meaning of the action. Read more about semantic colors in Color Variants."
+            },
+            {
+              "headline": "Label",
+              "text": "It is very important to label the icon button for screen-reader users."
+            }
+          ]
+        },
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Variants and Examples",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Base Example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "icon-button-basic.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Color Variants",
+          "leading": "Color of the button signifies semantic meaning. Primary is the default.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "icon-button-color-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "lists.table-list",
+          "variant": "borderless",
+          "data": [
+            [
+              "`primary` (default)",
+              "This is the primary or main action that the interface is asking the user to take. Do not use more than one primary button in one view."
+            ],
+            [
+              "`secondary`",
+              "Supporting or alternative actions user can take within one view."
+            ],
+            [
+              "`accent`",
+              "The brand color for uses that call for a more prominent color than the primary color."
+            ],
+            [
+              "`info`",
+              "Actions that are not critical to task completion, but may be helpful to the user. For example, a help button or a button to learn more about a feature."
+            ],
+            [
+              "`danger`",
+              "Actions that can lead to unrecoverable consequences, for example deleting data permanently, clearing a form or leaving a meeting."
+            ],
+            [
+              "`warning`",
+              "Actions that you might want the user to stop and think about first, because it might have consequences. For example, changing a project settings that will affect all users or removing a page that can affect systems that rely on that data."
+            ],
+            [
+              "`success`",
+              "Confirmation actions, like saving data, sending messages or acknowledging information."
+            ]
+          ],
+          "columnSizing": ["160px", "auto"]
         }
       ]
     },
@@ -51,17 +129,29 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "icon-button-basic.example.tsx",
+          "dependencies": ["@microsoft/arbutus.icon-button"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "IconButton",
+          "componentPropType": "IconButtonProps"
         }
       ]
     }

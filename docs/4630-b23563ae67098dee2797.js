@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[4630],{4630:function(e,a,n){n.r(a);var t=n(7211),r=n(9226),l=n(4792),o=n(2784);a.default=()=>o.createElement(o.Fragment,null,o.createElement(r.x,{as:"h1",variant:"headline"},"Example not found"),o.createElement(r.x,{variant:"paragraph"},"Sorry 😔, we couldn’t find what you were looking for.",o.createElement("br",null),o.createElement(t.r,{as:l.Link,elementProps:{to:"/"},isUnderlined:!0},"Go home"),"."))}}]);
+//# sourceMappingURL=4630-b23563ae67098dee2797.js.map
