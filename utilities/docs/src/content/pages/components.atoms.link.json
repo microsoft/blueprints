@@ -169,6 +169,19 @@
           "contentComponentId": "blocks.heading",
           "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "link-basic.example.tsx",
+          "dependencies": ["@microsoft/arbutus.link"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
           "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
