@@ -1,8 +1,18 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/link",
   "title": "Link",
-  "definition": "This is a reference page.",
+  "definition": "A link is interactive text that lets people navigate somewhere else, either within an experience or to a different app or site. Don’t use links for triggering actions other than navigation. To create a secondary action with low visual emphasis, try a transparent or subtle button instead.",
+  "quickResources": [
+    {
+      "label": "FigmaToolkit",
+      "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1014%3A3408&mode=design&t=2XPOSCIx96AOt7qn-1",
+      "type": "figma"
+    },
+    {
+      "copyText": "@microsoft/blueprints.link"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -19,49 +29,154 @@
   ],
   "tabs": [
     {
-      "tab": "usage",
+      "tab": "Usage",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D526%253A98%26mode%3Ddesign%26t%3DPf9BYfRAW5hbxFOP-1",
+          "listItems": [
+            {
+              "headline": "Variants",
+              "text": "This component offers several visual and semantic variants to match the context of your experience. The default variant is the primary variant."
+            },
+            {
+              "headline": "Underline",
+              "text": "Underlines greatly help users who can’t rely on color alone to identify links. It also helps users to identify links in a text block."
+            },
+            {
+              "headline": "Icon (optional)",
+              "text": "Icons can be used to help users identify the links in blocks of text (“open” icon) or to draw attention to the link (“arrow-right” icon)."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Base Example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "link-basic.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "General purpose variants",
+          "leading": "Use these variants: “primary”, “secondary”, and “caption” for links in your content like text blocks, tables, cards, and captions.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "link-main-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.text",
+          "markdown": {
+            "raw": "Match the variant to the style and semantic meaning of the text it is used with:\n- Use “primary” with any paragraph text.\n- Use “secondary” with smaller, secondary text.\n- Use “caption” with descriptions and caption text."
+          }
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Display and accent variants",
+          "leading": "Use these variants standalone to draw attention to the link. For example, use them on a homepage or in a list of important resources. Note, these variants have a decorative arrow icon in front of the link text.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "link-accent-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Example of links with icons",
+          "leading": "By default, link uses the “open” icon. In combination with the underline, it helps users clearly identify links in a text block. You can also customize that icon, for example with the “arrow-right” icon to draw attention to the link.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "link-icon.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Example of an inverse link",
+          "leading": "If you need a link in an inverse context, use the “inverse” variant. Here is an example of an inverse link on a Neutral Background Inverted surface.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "link-inverse.example.tsx",
+          "withMenu": true
         }
       ]
     },
     {
-      "tab": "design",
+      "tab": "Design",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Guidance",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.embed",
+          "url": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FV2bt7PbLPJEDXCEIcUwrEa%2FFluent-Blueprints-UI-Kit%3Ftype%3Ddesign%26node-id%3D1015%253A4623%26mode%3Ddesign%26t%3Dz5MxPvr3TzDbrHOZ-1",
+          "type": "figma",
+          "size": "large",
+          "title": "Link UI kit"
         }
       ]
     },
     {
-      "tab": "develop",
+      "tab": "Code",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "Link",
+          "componentPropType": "LinkProps"
         }
       ]
     }

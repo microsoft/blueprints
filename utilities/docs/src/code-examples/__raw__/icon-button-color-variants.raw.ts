@@ -20,11 +20,11 @@ const ExampleComponent = () => {
     <div className={classes.root}>
       <IconButton iconName="x" label="close" onClick={handleOnClick} color="primary" />
       <IconButton iconName="x" label="close" onClick={handleOnClick} color="secondary" />
+      <IconButton iconName="x" label="close" onClick={handleOnClick} color="accent" />
       <IconButton iconName="x" label="close" onClick={handleOnClick} color="info" />
       <IconButton iconName="x" label="close" onClick={handleOnClick} color="danger" />
       <IconButton iconName="x" label="close" onClick={handleOnClick} color="warning" />
       <IconButton iconName="x" label="close" onClick={handleOnClick} color="success" />
-      <IconButton iconName="x" label="close" onClick={handleOnClick} color="accent" />
     </div>
   );
 };

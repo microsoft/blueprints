@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[8489],{8489:function(e,a,n){n.r(a);var r=n(7211),t=n(2784);a.default=()=>t.createElement(t.Fragment,null,t.createElement(r.r,{as:"a",elementProps:{href:"#"},isUnderlined:!0,withIcon:!0},"I am a Link."),t.createElement(r.r,{as:"a",elementProps:{href:"#"},isUnderlined:!0,withIcon:!0,iconName:"arrow-right"},"I am a Link."))}}]);
+//# sourceMappingURL=8489-178fbce3317c1bb70818.js.map

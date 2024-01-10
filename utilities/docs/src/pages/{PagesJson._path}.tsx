@@ -214,13 +214,14 @@ export const query = graphql`
           withDivider
           size
           as
-          ...HeadingComponentTabs
           ...AnatomyComponentTabs
           ...ComponentPreviewComponentTabs
           ...EmbedTabs
-          ...SandboxComponentTabs
+          ...HeadingComponentTabs
           ...PropTableTabs
+          ...SandboxComponentTabs
           ...TableListComponentTabs
+          ...TextComponentTabs
         }
       }
     }

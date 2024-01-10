@@ -28,7 +28,7 @@ const QuickResourceCopyText: FC<QuickResourceCopyTextProps> = ({
   const { copy: copyPackageName, status } = useCopyToClipboard();
 
   const handleCopyPackageName = () => copyPackageName(copyText ?? '');
-  console.log('QuickResourceCopyText', copyText);
+
   return (
     <ResourceChip
       text={copyText}
@@ -60,8 +60,6 @@ const QuickResourceLink: FC<QuickResourceLinkProps> = ({
 };
 
 export const QuickResource: FC<QuickResourceProps> = ({ data, className }) => {
-  isCopyResource(data) && console.log('isCopyResource', data);
-  isLinkResource(data) && console.log('isLinkResource', data);
   if (isCopyResource(data)) {
     return <QuickResourceCopyText copyText={data.copyText} className={className} />;
   }

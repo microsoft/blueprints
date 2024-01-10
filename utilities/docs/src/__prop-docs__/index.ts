@@ -4862,6 +4862,108 @@ const manifest: Manifest = {
       },
     },
   },
+  Link: {
+    tags: {},
+    filePath: '../../components/link/src/link/link.tsx',
+    description: '',
+    displayName: 'Link',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      as: {
+        defaultValue: null,
+        description: 'Link element.',
+        name: 'as',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'ElementType' },
+      },
+      elementProps: {
+        defaultValue: null,
+        description: 'Link element props.',
+        name: 'elementProps',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'Record<string, unknown>' },
+      },
+      variant: {
+        defaultValue: { value: 'primary' },
+        description: 'Selection of link styles.',
+        name: 'variant',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'LinkVariant' },
+      },
+      withIcon: {
+        defaultValue: null,
+        description: 'Adds an icon that indicates that the link will open in a new tab.',
+        name: 'withIcon',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      isUnderlined: {
+        defaultValue: null,
+        description: 'Adds an underline to the link.',
+        name: 'isUnderlined',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      iconName: {
+        defaultValue: { value: 'open' },
+        description: 'Additional icon variants.',
+        name: 'iconName',
+        declarations: [
+          {
+            fileName: 'arbutus/components/link/src/link/link.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: {
+          name: '"code" | "link" | "arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "copy" | "download" | "exclamation" | "moon" | "open" | "sun" | "x"',
+        },
+      },
+    },
+  },
 };
 
 export default manifest;
