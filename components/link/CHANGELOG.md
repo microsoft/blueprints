@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.link
 
-This log was last generated on Fri, 08 Dec 2023 23:06:24 GMT and should not be manually modified.
+This log was last generated on Fri, 12 Jan 2024 00:09:04 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.7
+
+Fri, 12 Jan 2024 00:09:04 GMT
+
+### Patches
+
+- Adds missing dependency (akimalunar@gmail.com)
 
 ## 1.1.6
 

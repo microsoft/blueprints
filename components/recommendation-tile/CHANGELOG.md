@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.recommendation-tile
 
-This log was last generated on Fri, 08 Dec 2023 23:06:24 GMT and should not be manually modified.
+This log was last generated on Fri, 12 Jan 2024 00:09:04 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.9
+
+Fri, 12 Jan 2024 00:09:04 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.link to v1.1.7
 
 ## 1.0.8
 

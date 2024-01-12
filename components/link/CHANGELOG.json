@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.link",
   "entries": [
     {
+      "date": "Fri, 12 Jan 2024 00:09:04 GMT",
+      "version": "1.1.7",
+      "tag": "@microsoft/arbutus.link_v1.1.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.link",
+            "commit": "bd0976cacdaf66500596ffa9dc5801f6eca8e53e",
+            "comment": "Adds missing dependency"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 08 Dec 2023 23:06:24 GMT",
       "version": "1.1.6",
       "tag": "@microsoft/arbutus.link_v1.1.6",
