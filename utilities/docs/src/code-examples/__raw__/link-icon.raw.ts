@@ -6,7 +6,13 @@ const ExampleComponent = () => (
     <Link as="a" elementProps={{ href: '#' }} isUnderlined withIcon>
       I am a Link.
     </Link>
-    <Link as="a" elementProps={{ href: '#' }} isUnderlined withIcon iconName='arrow-right'>
+    <Link
+      as="a"
+      elementProps={{ href: '#' }}
+      isUnderlined
+      withIcon
+      iconName="arrow-right"
+    >
       I am a Link.
     </Link>
   </>

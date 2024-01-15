@@ -1,8 +1,18 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/tabs",
   "title": "Tabs",
-  "definition": "This is a reference page.",
+  "definition": "Tabs in an interactive pattern of buttons that allows people to switch between views or categories of related information without going to a different page.",
+  "quickResources": [
+    {
+      "label": "FigmaToolkit",
+      "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A5307&mode=design&t=QDjOocSDbUiHs0pf-1",
+      "type": "figma"
+    },
+    {
+      "copyText": "@microsoft/blueprints.tabs"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -19,49 +29,138 @@
   ],
   "tabs": [
     {
-      "tab": "usage",
+      "tab": "Usage",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D579%253A79%26mode%3Ddesign%26t%3DjyZPz1FyGny222Q8-1",
+          "listItems": [
+            {
+              "headline": "Tab",
+              "text": "Tab is a button that represents a view. The active view is highlighted with a bottom border. The bottom border is the brand color of the theme."
+            },
+            {
+              "headline": "TabList",
+              "text": "TabList is a container for all Tabs."
+            },
+            {
+              "headline": "TabPanels",
+              "text": "Underneath the TabList are TabPanels. TabPanels are views associated with tabs. An individual view component is TabPanel."
+            },
+            {
+              "headline": "Rail",
+              "text": "TabList and TabPanels are separated by a Rail. Rail is a vertical line and the active Tab underline is aligned to the rail."
+            },
+            {
+              "headline": "Spacing",
+              "text": "TabList and TabPanels are separated by a space of spacingVerticalXL token."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Base example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "tabs.example.tsx",
+          "withMenu": true
         }
       ]
     },
     {
-      "tab": "design",
+      "tab": "Design",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Guidance",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.embed",
+          "url": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FV2bt7PbLPJEDXCEIcUwrEa%2FFluent-Blueprints-UI-Kit%3Ftype%3Ddesign%26node-id%3D1015%253A5307%26mode%3Ddesign%26t%3DQDjOocSDbUiHs0pf-1",
+          "type": "figma",
+          "size": "large",
+          "title": "Logo UI kit"
         }
       ]
     },
     {
-      "tab": "develop",
+      "tab": "Code",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "tabs.example.tsx",
+          "dependencies": [
+            "@microsoft/arbutus.text",
+            "@microsoft/arbutus.tile",
+            "@microsoft/arbutus.tabs",
+            "@microsoft/arbutus.use-space-styles"
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "Tabs",
+          "componentPropType": "TabsProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "Tab",
+          "componentPropType": "TabProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "TabList",
+          "componentPropType": "TabListProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "TabPanel",
+          "componentPropType": "TabPanelProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "TabPanels",
+          "componentPropType": "TabPanelsProps"
         }
       ]
     }

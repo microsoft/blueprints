@@ -44,7 +44,7 @@
             },
             {
               "headline": "Color variants",
-              "text": "Choose a color that matches the semantic meaning of the action. Read more about semantic colors in Color Variants."
+              "text": "Choose a color that matches the semantic meaning of the action. Read more about semantic colors in Color variants."
             },
             {
               "headline": "Label",
@@ -64,7 +64,7 @@
           "contentComponentId": "blocks.heading",
           "as": "h3",
           "size": "headline",
-          "title": "Base Example",
+          "title": "Base example",
           "withCopyLink": false,
           "withDivider": false
         },
@@ -77,7 +77,7 @@
           "contentComponentId": "blocks.heading",
           "as": "h3",
           "size": "headline",
-          "title": "Color Variants",
+          "title": "Color variants",
           "leading": "Color of the button signifies semantic meaning. Primary is the default.",
           "withCopyLink": false,
           "withDivider": false

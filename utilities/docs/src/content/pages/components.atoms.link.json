@@ -69,7 +69,7 @@
           "contentComponentId": "blocks.heading",
           "as": "h3",
           "size": "headline",
-          "title": "Base Example",
+          "title": "Base example",
           "withCopyLink": false,
           "withDivider": false
         },

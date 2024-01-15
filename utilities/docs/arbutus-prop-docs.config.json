@@ -3,9 +3,18 @@
     "../../components/badge/src/badge/badge.tsx",
     "../../components/button/src/button/button.tsx",
     "../../components/divider/src/divider/divider.tsx",
-    "../../components/icon/src/icon/icon.tsx",
     "../../components/icon-button/src/icon-button/icon-button.tsx",
-    "../../components/link/src/link/link.tsx"
+    "../../components/icon/src/icon/icon.tsx",
+    "../../components/link/src/link/link.tsx",
+    "../../components/logo/src/logo/logo.tsx",
+    "../../components/resource-chip/src/resource-chip/resource-chip.tsx",
+    "../../components/tabs/src/tab-list/tab-list.tsx",
+    "../../components/tabs/src/tab-panel/tab-panel.tsx",
+    "../../components/tabs/src/tab-panels/tab-panels.tsx",
+    "../../components/tabs/src/tab/tab.tsx",
+    "../../components/tabs/src/tabs/tabs.tsx"
+
+
   ],
   "outputDir": "src/__prop-docs__"
 }

@@ -83,7 +83,7 @@
           "contentComponentId": "blocks.heading",
           "as": "h3",
           "size": "headline",
-          "title": "Color Variants",
+          "title": "Color variants",
           "leading": "Color of the button signifies semantic meaning. Primary is the default.",
           "withCopyLink": false,
           "withDivider": false

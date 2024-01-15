@@ -4964,6 +4964,365 @@ const manifest: Manifest = {
       },
     },
   },
+  Logo: {
+    tags: {},
+    filePath: '../../components/logo/src/logo/logo.tsx',
+    description: '',
+    displayName: 'Logo',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/logo/src/logo/logo.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      logoName: {
+        defaultValue: null,
+        description: 'Selection of logos.',
+        name: 'logoName',
+        declarations: [
+          {
+            fileName: 'arbutus/components/logo/src/logo/logo.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: '"figma" | "storybook"' },
+      },
+      size: {
+        defaultValue: { value: 'fill' },
+        description: 'Selection of size options.',
+        name: 'size',
+        declarations: [
+          {
+            fileName: 'arbutus/components/logo/src/logo/logo.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '"small" | "medium" | "large" | "fill"' },
+      },
+      isInline: {
+        defaultValue: null,
+        description: 'Sets the Icon to be an inline element.',
+        name: 'isInline',
+        declarations: [
+          {
+            fileName: 'arbutus/components/logo/src/logo/logo.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      label: {
+        defaultValue: null,
+        description: 'Accessible label for the logo.',
+        name: 'label',
+        declarations: [
+          {
+            fileName: 'arbutus/components/logo/src/logo/logo.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
+  ResourceChip: {
+    tags: {},
+    filePath: '../../components/resource-chip/src/resource-chip/resource-chip.tsx',
+    description: '',
+    displayName: 'ResourceChip',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      text: {
+        defaultValue: null,
+        description: 'Resource name',
+        name: 'text',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'string' },
+      },
+      actionIconName: {
+        defaultValue: { value: 'link' },
+        description:
+          'Selection of icons for indicating the type of action when the user clicks on ResourceChip.',
+        name: 'actionIconName',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: {
+          name: '"arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "code" | "copy" | "download" | "exclamation" | "link" | "moon" | "open" | "sun" | "x"',
+        },
+      },
+      onClick: {
+        defaultValue: null,
+        description: 'Click handler.',
+        name: 'onClick',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '() => void' },
+      },
+      size: {
+        defaultValue: { value: 'medium' },
+        description: 'Size of the button.',
+        name: 'size',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'SizeKey' },
+      },
+      logoName: {
+        defaultValue: null,
+        description: 'Selection of logos that represent the resource type.',
+        name: 'logoName',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '"figma" | "storybook"' },
+      },
+      logoLabel: {
+        defaultValue: null,
+        description: 'Accessible label for the logo that represents the resource type.',
+        name: 'logoLabel',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/resource-chip/src/resource-chip/resource-chip.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
+  Tabs: {
+    tags: {},
+    filePath: '../../components/tabs/src/tabs/tabs.tsx',
+    description: '',
+    displayName: 'Tabs',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tabs/tabs.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      initialIndex: {
+        defaultValue: { value: '0' },
+        description: 'Optional initial open tab',
+        name: 'initialIndex',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tabs/tabs.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+    },
+  },
+  Tab: {
+    tags: {},
+    filePath: '../../components/tabs/src/tab/tab.tsx',
+    description: '',
+    displayName: 'Tab',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab/tab.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      disabled: {
+        defaultValue: { value: 'false' },
+        description: 'Set the tab to be disabled.',
+        name: 'disabled',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab/tab.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      __index: {
+        defaultValue: { value: '0' },
+        description: '[INTERNAL] Do not use.',
+        name: '__index',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab/tab.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      __total: {
+        defaultValue: { value: '0' },
+        description: '[INTERNAL] Do not use.',
+        name: '__total',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab/tab.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+    },
+  },
+  TabPanel: {
+    tags: {},
+    filePath: '../../components/tabs/src/tab-panel/tab-panel.tsx',
+    description: '',
+    displayName: 'TabPanel',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab-panel/tab-panel.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      __index: {
+        defaultValue: { value: '0' },
+        description: '[INTERNAL] Do not use. Index in the array of tabs.',
+        name: '__index',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab-panel/tab-panel.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+    },
+  },
+  TabPanels: {
+    tags: {},
+    filePath: '../../components/tabs/src/tab-panels/tab-panels.tsx',
+    description: '',
+    displayName: 'TabPanels',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: '',
+        name: 'className',
+        declarations: [
+          {
+            fileName: '../../components/tabs/src/tab-panels/tab-panels.tsx',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
+  TabList: {
+    tags: {},
+    filePath: '../../components/tabs/src/tab-list/tab-list.tsx',
+    description: '',
+    displayName: 'TabList',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab-list/tab-list.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
 };
 
 export default manifest;

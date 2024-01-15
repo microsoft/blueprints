@@ -59,7 +59,7 @@
           "contentComponentId": "blocks.heading",
           "as": "h3",
           "size": "headline",
-          "title": "Base Example",
+          "title": "Base example",
           "withCopyLink": false,
           "withDivider": false
         },
@@ -70,7 +70,7 @@
         },
         {
           "contentComponentId": "blocks.heading",
-          "title": "Color Variants",
+          "title": "Color variants",
           "leading": "Badge comes in an array of colors and can be customized to match its semantic context. The default color is primary or neutral foreground in your theme.",
           "as": "h3",
           "size": "headline",
@@ -84,7 +84,7 @@
         },
         {
           "contentComponentId": "blocks.heading",
-          "title": "Inline Example",
+          "title": "Inline example",
           "leading": "A technical aspect of positioning the badge next to or in line with text.",
           "as": "h3",
           "size": "headline",

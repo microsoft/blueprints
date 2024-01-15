@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[7462],{7462:function(o,e,t){t.r(e),e.default='import { Logo } from \'@microsoft/arbutus.logo\';\nimport * as React from \'react\';\n\nconst ExampleComponent = () => <Logo logoName="figma" label="Figma" size="medium" />;\n\nexport default ExampleComponent;\n'}}]);
+//# sourceMappingURL=7462-28219f5f528680363bfc.js.map
