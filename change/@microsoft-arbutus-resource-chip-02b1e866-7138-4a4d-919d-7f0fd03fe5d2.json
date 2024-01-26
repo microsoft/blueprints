@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixes missing dependencies",
+  "packageName": "@microsoft/arbutus.resource-chip",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
