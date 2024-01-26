@@ -24,6 +24,7 @@
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18",
     "@microsoft/arbutus.button": "1.0.4",
+    "@microsoft/arbutus.icon": "1.0.6",
     "@microsoft/arbutus.logo": "1.0.4",
     "@microsoft/arbutus.text": "1.0.6"
   },
