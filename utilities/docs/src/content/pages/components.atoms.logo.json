@@ -5,7 +5,7 @@
   "definition": "A logo is a graphic mark, emblem, or symbol used to aid and promote public identification and recognition. It  represents a company or a product.",
   "quickResources": [
     {
-      "label": "FigmaToolkit",
+      "label": "Figma Toolkit",
       "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A4908&mode=design&t=jtzLJ1QSx0czUCN2-1",
       "type": "figma"
     },
@@ -83,7 +83,7 @@
         {
           "contentComponentId": "blocks.heading",
           "title": "Size variants",
-          "leading": "Logo comes in 3 sizes: small, medium, and large. Medium is the default size. All sizes adhere to the vertical grid.",
+          "leading": "Logo comes in 3 optional fixed sizes: small, medium, and large.",
           "as": "h3",
           "size": "headline",
           "withCopyLink": false,

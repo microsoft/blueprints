@@ -1,0 +1,142 @@
+{
+  "_layout": "reference",
+  "_path": "/components/atoms/resource-chip",
+  "title": "ResourceChip",
+  "definition": "A ResourceChip is a small, interactive element that represents a resource: a link, file or text to copy. It can be used to provide quick access to resources that are relevant to the user’s current context.",
+  "quickResources": [
+    {
+      "copyText": "@microsoft/blueprints.resource-chip"
+    }
+  ],
+  "owners": [
+    {
+      "firstName": "Eric",
+      "lastName": "Tsoi",
+      "alias": "erictsoi",
+      "role": "Designer"
+    },
+    {
+      "firstName": "Ria",
+      "lastName": "Carmin",
+      "alias": "riacarmin",
+      "role": "UXE"
+    }
+  ],
+  "tabs": [
+    {
+      "tab": "Usage",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Anatomy",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D670%253A152%26mode%3Ddesign%26t%3DLC6uhg4KCBMSkwtc-1",
+          "listItems": [
+            {
+              "headline": "Logo",
+              "text": "ResourceChip can include an optional logo for resources that are files or associated with a specific product or software. The logo is optional and can be used to provide more context on what to expect when clicking on the resource."
+            },
+            {
+              "headline": "Name",
+              "text": "The name of the resource. It is required and should be short and descriptive. It should be the same as the name of the resource it represents."
+            },
+            {
+              "headline": "Action Icon",
+              "text": "ResourceChip can include an optional icon to represent the action that the user should expect when clicking on the resource."
+            },
+            {
+              "headline": "Size",
+              "text": "ResourceChip comes in 3 sizes: small, medium, and large. The default size is medium. All sizes adhere to the vertical grid."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Base example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "resource-chip-basic.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "title": "Size variants",
+          "leading": "ResourceChip comes in 3 sizes: small, medium, and large. Medium is the default size. All sizes adhere to the vertical grid.",
+          "as": "h3",
+          "size": "headline",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "resource-chip-size-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "title": "Inline example",
+          "leading": "A technical aspect of positioning ResourceChip next to or in line with text.",
+          "as": "h3",
+          "size": "headline",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "resource-chip-inline.example.tsx",
+          "withMenu": true
+        }
+      ]
+    },
+    {
+      "tab": "Code",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "resource-chip-basic.example.tsx",
+          "dependencies": ["@microsoft/arbutus.resource-chip"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "ResourceChip",
+          "componentPropType": "ResourceChipProps"
+        }
+      ]
+    }
+  ]
+}
