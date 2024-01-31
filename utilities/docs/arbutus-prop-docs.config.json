@@ -12,7 +12,9 @@
     "../../components/tabs/src/tab-panel/tab-panel.tsx",
     "../../components/tabs/src/tab-panels/tab-panels.tsx",
     "../../components/tabs/src/tab/tab.tsx",
-    "../../components/tabs/src/tabs/tabs.tsx"
+    "../../components/tabs/src/tabs/tabs.tsx",
+    "../../components/text/src/text/text.tsx",
+    "../../components/tag/src/tag/tag.tsx"
   ],
   "outputDir": "src/__prop-docs__"
 }

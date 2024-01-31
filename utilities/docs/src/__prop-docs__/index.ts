@@ -4691,6 +4691,87 @@ const manifest: Manifest = {
       },
     },
   },
+  IconButton: {
+    tags: {},
+    filePath: '../../components/icon-button/src/icon-button/icon-button.tsx',
+    description: '',
+    displayName: 'IconButton',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      label: {
+        defaultValue: null,
+        description: 'Descriptive label of the button.',
+        name: 'label',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'string' },
+      },
+      iconName: {
+        defaultValue: null,
+        description: 'Selection of icons.',
+        name: 'iconName',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: {
+          name: '"arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "code" | "copy" | "download" | "exclamation" | "link" | "moon" | "open" | "sun" | "x"',
+        },
+      },
+      color: {
+        defaultValue: { value: 'primary' },
+        description: 'Selection of color options.',
+        name: 'color',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'ColorVariant' },
+      },
+      onClick: {
+        defaultValue: null,
+        description: 'Click handler.',
+        name: 'onClick',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: '(e?: SyntheticEvent<Element, Event>) => void' },
+      },
+    },
+  },
   Icon: {
     tags: {},
     filePath: '../../components/icon/src/icon/icon.tsx',
@@ -4778,87 +4859,6 @@ const manifest: Manifest = {
         ],
         required: false,
         type: { name: 'boolean' },
-      },
-    },
-  },
-  IconButton: {
-    tags: {},
-    filePath: '../../components/icon-button/src/icon-button/icon-button.tsx',
-    description: '',
-    displayName: 'IconButton',
-    methods: [],
-    props: {
-      className: {
-        defaultValue: null,
-        description: 'Consumer provided class.',
-        name: 'className',
-        declarations: [
-          {
-            fileName:
-              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: false,
-        type: { name: 'string' },
-      },
-      label: {
-        defaultValue: null,
-        description: 'Descriptive label of the button.',
-        name: 'label',
-        declarations: [
-          {
-            fileName:
-              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: true,
-        type: { name: 'string' },
-      },
-      iconName: {
-        defaultValue: null,
-        description: 'Selection of icons.',
-        name: 'iconName',
-        declarations: [
-          {
-            fileName:
-              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: true,
-        type: {
-          name: '"arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "code" | "copy" | "download" | "exclamation" | "link" | "moon" | "open" | "sun" | "x"',
-        },
-      },
-      color: {
-        defaultValue: { value: 'primary' },
-        description: 'Selection of color options.',
-        name: 'color',
-        declarations: [
-          {
-            fileName:
-              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: false,
-        type: { name: 'ColorVariant' },
-      },
-      onClick: {
-        defaultValue: null,
-        description: 'Click handler.',
-        name: 'onClick',
-        declarations: [
-          {
-            fileName:
-              'arbutus/components/icon-button/src/icon-button/icon-button.types.ts',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: true,
-        type: { name: '(e?: SyntheticEvent<Element, Event>) => void' },
       },
     },
   },
@@ -5148,11 +5148,11 @@ const manifest: Manifest = {
       },
     },
   },
-  Tabs: {
+  TabList: {
     tags: {},
-    filePath: '../../components/tabs/src/tabs/tabs.tsx',
+    filePath: '../../components/tabs/src/tab-list/tab-list.tsx',
     description: '',
-    displayName: 'Tabs',
+    displayName: 'TabList',
     methods: [],
     props: {
       className: {
@@ -5161,25 +5161,69 @@ const manifest: Manifest = {
         name: 'className',
         declarations: [
           {
-            fileName: 'arbutus/components/tabs/src/tabs/tabs.types.ts',
+            fileName: 'arbutus/components/tabs/src/tab-list/tab-list.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: false,
         type: { name: 'string' },
       },
-      initialIndex: {
-        defaultValue: { value: '0' },
-        description: 'Optional initial open tab',
-        name: 'initialIndex',
+    },
+  },
+  TabPanel: {
+    tags: {},
+    filePath: '../../components/tabs/src/tab-panel/tab-panel.tsx',
+    description: '',
+    displayName: 'TabPanel',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
         declarations: [
           {
-            fileName: 'arbutus/components/tabs/src/tabs/tabs.types.ts',
+            fileName: 'arbutus/components/tabs/src/tab-panel/tab-panel.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      __index: {
+        defaultValue: { value: '0' },
+        description: '[INTERNAL] Do not use. Index in the array of tabs.',
+        name: '__index',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tabs/src/tab-panel/tab-panel.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: false,
         type: { name: 'number' },
+      },
+    },
+  },
+  TabPanels: {
+    tags: {},
+    filePath: '../../components/tabs/src/tab-panels/tab-panels.tsx',
+    description: '',
+    displayName: 'TabPanels',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: '',
+        name: 'className',
+        declarations: [
+          {
+            fileName: '../../components/tabs/src/tab-panels/tab-panels.tsx',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
       },
     },
   },
@@ -5244,11 +5288,11 @@ const manifest: Manifest = {
       },
     },
   },
-  TabPanel: {
+  Tabs: {
     tags: {},
-    filePath: '../../components/tabs/src/tab-panel/tab-panel.tsx',
+    filePath: '../../components/tabs/src/tabs/tabs.tsx',
     description: '',
-    displayName: 'TabPanel',
+    displayName: 'Tabs',
     methods: [],
     props: {
       className: {
@@ -5257,20 +5301,20 @@ const manifest: Manifest = {
         name: 'className',
         declarations: [
           {
-            fileName: 'arbutus/components/tabs/src/tab-panel/tab-panel.types.ts',
+            fileName: 'arbutus/components/tabs/src/tabs/tabs.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: false,
         type: { name: 'string' },
       },
-      __index: {
+      initialIndex: {
         defaultValue: { value: '0' },
-        description: '[INTERNAL] Do not use. Index in the array of tabs.',
-        name: '__index',
+        description: 'Optional initial open tab',
+        name: 'initialIndex',
         declarations: [
           {
-            fileName: 'arbutus/components/tabs/src/tab-panel/tab-panel.types.ts',
+            fileName: 'arbutus/components/tabs/src/tabs/tabs.types.ts',
             name: 'TypeLiteral',
           },
         ],
@@ -5279,33 +5323,11 @@ const manifest: Manifest = {
       },
     },
   },
-  TabPanels: {
+  Text: {
     tags: {},
-    filePath: '../../components/tabs/src/tab-panels/tab-panels.tsx',
+    filePath: '../../components/text/src/text/text.tsx',
     description: '',
-    displayName: 'TabPanels',
-    methods: [],
-    props: {
-      className: {
-        defaultValue: null,
-        description: '',
-        name: 'className',
-        declarations: [
-          {
-            fileName: '../../components/tabs/src/tab-panels/tab-panels.tsx',
-            name: 'TypeLiteral',
-          },
-        ],
-        required: false,
-        type: { name: 'string' },
-      },
-    },
-  },
-  TabList: {
-    tags: {},
-    filePath: '../../components/tabs/src/tab-list/tab-list.tsx',
-    description: '',
-    displayName: 'TabList',
+    displayName: 'Text',
     methods: [],
     props: {
       className: {
@@ -5314,12 +5336,13731 @@ const manifest: Manifest = {
         name: 'className',
         declarations: [
           {
-            fileName: 'arbutus/components/tabs/src/tab-list/tab-list.types.ts',
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      variant: {
+        defaultValue: null,
+        description: 'Selection of text styles.',
+        name: 'variant',
+        declarations: [
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'StyleVariant' },
+      },
+      color: {
+        defaultValue: { value: 'primary' },
+        description: 'Selection of color options.',
+        name: 'color',
+        declarations: [
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/components/text/src/text/text.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: '"accent" | "action" | "primary" | "secondary" | "tertiary" | "quaternary" | "negative" | "positive" | "warning" | "danger" | "info" | "background"',
+        },
+      },
+      slot: {
+        defaultValue: null,
+        description: '',
+        name: 'slot',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      style: {
+        defaultValue: null,
+        description: '',
+        name: 'style',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'CSSProperties' },
+      },
+      title: {
+        defaultValue: null,
+        description: '',
+        name: 'title',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      key: {
+        defaultValue: null,
+        description: '',
+        name: 'key',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'Attributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'Attributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Key' },
+      },
+      defaultChecked: {
+        defaultValue: null,
+        description: '',
+        name: 'defaultChecked',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      defaultValue: {
+        defaultValue: null,
+        description: '',
+        name: 'defaultValue',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string | number | readonly string[]' },
+      },
+      suppressContentEditableWarning: {
+        defaultValue: null,
+        description: '',
+        name: 'suppressContentEditableWarning',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      suppressHydrationWarning: {
+        defaultValue: null,
+        description: '',
+        name: 'suppressHydrationWarning',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      accessKey: {
+        defaultValue: null,
+        description: '',
+        name: 'accessKey',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      autoFocus: {
+        defaultValue: null,
+        description: '',
+        name: 'autoFocus',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      contentEditable: {
+        defaultValue: null,
+        description: '',
+        name: 'contentEditable',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish | "inherit" | "plaintext-only"' },
+      },
+      contextMenu: {
+        defaultValue: null,
+        description: '',
+        name: 'contextMenu',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      dir: {
+        defaultValue: null,
+        description: '',
+        name: 'dir',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      draggable: {
+        defaultValue: null,
+        description: '',
+        name: 'draggable',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      hidden: {
+        defaultValue: null,
+        description: '',
+        name: 'hidden',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      id: {
+        defaultValue: null,
+        description: '',
+        name: 'id',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      lang: {
+        defaultValue: null,
+        description: '',
+        name: 'lang',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      nonce: {
+        defaultValue: null,
+        description: '',
+        name: 'nonce',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      placeholder: {
+        defaultValue: null,
+        description: '',
+        name: 'placeholder',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      spellCheck: {
+        defaultValue: null,
+        description: '',
+        name: 'spellCheck',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      tabIndex: {
+        defaultValue: null,
+        description: '',
+        name: 'tabIndex',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      translate: {
+        defaultValue: null,
+        description: '',
+        name: 'translate',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"yes" | "no"' },
+      },
+      radioGroup: {
+        defaultValue: null,
+        description: '',
+        name: 'radioGroup',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      role: {
+        defaultValue: null,
+        description: '',
+        name: 'role',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'AriaRole' },
+      },
+      about: {
+        defaultValue: null,
+        description: '',
+        name: 'about',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      content: {
+        defaultValue: null,
+        description: '',
+        name: 'content',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      datatype: {
+        defaultValue: null,
+        description: '',
+        name: 'datatype',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      inlist: {
+        defaultValue: null,
+        description: '',
+        name: 'inlist',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'any' },
+      },
+      prefix: {
+        defaultValue: null,
+        description: '',
+        name: 'prefix',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      property: {
+        defaultValue: null,
+        description: '',
+        name: 'property',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      rel: {
+        defaultValue: null,
+        description: '',
+        name: 'rel',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      resource: {
+        defaultValue: null,
+        description: '',
+        name: 'resource',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      rev: {
+        defaultValue: null,
+        description: '',
+        name: 'rev',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      typeof: {
+        defaultValue: null,
+        description: '',
+        name: 'typeof',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      vocab: {
+        defaultValue: null,
+        description: '',
+        name: 'vocab',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      autoCapitalize: {
+        defaultValue: null,
+        description: '',
+        name: 'autoCapitalize',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      autoCorrect: {
+        defaultValue: null,
+        description: '',
+        name: 'autoCorrect',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      autoSave: {
+        defaultValue: null,
+        description: '',
+        name: 'autoSave',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      itemProp: {
+        defaultValue: null,
+        description: '',
+        name: 'itemProp',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      itemScope: {
+        defaultValue: null,
+        description: '',
+        name: 'itemScope',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      itemType: {
+        defaultValue: null,
+        description: '',
+        name: 'itemType',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      itemID: {
+        defaultValue: null,
+        description: '',
+        name: 'itemID',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      itemRef: {
+        defaultValue: null,
+        description: '',
+        name: 'itemRef',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      results: {
+        defaultValue: null,
+        description: '',
+        name: 'results',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      security: {
+        defaultValue: null,
+        description: '',
+        name: 'security',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      unselectable: {
+        defaultValue: null,
+        description: '',
+        name: 'unselectable',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"on" | "off"' },
+      },
+      inputMode: {
+        defaultValue: null,
+        description:
+          'Hints at the type of data that might be entered by the user while editing the element or its contents\n@see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute',
+        name: 'inputMode',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: '"search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal"',
+        },
+      },
+      is: {
+        defaultValue: null,
+        description:
+          'Specify that a standard HTML element should behave like a defined custom built-in element\n@see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is',
+        name: 'is',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'HTMLAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'HTMLAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-activedescendant': {
+        defaultValue: null,
+        description:
+          'Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application.',
+        name: 'aria-activedescendant',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-atomic': {
+        defaultValue: null,
+        description:
+          'Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute.',
+        name: 'aria-atomic',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-autocomplete': {
+        defaultValue: null,
+        description:
+          "Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be\npresented if they are made.",
+        name: 'aria-autocomplete',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"list" | "none" | "inline" | "both"' },
+      },
+      'aria-braillelabel': {
+        defaultValue: null,
+        description:
+          'Defines a string value that labels the current element, which is intended to be converted into Braille.\n@see aria-label.',
+        name: 'aria-braillelabel',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-brailleroledescription': {
+        defaultValue: null,
+        description:
+          'Defines a human-readable, author-localized abbreviated description for the role of an element, which is intended to be converted into Braille.\n@see aria-roledescription.',
+        name: 'aria-brailleroledescription',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-busy': {
+        defaultValue: null,
+        description: '',
+        name: 'aria-busy',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-checked': {
+        defaultValue: null,
+        description:
+          'Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.\n@see aria-pressed\n@see aria-selected.',
+        name: 'aria-checked',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean | "true" | "false" | "mixed"' },
+      },
+      'aria-colcount': {
+        defaultValue: null,
+        description:
+          'Defines the total number of columns in a table, grid, or treegrid.\n@see aria-colindex.',
+        name: 'aria-colcount',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-colindex': {
+        defaultValue: null,
+        description:
+          "Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.\n@see aria-colcount\n@see aria-colspan.",
+        name: 'aria-colindex',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-colindextext': {
+        defaultValue: null,
+        description:
+          'Defines a human readable text alternative of aria-colindex.\n@see aria-rowindextext.',
+        name: 'aria-colindextext',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-colspan': {
+        defaultValue: null,
+        description:
+          'Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-colindex\n@see aria-rowspan.',
+        name: 'aria-colspan',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-controls': {
+        defaultValue: null,
+        description:
+          'Identifies the element (or elements) whose contents or presence are controlled by the current element.\n@see aria-owns.',
+        name: 'aria-controls',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-current': {
+        defaultValue: null,
+        description:
+          'Indicates the element that represents the current item within a container or set of related elements.',
+        name: 'aria-current',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'boolean | "time" | "true" | "false" | "page" | "step" | "location" | "date"',
+        },
+      },
+      'aria-describedby': {
+        defaultValue: null,
+        description:
+          'Identifies the element (or elements) that describes the object.\n@see aria-labelledby',
+        name: 'aria-describedby',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-description': {
+        defaultValue: null,
+        description:
+          'Defines a string value that describes or annotates the current element.\n@see related aria-describedby.',
+        name: 'aria-description',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-details': {
+        defaultValue: null,
+        description:
+          'Identifies the element that provides a detailed, extended description for the object.\n@see aria-describedby.',
+        name: 'aria-details',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-disabled': {
+        defaultValue: null,
+        description:
+          'Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.\n@see aria-hidden\n@see aria-readonly.',
+        name: 'aria-disabled',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-dropeffect': {
+        defaultValue: null,
+        description:
+          'Indicates what functions can be performed when a dragged object is released on the drop target.\n@deprecated in ARIA 1.1',
+        name: 'aria-dropeffect',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"link" | "none" | "copy" | "execute" | "move" | "popup"' },
+      },
+      'aria-errormessage': {
+        defaultValue: null,
+        description:
+          'Identifies the element that provides an error message for the object.\n@see aria-invalid\n@see aria-describedby.',
+        name: 'aria-errormessage',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-expanded': {
+        defaultValue: null,
+        description:
+          'Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.',
+        name: 'aria-expanded',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-flowto': {
+        defaultValue: null,
+        description:
+          "Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,\nallows assistive technology to override the general default of reading in document source order.",
+        name: 'aria-flowto',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-grabbed': {
+        defaultValue: null,
+        description:
+          'Indicates an element\'s "grabbed" state in a drag-and-drop operation.\n@deprecated in ARIA 1.1',
+        name: 'aria-grabbed',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-haspopup': {
+        defaultValue: null,
+        description:
+          'Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element.',
+        name: 'aria-haspopup',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'boolean | "dialog" | "menu" | "true" | "false" | "grid" | "listbox" | "tree"',
+        },
+      },
+      'aria-hidden': {
+        defaultValue: null,
+        description:
+          'Indicates whether the element is exposed to an accessibility API.\n@see aria-disabled.',
+        name: 'aria-hidden',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-invalid': {
+        defaultValue: null,
+        description:
+          'Indicates the entered value does not conform to the format expected by the application.\n@see aria-errormessage.',
+        name: 'aria-invalid',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean | "true" | "false" | "grammar" | "spelling"' },
+      },
+      'aria-keyshortcuts': {
+        defaultValue: null,
+        description:
+          'Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element.',
+        name: 'aria-keyshortcuts',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-label': {
+        defaultValue: null,
+        description:
+          'Defines a string value that labels the current element.\n@see aria-labelledby.',
+        name: 'aria-label',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-labelledby': {
+        defaultValue: null,
+        description:
+          'Identifies the element (or elements) that labels the current element.\n@see aria-describedby.',
+        name: 'aria-labelledby',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-level': {
+        defaultValue: null,
+        description: 'Defines the hierarchical level of an element within a structure.',
+        name: 'aria-level',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-live': {
+        defaultValue: null,
+        description:
+          'Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.',
+        name: 'aria-live',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"off" | "assertive" | "polite"' },
+      },
+      'aria-modal': {
+        defaultValue: null,
+        description: 'Indicates whether an element is modal when displayed.',
+        name: 'aria-modal',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-multiline': {
+        defaultValue: null,
+        description:
+          'Indicates whether a text box accepts multiple lines of input or only a single line.',
+        name: 'aria-multiline',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-multiselectable': {
+        defaultValue: null,
+        description:
+          'Indicates that the user may select more than one item from the current selectable descendants.',
+        name: 'aria-multiselectable',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-orientation': {
+        defaultValue: null,
+        description:
+          "Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous.",
+        name: 'aria-orientation',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"horizontal" | "vertical"' },
+      },
+      'aria-owns': {
+        defaultValue: null,
+        description:
+          'Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship\nbetween DOM elements where the DOM hierarchy cannot be used to represent the relationship.\n@see aria-controls.',
+        name: 'aria-owns',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-placeholder': {
+        defaultValue: null,
+        description:
+          'Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.\nA hint could be a sample value or a brief description of the expected format.',
+        name: 'aria-placeholder',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-posinset': {
+        defaultValue: null,
+        description:
+          "Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-setsize.",
+        name: 'aria-posinset',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-pressed': {
+        defaultValue: null,
+        description:
+          'Indicates the current "pressed" state of toggle buttons.\n@see aria-checked\n@see aria-selected.',
+        name: 'aria-pressed',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean | "true" | "false" | "mixed"' },
+      },
+      'aria-readonly': {
+        defaultValue: null,
+        description:
+          'Indicates that the element is not editable, but is otherwise operable.\n@see aria-disabled.',
+        name: 'aria-readonly',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-relevant': {
+        defaultValue: null,
+        description:
+          'Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.\n@see aria-atomic.',
+        name: 'aria-relevant',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: '"text" | "additions" | "additions removals" | "additions text" | "all" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals"',
+        },
+      },
+      'aria-required': {
+        defaultValue: null,
+        description:
+          'Indicates that user input is required on the element before a form may be submitted.',
+        name: 'aria-required',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-roledescription': {
+        defaultValue: null,
+        description:
+          'Defines a human-readable, author-localized description for the role of an element.',
+        name: 'aria-roledescription',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-rowcount': {
+        defaultValue: null,
+        description:
+          'Defines the total number of rows in a table, grid, or treegrid.\n@see aria-rowindex.',
+        name: 'aria-rowcount',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-rowindex': {
+        defaultValue: null,
+        description:
+          "Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.\n@see aria-rowcount\n@see aria-rowspan.",
+        name: 'aria-rowindex',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-rowindextext': {
+        defaultValue: null,
+        description:
+          'Defines a human readable text alternative of aria-rowindex.\n@see aria-colindextext.',
+        name: 'aria-rowindextext',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      'aria-rowspan': {
+        defaultValue: null,
+        description:
+          'Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.\n@see aria-rowindex\n@see aria-colspan.',
+        name: 'aria-rowspan',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-selected': {
+        defaultValue: null,
+        description:
+          'Indicates the current "selected" state of various widgets.\n@see aria-checked\n@see aria-pressed.',
+        name: 'aria-selected',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'Booleanish' },
+      },
+      'aria-setsize': {
+        defaultValue: null,
+        description:
+          'Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.\n@see aria-posinset.',
+        name: 'aria-setsize',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-sort': {
+        defaultValue: null,
+        description:
+          'Indicates if items in a table or grid are sorted in ascending or descending order.',
+        name: 'aria-sort',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '"none" | "ascending" | "descending" | "other"' },
+      },
+      'aria-valuemax': {
+        defaultValue: null,
+        description: 'Defines the maximum allowed value for a range widget.',
+        name: 'aria-valuemax',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-valuemin': {
+        defaultValue: null,
+        description: 'Defines the minimum allowed value for a range widget.',
+        name: 'aria-valuemin',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-valuenow': {
+        defaultValue: null,
+        description:
+          'Defines the current value for a range widget.\n@see aria-valuetext.',
+        name: 'aria-valuenow',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'number' },
+      },
+      'aria-valuetext': {
+        defaultValue: null,
+        description:
+          'Defines the human readable text alternative of aria-valuenow for a range widget.',
+        name: 'aria-valuetext',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'AriaAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'AriaAttributes',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      dangerouslySetInnerHTML: {
+        defaultValue: null,
+        description: '',
+        name: 'dangerouslySetInnerHTML',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: { name: '{ __html: string | TrustedHTML; }' },
+      },
+      onCopy: {
+        defaultValue: null,
+        description: '',
+        name: 'onCopy',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ClipboardEventHandler<HTMLSpanElement> | ClipboardEventHandler<HTMLHeadingElement> | ClipboardEventHandler<...> | ClipboardEventHandler<...>',
+        },
+      },
+      onCopyCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCopyCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ClipboardEventHandler<HTMLSpanElement> | ClipboardEventHandler<HTMLHeadingElement> | ClipboardEventHandler<...> | ClipboardEventHandler<...>',
+        },
+      },
+      onCut: {
+        defaultValue: null,
+        description: '',
+        name: 'onCut',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ClipboardEventHandler<HTMLSpanElement> | ClipboardEventHandler<HTMLHeadingElement> | ClipboardEventHandler<...> | ClipboardEventHandler<...>',
+        },
+      },
+      onCutCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCutCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ClipboardEventHandler<HTMLSpanElement> | ClipboardEventHandler<HTMLHeadingElement> | ClipboardEventHandler<...> | ClipboardEventHandler<...>',
+        },
+      },
+      onPaste: {
+        defaultValue: null,
+        description: '',
+        name: 'onPaste',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ClipboardEventHandler<HTMLSpanElement> | ClipboardEventHandler<HTMLHeadingElement> | ClipboardEventHandler<...> | ClipboardEventHandler<...>',
+        },
+      },
+      onPasteCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPasteCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ClipboardEventHandler<HTMLSpanElement> | ClipboardEventHandler<HTMLHeadingElement> | ClipboardEventHandler<...> | ClipboardEventHandler<...>',
+        },
+      },
+      onCompositionEnd: {
+        defaultValue: null,
+        description: '',
+        name: 'onCompositionEnd',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'CompositionEventHandler<HTMLSpanElement> | CompositionEventHandler<HTMLHeadingElement> | CompositionEventHandler<...> | CompositionEventHandler<...>',
+        },
+      },
+      onCompositionEndCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCompositionEndCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'CompositionEventHandler<HTMLSpanElement> | CompositionEventHandler<HTMLHeadingElement> | CompositionEventHandler<...> | CompositionEventHandler<...>',
+        },
+      },
+      onCompositionStart: {
+        defaultValue: null,
+        description: '',
+        name: 'onCompositionStart',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'CompositionEventHandler<HTMLSpanElement> | CompositionEventHandler<HTMLHeadingElement> | CompositionEventHandler<...> | CompositionEventHandler<...>',
+        },
+      },
+      onCompositionStartCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCompositionStartCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'CompositionEventHandler<HTMLSpanElement> | CompositionEventHandler<HTMLHeadingElement> | CompositionEventHandler<...> | CompositionEventHandler<...>',
+        },
+      },
+      onCompositionUpdate: {
+        defaultValue: null,
+        description: '',
+        name: 'onCompositionUpdate',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'CompositionEventHandler<HTMLSpanElement> | CompositionEventHandler<HTMLHeadingElement> | CompositionEventHandler<...> | CompositionEventHandler<...>',
+        },
+      },
+      onCompositionUpdateCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCompositionUpdateCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'CompositionEventHandler<HTMLSpanElement> | CompositionEventHandler<HTMLHeadingElement> | CompositionEventHandler<...> | CompositionEventHandler<...>',
+        },
+      },
+      onFocus: {
+        defaultValue: null,
+        description: '',
+        name: 'onFocus',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FocusEventHandler<HTMLSpanElement> | FocusEventHandler<HTMLHeadingElement> | FocusEventHandler<HTMLParagraphElement> | FocusEventHandler<...>',
+        },
+      },
+      onFocusCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onFocusCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FocusEventHandler<HTMLSpanElement> | FocusEventHandler<HTMLHeadingElement> | FocusEventHandler<HTMLParagraphElement> | FocusEventHandler<...>',
+        },
+      },
+      onBlur: {
+        defaultValue: null,
+        description: '',
+        name: 'onBlur',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FocusEventHandler<HTMLSpanElement> | FocusEventHandler<HTMLHeadingElement> | FocusEventHandler<HTMLParagraphElement> | FocusEventHandler<...>',
+        },
+      },
+      onBlurCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onBlurCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FocusEventHandler<HTMLSpanElement> | FocusEventHandler<HTMLHeadingElement> | FocusEventHandler<HTMLParagraphElement> | FocusEventHandler<...>',
+        },
+      },
+      onChange: {
+        defaultValue: null,
+        description: '',
+        name: 'onChange',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onChangeCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onChangeCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onBeforeInput: {
+        defaultValue: null,
+        description: '',
+        name: 'onBeforeInput',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onBeforeInputCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onBeforeInputCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onInput: {
+        defaultValue: null,
+        description: '',
+        name: 'onInput',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onInputCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onInputCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onReset: {
+        defaultValue: null,
+        description: '',
+        name: 'onReset',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onResetCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onResetCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onSubmit: {
+        defaultValue: null,
+        description: '',
+        name: 'onSubmit',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onSubmitCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onSubmitCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onInvalid: {
+        defaultValue: null,
+        description: '',
+        name: 'onInvalid',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onInvalidCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onInvalidCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'FormEventHandler<HTMLSpanElement> | FormEventHandler<HTMLHeadingElement> | FormEventHandler<HTMLParagraphElement> | FormEventHandler<...>',
+        },
+      },
+      onLoad: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoad',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onError: {
+        defaultValue: null,
+        description: '',
+        name: 'onError',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onErrorCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onErrorCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onKeyDown: {
+        defaultValue: null,
+        description: '',
+        name: 'onKeyDown',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'KeyboardEventHandler<HTMLSpanElement> | KeyboardEventHandler<HTMLHeadingElement> | KeyboardEventHandler<...> | KeyboardEventHandler<...>',
+        },
+      },
+      onKeyDownCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onKeyDownCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'KeyboardEventHandler<HTMLSpanElement> | KeyboardEventHandler<HTMLHeadingElement> | KeyboardEventHandler<...> | KeyboardEventHandler<...>',
+        },
+      },
+      onKeyPress: {
+        defaultValue: null,
+        description: '@deprecated',
+        name: 'onKeyPress',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'KeyboardEventHandler<HTMLSpanElement> | KeyboardEventHandler<HTMLHeadingElement> | KeyboardEventHandler<...> | KeyboardEventHandler<...>',
+        },
+      },
+      onKeyPressCapture: {
+        defaultValue: null,
+        description: '@deprecated',
+        name: 'onKeyPressCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'KeyboardEventHandler<HTMLSpanElement> | KeyboardEventHandler<HTMLHeadingElement> | KeyboardEventHandler<...> | KeyboardEventHandler<...>',
+        },
+      },
+      onKeyUp: {
+        defaultValue: null,
+        description: '',
+        name: 'onKeyUp',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'KeyboardEventHandler<HTMLSpanElement> | KeyboardEventHandler<HTMLHeadingElement> | KeyboardEventHandler<...> | KeyboardEventHandler<...>',
+        },
+      },
+      onKeyUpCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onKeyUpCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'KeyboardEventHandler<HTMLSpanElement> | KeyboardEventHandler<HTMLHeadingElement> | KeyboardEventHandler<...> | KeyboardEventHandler<...>',
+        },
+      },
+      onAbort: {
+        defaultValue: null,
+        description: '',
+        name: 'onAbort',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onAbortCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onAbortCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onCanPlay: {
+        defaultValue: null,
+        description: '',
+        name: 'onCanPlay',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onCanPlayCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCanPlayCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onCanPlayThrough: {
+        defaultValue: null,
+        description: '',
+        name: 'onCanPlayThrough',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onCanPlayThroughCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onCanPlayThroughCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onDurationChange: {
+        defaultValue: null,
+        description: '',
+        name: 'onDurationChange',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onDurationChangeCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDurationChangeCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onEmptied: {
+        defaultValue: null,
+        description: '',
+        name: 'onEmptied',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onEmptiedCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onEmptiedCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onEncrypted: {
+        defaultValue: null,
+        description: '',
+        name: 'onEncrypted',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onEncryptedCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onEncryptedCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onEnded: {
+        defaultValue: null,
+        description: '',
+        name: 'onEnded',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onEndedCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onEndedCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadedData: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadedData',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadedDataCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadedDataCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadedMetadata: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadedMetadata',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadedMetadataCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadedMetadataCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadStart: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadStart',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onLoadStartCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onLoadStartCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onPause: {
+        defaultValue: null,
+        description: '',
+        name: 'onPause',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onPauseCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPauseCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onPlay: {
+        defaultValue: null,
+        description: '',
+        name: 'onPlay',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onPlayCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPlayCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onPlaying: {
+        defaultValue: null,
+        description: '',
+        name: 'onPlaying',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onPlayingCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPlayingCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onProgress: {
+        defaultValue: null,
+        description: '',
+        name: 'onProgress',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onProgressCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onProgressCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onRateChange: {
+        defaultValue: null,
+        description: '',
+        name: 'onRateChange',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onRateChangeCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onRateChangeCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onResize: {
+        defaultValue: null,
+        description: '',
+        name: 'onResize',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onResizeCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onResizeCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSeeked: {
+        defaultValue: null,
+        description: '',
+        name: 'onSeeked',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSeekedCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onSeekedCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSeeking: {
+        defaultValue: null,
+        description: '',
+        name: 'onSeeking',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSeekingCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onSeekingCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onStalled: {
+        defaultValue: null,
+        description: '',
+        name: 'onStalled',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onStalledCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onStalledCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSuspend: {
+        defaultValue: null,
+        description: '',
+        name: 'onSuspend',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSuspendCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onSuspendCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onTimeUpdate: {
+        defaultValue: null,
+        description: '',
+        name: 'onTimeUpdate',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onTimeUpdateCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onTimeUpdateCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onVolumeChange: {
+        defaultValue: null,
+        description: '',
+        name: 'onVolumeChange',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onVolumeChangeCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onVolumeChangeCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onWaiting: {
+        defaultValue: null,
+        description: '',
+        name: 'onWaiting',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onWaitingCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onWaitingCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onAuxClick: {
+        defaultValue: null,
+        description: '',
+        name: 'onAuxClick',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onAuxClickCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onAuxClickCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onClick: {
+        defaultValue: null,
+        description: '',
+        name: 'onClick',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onClickCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onClickCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onContextMenu: {
+        defaultValue: null,
+        description: '',
+        name: 'onContextMenu',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onContextMenuCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onContextMenuCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onDoubleClick: {
+        defaultValue: null,
+        description: '',
+        name: 'onDoubleClick',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onDoubleClickCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDoubleClickCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onDrag: {
+        defaultValue: null,
+        description: '',
+        name: 'onDrag',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragEnd: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragEnd',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragEndCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragEndCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragEnter: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragEnter',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragEnterCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragEnterCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragExit: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragExit',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragExitCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragExitCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragLeave: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragLeave',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragLeaveCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragLeaveCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragOver: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragOver',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragOverCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragOverCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragStart: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragStart',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDragStartCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDragStartCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDrop: {
+        defaultValue: null,
+        description: '',
+        name: 'onDrop',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onDropCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onDropCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'DragEventHandler<HTMLSpanElement> | DragEventHandler<HTMLHeadingElement> | DragEventHandler<HTMLParagraphElement> | DragEventHandler<...>',
+        },
+      },
+      onMouseDown: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseDown',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseDownCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseDownCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseEnter: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseEnter',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseLeave: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseLeave',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseMove: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseMove',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseMoveCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseMoveCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseOut: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseOut',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseOutCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseOutCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseOver: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseOver',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseOverCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseOverCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseUp: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseUp',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onMouseUpCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onMouseUpCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'MouseEventHandler<HTMLSpanElement> | MouseEventHandler<HTMLHeadingElement> | MouseEventHandler<HTMLParagraphElement> | MouseEventHandler<...>',
+        },
+      },
+      onSelect: {
+        defaultValue: null,
+        description: '',
+        name: 'onSelect',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onSelectCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onSelectCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'ReactEventHandler<HTMLSpanElement> | ReactEventHandler<HTMLHeadingElement> | ReactEventHandler<HTMLParagraphElement> | ReactEventHandler<...>',
+        },
+      },
+      onTouchCancel: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchCancel',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchCancelCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchCancelCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchEnd: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchEnd',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchEndCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchEndCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchMove: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchMove',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchMoveCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchMoveCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchStart: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchStart',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onTouchStartCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onTouchStartCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TouchEventHandler<HTMLSpanElement> | TouchEventHandler<HTMLHeadingElement> | TouchEventHandler<HTMLParagraphElement> | TouchEventHandler<...>',
+        },
+      },
+      onPointerDown: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerDown',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerDownCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerDownCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerMove: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerMove',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerMoveCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerMoveCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerUp: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerUp',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerUpCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerUpCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerCancel: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerCancel',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerCancelCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerCancelCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerEnter: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerEnter',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerEnterCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerEnterCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerLeave: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerLeave',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerLeaveCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerLeaveCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerOver: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerOver',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerOverCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerOverCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerOut: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerOut',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onPointerOutCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onPointerOutCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onGotPointerCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onGotPointerCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onGotPointerCaptureCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onGotPointerCaptureCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onLostPointerCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onLostPointerCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onLostPointerCaptureCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onLostPointerCaptureCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'PointerEventHandler<HTMLSpanElement> | PointerEventHandler<HTMLHeadingElement> | PointerEventHandler<HTMLParagraphElement> | PointerEventHandler<...>',
+        },
+      },
+      onScroll: {
+        defaultValue: null,
+        description: '',
+        name: 'onScroll',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'UIEventHandler<HTMLSpanElement> | UIEventHandler<HTMLHeadingElement> | UIEventHandler<HTMLParagraphElement> | UIEventHandler<...>',
+        },
+      },
+      onScrollCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onScrollCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'UIEventHandler<HTMLSpanElement> | UIEventHandler<HTMLHeadingElement> | UIEventHandler<HTMLParagraphElement> | UIEventHandler<...>',
+        },
+      },
+      onWheel: {
+        defaultValue: null,
+        description: '',
+        name: 'onWheel',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'WheelEventHandler<HTMLSpanElement> | WheelEventHandler<HTMLHeadingElement> | WheelEventHandler<HTMLParagraphElement> | WheelEventHandler<...>',
+        },
+      },
+      onWheelCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onWheelCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'WheelEventHandler<HTMLSpanElement> | WheelEventHandler<HTMLHeadingElement> | WheelEventHandler<HTMLParagraphElement> | WheelEventHandler<...>',
+        },
+      },
+      onAnimationStart: {
+        defaultValue: null,
+        description: '',
+        name: 'onAnimationStart',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'AnimationEventHandler<HTMLSpanElement> | AnimationEventHandler<HTMLHeadingElement> | AnimationEventHandler<...> | AnimationEventHandler<...>',
+        },
+      },
+      onAnimationStartCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onAnimationStartCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'AnimationEventHandler<HTMLSpanElement> | AnimationEventHandler<HTMLHeadingElement> | AnimationEventHandler<...> | AnimationEventHandler<...>',
+        },
+      },
+      onAnimationEnd: {
+        defaultValue: null,
+        description: '',
+        name: 'onAnimationEnd',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'AnimationEventHandler<HTMLSpanElement> | AnimationEventHandler<HTMLHeadingElement> | AnimationEventHandler<...> | AnimationEventHandler<...>',
+        },
+      },
+      onAnimationEndCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onAnimationEndCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'AnimationEventHandler<HTMLSpanElement> | AnimationEventHandler<HTMLHeadingElement> | AnimationEventHandler<...> | AnimationEventHandler<...>',
+        },
+      },
+      onAnimationIteration: {
+        defaultValue: null,
+        description: '',
+        name: 'onAnimationIteration',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'AnimationEventHandler<HTMLSpanElement> | AnimationEventHandler<HTMLHeadingElement> | AnimationEventHandler<...> | AnimationEventHandler<...>',
+        },
+      },
+      onAnimationIterationCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onAnimationIterationCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'AnimationEventHandler<HTMLSpanElement> | AnimationEventHandler<HTMLHeadingElement> | AnimationEventHandler<...> | AnimationEventHandler<...>',
+        },
+      },
+      onTransitionEnd: {
+        defaultValue: null,
+        description: '',
+        name: 'onTransitionEnd',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TransitionEventHandler<HTMLSpanElement> | TransitionEventHandler<HTMLHeadingElement> | TransitionEventHandler<...> | TransitionEventHandler<...>',
+        },
+      },
+      onTransitionEndCapture: {
+        defaultValue: null,
+        description: '',
+        name: 'onTransitionEndCapture',
+        parent: {
+          fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+          name: 'DOMAttributes',
+        },
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+          {
+            fileName: 'arbutus/node_modules/@types/react/index.d.ts',
+            name: 'DOMAttributes',
+          },
+        ],
+        required: false,
+        type: {
+          name: 'TransitionEventHandler<HTMLSpanElement> | TransitionEventHandler<HTMLHeadingElement> | TransitionEventHandler<...> | TransitionEventHandler<...>',
+        },
+      },
+      as: {
+        defaultValue: null,
+        description: '',
+        name: 'as',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-utilities/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '"h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "pre" | "span"' },
+      },
+      align: {
+        defaultValue: { value: 'start' },
+        description: 'Aligns text based on the parent container.',
+        name: 'align',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '"center" | "start" | "end" | "justify"' },
+      },
+      block: {
+        defaultValue: { value: 'false' },
+        description: 'Applies a block display for the content.',
+        name: 'block',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      font: {
+        defaultValue: { value: 'base' },
+        description: 'Applies the font family to the content.',
+        name: 'font',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '"base" | "numeric" | "monospace"' },
+      },
+      italic: {
+        defaultValue: { value: 'false' },
+        description: 'Applies the italic font style to the content.',
+        name: 'italic',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      size: {
+        defaultValue: { value: '300' },
+        description:
+          'Applies font size and line height based on the theme typography tokens.',
+        name: 'size',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000' },
+      },
+      strikethrough: {
+        defaultValue: { value: 'false' },
+        description: 'Applies the strikethrough text decoration to the content.',
+        name: 'strikethrough',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      truncate: {
+        defaultValue: { value: 'false' },
+        description: 'Truncate overflowing text for block displays.',
+        name: 'truncate',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      underline: {
+        defaultValue: { value: 'false' },
+        description: 'Applies the underline text decoration to the content.',
+        name: 'underline',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+      weight: {
+        defaultValue: { value: 'regular' },
+        description: 'Applies font weight to the content.',
+        name: 'weight',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '"regular" | "medium" | "semibold" | "bold"' },
+      },
+      wrap: {
+        defaultValue: { value: 'true' },
+        description: 'Wraps the text content on white spaces.',
+        name: 'wrap',
+        declarations: [
+          {
+            fileName: 'arbutus/node_modules/@fluentui/react-text/dist/index.d.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
+      },
+    },
+  },
+  Tag: {
+    tags: {},
+    filePath: '../../components/tag/src/tag/tag.tsx',
+    description: '',
+    displayName: 'Tag',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tag/src/tag/tag.types.ts',
             name: 'TypeLiteral',
           },
         ],
         required: false,
         type: { name: 'string' },
+      },
+      type: {
+        defaultValue: { value: 'accent' },
+        description: 'Type color variant options.',
+        name: 'type',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tag/src/tag/tag.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'TypeVariant' },
+      },
+      size: {
+        defaultValue: { value: 'medium' },
+        description: 'Size variant options.',
+        name: 'size',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tag/src/tag/tag.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'SizeVariant' },
+      },
+      isInline: {
+        defaultValue: { value: 'false' },
+        description: 'Inline variant.',
+        name: 'isInline',
+        declarations: [
+          {
+            fileName: 'arbutus/components/tag/src/tag/tag.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'boolean' },
       },
     },
   },

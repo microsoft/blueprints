@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[1560],{81560:function(e,a,t){t.r(a);var c=t(65153),l=t(2784);a.default=()=>l.createElement("div",null,l.createElement(c.l,{text:"@example/example-package",actionIconName:"copy",size:"small"})," ",l.createElement(c.l,{text:"@example/example-package",actionIconName:"copy",size:"medium"})," ",l.createElement(c.l,{text:"@example/example-package",actionIconName:"copy",size:"large"}))}}]);
+//# sourceMappingURL=1560-6207fe7737e748cc9f66.js.map

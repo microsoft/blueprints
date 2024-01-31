@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[8320],{98320:function(t,a,n){n.r(a),a.default="import { Tag } from '@microsoft/arbutus.tag';\nimport * as React from 'react';\n\nconst ExampleComponent = () => <Tag>Tag</Tag>\n\nexport default ExampleComponent;\n"}}]);
+//# sourceMappingURL=8320-009b49e1586aed959a0a.js.map

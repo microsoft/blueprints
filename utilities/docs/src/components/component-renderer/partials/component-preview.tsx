@@ -63,6 +63,7 @@ const useWrapperStyles = makeStyles({
     paddingLeft: '40px',
     paddingRight: '40px',
     backgroundColor: tokens.colorNeutralBackground1,
+    rowGap: tokens.spacingVerticalM,
   },
 });
 

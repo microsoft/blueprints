@@ -9,6 +9,9 @@ import { Tag } from '../src/index';
 export default {
   title: 'Atoms/Tag',
   component: Tag,
+  parameters: {
+    layout: 'centered',
+  },
 } as Meta<typeof Tag>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[8477],{78477:function(e,t,s){s.r(t);var a=s(59973),c=s(933),o=s(2784);const r=(0,a.Z)({root:{width:"140px"}});t.default=()=>{const e=r();return o.createElement("div",{className:e.root},o.createElement(c.T,{logoName:"figma",size:"fill"}))}}}]);
+//# sourceMappingURL=8477-0483bba14b79c8c117fb.js.map

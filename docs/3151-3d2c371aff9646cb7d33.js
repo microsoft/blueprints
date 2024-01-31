@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[3151],{33151:function(e,a,u){u.r(a);var s=u(933),t=u(2784);a.default=()=>t.createElement(s.T,{logoName:"figma",label:"Figma",size:"medium"})}}]);
+//# sourceMappingURL=3151-3d2c371aff9646cb7d33.js.map
