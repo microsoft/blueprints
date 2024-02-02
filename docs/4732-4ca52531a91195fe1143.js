@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[4732],{4732:function(e,a,s){s.r(a);var u=s(7211),r=s(2784);a.default=()=>r.createElement(u.r,{as:"a",elementProps:{href:"#"}},"I am a Link.")}}]);
-//# sourceMappingURL=4732-4ca52531a91195fe1143.js.map

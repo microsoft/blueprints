@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[9397],{9397:function(e,a,l){l.r(a);var t=l(2869),c=l(2784);a.default=()=>c.createElement("div",null,c.createElement(t.l,{text:"Example resource",logoLabel:"Figma file",logoName:"figma",actionIconName:"link"})," ",c.createElement(t.l,{text:"@example/example-package",actionIconName:"copy"}))}}]);
-//# sourceMappingURL=9397-a9036d1713ffff49049e.js.map

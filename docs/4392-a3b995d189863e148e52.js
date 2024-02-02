@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[4392],{4392:function(e,c,a){a.r(c);var s=a(9971),u=a(2784);c.default=()=>u.createElement(s.J,{iconName:"code",color:"accent",size:"large"})}}]);
-//# sourceMappingURL=4392-a3b995d189863e148e52.js.map

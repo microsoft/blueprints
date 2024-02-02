@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[1713],{1713:function(e,o,t){t.r(o),o.default="import * as React from 'react';\nimport { Badge } from '@microsoft/arbutus.badge';\n\nconst ExampleComponent = () => <Badge color=\"positive\" iconName=\"check\" />;\n\nexport default ExampleComponent;\n"}}]);
-//# sourceMappingURL=1713-86c9b5ff7b03c3e4c9f4.js.map

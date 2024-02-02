@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[5560],{5560:function(e,c,s){s.r(c);var u=s(2784),t=s(5303);c.default=()=>u.createElement(t.C,{color:"positive",iconName:"check"})}}]);
-//# sourceMappingURL=5560-5c2edfc999327d3c8cd4.js.map

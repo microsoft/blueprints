@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[3950],{3950:function(e,a,n){n.r(a);var r=n(7211),t=n(2784);a.default=()=>t.createElement(t.Fragment,null,t.createElement(r.r,{as:"a",elementProps:{href:"#"},isUnderlined:!0},"I am a Primary Link."),t.createElement(r.r,{variant:"caption",as:"a",elementProps:{href:"#"},isUnderlined:!0},"I am a Caption Link."),t.createElement(r.r,{variant:"secondary",as:"a",elementProps:{href:"#"},isUnderlined:!0},"I am a Secondary Link."))}}]);
-//# sourceMappingURL=3950-c039d82eeefc7ee49eb1.js.map
