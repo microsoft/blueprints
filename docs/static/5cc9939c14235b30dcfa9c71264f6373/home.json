@@ -1,0 +1,53 @@
+{
+  "_layout": "home",
+  "_isSingleton": true,
+  "title": "Arbutus",
+  "leading": "Write, design and build documentation for your project.",
+  "cta": {
+    "label": "Get started",
+    "href": "/getting-started"
+  },
+  "valueStatement": "An ecosystem of guidance, components and tools for creating your best documentation yet.",
+  "articles": [
+    {
+      "title": "Bootstrap your documentation site",
+      "description": "Starters are a great way to bootstrap your documentation site. They provide a foundation for you to build on and customize to your needs. Available in popular stacks.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop.svg",
+        "alt": "Gradient"
+      },
+      "to": "/starters/introduction",
+      "isExternal": false
+    },
+    {
+      "title": "Blueprints for Figma",
+      "description": "Need help with designing a documentation site? Use the Blueprints Figma UI Kit to create a consistent experience across your documentation.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop-2.svg",
+        "alt": "Gradient"
+      },
+      "to": "/components/introduction",
+      "isExternal": false
+    },
+    {
+      "title": "Blueprints for React",
+      "description": "Blueprints UI Library is built with React & Fluent, for creating documentation sites that are accessible, performant and delightful.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop-3.svg",
+        "alt": "Gradient"
+      },
+      "to": "/components/introduction",
+      "isExternal": false
+    },
+    {
+      "title": "Effective technical writing",
+      "description": "Use this guide to learn how to write documentation for your library or design system.",
+      "image": {
+        "src": "../../assets/home/gradient-backdrop-4.svg",
+        "alt": "Gradient"
+      },
+      "to": "/guidance/introduction",
+      "isExternal": false
+    }
+  ]
+}

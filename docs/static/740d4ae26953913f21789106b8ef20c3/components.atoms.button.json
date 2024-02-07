@@ -1,0 +1,208 @@
+{
+  "_layout": "reference",
+  "_path": "/components/atoms/button",
+  "title": "Button",
+  "definition": "A button triggers a single action or event. Use buttons for important actions like submitting a response, committing a change, or moving to the next step. For navigating to another place, try a link instead.",
+  "quickResources": [
+    {
+      "label": "FigmaToolkit",
+      "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A4009&mode=design&t=6bKJpme0RA4u7J7O-1",
+      "type": "figma"
+    },
+    {
+      "copyText": "@microsoft/blueprints.button"
+    }
+  ],
+  "owners": [
+    {
+      "firstName": "Eric",
+      "lastName": "Tsoi",
+      "alias": "erictsoi",
+      "role": "Designer"
+    },
+    {
+      "firstName": "Ria",
+      "lastName": "Carmin",
+      "alias": "riacarmin",
+      "role": "UXE"
+    }
+  ],
+  "tabs": [
+    {
+      "tab": "usage",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Anatomy",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D123%253A82%26mode%3Ddesign%26t%3DV6ncPw7LqoNhizbh-1",
+          "listItems": [
+            {
+              "headline": "Text",
+              "text": "The action that the button performs. It gives the user a clear idea of what will happen when they click or tap it."
+            },
+            {
+              "headline": "Color variants",
+              "text": "Choose a color that matches the semantic meaning of the action. Read more about semantic colors in Color Variants."
+            },
+            {
+              "headline": "Shape",
+              "text": "Button comes in a rectangular or a pill shape. Rectangular buttons are used for most actions."
+            },
+            {
+              "headline": "Size",
+              "text": "Buttons come in three sizes: small, medium, and large. Use the size that best fits the layout and the importance of the action."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Base Example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "button-basic.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Color Variants",
+          "leading": "Color of the button signifies semantic meaning. Primary is the default.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "button-color-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "lists.table-list",
+          "variant": "borderless",
+          "data": [
+            [
+              "`primary` (default)",
+              "This is the primary or main action that the interface is asking the user to take. Do not use more than one primary button in one view."
+            ],
+            [
+              "`secondary`",
+              "Supporting or alternative actions user can take within one view."
+            ],
+            [
+              "`danger`",
+              "Actions that can lead to unrecoverable consequences, for example deleting data permanently, clearing a form or leaving a meeting."
+            ],
+            [
+              "`warning`",
+              "Actions that you might want the user to stop and think about first, because it might have consequences. For example, changing a project settings that will affect all users or removing a page that can affect systems that rely on that data."
+            ],
+            [
+              "`success`",
+              "Confirmation actions, like saving data, sending messages or acknowledging information."
+            ]
+          ],
+          "columnSizing": ["160px", "auto"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Shape Variants",
+          "leading": "Rectangular, brick shape is the default.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "button-shape-variants.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Size Variants",
+          "leading": "Medium size is the default.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "button-size-variants.example.tsx",
+          "withMenu": true
+        }
+      ]
+    },
+    {
+      "tab": "design",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Guidance",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.embed",
+          "url": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FV2bt7PbLPJEDXCEIcUwrEa%2FFluent-Blueprints-UI-Kit%3Ftype%3Ddesign%26node-id%3D1015%253A4009%26mode%3Ddesign%26t%3DZtK99f6mJUB63MYp-1",
+          "type": "figma",
+          "size": "large",
+          "title": "Button UI kit"
+        }
+      ]
+    },
+    {
+      "tab": "develop",
+      "content": [
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "button-basic.example.tsx",
+          "dependencies": ["@microsoft/arbutus.button"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "Button",
+          "componentPropType": "ButtonProps"
+        }
+      ]
+    }
+  ]
+}

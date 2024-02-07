@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[943],{8943:function(n,t,o){o.r(t),t.default="import * as React from 'react';\nimport { Button } from '@microsoft/arbutus.button';\n\nconst ExampleComponent = () => (\n  <Button\n    onClick={() => {\n      /** Action */\n    }}\n  >\n    Click me!\n  </Button>\n);\n\nexport default ExampleComponent;\n"}}]);
+//# sourceMappingURL=943-6fa644eadaf511ef16e8.js.map

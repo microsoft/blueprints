@@ -6,7 +6,7 @@ dotenv.config({
 });
 
 const config: GatsbyConfig = {
-  pathPrefix: process.env.PATH_PREFIX ?? '/',
+  pathPrefix: process.env.NODE_ENV === 'production' ? 'blueprints' : '/',
   siteMetadata: {
     title: `Blueprints`,
     description:
