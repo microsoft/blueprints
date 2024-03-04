@@ -1,8 +1,18 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/theme-switch",
   "title": "ThemeSwitch",
-  "definition": "This is a reference page.",
+  "definition": "ThemeSwitch allow users to switch between light and dark mode themes on a website.",
+  "quickResources": [
+    {
+      "label": "Figma Toolkit",
+      "url": "https://www.figma.com/file/V2bt7PbLPJEDXCEIcUwrEa/Fluent-Blueprints-UI-Kit?type=design&node-id=1015%3A5351&mode=design&t=VjrX9Dosbu1wDo7u-1",
+      "type": "figma"
+    },
+    {
+      "copyText": "@microsoft/blueprints.tag"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -19,49 +29,107 @@
   ],
   "tabs": [
     {
-      "tab": "usage",
+      "tab": "Usage",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D962%253A40%26mode%3Ddesign%26t%3DfbQpkYSTPbE0smGz-1",
+          "listItems": [
+            {
+              "headline": "Icon",
+              "text": "ThemeSwitch has an icon that works as a visual indicator of the other available theme."
+            },
+            {
+              "headline": "Color scheme",
+              "text": "The ThemeSwitch responds to the selected color scheme."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Base example",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "theme-switch.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.text",
+          "markdown": {
+            "raw": "⚠️ **Note:** The ThemeSwitch component doesn’t actually change the theme of the site. It is an atomic presentational component only and the actual functionality needs to be implemented in the application itself. See the example implementation in the Sandbox."
+          }
         }
       ]
     },
     {
-      "tab": "design",
+      "tab": "Design",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Guidance",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.embed",
+          "url": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FV2bt7PbLPJEDXCEIcUwrEa%2FFluent-Blueprints-UI-Kit%3Ftype%3Ddesign%26node-id%3D1015%253A5351%26mode%3Ddesign%26t%3DVjrX9Dosbu1wDo7u-1",
+          "type": "figma",
+          "size": "large",
+          "title": "ThemeSwitch UI kit"
         }
       ]
     },
     {
-      "tab": "develop",
+      "tab": "Code",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "theme-switch.example.tsx",
+          "dependencies": ["@microsoft/arbutus.theme-switch", "@microsoft/arbutus.theming"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "ThemeSwitch",
+          "componentPropType": "ThemeSwitchProps"
         }
       ]
     }

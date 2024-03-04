@@ -19064,6 +19064,73 @@ const manifest: Manifest = {
       },
     },
   },
+  ThemeSwitch: {
+    tags: {},
+    filePath: '../../components/theme-switch/src/theme-switch/theme-switch.tsx',
+    description: '',
+    displayName: 'ThemeSwitch',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/theme-switch/src/theme-switch/theme-switch.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      label: {
+        defaultValue: { value: 'Dark mode' },
+        description:
+          'Label for assistive technologies to indicate whether the theme is light or dark.',
+        name: 'label',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/theme-switch/src/theme-switch/theme-switch.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      isDark: {
+        defaultValue: null,
+        description: 'Whether the theme is light or dark.',
+        name: 'isDark',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/theme-switch/src/theme-switch/theme-switch.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'boolean' },
+      },
+      onToggle: {
+        defaultValue: null,
+        description:
+          'Callback to be called when the theme is toggled.\n@param isDark - Whether the theme is light or dark.',
+        name: 'onToggle',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/theme-switch/src/theme-switch/theme-switch.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: '() => void' },
+      },
+    },
+  },
 };
 
 export default manifest;
