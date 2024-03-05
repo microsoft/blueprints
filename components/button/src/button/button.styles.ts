@@ -73,25 +73,29 @@ export const sizeMap: SizeMap = {
     x: tokens.spacingHorizontalM,
     y: tokens.spacingVerticalXS,
     fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.fontSizeBase300,
   },
   medium: {
     x: tokens.spacingHorizontalL,
     y: tokens.spacingVerticalS,
     fontSize: tokens.fontSizeBase300,
+    lineHeight: tokens.fontSizeBase300,
   },
   large: {
     x: tokens.spacingHorizontalXXL,
     y: tokens.spacingVerticalM,
     fontSize: tokens.fontSizeBase400,
+    lineHeight: tokens.fontSizeBase400,
   },
 };
 
-const sizeStyleFunction = ({ y, x, fontSize }: SizeValue) => ({
+const sizeStyleFunction = ({ y, x, fontSize, lineHeight }: SizeValue) => ({
   paddingLeft: x,
   paddingRight: x,
   paddingTop: y,
   paddingBottom: y,
   fontSize,
+  lineHeight,
 });
 
 const sizeClasses = mapToStyles<SizeValue, SizeMap>(sizeMap, sizeStyleFunction);

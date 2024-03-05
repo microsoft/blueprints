@@ -14,6 +14,7 @@ export type SizeValue = {
   x: string;
   y: string;
   fontSize: string;
+  lineHeight: string;
 };
 
 export type SizeMap = Record<SizeKey, SizeValue>;
