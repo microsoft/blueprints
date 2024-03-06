@@ -68,7 +68,7 @@
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.7",
     "react-syntax-highlighter": "^15.5.0",
-    "sharp": "^0.32.1"
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "@microsoft/arbutus.prop-docs-cli": "^1.0.2",
