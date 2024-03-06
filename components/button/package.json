@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Button component in the Atoms collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

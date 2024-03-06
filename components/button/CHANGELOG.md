@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.button
 
-This log was last generated on Wed, 29 Nov 2023 00:19:57 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Mar 2024 02:51:23 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.5
+
+Wed, 06 Mar 2024 02:51:23 GMT
+
+### Patches
+
+- Adds line-height to Button (akimalunar@gmail.com)
 
 ## 1.0.4
 

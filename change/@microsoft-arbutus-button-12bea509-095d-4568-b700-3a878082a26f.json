@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adds line-height to Button",
-  "packageName": "@microsoft/arbutus.button",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

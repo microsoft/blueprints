@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.component-preview
 
-This log was last generated on Fri, 08 Dec 2023 23:06:24 GMT and should not be manually modified.
+This log was last generated on Wed, 06 Mar 2024 02:51:23 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.8
+
+Wed, 06 Mar 2024 02:51:23 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.button to v1.0.5
 
 ## 1.1.7
 

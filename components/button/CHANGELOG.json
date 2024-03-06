@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.button",
   "entries": [
     {
+      "date": "Wed, 06 Mar 2024 02:51:23 GMT",
+      "version": "1.0.5",
+      "tag": "@microsoft/arbutus.button_v1.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.button",
+            "commit": "d2a9e9c0ec664c4afde3d4c465b5587485675d9d",
+            "comment": "Adds line-height to Button"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.0.4",
       "tag": "@microsoft/arbutus.button_v1.0.4",

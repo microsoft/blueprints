@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.resource-chip",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ResourceChip represents a shortcut to a single resource like a file or a link.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18",
-    "@microsoft/arbutus.button": "1.0.4",
+    "@microsoft/arbutus.button": "1.0.5",
     "@microsoft/arbutus.icon": "1.0.6",
     "@microsoft/arbutus.logo": "1.0.4",
     "@microsoft/arbutus.text": "1.0.6"

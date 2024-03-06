@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.component-preview",
   "entries": [
     {
+      "date": "Wed, 06 Mar 2024 02:51:23 GMT",
+      "version": "1.1.8",
+      "tag": "@microsoft/arbutus.component-preview_v1.1.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.component-preview",
+            "comment": "Bump @microsoft/arbutus.button to v1.0.5",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 08 Dec 2023 23:06:24 GMT",
       "version": "1.1.7",
       "tag": "@microsoft/arbutus.component-preview_v1.1.7",
