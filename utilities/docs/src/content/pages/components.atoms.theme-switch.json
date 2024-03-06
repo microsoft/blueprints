@@ -116,7 +116,10 @@
         {
           "contentComponentId": "blocks.sandbox",
           "codeFile": "theme-switch.example.tsx",
-          "dependencies": ["@microsoft/arbutus.theme-switch", "@microsoft/arbutus.theming"]
+          "dependencies": [
+            "@microsoft/arbutus.theme-switch",
+            "@microsoft/arbutus.theming"
+          ]
         },
         {
           "contentComponentId": "blocks.heading",
