@@ -15,7 +15,8 @@
     "../../components/tabs/src/tabs/tabs.tsx",
     "../../components/text/src/text/text.tsx",
     "../../components/tag/src/tag/tag.tsx",
-    "../../components/theme-switch/src/theme-switch/theme-switch.tsx"
+    "../../components/theme-switch/src/theme-switch/theme-switch.tsx",
+    "../../components/tile/src/tile.tsx"
   ],
   "outputDir": "src/__prop-docs__"
 }

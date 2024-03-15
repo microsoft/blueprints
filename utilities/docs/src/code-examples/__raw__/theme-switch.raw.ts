@@ -3,7 +3,6 @@ import * as React from 'react';
 import { useTheme } from '@microsoft/arbutus.theming';
 
 const ExampleComponent = () => {
-  
   // Example of how to implement theme switching.
   const { themeKey, setTheme } = useTheme();
   const isDark = themeKey === 'dark';

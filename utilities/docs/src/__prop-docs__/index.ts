@@ -19131,6 +19131,83 @@ const manifest: Manifest = {
       },
     },
   },
+  Tile: {
+    tags: {},
+    filePath: '../../components/tile/src/tile.tsx',
+    description: '',
+    displayName: 'Tile',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      as: {
+        defaultValue: null,
+        description: 'Custom root element.',
+        name: 'as',
+        declarations: [
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+        ],
+        required: false,
+        type: { name: 'ElementType' },
+      },
+      onClick: {
+        defaultValue: null,
+        description: 'Click handler.',
+        name: 'onClick',
+        declarations: [
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+        ],
+        required: false,
+        type: { name: '(e?: SyntheticEvent<Element, Event>) => void' },
+      },
+      variant: {
+        defaultValue: null,
+        description: '',
+        name: 'variant',
+        declarations: [
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+        ],
+        required: true,
+        type: { name: '"card" | "image" | "solid-color"' },
+      },
+      imageSrc: {
+        defaultValue: null,
+        description:
+          '[NOTE] Don not use with Solid Color variant.\nBackground image source.',
+        name: 'imageSrc',
+        declarations: [
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      backgroundColor: {
+        defaultValue: { value: 'tile' },
+        description:
+          '[NOTE] Don not use with Solid Color variant.\nSelection of color options.',
+        name: 'backgroundColor',
+        declarations: [
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+          { fileName: 'arbutus/components/tile/src/tile.types.ts', name: 'TypeLiteral' },
+        ],
+        required: false,
+        type: { name: 'ColorVariant' },
+      },
+    },
+  },
 };
 
 export default manifest;
