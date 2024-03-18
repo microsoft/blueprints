@@ -16,7 +16,16 @@
     "../../components/text/src/text/text.tsx",
     "../../components/tag/src/tag/tag.tsx",
     "../../components/theme-switch/src/theme-switch/theme-switch.tsx",
-    "../../components/tile/src/tile.tsx"
+    "../../components/tile/src/tile.tsx",
+    "../../components/accordion/src/accordion-list/accordion-list.tsx",
+    "../../components/accordion/src/accordion-item/accordion-item.tsx",
+    "../../components/mark-list/src/mark-list/mark-list.tsx",
+    "../../components/mark-list/src/mark-item/mark-item.tsx",
+    "../../components/ordered-list/src/ordered-list/ordered-list.tsx",
+    "../../components/ordered-list/src/ordered-item/ordered-item.tsx",
+    "../../components/table-list/src/table-cell/table-cell.tsx",
+    "../../components/table-list/src/table-list/table-list.tsx",
+    "../../components/table-list/src/table-row/table-row.tsx"
   ],
   "outputDir": "src/__prop-docs__"
 }
