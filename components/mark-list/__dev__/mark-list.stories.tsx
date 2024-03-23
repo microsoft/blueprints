@@ -5,7 +5,8 @@ import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import React from 'react';
 
 import { Centered } from '../../../.storybook/decorators';
-import { MarkList, MarkListItem } from '../src/index';
+import type { MarkList} from '../src/index';
+import { MarkListItem } from '../src/index';
 
 export default {
   title: 'Lists/MarkList',
@@ -36,34 +37,34 @@ const useTileGridStyles = makeStyles({
   },
 });
 
-const TemplateWithIcon: StoryFn<typeof MarkList> = (args) => {
-  const classes = useTileGridStyles();
+// const TemplateWithIcon: StoryFn<typeof MarkList> = (args) => {
+//   const classes = useTileGridStyles();
 
-  return (
-    <div className={classes.root}>
-      <MarkList {...args}>
-        {Array.from({ length: 3 }).map((_, i) => (
-          <MarkListItem key={i}>
-            <Text variant="description" color="secondary">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar
-              commodo purus.
-            </Text>
-          </MarkListItem>
-        ))}
-      </MarkList>
-      <MarkList iconColor="negative" iconName="x">
-        {Array.from({ length: 3 }).map((_, i) => (
-          <MarkListItem key={i}>
-            <Text variant="description" color="secondary">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar
-              commodo purus.
-            </Text>
-          </MarkListItem>
-        ))}
-      </MarkList>
-    </div>
-  );
-};
+//   return (
+//     <div className={classes.root}>
+//       <MarkList {...args}>
+//         {Array.from({ length: 3 }).map((_, i) => (
+//           <MarkListItem key={i}>
+//             <Text variant="description" color="secondary">
+//               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar
+//               commodo purus.
+//             </Text>
+//           </MarkListItem>
+//         ))}
+//       </MarkList>
+//       <MarkList iconColor="negative" iconName="x">
+//         {Array.from({ length: 3 }).map((_, i) => (
+//           <MarkListItem key={i}>
+//             <Text variant="description" color="secondary">
+//               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar
+//               commodo purus.
+//             </Text>
+//           </MarkListItem>
+//         ))}
+//       </MarkList>
+//     </div>
+//   );
+// };
 
 // export const Simple = Template.bind({}) as StoryFn<FunctionComponent<MarkListProps>>;
 // Simple.args = {

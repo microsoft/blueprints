@@ -28,7 +28,7 @@ const ExampleComponent = () => {
       imageSrc={imageSrc}
       className={mergeClasses(classes.root, space.py9, space.px7)}
     >
-        {/* Tile: Solid color variant */}
+      {/* Tile: Solid color variant */}
     </Tile>
   );
 };

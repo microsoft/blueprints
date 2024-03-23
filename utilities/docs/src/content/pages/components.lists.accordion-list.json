@@ -33,12 +33,46 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D1044%253A112%26mode%3Ddesign%26t%3DP1LYye1QHm5wFfmr-1",
+          "listItems": [
+            {
+              "headline": "Title",
+              "text": "Title or heading of each accordion items. This is the space for the introduction to or condensed version of the content. Title is a plain text string."
+            },
+            {
+              "headline": "Content",
+              "text": "This is the space for the extended version of the content. Content is an open area for any content, static or interactive."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Example with three items",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "accordion-list.example.tsx",
+          "withMenu": true
         }
       ]
     },
@@ -63,21 +97,42 @@
       ]
     },
     {
-      "tab": "develop",
+      "tab": "Code",
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "accordion-list.example.tsx",
+          "dependencies": [
+            "@microsoft/arbutus.accordion",
+            "@microsoft/arbutus.text",
+            "@microsoft/arbutus.tile"
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "AccordionList",
+          "componentPropType": "AccordionListProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "AccordionItem",
+          "componentPropType": "AccordionItemProps"
         }
       ]
     }

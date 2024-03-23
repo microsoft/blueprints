@@ -10,7 +10,7 @@ const ExampleComponent = () => {
   return (
     <Tile
       variant="solid-color"
-      backgroundColor='accent'
+      backgroundColor="accent"
       className={mergeClasses(space.py9, space.px7)}
     >
       <Text variant="headline" color="accent" className={space.mb7} block>
