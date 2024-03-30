@@ -31,7 +31,7 @@
     "hygen:hook": "hygen new hook",
     "hygen:utility": "hygen new utility",
     "i": "npm i",
-    "lint:eslint": "eslint . --fix",
+    "lint:eslint": "lage lint",
     "lint:prettier": "prettier --write .",
     "lint:root": "run-s lint:eslint lint:prettier",
     "lint:staged": "lint-staged",
