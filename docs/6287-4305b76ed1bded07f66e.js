@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[6287],{6287:function(e,r,a){a.r(r);var n=a(23552),s=a(64234),d=a(2784);r.default=()=>d.createElement("div",{style:{padding:"2rem",backgroundColor:n.T.colorNeutralBackgroundInverted,borderRadius:n.T.borderRadiusLarge}},d.createElement(s.r,{as:"a",elementProps:{href:"#"},isUnderlined:!0,variant:"inverse"},"I am an inverse Link."))}}]);
+//# sourceMappingURL=6287-4305b76ed1bded07f66e.js.map
