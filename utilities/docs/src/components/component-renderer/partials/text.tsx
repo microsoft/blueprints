@@ -65,6 +65,7 @@ export const TextComponent: FC<TextProps> = (data) => {
         li: ({ children, __index }) => {
           const ordered = Boolean(__index);
           const index = __index ?? 0;
+
           return ordered ? (
             <OrderedListItem __index={index}>{children}</OrderedListItem>
           ) : (

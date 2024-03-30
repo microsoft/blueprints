@@ -1,4 +1,4 @@
-import { mergeClasses, makeStyles } from '@griffel/react';
+import { makeStyles, mergeClasses } from '@griffel/react';
 import { useTheme } from '@microsoft/arbutus.theming';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';

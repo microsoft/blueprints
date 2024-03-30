@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { Button } from '@microsoft/arbutus.button';
+import * as React from 'react';
 
 const ExampleComponent = () => (
   <Button

@@ -28,7 +28,7 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
         x2="659.525"
         y2="30.7695"
         stroke="url(#paint0_linear_55_2535)"
-        stroke-opacity="0.6"
+        strokeOpacity="0.6"
       />
       <line
         x1="106.446"
@@ -36,7 +36,7 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
         x2="659.525"
         y2="92.7695"
         stroke="url(#paint1_linear_55_2535)"
-        stroke-opacity="0.6"
+        strokeOpacity="0.6"
       />
       <mask id="path-3-inside-1_55_2535" fill="white">
         <path d="M0 93.2695V5.04492H32.6689C42.5127 5.04492 50.0801 6.99316 55.3711 10.8896C60.6621 14.7861 63.3076 20.3438 63.3076 27.5625C63.3076 31.9922 61.9336 35.8887 59.1855 39.252C56.4375 42.6152 52.9307 44.9531 48.665 46.2656V46.5117C54.0381 47.291 58.3037 49.5674 61.4619 53.3408C64.6611 57.0732 66.2607 61.6055 66.2607 66.9375C66.2607 75.0176 63.3691 81.4365 57.5859 86.1943C51.8027 90.9111 43.9072 93.2695 33.8994 93.2695H0ZM19.8721 20.1797V41.1592H29.1621C33.2637 41.1592 36.4834 40.1953 38.8213 38.2676C41.2002 36.3398 42.3896 33.5303 42.3896 29.8389C42.3896 26.7217 41.3643 24.3428 39.3135 22.7021C37.2627 21.0205 34.1865 20.1797 30.085 20.1797H19.8721ZM19.8721 55.9248V78.1348H30.6387C35.2324 78.1348 38.8213 77.1094 41.4053 75.0586C44.0303 73.0078 45.3428 70.2188 45.3428 66.6914C45.3428 63.3691 44.0508 60.7441 41.4668 58.8164C38.9238 56.8887 35.3555 55.9248 30.7617 55.9248H19.8721Z" />
@@ -93,61 +93,61 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
       <path
         d="M0 93.2695V5.04492H32.6689C42.5127 5.04492 50.0801 6.99316 55.3711 10.8896C60.6621 14.7861 63.3076 20.3438 63.3076 27.5625C63.3076 31.9922 61.9336 35.8887 59.1855 39.252C56.4375 42.6152 52.9307 44.9531 48.665 46.2656V46.5117C54.0381 47.291 58.3037 49.5674 61.4619 53.3408C64.6611 57.0732 66.2607 61.6055 66.2607 66.9375C66.2607 75.0176 63.3691 81.4365 57.5859 86.1943C51.8027 90.9111 43.9072 93.2695 33.8994 93.2695H0ZM19.8721 20.1797V41.1592H29.1621C33.2637 41.1592 36.4834 40.1953 38.8213 38.2676C41.2002 36.3398 42.3896 33.5303 42.3896 29.8389C42.3896 26.7217 41.3643 24.3428 39.3135 22.7021C37.2627 21.0205 34.1865 20.1797 30.085 20.1797H19.8721ZM19.8721 55.9248V78.1348H30.6387C35.2324 78.1348 38.8213 77.1094 41.4053 75.0586C44.0303 73.0078 45.3428 70.2188 45.3428 66.6914C45.3428 63.3691 44.0508 60.7441 41.4668 58.8164C38.9238 56.8887 35.3555 55.9248 30.7617 55.9248H19.8721Z"
         stroke="url(#paint12_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M75.1841 93.2695V0H94.6255V93.2695H75.1841Z"
         stroke="url(#paint13_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M167.103 93.208H147.661V85.21H147.415C145.446 88.0811 142.678 90.3984 139.109 92.1621C135.582 93.8848 132.034 94.7461 128.466 94.7461C121.165 94.7461 115.628 92.5312 111.855 88.1016C108.122 83.6719 106.256 77.417 106.256 69.3369V30.208H125.636V66.3838C125.636 70.4033 126.497 73.623 128.22 76.043C129.942 78.4219 132.506 79.6113 135.91 79.6113C139.314 79.6113 142.124 78.3398 144.339 75.7969C146.554 73.2539 147.661 70.0342 147.661 66.1377V30.208H167.103V93.208Z"
         stroke="url(#paint14_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M236.38 67.3066H195.283C195.57 71.3672 196.964 74.6074 199.466 77.0273C202.009 79.4062 205.332 80.5957 209.433 80.5957C211.935 80.5957 214.211 79.9805 216.262 78.75C218.354 77.5195 220.22 75.6738 221.861 73.2129L236.134 81.334C232.525 86.0098 228.485 89.4346 224.014 91.6084C219.544 93.7412 214.581 94.8076 209.126 94.8076C198.708 94.8076 190.586 91.998 184.762 86.3789C178.938 80.7188 176.026 72.8438 176.026 62.7539C176.026 52.2949 179.061 44.0098 185.131 37.8984C191.202 31.7871 198.667 28.7314 207.526 28.7314C216.713 28.7314 223.809 31.459 228.813 36.9141C233.858 42.3691 236.38 50.5723 236.38 61.5234V67.3066ZM218.354 55.002C218.354 50.6953 217.431 47.4756 215.586 45.3428C213.781 43.1689 211.34 42.082 208.264 42.082C204.573 42.082 201.579 43.3125 199.282 45.7734C197.026 48.2344 195.652 51.3105 195.16 55.002H218.354Z"
         stroke="url(#paint15_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M265.483 87.917H265.237V122.247H245.796V30.2695H265.237V38.4521H265.483C267.903 35.2119 270.877 32.792 274.404 31.1924C277.932 29.5518 281.869 28.7314 286.217 28.7314C294.42 28.7314 300.818 31.459 305.412 36.9141C310.006 42.3691 312.303 50.0596 312.303 59.9854C312.303 70.4854 309.637 78.9141 304.305 85.2715C298.973 91.6289 292.021 94.8076 283.448 94.8076C279.634 94.8076 276.189 94.2334 273.112 93.085C270.036 91.9365 267.493 90.2139 265.483 87.917ZM264.93 59.3701V65.8916C264.93 69.9521 266.181 73.2539 268.683 75.7969C271.185 78.3398 274.343 79.6113 278.157 79.6113C282.505 79.6113 285.95 77.9297 288.493 74.5664C291.077 71.2031 292.369 66.4248 292.369 60.2314C292.369 54.7764 291.221 50.6953 288.924 47.9883C286.668 45.2402 283.428 43.8662 279.203 43.8662C275.143 43.8662 271.738 45.2812 268.99 48.1113C266.283 50.9414 264.93 54.6943 264.93 59.3701Z"
         stroke="url(#paint16_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M361.524 47.25C360.171 46.7988 358.837 46.4707 357.525 46.2656C356.212 46.0195 354.921 45.8965 353.649 45.8965C349.794 45.8965 346.656 47.4551 344.236 50.5723C341.816 53.6484 340.606 57.8525 340.606 63.1846V93.2695H321.165V30.2695H340.606V41.4668H340.852C342.37 37.3652 344.523 34.2891 347.312 32.2383C350.101 30.1875 353.444 29.1621 357.34 29.1621C358.858 29.1621 360.294 29.2852 361.647 29.5312C363.042 29.7363 364.416 30.1055 365.769 30.6387L361.524 47.25Z"
         stroke="url(#paint17_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M380.537 22.0254C377.174 22.0254 374.426 21 372.293 18.9492C370.16 16.8574 369.094 14.2734 369.094 11.1973C369.094 7.99805 370.16 5.39355 372.293 3.38379C374.426 1.37402 377.174 0.369141 380.537 0.369141C383.942 0.369141 386.69 1.37402 388.781 3.38379C390.914 5.39355 391.981 7.99805 391.981 11.1973C391.981 14.3965 390.914 17.001 388.781 19.0107C386.69 21.0205 383.942 22.0254 380.537 22.0254ZM390.258 93.2695H370.817V30.2695H390.258V93.2695Z"
         stroke="url(#paint18_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M463.965 93.2695H444.586V57.0938C444.586 53.0742 443.724 49.875 442.002 47.4961C440.279 45.0762 437.715 43.8662 434.311 43.8662C430.907 43.8662 428.097 45.1377 425.882 47.6807C423.668 50.2236 422.56 53.4434 422.56 57.3398V93.2695H403.119V30.2695H422.56V38.2676H422.806C424.857 35.3965 427.708 33.0996 431.358 31.377C435.008 29.6133 438.679 28.7314 442.371 28.7314C449.466 28.7314 454.839 30.9463 458.49 35.376C462.14 39.8057 463.965 46.0605 463.965 54.1406V93.2695Z"
         stroke="url(#paint19_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M517.862 88.7783C515.935 90.542 513.556 91.998 510.726 93.1465C507.896 94.2539 504.819 94.8076 501.497 94.8076C494.278 94.8076 488.926 93.1465 485.44 89.8242C481.953 86.502 480.21 81.5391 480.21 74.9355V44.6045H469.997V30.2695H480.21V14.2119L499.59 10.7666V30.2695H514.725V44.6045H499.59V74.8125C499.59 76.7402 500 78.1963 500.82 79.1807C501.682 80.165 502.871 80.6572 504.389 80.6572C505.291 80.6572 506.193 80.5137 507.096 80.2266C508.039 79.8984 509.024 79.2627 510.049 78.3193L517.862 88.7783Z"
         stroke="url(#paint20_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <path
         d="M520.941 85.21L530.108 73.3975C533.307 76.3916 536.26 78.4424 538.967 79.5498C541.674 80.6572 544.443 81.2109 547.273 81.2109C550.103 81.2109 552.257 80.7393 553.733 79.7959C555.251 78.8115 556.009 77.376 556.009 75.4893C556.009 74.0537 555.292 72.8438 553.856 71.8594C552.421 70.875 550.103 70.1777 546.904 69.7676C538.537 68.5371 532.569 66.2402 529.001 62.877C525.432 59.5137 523.648 55.125 523.648 49.7109C523.648 43.7637 525.822 38.7803 530.17 34.7607C534.558 30.7412 540.485 28.7314 547.95 28.7314C552.38 28.7314 556.563 29.3467 560.501 30.5771C564.438 31.8076 567.801 33.6738 570.591 36.1758L561.177 47.4346C558.758 45.6299 556.481 44.3174 554.348 43.4971C552.257 42.6357 550.062 42.2051 547.765 42.2051C545.181 42.2051 543.295 42.6768 542.105 43.6201C540.957 44.5225 540.383 45.8145 540.383 47.4961C540.383 48.9316 541.121 50.1416 542.597 51.126C544.074 52.1104 546.678 52.8076 550.411 53.2178C557.794 54.0791 563.392 56.1709 567.207 59.4932C571.062 62.7744 572.99 67.4502 572.99 73.5205C572.99 80.001 570.529 85.1689 565.607 89.0244C560.726 92.8799 554.512 94.8076 546.966 94.8076C541.839 94.8076 536.999 94.0078 532.446 92.4082C527.893 90.8086 524.058 88.4092 520.941 85.21Z"
         stroke="url(#paint21_linear_55_2535)"
-        stroke-width="2"
+        strokeWidth="2"
         mask="url(#path-3-inside-1_55_2535)"
       />
       <defs>
@@ -159,22 +159,19 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="31.2711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
-            stop-opacity="0"
-          />
+          <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
           <stop
             offset="0.255208"
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stopColor={blueprintsDocsTokens.color.illustration[40]}
           />
           <stop
             offset="0.598958"
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stopColor={blueprintsDocsTokens.color.illustration[40]}
           />
           <stop
             offset="0.796875"
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
-            stop-opacity="0"
+            stopColor={blueprintsDocsTokens.color.illustration[40]}
+            stopOpacity="0"
           />
         </linearGradient>
         <linearGradient
@@ -185,22 +182,19 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="93.2711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
-            stop-opacity="0"
-          />
+          <stop stopColor={blueprintsDocsTokens.color.illustration[40]} stopOpacity="0" />
           <stop
             offset="0.255208"
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stopColor={blueprintsDocsTokens.color.illustration[40]}
           />
           <stop
             offset="0.598958"
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
+            stopColor={blueprintsDocsTokens.color.illustration[40]}
           />
           <stop
             offset="0.796875"
-            stop-color={blueprintsDocsTokens.color.illustration[40]}
-            stop-opacity="0"
+            stopColor={blueprintsDocsTokens.color.illustration[40]}
+            stopOpacity="0"
           />
         </linearGradient>
         <linearGradient
@@ -211,10 +205,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -225,10 +219,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -239,10 +233,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -253,10 +247,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -267,10 +261,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -281,10 +275,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -295,10 +289,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -309,10 +303,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -323,10 +317,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -337,10 +331,10 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="84.5595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.180329" stop-color={tokens.colorNeutralForeground1} />
+          <stop offset="0.180329" stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.651042"
-            stop-color={blueprintsDocsTokens.color.illustration[10]}
+            stopColor={blueprintsDocsTokens.color.illustration[10]}
           />
         </linearGradient>
         <linearGradient
@@ -351,13 +345,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint13_linear_55_2535"
@@ -367,13 +361,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint14_linear_55_2535"
@@ -383,13 +377,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint15_linear_55_2535"
@@ -399,13 +393,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint16_linear_55_2535"
@@ -415,13 +409,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint17_linear_55_2535"
@@ -431,13 +425,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint18_linear_55_2535"
@@ -447,13 +441,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint19_linear_55_2535"
@@ -463,13 +457,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint20_linear_55_2535"
@@ -479,13 +473,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
         <linearGradient
           id="paint21_linear_55_2535"
@@ -495,13 +489,13 @@ export const TitleIllustration: FC<{ className?: string; title?: string }> = ({
           y2="86.8093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={tokens.colorNeutralForeground1} />
+          <stop stopColor={tokens.colorNeutralForeground1} />
           <stop
             offset="0.544342"
-            stop-color={tokens.colorNeutralForeground1}
-            stop-opacity="0"
+            stopColor={tokens.colorNeutralForeground1}
+            stopOpacity="0"
           />
-          <stop offset="1" stop-color={blueprintsDocsTokens.color.illustration[40]} />
+          <stop offset="1" stopColor={blueprintsDocsTokens.color.illustration[40]} />
         </linearGradient>
       </defs>
     </svg>

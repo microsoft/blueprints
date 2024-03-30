@@ -7,8 +7,8 @@ import type { FC } from 'react';
 import * as React from 'react';
 import Markdown from 'react-markdown';
 
-import { MarkdownRendererProps } from './markdown-renderer.types';
 import { Image } from '../image';
+import type { MarkdownRendererProps } from './markdown-renderer.types';
 
 export const MarkdownRenderer: FC<MarkdownRendererProps> = ({ markdown }) => {
   if (!markdown) {
@@ -61,6 +61,7 @@ export const MarkdownRenderer: FC<MarkdownRendererProps> = ({ markdown }) => {
         li: ({ children, __index }) => {
           const ordered = Boolean(__index);
           const index = __index ?? 0;
+
           return ordered ? (
             <OrderedListItem __index={index}>{children}</OrderedListItem>
           ) : (

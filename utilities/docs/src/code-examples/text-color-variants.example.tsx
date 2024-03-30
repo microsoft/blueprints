@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { Text } from '@microsoft/arbutus.text';
+import * as React from 'react';
 
 const ExampleComponent = () => (
   <>

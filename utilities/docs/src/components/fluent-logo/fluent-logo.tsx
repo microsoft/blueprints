@@ -6,6 +6,7 @@ export const FluentLogo: FC<{ className?: string; title?: string }> = ({
   title = 'Fluent',
 }) => {
   const titleId = `fluent-logo-${useId()}`;
+
   return (
     <svg
       width="210"

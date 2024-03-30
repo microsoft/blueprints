@@ -7,9 +7,9 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
-import { getNavigationContent } from './get-navigation-content';
-import type { MainNavigationCollectionsQuery } from './navigation.types';
 import { MAIN_NAVIGATION } from './config';
+import { getNavigationContent } from './get-navigation-content';
+import type { MainNavigationCollectionsQuery as MainNavigationCollectionsQueryType } from './navigation.types';
 
 const MainNavigationCollectionsQuery = graphql`
   query MainNavigationCollectionsQuery {
@@ -61,7 +61,7 @@ const MainNavigationCollectionsQuery = graphql`
 export const Navigation: FC = () => {
   const { pathname } = useLocation();
 
-  const collectionsData = useStaticQuery<MainNavigationCollectionsQuery>(
+  const collectionsData = useStaticQuery<MainNavigationCollectionsQueryType>(
     MainNavigationCollectionsQuery,
   );
   const items = getNavigationContent({ collectionsData, config: MAIN_NAVIGATION });

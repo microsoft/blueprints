@@ -1,9 +1,8 @@
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@microsoft/arbutus.tabs';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import React from 'react';
-
-import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@microsoft/arbutus.tabs';
 
 const Content = ({ index }: { index: string }) => {
   const space = useSpaceStyles();

@@ -1,4 +1,4 @@
-import type { ElementType, ReactNode, ButtonHTMLAttributes, LinkHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes, ElementType, LinkHTMLAttributes, ReactNode } from 'react';
 
 type CTAButtonAsButton = {
   as?: 'button';

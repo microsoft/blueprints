@@ -20,9 +20,9 @@
     "../../components/accordion/src/accordion-list/accordion-list.tsx",
     "../../components/accordion/src/accordion-item/accordion-item.tsx",
     "../../components/mark-list/src/mark-list/mark-list.tsx",
-    "../../components/mark-list/src/mark-item/mark-item.tsx",
+    "../../components/mark-list/src/mark-list-item/mark-list-item.tsx",
     "../../components/ordered-list/src/ordered-list/ordered-list.tsx",
-    "../../components/ordered-list/src/ordered-item/ordered-item.tsx",
+    "../../components/ordered-list/src/ordered-list-item/ordered-list-item.tsx",
     "../../components/table-list/src/table-cell/table-cell.tsx",
     "../../components/table-list/src/table-list/table-list.tsx",
     "../../components/table-list/src/table-row/table-row.tsx"

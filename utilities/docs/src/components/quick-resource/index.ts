@@ -1,6 +1,6 @@
+export { isCopyResource, isLinkResource, QuickResource } from './quick-resource';
 export type {
-  QuickResourceProps,
   QuickResourceCopyTextProps,
   QuickResourceLinkProps,
+  QuickResourceProps,
 } from './quick-resource.types';
-export { QuickResource, isCopyResource, isLinkResource } from './quick-resource';

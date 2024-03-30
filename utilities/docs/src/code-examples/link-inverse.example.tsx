@@ -1,5 +1,5 @@
-import { Link } from '@microsoft/arbutus.link';
 import { tokens } from '@fluentui/react-theme';
+import { Link } from '@microsoft/arbutus.link';
 import * as React from 'react';
 
 const ExampleComponent = () => (

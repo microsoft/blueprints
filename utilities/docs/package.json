@@ -12,10 +12,10 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "examples-to-strings": "node src/scripts/examples-to-strings.mjs",
-    "lint": "eslint . --fix -c .eslintrc.js",
+    "lint": "eslint './src/**/*' --fix",
     "start": "gatsby develop",
     "arbutus-prop-docs:clean": "arbutus-prop-docs clean",
-    "arbutus-prop-docs:generate": "arbutus-prop-docs generate --ts && eslint src/__prop-docs__/* --fix"
+    "arbutus-prop-docs:generate": "arbutus-prop-docs generate --ts"
   },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.10.0",

@@ -1,5 +1,5 @@
 import { makeStyles } from '@griffel/react';
-import { AccordionList, AccordionItem } from '@microsoft/arbutus.accordion';
+import { AccordionItem, AccordionList } from '@microsoft/arbutus.accordion';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
 import type { FC } from 'react';

@@ -1,8 +1,8 @@
 import { makeStyles } from '@griffel/react';
 import { Logo } from '@microsoft/arbutus.logo';
-import * as React from 'react';
+import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
 import { Text } from '@microsoft/arbutus.text';
-import { TableList, TableRow, TableCell } from '@microsoft/arbutus.table-list';
+import * as React from 'react';
 
 const useTableListStyles = makeStyles({
   root: {

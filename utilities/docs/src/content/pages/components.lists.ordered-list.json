@@ -2,7 +2,7 @@
   "_layout": "reference",
   "_path": "/components/lists/ordered-list",
   "title": "OrderedList",
-  "definition": "A numbered list.",
+  "definition": "A numbered list for sequential content.",
   "quickResources": [
     {
       "label": "Figma Toolkit",
@@ -33,12 +33,60 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Anatomy",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.anatomy",
+          "embedUrl": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F64ExCVDx6H3T3jgqKsyzaj%2FAnatomy%3Ftype%3Ddesign%26node-id%3D1147%253A247%26mode%3Ddesign%26t%3DWVnAfNdfckEKpBDY-1",
+          "listItems": [
+            {
+              "headline": "Mark",
+              "text": "The mark is the number that appears before each item in the list. Mark has three variants: primary, secondary and accent."
+            },
+            {
+              "headline": "Content",
+              "text": "The content of the list item."
+            }
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Variants and Examples",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Example with three items",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "ordered-list.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Variants",
+          "leading": "OrderedList comes in three variants: primary, secondary and accent. These visual variants can be used to match the context of the content.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "ordered-list-variants.example.tsx",
+          "withMenu": true
         }
       ]
     },
@@ -67,6 +115,19 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "ordered-list.example.tsx",
+          "dependencies": ["@microsoft/arbutus.text", "@microsoft/arbutus.ordered-list"]
+        },
+        {
+          "contentComponentId": "blocks.heading",
           "as": "h1",
           "title": "Develop",
           "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -76,8 +137,13 @@
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "OrderedList",
+          "componentPropType": "OrderedListProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "OrderedListItem",
+          "componentPropType": "OrderedListItemProps"
         }
       ]
     }

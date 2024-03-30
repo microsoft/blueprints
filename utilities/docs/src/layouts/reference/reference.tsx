@@ -6,13 +6,13 @@ import type { FC } from 'react';
 import * as React from 'react';
 
 import { ComponentRenderer } from '../../components/component-renderer';
-import { useReferenceStyles } from './reference.styles';
-import type { ReferenceLayoutProps } from './reference.types';
 import {
-  QuickResource,
   isCopyResource,
   isLinkResource,
+  QuickResource,
 } from '../../components/quick-resource';
+import { useReferenceStyles } from './reference.styles';
+import type { ReferenceLayoutProps } from './reference.types';
 
 export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
   definition,
@@ -44,9 +44,11 @@ export const ReferenceLayout: FC<ReferenceLayoutProps> = ({
         <div className={space.my5}>
           {quickResources.map((resource, index) => {
             let key = '';
+
             if (isCopyResource(resource)) {
               key = resource.copyText;
             }
+
             if (isLinkResource(resource)) {
               key = resource.label;
             }

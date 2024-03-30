@@ -1,17 +1,17 @@
 import type { NavigationItems } from '@microsoft/arbutus.main-navigation';
 import { camelCase } from 'change-case';
 
-import type { MainNavigationCollectionsQuery } from './index';
-import {
-  MainNavigationCollection,
-  MainNavigationConfig,
-  MainNavigationItemType,
-} from './index';
 import {
   isMainNavigationCollection,
   isMainNavigationHeader,
   isMainNavigationItem,
 } from './config';
+import type {
+  MainNavigationCollection,
+  MainNavigationCollectionsQuery,
+  MainNavigationConfig,
+  MainNavigationItemType,
+} from './index';
 
 /* Common utilities. */
 
@@ -103,6 +103,7 @@ export const getNavigationContent = ({
           hasDivider: item.hasDivider,
           items: generateNavigation(item.items),
         };
+
         return acc;
       }
 

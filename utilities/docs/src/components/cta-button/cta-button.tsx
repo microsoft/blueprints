@@ -1,9 +1,9 @@
+import { mergeClasses } from '@griffel/react';
 import type { FC } from 'react';
 import * as React from 'react';
-import { mergeClasses } from '@griffel/react';
 
-import type { CTAButtonProps } from './cta-button.types';
 import { makeCTAButtonStyles } from './cta-button.styles';
+import type { CTAButtonProps } from './cta-button.types';
 
 export const CTAButton: FC<CTAButtonProps> = ({
   as: Root = 'a',

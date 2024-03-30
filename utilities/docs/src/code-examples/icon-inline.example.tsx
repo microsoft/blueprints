@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { Icon } from '@microsoft/arbutus.icon';
+import * as React from 'react';
 
 const ExampleComponent = () => (
   <p>
