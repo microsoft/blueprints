@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Removes lint script",
+  "packageName": "@microsoft/arbutus.json-schemas",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
