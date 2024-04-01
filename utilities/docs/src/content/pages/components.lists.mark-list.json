@@ -77,10 +77,7 @@
         {
           "contentComponentId": "blocks.sandbox",
           "codeFile": "mark-list.example.tsx",
-          "dependencies": [
-            "@microsoft/arbutus.mark-list",
-            "@microsoft/arbutus.text"
-          ]
+          "dependencies": ["@microsoft/arbutus.mark-list", "@microsoft/arbutus.text"]
         },
         {
           "contentComponentId": "blocks.prop-table",

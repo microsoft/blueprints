@@ -114,7 +114,8 @@
             "@griffel/react",
             "@microsoft/arbutus.accordion",
             "@microsoft/arbutus.text",
-            "@microsoft/arbutus.tile"          ]
+            "@microsoft/arbutus.tile"
+          ]
         },
         {
           "contentComponentId": "blocks.heading",
