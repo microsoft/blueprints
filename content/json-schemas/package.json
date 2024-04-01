@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.json-schemas",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Content schemas.",
   "exports": {
     "./common/": "./src/common/",

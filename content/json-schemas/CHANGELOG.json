@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.json-schemas",
   "entries": [
     {
+      "date": "Mon, 01 Apr 2024 19:22:34 GMT",
+      "version": "0.0.3",
+      "tag": "@microsoft/arbutus.json-schemas_v0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.json-schemas",
+            "commit": "8fdaed8f25c20b2783b3f5158a69cb2071a44739",
+            "comment": "Removes lint script"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 09 Nov 2023 19:14:33 GMT",
       "version": "0.0.2",
       "tag": "@microsoft/arbutus.json-schemas_v0.0.2",
