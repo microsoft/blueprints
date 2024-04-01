@@ -1,7 +1,7 @@
-import * as React from 'react';
-import type { FC } from 'react';
 import { ResourceChip } from '@microsoft/arbutus.resource-chip';
 import { useCopyToClipboard } from '@microsoft/arbutus.use-copy-to-clipboard';
+import type { FC } from 'react';
+import * as React from 'react';
 
 import type {
   QuickResourceCopyTextProps,

@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import * as React from 'react';
+
 import { blueprintsDocsTokens } from '../../../components/theme';
 
 export const CheckIllustration: FC<{ className?: string }> = ({ className }) => (

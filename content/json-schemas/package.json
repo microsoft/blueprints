@@ -18,8 +18,7 @@
     ]
   },
   "scripts": {
-    "test": "jest --verbose",
-    "lint": "eslint . --fix"
+    "test": "jest --verbose"
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.22.5",

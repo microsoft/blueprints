@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Text } from '@microsoft/arbutus.text';
-import { Divider } from '@microsoft/arbutus.divider';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import { makeStyles, shorthands } from '@griffel/react';
 import { tokens } from '@fluentui/react-theme';
+import { makeStyles, shorthands } from '@griffel/react';
+import { Divider } from '@microsoft/arbutus.divider';
+import { Text } from '@microsoft/arbutus.text';
 import { arbutusTokens } from '@microsoft/arbutus.theming';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
+import * as React from 'react';
 
 const useExampleComponentStyles = makeStyles({
   grid: {

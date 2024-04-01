@@ -105,9 +105,7 @@
     "./gatsby-browser.tsx",
     "./gatsby-config.ts",
     "./gatsby-ssr.tsx",
-    "./plugins/**/*",
-    "./src/**/*",
-    "consts/consts.ts"
+    "./src/**/*"
   ],
   "exclude": ["gatsby-node.mjs"]
 }

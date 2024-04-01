@@ -1,12 +1,11 @@
 import { Divider } from '@microsoft/arbutus.divider';
 import { Text } from '@microsoft/arbutus.text';
 import { Tile } from '@microsoft/arbutus.tile';
-import { Link } from '../../components/link';
-import { mergeClasses } from '@griffel/react';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
 
+import { Link } from '../../components/link';
 import type { WorkInProgressLayoutProps } from './work-in-progress.types';
 
 export const WorkInProgressLayout: FC<WorkInProgressLayoutProps> = ({

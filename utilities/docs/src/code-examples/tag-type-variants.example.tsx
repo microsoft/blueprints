@@ -1,7 +1,7 @@
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
 import { Tag } from '@microsoft/arbutus.tag';
 import * as React from 'react';
-import { makeStyles } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
 
 const useContainerStyles = makeStyles({
   root: {

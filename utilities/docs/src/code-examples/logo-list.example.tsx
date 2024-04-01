@@ -1,7 +1,7 @@
 import { makeStyles } from '@griffel/react';
 import { Logo, logos } from '@microsoft/arbutus.logo';
+import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
 import { Text } from '@microsoft/arbutus.text';
-import { TableList, TableRow, TableCell } from '@microsoft/arbutus.table-list';
 import * as React from 'react';
 
 const useTableListStyles = makeStyles({
@@ -18,7 +18,7 @@ const ExampleComponent = () => {
   return (
     <TableList className={classes.root} columnSizing={['40px', 'auto']}>
       {Object.keys(logos).map((key) => (
-        <TableRow>
+        <TableRow key={key}>
           <TableCell>
             {/** Logo 👇 */}
             <Logo logoName={key as Key} />

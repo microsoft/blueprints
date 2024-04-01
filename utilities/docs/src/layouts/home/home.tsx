@@ -1,17 +1,16 @@
-import { navigate } from 'gatsby';
 import { Text } from '@fluentui/react-text';
 import { mergeClasses } from '@griffel/react';
+import { useTheme } from '@microsoft/arbutus.theming';
 import { Tile } from '@microsoft/arbutus.tile';
 import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import { useTheme } from '@microsoft/arbutus.theming';
-import { type FC, useCallback } from 'react';
+import { navigate } from 'gatsby';
+import { type FC } from 'react';
 import * as React from 'react';
 
 import { CTAButton } from '../../components/cta-button';
-import { Grid } from '../../components/grid';
 import { FluentLogo } from '../../components/fluent-logo';
-import { useHomeStyles } from './home.styles';
-import type { HomeLayoutProps } from './home.types';
+import { Grid } from '../../components/grid';
+import { makeNavigate } from '../../utilities/make-navigate';
 import {
   BookmarkTileIllustration,
   ButtonIllustration,
@@ -21,7 +20,8 @@ import {
   TitleIllustration,
   TypographyIllustration,
 } from './assets';
-import { makeNavigate } from '../../utilities/make-navigate';
+import { useHomeStyles } from './home.styles';
+import type { HomeLayoutProps } from './home.types';
 
 export const HomeLayout: FC<HomeLayoutProps> = ({
   articles,
@@ -36,9 +36,9 @@ export const HomeLayout: FC<HomeLayoutProps> = ({
   const { themeKey } = useTheme();
   const isDarkTheme = themeKey === 'dark';
 
-  const handleCTAClick = useCallback(() => {
+  const handleCTAClick = () => {
     navigate(cta.href);
-  }, [cta.href]);
+  };
 
   return (
     <div className={classes.root}>
@@ -90,12 +90,10 @@ export const HomeLayout: FC<HomeLayoutProps> = ({
         <Grid layout="large" className={classes.articlesContainer}>
           {articles.map(({ title, description, image, isExternal, to }, i) => {
             const navigate = makeNavigate({ isExternal, to });
-            const handleClick = useCallback(
-              (e: React.SyntheticEvent<Element, Event> | undefined) => {
-                navigate(e);
-              },
-              [isExternal, to],
-            );
+            const handleClick = (e: React.SyntheticEvent<Element, Event> | undefined) => {
+              navigate(e);
+            };
+
             return (
               <Tile
                 variant="image"

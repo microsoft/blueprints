@@ -1,5 +1,5 @@
 import type { ComponentData } from '../../components/component-renderer';
-import { QuickResourceProps } from '../../components/quick-resource';
+import type { QuickResourceProps } from '../../components/quick-resource';
 
 type Contributor = {
   firstName: string;

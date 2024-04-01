@@ -1,6 +1,6 @@
 import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
-import { HEADER_HEIGHT, CONTAINER_WIDTH } from '@microsoft/arbutus.shell';
+import { CONTAINER_WIDTH, HEADER_HEIGHT } from '@microsoft/arbutus.shell';
 import { arbutusTokens, breakpoints } from '@microsoft/arbutus.theming';
 
 const LIGHT_THEME_GRID = `url("data:image/svg+xml,%3Csvg width='31' height='62' viewBox='0 0 31 62' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.5' y1='2.13118e-08' x2='0.499997' y2='62' stroke='%23C2DBFF'/%3E%3Cline x1='1' y1='0.5' x2='30.9667' y2='0.499997' stroke='%23C2DBFF'/%3E%3Cline x1='1' y1='31.5' x2='30.9667' y2='31.5' stroke='%23C2DBFF'/%3E%3C/svg%3E%0A")`;

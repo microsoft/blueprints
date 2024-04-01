@@ -1,9 +1,9 @@
 import type { FC } from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import * as React from 'react';
 
 import { Sandbox } from '../../sandbox';
-import { SandboxComponentData } from '../component-renderer.types';
+import type { SandboxComponentData } from '../component-renderer.types';
 
 type SandboxComponentProps = SandboxComponentData;
 

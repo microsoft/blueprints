@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[654],{654:function(e,c,s){s.r(c);var u=s(65303),t=s(2784);c.default=()=>t.createElement("p",null,t.createElement(u.C,{isInline:!0,color:"positive",iconName:"check"})," Lorem ipsum dolor.")}}]);
+//# sourceMappingURL=654-480ad598db84b49177ef.js.map

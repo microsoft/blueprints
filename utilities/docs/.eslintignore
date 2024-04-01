@@ -13,3 +13,10 @@ docs
 lib
 node_modules
 public
+
+*.json
+*.png
+*.svg
+
+# this file is too large to lint
+src/__prop-docs__/index.ts

@@ -1,5 +1,6 @@
-import { type FC, useId } from 'react';
+import { type FC } from 'react';
 import * as React from 'react';
+
 import { blueprintsDocsTokens } from '../../../components/theme';
 
 export const TypographyIllustration: FC<{ className?: string }> = ({ className }) => (

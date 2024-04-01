@@ -2,7 +2,7 @@ import { ThemeSwitch } from '@microsoft/arbutus.theme-switch';
 import { useTheme } from '@microsoft/arbutus.theming';
 import useResizeObserver from '@react-hook/resize-observer';
 import { graphql, useStaticQuery } from 'gatsby';
-import { type FC, type MutableRefObject, useLayoutEffect, useState, useRef } from 'react';
+import { type FC, type MutableRefObject, useLayoutEffect, useRef, useState } from 'react';
 import * as React from 'react';
 
 import { Link } from '../link';

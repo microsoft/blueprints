@@ -2,10 +2,10 @@ import type {
   QuickResourceCopyTextProps,
   QuickResourceLinkProps,
 } from '../components/quick-resource';
-import { BasicLayoutProps } from '../layouts/basic';
-import { ReferenceLayoutProps } from '../layouts/reference';
-import { WorkInProgressLayoutProps } from '../layouts/work-in-progress';
-import { JsonPageData } from '../pages/{PagesJson._path}';
+import type { BasicLayoutProps } from '../layouts/basic';
+import type { ReferenceLayoutProps } from '../layouts/reference';
+import type { WorkInProgressLayoutProps } from '../layouts/work-in-progress';
+import type { JsonPageData } from '../pages/{PagesJson._path}';
 
 /**
  * Detects if an array has duplicate values. This utility is used to detect if there are multiple page files with the
@@ -41,11 +41,13 @@ export function findDuplicates(arrayOfPaths: string[]) {
 
 function removeNullProperties<T>(obj: T) {
   const newObj = { ...obj };
+
   for (const key in newObj) {
     if (newObj[key] === null) {
       delete newObj[key];
     }
   }
+
   return newObj;
 }
 

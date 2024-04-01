@@ -1,9 +1,9 @@
+import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
 import type { FC } from 'react';
 import * as React from 'react';
-import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
 
-import { TableListComponentData } from '../component-renderer.types';
 import { MarkdownRenderer } from '../../markdown-renderer';
+import type { TableListComponentData } from '../component-renderer.types';
 
 type TableListComponentProps = TableListComponentData;
 
@@ -18,8 +18,8 @@ export const TableListComponent: FC<TableListComponentProps> = ({
       {headers && (
         <thead>
           <TableRow>
-            {headers.map(({ text }) => (
-              <TableCell isHeader scope="col">
+            {headers.map(({ text }, i) => (
+              <TableCell isHeader scope="col" key={i}>
                 {text}
               </TableCell>
             ))}
@@ -28,10 +28,10 @@ export const TableListComponent: FC<TableListComponentProps> = ({
       )}
       {data && (
         <tbody>
-          {data.map((row) => (
-            <TableRow>
-              {row.map((cell) => (
-                <TableCell>
+          {data.map((row, i) => (
+            <TableRow key={i}>
+              {row.map((cell, i) => (
+                <TableCell key={i}>
                   <MarkdownRenderer markdown={cell} />
                 </TableCell>
               ))}

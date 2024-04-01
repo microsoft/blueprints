@@ -1,8 +1,13 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/atoms/tile",
   "title": "Tile",
-  "definition": "This is a reference page.",
+  "definition": "Tile is a low-level atomic component that is used to build more complex tile-based components. It is a container that can hold any type of content and comes is several variants for different use cases.",
+  "quickResources": [
+    {
+      "copyText": "@microsoft/blueprints.tile"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -23,26 +28,59 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Variants and Examples",
           "withCopyLink": false,
           "withDivider": false
-        }
-      ]
-    },
-    {
-      "tab": "design",
-      "content": [
+        },
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "size": "title",
+          "as": "h3",
+          "size": "headline",
+          "title": "Card variant",
+          "leading": "Card variant is best used for interactive tiles. There is a variant where the entire tile is an action trigger, or use the tile as a container for interactive elements. ActionTile and ActionListTile are examples of this.",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "tile-card-variant.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Solid color variant",
+          "leading": "Solid color variant is best used as part of static content. It is a great way to visually group and separate content. See RecommendationTile as an example.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "tile-color-variant.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Image variant",
+          "leading": "If you need to make a tile that is a full-bleed image, with or without additional content, use the image variant. It can be both interactive or static.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "tile-image-variant.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.text",
+          "markdown": {
+            "raw": "⚠️ **Note:** Make sure that the image tile will work well in both light and dark mode or see the code of this example on how to swap the image based on the theme."
+          }
         }
       ]
     },
@@ -51,17 +89,33 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "tile-card-variant.example.tsx",
+          "dependencies": [
+            "@microsoft/arbutus.text",
+            "@microsoft/arbutus.tile",
+            "@microsoft/arbutus.use-space-styles"
+          ]
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h2",
+          "size": "title",
+          "title": "Properties",
           "withCopyLink": false,
           "withDivider": false
         },
         {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "Tile",
+          "componentPropType": "TileProps"
         }
       ]
     }

@@ -1,14 +1,14 @@
 import type { SandpackSetup, SandpackThemeProp } from '@codesandbox/sandpack-react';
 import { Sandpack } from '@codesandbox/sandpack-react';
+import { useTheme } from '@microsoft/arbutus.theming';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useTheme } from '@microsoft/arbutus.theming';
 
 import { app } from './partials/app-template';
 import { centered } from './partials/centered-template';
+import { entry } from './partials/index-template';
 import { themeProvider } from './partials/wrapper-template';
 import type { SandboxProps } from './sandbox.types';
-import { entry } from './partials/index-template';
 
 export const Sandbox: FC<SandboxProps> = ({ componentCode, dependencies }) => {
   // (1) Constructing a dependency object.
@@ -17,6 +17,7 @@ export const Sandbox: FC<SandboxProps> = ({ componentCode, dependencies }) => {
       // User passed a tuple, where the first value is the package, and the second is the version.
       if (Array.isArray(value) && value.length === 2) {
         const [packageName, version] = value;
+
         acc[packageName] = version;
       }
 

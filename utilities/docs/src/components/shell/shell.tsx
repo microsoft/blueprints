@@ -1,19 +1,19 @@
 import { Text } from '@fluentui/react-text';
 import { Shell as ArbutusShell } from '@microsoft/arbutus.shell';
-import { useCSSVars } from '@microsoft/arbutus.use-css-vars';
 import { useTheme } from '@microsoft/arbutus.theming';
+import { useCSSVars } from '@microsoft/arbutus.use-css-vars';
 import { withPrefix } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
-import { BLUEPRINTS_DOCS_PREFIX, BLUEPRINTS_DOCS_THEME } from '../theme';
+import { makeNavigate } from '../../utilities';
 import { FluentLogo } from '../fluent-logo';
 import { Footer } from '../footer';
 import { Header } from '../header';
-import { makeNavigate } from '../../utilities';
 import { Navigation } from '../navigation';
-import { ShellProps } from './shell.types';
+import { BLUEPRINTS_DOCS_PREFIX, BLUEPRINTS_DOCS_THEME } from '../theme';
 import { useLogoStyles } from './shell.styles';
+import type { ShellProps } from './shell.types';
 
 const navigateHome = makeNavigate({ isExternal: false, to: '/' });
 

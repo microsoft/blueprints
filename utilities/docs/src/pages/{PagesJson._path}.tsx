@@ -2,14 +2,14 @@ import { graphql, type HeadFC, type PageProps } from 'gatsby';
 import type { FC } from 'react';
 import * as React from 'react';
 
-import type { LayoutKey } from '../layouts/layouts.types';
-import {
-  WorkInProgressLayout,
-  WorkInProgressLayoutProps,
-} from '../layouts/work-in-progress';
-import { BasicLayout, BasicLayoutProps } from '../layouts/basic';
-import { ReferenceLayout, ReferenceLayoutProps } from '../layouts/reference';
 import type { ComponentData } from '../components/component-renderer';
+import type { BasicLayoutProps } from '../layouts/basic';
+import { BasicLayout } from '../layouts/basic';
+import type { LayoutKey } from '../layouts/layouts.types';
+import type { ReferenceLayoutProps } from '../layouts/reference';
+import { ReferenceLayout } from '../layouts/reference';
+import type { WorkInProgressLayoutProps } from '../layouts/work-in-progress';
+import { WorkInProgressLayout } from '../layouts/work-in-progress';
 import { formatDataToProps } from '../utilities/generating-pages';
 
 type JsonPageContext = {

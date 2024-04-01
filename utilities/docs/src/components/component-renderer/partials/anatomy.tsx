@@ -1,12 +1,12 @@
+import { Spinner } from '@fluentui/react-spinner';
+import { tokens } from '@fluentui/react-theme';
+import { makeStyles, mergeClasses } from '@griffel/react';
 import { Guidance } from '@microsoft/arbutus.guidance';
 import type { FC } from 'react';
 import * as React from 'react';
-import { useState, useEffect } from 'react';
-import { Spinner } from '@fluentui/react-spinner';
+import { useEffect, useState } from 'react';
 
 import type { AnatomyComponentData } from '../component-renderer.types';
-import { makeStyles, mergeClasses } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
 
 type AnatomyComponentProps = AnatomyComponentData;
 
@@ -89,7 +89,12 @@ const Preview: FC<Pick<AnatomyComponentProps, 'embedUrl'> & { className: string 
   return (
     <div className={mergeClasses(classes.content, className)}>
       <div className={overlayClasses}>{isLoading && <Spinner />}</div>
-      <iframe onLoad={loadedHandler} className={classes.iframe} src={embedUrl} />
+      <iframe
+        title="Component Preview"
+        onLoad={loadedHandler}
+        className={classes.iframe}
+        src={embedUrl}
+      />
     </div>
   );
 };

@@ -1,8 +1,13 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "reference",
   "_path": "/components/lists/mark-list",
   "title": "MarkList",
-  "definition": "This is a reference page.",
+  "definition": "A list of items with a mark on the left side of each item.",
+  "quickResources": [
+    {
+      "copyText": "@microsoft/blueprints.mark-list"
+    }
+  ],
   "owners": [
     {
       "firstName": "Eric",
@@ -23,26 +28,38 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Usage",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Variants and Examples",
           "withCopyLink": false,
           "withDivider": false
-        }
-      ]
-    },
-    {
-      "tab": "design",
-      "content": [
+        },
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Design",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "size": "title",
+          "as": "h3",
+          "size": "headline",
+          "title": "Example with three items",
           "withCopyLink": false,
           "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "mark-list.example.tsx",
+          "withMenu": true
+        },
+        {
+          "contentComponentId": "blocks.heading",
+          "as": "h3",
+          "size": "headline",
+          "title": "Icon variant",
+          "leading": "You can customize the MarkList to use icons. This is useful when you want to use icons to represent the type of the items in the list. See Icon documentation for the list of available icons.",
+          "withCopyLink": false,
+          "withDivider": false
+        },
+        {
+          "contentComponentId": "blocks.component-preview",
+          "exampleFile": "mark-list-icon-variant.example.tsx",
+          "withMenu": true
         }
       ]
     },
@@ -51,17 +68,26 @@
       "content": [
         {
           "contentComponentId": "blocks.heading",
-          "as": "h1",
-          "title": "Develop",
-          "leading": " Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "as": "h2",
           "size": "title",
+          "title": "Sandbox",
           "withCopyLink": false,
           "withDivider": false
         },
         {
+          "contentComponentId": "blocks.sandbox",
+          "codeFile": "mark-list.example.tsx",
+          "dependencies": ["@microsoft/arbutus.mark-list", "@microsoft/arbutus.text"]
+        },
+        {
           "contentComponentId": "blocks.prop-table",
-          "componentName": "DemoComponent",
-          "componentPropType": "DemoComponentProps"
+          "componentName": "MarkList",
+          "componentPropType": "MarkListProps"
+        },
+        {
+          "contentComponentId": "blocks.prop-table",
+          "componentName": "MarkListItem",
+          "componentPropType": "MarkListItemProps"
         }
       ]
     }

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkarbutus_docs=self.webpackChunkarbutus_docs||[]).push([[6119],{6119:function(e,t,a){a.r(t);var r=a(12621),s=a(50285),u=a(2784);t.default=()=>{const{themeKey:e,setTheme:t}=(0,s.F)(),a="dark"===e;return u.createElement(r.R,{isDark:a,onToggle:()=>null==t?void 0:t(a?"light":"dark"),label:"Change the theme to "+(a?"light":"dark")})}}}]);
+//# sourceMappingURL=6119-3aff50b2ff006ed29c8b.js.map
