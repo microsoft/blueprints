@@ -5,7 +5,6 @@
   "content": [
     {
       "contentComponentId": "lists.table-list",
-      "headers": [{ "text": "Use this term" }, { "text": "Don’t use this term " }],
       "variant": "borderless",
       "data": [
         [
