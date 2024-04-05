@@ -75,7 +75,12 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
       {
         collection: '/guidance/*',
         collectionId: 'guidance',
-        exclude: ['/guidance/introduction', '/guidance/glossary', '/guidance/writing-guidelines', '/guidance/component-page-structure'],
+        exclude: [
+          '/guidance/introduction',
+          '/guidance/glossary',
+          '/guidance/writing-guidelines',
+          '/guidance/component-page-structure',
+        ],
         order: 'alphabetical',
       },
     ],

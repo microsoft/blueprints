@@ -1,4 +1,4 @@
-import { makeStyles } from "@griffel/react";
+import { makeStyles } from '@griffel/react';
 
 export const useBasicLayoutStyles = makeStyles({
   title: {

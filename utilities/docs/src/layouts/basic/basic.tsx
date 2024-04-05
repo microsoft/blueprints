@@ -28,7 +28,12 @@ export const BasicLayout: FC<BasicLayoutProps> = ({
   return (
     <>
       {heroImage && <Image isHero image={image} />}
-      <Text block variant="jumbo" as="h1" className={mergeClasses(space.mt12, space.mb10, classes.title)}>
+      <Text
+        block
+        variant="jumbo"
+        as="h1"
+        className={mergeClasses(space.mt12, space.mb10, classes.title)}
+      >
         {title}
       </Text>
       {leading && (

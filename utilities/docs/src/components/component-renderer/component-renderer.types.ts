@@ -246,7 +246,7 @@ export type SandboxComponentData = {
 
 export type SidenoteComponentData = {
   contentComponentId: 'blocks.sidenote';
-  variant: TileProps['backgroundColor']
+  variant: TileProps['backgroundColor'];
   markdown?: {
     raw: string;
   };

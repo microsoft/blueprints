@@ -15,7 +15,11 @@ export const SidenoteComponent: FC<SidenoteComponentProps> = ({ markdown, varian
   const classes = useGridStyles();
 
   return (
-    <Tile variant='solid-color' backgroundColor={variant} className={mergeClasses(classes.root, space.p8)}>
+    <Tile
+      variant="solid-color"
+      backgroundColor={variant}
+      className={mergeClasses(classes.root, space.p8)}
+    >
       {markdown?.raw && <MarkdownRenderer markdown={markdown.raw} />}
     </Tile>
   );
