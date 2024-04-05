@@ -1,13 +1,8 @@
 {
   "_layout": "basic",
   "_path": "/components/introduction",
-  "_orderInNav": 1,
   "title": "Introduction to Components",
   "leading": "",
-  "heroImage": {
-    "src": "../../assets/demo-image-2.png",
-    "alt": "Demo image 2"
-  },
   "content": [
     {
       "contentComponentId": "blocks.introduction-text",

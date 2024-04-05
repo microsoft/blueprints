@@ -8,6 +8,7 @@ import * as React from 'react';
 import { ComponentRenderer } from '../../components/component-renderer';
 import { Image } from '../../components/image';
 import type { BasicLayoutProps } from './basic.types';
+import { useBasicLayoutStyles } from './basic.styles';
 
 export const BasicLayout: FC<BasicLayoutProps> = ({
   title,
@@ -15,6 +16,7 @@ export const BasicLayout: FC<BasicLayoutProps> = ({
   content,
   heroImage,
 }) => {
+  const classes = useBasicLayoutStyles();
   const space = useSpaceStyles();
 
   const image = {
@@ -26,7 +28,7 @@ export const BasicLayout: FC<BasicLayoutProps> = ({
   return (
     <>
       {heroImage && <Image isHero image={image} />}
-      <Text block variant="jumbo" as="h1" className={space.mt12}>
+      <Text block variant="jumbo" as="h1" className={mergeClasses(space.mt12, space.mb10, classes.title)}>
         {title}
       </Text>
       {leading && (

@@ -1,0 +1,157 @@
+{
+  "_layout": "basic",
+  "_path": "/guidance/glossary",
+  "title": "Glossary",
+  "content": [
+    {
+      "contentComponentId": "lists.table-list",
+      "headers": [{ "text": "Use this term" }, { "text": "Don’t use this term " }],
+      "variant": "borderless",
+      "data": [
+        [
+          "**component**",
+          "A building block for creating a user interface. Designers and developers use them to design and implement coherent experiences across Microsoft products. If you need to specify interaction, use Interactive component, not control."
+        ],
+
+        ["**control**", "Don’t use; use component instead."],
+
+        [
+          "**design tokens**",
+          "Design tokens are stored values used to assign Fluent styles like color, typography, spacing, or elevation, without hardcoding pixels and hex codes. Our tokens system allows us to speak a common language and ensure consistent designs across platforms and disciplines."
+        ],
+
+        [
+          "**shared experiences**",
+          "Use instead of the term patterns. A variety of recommended design layouts that solve common problems, such as onboarding, empty states, and error messaging. These are not coded components, but rather design best practices for coherence."
+        ],
+
+        [
+          "**Fluent 2 Design System**",
+          "The design principles, style guide, content tone, and the rules and specifications of reusable components. Fluent is an open-source, cross-platform design system that gives designers and developers the frameworks they need to create user interface (UI) experiences."
+        ],
+
+        [
+          "**Fluent 2 iOS**",
+          "The overarching term for the design and development components for the iOS and iPad platforms."
+        ],
+
+        [
+          "**Fluent 2 macOS**",
+          "The overarching term for the design and development components for the Mac platform."
+        ],
+
+        [
+          "**Fluent 2 Web**",
+          "The overarching term for the design and development components for the Web platforms, including React and Web Components."
+        ],
+
+        [
+          "**Fluent 2 Android UI Kit**",
+          "Use for public-facing documentation. A collection of (Figma) files that contain core components for designing an Android interface."
+        ],
+
+        [
+          "**Fluent 2 iOS UI Kit**",
+          "Use for public-facing documentation. A collection of (Figma) files that contain core components for designing an iOS interface."
+        ],
+
+        [
+          "**Fluent 2 Web UI Kit**",
+          "Use for public-facing documentation. A collection of (Figma) files that contain core components for designing a web interface."
+        ],
+
+        [
+          "**Fluent UI**",
+          "Overarching term for a collection of user interface (UI) libraries used to create beautiful, cross-platform apps that share code, design, and interaction behavior."
+        ],
+
+        [
+          "**Fluent UI Apple**",
+          "Use when referring to a specific GitHub repo for iOS, iPadOS, and macOS components."
+        ],
+
+        [
+          "**Fluent UI Android**",
+          "Use in documentation, rather than the GitHub repo name, when referring to Fluent components specific to the Android platform."
+        ],
+
+        [
+          "**Fluent UI iOS**",
+          "Use in documentation, rather than the GitHub repo name, when referring to Fluent components specific to the iOS platform."
+        ],
+
+        [
+          "**Fluent UI macOS**",
+          "Use in documentation, rather than the GitHub repo name, when referring to Fluent components specific to the macOS platform."
+        ],
+
+        [
+          "**Fluent UI React**",
+          "Use when referring to a specific GitHub repo for building web UI with React components."
+        ],
+
+        [
+          "**Fluent UI React Native**",
+          "Use when referring to a specific GitHub repo for building cross-platform UI with React Native components."
+        ],
+
+        [
+          "**Fluent UI Web**",
+          "Use in documentation, rather than the GitHub repo name, when referring to Fluent components specific to the web platform. It’s a generic term that includes React and Web Component libraries."
+        ],
+
+        [
+          "**Fluent UI Web Components**",
+          "Use when referring to a specific GitHub repo for building JavaScript-based web components built by the FAST DNA team."
+        ],
+
+        [
+          "**indeterminate state**",
+          "An interaction state used in several components; the behavior of this state depends on the component. For example, an indeterminate state is needed for a parent checkbox when some, but not all, children checkboxes are selected. It’s also used in the progress bar component when the system can’t determine how much longer a job might take."
+        ],
+
+        [
+          "**input fields**",
+          "A generic term used to describe a wide range of entry fields, such text boxes, checkboxes, range and fields."
+        ],
+
+        [
+          "**helper text**",
+          "Explanatory content that sits below a text field and guides people on how to fill the text field in. For example, “Passwords are case-sensitive and shouldn’t contain the following symbols: $%#*” is helpful for creating a password under a password text field."
+        ],
+
+        ["**pattern**", "Don’t use. Use shared experiences."],
+
+        [
+          "**placeholder text**",
+          "A short hint or description displayed inside a text box before someone enters a value. It should guide people toward how to fill in the field. For example, “Search” as placeholder text in a search box or “Full name” in a form field."
+        ],
+
+        [
+          "**platform**",
+          "The application you’re designing for. For example, Windows, iOS, Android, or web."
+        ],
+
+        ["**React**", "A JavaScript library for building user interfaces."],
+
+        [
+          "**styles**",
+          "Main navigation of the Fluent Design System website that takes you to design language-related content. Styles include color, typography, iconography, material, elevation, and more."
+        ],
+
+        [
+          "**UI kit**",
+          "A collection of files that contain core components for designing a user interface."
+        ],
+
+        [
+          "**UI library**",
+          "A suite of data and programming code that is used to develop software programs and applications; helps developers build user interfaces (UIs) as a tree of small pieces called components. For example, Fluent UI is a UI library."
+        ],
+
+        ["**WinUI**", "The native UI platform for building Windows experiences."]
+      ],
+      "columnSizing": [1, 3]
+    }
+  ]
+}

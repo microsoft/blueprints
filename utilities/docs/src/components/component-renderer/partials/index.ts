@@ -17,6 +17,7 @@ import { PersonTileComponent } from './person-tile';
 import { PropTableComponent } from './prop-table';
 import { RecommendationTileComponent } from './recommendation-tile';
 import { SandboxComponent } from './sandbox';
+import { SidenoteComponent } from './sidenote';
 import { TableListComponent } from './table-list';
 import { TextComponent } from './text';
 
@@ -32,6 +33,7 @@ export const components = {
   'blocks.introduction-text': IntroductionTextComponent,
   'blocks.prop-table': PropTableComponent,
   'blocks.sandbox': SandboxComponent,
+  'blocks.sidenote': SidenoteComponent,
   'blocks.text': TextComponent,
   'lists.mark-list': MarkListComponent,
   'lists.ordered-list': OrderedListComponent,

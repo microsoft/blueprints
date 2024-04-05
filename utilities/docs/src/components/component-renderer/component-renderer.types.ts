@@ -1,6 +1,7 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import type { components } from './partials';
+import type { TileProps } from '@microsoft/arbutus.tile';
 
 export type ComponentData =
   | ActionListTileComponentData
@@ -21,6 +22,7 @@ export type ComponentData =
   | PropTableComponentData
   | RecommendationComponentData
   | SandboxComponentData
+  | SidenoteComponentData
   | TableListComponentData
   | TextComponentData;
 
@@ -240,6 +242,14 @@ export type SandboxComponentData = {
   contentComponentId: 'blocks.sandbox';
   codeFile: string;
   dependencies?: ([string, string] | string)[];
+};
+
+export type SidenoteComponentData = {
+  contentComponentId: 'blocks.sidenote';
+  variant: TileProps['backgroundColor']
+  markdown?: {
+    raw: string;
+  };
 };
 
 export type ComponentProps = {
