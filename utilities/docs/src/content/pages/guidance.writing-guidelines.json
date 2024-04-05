@@ -1,0 +1,71 @@
+{
+  "_layout": "basic",
+  "_path": "/guidance/writing-guidelines",
+  "title": "Writing guidelines",
+  "content": [
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "#### Voice and tone\n\nWrite in the same voice and tone that you want someone using Fluent to use with their audience. Always follow Microsoft voice principles: \n\n- **Warm and relaxed** Use contractions; write in the second person, using you, yours, and yours\n- **Crisp and clear** Get to the point quickly; use words the audience knows \n- **Ready to lend a hand** Educate; provide reasons; rationales; and alternatives "
+      }
+    },
+    {
+      "contentComponentId": "lists.table-list",
+      "headers": [{ "text": "Use this term" }, { "text": "Don’t use this term " }],
+      "variant": "default",
+      "data": [
+        ["clear", "cancel the selection"],
+        ["component", "control"],
+        ["developer", "engineer"],
+        ["generally or usually", "typically"],
+        ["go to <link label>", "see <link label>"],
+        ["learn more about <topic>", "learn more (without including context)"],
+        ["like", "such as"],
+        ["Person, someone, write around", "user or end-user (user experience is OK)"],
+        ["select", "click"],
+        ["UI kit", "kit or design toolkit"],
+        ["you", "maker, design system user"]
+      ],
+      "columnSizing": [1, 1]
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "#### Tense \n\n- Most of the time, use present tense.\n\n- Typically reserve future tense for when something will happen if a particular choice is selected. For example, when describing potential consequences of actions. \n\n#### Component names \n\nLower case, unless at the start of a sentence. Exception: When used in a code snippet, component names take the same case as used in the code, for example camel case. \n\n#### When to use “Content” vs “Text” \n- Use “text” when talking about words, like text strings.\n- Use “content” when referring to a larger concept that might include text, images, and other UI element. \n#### Do and Don’t examples \n- Always add a brief, valuable caption to Do and Don’t examples\n- Do examples take an imperative statement\n- Don’t examples typically take an informative statement\n- Do and Don’t examples can exist on their own. Consider adding a Do if it clarifies the Don’t example. If the Don’t example doesn’t add any new information, consider showing only a Do example\n- Avoid repeating the body content as a caption.\n#### Subheadings \nGenerally use noun or noun phrases. Exception: Use verb or verb phrases when an imperative statement is needed."
+      }
+    },
+    {
+      "contentComponentId": "blocks.sidenote",
+      "variant": "info",
+      "markdown": {
+        "raw": "**Example – Subheadings exception**\n\n > _The Checkbox component page includes “Keep it short and clear” and “Capitalize the first word and skip the period” as subheadings._"
+      }
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "#### Links\n\nUse “go to” with links instead of “see.”"
+      }
+    },
+    {
+      "contentComponentId": "blocks.sidenote",
+      "variant": "info",
+      "markdown": {
+        "raw": "**Example**\n\n > _For more information, go to [Capitalization](/#) in the Microsoft Writing Style Guide._"
+      }
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "#### Text formatting\n\n**Bold and italic.** Avoid using bold and italic in component usage guidance, especially for emphasis. Bold or italic text is not always accessible to screen readers, decreases readability for some sighted people, and may disrupt the visual hierarchy of the template.\n\n**Monospace.** Apply a monospace font to code snippets. Fluent uses Cascadia Code.\n\n**Quotation marks.** Use quotations marks around recommended and example text."
+      }
+    },
+    {
+      "contentComponentId": "blocks.sidenote",
+      "variant": "info",
+      "markdown": {
+        "raw": "**Example – Button component label guidance**\n\n > _On a menu button, the label will only be “New” and the action options in the menu should include “New” plus the thing to create, like “New message” or “New event.”_"
+      }
+    }
+  ]
+}

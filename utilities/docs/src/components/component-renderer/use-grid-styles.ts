@@ -23,20 +23,27 @@ const gridClasses = {
 
 export const GRID_SETTINGS: Record<ComponentType, keyof typeof gridClasses> = {
   'atoms.link': 'full',
+  'blocks.anatomy': 'full',
   'blocks.code-snippet': 'full',
+  'blocks.component-preview': 'full',
   'blocks.embed': 'full',
   'blocks.guidance': 'full',
   'blocks.heading': 'full',
   'blocks.image': 'halves',
+  'blocks.introduction-text': 'full',
+  'blocks.prop-table': 'full',
+  'blocks.sandbox': 'full',
+  'blocks.sidenote': 'halves',
+  'blocks.text': 'full',
   'lists.mark-list': 'halves',
   'lists.ordered-list': 'halves',
+  'lists.table-list': 'full',
   'tiles.action-list-tile': 'small',
   'tiles.bookmark-tile': 'small',
+  'tiles.illustration-tile': 'small',
   'tiles.image-tile': 'small',
   'tiles.person-tile': 'small',
   'tiles.recommendation': 'halves',
-  'blocks.prop-table': 'full',
-  'tiles.illustration-tile': 'small',
 };
 
 export const useGridStyles = makeStyles({
@@ -47,7 +54,7 @@ export const useGridStyles = makeStyles({
   root: {
     display: 'grid',
     columnGap: tokens.spacingHorizontalL,
-    rowGap: tokens.spacingVerticalXXL,
+    rowGap: tokens.spacingVerticalXL,
   },
   ...gridClasses,
 });

@@ -181,11 +181,27 @@ export const query = graphql`
     componentName
     componentPropType
   }
+  fragment TableListComponent on PagesJsonContent {
+    contentComponentId
+    data
+    headers {
+      text
+    }
+    variant
+    columnSizing
+  }
   fragment TableListComponentTabs on PagesJsonTabsContent {
     contentComponentId
     variant
     data
     columnSizing
+  }
+  fragment SidenoteComponent on PagesJsonContent {
+    contentComponentId
+    markdown {
+      raw
+    }
+    variant
   }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
@@ -203,6 +219,8 @@ export const query = graphql`
         ...HeadingComponent
         ...IntroductionTextComponent
         ...TextComponent
+        ...TableListComponent
+        ...SidenoteComponent
       }
       tabs {
         tab

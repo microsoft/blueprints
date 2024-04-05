@@ -55,6 +55,7 @@ export const MarkdownRenderer: FC<MarkdownRendererProps> = ({ markdown }) => {
           </ArbutusText>
         ),
         strong: ({ children }) => <ArbutusText variant="caption">{children}</ArbutusText>,
+        em: ({ children }) => <ArbutusText variant="leading">{children}</ArbutusText>,
         ul: ({ children }) => <MarkList>{children}</MarkList>,
         ol: ({ children }) => <OrderedList>{children}</OrderedList>,
         // @ts-ignore-next-line Value does exist, but not stable. Might break.

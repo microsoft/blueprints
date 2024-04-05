@@ -52,9 +52,35 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
         title: 'Introduction',
       },
       {
+        id: '/guidance/writing-guidelines',
+        linkProps: {
+          to: '/guidance/writing-guidelines',
+        },
+        title: 'Writing guidelines',
+      },
+      {
+        id: '/guidance/component-page-structure',
+        linkProps: {
+          to: '/guidance/component-page-structure',
+        },
+        title: 'Component page structure',
+      },
+      {
+        id: '/guidance/glossary',
+        linkProps: {
+          to: '/guidance/glossary',
+        },
+        title: 'Glossary',
+      },
+      {
         collection: '/guidance/*',
         collectionId: 'guidance',
-        exclude: ['/guidance/introduction'],
+        exclude: [
+          '/guidance/introduction',
+          '/guidance/glossary',
+          '/guidance/writing-guidelines',
+          '/guidance/component-page-structure',
+        ],
         order: 'alphabetical',
       },
     ],
