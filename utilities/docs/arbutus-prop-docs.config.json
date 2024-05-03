@@ -25,7 +25,11 @@
     "../../components/ordered-list/src/ordered-list-item/ordered-list-item.tsx",
     "../../components/table-list/src/table-cell/table-cell.tsx",
     "../../components/table-list/src/table-list/table-list.tsx",
-    "../../components/table-list/src/table-row/table-row.tsx"
+    "../../components/table-list/src/table-row/table-row.tsx",
+    "../../components/action-list-tile/src/action-list-header/action-list-header.tsx",
+    "../../components/action-list-tile/src/action-list-item/action-list-item.tsx",
+    "../../components/action-list-tile/src/action-list-items/action-list-items.tsx",
+    "../../components/action-list-tile/src/action-list-tile/action-list-tile.tsx"
   ],
   "outputDir": "src/__prop-docs__"
 }

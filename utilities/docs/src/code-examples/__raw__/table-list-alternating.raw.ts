@@ -1,5 +1,5 @@
-export default `import { Text } from '@microsoft/arbutus.text';
-import { TableList, TableRow, TableCell } from '@microsoft/arbutus.table-list';
+export default `import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
+import { Text } from '@microsoft/arbutus.text';
 import * as React from 'react';
 
 const ExampleComponent = () => {

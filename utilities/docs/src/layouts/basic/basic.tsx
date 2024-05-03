@@ -7,8 +7,8 @@ import * as React from 'react';
 
 import { ComponentRenderer } from '../../components/component-renderer';
 import { Image } from '../../components/image';
-import type { BasicLayoutProps } from './basic.types';
 import { useBasicLayoutStyles } from './basic.styles';
+import type { BasicLayoutProps } from './basic.types';
 
 export const BasicLayout: FC<BasicLayoutProps> = ({
   title,

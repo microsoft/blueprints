@@ -1,11 +1,11 @@
+import { mergeClasses } from '@griffel/react';
+import { Tile } from '@microsoft/arbutus.tile';
+import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
 import type { FC } from 'react';
 import * as React from 'react';
-import { Tile } from '@microsoft/arbutus.tile';
-import { MarkdownRenderer } from '../../markdown-renderer';
 
-import { SidenoteComponentData } from '../component-renderer.types';
-import { useSpaceStyles } from '@microsoft/arbutus.use-space-styles';
-import { mergeClasses } from '@griffel/react';
+import { MarkdownRenderer } from '../../markdown-renderer';
+import type { SidenoteComponentData } from '../component-renderer.types';
 import { useGridStyles } from '../use-grid-styles';
 
 type SidenoteComponentProps = SidenoteComponentData;

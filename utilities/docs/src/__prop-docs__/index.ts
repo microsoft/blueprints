@@ -38138,6 +38138,213 @@ const manifest: Manifest = {
       },
     },
   },
+  ActionListHeader: {
+    tags: {},
+    filePath:
+      '../../components/action-list-tile/src/action-list-header/action-list-header.tsx',
+    description: '',
+    displayName: 'ActionListHeader',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-header/action-list-header.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      title: {
+        defaultValue: null,
+        description: 'Text that describes the collection of actions in the tile.',
+        name: 'title',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-header/action-list-header.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'string' },
+      },
+      iconSrc: {
+        defaultValue: null,
+        description: 'Custom optional icon.',
+        name: 'iconSrc',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-header/action-list-header.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-header/action-list-header.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      iconAlt: {
+        defaultValue: null,
+        description: 'Accessible icon description.',
+        name: 'iconAlt',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-header/action-list-header.types.ts',
+            name: 'TypeLiteral',
+          },
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-header/action-list-header.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
+  ActionListItem: {
+    tags: {},
+    filePath:
+      '../../components/action-list-tile/src/action-list-item/action-list-item.tsx',
+    description: '',
+    displayName: 'ActionListItem',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-item/action-list-item.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+      label: {
+        defaultValue: null,
+        description: 'Action label.',
+        name: 'label',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-item/action-list-item.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'string' },
+      },
+      description: {
+        defaultValue: null,
+        description:
+          "Concise action description for assistive technology (e.g. 'download', 'open link').",
+        name: 'description',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-item/action-list-item.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: 'string' },
+      },
+      iconName: {
+        defaultValue: null,
+        description: 'Selection of icons.',
+        name: 'iconName',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-item/action-list-item.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: {
+          name: '"arrow-right" | "chevron-right" | "full-screen" | "slide-in" | "slide-out" | "check" | "code" | "copy" | "download" | "exclamation" | "link" | "moon" | "open" | "sun" | "x"',
+        },
+      },
+      onClick: {
+        defaultValue: null,
+        description: 'Click handler.',
+        name: 'onClick',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-item/action-list-item.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: true,
+        type: { name: '(e?: SyntheticEvent<Element, Event>) => void' },
+      },
+    },
+  },
+  ActionListItems: {
+    tags: {},
+    filePath:
+      '../../components/action-list-tile/src/action-list-items/action-list-items.tsx',
+    description: '',
+    displayName: 'ActionListItems',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-items/action-list-items.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
+  ActionListTile: {
+    tags: {},
+    filePath:
+      '../../components/action-list-tile/src/action-list-tile/action-list-tile.tsx',
+    description: '',
+    displayName: 'ActionListTile',
+    methods: [],
+    props: {
+      className: {
+        defaultValue: null,
+        description: 'Consumer provided class.',
+        name: 'className',
+        declarations: [
+          {
+            fileName:
+              'arbutus/components/action-list-tile/src/action-list-tile/action-list-tile.types.ts',
+            name: 'TypeLiteral',
+          },
+        ],
+        required: false,
+        type: { name: 'string' },
+      },
+    },
+  },
 };
 
 export default manifest;

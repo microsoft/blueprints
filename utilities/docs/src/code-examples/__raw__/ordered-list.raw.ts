@@ -1,5 +1,5 @@
-export default `import { Text } from '@microsoft/arbutus.text';
-import { OrderedList, OrderedListItem} from '@microsoft/arbutus.ordered-list';
+export default `import { OrderedList, OrderedListItem } from '@microsoft/arbutus.ordered-list';
+import { Text } from '@microsoft/arbutus.text';
 import * as React from 'react';
 
 const ExampleComponent = () => {

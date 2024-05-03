@@ -1,6 +1,6 @@
 export default `import { ThemeSwitch } from '@microsoft/arbutus.theme-switch';
-import * as React from 'react';
 import { useTheme } from '@microsoft/arbutus.theming';
+import * as React from 'react';
 
 const ExampleComponent = () => {
   // Example of how to implement theme switching.
