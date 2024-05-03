@@ -1,7 +1,7 @@
+import type { TileProps } from '@microsoft/arbutus.tile';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import type { components } from './partials';
-import type { TileProps } from '@microsoft/arbutus.tile';
 
 export type ComponentData =
   | ActionListTileComponentData

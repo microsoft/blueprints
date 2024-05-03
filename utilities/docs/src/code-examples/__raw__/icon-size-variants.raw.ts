@@ -1,8 +1,8 @@
-export default `import * as React from 'react';
+export default `import { tokens } from '@fluentui/react-theme';
+import { makeStyles } from '@griffel/react';
 import { Icon } from '@microsoft/arbutus.icon';
 import { Text } from '@microsoft/arbutus.text';
-import { makeStyles } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
+import * as React from 'react';
 
 const useContainerStyles = makeStyles({
   root: {

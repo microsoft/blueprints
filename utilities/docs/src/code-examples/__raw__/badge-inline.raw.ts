@@ -1,5 +1,5 @@
-export default `import * as React from 'react';
-import { Badge } from '@microsoft/arbutus.badge';
+export default `import { Badge } from '@microsoft/arbutus.badge';
+import * as React from 'react';
 
 const ExampleComponent = () => (
   <p>

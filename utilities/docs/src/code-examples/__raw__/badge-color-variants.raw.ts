@@ -1,7 +1,7 @@
-export default `import * as React from 'react';
-import { Badge } from '@microsoft/arbutus.badge';
+export default `import { tokens } from '@fluentui/react-theme';
 import { makeStyles } from '@griffel/react';
-import { tokens } from '@fluentui/react-theme';
+import { Badge } from '@microsoft/arbutus.badge';
+import * as React from 'react';
 
 const containerStyles = makeStyles({
   root: {

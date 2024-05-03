@@ -1,8 +1,8 @@
 export default `import { makeStyles } from '@griffel/react';
-import { Icon, colorClasses } from '@microsoft/arbutus.icon';
-import * as React from 'react';
+import { colorClasses, Icon } from '@microsoft/arbutus.icon';
+import { TableCell, TableList, TableRow } from '@microsoft/arbutus.table-list';
 import { Text } from '@microsoft/arbutus.text';
-import { TableList, TableRow, TableCell } from '@microsoft/arbutus.table-list';
+import * as React from 'react';
 
 type Color = keyof typeof colorClasses;
 
@@ -18,7 +18,7 @@ const ExampleComponent = () => {
   return (
     <TableList className={classes.root} columnSizing={['40px', 'auto']}>
       {Object.keys(colorClasses).map((color) => (
-        <TableRow>
+        <TableRow key={color}>
           <TableCell>
             {/** Icon 👇 */}
             <Icon iconName="moon" color={color as Color} />

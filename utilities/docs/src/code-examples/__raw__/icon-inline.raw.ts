@@ -1,5 +1,5 @@
-export default `import * as React from 'react';
-import { Icon } from '@microsoft/arbutus.icon';
+export default `import { Icon } from '@microsoft/arbutus.icon';
+import * as React from 'react';
 
 const ExampleComponent = () => (
   <p>

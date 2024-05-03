@@ -1,5 +1,5 @@
-export default `import { Text } from '@microsoft/arbutus.text';
-import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
+export default `import { MarkList, MarkListItem } from '@microsoft/arbutus.mark-list';
+import { Text } from '@microsoft/arbutus.text';
 import * as React from 'react';
 
 const ExampleComponent = () => {
