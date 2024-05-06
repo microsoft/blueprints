@@ -1,4 +1,5 @@
 import { graphql, type HeadFC, type PageProps } from 'gatsby';
+import { type IGatsbyImageData } from 'gatsby-plugin-image';
 import type { FC } from 'react';
 import * as React from 'react';
 
@@ -43,6 +44,7 @@ export type JsonPageData = {
     heroImage?: {
       alt: string;
       src: {
+        childImageSharp?: { gatsbyImageData: IGatsbyImageData };
         publicURL: string;
       };
     };
@@ -101,6 +103,9 @@ export const query = graphql`
       alt
       src {
         publicURL
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: [WEBP])
+        }
       }
     }
   }
@@ -203,6 +208,13 @@ export const query = graphql`
     }
     variant
   }
+  fragment BookmarkTileComponent on PagesJsonContent {
+    contentComponentId
+    title
+    description
+    to
+    isExternal
+  }
   query JsonPageQuery($_path: String!) {
     pagesJson(_path: { eq: $_path }) {
       ...Metadata
@@ -221,6 +233,7 @@ export const query = graphql`
         ...TextComponent
         ...TableListComponent
         ...SidenoteComponent
+        ...BookmarkTileComponent
       }
       tabs {
         tab

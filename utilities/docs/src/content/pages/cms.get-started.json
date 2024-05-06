@@ -1,0 +1,71 @@
+{
+  "_layout": "basic",
+  "_path": "/cms/get-started",
+  "title": "Get started",
+  "leading": "Add Blueprints CMS to your documentation site.",
+  "content": [
+    {
+      "contentComponentId": "blocks.sidenote",
+      "variant": "warning",
+      "markdown": {
+        "raw": "**Blueprints CMS is currently in alpha. It is only available for a small team of internal testers. If you would like to help us test and improve the CMS (and be one of the first ones to get your hands on it), please reach out to our team.**"
+      }
+    },
+    {
+      "as": "h2",
+      "size": "title",
+      "contentComponentId": "blocks.heading",
+      "title": "Starting a new site",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "If you don’t have a documentation site yet, but want to build one with Blueprints—this guide is for you. First things first, make sure you have the following ready:\n- Your documentation site repository (in GitHub or Github Enterprise) and admin access to it.\n- Information architecture for your documentation site, even if it is a working draft.\n- Hosting service for your documentation site (e.g. [Azure Static Web App service](https://azure.microsoft.com/en-us/products/app-service/static))."
+      }
+    },
+    {
+      "as": "h3",
+      "size": "headline",
+      "contentComponentId": "blocks.heading",
+      "title": "Add a starter",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "You don’t have to start from zero. Blueprints offer blank documentation site setup ready for your content—**starters**. Clone a [starter](/starters/introduction) into your repository. Talk to our team if you don’t know which starter would work best for your project."
+      }
+    },
+    {
+      "as": "h3",
+      "size": "headline",
+      "contentComponentId": "blocks.heading",
+      "title": "Connect the CMS",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "Once you have a starter in your repository, you can add Blueprints CMS to it. The CMS is installed as a Github App."
+      }
+    },
+    {
+      "as": "h2",
+      "size": "title",
+      "contentComponentId": "blocks.heading",
+      "title": "Add the CMS to an excising site",
+      "withCopyLink": false,
+      "withDivider": true
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "If you have an established documentation site and want to add Blueprints CMS to it, follow these steps:\n1. **Get admin rights** for your existing site repository (needs to be in Github or Github Enterprise). \n2. **Install the CMS** to your documentation site repository. The CMS is installed as a Github App.\n3. **Migrate your content** to the CMS. You can do this manually or with the help of our team. Please, reach out about your migration needs: we might be able to help you automate the process."
+      }
+    }
+  ]
+}
