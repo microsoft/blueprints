@@ -1,4 +1,5 @@
 import { graphql, type HeadFC, type PageProps } from 'gatsby';
+import { type IGatsbyImageData } from 'gatsby-plugin-image';
 import type { FC } from 'react';
 import * as React from 'react';
 
@@ -11,7 +12,6 @@ import { ReferenceLayout } from '../layouts/reference';
 import type { WorkInProgressLayoutProps } from '../layouts/work-in-progress';
 import { WorkInProgressLayout } from '../layouts/work-in-progress';
 import { formatDataToProps } from '../utilities/generating-pages';
-import { type IGatsbyImageData } from 'gatsby-plugin-image';
 
 type JsonPageContext = {
   id: string;

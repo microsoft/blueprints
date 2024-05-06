@@ -21,10 +21,8 @@ export const BasicLayout: FC<BasicLayoutProps> = ({
 
   const image = {
     alternativeText: heroImage?.alt ?? '',
-    localFile: heroImage?.src
+    localFile: heroImage?.src,
   };
-
-  console.log(heroImage)
 
   return (
     <>
