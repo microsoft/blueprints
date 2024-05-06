@@ -7,7 +7,7 @@ export type BasicLayoutProps = {
   leading?: string;
   heroImage?: {
     alt: string;
-    src: { publicURL: string; childrenImageSharp: { gatsbyImageData: IGatsbyImageData }[] };
+    src: { publicURL: string; childImageSharp: { gatsbyImageData: IGatsbyImageData } };
   };
   content?: ComponentData[];
 };

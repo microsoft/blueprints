@@ -1,43 +1,47 @@
 {
-  "_layout": "work-in-progress",
+  "_layout": "basic",
   "_path": "/cms/introduction",
   "title": "Introduction",
-  "leading": "Introduction to CMS.",
+  "leading": "Minimal headless content management system (a.k.a. CMS) for your documentation site.",
   "heroImage": {
     "src": "../../assets/demo-image-2.png",
     "alt": "Demo image 2"
   },
   "content": [
     {
-      "as": "h1",
-      "leading": "This documentation site is powered by Strapi. It is a content management system (a.k.a. CMS). All the content, images and illustrations you see on this site come from the CMS.",
+      "contentComponentId": "blocks.sidenote",
+      "variant": "warning",
+      "markdown": {
+        "raw": "**Blueprints CMS is currently in alpha. It is only available for a small team of internal testers. If you would like to help us test and improve the CMS (and be one of the first ones to get your hands on it), please reach out to our team.**"
+      }
+    },
+    {
+      "as": "h2",
       "size": "title",
       "contentComponentId": "blocks.heading",
-      "title": "Get Started with Strapi",
+      "title": "About",
       "withCopyLink": false,
       "withDivider": false
     },
     {
-      "to": "https://docs.strapi.io/user-docs/latest/getting-started/introduction.html",
-      "title": "Strapi User Guide",
-      "contentComponentId": "tiles.bookmark-tile",
-      "isExternal": true,
-      "icon": {
-        "alternativeText": "Strapi logo",
-        "src": "https://admincontrolsdemoapps.blob.core.windows.net/docsite-assets/Strapi_monogram_logo_73cfc84f53.png"
-      },
-      "description": "This user guide explains all features available in the admin panel of your Strapi CMS."
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "Blueprints CMS is a content management system that sits in the same codebase as your documentation site. It is a minimal solution to quickly get your editors access to edit and publish new content.\n\n- Integrates with Blueprints UI that content editors can use as building blocks for their content.\n- Offers templates to help wring great documentation.\n- Adds version control and collaborative features."
+      }
     },
     {
-      "to": "http://mads-strapi.westus.cloudapp.azure.com:1337/admin",
-      "title": "MADS Content Panel",
       "contentComponentId": "tiles.bookmark-tile",
+      "to": "cms/get-started",
+      "title": "Get started",
+      "isExternal": false,
+      "description": "Guide to adding content management to your documentation site."
+    },
+    {
+      "contentComponentId": "tiles.bookmark-tile",
+      "to": "mailto:riacarmin@microsoft.com?subject=Request%20access%20to%20Blueprints%20CMS",
+      "title": "Request access",
       "isExternal": true,
-      "icon": {
-        "alternativeText": null,
-        "src": "https://admincontrolsdemoapps.blob.core.windows.net/docsite-assets/Strapi_monogram_logo_73cfc84f53.png"
-      },
-      "description": "Access and edit the content here. If you don’t have the login yet, please contact the administrators."
+      "description": "Submit a request to be added to the user alpha testing group."
     }
   ]
 }

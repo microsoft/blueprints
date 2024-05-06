@@ -80,6 +80,7 @@ export function formatDataToProps({
         heroImage: {
           alt: data.heroImage?.alt,
           src: {
+            childImageSharp: data.heroImage?.src?.childImageSharp,
             publicURL: data.heroImage?.src?.publicURL,
           },
         },
