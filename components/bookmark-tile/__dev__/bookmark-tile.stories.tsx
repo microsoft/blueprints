@@ -22,6 +22,9 @@ const useTileGridStyles = makeStyles({
     width: '100%',
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(16rem, 1fr))',
+    paddingTop: '6rem',
+    paddingRight: '2.5rem',
+    paddingLeft: '2.5rem',
     columnGap: '2.5rem',
     rowGap: '2.5rem',
 
