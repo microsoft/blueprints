@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.bookmark-tile
 
-This log was last generated on Fri, 08 Dec 2023 23:06:24 GMT and should not be manually modified.
+This log was last generated on Mon, 06 May 2024 23:09:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.9
+
+Mon, 06 May 2024 23:09:00 GMT
+
+### Patches
+
+- Fixes layout in BookmarkTile (akimalunar@gmail.com)
 
 ## 1.0.8
 

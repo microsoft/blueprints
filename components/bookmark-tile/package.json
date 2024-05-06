@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.bookmark-tile",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "BookmarkTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",

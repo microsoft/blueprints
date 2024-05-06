@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes layout in BookmarkTile",
-  "packageName": "@microsoft/arbutus.bookmark-tile",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

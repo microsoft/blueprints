@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.bookmark-tile",
   "entries": [
     {
+      "date": "Mon, 06 May 2024 23:09:00 GMT",
+      "version": "1.0.9",
+      "tag": "@microsoft/arbutus.bookmark-tile_v1.0.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.bookmark-tile",
+            "commit": "cbd5cbd0151612d6e82a3e048392d2789136d912",
+            "comment": "Fixes layout in BookmarkTile"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 08 Dec 2023 23:06:24 GMT",
       "version": "1.0.8",
       "tag": "@microsoft/arbutus.bookmark-tile_v1.0.8",
