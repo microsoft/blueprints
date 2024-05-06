@@ -28,24 +28,22 @@ export const BookmarkTile: FC<BookmarkTileProps> = ({
       onClick={onClick}
       className={mergeClasses(classes.root, space.p9, className)}
     >
-      <div>
-        <header className={mergeClasses(classes.header, space.mb7)}>
-          {iconSrc && iconAlt ? (
-            <img src={iconSrc} alt={iconAlt} className={classes.image} />
-          ) : (
-            <div className={classes.fallbackIcon}>
-              <Icon iconName="link" color="accent" />
-            </div>
-          )}
-          <Icon iconName="open" color="secondary" />
-        </header>
-        <Text block as="h3" variant="caption" className={space.mb1}>
-          {title}
-        </Text>
-        <Text block variant="description" color="secondary">
-          {description}
-        </Text>
-      </div>
+      <header className={mergeClasses(classes.header, space.mb7)}>
+        {iconSrc && iconAlt ? (
+          <img src={iconSrc} alt={iconAlt} className={classes.image} />
+        ) : (
+          <div className={classes.fallbackIcon}>
+            <Icon iconName="link" color="accent" />
+          </div>
+        )}
+        <Icon iconName="open" color="secondary" />
+      </header>
+      <Text block variant="caption" className={space.mb1}>
+        {title}
+      </Text>
+      <Text block variant="description" color="secondary">
+        {description}
+      </Text>
     </Tile>
   );
 };
