@@ -8,8 +8,6 @@ import { makeNavigate } from '../../../utilities';
 const useStyles = makeStyles({
   root: {
     maxWidth: '316px',
-    display: 'inline-flex',
-    alignItems: 'unset',
   },
 });
 
