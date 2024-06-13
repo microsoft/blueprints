@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.resource-chip",
   "entries": [
     {
+      "date": "Thu, 13 Jun 2024 22:43:20 GMT",
+      "version": "0.0.5",
+      "tag": "@microsoft/arbutus.resource-chip_v0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.resource-chip",
+            "comment": "Bump @microsoft/arbutus.button to v1.0.6",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 06 Mar 2024 02:51:23 GMT",
       "version": "0.0.4",
       "tag": "@microsoft/arbutus.resource-chip_v0.0.4",

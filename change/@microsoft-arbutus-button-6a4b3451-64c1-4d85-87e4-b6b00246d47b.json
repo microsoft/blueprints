@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixes ButtonProp types with the correct HTML attributes",
-  "packageName": "@microsoft/arbutus.button",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

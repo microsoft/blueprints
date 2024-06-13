@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.button",
   "entries": [
     {
+      "date": "Thu, 13 Jun 2024 22:43:20 GMT",
+      "version": "1.0.6",
+      "tag": "@microsoft/arbutus.button_v1.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.button",
+            "commit": "07f441fd57b6afcba7f8e41ee1427676086fbbb4",
+            "comment": "Fixes ButtonProp types with the correct HTML attributes"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 06 Mar 2024 02:51:23 GMT",
       "version": "1.0.5",
       "tag": "@microsoft/arbutus.button_v1.0.5",
