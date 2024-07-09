@@ -20,18 +20,17 @@
       "size": "title",
       "contentComponentId": "blocks.heading",
       "title": "About",
-      "withCopyLink": false,
-      "withDivider": false
+      "leading": "Blueprints CMS is a content management system for your documentation site. Our goal is to create a simple, quick to install system to lower the barrier for contributors to write and publish documentation."
     },
     {
       "contentComponentId": "blocks.text",
       "markdown": {
-        "raw": "Blueprints CMS is a content management system that sits in the same codebase as your documentation site. It is a minimal solution to quickly get your editors access to edit and publish new content.\n\n- Integrates with Blueprints UI that content editors can use as building blocks for their content.\n- Offers templates to help wring great documentation.\n- Adds version control and collaborative features."
+        "raw": "- **Minimal & quick to install.** Blueprints CMS doesn’t require a database or server to run. It edits content files directly in a repository, either alongside your codebase or in a dedicated documentation site repository. Blueprints CMS installs as a GitHub app into your repository, after which you can create, edit and publish content.\n\n- **Lowers the barriers.** Provides non-technical authors a way to directly contribute the content and assets to the repository.\n\n- **Designed for documentation.** Blueprints CMS is designed for writing documentation."
       }
     },
     {
       "contentComponentId": "tiles.bookmark-tile",
-      "to": "cms/get-started",
+      "to": "/cms/get-started",
       "title": "Get started",
       "isExternal": false,
       "description": "Guide to adding content management to your documentation site."

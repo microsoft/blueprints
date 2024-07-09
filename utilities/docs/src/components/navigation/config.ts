@@ -213,6 +213,13 @@ export const MAIN_NAVIGATION: MainNavigationConfig = [
         },
         title: 'Get started',
       },
+      {
+        id: '/cms/editing-content',
+        linkProps: {
+          to: '/cms/editing-content',
+        },
+        title: 'Editing content',
+      },
     ],
   },
 ];
