@@ -15,56 +15,85 @@
       "as": "h2",
       "size": "title",
       "contentComponentId": "blocks.heading",
-      "title": "Starting a new site",
+      "title": "Overview",
+      "leading": "Blueprints CMS edits content files directly in a repository, either alongside your codebase or in a dedicated documentation site repository. There is no database or server for you to set up or run. Blueprints CMS installs as a GitHub app into your repository, after which you can create, edit and publish content.",
       "withCopyLink": false,
       "withDivider": false
     },
     {
-      "contentComponentId": "blocks.text",
+      "contentComponentId": "blocks.sidenote",
+      "variant": "info",
       "markdown": {
-        "raw": "If you don’t have a documentation site yet, but want to build one with Blueprints—this guide is for you. First things first, make sure you have the following ready:\n- Your documentation site repository (in GitHub or Github Enterprise) and admin access to it.\n- Information architecture for your documentation site, even if it is a working draft.\n- Hosting service for your documentation site (e.g. [Azure Static Web App service](https://azure.microsoft.com/en-us/products/app-service/static))."
-      }
-    },
-    {
-      "as": "h3",
-      "size": "headline",
-      "contentComponentId": "blocks.heading",
-      "title": "Add a starter",
-      "withCopyLink": false,
-      "withDivider": false
-    },
-    {
-      "contentComponentId": "blocks.text",
-      "markdown": {
-        "raw": "You don’t have to start from zero. Blueprints offer blank documentation site setup ready for your content—**starters**. Clone a [starter](/starters/introduction) into your repository. Talk to our team if you don’t know which starter would work best for your project."
-      }
-    },
-    {
-      "as": "h3",
-      "size": "headline",
-      "contentComponentId": "blocks.heading",
-      "title": "Connect the CMS",
-      "withCopyLink": false,
-      "withDivider": false
-    },
-    {
-      "contentComponentId": "blocks.text",
-      "markdown": {
-        "raw": "Once you have a starter in your repository, you can add Blueprints CMS to it. The CMS is installed as a Github App."
+        "raw": "All content files and assets are added under a predefined directory at the root of your repository. By default, it is `.blueprints-cms/`. You can configure the CMS directory in `blueprints-cms.config.json`."
       }
     },
     {
       "as": "h2",
       "size": "title",
       "contentComponentId": "blocks.heading",
-      "title": "Add the CMS to an excising site",
+      "title": "Get your repository ready",
       "withCopyLink": false,
-      "withDivider": true
+      "withDivider": false
     },
     {
       "contentComponentId": "blocks.text",
       "markdown": {
-        "raw": "If you have an established documentation site and want to add Blueprints CMS to it, follow these steps:\n1. **Get admin rights** for your existing site repository (needs to be in Github or Github Enterprise). \n2. **Install the CMS** to your documentation site repository. The CMS is installed as a Github App.\n3. **Migrate your content** to the CMS. You can do this manually or with the help of our team. Please, reach out about your migration needs: we might be able to help you automate the process."
+        "raw": "First, you need to figure out into which GitHub repository to install the CMS. By installing the CMS, you are adding its configuration and content files. That means the repository you choose will include your content and assets like images and videos. In most cases, you should install the CMS to the repository where you have the rest of your documentation site."
+      }
+    },
+    {
+      "contentComponentId": "blocks.sidenote",
+      "variant": "info",
+      "markdown": {
+        "raw": "If you don’t have a documentation site yet, try one of the [Blueprints starters](/starters/introduction/) to get started."
+      }
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "You can choose a personal public, private, or organization repository. The repository should be in Github or Github Enterprise. Make sure you have the required permissions:\n\n1. Open, review and merge pull requests\n\n2. Read and write the codebase.\n\n If you don’t have the right permission or not sure, ask the repository owner for help."
+      }
+    },
+    {
+      "as": "h2",
+      "size": "title",
+      "contentComponentId": "blocks.heading",
+      "title": "Install the GitHub app",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "Once, you have the repository and all the necessary permissions, install the [Blueprints CMS GitHub app](https://github.com/apps/blueprints-cms-test)\n\n- Which account do you want to use (in case if you have multiple)?\n\n- Which organization (if any) do you want to install the app into?\n\n- Do you want to enable the app for the entire organization? Or just select repositories?\n\n**Note**, if you are installing the app into an organization, your admin might need to approve the app. In that case, you will see a request option."
+      }
+    },
+    {
+      "as": "h2",
+      "size": "title",
+      "contentComponentId": "blocks.heading",
+      "title": "Get the CMS app",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "Great! Now that you have the GitHub app installed it is time to head over to the CMS app. Log in with the same GitHub account as the one you used to install the app.\n\nIn the projects dashboard, chose to add a new project. You should see the list of enabled repositories now, ready for content. Add content management—it should open a pull request in your repository that adds the configuration file and the directory for all your content files and assets. We have added a couple for demo documents for you to get started with.\n\nReview and merge the PR, and head back to the CMS app."
+      }
+    },
+    {
+      "as": "h2",
+      "size": "title",
+      "contentComponentId": "blocks.heading",
+      "title": "Finish line",
+      "withCopyLink": false,
+      "withDivider": false
+    },
+    {
+      "contentComponentId": "blocks.text",
+      "markdown": {
+        "raw": "After the configuration files have been added, you should now see your new project in the dashboard. Now, you are ready to edit and publish content!"
       }
     }
   ]
