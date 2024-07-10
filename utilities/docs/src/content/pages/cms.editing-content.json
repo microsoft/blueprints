@@ -58,8 +58,14 @@
       "contentComponentId": "lists.table-list",
       "variant": "borderless",
       "data": [
-        ["**Collection**", "Document is a part of a collection, and follows a template. For example, if you have component documentation, your component pages are a collection of documents that follow the same template."],
-        ["**Unique**", "Document is one of a kind, and has no template. Content for pages like home, about us, principles, etc. are unique and one of a kind. They do not have a template shared with any other page on the site."]
+        [
+          "**Collection**",
+          "Document is a part of a collection, and follows a template. For example, if you have component documentation, your component pages are a collection of documents that follow the same template."
+        ],
+        [
+          "**Unique**",
+          "Document is one of a kind, and has no template. Content for pages like home, about us, principles, etc. are unique and one of a kind. They do not have a template shared with any other page on the site."
+        ]
       ],
       "columnSizing": [1, 4]
     }
