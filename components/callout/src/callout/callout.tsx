@@ -14,7 +14,7 @@ export const Callout: FC<CalloutProps> = ({ status = 'info', title, children, cl
   const space = useSpaceStyles();
 
   return (
-    <div className={mergeClasses(classes.root, space.p7, classes[status], className)}>
+    <div className={mergeClasses(classes.root, space.p7, classes[status], className ?? '')}>
       <CalloutBadge status={status} />
       <div>
         <Text block as="h3" variant="caption" className={space.mb1}>
