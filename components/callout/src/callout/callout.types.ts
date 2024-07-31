@@ -25,6 +25,7 @@ export type CalloutProps = {
 
   /**
    * Status color variant options.
+   * @default 'info'
    */
   status?: StatusVariant;
 
