@@ -8,13 +8,13 @@ import { CalloutBadge } from '../callout-badge/callout-badge';
 import { useCalloutStyles } from './callout.styles';
 import type { CalloutProps } from './callout.types';
 
-export const Callout: FC<CalloutProps> = ({ status = 'info', title, children }) => {
+export const Callout: FC<CalloutProps> = ({ status = 'info', title, children, className }) => {
   // Styles
   const classes = useCalloutStyles();
   const space = useSpaceStyles();
 
   return (
-    <div className={mergeClasses(classes.root, space.p7, classes[status])}>
+    <div className={mergeClasses(classes.root, space.p7, classes[status], className)}>
       <CalloutBadge status={status} />
       <div>
         <Text block as="h3" variant="caption" className={space.mb1}>
