@@ -9,7 +9,14 @@ import type { IconButtonProps } from './icon-button.types';
 
 export const IconButton: FC = forwardRef<HTMLButtonElement, IconButtonProps>(
   (
-    { className, label, iconName, color = 'primary', size = 'medium', ...restButtonAttributes },
+    {
+      className,
+      label,
+      iconName,
+      color = 'primary',
+      size = 'medium',
+      ...restButtonAttributes
+    },
     ref,
   ) => {
     // Styles

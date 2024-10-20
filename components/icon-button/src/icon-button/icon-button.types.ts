@@ -43,4 +43,4 @@ export type IconButtonProps = {
    * @default 'medium'
    */
   size?: 'medium' | 'large';
-} & ButtonHTMLAttributes<HTMLButtonElement>;;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
