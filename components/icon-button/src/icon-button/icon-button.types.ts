@@ -1,5 +1,5 @@
 import type { paths } from '@microsoft/arbutus.icon';
-import type { SyntheticEvent } from 'react';
+import type { ButtonHTMLAttributes, SyntheticEvent } from 'react';
 
 export type ColorVariant = 'accent' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'info';
 
@@ -37,4 +37,10 @@ export type IconButtonProps = {
    * Click handler.
    */
   onClick: (e?: SyntheticEvent) => void;
-};
+
+  /**
+   * Size of the button.
+   * @default 'medium'
+   */
+  size?: 'medium' | 'large';
+} & ButtonHTMLAttributes<HTMLButtonElement>;;

@@ -33,4 +33,5 @@ export const Simple = Template.bind({}) as StoryFn<FunctionComponent<IconButtonP
 Simple.args = {
   label: 'Simple IconButton Example',
   iconName: 'x',
+  size: 'large',
 };
