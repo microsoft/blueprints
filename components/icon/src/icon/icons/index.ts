@@ -8,6 +8,7 @@ import { Exclamation } from './exclamation';
 import { FullScreen } from './full-screen';
 import { Link } from './link';
 import { Moon } from './moon';
+import { MoreVertical } from './more-vertical';
 import { Open } from './open';
 import { SlideIn } from './slide-in';
 import { SlideOut } from './slide-out';
@@ -18,6 +19,7 @@ export const paths = {
   ['arrow-right']: ArrowRight,
   ['chevron-right']: ChevronRight,
   ['full-screen']: FullScreen,
+  ['more-vertical']: MoreVertical,
   ['slide-in']: SlideIn,
   ['slide-out']: SlideOut,
   check: Check,
