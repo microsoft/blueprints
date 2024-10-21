@@ -7,7 +7,7 @@ import * as React from 'react';
 import { useIconButtonStyles } from './icon-button.styles';
 import type { IconButtonProps } from './icon-button.types';
 
-export const IconButton: FC = forwardRef<HTMLButtonElement, IconButtonProps>(
+export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
   (
     {
       className,
