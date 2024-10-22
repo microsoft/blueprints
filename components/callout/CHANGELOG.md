@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.callout
 
-This log was last generated on Fri, 08 Dec 2023 23:06:24 GMT and should not be manually modified.
+This log was last generated on Tue, 22 Oct 2024 00:52:34 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.9
+
+Tue, 22 Oct 2024 00:52:34 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.badge to v1.0.8
 
 ## 1.0.8
 

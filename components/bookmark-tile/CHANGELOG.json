@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.bookmark-tile",
   "entries": [
     {
+      "date": "Tue, 22 Oct 2024 00:52:34 GMT",
+      "version": "1.0.10",
+      "tag": "@microsoft/arbutus.bookmark-tile_v1.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.bookmark-tile",
+            "comment": "Bump @microsoft/arbutus.icon to v1.1.0",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 06 May 2024 23:09:00 GMT",
       "version": "1.0.9",
       "tag": "@microsoft/arbutus.bookmark-tile_v1.0.9",

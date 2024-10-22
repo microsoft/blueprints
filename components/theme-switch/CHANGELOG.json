@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.theme-switch",
   "entries": [
     {
+      "date": "Tue, 22 Oct 2024 00:52:34 GMT",
+      "version": "1.0.7",
+      "tag": "@microsoft/arbutus.theme-switch_v1.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.theme-switch",
+            "comment": "Bump @microsoft/arbutus.icon to v1.1.0",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 08 Dec 2023 23:06:24 GMT",
       "version": "1.0.6",
       "tag": "@microsoft/arbutus.theme-switch_v1.0.6",

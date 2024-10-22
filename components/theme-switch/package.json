@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.theme-switch",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ThemeSwitch is a composite component that indicates a currently selected theme and allows the user to change it between light and dark.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18",
-    "@microsoft/arbutus.icon": "1.0.6",
+    "@microsoft/arbutus.icon": "1.1.0",
     "@reach/visually-hidden": "^0.18.0"
   },
   "devDependencies": {

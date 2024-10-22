@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.recommendation-tile",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "RecommendationTile composite component in the Tiles collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -23,9 +23,9 @@
   "dependencies": {
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18",
-    "@microsoft/arbutus.badge": "1.0.7",
-    "@microsoft/arbutus.link": "1.1.7",
-    "@microsoft/arbutus.mark-list": "1.0.8",
+    "@microsoft/arbutus.badge": "1.0.8",
+    "@microsoft/arbutus.link": "1.1.8",
+    "@microsoft/arbutus.mark-list": "1.0.9",
     "@microsoft/arbutus.text": "1.0.6",
     "@microsoft/arbutus.tile": "1.0.6",
     "@microsoft/arbutus.use-space-styles": "1.0.7"

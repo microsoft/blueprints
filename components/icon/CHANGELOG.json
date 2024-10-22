@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Tue, 22 Oct 2024 00:52:34 GMT",
+      "version": "1.1.0",
+      "tag": "@microsoft/arbutus.icon_v1.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "677547dbcffff3a11e43ebe772c747047d68b225",
+            "comment": "Adds size, button attributes, and ref to IconButton props."
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 08 Dec 2023 23:06:24 GMT",
       "version": "1.0.6",
       "tag": "@microsoft/arbutus.icon_v1.0.6",
