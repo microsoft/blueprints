@@ -12,6 +12,7 @@ import { MoreHorizontal } from './more-horizontal';
 import { MoreVertical } from './more-vertical';
 import { Open } from './open';
 import { Reorder } from './reorder';
+import { ReorderDotsVertical } from './reorder-dots-vertical';
 import { SlideIn } from './slide-in';
 import { SlideOut } from './slide-out';
 import { Sun } from './sun';
@@ -23,6 +24,7 @@ export const paths = {
   ['full-screen']: FullScreen,
   ['more-horizontal']: MoreHorizontal,
   ['more-vertical']: MoreVertical,
+  ['reorder-dots-vertical']: ReorderDotsVertical,
   ['slide-in']: SlideIn,
   ['slide-out']: SlideOut,
   check: Check,
