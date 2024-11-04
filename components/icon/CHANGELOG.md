@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.icon
 
-This log was last generated on Mon, 04 Nov 2024 17:41:03 GMT and should not be manually modified.
+This log was last generated on Mon, 04 Nov 2024 19:04:31 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.2.1
+
+Mon, 04 Nov 2024 19:04:31 GMT
+
+### Patches
+
+- Corrects misspelling (akimalunar@gmail.com)
 
 ## 1.2.0
 

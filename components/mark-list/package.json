@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.mark-list",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "MarkList composite component in the Lists collection.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -21,8 +21,8 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@microsoft/arbutus.badge": "1.0.9",
-    "@microsoft/arbutus.icon": "1.2.0",
+    "@microsoft/arbutus.badge": "1.0.10",
+    "@microsoft/arbutus.icon": "1.2.1",
     "@microsoft/arbutus.use-space-styles": "1.0.7",
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18"

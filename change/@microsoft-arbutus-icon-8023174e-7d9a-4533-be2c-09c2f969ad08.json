@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Corrects misspelling",
-  "packageName": "@microsoft/arbutus.icon",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

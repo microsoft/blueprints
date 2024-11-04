@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Mon, 04 Nov 2024 19:04:31 GMT",
+      "version": "1.2.1",
+      "tag": "@microsoft/arbutus.icon_v1.2.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "ea5d32d488c6d320c632513a0f0ce240545c6176",
+            "comment": "Corrects misspelling"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 04 Nov 2024 17:41:03 GMT",
       "version": "1.2.0",
       "tag": "@microsoft/arbutus.icon_v1.2.0",
