@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Adds 'reorder-dots-vertical' icon",
+  "packageName": "@microsoft/arbutus.icon",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
