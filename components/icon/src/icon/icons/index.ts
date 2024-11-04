@@ -11,6 +11,7 @@ import { Moon } from './moon';
 import { MoreHorizontal } from './more-horizontal';
 import { MoreVertical } from './more-vertical';
 import { Open } from './open';
+import { ReOrder } from './re-order';
 import { SlideIn } from './slide-in';
 import { SlideOut } from './slide-out';
 import { Sun } from './sun';
@@ -22,6 +23,7 @@ export const paths = {
   ['full-screen']: FullScreen,
   ['more-horizontal']: MoreHorizontal,
   ['more-vertical']: MoreVertical,
+  ['re-reorder']: ReOrder,
   ['slide-in']: SlideIn,
   ['slide-out']: SlideOut,
   check: Check,
