@@ -1,8 +1,17 @@
 # Change Log - @microsoft/arbutus.mark-list
 
-This log was last generated on Mon, 04 Nov 2024 19:04:31 GMT and should not be manually modified.
+This log was last generated on Mon, 04 Nov 2024 20:21:02 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.12
+
+Mon, 04 Nov 2024 20:21:02 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.badge to v1.0.11
+- Bump @microsoft/arbutus.icon to v1.3.0
 
 ## 1.0.11
 

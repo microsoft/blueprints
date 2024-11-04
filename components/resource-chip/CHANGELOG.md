@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.resource-chip
 
-This log was last generated on Mon, 04 Nov 2024 19:04:31 GMT and should not be manually modified.
+This log was last generated on Mon, 04 Nov 2024 20:21:02 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.9
+
+Mon, 04 Nov 2024 20:21:02 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.icon to v1.3.0
 
 ## 0.0.8
 

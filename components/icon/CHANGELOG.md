@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.icon
 
-This log was last generated on Mon, 04 Nov 2024 19:04:31 GMT and should not be manually modified.
+This log was last generated on Mon, 04 Nov 2024 20:21:02 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.3.0
+
+Mon, 04 Nov 2024 20:21:02 GMT
+
+### Minor changes
+
+- Adds 'reorder-dots-vertical' icon (akimalunar@gmail.com)
 
 ## 1.2.1
 
