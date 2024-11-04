@@ -1,6 +1,6 @@
 {
   "name": "@microsoft/arbutus.component-preview",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Component Preview is a composite component designed to showcase component in a static environment. It can be use to preview different component variants.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -26,7 +26,7 @@
     "@fluentui/react-theme": "^9.1.16",
     "@griffel/react": "^1.5.18",
     "@microsoft/arbutus.button": "1.0.6",
-    "@microsoft/arbutus.icon": "1.1.0",
+    "@microsoft/arbutus.icon": "1.2.0",
     "@microsoft/arbutus.theming": "1.1.2",
     "@microsoft/arbutus.use-copy-to-clipboard": "1.0.4",
     "framer-motion": "^10.12.16",

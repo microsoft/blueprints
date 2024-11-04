@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Mon, 04 Nov 2024 17:41:03 GMT",
+      "version": "1.2.0",
+      "tag": "@microsoft/arbutus.icon_v1.2.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "6a60293ec7e024c1db75a691171e56fa5eaa176e",
+            "comment": "Adds re-order icon"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 22 Oct 2024 00:52:34 GMT",
       "version": "1.1.0",
       "tag": "@microsoft/arbutus.icon_v1.1.0",

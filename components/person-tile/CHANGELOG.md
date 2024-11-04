@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.person-tile
 
-This log was last generated on Tue, 22 Oct 2024 00:52:34 GMT and should not be manually modified.
+This log was last generated on Mon, 04 Nov 2024 17:41:03 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.0.10
+
+Mon, 04 Nov 2024 17:41:03 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.icon to v1.2.0
 
 ## 1.0.9
 
