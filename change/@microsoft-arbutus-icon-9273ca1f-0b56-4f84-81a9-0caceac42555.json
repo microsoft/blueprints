@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Adds SVG attributes to Icon",
-  "packageName": "@microsoft/arbutus.icon",
-  "email": "akimalunar@gmail.com",
-  "dependentChangeType": "patch"
-}

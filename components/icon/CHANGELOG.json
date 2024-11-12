@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.icon",
   "entries": [
     {
+      "date": "Tue, 12 Nov 2024 21:45:20 GMT",
+      "version": "1.4.0",
+      "tag": "@microsoft/arbutus.icon_v1.4.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.icon",
+            "commit": "5d3be892392fb7883d9c1466d1c37e1b3de9352d",
+            "comment": "Adds SVG attributes to Icon"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 04 Nov 2024 20:21:02 GMT",
       "version": "1.3.0",
       "tag": "@microsoft/arbutus.icon_v1.3.0",

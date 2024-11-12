@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.guidance",
   "entries": [
     {
+      "date": "Tue, 12 Nov 2024 21:45:20 GMT",
+      "version": "1.1.5",
+      "tag": "@microsoft/arbutus.guidance_v1.1.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.guidance",
+            "comment": "Bump @microsoft/arbutus.icon-button to v1.1.4",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 04 Nov 2024 20:21:02 GMT",
       "version": "1.1.4",
       "tag": "@microsoft/arbutus.guidance_v1.1.4",

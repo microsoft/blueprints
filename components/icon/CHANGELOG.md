@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.icon
 
-This log was last generated on Mon, 04 Nov 2024 20:21:02 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Nov 2024 21:45:20 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.4.0
+
+Tue, 12 Nov 2024 21:45:20 GMT
+
+### Minor changes
+
+- Adds SVG attributes to Icon (akimalunar@gmail.com)
 
 ## 1.3.0
 

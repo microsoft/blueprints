@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.icon-button
 
-This log was last generated on Mon, 04 Nov 2024 20:21:02 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Nov 2024 21:45:20 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.4
+
+Tue, 12 Nov 2024 21:45:20 GMT
+
+### Patches
+
+- Bump @microsoft/arbutus.icon to v1.4.0
 
 ## 1.1.3
 

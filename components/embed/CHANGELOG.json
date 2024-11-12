@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.embed",
   "entries": [
     {
+      "date": "Tue, 12 Nov 2024 21:45:20 GMT",
+      "version": "1.0.13",
+      "tag": "@microsoft/arbutus.embed_v1.0.13",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@microsoft/arbutus.embed",
+            "comment": "Bump @microsoft/arbutus.icon-button to v1.1.4",
+            "commit": "not available"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 04 Nov 2024 20:21:02 GMT",
       "version": "1.0.12",
       "tag": "@microsoft/arbutus.embed_v1.0.12",
