@@ -14,6 +14,7 @@ export const Icon: FC<IconProps> = ({
   iconName,
   size = 'medium',
   isInline,
+  ...svgAttributes
 }) => {
   const Icon = useMemo(() => paths[iconName], [iconName]);
 
@@ -52,6 +53,7 @@ export const Icon: FC<IconProps> = ({
       className={rootClasses}
       fill="currentColor"
       {...a11yProps}
+      {...svgAttributes}
     >
       {label && <title id={a11yId}>{label}</title>}
       <Icon />

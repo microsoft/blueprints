@@ -1,3 +1,4 @@
+import { SVGAttributes } from 'react';
 import type { sizeClasses } from './icon.styles';
 import type { paths } from './icons';
 
@@ -56,4 +57,4 @@ export type IconProps = {
    * Sets the Icon to be an inline element.
    */
   isInline?: boolean;
-};
+} & SVGAttributes<SVGSVGElement>;
