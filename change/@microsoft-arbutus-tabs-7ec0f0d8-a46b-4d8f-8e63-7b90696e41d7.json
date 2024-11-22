@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Exposes useTabsContext in @microsoft/arbutus.tabs package",
+  "packageName": "@microsoft/arbutus.tabs",
+  "email": "akimalunar@gmail.com",
+  "dependentChangeType": "patch"
+}
