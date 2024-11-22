@@ -54,7 +54,7 @@
     "@microsoft/arbutus.resource-chip": "0.0.10",
     "@microsoft/arbutus.shell": "1.1.13",
     "@microsoft/arbutus.table-list": "1.1.5",
-    "@microsoft/arbutus.tabs": "1.0.7",
+    "@microsoft/arbutus.tabs": "1.1.0",
     "@microsoft/arbutus.tag": "1.0.4",
     "@microsoft/arbutus.text": "1.0.6",
     "@microsoft/arbutus.theme-switch": "1.0.11",

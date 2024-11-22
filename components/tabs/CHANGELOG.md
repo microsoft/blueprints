@@ -1,8 +1,16 @@
 # Change Log - @microsoft/arbutus.tabs
 
-This log was last generated on Wed, 29 Nov 2023 00:19:57 GMT and should not be manually modified.
+This log was last generated on Fri, 22 Nov 2024 17:52:47 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.0
+
+Fri, 22 Nov 2024 17:52:47 GMT
+
+### Minor changes
+
+- Exposes useTabsContext in @microsoft/arbutus.tabs package (akimalunar@gmail.com)
 
 ## 1.0.7
 

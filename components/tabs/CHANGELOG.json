@@ -2,6 +2,21 @@
   "name": "@microsoft/arbutus.tabs",
   "entries": [
     {
+      "date": "Fri, 22 Nov 2024 17:52:47 GMT",
+      "version": "1.1.0",
+      "tag": "@microsoft/arbutus.tabs_v1.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "akimalunar@gmail.com",
+            "package": "@microsoft/arbutus.tabs",
+            "commit": "d2f578a7b5a52fb3709349bae7eb918aeca74790",
+            "comment": "Exposes useTabsContext in @microsoft/arbutus.tabs package"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 29 Nov 2023 00:19:57 GMT",
       "version": "1.0.7",
       "tag": "@microsoft/arbutus.tabs_v1.0.7",
